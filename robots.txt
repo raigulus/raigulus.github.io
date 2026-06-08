@@ -26,3 +26,4 @@ User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://raigulus.github.io/sitemap.xml
+Sitemap: https://raigulus.github.io/sitemap.txt
