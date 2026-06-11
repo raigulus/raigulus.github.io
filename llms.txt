@@ -7,6 +7,7 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 ## Core Pages
 
 - [Home](https://raigulus.github.io/): Raigulus channel and guide overview.
+- [About](https://raigulus.github.io/about/): Creator context, guide style, and trust signals.
 - [The Division 2 Hub](https://raigulus.github.io/division-2/): All optimized Division 2 guides.
 - [Mission Walkthroughs](https://raigulus.github.io/division-2/missions/): Mission, invaded, heroic, and legendary walkthroughs.
 - [Manhunt Walkthroughs](https://raigulus.github.io/division-2/manhunts/): Manhunt routes and target guides.
