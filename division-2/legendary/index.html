@@ -31,6 +31,31 @@
     gtag("js", new Date());
     gtag("config", "G-C8XHNXWMVQ");
   </script>
+  <script>
+    document.addEventListener("click", function(event) {
+      var link = event.target.closest("a[href]");
+      if (!link || typeof gtag !== "function") return;
+      var url;
+      try {
+        url = new URL(link.href, window.location.href);
+      } catch (error) {
+        return;
+      }
+      if (url.origin === window.location.origin) return;
+      var host = url.hostname.replace(/^www\./, "");
+      var label = (link.getAttribute("aria-label") || link.textContent || "").trim().slice(0, 120);
+      var eventName = "outbound_click";
+      if (host === "youtube.com" || host === "youtu.be") eventName = "youtube_click";
+      if (host === "instagram.com") eventName = "instagram_click";
+      gtag("event", eventName, {
+        link_url: url.href,
+        link_domain: host,
+        link_text: label,
+        page_path: window.location.pathname,
+        event_category: "engagement"
+      });
+    }, true);
+  </script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"The Division 2 Legendary Mission Walkthroughs","description":"All Division 2 legendary mission walkthroughs with no commentary - District Union Arena, Capitol Building, Roosevelt Island.","url":"https://raigulus.github.io/division-2/legendary/","author":{"@type":"Person","name":"Raigulus","url":"https://raigulus.github.io"},"hasPart":[{"@type":"WebPage","name":"District Union Arena Legendary Walkthrough","url":"https://raigulus.github.io/division-2/videos/the-division-2-district-union-arena-legendary-walkthrough-no-commentary/"},{"@type":"WebPage","name":"Capitol Building Legendary Walkthrough","url":"https://raigulus.github.io/division-2/videos/the-division-2-capitol-building-legendary-walkthrough-no-commentary/"},{"@type":"WebPage","name":"Roosevelt Island Legendary Walkthrough","url":"https://raigulus.github.io/division-2/videos/the-division-2-roosevelt-island-legendary-walkthrough-no-commentary/"}]}</script>
 </head>
 <body>

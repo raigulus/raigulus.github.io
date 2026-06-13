@@ -31,6 +31,31 @@
     gtag("js", new Date());
     gtag("config", "G-C8XHNXWMVQ");
   </script>
+  <script>
+    document.addEventListener("click", function(event) {
+      var link = event.target.closest("a[href]");
+      if (!link || typeof gtag !== "function") return;
+      var url;
+      try {
+        url = new URL(link.href, window.location.href);
+      } catch (error) {
+        return;
+      }
+      if (url.origin === window.location.origin) return;
+      var host = url.hostname.replace(/^www\./, "");
+      var label = (link.getAttribute("aria-label") || link.textContent || "").trim().slice(0, 120);
+      var eventName = "outbound_click";
+      if (host === "youtube.com" || host === "youtu.be") eventName = "youtube_click";
+      if (host === "instagram.com") eventName = "instagram_click";
+      gtag("event", eventName, {
+        link_url: url.href,
+        link_domain: host,
+        link_text: label,
+        page_path: window.location.pathname,
+        event_category: "engagement"
+      });
+    }, true);
+  </script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"The Division 2 Jefferson Trade Center Hard Solo Speedrun Attempts | 3:54 PB [2026]","description":"The Division 2 Jefferson Trade Center Hard solo speedrun with a 3:54 PB and another sub-4 run at 3:58.","thumbnailUrl":["https://i.ytimg.com/vi/VNhzDGjHnRc/hqdefault.jpg"],"uploadDate":"2026-06-11","embedUrl":"https://www.youtube.com/embed/VNhzDGjHnRc","contentUrl":"https://www.youtube.com/watch?v=VNhzDGjHnRc","author":{"@type":"Person","name":"Raigulus","url":"https://raigulus.github.io","sameAs":["https://www.youtube.com/@raigulus","https://www.instagram.com/raigulus/"]},"publisher":{"@type":"Organization","name":"Raigulus","url":"https://raigulus.github.io","sameAs":["https://www.youtube.com/@raigulus","https://www.instagram.com/raigulus/"]},"duration":"PT7M52S"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://raigulus.github.io/"},{"@type":"ListItem","position":2,"name":"The Division 2","item":"https://raigulus.github.io/division-2/"},{"@type":"ListItem","position":3,"name":"The Division 2 Jefferson Trade Center Hard Solo Speedrun Attempts | 3:54 PB [2026]","item":"https://raigulus.github.io/division-2/videos/the-division-2-jefferson-trade-center-hard-solo-speedrun-attempts-3-54-pb/"}]}</script>
 </head>
