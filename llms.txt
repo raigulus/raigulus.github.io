@@ -13,6 +13,7 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [Legendary Mission Walkthroughs](https://raigulus.github.io/division-2/legendary/): District Union Arena, Capitol Building, and Roosevelt Island legendary runs.
 - [Manhunt Walkthroughs](https://raigulus.github.io/division-2/manhunts/): Manhunt routes and target guides.
 - [Boss Guides](https://raigulus.github.io/division-2/bosses/): Boss encounters and secret boss triggers.
+- [PvP & Conflict Archive](https://raigulus.github.io/division-2/pvp/): Conflict PvP matches, Regulus clips, creator fights, and nostalgia archive videos.
 
 ## YouTube Playlists
 
@@ -22,6 +23,7 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [The Division 2 Manhunts & Boss Guides](https://www.youtube.com/playlist?list=PLG6L-oRdfdL9h6GIqo_I2F91J-gDIVujy)
 - [The Division 2 Quick Guides & Shorts](https://www.youtube.com/playlist?list=PLG6L-oRdfdL_zN3Jf2DqESGeW0hAaiTny)
 - [The Division 2 Speedruns, Builds & Experiments](https://www.youtube.com/playlist?list=PLG6L-oRdfdL-FWVfW-U3H6yARkbvk31B2)
+- [The Division 2 PvP & Conflict Archive](https://www.youtube.com/playlist?list=PLG6L-oRdfdL-qrkEEdqj8MeEtXSTgpdK2)
 
 ## Top Guides
 
