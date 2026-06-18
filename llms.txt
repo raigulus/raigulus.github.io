@@ -14,6 +14,7 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [Manhunt Walkthroughs](https://raigulus.github.io/division-2/manhunts/): Manhunt routes and target guides.
 - [Boss Guides](https://raigulus.github.io/division-2/bosses/): Boss encounters and secret boss triggers.
 - [PvP & Conflict Archive](https://raigulus.github.io/division-2/pvp/): Conflict PvP matches, Regulus clips, creator fights, and nostalgia archive videos.
+- [RSS Feed](https://raigulus.github.io/feed.xml): Machine-readable feed for blog directories and feed readers.
 
 ## YouTube Playlists
 
