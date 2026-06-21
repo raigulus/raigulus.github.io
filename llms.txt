@@ -10,7 +10,7 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [About](https://raigulus.github.io/about/): Creator context, guide style, and trust signals.
 - [The Division 2 Hub](https://raigulus.github.io/division-2/): All optimized Division 2 guides.
 - [Mission Walkthroughs](https://raigulus.github.io/division-2/missions/): Mission, invaded, heroic, and legendary walkthroughs.
-- [Legendary Mission Walkthroughs](https://raigulus.github.io/division-2/legendary/): District Union Arena, Capitol Building, and Roosevelt Island legendary runs.
+- [Legendary Mission Walkthroughs](https://raigulus.github.io/division-2/legendary/): District Union Arena, Capitol Building, Roosevelt Island, and Manning National Zoo legendary runs.
 - [Manhunt Walkthroughs](https://raigulus.github.io/division-2/manhunts/): Manhunt routes and target guides.
 - [Boss Guides](https://raigulus.github.io/division-2/bosses/): Boss encounters and secret boss triggers.
 - [PvP & Conflict Archive](https://raigulus.github.io/division-2/pvp/): Conflict PvP matches, Regulus clips, creator fights, and nostalgia archive videos.
@@ -31,13 +31,13 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [The Division 2 District Union Arena Legendary Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-district-union-arena-legendary-walkthrough-no-commentary/): The Division 2 District Union Arena Legendary walkthrough with no commentary.
 - [The Division 2 Capitol Building Legendary Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-capitol-building-legendary-walkthrough-no-commentary/): The Division 2 Capitol Building Legendary walkthrough with no commentary.
 - [The Division 2 Roosevelt Island Legendary Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-roosevelt-island-legendary-walkthrough-no-commentary/): The Division 2 Roosevelt Island Legendary walkthrough with no commentary.
+- [The Division 2 Manning National Zoo Legendary Stronghold Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-manning-national-zoo-legendary-stronghold-walkthrough-no-commentary/): The Division 2 Manning National Zoo Legendary stronghold walkthrough with no commentary.
 - [The Division 2 Grand Washington Hotel Invaded Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-grand-washington-hotel-invaded-walkthrough-no-commentary/): The Division 2 Grand Washington Hotel Invaded walkthrough with no commentary.
 - [The Division 2 Air and Space Museum Invaded Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-air-and-space-museum-invaded-walkthrough-no-commentary/): The Division 2 Air and Space Museum Invaded walkthrough with no commentary.
 - [The Division 2 Bank Headquarters Invaded Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-bank-headquarters-invaded-walkthrough-no-commentary/): The Division 2 Bank Headquarters Invaded walkthrough with no commentary.
 - [The Division 2 Jefferson Plaza Invaded Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-jefferson-plaza-invaded-walkthrough-no-commentary/): The Division 2 Jefferson Plaza Invaded walkthrough with no commentary.
 - [The Division 2 DCD Headquarters Invaded Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-dcd-headquarters-invaded-walkthrough-no-commentary/): The Division 2 DCD Headquarters Invaded walkthrough with no commentary.
 - [The Division 2 Camp White Oak Invaded Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-camp-white-oak-invaded-walkthrough-no-commentary/): The Division 2 Camp White Oak Invaded walkthrough with no commentary.
-- [The Division 2 Viewpoint Museum Invaded Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-viewpoint-museum-invaded-walkthrough-no-commentary/): The Division 2 Viewpoint Museum Invaded walkthrough with no commentary.
 
 ## SameAs
 
