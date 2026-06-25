@@ -6,7 +6,15 @@
     <atom:link href="https://raigulus.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>The latest Raigulus Division 2 walkthroughs, PvP clips, build tests, speedrun attempts, manhunts, boss guides, and no commentary gameplay.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 21 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>The Division 2 Coney Island Amusement Park Walkthrough | No Commentary [2026]</title>
+      <link>https://raigulus.github.io/division-2/videos/the-division-2-coney-island-amusement-park-walkthrough-no-commentary/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-coney-island-amusement-park-walkthrough-no-commentary/</guid>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
+      <description>The Division 2 Coney Island Amusement Park walkthrough covering Black Tusk, Cleaners, and the Dolores Jones boss fight.</description>
+      <category>mission</category>
+    </item>
     <item>
       <title>The Division 2 Manning National Zoo Legendary Stronghold Walkthrough | No Commentary [2026]</title>
       <link>https://raigulus.github.io/division-2/videos/the-division-2-manning-national-zoo-legendary-stronghold-walkthrough-no-commentary/</link>
@@ -317,14 +325,6 @@
       <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-jefferson-trade-center-walkthrough-no-commentary/</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>The Division 2 Jefferson Trade Center mission walkthrough with no commentary.</description>
-      <category>mission</category>
-    </item>
-    <item>
-      <title>The Division 2 Grand Washington Hotel Walkthrough | No Commentary [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-grand-washington-hotel-walkthrough-no-commentary/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-grand-washington-hotel-walkthrough-no-commentary/</guid>
-      <pubDate>Sat, 16 May 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Grand Washington Hotel mission walkthrough with no commentary.</description>
       <category>mission</category>
     </item>
   </channel>
