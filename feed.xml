@@ -6,7 +6,15 @@
     <atom:link href="https://raigulus.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>The latest Raigulus Division 2 walkthroughs, PvP clips, build tests, speedrun attempts, manhunts, boss guides, and no commentary gameplay.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 26 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>The Division 2 Y8S2 Week 1 Scout Walkthrough | Jackal Manhunt [2026]</title>
+      <link>https://raigulus.github.io/division-2/videos/the-division-2-y8s2-week-1-scout-walkthrough-jackal-manhunt/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-y8s2-week-1-scout-walkthrough-jackal-manhunt/</guid>
+      <pubDate>Sat, 27 Jun 2026 00:00:00 GMT</pubDate>
+      <description>The Division 2 Y8S2 Week 1 Scout walkthrough covering Manny, civilian rescue objectives, and Jackal HVT.</description>
+      <category>manhunt</category>
+    </item>
     <item>
       <title>The Division 2 Coney Island Ballpark Walkthrough | No Commentary [2026]</title>
       <link>https://raigulus.github.io/division-2/videos/the-division-2-coney-island-ballpark-walkthrough-no-commentary/</link>
@@ -318,14 +326,6 @@
       <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
       <description>The Division 2 Air and Space Museum mission walkthrough with no commentary.</description>
       <category>mission</category>
-    </item>
-    <item>
-      <title>How to Spawn Yannick in The Division 2 | Secret Boss Guide [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/how-to-spawn-yannick-in-the-division-2-secret-boss-guide/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/how-to-spawn-yannick-in-the-division-2-secret-boss-guide/</guid>
-      <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
-      <description>How to spawn Yannick in The Division 2 with a clear guide.</description>
-      <category>boss guide</category>
     </item>
   </channel>
 </rss>
