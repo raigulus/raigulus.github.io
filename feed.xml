@@ -6,7 +6,15 @@
     <atom:link href="https://raigulus.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>The latest Raigulus Division 2 walkthroughs, PvP clips, build tests, speedrun attempts, manhunts, boss guides, and no commentary gameplay.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 27 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>The Division 2 Y8S2 Week 2 Scout Walkthrough | Scout 2 Manhunt [2026]</title>
+      <link>https://raigulus.github.io/division-2/videos/the-division-2-y8s2-week-2-scout-walkthrough-scout-2-manhunt/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-y8s2-week-2-scout-walkthrough-scout-2-manhunt/</guid>
+      <pubDate>Sun, 28 Jun 2026 00:00:00 GMT</pubDate>
+      <description>The Division 2 Y8S2 Week 2 Scout walkthrough covering hostile activities, DZ West selling, extraction, and a lucky drop.</description>
+      <category>manhunt</category>
+    </item>
     <item>
       <title>The Division 2 Y8S2 Week 1 Scout Walkthrough | Jackal Manhunt [2026]</title>
       <link>https://raigulus.github.io/division-2/videos/the-division-2-y8s2-week-1-scout-walkthrough-jackal-manhunt/</link>
@@ -318,14 +326,6 @@
       <pubDate>Thu, 21 May 2026 00:00:00 GMT</pubDate>
       <description>The Division 2 Scout 8 manhunt walkthrough with no commentary.</description>
       <category>manhunt</category>
-    </item>
-    <item>
-      <title>The Division 2 Air and Space Museum Walkthrough | No Commentary [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-air-and-space-museum-walkthrough-no-commentary/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-air-and-space-museum-walkthrough-no-commentary/</guid>
-      <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Air and Space Museum mission walkthrough with no commentary.</description>
-      <category>mission</category>
     </item>
   </channel>
 </rss>
