@@ -6,7 +6,15 @@
     <atom:link href="https://raigulus.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>The latest Raigulus Division 2 walkthroughs, PvP clips, build tests, speedrun attempts, manhunts, boss guides, and no commentary gameplay.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>The Division 2 Tier 10 Escalation with Randoms | Bluescreen Build [2026]</title>
+      <link>https://raigulus.github.io/division-2/videos/the-division-2-tier-10-escalation-with-randoms-bluescreen-build/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-tier-10-escalation-with-randoms-bluescreen-build/</guid>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
+      <description>The Division 2 Tier 10 Escalation run with random matchmaking using a Bluescreen + Tipping Scales LMG build.</description>
+      <category>build/showcase</category>
+    </item>
     <item>
       <title>The Division 2 Y8S2 Week 2 Scout Walkthrough | Scout 2 Manhunt [2026]</title>
       <link>https://raigulus.github.io/division-2/videos/the-division-2-y8s2-week-2-scout-walkthrough-scout-2-manhunt/</link>
@@ -318,14 +326,6 @@
       <pubDate>Sat, 23 May 2026 00:00:00 GMT</pubDate>
       <description>The Division 2 event farm guide with a fast no commentary route.</description>
       <category>seasonal event</category>
-    </item>
-    <item>
-      <title>The Division 2 Grand Washington Hotel Invaded Walkthrough | No Commentary [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-grand-washington-hotel-invaded-walkthrough-no-commentary/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-grand-washington-hotel-invaded-walkthrough-no-commentary/</guid>
-      <pubDate>Fri, 22 May 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Grand Washington Hotel Invaded walkthrough with no commentary.</description>
-      <category>invaded mission</category>
     </item>
   </channel>
 </rss>
