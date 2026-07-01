@@ -6,7 +6,15 @@
     <atom:link href="https://raigulus.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>The latest Raigulus Division 2 walkthroughs, PvP clips, build tests, speedrun attempts, manhunts, boss guides, and no commentary gameplay.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 30 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>The Division 2 Iron Horse Raid Speedrun 18:49 | Open Gate Era Archive</title>
+      <link>https://raigulus.github.io/division-2/videos/the-division-2-iron-horse-raid-speedrun-18-49-open-gate-era-archive/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-iron-horse-raid-speedrun-18-49-open-gate-era-archive/</guid>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <description>The Division 2 Operation Iron Horse raid speedrun in 18:49 from the old Open Gate strat era.</description>
+      <category>challenge/speedrun</category>
+    </item>
     <item>
       <title>The Division 2 Conflict PvP Regulus Gameplay | 2021 Archive</title>
       <link>https://raigulus.github.io/division-2/videos/the-division-2-conflict-pvp-regulus-gameplay-2021-archive/</link>
@@ -14,6 +22,14 @@
       <pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate>
       <description>The Division 2 Conflict PvP Regulus gameplay from a 2021 archive match with audio removed due to copyright.</description>
       <category>pvp/archive clip</category>
+    </item>
+    <item>
+      <title>The Division 2 Toxic DZ Changed | TUY8S2.1 Update #shorts</title>
+      <link>https://raigulus.github.io/division-2/videos/the-division-2-toxic-dz-changed-tuy8s2-1-update-shorts/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-toxic-dz-changed-tuy8s2-1-update-shorts/</guid>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate>
+      <description>The Division 2 TUY8S2.1 update changed Toxic DZ farming, added Rage Harvest, and launched the Dead by Daylight Event Pass.</description>
+      <category>short/tip</category>
     </item>
     <item>
       <title>The Division 2 Tier 10 Escalation with Randoms | Bluescreen Build [2026]</title>
@@ -309,22 +325,6 @@
       <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-bank-headquarters-walkthrough-no-commentary/</guid>
       <pubDate>Tue, 26 May 2026 00:00:00 GMT</pubDate>
       <description>The Division 2 Bank Headquarters mission walkthrough with no commentary.</description>
-      <category>mission</category>
-    </item>
-    <item>
-      <title>The Division 2 Jefferson Plaza Walkthrough | No Commentary [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-jefferson-plaza-walkthrough-no-commentary/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-jefferson-plaza-walkthrough-no-commentary/</guid>
-      <pubDate>Sun, 24 May 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Jefferson Plaza mission walkthrough with no commentary.</description>
-      <category>mission</category>
-    </item>
-    <item>
-      <title>The Division 2 Space Administration HQ Walkthrough | No Commentary [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-space-administration-hq-walkthrough-no-commentary/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-space-administration-hq-walkthrough-no-commentary/</guid>
-      <pubDate>Sat, 23 May 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Space Administration HQ mission walkthrough with no commentary.</description>
       <category>mission</category>
     </item>
   </channel>
