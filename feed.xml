@@ -6,7 +6,15 @@
     <atom:link href="https://raigulus.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>The latest Raigulus Division 2 walkthroughs, PvP clips, build tests, speedrun attempts, manhunts, boss guides, and no commentary gameplay.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>The Division 2 Y8S2 Week 3 Scout Walkthrough | Hyena Objectives [2026]</title>
+      <link>https://raigulus.github.io/division-2/videos/the-division-2-y8s2-week-3-scout-walkthrough-hyena-objectives/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-y8s2-week-3-scout-walkthrough-hyena-objectives/</guid>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 GMT</pubDate>
+      <description>The Division 2 Y8S2 Week 3 Scout walkthrough covering District Union Arena, Hyena activities, and Elite Hyena kills.</description>
+      <category>manhunt</category>
+    </item>
     <item>
       <title>The Division 2 Iron Horse Raid Speedrun 18:49 | Open Gate Era Archive</title>
       <link>https://raigulus.github.io/division-2/videos/the-division-2-iron-horse-raid-speedrun-18-49-open-gate-era-archive/</link>
@@ -317,14 +325,6 @@
       <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-dcd-headquarters-walkthrough-no-commentary/</guid>
       <pubDate>Wed, 27 May 2026 00:00:00 GMT</pubDate>
       <description>The Division 2 DCD Headquarters mission walkthrough with no commentary.</description>
-      <category>mission</category>
-    </item>
-    <item>
-      <title>The Division 2 Bank Headquarters Walkthrough | No Commentary [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-bank-headquarters-walkthrough-no-commentary/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-bank-headquarters-walkthrough-no-commentary/</guid>
-      <pubDate>Tue, 26 May 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Bank Headquarters mission walkthrough with no commentary.</description>
       <category>mission</category>
     </item>
   </channel>
