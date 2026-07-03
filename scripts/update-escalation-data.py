@@ -16,11 +16,7 @@ from pathlib import Path
 BASE_URL = "https://raigulus.github.io"
 HOST = "raigulus.github.io"
 USER_AGENT = "RaigulusEscalationBot/1.0 (+https://raigulus.github.io/division-2/escalation/)"
-PROTOTRACK_STATIC_TEXT_URL = os.environ.get(
-    "PROTOTRACK_STATIC_URL",
-    "https://prototrack.gg/target-loot/target-loot-current.txt",
-)
-PROTOTRACK_PAGE_URL = "https://prototrack.gg/target-loot/target-loot.php"
+PRIMARY_SOURCE_URL = os.environ.get("ESCALATION_PRIMARY_SOURCE_URL", "").strip()
 HIDEP_URL = os.environ.get("HIDEP_TARGET_LOOT_URL", "https://hi-dep.github.io/division2/")
 REDDIT_RSS_URLS = [
     "https://www.reddit.com/r/Division2/search.rss?"
@@ -51,15 +47,15 @@ def repo_paths():
     return input_path, site_dir
 
 
-def parse_prototrack_static(text):
+def parse_primary_source_text(text):
     data = {
         "date": "",
         "rotation": "",
         "missions": [],
         "vendor_caches": [],
         "last_updated": "",
-        "source": "ProtoTrack.gg",
-        "source_url": PROTOTRACK_STATIC_TEXT_URL,
+        "source": "Public target loot source",
+        "source_url": "",
         "status": "ok",
     }
     section = ""
@@ -84,7 +80,6 @@ def parse_prototrack_static(text):
             data["last_updated"] = line.split(":", 1)[1].strip()
             continue
         if line.startswith("Source:"):
-            data["source"] = line.split(":", 1)[1].strip() or "ProtoTrack.gg"
             continue
         if line.startswith("- ") and ":" in line:
             key, value = line[2:].split(":", 1)
@@ -110,17 +105,26 @@ def read_existing(input_path, site_dir):
 
 
 def fetch_primary(existing):
+    if not PRIMARY_SOURCE_URL:
+        data = dict(existing) if existing else {}
+        data.setdefault("missions", [])
+        data.setdefault("vendor_caches", [])
+        data.setdefault("source", "Public target loot source")
+        data.setdefault("source_url", "")
+        data.pop("raw_text", None)
+        data["status"] = "stale" if data.get("missions") else "pending"
+        return data, "Primary source URL is not configured"
     try:
-        text = fetch_text(PROTOTRACK_STATIC_TEXT_URL)
-        data = parse_prototrack_static(text)
-        data["raw_text"] = text
+        text = fetch_text(PRIMARY_SOURCE_URL)
+        data = parse_primary_source_text(text)
         return data, None
     except Exception as error:
         data = dict(existing) if existing else {}
         data.setdefault("missions", [])
         data.setdefault("vendor_caches", [])
-        data.setdefault("source", "ProtoTrack.gg")
-        data.setdefault("source_url", PROTOTRACK_STATIC_TEXT_URL)
+        data.setdefault("source", "Public target loot source")
+        data.setdefault("source_url", "")
+        data.pop("raw_text", None)
         data["status"] = "stale" if data.get("missions") else "error"
         return data, f"{type(error).__name__}: {error}"
 
@@ -147,7 +151,6 @@ def fetch_reddit_sources():
 def fetch_cross_checks():
     checks = []
     for name, url in [
-        ("ProtoTrack page", PROTOTRACK_PAGE_URL),
         ("hi-dep Division 2 page", HIDEP_URL),
     ]:
         try:
@@ -169,11 +172,11 @@ def render_live_html(data):
     mission_rows = "\n".join(
         f"<tr><th>{esc(item.get('mission', 'Mission'))}</th><td>{esc(item.get('loot', 'Target loot pending'))}</td></tr>"
         for item in missions
-    ) or '<tr><th>Snapshot</th><td>Waiting for the first automated ProtoTrack check.</td></tr>'
+    ) or '<tr><th>Snapshot</th><td>Waiting for the first automated source check.</td></tr>'
     cache_rows = "\n".join(
         f"<tr><th>{esc(item.get('type', 'Cache'))}</th><td>{esc(item.get('item', 'Pending'))}</td></tr>"
         for item in caches
-    ) or '<tr><th>Vendor Caches</th><td>Waiting for the first automated ProtoTrack check.</td></tr>'
+    ) or '<tr><th>Vendor Caches</th><td>Waiting for the first automated source check.</td></tr>'
     checks = data.get("cross_checks") or []
     check_items = "\n".join(
         f'<li><a href="{esc(item.get("url", "#"))}">{esc(item.get("name", "External source"))}</a>: {esc(item.get("status", "available"))}</li>'
@@ -181,13 +184,13 @@ def render_live_html(data):
     ) or "<li>Cross-check sources are monitored by the automation when reachable.</li>"
     return f"""<!-- escalation-live-start -->
         <h2>Escalation Target Loot Today</h2>
-        <p>This live snapshot is generated from public source checks. ProtoTrack is used as the primary source and is linked clearly instead of copied without attribution.</p>
+        <p>This live snapshot is generated from automated public source checks and is kept as a quick reference for Raigulus Escalation videos.</p>
         <table class="facts">
           <tr><th>Date</th><td>{esc(date_label)}</td></tr>
           <tr><th>Rotation</th><td>{esc(data.get('rotation') or 'Daily Escalation rotation')}</td></tr>
           <tr><th>Status</th><td>{esc(data.get('status') or 'pending')}</td></tr>
           <tr><th>Last checked</th><td>{esc(last_updated)}</td></tr>
-          <tr><th>Primary source</th><td><a href="{esc(data.get('source_url') or PROTOTRACK_STATIC_TEXT_URL)}">ProtoTrack static text</a></td></tr>
+          <tr><th>Source check</th><td>Automated public target loot snapshot</td></tr>
         </table>
         <h2>Current Mission Target Loot</h2>
         <table class="facts">{mission_rows}</table>
@@ -274,6 +277,9 @@ def main():
     args = parser.parse_args()
 
     input_path, site_dir = repo_paths()
+    if not PRIMARY_SOURCE_URL:
+        print("Primary Escalation source URL is not configured; skipping source fetch.")
+        return 0
     existing = read_existing(input_path, site_dir)
     data, error = fetch_primary(existing)
     data["fetched_at"] = utc_now().isoformat()

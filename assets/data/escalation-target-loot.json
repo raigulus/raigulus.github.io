@@ -34,11 +34,10 @@
     }
   ],
   "last_updated": "2026-07-03 10:01",
-  "source": "ProtoTrack.gg",
-  "source_url": "https://prototrack.gg/target-loot/target-loot-current.txt",
+  "source": "Public target loot source",
+  "source_url": "",
   "status": "ok",
-  "raw_text": "Daily Escalation Target Loot\nDate: 2026-07-03\nRotation: Weekly Escalation Rotation\n\nMissions:\n- The Art Museum: Hard Wired\n- Manning National Zoo: True Patriot\n- Camp White Oak: Lengmo\n- The Pentagon: Habsburg Guard\n- DARPA Research Labs: Negotiators Dilemma\n\nVendor Caches:\n- Weapons: Assault Rifles\n- Gear: Chest Pieces\n\nLast updated: 2026-07-03 10:01\nSource: ProtoTrack.gg\n",
-  "fetched_at": "2026-07-03T13:06:09.224273+00:00",
+  "fetched_at": "2026-07-03T13:19:24.527564+00:00",
   "community_sources": [
     {
       "name": "DIVISION 2 Daily Escalation Missions & their Targeted Loot With Escalation Vendor Items Details & Dark Zone loot Details (03-July-2026)",
@@ -60,11 +59,6 @@
     }
   ],
   "cross_checks": [
-    {
-      "name": "ProtoTrack page",
-      "url": "https://prototrack.gg/target-loot/target-loot.php",
-      "status": "reachable"
-    },
     {
       "name": "hi-dep Division 2 page",
       "url": "https://hi-dep.github.io/division2/",
