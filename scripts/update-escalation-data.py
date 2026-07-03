@@ -6,9 +6,7 @@ import os
 import re
 import sys
 import urllib.error
-import urllib.parse
 import urllib.request
-import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -17,13 +15,6 @@ BASE_URL = "https://raigulus.github.io"
 HOST = "raigulus.github.io"
 USER_AGENT = "RaigulusEscalationBot/1.0 (+https://raigulus.github.io/division-2/escalation/)"
 PRIMARY_SOURCE_URL = os.environ.get("ESCALATION_PRIMARY_SOURCE_URL", "").strip()
-HIDEP_URL = os.environ.get("HIDEP_TARGET_LOOT_URL", "https://hi-dep.github.io/division2/")
-REDDIT_RSS_URLS = [
-    "https://www.reddit.com/r/Division2/search.rss?"
-    + urllib.parse.urlencode({"q": '"Daily Escalation Missions" "Targeted Loot"', "restrict_sr": "1", "sort": "new"}),
-    "https://www.reddit.com/r/thedivision/search.rss?"
-    + urllib.parse.urlencode({"q": '"Daily Escalation Missions" "Targeted Loot"', "restrict_sr": "1", "sort": "new"}),
-]
 
 
 def utc_now():
@@ -54,8 +45,6 @@ def parse_primary_source_text(text):
         "missions": [],
         "vendor_caches": [],
         "last_updated": "",
-        "source": "Public target loot source",
-        "source_url": "",
         "status": "ok",
     }
     section = ""
@@ -109,9 +98,7 @@ def fetch_primary(existing):
         data = dict(existing) if existing else {}
         data.setdefault("missions", [])
         data.setdefault("vendor_caches", [])
-        data.setdefault("source", "Public target loot source")
-        data.setdefault("source_url", "")
-        data.pop("raw_text", None)
+        sanitize_public_data(data)
         data["status"] = "stale" if data.get("missions") else "pending"
         return data, "Primary source URL is not configured"
     try:
@@ -122,46 +109,29 @@ def fetch_primary(existing):
         data = dict(existing) if existing else {}
         data.setdefault("missions", [])
         data.setdefault("vendor_caches", [])
-        data.setdefault("source", "Public target loot source")
-        data.setdefault("source_url", "")
-        data.pop("raw_text", None)
+        sanitize_public_data(data)
         data["status"] = "stale" if data.get("missions") else "error"
         return data, f"{type(error).__name__}: {error}"
 
 
-def fetch_reddit_sources():
-    sources = []
-    ns = {"atom": "http://www.w3.org/2005/Atom"}
-    for url in REDDIT_RSS_URLS:
-        try:
-            xml_text = fetch_text(url, timeout=10)
-            root = ET.fromstring(xml_text)
-            for entry in root.findall("atom:entry", ns)[:3]:
-                title = (entry.findtext("atom:title", default="", namespaces=ns) or "").strip()
-                link_el = entry.find("atom:link[@rel='alternate']", ns)
-                link = link_el.attrib.get("href", "") if link_el is not None else url
-                updated = entry.findtext("atom:updated", default="", namespaces=ns) or ""
-                if "escalation" in title.lower() or "targeted loot" in title.lower():
-                    sources.append({"name": title, "url": link, "updated": updated, "source": "Reddit RSS"})
-        except Exception:
-            continue
-    return sources[:5]
+def sanitize_public_data(data):
+    allowed_keys = {
+        "date",
+        "rotation",
+        "missions",
+        "vendor_caches",
+        "last_updated",
+        "status",
+        "fetched_at",
+        "error",
+    }
+    sanitized = {key: value for key, value in data.items() if key in allowed_keys}
+    data.clear()
+    data.update(sanitized)
+    return data
 
 
-def fetch_cross_checks():
-    checks = []
-    for name, url in [
-        ("hi-dep Division 2 page", HIDEP_URL),
-    ]:
-        try:
-            fetch_text(url, timeout=10)
-            checks.append({"name": name, "url": url, "status": "reachable"})
-        except Exception as error:
-            checks.append({"name": name, "url": url, "status": f"unreachable: {type(error).__name__}"})
-    return checks
-
-
-def render_live_html(data):
+def render_live_html(data, marker, heading, intro, mission_heading, cache_heading):
     def esc(value):
         return html.escape(str(value or ""), quote=True)
 
@@ -177,40 +147,79 @@ def render_live_html(data):
         f"<tr><th>{esc(item.get('type', 'Cache'))}</th><td>{esc(item.get('item', 'Pending'))}</td></tr>"
         for item in caches
     ) or '<tr><th>Vendor Caches</th><td>Waiting for the first automated source check.</td></tr>'
-    checks = data.get("cross_checks") or []
-    check_items = "\n".join(
-        f'<li><a href="{esc(item.get("url", "#"))}">{esc(item.get("name", "External source"))}</a>: {esc(item.get("status", "available"))}</li>'
-        for item in checks
-    ) or "<li>Cross-check sources are monitored by the automation when reachable.</li>"
-    return f"""<!-- escalation-live-start -->
-        <h2>Escalation Target Loot Today</h2>
-        <p>This live snapshot is generated from automated public source checks and is kept as a quick reference for Raigulus Escalation videos.</p>
+    return f"""<!-- {marker}-live-start -->
+        <h2>{esc(heading)}</h2>
+        <p>{esc(intro)}</p>
         <table class="facts">
           <tr><th>Date</th><td>{esc(date_label)}</td></tr>
           <tr><th>Rotation</th><td>{esc(data.get('rotation') or 'Daily Escalation rotation')}</td></tr>
           <tr><th>Status</th><td>{esc(data.get('status') or 'pending')}</td></tr>
           <tr><th>Last checked</th><td>{esc(last_updated)}</td></tr>
-          <tr><th>Source check</th><td>Automated public target loot snapshot</td></tr>
+          <tr><th>Snapshot</th><td>Automated rotation check</td></tr>
         </table>
-        <h2>Current Mission Target Loot</h2>
+        <h2>{esc(mission_heading)}</h2>
         <table class="facts">{mission_rows}</table>
-        <h2>Escalation Requisition Vendor Caches</h2>
+        <h2>{esc(cache_heading)}</h2>
         <table class="facts">{cache_rows}</table>
-        <h2>Cross-check Sources</h2>
-        <ul class="pill-list">{check_items}</ul>
-<!-- escalation-live-end -->"""
+<!-- {marker}-live-end -->"""
 
 
-def update_page(site_dir, data):
-    page = site_dir / "division-2" / "escalation" / "index.html"
+def update_page_block(site_dir, relative_page, marker, html_block):
+    page = site_dir / relative_page
     if not page.exists():
         return False
     content = page.read_text(encoding="utf-8")
-    pattern = re.compile(r"<!-- escalation-live-start -->.*?<!-- escalation-live-end -->", re.S)
+    pattern = re.compile(rf"<!-- {re.escape(marker)}-live-start -->.*?<!-- {re.escape(marker)}-live-end -->", re.S)
     if not pattern.search(content):
         return False
-    page.write_text(pattern.sub(render_live_html(data), content), encoding="utf-8")
+    page.write_text(pattern.sub(html_block, content), encoding="utf-8")
     return True
+
+
+def update_pages(site_dir, data):
+    blocks = [
+        (
+            Path("division-2/escalation/index.html"),
+            "escalation",
+            render_live_html(
+                data,
+                "escalation",
+                "Escalation Loot Today",
+                "Current Escalation loot snapshot, vendor cache notes, and Tier 10 context for Raigulus guide pages.",
+                "Current Escalation Mission Target Loot",
+                "Escalation Requisition Vendor Caches",
+            ),
+        ),
+        (
+            Path("division-2/loot/index.html"),
+            "loot",
+            render_live_html(
+                data,
+                "loot",
+                "Targeted Loot Today",
+                "Current loot snapshot for players checking Division 2 loot today, targeted loot, loot map context, and farming routes.",
+                "Current Targeted Loot Snapshot",
+                "Current Cache Snapshot",
+            ),
+        ),
+        (
+            Path("division-2/prototype-gear/index.html"),
+            "prototype-gear",
+            render_live_html(
+                data,
+                "prototype-gear",
+                "Prototype Gear and Vendor Snapshot",
+                "Current cache snapshot for Prototype Gear, Escalation vendor checks, and gear cache planning.",
+                "Current Escalation Mission Loot",
+                "Prototype Gear and Vendor Caches",
+            ),
+        ),
+    ]
+    changed = 0
+    for page, marker, html_block in blocks:
+        if update_page_block(site_dir, page, marker, html_block):
+            changed += 1
+    return changed
 
 
 def update_sitemap(site_dir):
@@ -219,9 +228,15 @@ def update_sitemap(site_dir):
         return False
     today = utc_now().date().isoformat()
     content = sitemap.read_text(encoding="utf-8")
-    target = re.escape(f"{BASE_URL}/division-2/escalation/")
-    pattern = re.compile(rf"(<loc>{target}</loc><lastmod>)([^<]+)(</lastmod>)")
-    updated = pattern.sub(rf"\g<1>{today}\g<3>", content)
+    updated = content
+    for url in [
+        f"{BASE_URL}/division-2/loot/",
+        f"{BASE_URL}/division-2/escalation/",
+        f"{BASE_URL}/division-2/prototype-gear/",
+    ]:
+        target = re.escape(url)
+        pattern = re.compile(rf"(<loc>{target}</loc><lastmod>)([^<]+)(</lastmod>)")
+        updated = pattern.sub(rf"\g<1>{today}\g<3>", updated)
     if updated != content:
         sitemap.write_text(updated, encoding="utf-8")
         return True
@@ -247,7 +262,9 @@ def submit_indexnow(site_dir):
             "host": HOST,
             "key": key,
             "urlList": [
+                f"{BASE_URL}/division-2/loot/",
                 f"{BASE_URL}/division-2/escalation/",
+                f"{BASE_URL}/division-2/prototype-gear/",
                 f"{BASE_URL}/division-2/",
                 f"{BASE_URL}/sitemap.xml",
             ],
@@ -287,16 +304,16 @@ def main():
         data["error"] = error
     else:
         data.pop("error", None)
-    data["community_sources"] = fetch_reddit_sources()
-    data["cross_checks"] = fetch_cross_checks()
+    sanitize_public_data(data)
 
     if input_path:
         write_json(input_path, data)
         print(f"Wrote {input_path}")
     write_json(site_dir / "assets" / "data" / "escalation-target-loot.json", data)
     print(f"Wrote {site_dir / 'assets' / 'data' / 'escalation-target-loot.json'}")
-    if update_page(site_dir, data):
-        print("Updated Escalation page live block")
+    updated_pages = update_pages(site_dir, data)
+    if updated_pages:
+        print(f"Updated {updated_pages} guide hub live blocks")
     update_sitemap(site_dir)
     if args.submit_indexnow:
         submit_indexnow(site_dir)

@@ -32,6 +32,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/data/escalation-target-loot.json division-2/escalation/index.html sitemap.xml
-          git commit -m "Update Escalation target loot data"
+          git add assets/data/escalation-target-loot.json division-2/loot/index.html division-2/escalation/index.html division-2/prototype-gear/index.html sitemap.xml sitemap.txt llms.txt feed.xml
+          git commit -m "Refresh guide hub data"
           git push
