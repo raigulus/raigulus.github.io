@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pages: write
 
 concurrency:
   group: update-escalation-target-loot
@@ -25,6 +26,8 @@ jobs:
         run: python3 scripts/update-escalation-data.py --submit-indexnow
 
       - name: Commit changes
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           if git diff --quiet; then
             echo "No Escalation data changes."
@@ -35,3 +38,4 @@ jobs:
           git add assets/data/escalation-target-loot.json division-2/loot/index.html division-2/escalation/index.html division-2/prototype-gear/index.html sitemap.xml sitemap.txt llms.txt feed.xml
           git commit -m "Refresh guide hub data"
           git push
+          gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds"
