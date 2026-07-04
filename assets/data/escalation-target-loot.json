@@ -1,39 +1,39 @@
 {
-  "date": "2026-07-03",
+  "date": "2026-07-04",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Art Museum",
-      "loot": "Hard Wired"
-    },
-    {
-      "mission": "Manning National Zoo",
       "loot": "True Patriot"
     },
     {
+      "mission": "Manning National Zoo",
+      "loot": "Marksman Rifle"
+    },
+    {
       "mission": "Camp White Oak",
-      "loot": "Lengmo"
+      "loot": "Electrique"
     },
     {
       "mission": "The Pentagon",
-      "loot": "Habsburg Guard"
+      "loot": "Tip of the Spear"
     },
     {
       "mission": "DARPA Research Labs",
-      "loot": "Negotiators Dilemma"
+      "loot": "Imminence Armaments"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Assault Rifles"
+      "item": "Shotguns"
     },
     {
       "type": "Gear",
-      "item": "Chest Pieces"
+      "item": "Gloves"
     }
   ],
-  "last_updated": "2026-07-03 10:01",
+  "last_updated": "2026-07-04 10:01",
   "status": "ok",
-  "fetched_at": "2026-07-03T22:16:21.253746+00:00"
+  "fetched_at": "2026-07-04T08:13:52.492084+00:00"
 }
