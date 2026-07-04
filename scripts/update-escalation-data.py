@@ -138,7 +138,7 @@ def render_live_html(data, marker, heading, intro, mission_heading, cache_headin
     missions = data.get("missions") or []
     caches = data.get("vendor_caches") or []
     last_updated = data.get("last_updated") or data.get("fetched_at") or "Waiting for first automated check"
-    date_label = data.get("date") or "Current rotation"
+    date_label = data.get("date") or "Current target loot date"
     mission_rows = "\n".join(
         f"<tr><th>{esc(item.get('mission', 'Mission'))}</th><td>{esc(item.get('loot', 'Target loot pending'))}</td></tr>"
         for item in missions
@@ -152,10 +152,11 @@ def render_live_html(data, marker, heading, intro, mission_heading, cache_headin
         <p>{esc(intro)}</p>
         <table class="facts">
           <tr><th>Date</th><td>{esc(date_label)}</td></tr>
-          <tr><th>Rotation</th><td>{esc(data.get('rotation') or 'Daily Escalation rotation')}</td></tr>
+          <tr><th>Mission rotation</th><td>{esc(data.get('rotation') or 'Weekly mission rotation')}</td></tr>
+          <tr><th>Target loot cadence</th><td>Daily</td></tr>
           <tr><th>Status</th><td>{esc(data.get('status') or 'pending')}</td></tr>
           <tr><th>Last checked</th><td>{esc(last_updated)}</td></tr>
-          <tr><th>Snapshot</th><td>Automated rotation check</td></tr>
+          <tr><th>Snapshot</th><td>Automated daily loot check</td></tr>
         </table>
         <h2>{esc(mission_heading)}</h2>
         <table class="facts">{mission_rows}</table>
@@ -185,7 +186,7 @@ def update_pages(site_dir, data):
                 data,
                 "escalation",
                 "Escalation Loot Today",
-                "Current Escalation loot snapshot, vendor cache notes, and Tier 10 context for Raigulus guide pages.",
+                "Current Escalation loot snapshot. Mission locations can stay weekly, while target loot is checked for daily changes.",
                 "Current Escalation Mission Target Loot",
                 "Escalation Requisition Vendor Caches",
             ),
@@ -197,7 +198,7 @@ def update_pages(site_dir, data):
                 data,
                 "loot",
                 "Targeted Loot Today",
-                "Current loot snapshot for players checking Division 2 loot today, targeted loot, loot map context, and farming routes.",
+                "Daily loot snapshot for players checking Division 2 loot today, targeted loot, loot map context, and farming routes.",
                 "Current Targeted Loot Snapshot",
                 "Current Cache Snapshot",
             ),
@@ -209,7 +210,7 @@ def update_pages(site_dir, data):
                 data,
                 "prototype-gear",
                 "Prototype Gear and Vendor Snapshot",
-                "Current cache snapshot for Prototype Gear, Escalation vendor checks, and gear cache planning.",
+                "Current cache and loot snapshot for Prototype Gear, Escalation vendor checks, and gear cache planning.",
                 "Current Escalation Mission Loot",
                 "Prototype Gear and Vendor Caches",
             ),
