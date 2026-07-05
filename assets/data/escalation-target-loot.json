@@ -1,39 +1,39 @@
 {
-  "date": "2026-07-04",
+  "date": "2026-07-05",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Art Museum",
-      "loot": "True Patriot"
+      "loot": "Petrov Defense Group"
     },
     {
       "mission": "Manning National Zoo",
-      "loot": "Marksman Rifle"
+      "loot": "SMG"
     },
     {
       "mission": "Camp White Oak",
-      "loot": "Electrique"
+      "loot": "Douglas & Harding"
     },
     {
       "mission": "The Pentagon",
-      "loot": "Tip of the Spear"
+      "loot": "Royal Works"
     },
     {
       "mission": "DARPA Research Labs",
-      "loot": "Imminence Armaments"
+      "loot": "True Patriot"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Shotguns"
+      "item": "LMGs"
     },
     {
       "type": "Gear",
-      "item": "Gloves"
+      "item": "Chest Pieces"
     }
   ],
-  "last_updated": "2026-07-04 10:01",
+  "last_updated": "2026-07-05 10:01",
   "status": "ok",
-  "fetched_at": "2026-07-04T20:30:56.398084+00:00"
+  "fetched_at": "2026-07-05T08:24:43.882985+00:00"
 }
