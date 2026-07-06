@@ -13,6 +13,7 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [Loot Today and Targeted Loot Guide](https://raigulus.github.io/division-2/loot/): Division 2 loot today, targeted loot, loot map context, and farming videos.
 - [Escalation Loot Today and Tier 10 Guides](https://raigulus.github.io/division-2/escalation/): Current Escalation loot snapshot, vendor caches, and Raigulus Escalation videos.
 - [Prototype Gear and Escalation Vendor Guide](https://raigulus.github.io/division-2/prototype-gear/): Prototype Gear Cache, Escalation vendor, and gear cache planning notes.
+- [Dark Zone Surge and Toxic DZ Guides](https://raigulus.github.io/division-2/dark-zone-surge/): Dark Zone Surge, Toxic DZ, DZ farming, PvP clips, and Regulus 1v1 archives.
 - [Legendary Mission Walkthroughs](https://raigulus.github.io/division-2/legendary/): District Union Arena, Capitol Building, Roosevelt Island, and Manning National Zoo legendary runs.
 - [Manhunt Walkthroughs](https://raigulus.github.io/division-2/manhunts/): Manhunt routes and target guides.
 - [Boss Guides](https://raigulus.github.io/division-2/bosses/): Boss encounters and secret boss triggers.

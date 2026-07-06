@@ -6,12 +6,12 @@
     <atom:link href="https://raigulus.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>The latest Raigulus Division 2 walkthroughs, PvP clips, build tests, speedrun attempts, manhunts, boss guides, and no commentary gameplay.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 04 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>Division 2 Loot Today, Targeted Loot &amp; Farming Guides</title>
       <link>https://raigulus.github.io/division-2/loot/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/loot/</guid>
-      <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 loot today, targeted loot, loot map context, farming routes, and Raigulus videos.</description>
       <category>loot</category>
     </item>
@@ -19,7 +19,7 @@
       <title>Division 2 Escalation Loot Today &amp; Tier 10 Guide</title>
       <link>https://raigulus.github.io/division-2/escalation/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/escalation/</guid>
-      <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 Escalation loot today, Tier 10 matchmaking notes, vendor caches, and Raigulus videos.</description>
       <category>escalation</category>
     </item>
@@ -27,9 +27,25 @@
       <title>Division 2 Prototype Gear &amp; Escalation Vendor Guide</title>
       <link>https://raigulus.github.io/division-2/prototype-gear/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/prototype-gear/</guid>
-      <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 Prototype Gear Cache, Escalation vendor, and gear cache planning notes.</description>
       <category>prototype gear</category>
+    </item>
+    <item>
+      <title>Raigulus vs uD1eByHunter | The Division 2 Dark Zone Door 1v1 [2026]</title>
+      <link>https://raigulus.github.io/division-2/videos/raigulus-vs-ud1ebyhunter-the-division-2-dark-zone-door-1v1/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/raigulus-vs-ud1ebyhunter-the-division-2-dark-zone-door-1v1/</guid>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+      <description>The Division 2 friendly Dark Zone door 1v1 vs uD1eByHunter with Regulus shots, trades, and no-rules DZ PvP.</description>
+      <category>pvp/archive clip</category>
+    </item>
+    <item>
+      <title>The Division 2 DARPA Tier 10 Escalation | 6M Rage Harvest Hits [2026]</title>
+      <link>https://raigulus.github.io/division-2/videos/the-division-2-darpa-tier-10-escalation-6m-rage-harvest-hits/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-darpa-tier-10-escalation-6m-rage-harvest-hits/</guid>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+      <description>The Division 2 DARPA Tier 10 Escalation run with Rage Harvest, Bluescreen, Tipping Scales, and 6M per-bullet damage.</description>
+      <category>build/showcase</category>
     </item>
     <item>
       <title>The Division 2 National Bond Armory SHD XP Farm | 1 Hour Regulus Test [2026]</title>
@@ -334,22 +350,6 @@
       <pubDate>Fri, 29 May 2026 00:00:00 GMT</pubDate>
       <description>The Division 2 Potomac Event Center mission walkthrough with no commentary.</description>
       <category>mission</category>
-    </item>
-    <item>
-      <title>The Division 2 Lincoln Memorial Walkthrough | No Commentary [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-lincoln-memorial-walkthrough-no-commentary/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-lincoln-memorial-walkthrough-no-commentary/</guid>
-      <pubDate>Thu, 28 May 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Lincoln Memorial mission walkthrough with no commentary.</description>
-      <category>mission</category>
-    </item>
-    <item>
-      <title>How to Spawn The Agony in The Division 2 | Manning National Zoo Guide [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/how-to-spawn-the-agony-in-the-division-2-manning-national-zoo-guide/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/how-to-spawn-the-agony-in-the-division-2-manning-national-zoo-guide/</guid>
-      <pubDate>Thu, 28 May 2026 00:00:00 GMT</pubDate>
-      <description>How to spawn The Agony in The Division 2 with a clear guide.</description>
-      <category>boss guide</category>
     </item>
   </channel>
 </rss>
