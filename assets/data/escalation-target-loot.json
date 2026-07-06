@@ -1,39 +1,39 @@
 {
-  "date": "2026-07-05",
+  "date": "2026-07-06",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Art Museum",
-      "loot": "Petrov Defense Group"
+      "loot": "Ceska Vyroba S.R.O."
     },
     {
       "mission": "Manning National Zoo",
-      "loot": "SMG"
+      "loot": "Golan Gear Ltd"
     },
     {
       "mission": "Camp White Oak",
-      "loot": "Douglas & Harding"
+      "loot": "Hard Wired"
     },
     {
       "mission": "The Pentagon",
-      "loot": "Royal Works"
+      "loot": "Marksman Rifle"
     },
     {
       "mission": "DARPA Research Labs",
-      "loot": "True Patriot"
+      "loot": "Sokolov Concern"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "LMGs"
+      "item": "MMRs"
     },
     {
       "type": "Gear",
-      "item": "Chest Pieces"
+      "item": "Backpacks"
     }
   ],
-  "last_updated": "2026-07-05 10:01",
+  "last_updated": "2026-07-06 10:01",
   "status": "ok",
-  "fetched_at": "2026-07-05T20:20:49.938271+00:00"
+  "fetched_at": "2026-07-06T09:10:23.111782+00:00"
 }
