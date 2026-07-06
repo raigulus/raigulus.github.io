@@ -7,6 +7,7 @@ import re
 import sys
 import urllib.error
 import urllib.request
+import urllib.parse
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -21,8 +22,24 @@ def utc_now():
     return datetime.now(timezone.utc)
 
 
+def add_cache_buster(url):
+    parts = urllib.parse.urlsplit(url)
+    query = urllib.parse.parse_qsl(parts.query, keep_blank_values=True)
+    query.append(("raigulus_cache_bust", str(int(utc_now().timestamp()))))
+    return urllib.parse.urlunsplit(
+        (parts.scheme, parts.netloc, parts.path, urllib.parse.urlencode(query), parts.fragment)
+    )
+
+
 def fetch_text(url, timeout=15):
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    request = urllib.request.Request(
+        add_cache_buster(url),
+        headers={
+            "User-Agent": USER_AGENT,
+            "Cache-Control": "no-cache",
+            "Pragma": "no-cache",
+        },
+    )
     with urllib.request.urlopen(request, timeout=timeout) as response:
         return response.read().decode("utf-8", errors="replace")
 
@@ -297,6 +314,8 @@ def main():
     input_path, site_dir = repo_paths()
     if not PRIMARY_SOURCE_URL:
         print("Primary Escalation source URL is not configured; skipping source fetch.")
+        if os.environ.get("GITHUB_ACTIONS") == "true":
+            return 2
         return 0
     existing = read_existing(input_path, site_dir)
     data, error = fetch_primary(existing)
