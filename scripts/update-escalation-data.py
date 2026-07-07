@@ -14,8 +14,18 @@ from pathlib import Path
 
 BASE_URL = "https://raigulus.github.io"
 HOST = "raigulus.github.io"
-USER_AGENT = "RaigulusEscalationBot/1.0 (+https://raigulus.github.io/division-2/escalation/)"
+USER_AGENT = "RaigulusGuideDataBot/1.0 (+https://raigulus.github.io/division-2/server-status/)"
 PRIMARY_SOURCE_URL = os.environ.get("ESCALATION_PRIMARY_SOURCE_URL", "").strip()
+DIVISION2_STATUS_SOURCE_LABEL = "Official Ubisoft service status"
+DIVISION2_STATUS_SOURCE_URL = "https://ubistatic-a.akamaihd.net/0115/tctd2/status.html"
+DIVISION2_STATUS_API_URL = (
+    "https://public-ubiservices.ubi.com/v1/applications/gameStatuses?"
+    "applicationIds=6c6b8cd7-d901-4cd5-8279-07ba92088f06,"
+    "6f220906-8a24-4b6a-a356-db5498501572,"
+    "7d9bbf16-d76d-43e1-9e82-1e64b4dd5543,"
+    "42e81559-1fbc-42cd-bd12-e42460f9aaeb"
+)
+UBISOFT_PUBLIC_APP_ID = "5c5d3b21-e1fc-4460-9213-87b4cd440d44"
 
 
 def utc_now():
@@ -42,6 +52,20 @@ def fetch_text(url, timeout=15):
     )
     with urllib.request.urlopen(request, timeout=timeout) as response:
         return response.read().decode("utf-8", errors="replace")
+
+
+def fetch_json(url, timeout=15):
+    request = urllib.request.Request(
+        add_cache_buster(url),
+        headers={
+            "User-Agent": USER_AGENT,
+            "Ubi-AppId": UBISOFT_PUBLIC_APP_ID,
+            "Cache-Control": "no-cache",
+            "Pragma": "no-cache",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        return json.loads(response.read().decode("utf-8", errors="replace"))
 
 
 def repo_paths():
@@ -152,6 +176,112 @@ def sanitize_public_data(data):
     return data
 
 
+def read_existing_status(site_dir):
+    path = site_dir / "assets" / "data" / "division-2-status.json"
+    if path.exists():
+        try:
+            return json.loads(path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            return {}
+    return {}
+
+
+def normalize_ubisoft_platform_status(status, is_maintenance):
+    if is_maintenance:
+        return "maintenance"
+    status = (status or "").strip().lower()
+    if status == "online":
+        return "operational"
+    if status == "interrupted":
+        return "outage"
+    if status == "degraded":
+        return "problems"
+    if status == "maintenance":
+        return "maintenance"
+    return "unknown"
+
+
+def aggregate_platform_status(platforms):
+    values = set(platforms.values())
+    for status in ("outage", "maintenance", "problems", "unknown", "pending"):
+        if status in values:
+            return status
+    if values and values == {"operational"}:
+        return "operational"
+    return "unknown"
+
+
+def status_message(status):
+    if status == "operational":
+        return "Servers appear operational based on the checked official source."
+    if status == "maintenance":
+        return "Maintenance is indicated by the checked official source."
+    if status == "problems":
+        return "Service problems are indicated by the checked official source."
+    if status == "outage":
+        return "An outage is indicated by the checked official source."
+    if status == "stale":
+        return "Latest automated status check failed; showing stale data."
+    return "Status could not be confirmed from the checked official source."
+
+
+def sanitize_status_data(data):
+    allowed_keys = {"status", "platforms", "message", "last_checked", "fetched_at", "source_label", "source_url", "error"}
+    sanitized = {key: value for key, value in data.items() if key in allowed_keys}
+    platforms = sanitized.get("platforms") if isinstance(sanitized.get("platforms"), dict) else {}
+    status = str(sanitized.get("status") or "unknown").lower()
+    sanitized["platforms"] = {
+        "pc": str(platforms.get("pc") or status).lower(),
+        "playstation": str(platforms.get("playstation") or status).lower(),
+        "xbox": str(platforms.get("xbox") or status).lower(),
+    }
+    sanitized["status"] = status
+    sanitized.setdefault("message", status_message(status))
+    sanitized.setdefault("last_checked", "Waiting for first automated check")
+    sanitized.setdefault("fetched_at", "")
+    sanitized["source_label"] = DIVISION2_STATUS_SOURCE_LABEL
+    sanitized["source_url"] = DIVISION2_STATUS_SOURCE_URL
+    data.clear()
+    data.update(sanitized)
+    return data
+
+
+def fetch_division2_status(existing):
+    try:
+        payload = fetch_json(DIVISION2_STATUS_API_URL, timeout=15)
+        game_statuses = payload.get("gameStatuses")
+        if not isinstance(game_statuses, list) or not game_statuses:
+            raise ValueError("No gameStatuses returned")
+        platforms = {}
+        platform_names = {"pc": "pc", "orbis": "playstation", "durango": "xbox"}
+        for item in game_statuses:
+            key = platform_names.get(str(item.get("platformType", "")).lower())
+            if not key:
+                continue
+            platforms[key] = normalize_ubisoft_platform_status(item.get("status"), item.get("isMaintenance"))
+        if not platforms:
+            raise ValueError("No known platforms returned")
+        aggregate = aggregate_platform_status(platforms)
+        for key in ("pc", "playstation", "xbox"):
+            platforms.setdefault(key, aggregate)
+        data = {
+            "status": aggregate,
+            "platforms": platforms,
+            "message": status_message(aggregate),
+            "source_label": DIVISION2_STATUS_SOURCE_LABEL,
+            "source_url": DIVISION2_STATUS_SOURCE_URL,
+        }
+        return data, None
+    except Exception as error:
+        data = dict(existing) if existing else {}
+        data.setdefault("platforms", {"pc": "unknown", "playstation": "unknown", "xbox": "unknown"})
+        data["status"] = "stale"
+        data["message"] = status_message("stale")
+        data["source_label"] = DIVISION2_STATUS_SOURCE_LABEL
+        data["source_url"] = DIVISION2_STATUS_SOURCE_URL
+        return data, f"{type(error).__name__}: {error}"
+
+
 def render_live_html(data, marker, heading, intro, mission_heading, cache_heading):
     def esc(value):
         return html.escape(str(value or ""), quote=True)
@@ -184,6 +314,49 @@ def render_live_html(data, marker, heading, intro, mission_heading, cache_headin
         <h2>{esc(cache_heading)}</h2>
         <table class="facts">{cache_rows}</table>
 <!-- {marker}-live-end -->"""
+
+
+def render_status_live_html(data):
+    def esc(value):
+        return html.escape(str(value or ""), quote=True)
+
+    status = str(data.get("status") or "pending").lower()
+    platforms = data.get("platforms") if isinstance(data.get("platforms"), dict) else {}
+    labels = {
+        "operational": "Operational",
+        "maintenance": "Maintenance",
+        "problems": "Problems",
+        "outage": "Outage",
+        "stale": "Stale",
+        "pending": "Pending",
+        "unknown": "Unknown",
+    }
+    platform_rows = "\n".join(
+        f"<tr><th>{esc(label)}</th><td>{esc(labels.get(str(platforms.get(key, status)).lower(), 'Unknown'))}</td></tr>"
+        for key, label in [("pc", "PC"), ("playstation", "PlayStation"), ("xbox", "Xbox")]
+    )
+    error_row = ""
+    if data.get("error"):
+        error_row = f"<tr><th>Last error</th><td>{esc(data.get('error'))}</td></tr>"
+    lead = (
+        "Servers appear operational. Check today's loot before you play."
+        if status == "operational"
+        else "Servers do not look clean right now based on public Ubisoft status pages."
+    )
+    return f"""<!-- division-2-status-live-start -->
+        <h2>Current Server Status</h2>
+        <p>{esc(lead)}</p>
+        <table class="facts">
+          <tr><th>Status</th><td><span class="status-chip status-{esc(status)}">{esc(labels.get(status, 'Unknown'))}</span></td></tr>
+          <tr><th>Message</th><td>{esc(data.get('message') or status_message(status))}</td></tr>
+          <tr><th>Last checked</th><td>{esc(data.get('last_checked') or 'Waiting for first automated check')}</td></tr>
+          <tr><th>Source</th><td><a href="{esc(data.get('source_url') or DIVISION2_STATUS_SOURCE_URL)}">{esc(data.get('source_label') or DIVISION2_STATUS_SOURCE_LABEL)}</a></td></tr>
+          <tr><th>ETA</th><td>Official ETA not detected from the checked source.</td></tr>
+          {error_row}
+        </table>
+        <h2>Platform Status</h2>
+        <table class="facts">{platform_rows}</table>
+<!-- division-2-status-live-end -->"""
 
 
 def update_page_block(site_dir, relative_page, marker, html_block):
@@ -244,6 +417,15 @@ def update_pages(site_dir, data):
     return changed
 
 
+def update_status_page(site_dir, data):
+    return update_page_block(
+        site_dir,
+        Path("division-2/server-status/index.html"),
+        "division-2-status",
+        render_status_live_html(data),
+    )
+
+
 def update_sitemap(site_dir):
     sitemap = site_dir / "sitemap.xml"
     if not sitemap.exists():
@@ -253,6 +435,7 @@ def update_sitemap(site_dir):
     updated = content
     for url in [
         f"{BASE_URL}/division-2/loot/",
+        f"{BASE_URL}/division-2/server-status/",
         f"{BASE_URL}/division-2/escalation/",
         f"{BASE_URL}/division-2/prototype-gear/",
     ]:
@@ -285,6 +468,7 @@ def submit_indexnow(site_dir):
             "key": key,
             "urlList": [
                 f"{BASE_URL}/division-2/loot/",
+                f"{BASE_URL}/division-2/server-status/",
                 f"{BASE_URL}/division-2/escalation/",
                 f"{BASE_URL}/division-2/prototype-gear/",
                 f"{BASE_URL}/division-2/",
@@ -316,38 +500,57 @@ def main():
     args = parser.parse_args()
 
     input_path, site_dir = repo_paths()
-    if not PRIMARY_SOURCE_URL:
-        print("Primary Escalation source URL is not configured; skipping source fetch.")
-        if os.environ.get("GITHUB_ACTIONS") == "true":
-            return 2
-        return 0
-    existing = read_existing(input_path, site_dir)
-    data, error = fetch_primary(existing)
     checked_at = utc_now()
-    data["fetched_at"] = checked_at.isoformat()
-    data["last_checked"] = checked_at.strftime("%Y-%m-%d %H:%M UTC")
-    if not data.get("parsed_at"):
-        data["parsed_at"] = checked_at.isoformat()
-    if error:
-        data["error"] = error
-    else:
-        data.pop("error", None)
-    sanitize_public_data(data)
+    exit_code = 0
+    data = {}
 
-    if input_path:
-        write_json(input_path, data)
-        print(f"Wrote {input_path}")
-    write_json(site_dir / "assets" / "data" / "escalation-target-loot.json", data)
-    print(f"Wrote {site_dir / 'assets' / 'data' / 'escalation-target-loot.json'}")
-    updated_pages = update_pages(site_dir, data)
-    if updated_pages:
-        print(f"Updated {updated_pages} guide hub live blocks")
+    if not PRIMARY_SOURCE_URL:
+        print("Primary Escalation source URL is not configured; skipping Escalation source fetch.")
+    else:
+        existing = read_existing(input_path, site_dir)
+        data, error = fetch_primary(existing)
+        data["fetched_at"] = checked_at.isoformat()
+        data["last_checked"] = checked_at.strftime("%Y-%m-%d %H:%M UTC")
+        if not data.get("parsed_at"):
+            data["parsed_at"] = checked_at.isoformat()
+        if error:
+            data["error"] = error
+        else:
+            data.pop("error", None)
+        sanitize_public_data(data)
+
+        if input_path:
+            write_json(input_path, data)
+            print(f"Wrote {input_path}")
+        write_json(site_dir / "assets" / "data" / "escalation-target-loot.json", data)
+        print(f"Wrote {site_dir / 'assets' / 'data' / 'escalation-target-loot.json'}")
+        updated_pages = update_pages(site_dir, data)
+        if updated_pages:
+            print(f"Updated {updated_pages} guide hub live blocks")
+        if data.get("status") == "error":
+            exit_code = 1
+
+    status_existing = read_existing_status(site_dir)
+    status_data, status_error = fetch_division2_status(status_existing)
+    checked_at = utc_now()
+    status_data["fetched_at"] = checked_at.isoformat()
+    status_data["last_checked"] = checked_at.strftime("%Y-%m-%d %H:%M UTC")
+    if status_error:
+        status_data["error"] = status_error
+    else:
+        status_data.pop("error", None)
+    sanitize_status_data(status_data)
+    write_json(site_dir / "assets" / "data" / "division-2-status.json", status_data)
+    print(f"Wrote {site_dir / 'assets' / 'data' / 'division-2-status.json'}")
+    if update_status_page(site_dir, status_data):
+        print("Updated Division 2 server status live block")
+
     update_sitemap(site_dir)
     if args.submit_indexnow:
         submit_indexnow(site_dir)
-    if data.get("status") == "error":
-        return 1
-    return 0
+    if status_data.get("status") == "stale" and status_error:
+        exit_code = max(exit_code, 1)
+    return exit_code
 
 
 if __name__ == "__main__":

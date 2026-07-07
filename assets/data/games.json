@@ -12,6 +12,10 @@
         "label": "Loot"
       },
       {
+        "slug": "server-status",
+        "label": "Server Status"
+      },
+      {
         "slug": "missions",
         "label": "Missions"
       },

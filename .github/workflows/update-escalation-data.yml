@@ -29,7 +29,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          git add assets/data/escalation-target-loot.json division-2/loot/index.html division-2/escalation/index.html division-2/prototype-gear/index.html sitemap.xml sitemap.txt llms.txt feed.xml
+          git add assets/data/escalation-target-loot.json assets/data/division-2-status.json division-2/loot/index.html division-2/server-status/index.html division-2/escalation/index.html division-2/prototype-gear/index.html sitemap.xml sitemap.txt llms.txt feed.xml
           if git diff --cached --quiet; then
             echo "No guide data changes."
             gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds"
