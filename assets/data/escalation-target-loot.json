@@ -1,41 +1,41 @@
 {
-  "date": "2026-07-06",
+  "date": "2026-07-07",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
-      "mission": "The Art Museum",
-      "loot": "Ceska Vyroba S.R.O."
+      "mission": "Coney Island Ballpark",
+      "loot": "Petrov Defense Group"
     },
     {
-      "mission": "Manning National Zoo",
-      "loot": "Golan Gear Ltd"
+      "mission": "Coney Island Amusement Park",
+      "loot": "LMG"
     },
     {
-      "mission": "Camp White Oak",
-      "loot": "Hard Wired"
+      "mission": "ViewPoint Museum",
+      "loot": "Gear Mods"
     },
     {
-      "mission": "The Pentagon",
-      "loot": "Marksman Rifle"
+      "mission": "Capitol Building",
+      "loot": "Legatus S.p.A."
     },
     {
-      "mission": "DARPA Research Labs",
-      "loot": "Sokolov Concern"
+      "mission": "Potomac Event Center",
+      "loot": "Tipping Scales"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "MMRs"
+      "item": "Assault Rifles"
     },
     {
       "type": "Gear",
-      "item": "Backpacks"
+      "item": "Kneepads"
     }
   ],
-  "last_updated": "2026-07-06 10:01",
-  "last_checked": "2026-07-07 07:33 UTC",
-  "parsed_at": "2026-07-07T07:33:51.423093+00:00",
+  "last_updated": "2026-07-07 10:04",
+  "last_checked": "2026-07-07 08:57 UTC",
+  "parsed_at": "2026-07-07T08:57:24.817741+00:00",
   "status": "ok",
-  "fetched_at": "2026-07-07T07:33:51.423093+00:00"
+  "fetched_at": "2026-07-07T08:57:24.817741+00:00"
 }
