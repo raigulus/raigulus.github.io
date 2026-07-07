@@ -62,6 +62,8 @@ def parse_primary_source_text(text):
         "missions": [],
         "vendor_caches": [],
         "last_updated": "",
+        "last_checked": "",
+        "parsed_at": "",
         "status": "ok",
     }
     section = ""
@@ -138,6 +140,8 @@ def sanitize_public_data(data):
         "missions",
         "vendor_caches",
         "last_updated",
+        "last_checked",
+        "parsed_at",
         "status",
         "fetched_at",
         "error",
@@ -154,7 +158,7 @@ def render_live_html(data, marker, heading, intro, mission_heading, cache_headin
 
     missions = data.get("missions") or []
     caches = data.get("vendor_caches") or []
-    last_updated = data.get("last_updated") or data.get("fetched_at") or "Waiting for first automated check"
+    last_updated = data.get("last_checked") or data.get("last_updated") or data.get("fetched_at") or "Waiting for first automated check"
     date_label = data.get("date") or "Current target loot date"
     mission_rows = "\n".join(
         f"<tr><th>{esc(item.get('mission', 'Mission'))}</th><td>{esc(item.get('loot', 'Target loot pending'))}</td></tr>"
@@ -319,7 +323,11 @@ def main():
         return 0
     existing = read_existing(input_path, site_dir)
     data, error = fetch_primary(existing)
-    data["fetched_at"] = utc_now().isoformat()
+    checked_at = utc_now()
+    data["fetched_at"] = checked_at.isoformat()
+    data["last_checked"] = checked_at.strftime("%Y-%m-%d %H:%M UTC")
+    if not data.get("parsed_at"):
+        data["parsed_at"] = checked_at.isoformat()
     if error:
         data["error"] = error
     else:

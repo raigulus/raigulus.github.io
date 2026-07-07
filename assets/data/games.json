@@ -1,0 +1,40 @@
+[
+  {
+    "slug": "division-2",
+    "name": "The Division 2",
+    "categories": [
+      {
+        "slug": "",
+        "label": "Division 2"
+      },
+      {
+        "slug": "loot",
+        "label": "Loot"
+      },
+      {
+        "slug": "missions",
+        "label": "Missions"
+      },
+      {
+        "slug": "escalation",
+        "label": "Escalation"
+      },
+      {
+        "slug": "dark-zone-surge",
+        "label": "Dark Zone"
+      },
+      {
+        "slug": "manhunts",
+        "label": "Manhunts"
+      },
+      {
+        "slug": "bosses",
+        "label": "Bosses"
+      },
+      {
+        "slug": "pvp",
+        "label": "PvP"
+      }
+    ]
+  }
+]

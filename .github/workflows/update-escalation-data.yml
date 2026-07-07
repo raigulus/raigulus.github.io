@@ -1,17 +1,16 @@
-name: Update Escalation Target Loot
+name: Update Guide Data
 
 on:
   workflow_dispatch:
   schedule:
     - cron: "7 * * * *"
-    - cron: "37 * * * *"
 
 permissions:
   contents: write
   pages: write
 
 concurrency:
-  group: update-escalation-target-loot
+  group: update-guide-data
   cancel-in-progress: true
 
 jobs:
@@ -21,7 +20,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch public Escalation data
+      - name: Update guide data
         env:
           ESCALATION_PRIMARY_SOURCE_URL: ${{ secrets.ESCALATION_PRIMARY_SOURCE_URL }}
         run: python3 scripts/update-escalation-data.py --submit-indexnow
@@ -32,12 +31,13 @@ jobs:
         run: |
           git add assets/data/escalation-target-loot.json division-2/loot/index.html division-2/escalation/index.html division-2/prototype-gear/index.html sitemap.xml sitemap.txt llms.txt feed.xml
           if git diff --cached --quiet; then
-            echo "No Escalation data changes."
+            echo "No guide data changes."
             gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Refresh guide hub data"
+          suffix="$(date -u +%s%N | sha256sum | cut -c1-8)"
+          git commit -m "site update $suffix"
           git push
           gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds"
