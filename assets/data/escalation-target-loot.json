@@ -1,43 +1,43 @@
 {
-  "date": "2026-07-07",
+  "date": "2026-07-08",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Coney Island Ballpark",
-      "loot": "Petrov Defense Group"
+      "loot": "Tip of the Spear"
     },
     {
       "mission": "Coney Island Amusement Park",
-      "loot": "LMG"
+      "loot": "Zwiadowka Sp. z o.o"
     },
     {
       "mission": "ViewPoint Museum",
-      "loot": "Gear Mods"
+      "loot": "Uzina Getica"
     },
     {
       "mission": "Capitol Building",
-      "loot": "Legatus S.p.A."
+      "loot": "Badger Tuff"
     },
     {
       "mission": "Potomac Event Center",
-      "loot": "Tipping Scales"
+      "loot": "Backpack"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Assault Rifles"
+      "item": "Pistols"
     },
     {
       "type": "Gear",
-      "item": "Kneepads"
+      "item": "Holsters"
     }
   ],
-  "last_updated": "2026-07-07 10:04",
-  "last_checked": "2026-07-08 08:29 UTC",
-  "parsed_at": "2026-07-08T08:29:49.937459+00:00",
-  "status": "pending",
-  "fetched_at": "2026-07-08T08:29:49.937459+00:00",
+  "last_updated": "2026-07-08 11:44",
+  "last_checked": "2026-07-08 15:55 UTC",
+  "parsed_at": "2026-07-08T15:55:06.243423+00:00",
+  "status": "ok",
+  "fetched_at": "2026-07-08T15:55:06.243423+00:00",
   "next_expected_update": "Around 10:00 UTC / 13:00 TRT",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot."
+  "snapshot_note": "Current dated loot snapshot is available."
 }
