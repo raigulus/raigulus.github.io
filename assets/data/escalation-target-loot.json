@@ -36,6 +36,8 @@
   "last_updated": "2026-07-07 10:04",
   "last_checked": "2026-07-08 07:57 UTC",
   "parsed_at": "2026-07-08T07:57:02.631430+00:00",
-  "status": "ok",
-  "fetched_at": "2026-07-08T07:57:02.631430+00:00"
+  "status": "pending",
+  "fetched_at": "2026-07-08T07:57:02.631430+00:00",
+  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "next_expected_update": "Around 10:00 UTC / 13:00 TRT"
 }

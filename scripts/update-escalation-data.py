@@ -16,6 +16,8 @@ BASE_URL = "https://raigulus.github.io"
 HOST = "raigulus.github.io"
 USER_AGENT = "RaigulusGuideDataBot/1.0 (+https://raigulus.github.io/division-2/server-status/)"
 PRIMARY_SOURCE_URL = os.environ.get("ESCALATION_PRIMARY_SOURCE_URL", "").strip()
+DAILY_SNAPSHOT_RESET_HOUR_UTC = 10
+DAILY_SNAPSHOT_GRACE_MINUTES = 20
 DIVISION2_STATUS_SOURCE_LABEL = "Official Ubisoft service status"
 DIVISION2_STATUS_SOURCE_URL = "https://ubistatic-a.akamaihd.net/0115/tctd2/status.html"
 DIVISION2_STATUS_API_URL = (
@@ -122,6 +124,57 @@ def parse_primary_source_text(text):
     return data
 
 
+def parse_snapshot_date(value):
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(str(value).strip()).date()
+    except ValueError:
+        return None
+
+
+def expected_snapshot_update_time(checked_at):
+    return checked_at.replace(
+        hour=DAILY_SNAPSHOT_RESET_HOUR_UTC,
+        minute=DAILY_SNAPSHOT_GRACE_MINUTES,
+        second=0,
+        microsecond=0,
+    )
+
+
+def apply_target_loot_freshness(data, checked_at):
+    if data.get("status") == "error":
+        data.setdefault("snapshot_note", "Automated source check failed; showing the latest saved snapshot.")
+        return data
+
+    reset_time = expected_snapshot_update_time(checked_at)
+    data["next_expected_update"] = "Around 10:00 UTC / 13:00 TRT"
+    snapshot_date = parse_snapshot_date(data.get("date"))
+    today = checked_at.date()
+
+    if not snapshot_date:
+        data["status"] = "pending"
+        data["snapshot_note"] = "Waiting for the first dated daily loot snapshot."
+        return data
+
+    if snapshot_date < today:
+        if checked_at < reset_time:
+            data["status"] = "pending"
+            data["snapshot_note"] = (
+                "Daily reset window has not arrived yet; showing the latest available snapshot."
+            )
+        else:
+            data["status"] = "stale"
+            data["snapshot_note"] = (
+                "Checked after the expected daily reset window, but the source still returned an older snapshot."
+            )
+        return data
+
+    data["status"] = "ok"
+    data["snapshot_note"] = "Current dated loot snapshot is available."
+    return data
+
+
 def read_existing(input_path, site_dir):
     candidates = []
     if input_path:
@@ -169,6 +222,8 @@ def sanitize_public_data(data):
         "status",
         "fetched_at",
         "error",
+        "snapshot_note",
+        "next_expected_update",
     }
     sanitized = {key: value for key, value in data.items() if key in allowed_keys}
     data.clear()
@@ -298,6 +353,12 @@ def render_live_html(data, marker, heading, intro, mission_heading, cache_headin
         f"<tr><th>{esc(item.get('type', 'Cache'))}</th><td>{esc(item.get('item', 'Pending'))}</td></tr>"
         for item in caches
     ) or '<tr><th>Vendor Caches</th><td>Waiting for the first automated source check.</td></tr>'
+    source_updated_row = ""
+    if data.get("last_updated"):
+        source_updated_row = f"<tr><th>Source snapshot updated</th><td>{esc(data.get('last_updated'))}</td></tr>"
+    note_row = ""
+    if data.get("snapshot_note"):
+        note_row = f"<tr><th>Update note</th><td>{esc(data.get('snapshot_note'))}</td></tr>"
     return f"""<!-- {marker}-live-start -->
         <h2>{esc(heading)}</h2>
         <p>{esc(intro)}</p>
@@ -307,6 +368,9 @@ def render_live_html(data, marker, heading, intro, mission_heading, cache_headin
           <tr><th>Target loot cadence</th><td>Daily</td></tr>
           <tr><th>Status</th><td>{esc(data.get('status') or 'pending')}</td></tr>
           <tr><th>Last checked</th><td>{esc(last_updated)}</td></tr>
+          {source_updated_row}
+          <tr><th>Expected update window</th><td>{esc(data.get('next_expected_update') or 'Around 10:00 UTC / 13:00 TRT')}</td></tr>
+          {note_row}
           <tr><th>Snapshot</th><td>Automated daily loot check</td></tr>
         </table>
         <h2>{esc(mission_heading)}</h2>
@@ -517,6 +581,7 @@ def main():
             data["error"] = error
         else:
             data.pop("error", None)
+        apply_target_loot_freshness(data, checked_at)
         sanitize_public_data(data)
 
         if input_path:
