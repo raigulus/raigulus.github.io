@@ -4,40 +4,40 @@
   "missions": [
     {
       "mission": "Coney Island Ballpark",
-      "loot": "Tip of the Spear"
+      "loot": "Empress International"
     },
     {
       "mission": "Coney Island Amusement Park",
-      "loot": "Zwiadowka Sp. z o.o"
+      "loot": "Concentrated Company"
     },
     {
       "mission": "ViewPoint Museum",
-      "loot": "Uzina Getica"
+      "loot": "Unit Alloys"
     },
     {
       "mission": "Capitol Building",
-      "loot": "Badger Tuff"
+      "loot": "Wyvern Wear"
     },
     {
       "mission": "Potomac Event Center",
-      "loot": "Backpack"
+      "loot": "Providence Defense"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Pistols"
+      "item": "SMGs"
     },
     {
       "type": "Gear",
-      "item": "Holsters"
+      "item": "Masks"
     }
   ],
-  "last_updated": "2026-07-08 11:44",
-  "last_checked": "2026-07-09 00:18 UTC",
-  "parsed_at": "2026-07-09T00:18:15.902700+00:00",
+  "last_updated": "2026-07-09 10:24",
+  "last_checked": "2026-07-09 08:35 UTC",
+  "parsed_at": "2026-07-09T08:35:34.206761+00:00",
   "status": "pending",
-  "fetched_at": "2026-07-09T00:18:15.902700+00:00",
+  "fetched_at": "2026-07-09T08:35:34.206761+00:00",
   "next_expected_update": "Around 10:00 UTC / 13:00 TRT",
   "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot."
 }
