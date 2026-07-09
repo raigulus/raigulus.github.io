@@ -34,10 +34,10 @@
     }
   ],
   "last_updated": "2026-07-09 10:24",
-  "last_checked": "2026-07-09 20:53 UTC",
-  "parsed_at": "2026-07-09T20:53:36.605661+00:00",
+  "last_checked": "2026-07-09 22:39 UTC",
+  "parsed_at": "2026-07-09T22:39:53.904131+00:00",
   "status": "stale",
-  "fetched_at": "2026-07-09T20:53:36.605661+00:00",
+  "fetched_at": "2026-07-09T22:39:53.904131+00:00",
   "next_expected_update": "Around 10:00 UTC / 13:00 TRT",
   "snapshot_note": "Checked after the expected daily reset window, but the source still returned an older snapshot."
 }
