@@ -1,0 +1,13 @@
+{
+  "status": "pending",
+  "platforms": {
+    "pc": "pending",
+    "playstation": "pending",
+    "xbox": "pending"
+  },
+  "message": "Waiting for the first automated official status check.",
+  "last_checked": "Waiting for first automated check",
+  "fetched_at": "",
+  "source_label": "Official Ubisoft service status",
+  "source_url": "https://ubistatic-a.akamaihd.net/0115/tctd2/status.html"
+}
