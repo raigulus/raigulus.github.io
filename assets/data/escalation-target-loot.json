@@ -1,43 +1,43 @@
 {
-  "date": "2026-07-08",
+  "date": "2026-07-10",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Coney Island Ballpark",
-      "loot": "Empress International"
+      "loot": "Hunters Fury"
     },
     {
       "mission": "Coney Island Amusement Park",
-      "loot": "Concentrated Company"
+      "loot": "Backpack"
     },
     {
       "mission": "ViewPoint Museum",
-      "loot": "Unit Alloys"
+      "loot": "Uzina Getica"
     },
     {
       "mission": "Capitol Building",
-      "loot": "Wyvern Wear"
+      "loot": "Legatus S.p.A."
     },
     {
       "mission": "Potomac Event Center",
-      "loot": "Providence Defense"
+      "loot": "Unit Alloys"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "SMGs"
+      "item": "Assault Rifles"
     },
     {
       "type": "Gear",
-      "item": "Masks"
+      "item": "Kneepads"
     }
   ],
-  "last_updated": "2026-07-09 10:24",
-  "last_checked": "2026-07-10 05:01 UTC",
-  "parsed_at": "2026-07-10T05:01:11.565995+00:00",
-  "status": "pending",
-  "fetched_at": "2026-07-10T05:01:11.565995+00:00",
+  "last_updated": "2026-07-10 10:05",
+  "last_checked": "2026-07-10 08:30 UTC",
+  "parsed_at": "2026-07-10T08:30:16.601575+00:00",
+  "status": "ok",
+  "fetched_at": "2026-07-10T08:30:16.601575+00:00",
   "next_expected_update": "Around 10:00 UTC / 13:00 TRT",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot."
+  "snapshot_note": "Current dated loot snapshot is available."
 }
