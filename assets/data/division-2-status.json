@@ -6,8 +6,8 @@
     "xbox": "operational"
   },
   "message": "Servers appear operational based on the checked official source.",
-  "last_checked": "2026-07-11 21:00 UTC",
-  "fetched_at": "2026-07-11T21:00:47.687409+00:00",
   "source_label": "Official Ubisoft service status",
-  "source_url": "https://ubistatic-a.akamaihd.net/0115/tctd2/status.html"
+  "source_url": "https://ubistatic-a.akamaihd.net/0115/tctd2/status.html",
+  "fetched_at": "2026-07-11T21:58:42.444238+00:00",
+  "last_checked": "2026-07-11 21:58 UTC"
 }
