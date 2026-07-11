@@ -1,26 +1,26 @@
 {
-  "date": "2026-07-10",
+  "date": "2026-07-11",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Coney Island Ballpark",
-      "loot": "Hunters Fury"
+      "loot": "Royal Works"
     },
     {
       "mission": "Coney Island Amusement Park",
-      "loot": "Backpack"
+      "loot": "Skill Mods"
     },
     {
       "mission": "ViewPoint Museum",
-      "loot": "Uzina Getica"
+      "loot": "Aces & Eights"
     },
     {
       "mission": "Capitol Building",
-      "loot": "Legatus S.p.A."
+      "loot": "Overlord Armaments"
     },
     {
       "mission": "Potomac Event Center",
-      "loot": "Unit Alloys"
+      "loot": "Belstone Armory"
     }
   ],
   "vendor_caches": [
@@ -33,11 +33,11 @@
       "item": "Kneepads"
     }
   ],
-  "last_updated": "2026-07-10 18:10",
-  "last_checked": "2026-07-11 06:22 UTC",
-  "parsed_at": "2026-07-11T06:22:26.880412+00:00",
-  "status": "pending",
-  "fetched_at": "2026-07-11T06:22:26.880412+00:00",
+  "last_updated": "2026-07-11 10:05",
+  "last_checked": "2026-07-11 08:55 UTC",
+  "parsed_at": "2026-07-11T08:55:05.534616+00:00",
+  "status": "ok",
+  "fetched_at": "2026-07-11T08:55:05.534616+00:00",
   "next_expected_update": "Around 10:00 UTC / 13:00 TRT",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot."
+  "snapshot_note": "Current dated loot snapshot is available."
 }
