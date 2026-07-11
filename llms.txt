@@ -10,6 +10,7 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [About](https://raigulus.github.io/about/): Creator context, guide style, and trust signals.
 - [The Division 2 Hub](https://raigulus.github.io/division-2/): All optimized Division 2 guides.
 - [Mission Walkthroughs](https://raigulus.github.io/division-2/missions/): Mission, invaded, heroic, and legendary walkthroughs.
+- [The Division 2 Builds and Build Tests](https://raigulus.github.io/division-2/builds/): Video-backed Bluescreen, Tipping Scales, Whiplash, Regulus, Rage Harvest, Toxic DZ, and Tier 10 tests.
 - [Loot Today and Targeted Loot Guide](https://raigulus.github.io/division-2/loot/): Division 2 loot today, targeted loot, loot map context, and farming videos.
 - [Server Status and Maintenance Tracker](https://raigulus.github.io/division-2/server-status/): Unofficial Division 2 server status, maintenance, Delta-03, official source links, and Raigulus guides.
 - [Escalation Loot Today and Tier 10 Guides](https://raigulus.github.io/division-2/escalation/): Current Escalation loot snapshot, vendor caches, and Raigulus Escalation videos.
@@ -29,6 +30,7 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [The Division 2 Manhunts & Boss Guides](https://www.youtube.com/playlist?list=PLG6L-oRdfdL9h6GIqo_I2F91J-gDIVujy)
 - [The Division 2 Quick Guides & Shorts](https://www.youtube.com/playlist?list=PLG6L-oRdfdL_zN3Jf2DqESGeW0hAaiTny)
 - [The Division 2 Speedruns, Builds & Experiments](https://www.youtube.com/playlist?list=PLG6L-oRdfdL-FWVfW-U3H6yARkbvk31B2)
+- [The Division 2 Side Activities & Open World Runs](https://www.youtube.com/playlist?list=PLeivDSwrtKVI)
 - [The Division 2 PvP & Conflict Archive](https://www.youtube.com/playlist?list=PLG6L-oRdfdL-qrkEEdqj8MeEtXSTgpdK2)
 
 ## Top Guides
