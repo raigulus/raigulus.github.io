@@ -523,23 +523,28 @@ def find_indexnow_key(site_dir):
     return ""
 
 
-def submit_indexnow(site_dir):
+def submit_indexnow(site_dir, extra_urls=None):
     key = find_indexnow_key(site_dir)
     if not key:
         print("IndexNow skipped: key file not found")
         return
+    urls = [
+        f"{BASE_URL}/division-2/loot/",
+        f"{BASE_URL}/division-2/server-status/",
+        f"{BASE_URL}/division-2/escalation/",
+        f"{BASE_URL}/division-2/prototype-gear/",
+        f"{BASE_URL}/division-2/",
+        f"{BASE_URL}/sitemap.xml",
+    ]
+    for url in extra_urls or []:
+        url = str(url).strip()
+        if url.startswith(f"{BASE_URL}/"):
+            urls.append(url)
     payload = json.dumps(
         {
             "host": HOST,
             "key": key,
-            "urlList": [
-                f"{BASE_URL}/division-2/loot/",
-                f"{BASE_URL}/division-2/server-status/",
-                f"{BASE_URL}/division-2/escalation/",
-                f"{BASE_URL}/division-2/prototype-gear/",
-                f"{BASE_URL}/division-2/",
-                f"{BASE_URL}/sitemap.xml",
-            ],
+            "urlList": list(dict.fromkeys(urls)),
         }
     ).encode("utf-8")
     request = urllib.request.Request(
@@ -563,6 +568,12 @@ def write_json(path, data):
 def main():
     parser = argparse.ArgumentParser(description="Fetch public The Division 2 Escalation source data for Raigulus.")
     parser.add_argument("--submit-indexnow", action="store_true", help="Submit updated Escalation URLs to IndexNow.")
+    parser.add_argument(
+        "--indexnow-url",
+        action="append",
+        default=[],
+        help="Additional same-host URL to submit alongside the standard guide hubs.",
+    )
     args = parser.parse_args()
 
     input_path, site_dir = repo_paths()
@@ -614,7 +625,7 @@ def main():
 
     update_sitemap(site_dir)
     if args.submit_indexnow:
-        submit_indexnow(site_dir)
+        submit_indexnow(site_dir, args.indexnow_url)
     if status_data.get("status") == "stale" and status_error:
         exit_code = max(exit_code, 1)
     return exit_code
