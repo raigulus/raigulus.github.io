@@ -360,6 +360,7 @@ def render_live_html(data, marker, heading, intro, mission_heading, cache_headin
     if data.get("snapshot_note"):
         note_row = f"<tr><th>Update note</th><td>{esc(data.get('snapshot_note'))}</td></tr>"
     return f"""<!-- {marker}-live-start -->
+        <section class="live-loot-hub" data-live-loot-hub data-live-loot-checked="{esc(last_updated)}">
         <h2>{esc(heading)}</h2>
         <p>{esc(intro)}</p>
         <table class="facts">
@@ -377,6 +378,7 @@ def render_live_html(data, marker, heading, intro, mission_heading, cache_headin
         <table class="facts">{mission_rows}</table>
         <h2>{esc(cache_heading)}</h2>
         <table class="facts">{cache_rows}</table>
+        </section>
 <!-- {marker}-live-end -->"""
 
 
