@@ -34,10 +34,10 @@
     }
   ],
   "last_updated": "2026-07-12 10:01",
-  "last_checked": "2026-07-12 22:59 UTC",
-  "parsed_at": "2026-07-12T22:59:46.701417+00:00",
-  "status": "ok",
-  "fetched_at": "2026-07-12T22:59:46.701417+00:00",
+  "last_checked": "2026-07-13 00:03 UTC",
+  "parsed_at": "2026-07-13T00:03:24.321560+00:00",
+  "status": "pending",
+  "fetched_at": "2026-07-13T00:03:24.321560+00:00",
   "next_expected_update": "Around 10:00 UTC / 13:00 TRT",
-  "snapshot_note": "Current dated loot snapshot is available."
+  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot."
 }
