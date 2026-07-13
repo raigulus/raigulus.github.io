@@ -1,43 +1,43 @@
 {
-  "date": "2026-07-12",
+  "date": "2026-07-13",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Coney Island Ballpark",
-      "loot": "Legatus S.p.A."
+      "loot": "Marksman Rifle"
     },
     {
       "mission": "Coney Island Amusement Park",
-      "loot": "Tipping Scales"
+      "loot": "Sokolov Concern"
     },
     {
       "mission": "ViewPoint Museum",
-      "loot": "5.11 Tactical"
+      "loot": "Zwiadowka Sp. z o.o"
     },
     {
       "mission": "Capitol Building",
-      "loot": "Badger Tuff"
+      "loot": "Unit Alloys"
     },
     {
       "mission": "Potomac Event Center",
-      "loot": "Sokolov Concern"
+      "loot": "Breaking Point"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Shotguns"
+      "item": "Rifles"
     },
     {
       "type": "Gear",
-      "item": "Kneepads"
+      "item": "Gloves"
     }
   ],
-  "last_updated": "2026-07-12 10:01",
-  "last_checked": "2026-07-13 07:31 UTC",
-  "parsed_at": "2026-07-13T07:31:19.942368+00:00",
-  "status": "stale",
-  "fetched_at": "2026-07-13T07:31:19.942368+00:00",
-  "snapshot_note": "Checked after the expected daily reset window, but the source still returned an older snapshot.",
-  "next_expected_update": "Around 10:00 UTC / 13:00 TRT"
+  "last_updated": "2026-07-13 10:01",
+  "last_checked": "2026-07-13 10:43 UTC",
+  "parsed_at": "2026-07-13T10:43:18.338377+00:00",
+  "status": "ok",
+  "fetched_at": "2026-07-13T10:43:18.338377+00:00",
+  "next_expected_update": "Around 10:00 UTC / 13:00 TRT",
+  "snapshot_note": "Current dated loot snapshot is available."
 }
