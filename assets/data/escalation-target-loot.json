@@ -34,10 +34,10 @@
     }
   ],
   "last_updated": "2026-07-13 10:01",
-  "last_checked": "2026-07-13 17:20 UTC",
-  "parsed_at": "2026-07-13T17:20:23.486679+00:00",
+  "last_checked": "2026-07-13 19:41 UTC",
+  "parsed_at": "2026-07-13T19:41:15.680124+00:00",
   "status": "ok",
-  "fetched_at": "2026-07-13T17:20:23.486679+00:00",
+  "fetched_at": "2026-07-13T19:41:15.680124+00:00",
   "next_expected_update": "Around 10:00 UTC / 13:00 TRT",
   "snapshot_note": "Current dated loot snapshot is available."
 }
