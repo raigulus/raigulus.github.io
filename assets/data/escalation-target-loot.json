@@ -1,43 +1,43 @@
 {
-  "date": "2026-07-13",
+  "date": "2026-07-14",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
-      "mission": "Coney Island Ballpark",
-      "loot": "Marksman Rifle"
-    },
-    {
-      "mission": "Coney Island Amusement Park",
-      "loot": "Sokolov Concern"
-    },
-    {
-      "mission": "ViewPoint Museum",
-      "loot": "Zwiadowka Sp. z o.o"
+      "mission": "The Art Museum",
+      "loot": "Fenris Group AB"
     },
     {
       "mission": "Capitol Building",
-      "loot": "Unit Alloys"
+      "loot": "Gloves"
     },
     {
-      "mission": "Potomac Event Center",
-      "loot": "Breaking Point"
+      "mission": "Jefferson Plaza",
+      "loot": "Wyvern Wear"
+    },
+    {
+      "mission": "Lincoln Memorial",
+      "loot": "Rigger"
+    },
+    {
+      "mission": "Federal Emergency Bunker",
+      "loot": "Lengmo"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Rifles"
+      "item": "Shotguns"
     },
     {
       "type": "Gear",
-      "item": "Gloves"
+      "item": "Holsters"
     }
   ],
-  "last_updated": "2026-07-13 10:01",
-  "last_checked": "2026-07-14 06:20 UTC",
-  "parsed_at": "2026-07-14T06:20:24.053431+00:00",
-  "status": "pending",
-  "fetched_at": "2026-07-14T06:20:24.053431+00:00",
+  "last_updated": "2026-07-14 10:02",
+  "last_checked": "2026-07-14 09:12 UTC",
+  "parsed_at": "2026-07-14T09:12:13.763930+00:00",
+  "status": "ok",
+  "fetched_at": "2026-07-14T09:12:13.763930+00:00",
   "next_expected_update": "Around 10:00 UTC / 13:00 TRT",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot."
+  "snapshot_note": "Current dated loot snapshot is available."
 }
