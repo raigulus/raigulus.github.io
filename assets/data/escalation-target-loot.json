@@ -34,10 +34,10 @@
     }
   ],
   "last_updated": "2026-07-13 10:01",
-  "last_checked": "2026-07-14 00:01 UTC",
-  "parsed_at": "2026-07-14T00:01:38.851732+00:00",
+  "last_checked": "2026-07-14 03:21 UTC",
+  "parsed_at": "2026-07-14T03:21:49.602166+00:00",
   "status": "pending",
-  "fetched_at": "2026-07-14T00:01:38.851732+00:00",
+  "fetched_at": "2026-07-14T03:21:49.602166+00:00",
   "next_expected_update": "Around 10:00 UTC / 13:00 TRT",
   "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot."
 }
