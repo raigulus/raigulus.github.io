@@ -6,7 +6,7 @@
     <atom:link href="https://raigulus.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>The latest Raigulus Division 2 walkthroughs, PvP clips, build tests, speedrun attempts, manhunts, boss guides, and no commentary gameplay.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>The Division 2 Builds and Build Tests</title>
       <link>https://raigulus.github.io/division-2/builds/</link>
@@ -46,6 +46,14 @@
       <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 Prototype Gear Cache, Escalation vendor, and gear cache planning notes.</description>
       <category>prototype gear</category>
+    </item>
+    <item>
+      <title>The Division 2 Conflict PvP | Liberty Perfection Build - 4v4 Skirmish</title>
+      <link>https://raigulus.github.io/division-2/videos/the-division-2-conflict-pvp-liberty-perfection-build-4v4-skirmish/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-conflict-pvp-liberty-perfection-build-4v4-skirmish/</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+      <description>The Division 2 Conflict PvP Skirmish with a Perfection Liberty CHC/CHD build, finishing top damage in an MVP vs AAO 4v4 match.</description>
+      <category>pvp/archive clip</category>
     </item>
     <item>
       <title>The Division 2 AAO vs SYS Conflict PvP | 4v3 Match [2021 Archive]</title>
