@@ -16,7 +16,7 @@ BASE_URL = "https://raigulus.github.io"
 HOST = "raigulus.github.io"
 USER_AGENT = "RaigulusGuideDataBot/1.0 (+https://raigulus.github.io/division-2/server-status/)"
 PRIMARY_SOURCE_URL = os.environ.get("ESCALATION_PRIMARY_SOURCE_URL", "").strip()
-DAILY_SNAPSHOT_RESET_HOUR_UTC = 10
+DAILY_SNAPSHOT_RESET_HOUR_UTC = 8
 DAILY_SNAPSHOT_GRACE_MINUTES = 20
 DIVISION2_STATUS_SOURCE_LABEL = "Official Ubisoft service status"
 DIVISION2_STATUS_SOURCE_URL = "https://ubistatic-a.akamaihd.net/0115/tctd2/status.html"
@@ -148,7 +148,7 @@ def apply_target_loot_freshness(data, checked_at):
         return data
 
     reset_time = expected_snapshot_update_time(checked_at)
-    data["next_expected_update"] = "Around 10:00 UTC / 13:00 TRT"
+    data["next_expected_update"] = "Around 08:00 UTC"
     snapshot_date = parse_snapshot_date(data.get("date"))
     today = checked_at.date()
 
@@ -370,7 +370,7 @@ def render_live_html(data, marker, heading, intro, mission_heading, cache_headin
           <tr><th>Status</th><td>{esc(data.get('status') or 'pending')}</td></tr>
           <tr><th>Last checked</th><td>{esc(last_updated)}</td></tr>
           {source_updated_row}
-          <tr><th>Expected update window</th><td>{esc(data.get('next_expected_update') or 'Around 10:00 UTC / 13:00 TRT')}</td></tr>
+          <tr><th>Expected update window</th><td>{esc(data.get('next_expected_update') or 'Around 08:00 UTC')}</td></tr>
           {note_row}
           <tr><th>Snapshot</th><td>Automated daily loot check</td></tr>
         </table>
