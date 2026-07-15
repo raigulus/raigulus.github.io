@@ -1,43 +1,43 @@
 {
-  "date": "2026-07-14",
+  "date": "2026-07-15",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Art Museum",
-      "loot": "Fenris Group AB"
+      "loot": "Gila Guard"
     },
     {
       "mission": "Capitol Building",
-      "loot": "Gloves"
+      "loot": "Tipping Scales"
     },
     {
       "mission": "Jefferson Plaza",
-      "loot": "Wyvern Wear"
+      "loot": "Gear Mods"
     },
     {
       "mission": "Lincoln Memorial",
-      "loot": "Rigger"
+      "loot": "Mask"
     },
     {
       "mission": "Federal Emergency Bunker",
-      "loot": "Lengmo"
+      "loot": "Hard Wired"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Shotguns"
+      "item": "LMGs"
     },
     {
       "type": "Gear",
-      "item": "Holsters"
+      "item": "Chest Pieces"
     }
   ],
-  "last_updated": "2026-07-14 10:02",
-  "last_checked": "2026-07-15 06:23 UTC",
-  "parsed_at": "2026-07-15T06:23:56.647110+00:00",
-  "status": "stale",
-  "fetched_at": "2026-07-15T06:23:56.647110+00:00",
+  "last_updated": "2026-07-15 10:07",
+  "last_checked": "2026-07-15 08:59 UTC",
+  "parsed_at": "2026-07-15T08:59:01.174883+00:00",
+  "status": "ok",
+  "fetched_at": "2026-07-15T08:59:01.174883+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Checked after the expected daily reset window, but the source still returned an older snapshot."
+  "snapshot_note": "Current dated loot snapshot is available."
 }
