@@ -24,6 +24,7 @@ jobs:
       - name: Update guide data
         env:
           ESCALATION_PRIMARY_SOURCE_URL: ${{ secrets.ESCALATION_PRIMARY_SOURCE_URL }}
+          DIVISION2_VENDOR_SNAPSHOT_URL: ${{ secrets.DIVISION2_VENDOR_SNAPSHOT_URL }}
         run: python3 scripts/update-escalation-data.py --submit-indexnow
 
       - name: Commit changes

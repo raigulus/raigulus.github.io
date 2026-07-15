@@ -16,8 +16,10 @@ BASE_URL = "https://raigulus.github.io"
 HOST = "raigulus.github.io"
 USER_AGENT = "RaigulusGuideDataBot/1.0 (+https://raigulus.github.io/division-2/server-status/)"
 PRIMARY_SOURCE_URL = os.environ.get("ESCALATION_PRIMARY_SOURCE_URL", "").strip()
+SECONDARY_VENDOR_SNAPSHOT_URL = os.environ.get("DIVISION2_VENDOR_SNAPSHOT_URL", "").strip()
 DAILY_SNAPSHOT_RESET_HOUR_UTC = 8
 DAILY_SNAPSHOT_GRACE_MINUTES = 20
+VENDOR_REFRESH_INTERVAL_HOURS = 12
 DIVISION2_STATUS_SOURCE_LABEL = "Official Ubisoft service status"
 DIVISION2_STATUS_SOURCE_URL = "https://ubistatic-a.akamaihd.net/0115/tctd2/status.html"
 DIVISION2_STATUS_API_URL = (
@@ -124,6 +126,97 @@ def parse_primary_source_text(text):
     return data
 
 
+def clean_vendor_text(value, limit):
+    value = re.sub(r"\s+", " ", str(value or "")).strip()
+    return value[:limit]
+
+
+def parse_vendor_snapshot_json(text, checked_at):
+    """Accept a small, dated, permission-based vendor highlight feed only.
+
+    This deliberately ignores source URLs, raw descriptions, and full inventories.
+    """
+    payload = json.loads(text)
+    if not isinstance(payload, dict):
+        raise ValueError("Vendor snapshot must be a JSON object")
+
+    source_date = parse_snapshot_date(payload.get("date") or payload.get("week_of"))
+    if not source_date:
+        raise ValueError("Vendor snapshot is missing a valid date")
+    if abs((checked_at.date() - source_date).days) > 9:
+        raise ValueError("Vendor snapshot date is outside the current weekly window")
+
+    entries = payload.get("highlights") or payload.get("vendors") or []
+    if not isinstance(entries, list):
+        raise ValueError("Vendor highlights must be a list")
+
+    highlights = []
+    for entry in entries[:8]:
+        if not isinstance(entry, dict):
+            continue
+        vendor = clean_vendor_text(entry.get("vendor") or entry.get("location"), 72)
+        item = clean_vendor_text(entry.get("item") or entry.get("name"), 112)
+        note = clean_vendor_text(entry.get("note") or entry.get("kind"), 112)
+        if vendor and item:
+            row = {"vendor": vendor, "item": item}
+            if note:
+                row["note"] = note
+            highlights.append(row)
+    if not highlights:
+        raise ValueError("Vendor snapshot did not contain usable highlights")
+
+    return {
+        "vendor_highlights": highlights,
+        "vendor_highlights_status": "ok",
+        "vendor_highlights_checked": checked_at.strftime("%Y-%m-%d %H:%M UTC"),
+        "vendor_highlights_date": source_date.isoformat(),
+        "vendor_highlights_note": "Current dated vendor highlights are available.",
+    }
+
+
+def parse_vendor_source_page(text, source_url, checked_at):
+    """Derive a small named-item watch from a dated public vendor page.
+
+    The generated output intentionally contains neither the source URL nor a
+    full inventory. It is limited to a few named-item highlights.
+    """
+    paths = re.findall(r"loadData\(['\"]([^'\"]*(?:gear|weapons)\.json\?\d{8})['\"]\)", text)
+    if not paths:
+        raise ValueError("Vendor page did not expose dated gear and weapon data")
+
+    date_match = re.search(r"\.json\?(\d{8})", paths[0])
+    if not date_match:
+        raise ValueError("Vendor page did not expose a snapshot date")
+    source_date = datetime.strptime(date_match.group(1), "%Y%m%d").date()
+    if abs((checked_at.date() - source_date).days) > 9:
+        raise ValueError("Vendor page snapshot is outside the current weekly window")
+
+    highlights = []
+    for path in paths:
+        payload = json.loads(fetch_text(urllib.parse.urljoin(source_url, path)))
+        if not isinstance(payload, list):
+            continue
+        kind = "Named gear" if "gear.json" in path else "Named weapon"
+        for entry in payload:
+            if not isinstance(entry, dict) or entry.get("rarity") != "header-named":
+                continue
+            vendor = clean_vendor_text(entry.get("vendor"), 72)
+            item = clean_vendor_text(entry.get("name"), 112)
+            if vendor and item:
+                highlights.append({"vendor": vendor, "item": item, "note": kind})
+
+    if not highlights:
+        raise ValueError("Vendor page did not contain named-item highlights")
+
+    return {
+        "vendor_highlights": highlights[:8],
+        "vendor_highlights_status": "ok",
+        "vendor_highlights_checked": checked_at.strftime("%Y-%m-%d %H:%M UTC"),
+        "vendor_highlights_date": source_date.isoformat(),
+        "vendor_highlights_note": "Current dated vendor highlights are available.",
+    }
+
+
 def parse_snapshot_date(value):
     if not value:
         return None
@@ -210,12 +303,52 @@ def fetch_primary(existing):
         return data, f"{type(error).__name__}: {error}"
 
 
+def fetch_vendor_highlights(existing, checked_at):
+    if not SECONDARY_VENDOR_SNAPSHOT_URL:
+        return {}, None
+    existing_highlights = existing.get("vendor_highlights") if isinstance(existing, dict) else []
+    previous_check = str(existing.get("vendor_highlights_checked") or "") if isinstance(existing, dict) else ""
+    if isinstance(existing_highlights, list) and existing_highlights and previous_check:
+        try:
+            checked_before = datetime.strptime(previous_check, "%Y-%m-%d %H:%M UTC").replace(tzinfo=timezone.utc)
+            if (checked_at - checked_before).total_seconds() < VENDOR_REFRESH_INTERVAL_HOURS * 3600:
+                return {}, None
+        except ValueError:
+            pass
+    try:
+        text = fetch_text(SECONDARY_VENDOR_SNAPSHOT_URL)
+        if text.lstrip().startswith(("{", "[")):
+            return parse_vendor_snapshot_json(text, checked_at), None
+        return parse_vendor_source_page(text, SECONDARY_VENDOR_SNAPSHOT_URL, checked_at), None
+    except Exception as error:
+        if isinstance(existing_highlights, list) and existing_highlights:
+            return {
+                "vendor_highlights": existing_highlights[:8],
+                "vendor_highlights_status": "stale",
+                "vendor_highlights_checked": checked_at.strftime("%Y-%m-%d %H:%M UTC"),
+                "vendor_highlights_date": str(existing.get("vendor_highlights_date") or ""),
+                "vendor_highlights_note": "Latest vendor highlight check failed; showing the last dated snapshot.",
+            }, f"{type(error).__name__}: {error}"
+        return {
+            "vendor_highlights": [],
+            "vendor_highlights_status": "pending",
+            "vendor_highlights_checked": checked_at.strftime("%Y-%m-%d %H:%M UTC"),
+            "vendor_highlights_date": "",
+            "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot.",
+        }, f"{type(error).__name__}: {error}"
+
+
 def sanitize_public_data(data):
     allowed_keys = {
         "date",
         "rotation",
         "missions",
         "vendor_caches",
+        "vendor_highlights",
+        "vendor_highlights_status",
+        "vendor_highlights_checked",
+        "vendor_highlights_date",
+        "vendor_highlights_note",
         "last_updated",
         "last_checked",
         "parsed_at",
@@ -343,6 +476,7 @@ def render_live_html(data, marker, heading, intro, mission_heading, cache_headin
 
     missions = data.get("missions") or []
     caches = data.get("vendor_caches") or []
+    highlights = data.get("vendor_highlights") or []
     last_updated = data.get("last_checked") or data.get("last_updated") or data.get("fetched_at") or "Waiting for first automated check"
     date_label = data.get("date") or "Current target loot date"
     mission_rows = "\n".join(
@@ -353,6 +487,13 @@ def render_live_html(data, marker, heading, intro, mission_heading, cache_headin
         f"<tr><th>{esc(item.get('type', 'Cache'))}</th><td>{esc(item.get('item', 'Pending'))}</td></tr>"
         for item in caches
     ) or '<tr><th>Vendor Caches</th><td>Waiting for the first automated source check.</td></tr>'
+    highlight_rows = "\n".join(
+        f"<tr><th>{esc(item.get('vendor', 'Vendor'))}</th><td>{esc(item.get('item', 'Pending'))}{(' - ' + esc(item.get('note'))) if item.get('note') else ''}</td></tr>"
+        for item in highlights
+    )
+    highlights_block = ""
+    if highlight_rows:
+        highlights_block = f'''\n        <h2>Vendor Watch</h2>\n        <p>Short, dated vendor highlights. Full vendor inventories are not reproduced here.</p>\n        <table class="facts">{highlight_rows}</table>'''
     source_updated_row = ""
     if data.get("last_updated"):
         source_updated_row = f"<tr><th>Source snapshot updated</th><td>{esc(data.get('last_updated'))}</td></tr>"
@@ -378,6 +519,7 @@ def render_live_html(data, marker, heading, intro, mission_heading, cache_headin
         <table class="facts">{mission_rows}</table>
         <h2>{esc(cache_heading)}</h2>
         <table class="facts">{cache_rows}</table>
+        {highlights_block}
         </section>
 <!-- {marker}-live-end -->"""
 
@@ -460,7 +602,7 @@ def update_pages(site_dir, data):
                 "Targeted Loot Today",
                 "Daily loot snapshot for players checking Division 2 loot today, targeted loot, loot map context, and farming routes.",
                 "Current Targeted Loot Snapshot",
-                "Current Cache Snapshot",
+                "Current Escalation Requisition Vendor Caches",
             ),
         ),
         (
@@ -595,6 +737,11 @@ def main():
         else:
             data.pop("error", None)
         apply_target_loot_freshness(data, checked_at)
+        vendor_data, vendor_error = fetch_vendor_highlights(existing, checked_at)
+        if vendor_data:
+            data.update(vendor_data)
+        if vendor_error:
+            data["vendor_highlights_error"] = vendor_error
         sanitize_public_data(data)
 
         if input_path:
