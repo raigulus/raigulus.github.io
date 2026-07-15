@@ -6,12 +6,12 @@
     <atom:link href="https://raigulus.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>The latest Raigulus Division 2 walkthroughs, PvP clips, build tests, speedrun attempts, manhunts, boss guides, and no commentary gameplay.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>The Division 2 Builds and Build Tests</title>
       <link>https://raigulus.github.io/division-2/builds/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/builds/</guid>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
       <description>Video-backed Division 2 build tests for Bluescreen, Tipping Scales, Whiplash, Regulus, Rage Harvest, Toxic DZ, and Tier 10.</description>
       <category>build tests</category>
     </item>
@@ -19,7 +19,7 @@
       <title>Division 2 Loot Today, Targeted Loot &amp; Farming Guides</title>
       <link>https://raigulus.github.io/division-2/loot/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/loot/</guid>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 loot today, targeted loot, loot map context, farming routes, and Raigulus videos.</description>
       <category>loot</category>
     </item>
@@ -27,7 +27,7 @@
       <title>Division 2 Server Status, Maintenance &amp; Delta-03</title>
       <link>https://raigulus.github.io/division-2/server-status/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/server-status/</guid>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
       <description>Unofficial Division 2 server status tracker for maintenance, outage, Delta-03, official source links, and Raigulus guides.</description>
       <category>server status</category>
     </item>
@@ -35,7 +35,7 @@
       <title>Division 2 Escalation Loot Today &amp; Tier 10 Guide</title>
       <link>https://raigulus.github.io/division-2/escalation/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/escalation/</guid>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 Escalation loot today, Tier 10 matchmaking notes, vendor caches, and Raigulus videos.</description>
       <category>escalation</category>
     </item>
@@ -43,9 +43,17 @@
       <title>Division 2 Prototype Gear &amp; Escalation Vendor Guide</title>
       <link>https://raigulus.github.io/division-2/prototype-gear/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/prototype-gear/</guid>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 Prototype Gear Cache, Escalation vendor, and gear cache planning notes.</description>
       <category>prototype gear</category>
+    </item>
+    <item>
+      <title>The Division 2 Capitol Building Tier 10 Escalation | Full Run [2026]</title>
+      <link>https://raigulus.github.io/division-2/videos/the-division-2-capitol-building-tier-10-escalation-full-run/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-capitol-building-tier-10-escalation-full-run/</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+      <description>The Division 2 Capitol Building Tier 10 Escalation full run with endgame enemy pressure, mission objectives, and visible loot checks.</description>
+      <category>escalation run</category>
     </item>
     <item>
       <title>The Division 2 Conflict PvP | Liberty Perfection Build - 4v4 Skirmish</title>
@@ -358,22 +366,6 @@
       <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
       <description>The Division 2 Jefferson Trade Center Hard speedrun attempt with commentary using a Tonisins-inspired build.</description>
       <category>challenge/speedrun</category>
-    </item>
-    <item>
-      <title>The Division 2 Jefferson Plaza Invaded Walkthrough | No Commentary [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-jefferson-plaza-invaded-walkthrough-no-commentary/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-jefferson-plaza-invaded-walkthrough-no-commentary/</guid>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Jefferson Plaza Invaded walkthrough with no commentary.</description>
-      <category>invaded mission</category>
-    </item>
-    <item>
-      <title>Stop Being Afraid of Chungas in The Division 2 | Quick Guide #shorts</title>
-      <link>https://raigulus.github.io/division-2/videos/stop-being-afraid-of-chungas-in-the-division-2-quick-guide-shorts/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/stop-being-afraid-of-chungas-in-the-division-2-quick-guide-shorts/</guid>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 quick guide covering Stop Being Afraid of Chungas gameplay, tips, and clean no commentary footage.</description>
-      <category>short/tip</category>
     </item>
   </channel>
 </rss>
