@@ -34,10 +34,56 @@
     }
   ],
   "last_updated": "2026-07-16 10:01",
-  "last_checked": "2026-07-16 10:21 UTC",
-  "parsed_at": "2026-07-16T10:21:59.920166+00:00",
+  "last_checked": "2026-07-16 12:44 UTC",
+  "parsed_at": "2026-07-16T12:44:56.093066+00:00",
   "status": "ok",
-  "fetched_at": "2026-07-16T10:21:59.920166+00:00",
+  "fetched_at": "2026-07-16T12:44:56.093066+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Current dated loot snapshot is available."
+  "snapshot_note": "Current dated loot snapshot is available.",
+  "vendor_highlights": [
+    {
+      "vendor": "Clan",
+      "item": "Robin",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "The Castle",
+      "item": "Forge",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Pointman",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Hunter-Killer",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "White House",
+      "item": "Lightning Rod - Custom PF45",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "The Campus",
+      "item": "Instigator - Custom M44",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "DZ West",
+      "item": "Rock n' Roll - ACS-12",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "The Theater",
+      "item": "Brain Breaker - Urban MDR",
+      "note": "Named weapon"
+    }
+  ],
+  "vendor_highlights_status": "ok",
+  "vendor_highlights_checked": "2026-07-16 12:44 UTC",
+  "vendor_highlights_date": "2026-07-09",
+  "vendor_highlights_note": "Current dated vendor highlights are available."
 }
