@@ -1,89 +1,43 @@
 {
-  "date": "2026-07-16",
+  "date": "2026-07-17",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Art Museum",
-      "loot": "Rigger"
+      "loot": "Habsburg Guard"
     },
     {
       "mission": "Capitol Building",
-      "loot": "Edelweiss GPz"
+      "loot": "Murakami Industries"
     },
     {
       "mission": "Jefferson Plaza",
-      "loot": "Douglas & Harding"
+      "loot": "Airaldi Holdings"
     },
     {
       "mission": "Lincoln Memorial",
-      "loot": "Backpack"
+      "loot": "Overlord Armaments"
     },
     {
       "mission": "Federal Emergency Bunker",
-      "loot": "Hunters Fury"
+      "loot": "Umbra Initiative"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "SMGs"
+      "item": "Shotguns"
     },
     {
       "type": "Gear",
-      "item": "Kneepads"
+      "item": "Gloves"
     }
   ],
-  "last_updated": "2026-07-16 10:01",
-  "last_checked": "2026-07-17 07:25 UTC",
-  "parsed_at": "2026-07-17T07:25:08.715702+00:00",
-  "status": "pending",
-  "fetched_at": "2026-07-17T07:25:08.715702+00:00",
+  "last_updated": "2026-07-17 10:01",
+  "last_checked": "2026-07-17 09:01 UTC",
+  "parsed_at": "2026-07-17T09:01:48.081568+00:00",
+  "status": "ok",
+  "fetched_at": "2026-07-17T09:01:48.081568+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
-  "vendor_highlights": [
-    {
-      "vendor": "White House",
-      "item": "Sleight",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "DZ South",
-      "item": "Door-Kicker's Knock",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Clan",
-      "item": "Lefty - ACS-12",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "The Campus",
-      "item": "Brutus - M700 Carbon",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "The Campus",
-      "item": "Big Show - MG5",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "DZ West",
-      "item": "Cuélebre – Military M870",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "DZ East",
-      "item": "Commando - Paratrooper SVD",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "The Theater",
-      "item": "Whisper",
-      "note": "Named weapon"
-    }
-  ],
-  "vendor_highlights_status": "ok",
-  "vendor_highlights_checked": "2026-07-17 07:25 UTC",
-  "vendor_highlights_date": "2026-07-17",
-  "vendor_highlights_note": "Current dated vendor highlights are available."
+  "snapshot_note": "Current dated loot snapshot is available."
 }
