@@ -34,10 +34,56 @@
     }
   ],
   "last_updated": "2026-07-17 10:01",
-  "last_checked": "2026-07-17 18:12 UTC",
-  "parsed_at": "2026-07-17T18:12:53.484149+00:00",
+  "last_checked": "2026-07-17 18:37 UTC",
+  "parsed_at": "2026-07-17T18:37:43.832710+00:00",
   "status": "ok",
-  "fetched_at": "2026-07-17T18:12:53.484149+00:00",
+  "fetched_at": "2026-07-17T18:37:43.832710+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Current dated loot snapshot is available."
+  "snapshot_note": "Current dated loot snapshot is available.",
+  "vendor_highlights": [
+    {
+      "vendor": "White House",
+      "item": "Sleight",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "DZ South",
+      "item": "Door-Kicker's Knock",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Clan",
+      "item": "Lefty - ACS-12",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "The Campus",
+      "item": "Brutus - M700 Carbon",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "The Campus",
+      "item": "Big Show - MG5",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "DZ West",
+      "item": "Cuélebre – Military M870",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "DZ East",
+      "item": "Commando - Paratrooper SVD",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "The Theater",
+      "item": "Whisper",
+      "note": "Named weapon"
+    }
+  ],
+  "vendor_highlights_status": "ok",
+  "vendor_highlights_checked": "2026-07-17 18:37 UTC",
+  "vendor_highlights_date": "2026-07-17",
+  "vendor_highlights_note": "Current dated vendor highlights are available."
 }
