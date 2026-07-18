@@ -1,0 +1,103 @@
+{
+  "id": "real-world-directive-51",
+  "type": "government-directive",
+  "title": "Directive 51 (NSPD-51 / HSPD-20)",
+  "slug": "directive-51",
+  "section": "real-world-influences",
+  "summary": "A real 2007 United States continuity directive that The Division uses as the fictional legal foundation for the Strategic Homeland Division.",
+  "canon_status": "real-world-with-fictional-extension",
+  "connection_status": "confirmed-influence",
+  "spoiler_level": "none",
+  "aliases": [
+    "NSPD-51",
+    "HSPD-20",
+    "National Continuity Policy"
+  ],
+  "claims": [
+    {
+      "id": "directive-51-purpose",
+      "text": "NSPD-51/HSPD-20 establishes United States policy for continuity of federal government structures and operations during a catastrophic emergency.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "white-house-2007-nspd51"
+      ]
+    },
+    {
+      "id": "directive-51-date",
+      "text": "President George W. Bush signed the directive on May 4, 2007; its archived public release is dated May 9, 2007.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "ubisoft-2019-division-roots",
+        "white-house-2007-nspd51"
+      ]
+    },
+    {
+      "id": "directive-51-shd-fiction",
+      "text": "The public real-world directive does not establish the Strategic Homeland Division; Ubisoft describes the SHD as a fictional classified-annex development inside The Division's universe.",
+      "assessment": "confirmed-fictional-extension",
+      "source_ids": [
+        "ubisoft-2019-division-roots",
+        "white-house-2007-nspd51"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What the public directive says",
+      "paragraphs": [
+        {
+          "text": "The archived directive defines a national continuity policy, assigns coordination responsibilities and describes continuity concepts intended to preserve essential federal functions during a catastrophic emergency.",
+          "claim_ids": [
+            "directive-51-purpose",
+            "directive-51-date"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Where The Division becomes fictional",
+      "paragraphs": [
+        {
+          "text": "The franchise builds a fictional classified annex around the real directive and uses that invention to establish the Strategic Homeland Division. This distinction matters: continuity policy is real, while the SHD organization and its extraordinary field authority belong to The Division's fiction.",
+          "claim_ids": [
+            "directive-51-shd-fiction"
+          ]
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "topic": "Public purpose",
+      "real_world": "Continuity of federal government structures, operations and essential functions.",
+      "division": "The fictional legal and institutional basis for activating SHD agents after catastrophe.",
+      "assessment": "The game extends a real continuity policy with a fictional organization.",
+      "source_ids": [
+        "white-house-2007-nspd51",
+        "ubisoft-2019-division-roots"
+      ]
+    },
+    {
+      "topic": "Strategic Homeland Division",
+      "real_world": "Not established in the public directive.",
+      "division": "Presented as originating from a classified annex within the fictional setting.",
+      "assessment": "Explicit franchise fiction, not a real agency claim.",
+      "source_ids": [
+        "white-house-2007-nspd51",
+        "ubisoft-2019-division-roots"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "real-world-operation-dark-winter",
+      "relationship": "co-foundational-influence"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-18",
+    "human_reviewed": false,
+    "notes": "The public directive and The Division's fictional extension are deliberately separated. Human editorial approval is pending."
+  }
+}

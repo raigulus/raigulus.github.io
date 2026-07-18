@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "ubisoft-2019-division-roots",
+      "title": "5 Facts You Might Not Know About The Division",
+      "publisher": "Ubisoft News",
+      "source_type": "official-publisher",
+      "scope": "developer-history-and-franchise-lore",
+      "published_date": "2019-03-19",
+      "accessed_date": "2026-07-18",
+      "url": "https://news.ubisoft.com/en-us/article/5GlPfs8rLuSsn9TctM2g9v/5-facts-you-might-not-know-about-the-division",
+      "notes": "Official Ubisoft article summarizing material from The World of Tom Clancy's The Division."
+    },
+    {
+      "id": "jhu-dark-winter-overview",
+      "title": "Dark Winter: A Training Tabletop Exercise",
+      "publisher": "Johns Hopkins Center for Health Security",
+      "source_type": "primary-exercise-record",
+      "scope": "real-world-history",
+      "accessed_date": "2026-07-18",
+      "url": "https://centerforhealthsecurity.org/our-work/tabletop-exercises/dark-winter-a-training-tabletop-exercise",
+      "notes": "Exercise overview, scenario, organizers, participants and findings."
+    },
+    {
+      "id": "white-house-2007-nspd51",
+      "title": "National Security and Homeland Security Presidential Directive",
+      "publisher": "George W. Bush White House Archives",
+      "source_type": "official-government-archive",
+      "scope": "real-world-law-and-policy",
+      "published_date": "2007-05-09",
+      "accessed_date": "2026-07-18",
+      "url": "https://georgewbush-whitehouse.archives.gov/news/releases/2007/05/20070509-12.html",
+      "notes": "Archived public text of NSPD-51/HSPD-20, subject: National Continuity Policy."
+    }
+  ]
+}
