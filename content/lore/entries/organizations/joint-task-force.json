@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "id": "org-joint-task-force",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "organization",
+  "title": "Joint Task Force",
+  "slug": "joint-task-force",
+  "section": "organizations",
+  "summary": "The first-responder organization commonly called the JTF, which attempts to contain the outbreak before SHD activation and later contributes veterans to survivor groups.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "aliases": ["JTF"],
+  "claims": [
+    {
+      "id": "jtf-first-response",
+      "text": "Ubisoft's glossary describes the JTF as the first responders who attempt to contain the outbreak before Division Agents are activated.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-division-glossary-2018"]
+    },
+    {
+      "id": "jtf-shd-cooperation",
+      "text": "Division Agents are sent to help the JTF regain control of the city.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-division-glossary-2018"]
+    },
+    {
+      "id": "jtf-peacekeeper-veterans",
+      "text": "Former JTF members later form part of the Peacekeepers in Lower Manhattan.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-factions-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "First response and SHD support",
+      "paragraphs": [
+        {
+          "text": "The JTF represents the conventional first response to the outbreak. When containment fails, SHD Agents are activated to reinforce the effort rather than replace the JTF's existence in the setting.",
+          "claim_ids": ["jtf-first-response", "jtf-shd-cooperation"]
+        }
+      ]
+    },
+    {
+      "heading": "Legacy in Lower Manhattan",
+      "paragraphs": [
+        {
+          "text": "JTF experience persists through veterans who join the Peacekeepers after surviving the extended crisis.",
+          "claim_ids": ["jtf-peacekeeper-veterans"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "org-strategic-homeland-division", "relationship": "allied-with"},
+    {"target_id": "faction-peacekeepers", "relationship": "contributes-to"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Command structure, named officers and regional JTF operations require direct mission and collectible evidence."
+  }
+}

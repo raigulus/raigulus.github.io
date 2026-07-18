@@ -32,6 +32,114 @@
       "accessed_date": "2026-07-18",
       "url": "https://georgewbush-whitehouse.archives.gov/news/releases/2007/05/20070509-12.html",
       "notes": "Archived public text of NSPD-51/HSPD-20, subject: National Continuity Policy."
+    },
+    {
+      "id": "ubisoft-division-glossary-2018",
+      "title": "The Division - A Glossary of Terms Every Agent Should Know",
+      "publisher": "Ubisoft News",
+      "source_type": "official-publisher",
+      "scope": "franchise-lore",
+      "published_date": "2018-05-30",
+      "accessed_date": "2026-07-19",
+      "url": "https://news.ubisoft.com/en-us/article/34a1ZEQfIJDfA9564QERIU/the-division-a-glossary-of-terms-every-agent-should-know",
+      "notes": "Official glossary defining Agents, SHD, Green Poison and other franchise terms."
+    },
+    {
+      "id": "ubisoft-division2-story-factions",
+      "title": "The Division 2 Story & Factions",
+      "publisher": "Ubisoft",
+      "source_type": "official-publisher",
+      "scope": "franchise-lore",
+      "accessed_date": "2026-07-19",
+      "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/details/story",
+      "notes": "Official premise, Washington setting and faction overview."
+    },
+    {
+      "id": "ubisoft-black-tusk-endgame-2019",
+      "title": "Endgame Specializations, Black Tusks, and The Fight to Reclaim DC",
+      "publisher": "Ubisoft",
+      "source_type": "official-publisher",
+      "scope": "franchise-lore",
+      "published_date": "2019-02-04",
+      "accessed_date": "2026-07-19",
+      "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/6X0Ld6JFkCGcB4onjCWMtV/endgame-specializations-black-tusks-and-the-fight-to-reclaim-dc",
+      "notes": "Official pre-release description of Washington factions and the Black Tusk invasion."
+    },
+    {
+      "id": "ubisoft-story-so-far-2020",
+      "title": "The Division 2 – State of the Game Recap: The Story So Far",
+      "publisher": "Ubisoft News",
+      "source_type": "official-developer",
+      "scope": "franchise-lore",
+      "published_date": "2020-02-05",
+      "accessed_date": "2026-07-19",
+      "url": "https://news.ubisoft.com/en-us/article/7fqMkDBh8AMk24HFA7NXoo/the-division-2-state-of-the-game-recap-the-story-so-far",
+      "notes": "Official recap based on a State of the Game discussion with Division narrative and game directors."
+    },
+    {
+      "id": "ubisoft-wony-overview-2020",
+      "title": "Warlords of New York Expansion Overview",
+      "publisher": "Ubisoft",
+      "source_type": "official-developer",
+      "scope": "franchise-lore",
+      "published_date": "2020-02-11",
+      "accessed_date": "2026-07-19",
+      "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/usnJamHaVKQ3UZN5R85dJ/warlords-of-new-york-expansion-overview",
+      "notes": "Official campaign and Lower Manhattan faction overview."
+    },
+    {
+      "id": "ubisoft-wony-factions-2020",
+      "title": "The Division 2 – State of the Game Recap: Meet the Factions of Warlords of New York",
+      "publisher": "Ubisoft News",
+      "source_type": "official-developer",
+      "scope": "franchise-lore",
+      "published_date": "2020-02-19",
+      "accessed_date": "2026-07-19",
+      "url": "https://news.ubisoft.com/en-us/article/3pLESWvLdVzGTKEi1rVNBP/the-division-2-state-of-the-game-recap-meet-the-factions-of-warlords-of-new-york",
+      "notes": "Official faction recap with developer commentary on the Cleaners, Rikers, Black Tusk and Peacekeepers."
+    },
+    {
+      "id": "ubisoft-wony-expansion-page",
+      "title": "Tom Clancy's The Division 2: Warlords of New York Expansion",
+      "publisher": "Ubisoft",
+      "source_type": "official-publisher",
+      "scope": "franchise-lore",
+      "accessed_date": "2026-07-19",
+      "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/expansion/warlords-of-new-york",
+      "notes": "Official expansion premise describing Aaron Keener and the Lower Manhattan manhunt."
+    },
+    {
+      "id": "ubisoft-pact-2025",
+      "title": "The Division 2: The Pact",
+      "publisher": "Ubisoft",
+      "source_type": "official-developer",
+      "scope": "franchise-lore",
+      "published_date": "2025-09-08",
+      "accessed_date": "2026-07-19",
+      "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/3DFEM2OnnbfRsDrQWXsbbO/the-division-2-the-pact",
+      "notes": "Official season article confirming current faction presence across D.C., New York and Brooklyn."
+    },
+    {
+      "id": "ubisoft-into-dark-2026",
+      "title": "The Division 2: Into The Dark",
+      "publisher": "Ubisoft",
+      "source_type": "official-developer",
+      "scope": "franchise-lore",
+      "published_date": "2026-06-15",
+      "accessed_date": "2026-07-19",
+      "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1fQYLA3DJkvvgyes9HWBck/the-division-2-into-the-dark",
+      "notes": "Official season article documenting Hyena activity and Potent Spice operations."
+    },
+    {
+      "id": "ubisoft-gamescom-pact-2025",
+      "title": "The Division 2 at Gamescom",
+      "publisher": "Ubisoft",
+      "source_type": "official-developer",
+      "scope": "franchise-lore",
+      "published_date": "2025-08-21",
+      "accessed_date": "2026-07-19",
+      "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/4235uGIN3QkbDq4iNQVlT1/the-division-2-at-gamescom",
+      "notes": "Official season preview describing the developing pact among the True Sons, Outcasts and Hyenas."
     }
   ]
 }

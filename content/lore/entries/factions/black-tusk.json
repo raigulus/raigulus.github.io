@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "id": "faction-black-tusk",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "faction",
+  "title": "Black Tusk",
+  "slug": "black-tusk",
+  "section": "factions",
+  "summary": "An advanced private military faction that sabotages the Division Network, invades Washington and pursues national control through high-end weapons and robotics.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "aliases": ["Black Tusks"],
+  "claims": [
+    {
+      "id": "black-tusk-private-military",
+      "text": "The official story recap identifies Black Tusk as a private military group that enters Washington and places the city under siege.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "black-tusk-network-sabotage",
+      "text": "Black Tusk sabotaged the nationwide Division Network as part of a campaign to undermine SHD and seize control of the country.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "black-tusk-technology",
+      "text": "Ubisoft describes Black Tusk operators as using high-end weapons, turret drones, robotic gun platforms and other advanced armaments.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-black-tusk-endgame-2019"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The endgame invasion",
+      "paragraphs": [
+        {
+          "text": "Black Tusk changes the strategic situation after the initial Washington campaign: the group arrives as an organized invading force rather than another local militia.",
+          "claim_ids": ["black-tusk-private-military", "black-tusk-network-sabotage"]
+        }
+      ]
+    },
+    {
+      "heading": "Capabilities",
+      "paragraphs": [
+        {
+          "text": "Their battlefield identity is built around trained operators, high-end weapons and autonomous or robotic support platforms.",
+          "claim_ids": ["black-tusk-technology"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "org-strategic-homeland-division", "relationship": "opposed-to"},
+    {"target_id": "location-washington-dc", "relationship": "located-at"},
+    {"target_id": "event-black-tusk-siege", "relationship": "appears-in"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Command structure and current seasonal leadership are intentionally deferred pending a later-canon source review."
+  }
+}

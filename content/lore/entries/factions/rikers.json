@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "id": "faction-rikers",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "faction",
+  "title": "Rikers",
+  "slug": "rikers",
+  "section": "factions",
+  "summary": "A faction originating with escaped Rikers Island prisoners and later recruits, reorganized into splinter groups after the first game.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "rikers-origin",
+      "text": "The Rikers began with escaped prisoners from Rikers Island and later added recruits adopting the faction's convict identity.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-factions-2020"]
+    },
+    {
+      "id": "rikers-splinter",
+      "text": "After Larae Barret's death, the Rikers became leaderless and split into multiple sub-groups.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-factions-2020", "ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "rikers-dragov",
+      "text": "The Lower Manhattan sub-group is led by James Dragov, one of Aaron Keener's rogue lieutenants.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-factions-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "From prison break to faction",
+      "paragraphs": [
+        {
+          "text": "The Rikers' identity begins with escaped prisoners and expands as outsiders adopt the group's convict theme.",
+          "claim_ids": ["rikers-origin"]
+        }
+      ]
+    },
+    {
+      "heading": "Lower Manhattan splinter",
+      "paragraphs": [
+        {
+          "text": "The faction seen in Warlords of New York is one reorganized splinter rather than an unchanged continuation of the original leadership.",
+          "claim_ids": ["rikers-splinter", "rikers-dragov"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "org-strategic-homeland-division", "relationship": "opposed-to"},
+    {"target_id": "location-lower-manhattan", "relationship": "located-at"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Later Riker leadership and seasonal activity require separate version tracking."
+  }
+}

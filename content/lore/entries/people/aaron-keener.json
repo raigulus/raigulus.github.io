@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "id": "person-aaron-keener",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "person",
+  "title": "Aaron Keener",
+  "slug": "aaron-keener",
+  "section": "people",
+  "summary": "A first-wave Division Agent who went rogue and became the central target of the Warlords of New York manhunt.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "keener-first-wave-rogue",
+      "text": "Aaron Keener is identified as a rogue first-wave Division Agent who worked with the Last Man Battalion and other rogue Agents.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "keener-lower-manhattan",
+      "text": "The Warlords of New York premise places Keener in control of Lower Manhattan after uniting New York factions under his banner.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-expansion-page"]
+    },
+    {
+      "id": "keener-biological-attack",
+      "text": "The expansion overview attributes a recent Lower Manhattan biological attack to Keener and says SHD believes he is planning further attacks.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-overview-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "From Agent to rogue",
+      "paragraphs": [
+        {
+          "text": "Keener begins as a first-wave SHD Agent and becomes a rogue actor whose plans connect the original game to The Division 2's return to New York.",
+          "claim_ids": ["keener-first-wave-rogue"]
+        }
+      ]
+    },
+    {
+      "heading": "Warlords of New York",
+      "paragraphs": [
+        {
+          "text": "By the expansion's opening premise, Keener controls Lower Manhattan through rogue lieutenants and aligned factions, and SHD holds him responsible for a new biological attack.",
+          "claim_ids": ["keener-lower-manhattan", "keener-biological-attack"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "org-strategic-homeland-division", "relationship": "former-member-of"},
+    {"target_id": "event-lower-manhattan-biological-attack", "relationship": "causes"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "This version deliberately stops at the Warlords of New York opening premise; later seasonal status changes need a separate current-canon review."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "id": "event-green-poison-outbreak",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "event",
+  "title": "Green Poison Outbreak",
+  "slug": "green-poison-outbreak",
+  "section": "events",
+  "summary": "The Black Friday biological outbreak that breaks public order, overwhelms response systems and begins the central crisis of The Division universe.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "outbreak-black-friday",
+      "text": "The official story recap says Green Poison breaks out on Black Friday.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "outbreak-system-failure",
+      "text": "Following the outbreak, order breaks down and systems begin to fail.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "outbreak-quarantine-riots",
+      "text": "Ubisoft's glossary connects the Dollar Flu to early-December deaths, quarantine, riots and New York's collapse.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-division-glossary-2018"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The initiating crisis",
+      "paragraphs": [
+        {
+          "text": "The outbreak begins during the Black Friday period and rapidly becomes more than a health emergency: public order and essential systems begin to fail.",
+          "claim_ids": ["outbreak-black-friday", "outbreak-system-failure", "outbreak-quarantine-riots"]
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "sequence": 10,
+    "label": "Black Friday — Green Poison begins the franchise crisis",
+    "precision": "relative",
+    "source_ids": ["ubisoft-story-so-far-2020"]
+  },
+  "relations": [
+    {"target_id": "disease-green-poison", "relationship": "involves"},
+    {"target_id": "event-shd-activation", "relationship": "precedes"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "The timeline uses a relative Black Friday label because this batch does not establish an exact calendar year from direct game evidence."
+  }
+}

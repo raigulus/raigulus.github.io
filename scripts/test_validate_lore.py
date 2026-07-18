@@ -114,6 +114,26 @@ class LoreRecordValidationTests(unittest.TestCase):
         record["full_transcript"] = "This must never enter the public record."
         self.assertTrue(any("forbidden public field" in item for item in self.validate([record])))
 
+    def test_relative_timeline_is_supported(self):
+        record = entry()
+        record["timeline"] = {
+            "sequence": 10,
+            "label": "After the outbreak",
+            "precision": "relative",
+            "source_ids": ["official-test-source"],
+        }
+        self.assertEqual(self.validate([record]), [])
+
+    def test_timeline_requires_a_known_source(self):
+        record = entry()
+        record["timeline"] = {
+            "sequence": 10,
+            "label": "After the outbreak",
+            "precision": "relative",
+            "source_ids": ["missing-source"],
+        }
+        self.assertTrue(any("timeline: unknown source id" in item for item in self.validate([record])))
+
 
 class LoreInventoryValidationTests(unittest.TestCase):
     def test_reconciled_inventory_requires_known_matching_total(self):

@@ -32,6 +32,15 @@ CI uses `python3 scripts/validate_lore.py --strict-site-inventory`. Canonical
 video pages and `videos.json` records must agree; legacy HTML aliases with a
 meta refresh are deliberately excluded from canonical inventory counts.
 
+## Directories and timeline
+
+The build creates a grouped lore directory, one index per populated section,
+and a source-led timeline at `/lore/timeline/`. Timeline entries use an explicit
+integer sequence for ordering and a reader-facing label; a calendar date is not
+required when official material establishes only relative order. Keep the
+precision value honest (`exact-date`, `month`, `year`, or `relative`) and attach
+timeline source IDs independently from the entry's prose claims.
+
 ## Publication and copyright gates
 
 - `human-reviewed` and `published` require `human_reviewed: true` and a named

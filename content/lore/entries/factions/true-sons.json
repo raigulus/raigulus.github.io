@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "id": "faction-true-sons",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "faction",
+  "title": "True Sons",
+  "slug": "true-sons",
+  "section": "factions",
+  "summary": "An organized paramilitary faction using former military and JTF expertise, heavy firepower and territorial control in Washington.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "claims": [
+    {
+      "id": "true-sons-paramilitary",
+      "text": "Ubisoft describes the True Sons as paramilitary warlords using combat expertise and overwhelming firepower to dominate enemies and expand territory.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-division2-story-factions"]
+    },
+    {
+      "id": "true-sons-jtf-leader",
+      "text": "The official faction description says they are led by a ruthless former JTF officer.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-division2-story-factions"]
+    },
+    {
+      "id": "true-sons-capitol-conflict",
+      "text": "During the main campaign, the True Sons hold President Ellis and his encryption key at Capitol Hill before Division Agents retake the site.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Organization and method",
+      "paragraphs": [
+        {
+          "text": "The True Sons combine paramilitary organization with territorial ambition. Their JTF-derived expertise makes them more structured than a purely opportunistic street faction.",
+          "claim_ids": ["true-sons-paramilitary", "true-sons-jtf-leader"]
+        }
+      ]
+    },
+    {
+      "heading": "Role in the campaign",
+      "paragraphs": [
+        {
+          "text": "Their control of Capitol Hill and custody of President Ellis place them directly across the Division's effort to restore the national network and government continuity.",
+          "claim_ids": ["true-sons-capitol-conflict"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "org-strategic-homeland-division", "relationship": "opposed-to"},
+    {"target_id": "location-washington-dc", "relationship": "located-at"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Leadership succession and later seasonal alliances require a separate versioned update."
+  }
+}

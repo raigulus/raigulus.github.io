@@ -6,13 +6,27 @@ from __future__ import annotations
 import html
 import json
 import sys
-from collections import Counter
+from collections import Counter, defaultdict
 from pathlib import Path
 
 from validate_lore import ROOT, load_editorial, load_inventories, run_validation
 
 
 BASE_URL = "https://raigulus.github.io"
+SECTION_LABELS = {
+    "people": "People",
+    "factions": "Factions",
+    "organizations": "Organizations",
+    "locations": "Locations",
+    "events": "Events",
+    "missions": "Missions",
+    "diseases": "Diseases",
+    "technology": "Technology",
+    "concepts": "Concepts",
+    "works": "Works",
+    "collectibles": "Collectibles",
+    "real-world-influences": "Real-world influences",
+}
 
 
 def esc(value):
@@ -21,6 +35,10 @@ def esc(value):
 
 def page_url(entry):
     return f"/lore/{entry['section']}/{entry['slug']}/"
+
+
+def section_label(section):
+    return SECTION_LABELS.get(section, section.replace("-", " ").title())
 
 
 def citation_links(source_ids, source_numbers):
@@ -72,6 +90,8 @@ def head(title, description, canonical, schema_type="Article"):
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/styles.css">
   <link rel="stylesheet" href="/assets/lore.css">
+  <link rel="stylesheet" href="/assets/lore-timeline.css">
+  <link rel="stylesheet" href="/assets/lore-directory.css">
   <script type="application/ld+json">{structured}</script>
 </head>'''
 
@@ -183,7 +203,7 @@ def render_entry(entry, entries_by_id, sources_by_id):
 <body>
 {header()}
 <main class="lore-shell">
-  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/lore/">Lore</a> / <span>{esc(entry['title'])}</span></nav>
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/lore/">Lore</a> / <a href="/lore/{esc(entry['section'])}/">{esc(section_label(entry['section']))}</a> / <span>{esc(entry['title'])}</span></nav>
   <article class="lore-article">
     <header class="lore-hero">
       <p class="eyebrow">{esc(entry['type'].replace('-', ' '))}</p>
@@ -217,19 +237,34 @@ def render_entry(entry, entries_by_id, sources_by_id):
 </body>
 </html>
 '''
-    return content
+    return "\n".join(line.rstrip() for line in content.splitlines()) + "\n"
 
 
-def render_index(entries):
-    cards = []
-    for entry in sorted(entries, key=lambda item: item["title"]):
-        verification = entry["verification"]
-        cards.append(f'''<article class="lore-card" data-search-card data-search="{esc(entry['title'] + ' ' + entry['summary'] + ' ' + ' '.join(entry.get('aliases', [])))}">
+def render_entry_card(entry):
+    verification = entry["verification"]
+    return f'''<article class="lore-card" data-search-card data-search="{esc(entry['title'] + ' ' + entry['summary'] + ' ' + ' '.join(entry.get('aliases', [])))}">
   <p class="eyebrow">{esc(entry['type'].replace('-', ' '))}</p>
   <h2><a href="{page_url(entry)}">{esc(entry['title'])}</a></h2>
   <p>{esc(entry['summary'])}</p>
   <div class="lore-card-meta"><span>{esc(entry['connection_status'].replace('-', ' '))}</span><span>{esc(verification['status'].replace('-', ' '))}</span></div>
-</article>''')
+</article>'''
+
+
+def render_index(entries):
+    grouped = defaultdict(list)
+    for entry in entries:
+        grouped[entry["section"]].append(entry)
+    group_blocks = []
+    for section in sorted(grouped, key=lambda value: section_label(value)):
+        record_word = "record" if len(grouped[section]) == 1 else "records"
+        cards = "".join(
+            render_entry_card(entry)
+            for entry in sorted(grouped[section], key=lambda item: item["title"])
+        )
+        group_blocks.append(f'''<section class="archive-group">
+  <div class="section-heading"><div><p class="eyebrow">{len(grouped[section])} {record_word}</p><h2><a href="/lore/{esc(section)}/">{esc(section_label(section))}</a></h2></div><p>Structured, source-linked records in this category.</p></div>
+  <div class="lore-grid">{cards}</div>
+</section>''')
     description = "A source-led archive of The Division lore, characters, events, collectibles and documented real-world influences."
     status_counts = Counter(entry["verification"]["status"] for entry in entries)
     status_summary = "".join(
@@ -250,16 +285,38 @@ def render_index(entries):
   <section class="lore-index-section">
     <div class="lore-tools" aria-label="Lore archive controls">
       <a href="/lore/coverage/"><strong>Coverage</strong><span>Verified counts and acknowledged gaps</span></a>
+      <a href="/lore/timeline/"><strong>Timeline</strong><span>Sourced sequence without invented dates</span></a>
       <a href="/lore/methodology/"><strong>Methodology</strong><span>Evidence, canon and review rules</span></a>
       <a href="/lore/review-queue/"><strong>Review queue</strong><span>Records awaiting human approval</span></a>
       <a href="/lore/copyright/"><strong>Copyright</strong><span>Transcript and quotation boundaries</span></a>
       <a href="/lore/corrections/"><strong>Corrections</strong><span>Report an error with evidence</span></a>
       <a href="/lore/sources/"><strong>Sources</strong><span>Shared provenance registry</span></a>
     </div>
-    <div class="section-heading"><div><p class="eyebrow">Foundation set</p><h2>Documented real-world influences</h2></div><p>These pages establish the evidence model before the archive expands into characters, factions, missions and collectibles.</p></div>
     <div class="guide-search" data-guide-search><input type="search" data-guide-search-input placeholder="Search the lore archive" aria-label="Search the lore archive"><span data-guide-search-count></span></div>
-    <div class="lore-grid">{''.join(cards)}</div>
+    {''.join(group_blocks)}
   </section>
+</main>
+<script src="/assets/search.js" defer></script>
+{footer()}
+</body>
+</html>
+'''
+
+
+def render_section_index(section, entries):
+    label = section_label(section)
+    cards = "".join(
+        render_entry_card(entry) for entry in sorted(entries, key=lambda item: item["title"])
+    )
+    description = f"Source-linked {label.lower()} records in the Raigulus Division Lore Archive."
+    record_word = "record" if len(entries) == 1 else "records"
+    return f'''{head(label, description, BASE_URL + f'/lore/{section}/', 'CollectionPage')}
+<body>
+{header()}
+<main class="lore-shell">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/lore/">Lore</a> / <span>{esc(label)}</span></nav>
+  <section class="lore-index-hero category-hero"><p class="eyebrow">Lore category</p><h1>{esc(label)}</h1><p>{esc(description)}</p><div class="archive-stats"><span><strong>{len(entries)}</strong>structured {record_word}</span></div></section>
+  <section class="lore-index-section"><div class="guide-search" data-guide-search><input type="search" data-guide-search-input placeholder="Search {esc(label.lower())}" aria-label="Search {esc(label.lower())}"><span data-guide-search-count></span></div><div class="lore-grid">{cards}</div></section>
 </main>
 <script src="/assets/search.js" defer></script>
 {footer()}
@@ -387,6 +444,46 @@ def render_review_queue(entries, inventories):
 '''
 
 
+def render_timeline(entries, sources_by_id):
+    timeline_entries = sorted(
+        (entry for entry in entries if entry.get("timeline")),
+        key=lambda entry: (entry["timeline"]["sequence"], entry["title"]),
+    )
+    items = []
+    for entry in timeline_entries:
+        timeline = entry["timeline"]
+        source_links = ", ".join(
+            f'<a href="{esc(sources_by_id[source_id]["url"])}">{esc(sources_by_id[source_id]["title"])}</a>'
+            for source_id in timeline["source_ids"]
+        )
+        items.append(f'''<li class="timeline-item">
+  <div class="timeline-marker" aria-hidden="true"></div>
+  <div class="timeline-copy">
+    <p class="eyebrow">{esc(timeline['precision'].replace('-', ' '))}</p>
+    <h2><a href="{page_url(entry)}">{esc(entry['title'])}</a></h2>
+    <p class="timeline-label">{esc(timeline['label'])}</p>
+    <p>{esc(entry['summary'])}</p>
+    <p class="timeline-sources"><strong>Sources:</strong> {source_links}</p>
+  </div>
+</li>''')
+    empty = '<li class="timeline-item"><div class="timeline-copy"><p>No sourced timeline events have been added yet.</p></div></li>'
+    description = "A source-led sequence of events in The Division universe, using relative labels when exact dates are not established."
+    return f'''{head('The Division Lore Timeline', description, BASE_URL + '/lore/timeline/', 'CollectionPage')}
+<body>
+{header()}
+<main class="lore-shell">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/lore/">Lore</a> / <span>Timeline</span></nav>
+  <article class="lore-article">
+    <header class="lore-hero"><p class="eyebrow">Chronology</p><h1>The Division Lore Timeline</h1><p class="lede">Exact dates are shown only when a source establishes them. Relative sequence is labelled rather than converted into invented calendar dates.</p></header>
+    <section class="lore-section"><ol class="lore-timeline">{''.join(items) or empty}</ol></section>
+  </article>
+</main>
+{footer()}
+</body>
+</html>
+'''
+
+
 def render_sources(sources):
     rows = []
     for source in sorted(sources, key=lambda item: (item["publisher"], item["title"])):
@@ -426,27 +523,37 @@ def update_sitemaps(entries, editorial_pages):
     urls.append(("/lore/sources/", max(item["verification"]["last_reviewed"] for item in entries)))
     urls.append(("/lore/coverage/", max(item["verification"]["last_reviewed"] for item in entries)))
     urls.append(("/lore/review-queue/", max(item["verification"]["last_reviewed"] for item in entries)))
+    urls.append(("/lore/timeline/", max(item["verification"]["last_reviewed"] for item in entries)))
     urls.extend(
         (f'/lore/{page["slug"]}/', max(item["verification"]["last_reviewed"] for item in entries))
         for page in editorial_pages
     )
     urls.extend((page_url(entry), entry["verification"]["last_reviewed"]) for entry in entries)
+    urls.extend(
+        (f"/lore/{section}/", max(entry["verification"]["last_reviewed"] for entry in entries if entry["section"] == section))
+        for section in sorted({entry["section"] for entry in entries})
+    )
+
+    urls = sorted(set(urls))
 
     xml_path = ROOT / "sitemap.xml"
-    xml = xml_path.read_text(encoding="utf-8")
-    for path, lastmod in urls:
-        absolute = BASE_URL + path
-        if f"<loc>{absolute}</loc>" not in xml:
-            node = f"  <url><loc>{absolute}</loc><lastmod>{lastmod}</lastmod></url>\n"
-            xml = xml.replace("</urlset>", node + "</urlset>")
+    xml_lines = xml_path.read_text(encoding="utf-8").splitlines(keepends=True)
+    lore_prefix = f"  <url><loc>{BASE_URL}/lore/"
+    xml = "".join(line for line in xml_lines if not line.startswith(lore_prefix))
+    nodes = "".join(
+        f"  <url><loc>{BASE_URL + path}</loc><lastmod>{lastmod}</lastmod></url>\n"
+        for path, lastmod in urls
+    )
+    xml = xml.replace("</urlset>", nodes + "</urlset>")
     xml_path.write_text(xml, encoding="utf-8")
 
     text_path = ROOT / "sitemap.txt"
-    existing = text_path.read_text(encoding="utf-8").splitlines()
-    for path, _ in urls:
-        absolute = BASE_URL + path
-        if absolute not in existing:
-            existing.append(absolute)
+    existing = [
+        line
+        for line in text_path.read_text(encoding="utf-8").splitlines()
+        if not line.startswith(f"{BASE_URL}/lore/")
+    ]
+    existing.extend(BASE_URL + path for path, _ in urls)
     text_path.write_text("\n".join(existing) + "\n", encoding="utf-8")
 
 
@@ -466,6 +573,18 @@ def main():
     write_text(ROOT / "lore" / "sources" / "index.html", render_sources(sources))
     write_text(ROOT / "lore" / "coverage" / "index.html", render_coverage(entries, inventories))
     write_text(ROOT / "lore" / "review-queue" / "index.html", render_review_queue(entries, inventories))
+    write_text(
+        ROOT / "lore" / "timeline" / "index.html",
+        render_timeline(entries, sources_by_id),
+    )
+    grouped_entries = defaultdict(list)
+    for entry in entries:
+        grouped_entries[entry["section"]].append(entry)
+    for section, section_entries in grouped_entries.items():
+        write_text(
+            ROOT / "lore" / section / "index.html",
+            render_section_index(section, section_entries),
+        )
     for page in editorial_pages:
         write_text(ROOT / "lore" / page["slug"] / "index.html", render_editorial_page(page))
     for entry in entries:
@@ -474,7 +593,7 @@ def main():
     update_sitemaps(entries, editorial_pages)
     print(
         f"Built {len(entries)} lore entries, {len(editorial_pages)} editorial pages "
-        "and 2 control dashboards"
+        "and 3 control/index dashboards"
     )
     return 0
 
