@@ -6,12 +6,12 @@
     <atom:link href="https://raigulus.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>The latest Raigulus Division 2 walkthroughs, PvP clips, build tests, speedrun attempts, manhunts, boss guides, and no commentary gameplay.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>The Division 2 Builds and Build Tests</title>
       <link>https://raigulus.github.io/division-2/builds/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/builds/</guid>
-      <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
       <description>Video-backed Division 2 build tests for Bluescreen, Tipping Scales, Whiplash, Regulus, Rage Harvest, Toxic DZ, and Tier 10.</description>
       <category>build tests</category>
     </item>
@@ -19,7 +19,7 @@
       <title>Division 2 Loot Today, Targeted Loot &amp; Farming Guides</title>
       <link>https://raigulus.github.io/division-2/loot/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/loot/</guid>
-      <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 loot today, targeted loot, loot map context, farming routes, and Raigulus videos.</description>
       <category>loot</category>
     </item>
@@ -27,7 +27,7 @@
       <title>Division 2 Server Status, Maintenance &amp; Delta-03</title>
       <link>https://raigulus.github.io/division-2/server-status/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/server-status/</guid>
-      <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
       <description>Unofficial Division 2 server status tracker for maintenance, outage, Delta-03, official source links, and Raigulus guides.</description>
       <category>server status</category>
     </item>
@@ -35,7 +35,7 @@
       <title>Division 2 Escalation Loot Today &amp; Tier 10 Guide</title>
       <link>https://raigulus.github.io/division-2/escalation/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/escalation/</guid>
-      <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 Escalation loot today, Tier 10 matchmaking notes, vendor caches, and Raigulus videos.</description>
       <category>escalation</category>
     </item>
@@ -43,9 +43,17 @@
       <title>Division 2 Prototype Gear &amp; Escalation Vendor Guide</title>
       <link>https://raigulus.github.io/division-2/prototype-gear/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/prototype-gear/</guid>
-      <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 Prototype Gear Cache, Escalation vendor, and gear cache planning notes.</description>
       <category>prototype gear</category>
+    </item>
+    <item>
+      <title>They Thought I Was Hacking With Regulus | The Division 2 Conflict #shorts</title>
+      <link>https://raigulus.github.io/division-2/videos/they-thought-i-was-hacking-with-regulus-the-division-2-conflict-shorts/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/they-thought-i-was-hacking-with-regulus-the-division-2-conflict-shorts/</guid>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+      <description>The Division 2 Conflict PvP with Regulus: a 2021 Skirmish archive Short with a clean streak and the lobby reaction.</description>
+      <category>pvp/archive clip</category>
     </item>
     <item>
       <title>The Division 2 Lincoln Memorial Tier 10 Escalation | Solo Clear [2026]</title>
@@ -358,14 +366,6 @@
       <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
       <description>The Division 2 Jefferson Trade Center Hard solo speedrun with a 3:54 PB and another sub-4 run at 3:58.</description>
       <category>challenge/speedrun</category>
-    </item>
-    <item>
-      <title>The Division 2 Y8S1 Scout 9 Manhunt Walkthrough | No Commentary [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-y8s1-scout-9-manhunt-walkthrough-no-commentary/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-y8s1-scout-9-manhunt-walkthrough-no-commentary/</guid>
-      <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Y8S1 Scout 9 manhunt walkthrough covering West Potomac Park objectives with no commentary.</description>
-      <category>manhunt</category>
     </item>
   </channel>
 </rss>
