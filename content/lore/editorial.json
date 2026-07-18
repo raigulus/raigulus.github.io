@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "pages": [
+    {
+      "slug": "methodology",
+      "title": "Research Methodology",
+      "description": "How the Raigulus Division Lore Archive separates evidence, canon, interpretation and uncertainty.",
+      "eyebrow": "Editorial standard",
+      "sections": [
+        {
+          "heading": "No source, no claim",
+          "paragraphs": [
+            "Every factual lore statement is recorded as a claim and linked to one or more registered sources. A source must support the exact scope of the claim; a related page or search snippet is not enough.",
+            "Direct game captures and official publications are preferred. Community material can identify research leads, but it cannot be the only support for a published factual claim."
+          ]
+        },
+        {
+          "heading": "Fact, fiction and comparison",
+          "paragraphs": [
+            "Real-world records, Division continuity and editorial comparison are labelled separately. Similarity is not treated as proof of influence, and contradictions remain visible rather than being resolved by guesswork."
+          ]
+        },
+        {
+          "heading": "Human publication gate",
+          "paragraphs": [
+            "Automated research may reach source-reviewed status, but only a designated human editor can approve human-reviewed or published status. Review dates and unresolved notes remain attached to each record."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "copyright",
+      "title": "Copyright and Quotation Policy",
+      "description": "The archive publishes original summaries and evidence locators rather than wholesale copyrighted scripts or media.",
+      "eyebrow": "Publication boundary",
+      "sections": [
+        {
+          "heading": "Public pages",
+          "paragraphs": [
+            "Collectible pages should publish identifying metadata, original summaries, key lore points and precise locators. Short quotations may be used only when necessary and appropriate.",
+            "The public repository must not contain complete game scripts, wholesale collectible transcripts, subtitle dumps, extracted audio or video, or substantial book passages without a separate rights review."
+          ]
+        },
+        {
+          "heading": "Private research material",
+          "paragraphs": [
+            "Full working transcripts may be used privately for checking names, speakers and claims. They must stay outside the public repository unless their publication has been explicitly approved."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "corrections",
+      "title": "Corrections and Evidence Requests",
+      "description": "How to report an error, source conflict or missing piece of Division lore evidence.",
+      "eyebrow": "Open review",
+      "action_url": "https://github.com/raigulus/raigulus.github.io/issues/new?template=lore-correction.yml",
+      "action_label": "Open a lore correction report",
+      "sections": [
+        {
+          "heading": "What to include",
+          "paragraphs": [
+            "Identify the page and exact claim, explain the correction, and provide the strongest available source with a timestamp, page, chapter, mission, collectible or game-build locator.",
+            "Conflicting evidence is recorded as disputed until it can be responsibly resolved. Reports are not treated as verified merely because they are plausible or widely repeated."
+          ]
+        }
+      ]
+    }
+  ]
+}

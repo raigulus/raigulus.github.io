@@ -85,3 +85,8 @@ https://raigulus.github.io/lore/
 https://raigulus.github.io/lore/sources/
 https://raigulus.github.io/lore/real-world-influences/directive-51/
 https://raigulus.github.io/lore/real-world-influences/operation-dark-winter/
+https://raigulus.github.io/lore/coverage/
+https://raigulus.github.io/lore/review-queue/
+https://raigulus.github.io/lore/methodology/
+https://raigulus.github.io/lore/copyright/
+https://raigulus.github.io/lore/corrections/

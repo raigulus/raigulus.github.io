@@ -1,5 +1,8 @@
 {
+  "schema_version": 2,
   "id": "real-world-directive-51",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "real-world",
   "type": "government-directive",
   "title": "Directive 51 (NSPD-51 / HSPD-20)",
   "slug": "directive-51",

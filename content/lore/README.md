@@ -1,8 +1,13 @@
 # Raigulus Lore Archive
 
-Lore pages are generated from JSON records. Edit the records in `entries/` and
-the shared source registry in `sources.json`; do not hand-edit generated files
-under `/lore/`.
+Lore pages are generated from versioned JSON records. Edit records under
+`entries/`, the shared registry in `sources.json`, coverage files under
+`inventories/`, and policy copy in `editorial.json`; do not hand-edit generated
+files under `/lore/`.
+
+The builder recursively discovers JSON records below `entries/`, so entity
+folders can be introduced without changing the build. Controlled values live
+in `vocabularies.json` and must be extended deliberately rather than bypassed.
 
 ## Editorial workflow
 
@@ -18,13 +23,26 @@ under `/lore/`.
 
 ```sh
 python3 scripts/validate_lore.py
+python3 -m unittest scripts/test_validate_lore.py
 python3 scripts/build_lore.py
 python3 scripts/check_lore_pages.py
 ```
 
-Use `python3 scripts/validate_lore.py --strict-site-inventory` after the existing
-video page/data drift has been repaired. In normal mode that legacy drift is a
-warning, while all lore validation errors remain blocking.
+Use `python3 scripts/validate_lore.py --strict-site-inventory` after video page
+and `videos.json` inventories agree. In normal mode site inventory drift is a
+warning, while every lore validation error remains blocking.
+
+## Publication and copyright gates
+
+- `human-reviewed` and `published` require `human_reviewed: true` and a named
+  `reviewed_by` human editor.
+- Raw transcript/subtitle fields and common audio/video/subtitle extensions are
+  blocked from public lore content paths.
+- Full working transcripts belong outside this public repository unless a
+  separate rights review explicitly approves publication.
+- Coverage inventories use `null` for an unknown expected total. The validator
+  forbids calling an inventory reconciled until the expected total is known and
+  equals the captured total.
 
 ## Evidence labels
 
