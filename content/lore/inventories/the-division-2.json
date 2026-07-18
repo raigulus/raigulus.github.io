@@ -3,8 +3,8 @@
   "id": "the-division-2-lore-inventory",
   "title": "The Division 2 Lore Coverage",
   "game": "the-division-2",
-  "inventory_status": "inventory-pending",
-  "last_audited": "2026-07-18",
+  "inventory_status": "in-progress",
+  "last_audited": "2026-07-19",
   "notes": "Expected totals remain intentionally unknown until the in-game menus and release-by-release source inventory are captured and reconciled.",
   "categories": [
     {
@@ -22,45 +22,56 @@
       "id": "td2-people",
       "label": "People",
       "expected_count": null,
-      "captured_count": 0,
-      "source_reviewed_count": 0,
+      "captured_count": 3,
+      "source_reviewed_count": 3,
       "human_reviewed_count": 0,
       "published_count": 0,
-      "status": "inventory-pending",
-      "notes": "No completeness claim has been made."
+      "status": "in-progress",
+      "notes": "Three core people now have source-reviewed overview records; no completeness claim has been made."
     },
     {
       "id": "td2-factions",
       "label": "Factions and organizations",
       "expected_count": null,
-      "captured_count": 0,
-      "source_reviewed_count": 0,
+      "captured_count": 9,
+      "source_reviewed_count": 9,
       "human_reviewed_count": 0,
       "published_count": 0,
-      "status": "inventory-pending",
-      "notes": "No completeness claim has been made."
+      "status": "in-progress",
+      "notes": "Seven factions, SHD and the JTF now have source-reviewed overview records; leadership and subgroup coverage remains incomplete."
     },
     {
       "id": "td2-locations",
       "label": "Locations",
       "expected_count": null,
-      "captured_count": 0,
-      "source_reviewed_count": 0,
+      "captured_count": 2,
+      "source_reviewed_count": 2,
       "human_reviewed_count": 0,
       "published_count": 0,
-      "status": "inventory-pending",
-      "notes": "No completeness claim has been made."
+      "status": "in-progress",
+      "notes": "Washington and Lower Manhattan have overview records; district and landmark coverage remains incomplete."
     },
     {
       "id": "td2-missions-events",
       "label": "Missions and events",
       "expected_count": null,
-      "captured_count": 0,
-      "source_reviewed_count": 0,
+      "captured_count": 5,
+      "source_reviewed_count": 5,
       "human_reviewed_count": 0,
       "published_count": 0,
-      "status": "inventory-pending",
-      "notes": "Release-by-release chronology has not yet been reconciled."
+      "status": "in-progress",
+      "notes": "Five core events now form a sourced relative timeline; mission-level chronology remains incomplete."
+    },
+    {
+      "id": "td2-diseases-concepts",
+      "label": "Diseases and concepts",
+      "expected_count": null,
+      "captured_count": 1,
+      "source_reviewed_count": 1,
+      "human_reviewed_count": 0,
+      "published_count": 0,
+      "status": "in-progress",
+      "notes": "Green Poison has a foundational overview; antiviral, variants and technical concepts remain separate future records."
     }
   ]
 }

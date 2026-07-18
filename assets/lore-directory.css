@@ -1,0 +1,31 @@
+.archive-group {
+  border-top: 1px solid var(--border);
+  margin-top: 34px;
+  padding-top: 28px;
+}
+
+.archive-group:first-of-type {
+  margin-top: 20px;
+}
+
+.archive-group .section-heading {
+  margin-bottom: 16px;
+}
+
+.archive-group .section-heading h2 a:hover {
+  color: var(--accent);
+}
+
+.category-hero {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 0;
+  max-width: none;
+}
+
+@media (max-width: 700px) {
+  .archive-group {
+    margin-top: 26px;
+    padding-top: 22px;
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "id": "event-division-network-crisis",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "event",
+  "title": "Division Network Crisis",
+  "slug": "division-network-crisis",
+  "section": "events",
+  "summary": "The nationwide SHD Network failure and Washington distress call that draw Division Agents to the capital at the beginning of The Division 2.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "claims": [
+    {
+      "id": "network-crisis-relative-time",
+      "text": "The Division 2 crisis begins several months after the events of the first game.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "network-crisis-shutdown",
+      "text": "The nationwide Division Network goes down and Agents receive a distress call.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "network-crisis-dc-summons",
+      "text": "Agents across the country are summoned to Washington to restore the network.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Opening of The Division 2",
+      "paragraphs": [
+        {
+          "text": "A nationwide network failure converts the Washington emergency into an SHD-wide mission and brings Agents from across the country to the capital.",
+          "claim_ids": ["network-crisis-relative-time", "network-crisis-shutdown", "network-crisis-dc-summons"]
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "sequence": 30,
+    "label": "Several months later — the nationwide SHD Network goes down",
+    "precision": "relative",
+    "source_ids": ["ubisoft-story-so-far-2020"]
+  },
+  "relations": [
+    {"target_id": "event-shd-activation", "relationship": "follows"},
+    {"target_id": "location-washington-dc", "relationship": "located-at"},
+    {"target_id": "event-black-tusk-siege", "relationship": "precedes"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Exact mission-by-mission chronology will be added after a base-campaign mission inventory."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "id": "event-shd-activation",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "event",
+  "title": "SHD Activation",
+  "slug": "shd-activation",
+  "section": "events",
+  "summary": "The emergency activation of secretly trained Division Agents after the Green Poison outbreak overwhelms ordinary response systems.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "claims": [
+    {
+      "id": "activation-after-outbreak",
+      "text": "SHD Agents are activated following the Green Poison outbreak after years of secret preparation.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "activation-manhattan-mission",
+      "text": "Their immediate official mission is to help secure Midtown Manhattan against the Rikers, Cleaners and Last Man Battalion.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "activation-second-wave",
+      "text": "The player in the original game is activated as part of the Division's second wave.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020", "ubisoft-division-glossary-2018"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Emergency deployment",
+      "paragraphs": [
+        {
+          "text": "The outbreak turns SHD from a concealed contingency into an active emergency force. Manhattan receives successive waves of Agents as the crisis intensifies.",
+          "claim_ids": ["activation-after-outbreak", "activation-manhattan-mission", "activation-second-wave"]
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "sequence": 20,
+    "label": "After the outbreak — SHD deploys Agents to Manhattan",
+    "precision": "relative",
+    "source_ids": ["ubisoft-story-so-far-2020"]
+  },
+  "relations": [
+    {"target_id": "event-green-poison-outbreak", "relationship": "follows"},
+    {"target_id": "org-strategic-homeland-division", "relationship": "involves"},
+    {"target_id": "event-division-network-crisis", "relationship": "precedes"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Wave-level personnel lists remain outside this overview pending direct collectible evidence."
+  }
+}

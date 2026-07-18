@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "id": "person-gordon-amherst",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "person",
+  "title": "Gordon Amherst",
+  "slug": "gordon-amherst",
+  "section": "people",
+  "summary": "The virologist identified by the Division as the creator of Green Poison.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "amherst-created-green-poison",
+      "text": "The official story recap identifies Gordon Amherst, not Vitaly Tchernenko, as the virologist who created Green Poison.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "amherst-research-found",
+      "text": "Division Agents investigate Amherst's apartment and discover his equipment and research.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Role in the outbreak",
+      "paragraphs": [
+        {
+          "text": "Amherst is the scientific origin point of the Green Poison plot. Evidence recovered from his apartment connects his research and equipment to the engineered virus.",
+          "claim_ids": ["amherst-created-green-poison", "amherst-research-found"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "disease-green-poison", "relationship": "creator-of"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Claims are limited to the official 2020 narrative recap; motive details need direct collectible or mission locators before expansion."
+  }
+}

@@ -131,6 +131,7 @@ def validate_records(sources, entries, vocabularies):
     source_scopes = vocabulary_set(vocabularies, "source_scopes", errors)
     spoiler_levels = vocabulary_set(vocabularies, "spoiler_levels", errors)
     verification_statuses = vocabulary_set(vocabularies, "verification_statuses", errors)
+    timeline_precisions = vocabulary_set(vocabularies, "timeline_precisions", errors)
 
     if not sources:
         errors.append("sources.json: at least one source is required")
@@ -253,6 +254,27 @@ def validate_records(sources, entries, vocabularies):
             for source_id in source_ids:
                 if source_id not in source_map:
                     errors.append(f"{comparison_where}: unknown source id {source_id}")
+
+        timeline = entry.get("timeline")
+        if timeline is not None:
+            timeline_where = f"{where} timeline"
+            if not isinstance(timeline, dict):
+                errors.append(f"{timeline_where}: must be an object")
+            else:
+                sequence = timeline.get("sequence")
+                if not isinstance(sequence, int) or sequence < 0:
+                    errors.append(f"{timeline_where}: sequence must be a non-negative integer")
+                require_string(timeline, "label", timeline_where, errors)
+                precision = require_string(timeline, "precision", timeline_where, errors)
+                if precision not in timeline_precisions:
+                    errors.append(f"{timeline_where}: unsupported precision {precision}")
+                source_ids = timeline.get("source_ids")
+                if not isinstance(source_ids, list) or not source_ids:
+                    errors.append(f"{timeline_where}: source_ids must not be empty")
+                    source_ids = []
+                for source_id in source_ids:
+                    if source_id not in source_map:
+                        errors.append(f"{timeline_where}: unknown source id {source_id}")
 
         verification = entry.get("verification")
         if not isinstance(verification, dict):

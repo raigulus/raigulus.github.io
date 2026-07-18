@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "id": "event-lower-manhattan-biological-attack",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "event",
+  "title": "Lower Manhattan Biological Attack",
+  "slug": "lower-manhattan-biological-attack",
+  "section": "events",
+  "summary": "The attack that kills civilians and SHD Agents in Lower Manhattan and triggers the Warlords of New York hunt for Aaron Keener.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "lower-attack-casualties",
+      "text": "A recent biological attack in Lower Manhattan kills numerous civilians and SHD Agents before the expansion campaign begins.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-overview-2020"]
+    },
+    {
+      "id": "lower-attack-keener",
+      "text": "SHD attributes the attack to Aaron Keener and believes he is planning further attacks.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-overview-2020"]
+    },
+    {
+      "id": "lower-attack-manhunt",
+      "text": "The response mission is to hunt Keener through Lower Manhattan and stop him at all costs.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-overview-2020", "ubisoft-wony-expansion-page"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Trigger for Warlords of New York",
+      "paragraphs": [
+        {
+          "text": "The attack creates the immediate reason for SHD's return to Lower Manhattan. Its casualties and the threat of further attacks turn Aaron Keener into the expansion's primary target.",
+          "claim_ids": ["lower-attack-casualties", "lower-attack-keener", "lower-attack-manhunt"]
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "sequence": 50,
+    "label": "Before Warlords of New York — a new biological attack hits Lower Manhattan",
+    "precision": "relative",
+    "source_ids": ["ubisoft-wony-overview-2020"]
+  },
+  "relations": [
+    {"target_id": "event-black-tusk-siege", "relationship": "follows"},
+    {"target_id": "person-aaron-keener", "relationship": "involves"},
+    {"target_id": "location-lower-manhattan", "relationship": "located-at"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "The public page summarizes the official expansion setup without reproducing mission dialogue."
+  }
+}

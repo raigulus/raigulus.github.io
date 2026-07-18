@@ -9,6 +9,8 @@ on:
       - "scripts/validate_lore.py"
       - "scripts/test_validate_lore.py"
       - "assets/lore.css"
+      - "assets/lore-timeline.css"
+      - "assets/lore-directory.css"
       - "lore/**"
   workflow_dispatch:
 

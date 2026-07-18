@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "id": "person-vitaly-tchernenko",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "person",
+  "title": "Vitaly Tchernenko",
+  "slug": "vitaly-tchernenko",
+  "section": "people",
+  "summary": "A Russian virologist pursued by multiple factions because his expertise could support mass production of a broad-spectrum antiviral.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "tchernenko-not-creator",
+      "text": "Tchernenko did not develop Green Poison; the official recap identifies Gordon Amherst as its creator.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "tchernenko-antiviral-expertise",
+      "text": "By Episode 3, the Division considers Tchernenko one of the few surviving expert virologists able to help mass-produce broad-spectrum antivirals.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "tchernenko-black-tusk-custody",
+      "text": "The Episode 3 recap places Tchernenko in Black Tusk custody on Coney Island.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Scientific importance",
+      "paragraphs": [
+        {
+          "text": "Tchernenko is important because of his antiviral expertise, not because he created Green Poison. Correctly separating him from Amherst prevents a common attribution error.",
+          "claim_ids": ["tchernenko-not-creator", "tchernenko-antiviral-expertise"]
+        }
+      ]
+    },
+    {
+      "heading": "Coney Island",
+      "paragraphs": [
+        {
+          "text": "His reappearance in Black Tusk custody sends Division Agents back toward New York during Episode 3.",
+          "claim_ids": ["tchernenko-black-tusk-custody"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "faction-black-tusk", "relationship": "held-by"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Scope ends with the official Episode 3 setup recap."
+  }
+}

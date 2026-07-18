@@ -55,16 +55,22 @@
   ],
   "relationship_types": [
     "member-of",
+    "former-member-of",
     "leader-of",
     "allied-with",
     "opposed-to",
+    "held-by",
     "appears-in",
     "mentioned-in",
     "located-at",
+    "involves",
     "occurs-during",
     "precedes",
     "follows",
     "causes",
+    "creator-of",
+    "created-by",
+    "contributes-to",
     "contradicts",
     "confirmed-influence",
     "documented-parallel",
@@ -112,5 +118,12 @@
     "speaker-reviewed",
     "source-reviewed",
     "blocked"
+  ],
+  "timeline_precisions": [
+    "exact-date",
+    "month",
+    "year",
+    "relative",
+    "sequence-only"
   ]
 }
