@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "id": "person-faye-lau",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "person",
+  "title": "Faye Lau",
+  "slug": "faye-lau",
+  "section": "people",
+  "summary": "A Division Agent whose appearance in the early Division 2 recap demonstrates the restored SHD Network reconnecting Agents across the country.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "claims": [
+    {
+      "id": "lau-agent",
+      "text": "The official franchise recap identifies Faye Lau as an Agent.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "lau-network-glimpse",
+      "text": "Faye Lau is glimpsed in The Division 2 when restoration of the SHD Network reconnects Agents across the country.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Network connection",
+      "paragraphs": [
+        {
+          "text": "This limited early-game appearance links the first game's New York operation to the nationwide network crisis that opens The Division 2.",
+          "claim_ids": ["lau-agent", "lau-network-glimpse"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "org-strategic-homeland-division", "relationship": "member-of"},
+    {"target_id": "event-division-network-crisis", "relationship": "appears-in"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "This record intentionally stops at the early Division 2 network appearance; Faye Lau's later arc needs its own current-canon source pass."
+  }
+}

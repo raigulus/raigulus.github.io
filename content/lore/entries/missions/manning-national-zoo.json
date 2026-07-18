@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "id": "mission-manning-national-zoo",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "mission",
+  "title": "Manning National Zoo",
+  "slug": "manning-national-zoo",
+  "section": "missions",
+  "summary": "An Episode 1 mission that sends Division Agents through Outcast defenses to confront faction leader Emeline Shaw.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "zoo-episode-one",
+      "text": "Ubisoft introduced Manning National Zoo as one of the two narrative missions in Episode 1: D.C. Outskirts — Expeditions.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-manning-white-oak-2019"]
+    },
+    {
+      "id": "zoo-emeline-shaw",
+      "text": "After her defeat on Roosevelt Island, Outcast leader Emeline Shaw retreats into the zoo and is protected by Outcast blockades and followers.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-manning-white-oak-2019"]
+    },
+    {
+      "id": "zoo-objective",
+      "text": "The mission objective is to hunt and confront Emeline Shaw inside the zoo.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-manning-white-oak-2019"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Outcast confrontation",
+      "paragraphs": [
+        {
+          "text": "Manning National Zoo continues the conflict with the Outcasts after Roosevelt Island. Agents breach the faction's defenses and pursue Emeline Shaw through the site.",
+          "claim_ids": ["zoo-episode-one", "zoo-emeline-shaw", "zoo-objective"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "faction-outcasts", "relationship": "involves"},
+    {"target_id": "location-manning-national-zoo", "relationship": "located-at"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "The official mission brief supports this narrative overview; encounter and collectible details remain pending."
+  }
+}

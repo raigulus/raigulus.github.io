@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "id": "person-emeline-shaw",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "person",
+  "title": "Emeline Shaw",
+  "slug": "emeline-shaw",
+  "section": "people",
+  "summary": "The Outcasts' leader, pursued from Roosevelt Island to a final confrontation at Manning National Zoo.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "shaw-outcast-leader",
+      "text": "Ubisoft's Episode 1 mission brief identifies Emeline Shaw as the leader of the Outcasts.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-manning-white-oak-2019"]
+    },
+    {
+      "id": "shaw-zoo-retreat",
+      "text": "After her defeat on Roosevelt Island, Shaw retreats into Manning National Zoo and is protected by Outcast followers and blockades.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-manning-white-oak-2019"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Manning National Zoo",
+      "paragraphs": [
+        {
+          "text": "Shaw's retreat turns Manning National Zoo into an Outcast strongpoint and the site of the Division's next confrontation with the faction's leadership.",
+          "claim_ids": ["shaw-outcast-leader", "shaw-zoo-retreat"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "faction-outcasts", "relationship": "leader-of"},
+    {"target_id": "mission-manning-national-zoo", "relationship": "appears-in"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Origin and ideology claims await direct Outcast collectible evidence."
+  }
+}

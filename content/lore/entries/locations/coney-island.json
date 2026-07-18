@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "id": "location-coney-island",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "location",
+  "title": "Coney Island",
+  "slug": "coney-island",
+  "section": "locations",
+  "summary": "The New York setting of Episode 3, divided between a Black Tusk operation at the ballpark and a Cleaner presence at the amusement park.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "coney-episode-three",
+      "text": "Episode 3 brings Division Agents back to New York, specifically Coney Island, for two main missions.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-coney-island-2020", "ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "coney-ballpark",
+      "text": "Black Tusk holds Vitaly Tchernenko at the Coney Island Ballpark.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-coney-island-2020"]
+    },
+    {
+      "id": "coney-amusement",
+      "text": "Cleaners are active at the Coney Island Amusement Park.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-coney-island-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Episode 3 battleground",
+      "paragraphs": [
+        {
+          "text": "Coney Island extends the conflict beyond Washington and divides Episode 3 between the rescue of Tchernenko from Black Tusk and a separate confrontation with the Cleaners.",
+          "claim_ids": ["coney-episode-three", "coney-ballpark", "coney-amusement"]
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Mission routes and collectible coordinates remain pending direct capture."
+  }
+}

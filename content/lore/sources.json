@@ -140,6 +140,39 @@
       "accessed_date": "2026-07-19",
       "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/4235uGIN3QkbDq4iNQVlT1/the-division-2-at-gamescom",
       "notes": "Official season preview describing the developing pact among the True Sons, Outcasts and Hyenas."
+    },
+    {
+      "id": "ubisoft-manning-white-oak-2019",
+      "title": "Intelligence Annex: Manning National Zoo & Camp White Oak",
+      "publisher": "Ubisoft",
+      "source_type": "official-developer",
+      "scope": "franchise-lore",
+      "published_date": "2019-07-23",
+      "accessed_date": "2026-07-19",
+      "url": "https://www.ubisoft.com/en-gb/game/the-division/the-division-2/news-updates/1mUiBUBaQ9XIuwxn9dpd1i/intelligence-annex-manning-national-zoo-camp-white-oak",
+      "notes": "Official Episode 1 mission briefs for Manning National Zoo and Camp White Oak."
+    },
+    {
+      "id": "ubisoft-pentagon-darpa-2019",
+      "title": "Intelligence Annex: The Pentagon & DARPA Research Labs",
+      "publisher": "Ubisoft",
+      "source_type": "official-developer",
+      "scope": "franchise-lore",
+      "published_date": "2019-10-22",
+      "accessed_date": "2026-07-19",
+      "url": "https://www.ubisoft.com/en-gb/game/the-division/the-division-2/news-updates/4icodYmsENMfYPrdTA9huz/intelligence-annex-the-pentagon-darpa-research-labs",
+      "notes": "Official Episode 2 mission briefs for the Pentagon and DARPA Research Labs."
+    },
+    {
+      "id": "ubisoft-coney-island-2020",
+      "title": "Episode 3: Coney Island Live Now!",
+      "publisher": "Ubisoft",
+      "source_type": "official-developer",
+      "scope": "franchise-lore",
+      "published_date": "2020-02-12",
+      "accessed_date": "2026-07-19",
+      "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/sy3ieLK9G1lXpUtZQp2sh/episode-3-coney-island-live-now",
+      "notes": "Official Episode 3 overview identifying the two Coney Island main missions and their objectives."
     }
   ]
 }

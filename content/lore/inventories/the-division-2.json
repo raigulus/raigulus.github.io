@@ -22,45 +22,45 @@
       "id": "td2-people",
       "label": "People",
       "expected_count": null,
-      "captured_count": 3,
-      "source_reviewed_count": 3,
+      "captured_count": 12,
+      "source_reviewed_count": 12,
       "human_reviewed_count": 0,
       "published_count": 0,
       "status": "in-progress",
-      "notes": "Three core people now have source-reviewed overview records; no completeness claim has been made."
+      "notes": "Twelve core people now have source-reviewed overview records across the outbreak, campaign and early Episodes; no completeness claim has been made."
     },
     {
       "id": "td2-factions",
       "label": "Factions and organizations",
       "expected_count": null,
-      "captured_count": 9,
-      "source_reviewed_count": 9,
+      "captured_count": 10,
+      "source_reviewed_count": 10,
       "human_reviewed_count": 0,
       "published_count": 0,
       "status": "in-progress",
-      "notes": "Seven factions, SHD and the JTF now have source-reviewed overview records; leadership and subgroup coverage remains incomplete."
+      "notes": "Eight factions, SHD and the JTF now have source-reviewed overview records; leadership and subgroup coverage remains incomplete."
     },
     {
       "id": "td2-locations",
       "label": "Locations",
       "expected_count": null,
-      "captured_count": 2,
-      "source_reviewed_count": 2,
+      "captured_count": 10,
+      "source_reviewed_count": 10,
       "human_reviewed_count": 0,
       "published_count": 0,
       "status": "in-progress",
-      "notes": "Washington and Lower Manhattan have overview records; district and landmark coverage remains incomplete."
+      "notes": "Ten major locations in The Division 2's narrative and its first-game context have overview records; district and landmark coverage remains incomplete."
     },
     {
       "id": "td2-missions-events",
       "label": "Missions and events",
       "expected_count": null,
-      "captured_count": 5,
-      "source_reviewed_count": 5,
+      "captured_count": 12,
+      "source_reviewed_count": 12,
       "human_reviewed_count": 0,
       "published_count": 0,
       "status": "in-progress",
-      "notes": "Five core events now form a sourced relative timeline; mission-level chronology remains incomplete."
+      "notes": "Five core events form a sourced relative timeline and seven Episode/stronghold missions have overview records; base-campaign and later seasonal mission coverage remains incomplete."
     },
     {
       "id": "td2-diseases-concepts",

@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "id": "location-capitol-hill",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "location",
+  "title": "Capitol Hill",
+  "slug": "capitol-hill",
+  "section": "locations",
+  "summary": "The True Sons strongpoint where President Ellis and the encryption key needed to reach the broad-spectrum antiviral are held.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "capitol-ellis-key",
+      "text": "The True Sons hold President Ellis and his encryption key at Capitol Hill.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "capitol-retaken",
+      "text": "Division Agents rescue Ellis and retake Capitol Hill from the True Sons before Black Tusk enters Washington.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Campaign turning point",
+      "paragraphs": [
+        {
+          "text": "Retaking Capitol Hill appears to complete the struggle against the True Sons and unlock the route to the antiviral, but it immediately precedes the Black Tusk siege.",
+          "claim_ids": ["capitol-ellis-key", "capitol-retaken"]
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "This page records the narrative location; an objective-level Capitol Building mission record remains pending direct capture."
+  }
+}

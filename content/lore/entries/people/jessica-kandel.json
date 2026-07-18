@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "id": "person-jessica-kandel",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "person",
+  "title": "Jessica Kandel",
+  "slug": "jessica-kandel",
+  "section": "people",
+  "summary": "A doctor and surviving scientist involved in the nationwide effort to create a broad-spectrum antiviral.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "claims": [
+    {
+      "id": "kandel-doctor",
+      "text": "The official recap identifies Jessica Kandel as a doctor and one of the surviving scientists working after the outbreak.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "kandel-antiviral",
+      "text": "Kandel is involved in creating a broad-spectrum antiviral alongside other surviving virologists and scientists.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Antiviral effort",
+      "paragraphs": [
+        {
+          "text": "Kandel's role connects scientific work established in the first game with The Division 2's missions to recover antivirals, a perfusion bioreactor and specialist support.",
+          "claim_ids": ["kandel-doctor", "kandel-antiviral"]
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Specific laboratory work and dialogue require direct mission or collectible evidence."
+  }
+}

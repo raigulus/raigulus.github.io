@@ -1,0 +1,56 @@
+{
+  "schema_version": 2,
+  "id": "mission-darpa-research-labs",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "mission",
+  "title": "DARPA Research Labs",
+  "slug": "darpa-research-labs",
+  "section": "missions",
+  "summary": "The second Episode 2 main mission, focused on stopping Black Tusk from extracting strategically valuable DARPA prototypes beneath the Pentagon.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "darpa-episode-two",
+      "text": "DARPA Research Labs is one of the two Episode 2 main missions set within the Pentagon operation.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-pentagon-darpa-2019"]
+    },
+    {
+      "id": "darpa-assets",
+      "text": "Black Tusk reaches the underground laboratories through flooded tunnels and prepares to extract DARPA prototypes and other strategic assets through an abandoned Cold War tunnel network.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-pentagon-darpa-2019"]
+    },
+    {
+      "id": "darpa-division-objective",
+      "text": "Division Agents are tasked with confronting Black Tusk and securing those assets.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-pentagon-darpa-2019"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Underground extraction",
+      "paragraphs": [
+        {
+          "text": "The mission moves below the Pentagon into DARPA facilities, where Agents must interrupt Black Tusk's planned extraction through Cold War-era tunnels.",
+          "claim_ids": ["darpa-episode-two", "darpa-assets", "darpa-division-objective"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "faction-black-tusk", "relationship": "involves"},
+    {"target_id": "location-the-pentagon", "relationship": "located-at"},
+    {"target_id": "mission-the-pentagon", "relationship": "follows"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Prototype names and encounter details are withheld until direct mission evidence is captured."
+  }
+}

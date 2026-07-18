@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "id": "mission-coney-island-amusement-park",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "mission",
+  "title": "Coney Island Amusement Park",
+  "slug": "coney-island-amusement-park",
+  "section": "missions",
+  "summary": "An Episode 3 main mission centered on a Cleaner presence at Coney Island's amusement park.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "amusement-main-mission",
+      "text": "Coney Island Amusement Park is one of the two main missions introduced with Episode 3.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-coney-island-2020"]
+    },
+    {
+      "id": "amusement-cleaners",
+      "text": "The Cleaners are sighted at the amusement park while pursuing their campaign to eradicate traces of the virus.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-coney-island-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Cleaner presence",
+      "paragraphs": [
+        {
+          "text": "The amusement park mission brings the returning Cleaners into Episode 3 and frames their presence through the faction's virus-eradication doctrine.",
+          "claim_ids": ["amusement-main-mission", "amusement-cleaners"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "faction-cleaners", "relationship": "involves"},
+    {"target_id": "location-coney-island", "relationship": "located-at"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "This record contains the official mission premise only; detailed objectives and audio evidence remain pending."
+  }
+}

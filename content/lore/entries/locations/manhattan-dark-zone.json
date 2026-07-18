@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "id": "location-manhattan-dark-zone",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "location",
+  "title": "Manhattan Dark Zone",
+  "slug": "manhattan-dark-zone",
+  "section": "locations",
+  "summary": "The initial containment zone where first-wave Agents are abandoned and where supply drops create a dangerous scavenging economy.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "dark-zone-containment",
+      "text": "The immediate response to the outbreak attempts to contain it within the Dark Zone.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "dark-zone-first-wave",
+      "text": "First-wave Division Agents are abandoned in the Dark Zone, where most are killed or go rogue.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "dark-zone-supply-drops",
+      "text": "Frequent supply drops for trapped survivors and Agents make the Dark Zone lucrative for scavengers.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Containment and abandonment",
+      "paragraphs": [
+        {
+          "text": "The Dark Zone begins as a containment measure but becomes the place where the first wave collapses and emergency supply flows attract scavengers, setting conditions for rogue Agents and faction power.",
+          "claim_ids": ["dark-zone-containment", "dark-zone-first-wave", "dark-zone-supply-drops"]
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "This overview covers the original Manhattan Dark Zone, not the separate Dark Zones in The Division 2."
+  }
+}

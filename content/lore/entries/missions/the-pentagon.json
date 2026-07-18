@@ -1,0 +1,56 @@
+{
+  "schema_version": 2,
+  "id": "mission-the-pentagon",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "mission",
+  "title": "The Pentagon",
+  "slug": "the-pentagon",
+  "section": "missions",
+  "summary": "The first Episode 2 main mission inside the besieged Pentagon, where Agents investigate Black Tusk's search for strategic resources.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "pentagon-episode-two",
+      "text": "The Pentagon is one of two Episode 2 main missions following an introductory Pentagon Breach mission.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-pentagon-darpa-2019"]
+    },
+    {
+      "id": "pentagon-black-tusk-siege",
+      "text": "Black Tusk places the Pentagon under siege and becomes the first outside force to enter after its post-outbreak lockdown.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-pentagon-darpa-2019"]
+    },
+    {
+      "id": "pentagon-bioreactor",
+      "text": "The wider Episode 2 operation has Agents secure a perfusion bioreactor needed for antiviral production.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Black Tusk objective",
+      "paragraphs": [
+        {
+          "text": "Agents enter a storm-damaged Pentagon to learn what Black Tusk is seeking and prevent the faction from converting the site's strategic resources into an advantage over SHD.",
+          "claim_ids": ["pentagon-episode-two", "pentagon-black-tusk-siege", "pentagon-bioreactor"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "faction-black-tusk", "relationship": "involves"},
+    {"target_id": "location-the-pentagon", "relationship": "located-at"},
+    {"target_id": "mission-darpa-research-labs", "relationship": "precedes"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Pentagon Breach is acknowledged but will receive its own record only after direct objective capture."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 2,
+  "id": "mission-coney-island-ballpark",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "mission",
+  "title": "Coney Island Ballpark",
+  "slug": "coney-island-ballpark",
+  "section": "missions",
+  "summary": "An Episode 3 main mission to rescue virologist Vitaly Tchernenko from Black Tusk captivity at Coney Island.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "ballpark-main-mission",
+      "text": "Coney Island Ballpark is one of the two main missions introduced with Episode 3.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-coney-island-2020"]
+    },
+    {
+      "id": "ballpark-tchernenko",
+      "text": "Black Tusk holds Vitaly Tchernenko at the ballpark, and the Division mission is to rescue him.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-coney-island-2020", "ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "ballpark-antiviral-value",
+      "text": "Tchernenko is considered important to efforts to mass-produce a broad-spectrum antiviral against Green Poison.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-coney-island-2020", "ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Rescue operation",
+      "paragraphs": [
+        {
+          "text": "The ballpark objective connects Episode 3 directly to the antiviral storyline: Agents establish a foothold, locate Tchernenko and attempt to remove him from Black Tusk custody.",
+          "claim_ids": ["ballpark-main-mission", "ballpark-tchernenko", "ballpark-antiviral-value"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "faction-black-tusk", "relationship": "involves"},
+    {"target_id": "person-vitaly-tchernenko", "relationship": "involves"},
+    {"target_id": "location-coney-island", "relationship": "located-at"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Dialogue and objective-by-objective transcription remain pending direct capture."
+  }
+}

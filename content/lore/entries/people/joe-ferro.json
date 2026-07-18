@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "id": "person-joe-ferro",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "person",
+  "title": "Joe Ferro",
+  "slug": "joe-ferro",
+  "section": "people",
+  "summary": "The original leader of the Cleaners, who made fire the faction's method for eliminating Green Poison.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "ferro-original-leader",
+      "text": "The official faction recap identifies Joe Ferro as the original leader of the Cleaners.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-factions-2020"]
+    },
+    {
+      "id": "ferro-fire-doctrine",
+      "text": "Ferro adopted fire as the drastic method for eliminating Green Poison, and the Division later killed him.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-factions-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Cleaner doctrine",
+      "paragraphs": [
+        {
+          "text": "Ferro establishes the Cleaners' defining belief that infection can be eradicated through fire. His death forces the faction to regroup before its return under Vivian Conley.",
+          "claim_ids": ["ferro-original-leader", "ferro-fire-doctrine"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "faction-cleaners", "relationship": "former-leader-of"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Biographical details beyond the official faction recap remain pending direct evidence."
+  }
+}
