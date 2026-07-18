@@ -1,0 +1,109 @@
+{
+  "id": "real-world-operation-dark-winter",
+  "type": "real-world-event",
+  "title": "Operation Dark Winter",
+  "slug": "operation-dark-winter",
+  "section": "real-world-influences",
+  "summary": "A 2001 senior-level tabletop exercise built around a fictional smallpox attack, and a documented real-world influence on the premise of The Division.",
+  "canon_status": "real-world",
+  "connection_status": "confirmed-influence",
+  "spoiler_level": "none",
+  "aliases": [
+    "Dark Winter"
+  ],
+  "claims": [
+    {
+      "id": "dark-winter-date-scenario",
+      "text": "Dark Winter was held on June 22–23, 2001 at Andrews Air Force Base and simulated a covert smallpox attack on the United States.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "jhu-dark-winter-overview"
+      ]
+    },
+    {
+      "id": "dark-winter-structure",
+      "text": "The exercise followed senior former officials through successive National Security Council meetings as the fictional outbreak expanded.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "jhu-dark-winter-overview"
+      ]
+    },
+    {
+      "id": "dark-winter-division-influence",
+      "text": "Ubisoft identifies Operation Dark Winter as one of the real-world events that directly inspired The Division's underlying premise.",
+      "assessment": "confirmed-influence",
+      "source_ids": [
+        "ubisoft-2019-division-roots"
+      ]
+    },
+    {
+      "id": "dark-winter-not-canon-event",
+      "text": "The real exercise is an influence on the franchise, not an event inside The Division's fictional continuity.",
+      "assessment": "editorial-distinction",
+      "source_ids": [
+        "jhu-dark-winter-overview",
+        "ubisoft-2019-division-roots"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What happened in the real world?",
+      "paragraphs": [
+        {
+          "text": "Dark Winter was a senior-level training exercise, not a real outbreak. Its fictional scenario tested how national leaders might respond to a deliberate smallpox attack while confronting vaccine shortages, intergovernmental coordination problems, public communication and civil-liberty questions.",
+          "claim_ids": [
+            "dark-winter-date-scenario",
+            "dark-winter-structure"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Connection to The Division",
+      "paragraphs": [
+        {
+          "text": "Ubisoft explicitly names Dark Winter as a real-world inspiration for The Division. The useful comparison is the stress placed on institutions during a fast-moving biological crisis. The franchise turns that policy exercise into a fictional collapsed-world narrative; it does not reproduce the exercise literally.",
+          "claim_ids": [
+            "dark-winter-division-influence",
+            "dark-winter-not-canon-event"
+          ]
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "topic": "Nature",
+      "real_world": "A fictional training scenario used in a real 2001 tabletop exercise.",
+      "division": "A fictional franchise in which a biological crisis causes institutional and social collapse.",
+      "assessment": "Documented influence, not an adaptation of the exercise scenario.",
+      "source_ids": [
+        "jhu-dark-winter-overview",
+        "ubisoft-2019-division-roots"
+      ]
+    },
+    {
+      "topic": "Primary focus",
+      "real_world": "Government decision-making, public-health capacity, communication and continuity under pressure.",
+      "division": "Field operations and survival inside the aftermath of a catastrophic outbreak.",
+      "assessment": "Shared crisis framework; different purpose and narrative scale.",
+      "source_ids": [
+        "jhu-dark-winter-overview",
+        "ubisoft-2019-division-roots"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "real-world-directive-51",
+      "relationship": "co-foundational-influence"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-18",
+    "human_reviewed": false,
+    "notes": "All public claims are tied to primary or official sources. Human editorial approval is pending."
+  }
+}
