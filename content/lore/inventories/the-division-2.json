@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "the-division-2-lore-inventory",
+  "title": "The Division 2 Lore Coverage",
+  "game": "the-division-2",
+  "inventory_status": "inventory-pending",
+  "last_audited": "2026-07-18",
+  "notes": "Expected totals remain intentionally unknown until the in-game menus and release-by-release source inventory are captured and reconciled.",
+  "categories": [
+    {
+      "id": "td2-collectibles",
+      "label": "Lore-bearing collectibles",
+      "expected_count": null,
+      "captured_count": 0,
+      "source_reviewed_count": 0,
+      "human_reviewed_count": 0,
+      "published_count": 0,
+      "status": "inventory-pending",
+      "notes": "Category and set totals will be added only after direct in-game inventory evidence is available."
+    },
+    {
+      "id": "td2-people",
+      "label": "People",
+      "expected_count": null,
+      "captured_count": 0,
+      "source_reviewed_count": 0,
+      "human_reviewed_count": 0,
+      "published_count": 0,
+      "status": "inventory-pending",
+      "notes": "No completeness claim has been made."
+    },
+    {
+      "id": "td2-factions",
+      "label": "Factions and organizations",
+      "expected_count": null,
+      "captured_count": 0,
+      "source_reviewed_count": 0,
+      "human_reviewed_count": 0,
+      "published_count": 0,
+      "status": "inventory-pending",
+      "notes": "No completeness claim has been made."
+    },
+    {
+      "id": "td2-locations",
+      "label": "Locations",
+      "expected_count": null,
+      "captured_count": 0,
+      "source_reviewed_count": 0,
+      "human_reviewed_count": 0,
+      "published_count": 0,
+      "status": "inventory-pending",
+      "notes": "No completeness claim has been made."
+    },
+    {
+      "id": "td2-missions-events",
+      "label": "Missions and events",
+      "expected_count": null,
+      "captured_count": 0,
+      "source_reviewed_count": 0,
+      "human_reviewed_count": 0,
+      "published_count": 0,
+      "status": "inventory-pending",
+      "notes": "Release-by-release chronology has not yet been reconciled."
+    }
+  ]
+}

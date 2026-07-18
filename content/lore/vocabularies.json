@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "entry_types": [
+    "person",
+    "faction",
+    "organization",
+    "location",
+    "event",
+    "mission",
+    "concept",
+    "technology",
+    "disease",
+    "collectible",
+    "work",
+    "real-world-event",
+    "government-directive"
+  ],
+  "continuities": [
+    "division-game-universe",
+    "division-transmedia",
+    "tom-clancy-work",
+    "real-world",
+    "editorial-comparison",
+    "unknown"
+  ],
+  "canon_statuses": [
+    "game-canon",
+    "official-transmedia",
+    "alternate-continuity",
+    "real-world",
+    "real-world-with-fictional-extension",
+    "editorial-comparison",
+    "unknown",
+    "disputed"
+  ],
+  "connection_statuses": [
+    "not-applicable",
+    "confirmed-influence",
+    "explicit-reference",
+    "documented-parallel",
+    "thematic-similarity",
+    "community-theory",
+    "disputed"
+  ],
+  "claim_assessments": [
+    "confirmed",
+    "confirmed-influence",
+    "confirmed-fictional-extension",
+    "editorial-distinction",
+    "documented-parallel",
+    "thematic-similarity",
+    "community-theory",
+    "disputed",
+    "unknown"
+  ],
+  "relationship_types": [
+    "member-of",
+    "leader-of",
+    "allied-with",
+    "opposed-to",
+    "appears-in",
+    "mentioned-in",
+    "located-at",
+    "occurs-during",
+    "precedes",
+    "follows",
+    "causes",
+    "contradicts",
+    "confirmed-influence",
+    "documented-parallel",
+    "adaptation-of",
+    "co-foundational-influence"
+  ],
+  "source_types": [
+    "direct-game-capture",
+    "official-publisher",
+    "official-developer",
+    "official-publication",
+    "primary-exercise-record",
+    "official-government-archive",
+    "bibliographic-record",
+    "scholarly-secondary",
+    "reputable-secondary",
+    "community-lead"
+  ],
+  "source_scopes": [
+    "game-evidence",
+    "developer-history-and-franchise-lore",
+    "franchise-lore",
+    "real-world-history",
+    "real-world-law-and-policy",
+    "bibliography",
+    "editorial-context"
+  ],
+  "spoiler_levels": ["none", "minor", "major"],
+  "verification_statuses": [
+    "draft",
+    "source-reviewed",
+    "human-reviewed",
+    "published",
+    "superseded"
+  ],
+  "inventory_statuses": [
+    "inventory-pending",
+    "in-progress",
+    "blocked",
+    "reconciled"
+  ],
+  "transcript_statuses": [
+    "not-started",
+    "machine-draft",
+    "speaker-reviewed",
+    "source-reviewed",
+    "blocked"
+  ]
+}

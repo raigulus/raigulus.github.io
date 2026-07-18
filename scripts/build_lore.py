@@ -6,9 +6,10 @@ from __future__ import annotations
 import html
 import json
 import sys
+from collections import Counter
 from pathlib import Path
 
-from validate_lore import ROOT, run_validation
+from validate_lore import ROOT, load_editorial, load_inventories, run_validation
 
 
 BASE_URL = "https://raigulus.github.io"
@@ -92,7 +93,7 @@ def header():
 def footer():
     return '''<footer class="site-footer">
   <p>Unofficial, source-led research into The Division universe and its real-world influences.</p>
-  <p><a href="/lore/">Lore Archive</a> <span>/</span> <a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a></p>
+  <p><a href="/lore/">Lore Archive</a> <span>/</span> <a href="/lore/methodology/">Methodology</a> <span>/</span> <a href="/lore/corrections/">Corrections</a> <span>/</span> <a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a></p>
 </footer>'''
 
 
@@ -185,12 +186,13 @@ def render_entry(entry, entries_by_id, sources_by_id):
   <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/lore/">Lore</a> / <span>{esc(entry['title'])}</span></nav>
   <article class="lore-article">
     <header class="lore-hero">
-      <p class="eyebrow">Real-world influence</p>
+      <p class="eyebrow">{esc(entry['type'].replace('-', ' '))}</p>
       <h1>{esc(entry['title'])}</h1>
       <p class="lede">{esc(entry['summary'])}</p>
       {aliases}
       <div class="evidence-strip">
         <span><strong>Connection</strong>{esc(entry['connection_status'].replace('-', ' '))}</span>
+        <span><strong>Continuity</strong>{esc(entry['continuity'].replace('-', ' '))}</span>
         <span><strong>Canon scope</strong>{esc(entry['canon_status'].replace('-', ' '))}</span>
         <span><strong>Verification</strong>{esc(verification['status'].replace('-', ' '))}</span>
         <span><strong>Reviewed</strong>{esc(verification['last_reviewed'])}</span>
@@ -229,6 +231,11 @@ def render_index(entries):
   <div class="lore-card-meta"><span>{esc(entry['connection_status'].replace('-', ' '))}</span><span>{esc(verification['status'].replace('-', ' '))}</span></div>
 </article>''')
     description = "A source-led archive of The Division lore, characters, events, collectibles and documented real-world influences."
+    status_counts = Counter(entry["verification"]["status"] for entry in entries)
+    status_summary = "".join(
+        f'<span><strong>{count}</strong>{esc(status.replace("-", " "))}</span>'
+        for status, count in sorted(status_counts.items())
+    )
     return f'''{head('The Division Lore Archive', description, BASE_URL + '/lore/', 'CollectionPage')}
 <body>
 {header()}
@@ -238,14 +245,142 @@ def render_index(entries):
     <h1>The Division Lore Archive</h1>
     <p>{esc(description)}</p>
     <div class="archive-principles"><span>No source, no claim</span><span>Canon and theory stay separate</span><span>Every page is versioned</span></div>
+    <div class="archive-stats"><span><strong>{len(entries)}</strong>structured records</span>{status_summary}</div>
   </section>
   <section class="lore-index-section">
+    <div class="lore-tools" aria-label="Lore archive controls">
+      <a href="/lore/coverage/"><strong>Coverage</strong><span>Verified counts and acknowledged gaps</span></a>
+      <a href="/lore/methodology/"><strong>Methodology</strong><span>Evidence, canon and review rules</span></a>
+      <a href="/lore/review-queue/"><strong>Review queue</strong><span>Records awaiting human approval</span></a>
+      <a href="/lore/copyright/"><strong>Copyright</strong><span>Transcript and quotation boundaries</span></a>
+      <a href="/lore/corrections/"><strong>Corrections</strong><span>Report an error with evidence</span></a>
+      <a href="/lore/sources/"><strong>Sources</strong><span>Shared provenance registry</span></a>
+    </div>
     <div class="section-heading"><div><p class="eyebrow">Foundation set</p><h2>Documented real-world influences</h2></div><p>These pages establish the evidence model before the archive expands into characters, factions, missions and collectibles.</p></div>
     <div class="guide-search" data-guide-search><input type="search" data-guide-search-input placeholder="Search the lore archive" aria-label="Search the lore archive"><span data-guide-search-count></span></div>
     <div class="lore-grid">{''.join(cards)}</div>
   </section>
 </main>
 <script src="/assets/search.js" defer></script>
+{footer()}
+</body>
+</html>
+'''
+
+
+def render_editorial_page(page):
+    sections = []
+    for section in page["sections"]:
+        paragraphs = "".join(f'<p>{esc(paragraph)}</p>' for paragraph in section["paragraphs"])
+        sections.append(
+            f'<section class="lore-section"><h2>{esc(section["heading"])}</h2>{paragraphs}</section>'
+        )
+    action = ""
+    if page.get("action_url"):
+        action = (
+            f'<p class="policy-action"><a href="{esc(page["action_url"])}">'
+            f'{esc(page.get("action_label", "Open request"))}</a></p>'
+        )
+    canonical = BASE_URL + f'/lore/{page["slug"]}/'
+    return f'''{head(page['title'], page['description'], canonical)}
+<body>
+{header()}
+<main class="lore-shell">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/lore/">Lore</a> / <span>{esc(page['title'])}</span></nav>
+  <article class="lore-article">
+    <header class="lore-hero"><p class="eyebrow">{esc(page['eyebrow'])}</p><h1>{esc(page['title'])}</h1><p class="lede">{esc(page['description'])}</p>{action}</header>
+    {''.join(sections)}
+  </article>
+</main>
+{footer()}
+</body>
+</html>
+'''
+
+
+def count_label(value):
+    return "Unknown" if value is None else str(value)
+
+
+def render_coverage(entries, inventories):
+    verification_counts = Counter(entry["verification"]["status"] for entry in entries)
+    record_rows = "".join(
+        f'<tr><th scope="row">{esc(status.replace("-", " "))}</th><td>{count}</td></tr>'
+        for status, count in sorted(verification_counts.items())
+    )
+    inventory_blocks = []
+    for inventory in inventories:
+        rows = []
+        for category in inventory["categories"]:
+            rows.append(
+                "<tr>"
+                f'<th scope="row">{esc(category["label"])}</th>'
+                f'<td>{esc(count_label(category["expected_count"]))}</td>'
+                f'<td>{category["captured_count"]}</td>'
+                f'<td>{category["source_reviewed_count"]}</td>'
+                f'<td>{category["human_reviewed_count"]}</td>'
+                f'<td>{category["published_count"]}</td>'
+                f'<td><span class="coverage-status">{esc(category["status"].replace("-", " "))}</span><small>{esc(category["notes"])}</small></td>'
+                "</tr>"
+            )
+        inventory_blocks.append(f'''<section class="lore-section">
+  <h2>{esc(inventory['title'])}</h2>
+  <p>{esc(inventory['notes'])}</p>
+  <p class="section-note">Last audited {esc(inventory['last_audited'])}. Unknown totals are deliberately not estimated.</p>
+  <div class="table-scroll"><table class="comparison-table coverage-table">
+    <thead><tr><th>Category</th><th>Expected</th><th>Captured</th><th>Source reviewed</th><th>Human reviewed</th><th>Published</th><th>Status</th></tr></thead>
+    <tbody>{''.join(rows)}</tbody>
+  </table></div>
+</section>''')
+    description = "Transparent coverage counts and acknowledged evidence gaps for the Raigulus Division Lore Archive."
+    return f'''{head('Lore Coverage', description, BASE_URL + '/lore/coverage/', 'CollectionPage')}
+<body>
+{header()}
+<main class="lore-shell">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/lore/">Lore</a> / <span>Coverage</span></nav>
+  <article class="lore-article">
+    <header class="lore-hero"><p class="eyebrow">Audit dashboard</p><h1>Lore Coverage</h1><p class="lede">Counts are published only when they can be reconciled. Unknown totals remain unknown instead of being guessed.</p></header>
+    <section class="lore-section"><h2>Structured record status</h2><div class="table-scroll"><table class="comparison-table compact-table"><thead><tr><th>Status</th><th>Records</th></tr></thead><tbody>{record_rows}</tbody></table></div></section>
+    {''.join(inventory_blocks)}
+  </article>
+</main>
+{footer()}
+</body>
+</html>
+'''
+
+
+def render_review_queue(entries, inventories):
+    pending = [
+        entry
+        for entry in entries
+        if entry["verification"]["status"] not in {"human-reviewed", "published"}
+    ]
+    entry_items = "".join(
+        f'<li><a href="{page_url(entry)}">{esc(entry["title"])}</a><span>{esc(entry["verification"]["status"].replace("-", " "))}</span><p>{esc(entry["verification"].get("notes", ""))}</p></li>'
+        for entry in sorted(pending, key=lambda item: item["title"])
+    )
+    blocked_categories = []
+    for inventory in inventories:
+        for category in inventory["categories"]:
+            if category["status"] != "reconciled":
+                blocked_categories.append((inventory, category))
+    inventory_items = "".join(
+        f'<li><strong>{esc(category["label"])}</strong><span>{esc(category["status"].replace("-", " "))}</span><p>{esc(category["notes"])}</p></li>'
+        for _, category in blocked_categories
+    )
+    description = "Records and coverage areas awaiting human review or stronger evidence."
+    return f'''{head('Lore Review Queue', description, BASE_URL + '/lore/review-queue/', 'CollectionPage')}
+<body>
+{header()}
+<main class="lore-shell">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/lore/">Lore</a> / <span>Review queue</span></nav>
+  <article class="lore-article">
+    <header class="lore-hero"><p class="eyebrow">Human control</p><h1>Lore Review Queue</h1><p class="lede">Source-reviewed work remains here until a designated human editor approves it. Missing evidence stays visible.</p></header>
+    <section class="lore-section"><h2>Records awaiting approval</h2><ul class="review-queue">{entry_items or '<li>No records currently await review.</li>'}</ul></section>
+    <section class="lore-section"><h2>Coverage still being inventoried</h2><ul class="review-queue">{inventory_items or '<li>All inventories are reconciled.</li>'}</ul></section>
+  </article>
+</main>
 {footer()}
 </body>
 </html>
@@ -286,9 +421,15 @@ def write_text(path: Path, content: str):
     path.write_text(content, encoding="utf-8")
 
 
-def update_sitemaps(entries):
+def update_sitemaps(entries, editorial_pages):
     urls = [("/lore/", max(item["verification"]["last_reviewed"] for item in entries))]
     urls.append(("/lore/sources/", max(item["verification"]["last_reviewed"] for item in entries)))
+    urls.append(("/lore/coverage/", max(item["verification"]["last_reviewed"] for item in entries)))
+    urls.append(("/lore/review-queue/", max(item["verification"]["last_reviewed"] for item in entries)))
+    urls.extend(
+        (f'/lore/{page["slug"]}/', max(item["verification"]["last_reviewed"] for item in entries))
+        for page in editorial_pages
+    )
     urls.extend((page_url(entry), entry["verification"]["last_reviewed"]) for entry in entries)
 
     xml_path = ROOT / "sitemap.xml"
@@ -319,13 +460,22 @@ def main():
         return 1
     sources_by_id = {source["id"]: source for source in sources}
     entries_by_id = {entry["id"]: entry for entry in entries}
+    inventories = load_inventories()
+    editorial_pages = load_editorial()["pages"]
     write_text(ROOT / "lore" / "index.html", render_index(entries))
     write_text(ROOT / "lore" / "sources" / "index.html", render_sources(sources))
+    write_text(ROOT / "lore" / "coverage" / "index.html", render_coverage(entries, inventories))
+    write_text(ROOT / "lore" / "review-queue" / "index.html", render_review_queue(entries, inventories))
+    for page in editorial_pages:
+        write_text(ROOT / "lore" / page["slug"] / "index.html", render_editorial_page(page))
     for entry in entries:
         output = ROOT / "lore" / entry["section"] / entry["slug"] / "index.html"
         write_text(output, render_entry(entry, entries_by_id, sources_by_id))
-    update_sitemaps(entries)
-    print(f"Built {len(entries)} lore entries and the archive index")
+    update_sitemaps(entries, editorial_pages)
+    print(
+        f"Built {len(entries)} lore entries, {len(editorial_pages)} editorial pages "
+        "and 2 control dashboards"
+    )
     return 0
 
 
