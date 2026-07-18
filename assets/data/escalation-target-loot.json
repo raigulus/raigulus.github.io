@@ -34,56 +34,10 @@
     }
   ],
   "last_updated": "2026-07-18 10:01",
-  "last_checked": "2026-07-18 08:24 UTC",
-  "parsed_at": "2026-07-18T08:24:49.940420+00:00",
+  "last_checked": "2026-07-18 08:55 UTC",
+  "parsed_at": "2026-07-18T08:55:08.367579+00:00",
   "status": "ok",
-  "fetched_at": "2026-07-18T08:24:49.940420+00:00",
+  "fetched_at": "2026-07-18T08:55:08.367579+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Current dated loot snapshot is available.",
-  "vendor_highlights": [
-    {
-      "vendor": "White House",
-      "item": "Sleight",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "DZ South",
-      "item": "Door-Kicker's Knock",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Hermano Backpack",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Hunter-Killer",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Clan",
-      "item": "Lefty - ACS-12",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "The Campus",
-      "item": "Brutus - M700 Carbon",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "The Campus",
-      "item": "Big Show - MG5",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "DZ West",
-      "item": "Cuélebre – Military M870",
-      "note": "Named weapon"
-    }
-  ],
-  "vendor_highlights_status": "ok",
-  "vendor_highlights_checked": "2026-07-18 08:24 UTC",
-  "vendor_highlights_date": "2026-07-18",
-  "vendor_highlights_note": "Current dated vendor highlights are available."
+  "snapshot_note": "Current dated loot snapshot is available."
 }
