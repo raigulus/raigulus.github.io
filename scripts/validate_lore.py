@@ -21,6 +21,9 @@ VOCABULARIES_PATH = LORE_CONTENT / "vocabularies.json"
 EDITORIAL_PATH = LORE_CONTENT / "editorial.json"
 
 SLUG_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+META_REFRESH_PATTERN = re.compile(
+    r"<meta\s+[^>]*http-equiv=[\"']refresh[\"'][^>]*>", re.IGNORECASE
+)
 FORBIDDEN_PUBLIC_KEYS = {
     "full_transcript",
     "raw_transcript",
@@ -422,10 +425,19 @@ def public_asset_errors():
     return errors
 
 
+def is_redirect_page(html_text):
+    """Return true for legacy HTML aliases that redirect to a canonical page."""
+    return bool(META_REFRESH_PATTERN.search(html_text))
+
+
 def site_inventory_warnings():
     warnings = []
     video_root = ROOT / "division-2" / "videos"
-    page_slugs = {path.parent.name for path in video_root.glob("*/index.html")}
+    page_slugs = {
+        path.parent.name
+        for path in video_root.glob("*/index.html")
+        if not is_redirect_page(path.read_text(encoding="utf-8"))
+    }
     video_records = load_json(ROOT / "assets" / "data" / "videos.json")
     record_slugs = {
         urlparse(record.get("url", "")).path.rstrip("/").split("/")[-1]

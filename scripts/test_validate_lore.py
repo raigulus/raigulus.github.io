@@ -6,7 +6,13 @@ from __future__ import annotations
 import copy
 import unittest
 
-from scripts.validate_lore import ROOT, load_json, validate_inventories, validate_records
+from scripts.validate_lore import (
+    ROOT,
+    is_redirect_page,
+    load_json,
+    validate_inventories,
+    validate_records,
+)
 
 
 VOCABULARIES = load_json(ROOT / "content" / "lore" / "vocabularies.json")
@@ -159,6 +165,15 @@ class LoreInventoryValidationTests(unittest.TestCase):
         }
         errors, _ = validate_inventories([inventory], VOCABULARIES)
         self.assertTrue(any("counts must satisfy" in item for item in errors))
+
+
+class SiteInventoryTests(unittest.TestCase):
+    def test_meta_refresh_alias_is_not_a_canonical_video_page(self):
+        markup = '<meta http-equiv="refresh" content="0; url=/replacement/">'
+        self.assertTrue(is_redirect_page(markup))
+
+    def test_normal_page_is_not_treated_as_redirect(self):
+        self.assertFalse(is_redirect_page("<html><head><title>Guide</title></head></html>"))
 
 
 if __name__ == "__main__":

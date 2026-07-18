@@ -28,9 +28,9 @@ python3 scripts/build_lore.py
 python3 scripts/check_lore_pages.py
 ```
 
-Use `python3 scripts/validate_lore.py --strict-site-inventory` after video page
-and `videos.json` inventories agree. In normal mode site inventory drift is a
-warning, while every lore validation error remains blocking.
+CI uses `python3 scripts/validate_lore.py --strict-site-inventory`. Canonical
+video pages and `videos.json` records must agree; legacy HTML aliases with a
+meta refresh are deliberately excluded from canonical inventory counts.
 
 ## Publication and copyright gates
 
