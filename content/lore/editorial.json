@@ -65,6 +65,36 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "evidence-intake",
+      "title": "Collectible Evidence Intake",
+      "description": "The capture checklist used to turn in-game collectibles, comms and recordings into reviewable lore records.",
+      "eyebrow": "Research intake",
+      "action_url": "https://github.com/raigulus/raigulus.github.io/issues/new?template=lore-evidence.yml",
+      "action_label": "Submit a collectible evidence record",
+      "sections": [
+        {
+          "heading": "Required capture set",
+          "paragraphs": [
+            "Capture the in-game collection menu showing the category, item title and completion position; add the map, mission or room locator where the item is obtained; record platform, interface language and the exact game build or season.",
+            "For audio, provide the original recording privately to the authorized research agent and list every speaker you can identify. Uncertain speakers must remain marked unknown rather than being guessed."
+          ]
+        },
+        {
+          "heading": "What becomes public",
+          "paragraphs": [
+            "The public record contains identifying metadata, an original summary, key lore claims, speaker attribution confidence and precise evidence locators. Complete audio, video, subtitle dumps and working transcripts stay outside this public repository unless a separate rights review approves them.",
+            "A collectible is counted as captured only after its identity and locator are evidenced. It is source-reviewed only after the media or menu capture supports every published claim, and it is published only after human approval."
+          ]
+        },
+        {
+          "heading": "Duplicate and conflict handling",
+          "paragraphs": [
+            "Alternate-language or later-build captures are linked to the same collectible identity rather than counted twice. If wording, speaker labels or placement changes between builds, both observations remain versioned and the conflict is shown instead of silently overwritten."
+          ]
+        }
+      ]
     }
   ]
 }

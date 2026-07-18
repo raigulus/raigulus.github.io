@@ -1,0 +1,56 @@
+{
+  "schema_version": 2,
+  "id": "faction-last-man-battalion",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "faction",
+  "title": "Last Man Battalion",
+  "slug": "last-man-battalion",
+  "section": "factions",
+  "summary": "A hostile Manhattan faction that cooperates with Aaron Keener and retains a command structure after the first game's events.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "lmb-manhattan-opposition",
+      "text": "The Last Man Battalion is one of the three violent factions SHD Agents face while securing Midtown Manhattan after activation.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "lmb-keener-cooperation",
+      "text": "Aaron Keener works with the Last Man Battalion and manipulates it while pursuing Vitaly Tchernenko and Gordon Amherst's equipment.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "lmb-command-and-assimilation",
+      "text": "After the first game the Last Man Battalion retains a command structure, while Black Tusk later assimilates some of its members.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020", "ubisoft-wony-factions-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "From Manhattan to Black Tusk",
+      "paragraphs": [
+        {
+          "text": "The Last Man Battalion survives its original Manhattan campaign as an organized force. Its connection to Keener and the later assimilation of members into Black Tusk link the first game's opposition to The Division 2's endgame faction.",
+          "claim_ids": ["lmb-manhattan-opposition", "lmb-keener-cooperation", "lmb-command-and-assimilation"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "org-strategic-homeland-division", "relationship": "opposed-to"},
+    {"target_id": "person-aaron-keener", "relationship": "allied-with"},
+    {"target_id": "faction-black-tusk", "relationship": "assimilated-by"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Founding, leadership and unit structure require direct first-game mission and collectible evidence."
+  }
+}

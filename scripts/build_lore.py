@@ -289,6 +289,7 @@ def render_index(entries):
       <a href="/lore/methodology/"><strong>Methodology</strong><span>Evidence, canon and review rules</span></a>
       <a href="/lore/review-queue/"><strong>Review queue</strong><span>Records awaiting human approval</span></a>
       <a href="/lore/copyright/"><strong>Copyright</strong><span>Transcript and quotation boundaries</span></a>
+      <a href="/lore/evidence-intake/"><strong>Evidence intake</strong><span>Submit collectible and audio captures</span></a>
       <a href="/lore/corrections/"><strong>Corrections</strong><span>Report an error with evidence</span></a>
       <a href="/lore/sources/"><strong>Sources</strong><span>Shared provenance registry</span></a>
     </div>

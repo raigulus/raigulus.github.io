@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "id": "location-tidal-basin",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "location",
+  "title": "Tidal Basin",
+  "slug": "tidal-basin",
+  "section": "locations",
+  "summary": "Black Tusk's principal Washington stronghold and the site where Division Agents recover the broad-spectrum antivirals.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "tidal-main-stronghold",
+      "text": "The official narrative recap identifies Tidal Basin as Black Tusk's main stronghold in Washington, D.C.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "tidal-antiviral-recovery",
+      "text": "Division Agents take down the stronghold and retrieve the antivirals there.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Black Tusk stronghold",
+      "paragraphs": [
+        {
+          "text": "Tidal Basin is the strategic endpoint of the first Black Tusk invasion arc and the location of the antiviral recovery operation.",
+          "claim_ids": ["tidal-main-stronghold", "tidal-antiviral-recovery"]
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "The record does not yet map mission objectives, encounters or collectibles."
+  }
+}

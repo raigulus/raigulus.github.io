@@ -51,6 +51,7 @@
   "relations": [
     {"target_id": "event-green-poison-outbreak", "relationship": "follows"},
     {"target_id": "org-strategic-homeland-division", "relationship": "involves"},
+    {"target_id": "location-midtown-manhattan", "relationship": "located-at"},
     {"target_id": "event-division-network-crisis", "relationship": "precedes"}
   ],
   "verification": {

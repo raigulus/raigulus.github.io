@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "id": "person-james-dragov",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "person",
+  "title": "James Dragov",
+  "slug": "james-dragov",
+  "section": "people",
+  "summary": "A rogue lieutenant of Aaron Keener who leads the Rikers sub-group operating in Lower Manhattan.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "dragov-riker-leader",
+      "text": "The Warlords of New York faction recap identifies James Dragov as leader of the Rikers sub-group in Lower Manhattan.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-factions-2020"]
+    },
+    {
+      "id": "dragov-keener-lieutenant",
+      "text": "The same official recap identifies Dragov as one of Aaron Keener's rogue lieutenants.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-factions-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Lower Manhattan",
+      "paragraphs": [
+        {
+          "text": "Dragov connects Keener's rogue-agent network to the reorganized Rikers encountered in Lower Manhattan.",
+          "claim_ids": ["dragov-riker-leader", "dragov-keener-lieutenant"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "faction-rikers", "relationship": "leader-of"},
+    {"target_id": "location-lower-manhattan", "relationship": "located-at"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Mission outcome and personal history remain outside this opening-premise record."
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "id": "mission-camp-white-oak",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "mission",
+  "title": "Camp White Oak",
+  "slug": "camp-white-oak",
+  "section": "missions",
+  "summary": "An Episode 1 mission in which Division Agents pursue President Ellis at a Black Tusk position outside Washington.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "white-oak-episode-one",
+      "text": "Ubisoft introduced Camp White Oak as one of two Episode 1 missions, accessible after World Tier 5 and completion of Tidal Basin.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-manning-white-oak-2019"]
+    },
+    {
+      "id": "white-oak-ellis-extraction",
+      "text": "Division Agents attempt to capture President Ellis at Camp White Oak, but Black Tusk extracts him before they can reach him.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The pursuit of Ellis",
+      "paragraphs": [
+        {
+          "text": "Camp White Oak follows Tidal Basin and turns the hunt toward President Ellis. The operation fails to secure him when Black Tusk completes an extraction first.",
+          "claim_ids": ["white-oak-episode-one", "white-oak-ellis-extraction"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "faction-black-tusk", "relationship": "involves"},
+    {"target_id": "location-camp-white-oak", "relationship": "located-at"},
+    {"target_id": "mission-tidal-basin", "relationship": "follows"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Later reuse of Camp White Oak in seasonal missions is outside this Episode 1 record."
+  }
+}

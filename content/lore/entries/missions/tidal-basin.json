@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "id": "mission-tidal-basin",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "mission",
+  "title": "Tidal Basin",
+  "slug": "tidal-basin",
+  "section": "missions",
+  "summary": "The operation against Black Tusk's principal Washington stronghold that ends with Division Agents recovering the stolen broad-spectrum antivirals.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "tidal-basin-stronghold",
+      "text": "The official story recap identifies Tidal Basin as Black Tusk's main stronghold in Washington, D.C.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "tidal-basin-antivirals",
+      "text": "Division Agents take down the stronghold and recover the broad-spectrum antivirals.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Narrative role",
+      "paragraphs": [
+        {
+          "text": "Tidal Basin closes the first Black Tusk counteroffensive around the antiviral: Agents assault the faction's primary D.C. stronghold and retrieve the stolen supply.",
+          "claim_ids": ["tidal-basin-stronghold", "tidal-basin-antivirals"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "faction-black-tusk", "relationship": "involves"},
+    {"target_id": "location-tidal-basin", "relationship": "located-at"},
+    {"target_id": "event-black-tusk-siege", "relationship": "occurs-during"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "The page records the official narrative outcome; encounters, objectives and collectibles still require direct game capture."
+  }
+}
