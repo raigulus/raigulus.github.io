@@ -1,26 +1,26 @@
 {
-  "date": "2026-07-20",
+  "date": "2026-07-21",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Art Museum",
-      "loot": "Brazos de Arcabuz"
+      "loot": "Lengmo"
     },
     {
-      "mission": "Capitol Building",
-      "loot": "5.11 Tactical"
+      "mission": "Manning National Zoo",
+      "loot": "Airaldi Holdings"
     },
     {
-      "mission": "Jefferson Plaza",
-      "loot": "Aces & Eights"
+      "mission": "Camp White Oak",
+      "loot": "Edelweiss GPz"
     },
     {
-      "mission": "Lincoln Memorial",
-      "loot": "Kneepad"
+      "mission": "The Pentagon",
+      "loot": "Unit Alloys"
     },
     {
-      "mission": "Federal Emergency Bunker",
-      "loot": "Imminence Armaments"
+      "mission": "DARPA Research Labs",
+      "loot": "Shiny Monkey Gear"
     }
   ],
   "vendor_caches": [
@@ -30,60 +30,14 @@
     },
     {
       "type": "Gear",
-      "item": "Kneepads"
+      "item": "Chest Pieces"
     }
   ],
-  "last_updated": "2026-07-20 10:09",
-  "last_checked": "2026-07-21 15:24 UTC",
-  "parsed_at": "2026-07-21T15:24:03.726726+00:00",
-  "status": "stale",
-  "fetched_at": "2026-07-21T15:24:03.726726+00:00",
+  "last_updated": "2026-07-21 17:31",
+  "last_checked": "2026-07-21 16:37 UTC",
+  "parsed_at": "2026-07-21T16:37:23.196126+00:00",
+  "status": "ok",
+  "fetched_at": "2026-07-21T16:37:23.196126+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Checked after the expected daily reset window, but the source still returned an older snapshot.",
-  "vendor_highlights": [
-    {
-      "vendor": "White House",
-      "item": "Sleight",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "DZ South",
-      "item": "Door-Kicker's Knock",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Hermano Backpack",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Hunter-Killer",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Clan",
-      "item": "Lefty - ACS-12",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "The Campus",
-      "item": "Brutus - M700 Carbon",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "The Campus",
-      "item": "Big Show - MG5",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "DZ West",
-      "item": "Cuélebre – Military M870",
-      "note": "Named weapon"
-    }
-  ],
-  "vendor_highlights_status": "ok",
-  "vendor_highlights_checked": "2026-07-21 15:24 UTC",
-  "vendor_highlights_date": "2026-07-18",
-  "vendor_highlights_note": "Current dated vendor highlights are available."
+  "snapshot_note": "Current dated loot snapshot is available."
 }
