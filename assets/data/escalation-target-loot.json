@@ -33,16 +33,57 @@
       "item": "Chest Pieces"
     }
   ],
-  "vendor_highlights": [],
-  "vendor_highlights_status": "",
-  "vendor_highlights_checked": "",
-  "vendor_highlights_date": "",
-  "vendor_highlights_note": "",
   "last_updated": "2026-07-21 17:31",
-  "last_checked": "2026-07-22 01:02 UTC",
-  "parsed_at": "2026-07-22T01:02:33.878943+00:00",
+  "last_checked": "2026-07-22 03:34 UTC",
+  "parsed_at": "2026-07-22T03:34:14.128890+00:00",
   "status": "pending",
-  "fetched_at": "2026-07-22T01:02:33.878943+00:00",
+  "fetched_at": "2026-07-22T03:34:14.128890+00:00",
+  "next_expected_update": "Around 08:00 UTC",
   "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
-  "next_expected_update": "Around 08:00 UTC"
+  "vendor_highlights": [
+    {
+      "vendor": "White House",
+      "item": "Sleight",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "DZ South",
+      "item": "Door-Kicker's Knock",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Hermano Backpack",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Hunter-Killer",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Clan",
+      "item": "Lefty - ACS-12",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "The Campus",
+      "item": "Brutus - M700 Carbon",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "The Campus",
+      "item": "Big Show - MG5",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "DZ West",
+      "item": "Cuélebre – Military M870",
+      "note": "Named weapon"
+    }
+  ],
+  "vendor_highlights_status": "ok",
+  "vendor_highlights_checked": "2026-07-22 03:34 UTC",
+  "vendor_highlights_date": "2026-07-18",
+  "vendor_highlights_note": "Current dated vendor highlights are available."
 }
