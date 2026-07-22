@@ -6,12 +6,12 @@
     <atom:link href="https://raigulus.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>The latest Raigulus Division 2 walkthroughs, PvP clips, build tests, speedrun attempts, manhunts, boss guides, and no commentary gameplay.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 18 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>The Division 2 Builds and Build Tests</title>
       <link>https://raigulus.github.io/division-2/builds/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/builds/</guid>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
       <description>Video-backed Division 2 build tests for Bluescreen, Tipping Scales, Whiplash, Regulus, Rage Harvest, Toxic DZ, and Tier 10.</description>
       <category>build tests</category>
     </item>
@@ -19,7 +19,7 @@
       <title>Division 2 Loot Today, Targeted Loot &amp; Farming Guides</title>
       <link>https://raigulus.github.io/division-2/loot/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/loot/</guid>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 loot today, targeted loot, loot map context, farming routes, and Raigulus videos.</description>
       <category>loot</category>
     </item>
@@ -27,7 +27,7 @@
       <title>Division 2 Server Status, Maintenance &amp; Delta-03</title>
       <link>https://raigulus.github.io/division-2/server-status/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/server-status/</guid>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
       <description>Unofficial Division 2 server status tracker for maintenance, outage, Delta-03, official source links, and Raigulus guides.</description>
       <category>server status</category>
     </item>
@@ -35,7 +35,7 @@
       <title>Division 2 Escalation Loot Today &amp; Tier 10 Guide</title>
       <link>https://raigulus.github.io/division-2/escalation/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/escalation/</guid>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 Escalation loot today, Tier 10 matchmaking notes, vendor caches, and Raigulus videos.</description>
       <category>escalation</category>
     </item>
@@ -43,9 +43,41 @@
       <title>Division 2 Prototype Gear &amp; Escalation Vendor Guide</title>
       <link>https://raigulus.github.io/division-2/prototype-gear/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/prototype-gear/</guid>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 Prototype Gear Cache, Escalation vendor, and gear cache planning notes.</description>
       <category>prototype gear</category>
+    </item>
+    <item>
+      <title>How to Beat Secret Boss in The Division 2 | Dust Storm Event Guide [2026]</title>
+      <link>https://raigulus.github.io/division-2/videos/how-to-beat-secret-boss-in-the-division-2-dust-storm-event-guide/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/how-to-beat-secret-boss-in-the-division-2-dust-storm-event-guide/</guid>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <description>How to beat secret boss in The Division 2 with a clear guide.</description>
+      <category>boss guide</category>
+    </item>
+    <item>
+      <title>10 Kills &amp; 102 Million Damage with the Liberty | The Division 2 Conflict PvP | Archive Clip</title>
+      <link>https://raigulus.github.io/division-2/videos/10-kills-and-102-million-damage-with-the-liberty-the-division-2-conflict-pvp-archive-clip/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/10-kills-and-102-million-damage-with-the-liberty-the-division-2-conflict-pvp-archive-clip/</guid>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 GMT</pubDate>
+      <description>The Division 2 archive gameplay clip kept for PvP, Conflict, and nostalgia reference.</description>
+      <category>pvp/archive clip</category>
+    </item>
+    <item>
+      <title>They Called My Regulus Aim &quot;Aimbot&quot; | The Division 2 Conflict PvP | Archive Clip</title>
+      <link>https://raigulus.github.io/division-2/videos/they-called-my-regulus-aim-aimbot-the-division-2-conflict-pvp-archive-clip/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/they-called-my-regulus-aim-aimbot-the-division-2-conflict-pvp-archive-clip/</guid>
+      <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
+      <description>The Division 2 archive gameplay clip kept for PvP, Conflict, and nostalgia reference.</description>
+      <category>pvp/archive clip</category>
+    </item>
+    <item>
+      <title>We Turned a Losing Conflict Match Around | The Division 2 PvP | Archive Clip</title>
+      <link>https://raigulus.github.io/division-2/videos/we-turned-a-losing-conflict-match-around-the-division-2-pvp-archive-clip/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/we-turned-a-losing-conflict-match-around-the-division-2-pvp-archive-clip/</guid>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 GMT</pubDate>
+      <description>The Division 2 archive gameplay clip kept for PvP, Conflict, and nostalgia reference.</description>
+      <category>pvp/archive clip</category>
     </item>
     <item>
       <title>They Thought I Was Hacking With Regulus | The Division 2 Conflict #shorts</title>
@@ -70,6 +102,14 @@
       <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
       <description>Two Rogue Agent takedowns during a solo Tier 10 Lincoln Memorial Escalation run in The Division 2.</description>
       <category>short/tip</category>
+    </item>
+    <item>
+      <title>The Division 2 Y8S2 Week 5 Manhunt | Shank HVT Walkthrough 2026 | Archive Clip</title>
+      <link>https://raigulus.github.io/division-2/videos/the-division-2-y8s2-week-5-manhunt-shank-hvt-walkthrough-2026-archive-clip/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-y8s2-week-5-manhunt-shank-hvt-walkthrough-2026-archive-clip/</guid>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
+      <description>The Division 2 archive gameplay clip kept for PvP, Conflict, and nostalgia reference.</description>
+      <category>pvp/archive clip</category>
     </item>
     <item>
       <title>28m Regulus Headshot | The Division 2 Dark Zone PvP #shorts</title>
@@ -326,46 +366,6 @@
       <pubDate>Sun, 14 Jun 2026 00:00:00 GMT</pubDate>
       <description>The Division 2 PvP match against Widdz in Conflict, featuring an old Regulus headshot from a 5-year nostalgia archive.</description>
       <category>pvp/archive clip</category>
-    </item>
-    <item>
-      <title>The Division 2 Manning National Zoo Stronghold Walkthrough | No Commentary [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-manning-national-zoo-stronghold-walkthrough-no-commentary/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-manning-national-zoo-stronghold-walkthrough-no-commentary/</guid>
-      <pubDate>Sat, 13 Jun 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Manning National Zoo Stronghold walkthrough with no commentary.</description>
-      <category>mission</category>
-    </item>
-    <item>
-      <title>The Division 2 Warhound Weak Spot | Shoot the Legs #shorts</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-warhound-weak-spot-shoot-the-legs-shorts/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-warhound-weak-spot-shoot-the-legs-shorts/</guid>
-      <pubDate>Sat, 13 Jun 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Warhound weak spot tip: stop shooting the body armor plate and aim for the legs to deal real damage.</description>
-      <category>short/tip</category>
-    </item>
-    <item>
-      <title>The Division 2 Camp White Oak Invaded Walkthrough | No Commentary [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-camp-white-oak-invaded-walkthrough-no-commentary/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-camp-white-oak-invaded-walkthrough-no-commentary/</guid>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Camp White Oak Invaded walkthrough with no commentary.</description>
-      <category>invaded mission</category>
-    </item>
-    <item>
-      <title>The Division 2 DCD Headquarters Invaded Walkthrough | No Commentary [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-dcd-headquarters-invaded-walkthrough-no-commentary/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-dcd-headquarters-invaded-walkthrough-no-commentary/</guid>
-      <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 DCD Headquarters Invaded walkthrough with no commentary.</description>
-      <category>invaded mission</category>
-    </item>
-    <item>
-      <title>The Division 2 Jefferson Trade Center Hard Solo Speedrun Attempts | 3:54 PB [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-jefferson-trade-center-hard-solo-speedrun-attempts-3-54-pb/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-jefferson-trade-center-hard-solo-speedrun-attempts-3-54-pb/</guid>
-      <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Jefferson Trade Center Hard solo speedrun with a 3:54 PB and another sub-4 run at 3:58.</description>
-      <category>challenge/speedrun</category>
     </item>
   </channel>
 </rss>

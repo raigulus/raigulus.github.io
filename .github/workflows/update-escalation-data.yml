@@ -42,5 +42,16 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           suffix="$(date -u +%s%N | sha256sum | cut -c1-8)"
           git commit -m "site update $suffix"
-          git push
-          gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds"
+          for attempt in 1 2 3; do
+            if git push; then
+              gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds"
+              exit 0
+            fi
+            if [ "$attempt" = 3 ]; then
+              echo "Push was rejected after ${attempt} attempts."
+              exit 1
+            fi
+            echo "Push raced with another main update; rebasing before retry ${attempt}."
+            git fetch origin main
+            git rebase origin/main
+          done

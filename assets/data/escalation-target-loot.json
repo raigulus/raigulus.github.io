@@ -33,11 +33,16 @@
       "item": "Chest Pieces"
     }
   ],
+  "vendor_highlights": [],
+  "vendor_highlights_status": "",
+  "vendor_highlights_checked": "",
+  "vendor_highlights_date": "",
+  "vendor_highlights_note": "",
   "last_updated": "2026-07-21 17:31",
   "last_checked": "2026-07-22 01:02 UTC",
   "parsed_at": "2026-07-22T01:02:33.878943+00:00",
   "status": "pending",
   "fetched_at": "2026-07-22T01:02:33.878943+00:00",
-  "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot."
+  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "next_expected_update": "Around 08:00 UTC"
 }
