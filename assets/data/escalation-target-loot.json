@@ -1,89 +1,43 @@
 {
-  "date": "2026-07-22",
+  "date": "2026-07-23",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Art Museum",
-      "loot": "Hana-U Corporation"
+      "loot": "Golan Gear Ltd"
     },
     {
       "mission": "Manning National Zoo",
-      "loot": "Wyvern Wear"
+      "loot": "Eclipse Protocol"
     },
     {
       "mission": "Camp White Oak",
-      "loot": "Ongoing Directive"
+      "loot": "Body Armor"
     },
     {
       "mission": "The Pentagon",
-      "loot": "Airaldi Holdings"
+      "loot": "Ortiz: Reficere"
     },
     {
       "mission": "DARPA Research Labs",
-      "loot": "Negotiators Dilemma"
+      "loot": "Shotgun"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "LMGs"
+      "item": "Pistols"
     },
     {
       "type": "Gear",
-      "item": "Backpacks"
+      "item": "Masks"
     }
   ],
-  "last_updated": "2026-07-22 10:12",
-  "last_checked": "2026-07-23 07:58 UTC",
-  "parsed_at": "2026-07-23T07:58:59.824622+00:00",
-  "status": "pending",
-  "fetched_at": "2026-07-23T07:58:59.824622+00:00",
+  "last_updated": "2026-07-23 11:37",
+  "last_checked": "2026-07-23 10:32 UTC",
+  "parsed_at": "2026-07-23T10:32:22.233718+00:00",
+  "status": "ok",
+  "fetched_at": "2026-07-23T10:32:22.233718+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
-  "vendor_highlights": [
-    {
-      "vendor": "Countdown",
-      "item": "Closer",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Closer",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Hunter-Killer",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "White House",
-      "item": "Mechanical Animal",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "White House",
-      "item": "Grown Great - M1928",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "Clan",
-      "item": "Test Subject",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "Countdown",
-      "item": "Trader - ACR SS",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "Countdown",
-      "item": "Good Times - Black Market M60 E6",
-      "note": "Named weapon"
-    }
-  ],
-  "vendor_highlights_status": "ok",
-  "vendor_highlights_checked": "2026-07-23 07:58 UTC",
-  "vendor_highlights_date": "2026-07-21",
-  "vendor_highlights_note": "Current dated vendor highlights are available."
+  "snapshot_note": "Current dated loot snapshot is available."
 }
