@@ -34,10 +34,56 @@
     }
   ],
   "last_updated": "2026-07-22 10:12",
-  "last_checked": "2026-07-23 07:40 UTC",
-  "parsed_at": "2026-07-23T07:40:18.978645+00:00",
+  "last_checked": "2026-07-23 07:58 UTC",
+  "parsed_at": "2026-07-23T07:58:59.824622+00:00",
   "status": "pending",
-  "fetched_at": "2026-07-23T07:40:18.978645+00:00",
+  "fetched_at": "2026-07-23T07:58:59.824622+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot."
+  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "vendor_highlights": [
+    {
+      "vendor": "Countdown",
+      "item": "Closer",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Closer",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Hunter-Killer",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "White House",
+      "item": "Mechanical Animal",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "White House",
+      "item": "Grown Great - M1928",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Clan",
+      "item": "Test Subject",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "Trader - ACR SS",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "Good Times - Black Market M60 E6",
+      "note": "Named weapon"
+    }
+  ],
+  "vendor_highlights_status": "ok",
+  "vendor_highlights_checked": "2026-07-23 07:58 UTC",
+  "vendor_highlights_date": "2026-07-21",
+  "vendor_highlights_note": "Current dated vendor highlights are available."
 }
