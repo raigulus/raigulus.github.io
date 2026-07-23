@@ -6,12 +6,12 @@
     <atom:link href="https://raigulus.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>The latest Raigulus Division 2 walkthroughs, PvP clips, build tests, speedrun attempts, manhunts, boss guides, and no commentary gameplay.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 22 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>The Division 2 Builds and Build Tests</title>
       <link>https://raigulus.github.io/division-2/builds/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/builds/</guid>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
       <description>Video-backed Division 2 build tests for Bluescreen, Tipping Scales, Whiplash, Regulus, Rage Harvest, Toxic DZ, and Tier 10.</description>
       <category>build tests</category>
     </item>
@@ -19,7 +19,7 @@
       <title>Division 2 Loot Today, Targeted Loot &amp; Farming Guides</title>
       <link>https://raigulus.github.io/division-2/loot/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/loot/</guid>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 loot today, targeted loot, loot map context, farming routes, and Raigulus videos.</description>
       <category>loot</category>
     </item>
@@ -27,7 +27,7 @@
       <title>Division 2 Server Status, Maintenance &amp; Delta-03</title>
       <link>https://raigulus.github.io/division-2/server-status/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/server-status/</guid>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
       <description>Unofficial Division 2 server status tracker for maintenance, outage, Delta-03, official source links, and Raigulus guides.</description>
       <category>server status</category>
     </item>
@@ -35,7 +35,7 @@
       <title>Division 2 Escalation Loot Today &amp; Tier 10 Guide</title>
       <link>https://raigulus.github.io/division-2/escalation/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/escalation/</guid>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 Escalation loot today, Tier 10 matchmaking notes, vendor caches, and Raigulus videos.</description>
       <category>escalation</category>
     </item>
@@ -43,17 +43,25 @@
       <title>Division 2 Prototype Gear &amp; Escalation Vendor Guide</title>
       <link>https://raigulus.github.io/division-2/prototype-gear/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/prototype-gear/</guid>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 Prototype Gear Cache, Escalation vendor, and gear cache planning notes.</description>
       <category>prototype gear</category>
     </item>
     <item>
-      <title>How to Beat Secret Boss in The Division 2 | Dust Storm Event Guide [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/how-to-beat-secret-boss-in-the-division-2-dust-storm-event-guide/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/how-to-beat-secret-boss-in-the-division-2-dust-storm-event-guide/</guid>
+      <title>The Division 2 Dust Storm Event | 80-Minute Farm, Bosses &amp; Scoured Hunter [2026]</title>
+      <link>https://raigulus.github.io/division-2/videos/the-division-2-dust-storm-event-80-minute-farm-bosses-and-scoured-hunter/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-dust-storm-event-80-minute-farm-bosses-and-scoured-hunter/</guid>
       <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
-      <description>How to beat secret boss in The Division 2 with a clear guide.</description>
-      <category>boss guide</category>
+      <description>An 80-minute Division 2 Dust Storm Event farm in Lower Manhattan with Dust Devil squads, Pall, Black Lung, the Scoured Hunter, and Storm Keys.</description>
+      <category>seasonal event</category>
+    </item>
+    <item>
+      <title>Nice Chicken Dance | The Division 2 Conflict PvP #shorts</title>
+      <link>https://raigulus.github.io/division-2/videos/nice-chicken-dance-the-division-2-conflict-pvp-shorts/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/nice-chicken-dance-the-division-2-conflict-pvp-shorts/</guid>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <description>A 24-second The Division 2 Conflict PvP Regulus highlight about timing, positioning, and a clean shot.</description>
+      <category>pvp/archive clip</category>
     </item>
     <item>
       <title>10 Kills &amp; 102 Million Damage with the Liberty | The Division 2 Conflict PvP | Archive Clip</title>
@@ -358,14 +366,6 @@
       <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
       <description>The Division 2 Into the Dark update breakdown covering Dark Zone rework, PvP changes, Y8S2 systems, and new gear.</description>
       <category>update/commentary</category>
-    </item>
-    <item>
-      <title>The Division 2 PvP vs Widdz | Regulus Headshot Nostalgia Match [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-pvp-vs-widdz-regulus-headshot-nostalgia-match/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-pvp-vs-widdz-regulus-headshot-nostalgia-match/</guid>
-      <pubDate>Sun, 14 Jun 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 PvP match against Widdz in Conflict, featuring an old Regulus headshot from a 5-year nostalgia archive.</description>
-      <category>pvp/archive clip</category>
     </item>
   </channel>
 </rss>
