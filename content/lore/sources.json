@@ -173,6 +173,50 @@
       "accessed_date": "2026-07-19",
       "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/sy3ieLK9G1lXpUtZQp2sh/episode-3-coney-island-live-now",
       "notes": "Official Episode 3 overview identifying the two Coney Island main missions and their objectives."
+    },
+    {
+      "id": "ubisoft-shd-spotlight-sage-2020",
+      "title": "SHD Spotlight: Sage",
+      "publisher": "Ubisoft",
+      "source_type": "official-developer",
+      "scope": "franchise-lore",
+      "published_date": "2020-08-20",
+      "accessed_date": "2026-07-27",
+      "url": "https://www.ubisoft.com/en-gb/game/the-division/the-division-2/news-updates/6Lmf3Ugxg7va83eTL9asQ2/shd-spotlight-sage",
+      "notes": "Official Ubisoft community feature that identifies Pathway Park as Javier Kajika's hiding place."
+    },
+    {
+      "id": "ubisoft-tu91-kajika-2020",
+      "title": "The Division 2 State of the Game Recap: Balance Changes Incoming With Title Update 9.1",
+      "publisher": "Ubisoft News",
+      "source_type": "official-developer",
+      "scope": "franchise-lore",
+      "published_date": "2020-05-06",
+      "accessed_date": "2026-07-27",
+      "url": "https://news.ubisoft.com/en-us/article/6JAwf7JY5XsB5joF1gV4VX/the-division-2-state-of-the-game-recap-balance-changes-incoming-with-title-update-91",
+      "notes": "Official Title Update 9.1 recap that explicitly calls Pathway Park a main mission and names Javier Kajika as its final encounter."
+    },
+    {
+      "id": "ubisoft-y6s2-shades-red-2024",
+      "title": "Year 6 Season 2: Shades of Red",
+      "publisher": "Ubisoft",
+      "source_type": "official-developer",
+      "scope": "franchise-lore",
+      "published_date": "2024-10-28",
+      "accessed_date": "2026-07-27",
+      "url": "https://www.ubisoft.com/en-gb/game/the-division/the-division-2/news-updates/6xHUrSJ9z828rDyJSwzG2V/year-6-season-2-shades-of-red",
+      "notes": "Official Year 6 Season 2 overview identifying Theo Parnell as the first former Keener team member Agents must secure."
+    },
+    {
+      "id": "raigulus-wony-hardcore-run-2026",
+      "title": "The Division 2 Realism Mode Hardcore | Complete NYC Walkthrough | No Fast Travel [2026]",
+      "publisher": "Raigulus",
+      "source_type": "direct-game-capture",
+      "scope": "game-evidence",
+      "published_date": "2026-07-25",
+      "accessed_date": "2026-07-27",
+      "url": "https://www.youtube.com/watch?v=Xg-NuR9l9F8",
+      "notes": "Public 1080p60 direct capture. Chaptered, visible mission and encounter labels are used only to identify recorded Warlords of New York mission segments and targets; it is not treated as a transcript."
     }
   ]
 }

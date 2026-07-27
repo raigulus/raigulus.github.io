@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "id": "person-javier-kajika",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "person",
+  "title": "Javier Kajika",
+  "slug": "javier-kajika",
+  "section": "people",
+  "summary": "A Warlords of New York target associated with the Pathway Park main mission in Lower Manhattan.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "kajika-pathway-hideout",
+      "text": "An official Ubisoft feature identifies Pathway Park as Javier Kajika's hiding place.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-shd-spotlight-sage-2020"]
+    },
+    {
+      "id": "kajika-pathway-final-encounter",
+      "text": "Ubisoft's Title Update 9.1 recap identifies Javier Kajika as the final encounter of the Pathway Park main mission.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-tu91-kajika-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Pathway Park",
+      "paragraphs": [
+        {
+          "text": "Kajika is tied to Pathway Park in Lower Manhattan: Ubisoft identifies the park as his hiding place and separately identifies him as the mission's final encounter.",
+          "claim_ids": ["kajika-pathway-hideout", "kajika-pathway-final-encounter"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "mission-pathway-park", "relationship": "appears-in"},
+    {"target_id": "location-lower-manhattan", "relationship": "located-at"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "This entry records only the official Pathway Park association. Personal history, allegiance and later status require separately scoped evidence."
+  }
+}

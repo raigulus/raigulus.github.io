@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "id": "mission-stranded-tanker",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "mission",
+  "title": "Stranded Tanker",
+  "slug": "stranded-tanker",
+  "section": "missions",
+  "summary": "A chaptered Warlords of New York mission segment in the Raigulus direct capture that reaches Vivian Conley's encounter.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "stranded-tanker-wony-capture",
+      "text": "The Raigulus direct capture labels Stranded Tanker as a Warlords of New York mission segment.",
+      "assessment": "confirmed",
+      "source_ids": ["raigulus-wony-hardcore-run-2026"]
+    },
+    {
+      "id": "stranded-tanker-conley-encounter",
+      "text": "The same chaptered capture records the Vivian Conley encounter after the Stranded Tanker segment.",
+      "assessment": "confirmed",
+      "source_ids": ["raigulus-wony-hardcore-run-2026"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Mission record",
+      "paragraphs": [
+        {
+          "text": "The public archive capture identifies Stranded Tanker and its Vivian Conley encounter within the Warlords run. Detailed dialogue and encounter mechanics remain outside this overview.",
+          "claim_ids": ["stranded-tanker-wony-capture", "stranded-tanker-conley-encounter"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "person-vivian-conley", "relationship": "involves"},
+    {"target_id": "location-lower-manhattan", "relationship": "located-at"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "Mission identification and encounter timing are source-reviewed from the public capture; official mission briefs or menu evidence can extend the record later."
+  }
+}

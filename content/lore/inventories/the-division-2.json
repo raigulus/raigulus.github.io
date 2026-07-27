@@ -4,7 +4,7 @@
   "title": "The Division 2 Lore Coverage",
   "game": "the-division-2",
   "inventory_status": "in-progress",
-  "last_audited": "2026-07-19",
+  "last_audited": "2026-07-27",
   "notes": "Expected totals remain intentionally unknown until the in-game menus and release-by-release source inventory are captured and reconciled.",
   "categories": [
     {
@@ -22,12 +22,12 @@
       "id": "td2-people",
       "label": "People",
       "expected_count": null,
-      "captured_count": 12,
-      "source_reviewed_count": 12,
+      "captured_count": 14,
+      "source_reviewed_count": 14,
       "human_reviewed_count": 0,
       "published_count": 0,
       "status": "in-progress",
-      "notes": "Twelve core people now have source-reviewed overview records across the outbreak, campaign and early Episodes; no completeness claim has been made."
+      "notes": "Fourteen core people now have source-reviewed overview records across the outbreak, Warlords of New York, the campaign and early Episodes; no completeness claim has been made."
     },
     {
       "id": "td2-factions",
@@ -55,12 +55,12 @@
       "id": "td2-missions-events",
       "label": "Missions and events",
       "expected_count": null,
-      "captured_count": 12,
-      "source_reviewed_count": 12,
+      "captured_count": 17,
+      "source_reviewed_count": 17,
       "human_reviewed_count": 0,
       "published_count": 0,
       "status": "in-progress",
-      "notes": "Five core events form a sourced relative timeline and seven Episode/stronghold missions have overview records; base-campaign and later seasonal mission coverage remains incomplete."
+      "notes": "Five core events form a sourced relative timeline, seven Episode/stronghold missions and the five Warlords of New York main missions now have overview records; base-campaign and later seasonal mission coverage remains incomplete."
     },
     {
       "id": "td2-diseases-concepts",

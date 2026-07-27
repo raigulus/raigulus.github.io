@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "id": "mission-wall-street",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "mission",
+  "title": "Wall Street",
+  "slug": "wall-street",
+  "section": "missions",
+  "summary": "A chaptered Warlords of New York mission segment in the Raigulus direct capture that reaches James Dragov's encounter.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "wall-street-wony-capture",
+      "text": "The Raigulus direct capture labels Wall Street as a Warlords of New York mission segment.",
+      "assessment": "confirmed",
+      "source_ids": ["raigulus-wony-hardcore-run-2026"]
+    },
+    {
+      "id": "wall-street-dragov-encounter",
+      "text": "The same chaptered capture records the James Dragov encounter after the Wall Street segment.",
+      "assessment": "confirmed",
+      "source_ids": ["raigulus-wony-hardcore-run-2026"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Mission record",
+      "paragraphs": [
+        {
+          "text": "The public archive capture identifies Wall Street and its James Dragov encounter within the Warlords run. It deliberately does not treat the video as a substitute for a mission transcript.",
+          "claim_ids": ["wall-street-wony-capture", "wall-street-dragov-encounter"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "person-james-dragov", "relationship": "involves"},
+    {"target_id": "location-lower-manhattan", "relationship": "located-at"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "Mission identification and encounter timing are source-reviewed from the public capture; objective and dialogue detail remains pending separate evidence."
+  }
+}
