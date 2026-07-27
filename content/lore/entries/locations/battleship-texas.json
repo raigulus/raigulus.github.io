@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "id": "location-battleship-texas",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "location",
+  "title": "Battleship Texas",
+  "slug": "battleship-texas",
+  "section": "locations",
+  "summary": "The Houston-based rogue operations site and final major location of Compromised.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "battleship-texas-rogue-base",
+      "text": "Compromised identifies Battleship Texas in the Houston area as the rogue cell's operations center and the source of its local network signal.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    },
+    {
+      "id": "battleship-texas-viral-payloads",
+      "text": "The novel places Eclipse Virus payloads aboard the vessel during the Gulf Coast operation.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Houston rogue site",
+      "paragraphs": [
+        {
+          "text": "Battleship Texas is not presented as a passive landmark in the novel. It is the operating hub of the rogue cell and the location of its stored viral payloads.",
+          "claim_ids": [
+            "battleship-texas-rogue-base",
+            "battleship-texas-viral-payloads"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "disease-eclipse-virus",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "event-gulf-coast-refinery-crisis",
+      "relationship": "located-at"
+    },
+    {
+      "target_id": "work-the-division-compromised",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "The entry records only the novel's fictional use of Battleship Texas, not real-world vessel history."
+  }
+}

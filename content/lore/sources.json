@@ -2,6 +2,17 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "aconyte-division-compromised-2022",
+      "title": "Tom Clancy's The Division: Compromised",
+      "publisher": "Aconyte Books",
+      "source_type": "official-publication",
+      "scope": "franchise-lore",
+      "published_date": "2022-12-06",
+      "accessed_date": "2026-07-27",
+      "url": "https://www.simonandschuster.co.uk/books/Tom-Clancys-The-Division-Compromised/Thomas-Parrott/9781839081866",
+      "notes": "Licensed Operation: Crossroads novel by Thomas Parrott. The reviewed 2022 ebook edition identifies the work as copyright Ubisoft Entertainment (eISBN 9781839081873). Record claims paraphrase the novel; no book prose is reproduced."
+    },
+    {
       "id": "ubisoft-2019-division-roots",
       "title": "5 Facts You Might Not Know About The Division",
       "publisher": "Ubisoft News",

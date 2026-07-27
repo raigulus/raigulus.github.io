@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "id": "person-maira-kanhai",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "person",
+  "title": "Maira Kanhai",
+  "slug": "maira-kanhai",
+  "section": "people",
+  "summary": "A Division Agent and the lead field perspective of Compromised's Gulf Coast crisis.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "kanhai-gulf-coast-cell-lead",
+      "text": "Compromised places Maira Kanhai in charge of a Division cell sent from the Kansas Core to investigate attacks on southern food convoys and Texas refinery infrastructure.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    },
+    {
+      "id": "kanhai-battleship-survival",
+      "text": "The novel's epilogue reveals that Kanhai survives the Battleship Texas operation and wakes in the care of people presenting themselves as Department of Homeland Security personnel.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Gulf Coast assignment",
+      "paragraphs": [
+        {
+          "text": "Kanhai leads the novel's field cell as it follows attacks on the southern supply network toward the Texas Gulf Coast.",
+          "claim_ids": [
+            "kanhai-gulf-coast-cell-lead"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Epilogue status",
+      "paragraphs": [
+        {
+          "text": "The book treats Kanhai's survival after the Battleship Texas operation as a major cliffhanger. The people holding her claim to be DHS, but the narrative does not verify that claim within this volume.",
+          "claim_ids": [
+            "kanhai-battleship-survival"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "work-the-division-compromised",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "event-gulf-coast-refinery-crisis",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "location-battleship-texas",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "This is an official-transmedia record. It deliberately avoids extending the epilogue's unresolved DHS identification beyond the book."
+  }
+}

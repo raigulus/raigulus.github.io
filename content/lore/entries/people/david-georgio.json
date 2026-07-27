@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "id": "person-david-georgio",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "person",
+  "title": "David Georgio",
+  "slug": "david-georgio",
+  "section": "people",
+  "summary": "Marcus Georgio's son and a rogue operative in Compromised's Gulf Coast plot.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "david-georgio-rogue-operative",
+      "text": "Compromised identifies David Georgio as a rogue operative working with the cell manipulating the Gulf Coast conflict.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    },
+    {
+      "id": "david-georgio-leverage",
+      "text": "The rogue cell uses David's apparent captivity to force his father, Marcus Georgio, to move the Molossi into refinery communities.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A manufactured leverage point",
+      "paragraphs": [
+        {
+          "text": "David's position inside the rogue operation turns him into the pressure point used to control Marcus Georgio and, through him, the Molossi.",
+          "claim_ids": [
+            "david-georgio-rogue-operative",
+            "david-georgio-leverage"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "event-gulf-coast-refinery-crisis",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "location-battleship-texas",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "work-the-division-compromised",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "The book identifies David's rogue role and its coercive use; detailed first-wave history is not expanded here."
+  }
+}

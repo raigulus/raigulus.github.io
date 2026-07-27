@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "id": "faction-the-molossi",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "faction",
+  "title": "The Molossi",
+  "slug": "the-molossi",
+  "section": "factions",
+  "summary": "A militarized Gulf Coast power bloc commanded by Marcus Georgio in Compromised.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "molossi-dallas-fort-worth-origin",
+      "text": "Compromised describes the Molossi as a private army assembled around Dallas-Fort Worth by Marcus Georgio after the pandemic, with local JTF elements rallying to it.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    },
+    {
+      "id": "molossi-refinery-expansion",
+      "text": "The Molossi move into Gulf Coast refinery communities under the language of protection while the rogue cell pressures Georgio to expand their control.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A competing protector force",
+      "paragraphs": [
+        {
+          "text": "The Molossi arrive as a heavily organized alternative to the Division's small cell, offering security to communities threatened by the Reborn.",
+          "claim_ids": [
+            "molossi-dallas-fort-worth-origin",
+            "molossi-refinery-expansion"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Power under pressure",
+      "paragraphs": [
+        {
+          "text": "Their expansion cannot be read simply as an independent takeover: the novel later establishes that rogue leverage against Georgio is driving the movement into the region.",
+          "claim_ids": [
+            "molossi-refinery-expansion"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-marcus-georgio",
+      "relationship": "leader-of"
+    },
+    {
+      "target_id": "faction-the-reborn",
+      "relationship": "opposed-to"
+    },
+    {
+      "target_id": "event-gulf-coast-refinery-crisis",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "work-the-division-compromised",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "This record keeps the novel's Texas-region scope and does not recast the Molossi as a general game-world faction."
+  }
+}

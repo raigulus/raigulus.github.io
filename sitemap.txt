@@ -94,11 +94,13 @@ https://raigulus.github.io/lore/copyright/
 https://raigulus.github.io/lore/corrections/
 https://raigulus.github.io/lore/coverage/
 https://raigulus.github.io/lore/diseases/
+https://raigulus.github.io/lore/diseases/eclipse-virus/
 https://raigulus.github.io/lore/diseases/green-poison/
 https://raigulus.github.io/lore/events/
 https://raigulus.github.io/lore/events/black-tusk-siege-of-washington/
 https://raigulus.github.io/lore/events/division-network-crisis/
 https://raigulus.github.io/lore/events/green-poison-outbreak/
+https://raigulus.github.io/lore/events/gulf-coast-refinery-crisis/
 https://raigulus.github.io/lore/events/lower-manhattan-biological-attack/
 https://raigulus.github.io/lore/events/shd-activation/
 https://raigulus.github.io/lore/events/warlords-of-new-york-manhunt/
@@ -111,14 +113,18 @@ https://raigulus.github.io/lore/factions/last-man-battalion/
 https://raigulus.github.io/lore/factions/outcasts/
 https://raigulus.github.io/lore/factions/peacekeepers/
 https://raigulus.github.io/lore/factions/rikers/
+https://raigulus.github.io/lore/factions/the-molossi/
+https://raigulus.github.io/lore/factions/the-reborn/
 https://raigulus.github.io/lore/factions/true-sons/
 https://raigulus.github.io/lore/locations/
+https://raigulus.github.io/lore/locations/battleship-texas/
 https://raigulus.github.io/lore/locations/camp-white-oak/
 https://raigulus.github.io/lore/locations/capitol-hill/
 https://raigulus.github.io/lore/locations/coney-island/
 https://raigulus.github.io/lore/locations/lower-manhattan/
 https://raigulus.github.io/lore/locations/manhattan-dark-zone/
 https://raigulus.github.io/lore/locations/manning-national-zoo/
+https://raigulus.github.io/lore/locations/marsh-island/
 https://raigulus.github.io/lore/locations/midtown-manhattan/
 https://raigulus.github.io/lore/locations/the-pentagon/
 https://raigulus.github.io/lore/locations/tidal-basin/
@@ -143,6 +149,9 @@ https://raigulus.github.io/lore/organizations/strategic-homeland-division/
 https://raigulus.github.io/lore/people/
 https://raigulus.github.io/lore/people/aaron-keener/
 https://raigulus.github.io/lore/people/andrew-ellis/
+https://raigulus.github.io/lore/people/benjamin-marsh/
+https://raigulus.github.io/lore/people/cassandra-raines/
+https://raigulus.github.io/lore/people/david-georgio/
 https://raigulus.github.io/lore/people/emeline-shaw/
 https://raigulus.github.io/lore/people/faye-lau/
 https://raigulus.github.io/lore/people/gordon-amherst/
@@ -151,6 +160,8 @@ https://raigulus.github.io/lore/people/javier-kajika/
 https://raigulus.github.io/lore/people/jessica-kandel/
 https://raigulus.github.io/lore/people/joe-ferro/
 https://raigulus.github.io/lore/people/larae-barrett/
+https://raigulus.github.io/lore/people/maira-kanhai/
+https://raigulus.github.io/lore/people/marcus-georgio/
 https://raigulus.github.io/lore/people/rick-valassi/
 https://raigulus.github.io/lore/people/theo-parnell/
 https://raigulus.github.io/lore/people/vitaly-tchernenko/
@@ -161,3 +172,5 @@ https://raigulus.github.io/lore/real-world-influences/operation-dark-winter/
 https://raigulus.github.io/lore/review-queue/
 https://raigulus.github.io/lore/sources/
 https://raigulus.github.io/lore/timeline/
+https://raigulus.github.io/lore/works/
+https://raigulus.github.io/lore/works/the-division-compromised/
