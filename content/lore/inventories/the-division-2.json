@@ -55,12 +55,12 @@
       "id": "td2-missions-events",
       "label": "Missions and events",
       "expected_count": null,
-      "captured_count": 17,
-      "source_reviewed_count": 17,
+      "captured_count": 18,
+      "source_reviewed_count": 18,
       "human_reviewed_count": 0,
       "published_count": 0,
       "status": "in-progress",
-      "notes": "Five core events form a sourced relative timeline, seven Episode/stronghold missions and the five Warlords of New York main missions now have overview records; base-campaign and later seasonal mission coverage remains incomplete."
+      "notes": "Six core events form a sourced relative timeline, seven Episode/stronghold missions and the five Warlords of New York main missions now have overview records; base-campaign and later seasonal mission coverage remains incomplete."
     },
     {
       "id": "td2-diseases-concepts",
