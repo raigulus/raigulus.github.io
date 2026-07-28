@@ -1,26 +1,26 @@
 {
-  "date": "2026-07-27",
+  "date": "2026-07-28",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
-      "mission": "The Art Museum",
-      "loot": "Sokolov Concern"
+      "mission": "Stranded Tanker",
+      "loot": "Imminence Armaments"
     },
     {
-      "mission": "Manning National Zoo",
-      "loot": "LMG"
+      "mission": "ViewPoint Museum",
+      "loot": "Brazos de Arcabuz"
     },
     {
-      "mission": "Camp White Oak",
-      "loot": "Rifle"
+      "mission": "Jefferson Trade Center",
+      "loot": "Pistol"
     },
     {
-      "mission": "The Pentagon",
-      "loot": "Overlord Armaments"
+      "mission": "Bank Headquarters",
+      "loot": "Golan Gear Ltd"
     },
     {
-      "mission": "DARPA Research Labs",
-      "loot": "Palisade Steelworks"
+      "mission": "DCD Headquarters",
+      "loot": "Habsburg Guard"
     }
   ],
   "vendor_caches": [
@@ -30,14 +30,60 @@
     },
     {
       "type": "Gear",
-      "item": "Backpacks"
+      "item": "Masks"
     }
   ],
-  "last_updated": "2026-07-27 10:01",
-  "last_checked": "2026-07-28 07:44 UTC",
-  "parsed_at": "2026-07-28T07:44:06.444960+00:00",
-  "status": "pending",
-  "fetched_at": "2026-07-28T07:44:06.444960+00:00",
+  "last_updated": "2026-07-28 10:08",
+  "last_checked": "2026-07-28 10:11 UTC",
+  "parsed_at": "2026-07-28T10:11:35.836539+00:00",
+  "status": "ok",
+  "fetched_at": "2026-07-28T10:11:35.836539+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot."
+  "snapshot_note": "Current dated loot snapshot is available.",
+  "vendor_highlights": [
+    {
+      "vendor": "Countdown",
+      "item": "Closer",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Closer",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Hunter-Killer",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "White House",
+      "item": "Mechanical Animal",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "White House",
+      "item": "Grown Great - M1928",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Clan",
+      "item": "Test Subject",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "Trader - ACR SS",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "Good Times - Black Market M60 E6",
+      "note": "Named weapon"
+    }
+  ],
+  "vendor_highlights_status": "ok",
+  "vendor_highlights_checked": "2026-07-28 10:11 UTC",
+  "vendor_highlights_date": "2026-07-21",
+  "vendor_highlights_note": "Current dated vendor highlights are available."
 }
