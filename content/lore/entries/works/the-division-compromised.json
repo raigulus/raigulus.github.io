@@ -69,6 +69,10 @@
     {
       "target_id": "event-gulf-coast-refinery-crisis",
       "relationship": "appears-in"
+    },
+    {
+      "target_id": "work-the-division-hunted",
+      "relationship": "precedes"
     }
   ],
   "verification": {

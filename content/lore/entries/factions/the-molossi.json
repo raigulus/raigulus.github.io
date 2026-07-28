@@ -27,6 +27,14 @@
       "source_ids": [
         "aconyte-division-compromised-2022"
       ]
+    },
+    {
+      "id": "molossi-hunted-temporary-alliance",
+      "text": "Hunted depicts the Molossi joining a temporary, source-specific alignment with the Division against Black Tusk during the Albuquerque operation.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-hunted-2024"
+      ]
     }
   ],
   "sections": [
@@ -52,6 +60,17 @@
           ]
         }
       ]
+    },
+    {
+      "heading": "A temporary later alignment — major spoilers",
+      "paragraphs": [
+        {
+          "text": "Hunted later places the Molossi in a temporary alignment against Black Tusk. It is a novel-specific operational response, not proof that the group permanently joins the Division or abandons its prior rivalry with the Reborn.",
+          "claim_ids": [
+            "molossi-hunted-temporary-alliance"
+          ]
+        }
+      ]
     }
   ],
   "relations": [
@@ -70,12 +89,20 @@
     {
       "target_id": "work-the-division-compromised",
       "relationship": "appears-in"
+    },
+    {
+      "target_id": "event-hunted-albuquerque-operation",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "work-the-division-hunted",
+      "relationship": "appears-in"
     }
   ],
   "verification": {
     "status": "source-reviewed",
-    "last_reviewed": "2026-07-27",
+    "last_reviewed": "2026-07-28",
     "human_reviewed": false,
-    "notes": "This record keeps the novel's Texas-region scope and does not recast the Molossi as a general game-world faction."
+    "notes": "This record keeps the novel's Texas-region scope. The Hunted alignment is deliberately recorded as temporary and source-specific."
   }
 }

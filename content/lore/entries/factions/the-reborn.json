@@ -35,6 +35,14 @@
       "source_ids": [
         "aconyte-division-compromised-2022"
       ]
+    },
+    {
+      "id": "reborn-hunted-temporary-alliance",
+      "text": "Hunted depicts the Reborn joining a temporary, source-specific alignment with the Division against Black Tusk during the Albuquerque operation.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-hunted-2024"
+      ]
     }
   ],
   "sections": [
@@ -60,6 +68,17 @@
           ]
         }
       ]
+    },
+    {
+      "heading": "A temporary later alignment — major spoilers",
+      "paragraphs": [
+        {
+          "text": "Hunted later places the Reborn in a temporary alignment against Black Tusk. That source-specific response does not erase the faction's earlier Gulf Coast campaign, nor does it establish a permanent alliance with the Division or the Molossi.",
+          "claim_ids": [
+            "reborn-hunted-temporary-alliance"
+          ]
+        }
+      ]
     }
   ],
   "relations": [
@@ -78,12 +97,20 @@
     {
       "target_id": "work-the-division-compromised",
       "relationship": "appears-in"
+    },
+    {
+      "target_id": "event-hunted-albuquerque-operation",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "work-the-division-hunted",
+      "relationship": "appears-in"
     }
   ],
   "verification": {
     "status": "source-reviewed",
-    "last_reviewed": "2026-07-27",
+    "last_reviewed": "2026-07-28",
     "human_reviewed": false,
-    "notes": "A licensed-novel faction record. It does not generalize the Reborn beyond the Gulf Coast story in Compromised."
+    "notes": "A licensed-novel faction record. The Hunted alignment is temporary, source-specific, and does not generalize the Reborn beyond these stories."
   }
 }

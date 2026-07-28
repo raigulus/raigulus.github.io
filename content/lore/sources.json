@@ -35,6 +35,28 @@
       "notes": "Licensed Operation: Crossroads novel by Thomas Parrott. The reviewed 2022 ebook edition identifies the work as copyright Ubisoft Entertainment (eISBN 9781839081873). Record claims paraphrase the novel; no book prose is reproduced."
     },
     {
+      "id": "aconyte-division-hunted-2024",
+      "title": "Tom Clancy's The Division: Hunted",
+      "publisher": "Aconyte Books",
+      "source_type": "official-publication",
+      "scope": "franchise-lore",
+      "published_date": "2024-01-02",
+      "accessed_date": "2026-07-28",
+      "url": "https://www.aconytebooks.com/shop/tom-clancys-the-division-hunted-by-thomas-parrot/",
+      "notes": "Official publisher record for Thomas Parrott's licensed Operation: Crossroads novel, book 3. Archive records use independently written plot summaries and factual identifiers only; no novel prose, cover art, scans, OCR text or excerpts are reproduced."
+    },
+    {
+      "id": "ubisoft-season-11-reign-of-fire-2023",
+      "title": "Season 11: Reign of Fire",
+      "publisher": "Ubisoft",
+      "source_type": "official-developer",
+      "scope": "franchise-lore",
+      "published_date": "2023-02-27",
+      "accessed_date": "2026-07-28",
+      "url": "https://www.ubisoft.com/en-gb/game/the-division/news-updates/5CVCQT1nolOgAToGGYyBsw/season-11-reign-of-fire",
+      "notes": "Official seasonal story overview identifying Natalya Sokolova's visible leadership of Black Tusk campaigns in Washington."
+    },
+    {
       "id": "penguin-broken-dawn-2019",
       "title": "Tom Clancy's The Division: Broken Dawn",
       "publisher": "Penguin Random House Library Marketing",

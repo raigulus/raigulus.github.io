@@ -7,7 +7,7 @@
   "title": "Maira Kanhai",
   "slug": "maira-kanhai",
   "section": "people",
-  "summary": "A Division Agent and the lead field perspective of Compromised's Gulf Coast crisis.",
+  "summary": "A Division Agent whose Operation: Crossroads story runs from Compromised's Gulf Coast crisis into Hunted's major-spoiler American Southwest pursuit.",
   "canon_status": "official-transmedia",
   "connection_status": "not-applicable",
   "spoiler_level": "major",
@@ -26,6 +26,30 @@
       "assessment": "confirmed",
       "source_ids": [
         "aconyte-division-compromised-2022"
+      ]
+    },
+    {
+      "id": "kanhai-hunted-rogue-status",
+      "text": "Hunted confirms that Kanhai is alive and that ISAC evidence reports her as Rogue, prompting Brenda Wells to assemble a Division cell and investigate rather than accept the status at face value.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-hunted-2024"
+      ]
+    },
+    {
+      "id": "kanhai-hunted-coercion-context",
+      "text": "In Hunted's source-specific plot, Black Tusk exploits Kanhai while she is captive and medically vulnerable, using her technical expertise against Division Core infrastructure.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-hunted-2024"
+      ]
+    },
+    {
+      "id": "kanhai-hunted-status-not-exonerated",
+      "text": "Hunted adds coercion and manipulation to the context of Kanhai's Rogue status, but the work does not turn that context into a blanket exoneration or a general rule for other Rogue Agents.",
+      "assessment": "editorial-distinction",
+      "source_ids": [
+        "aconyte-division-hunted-2024"
       ]
     }
   ],
@@ -51,6 +75,19 @@
           ]
         }
       ]
+    },
+    {
+      "heading": "Hunted continuation — major spoilers",
+      "paragraphs": [
+        {
+          "text": "Hunted follows the unresolved Battleship Texas cliffhanger: ISAC reports Kanhai as Rogue, while Brenda Wells pursues the evidence in the American Southwest. The novel adds a coercive Black Tusk context to Kanhai's technical work and keeps that context source-specific rather than treating it as a universal explanation for Rogue status.",
+          "claim_ids": [
+            "kanhai-hunted-rogue-status",
+            "kanhai-hunted-coercion-context",
+            "kanhai-hunted-status-not-exonerated"
+          ]
+        }
+      ]
     }
   ],
   "relations": [
@@ -65,12 +102,24 @@
     {
       "target_id": "location-battleship-texas",
       "relationship": "appears-in"
+    },
+    {
+      "target_id": "person-brenda-wells",
+      "relationship": "allied-with"
+    },
+    {
+      "target_id": "event-hunted-albuquerque-operation",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "work-the-division-hunted",
+      "relationship": "appears-in"
     }
   ],
   "verification": {
     "status": "source-reviewed",
-    "last_reviewed": "2026-07-27",
+    "last_reviewed": "2026-07-28",
     "human_reviewed": false,
-    "notes": "This is an official-transmedia record. It deliberately avoids extending the epilogue's unresolved DHS identification beyond the book."
+    "notes": "This official-transmedia record treats Hunted's high-spoiler plot as source-specific. It does not reduce Rogue status to a single cause or reproduce novel prose."
   }
 }

@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "id": "person-brenda-wells",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "person",
+  "title": "Brenda Wells",
+  "slug": "brenda-wells",
+  "section": "people",
+  "summary": "The Division Agent who leads Hunted's American Southwest search for her former recruit and close friend, Maira Kanhai.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "wells-hunted-search-cell",
+      "text": "Hunted's published premise identifies Wells as Maira Kanhai's former recruiter and close friend, and places her at the head of a specialized Division cell investigating Maira's Rogue status.",
+      "assessment": "confirmed",
+      "source_ids": ["aconyte-division-hunted-2024"]
+    },
+    {
+      "id": "wells-hunter-death",
+      "text": "In Hunted's source-specific climax, Wells is killed during a confrontation with the masked combatant later identified by ISAC as Thaddeus Greene.",
+      "assessment": "confirmed",
+      "source_ids": ["aconyte-division-hunted-2024"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Searching for Maira",
+      "paragraphs": [
+        {
+          "text": "Wells is the human counterweight to the initial ISAC evidence: she treats Maira's reported Rogue status as a reason to investigate, not an excuse to stop asking questions. Her search cell carries the story from the public setup into the novel's major-spoiler plot.",
+          "claim_ids": ["wells-hunted-search-cell"]
+        }
+      ]
+    },
+    {
+      "heading": "Climax — major spoilers",
+      "paragraphs": [
+        {
+          "text": "The Albuquerque confrontation ends Wells's search at a heavy cost: the novel kills her in the attack by a masked combatant that ISAC later identifies as Thaddeus Greene. This identifies one source-specific Hunter appearance; it does not explain the wider Hunter network.",
+          "claim_ids": ["wells-hunter-death"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "person-maira-kanhai", "relationship": "allied-with"},
+    {"target_id": "person-thaddeus-greene", "relationship": "opposed-to"},
+    {"target_id": "event-hunted-albuquerque-operation", "relationship": "involves"},
+    {"target_id": "work-the-division-hunted", "relationship": "appears-in"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Licensed-novel character record. The death outcome is major spoiler and the archive does not quote the novel or generalize this one Hunter appearance."
+  }
+}

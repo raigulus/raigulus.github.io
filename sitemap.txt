@@ -102,6 +102,7 @@ https://raigulus.github.io/lore/events/broken-dawn-antiviral-race/
 https://raigulus.github.io/lore/events/division-network-crisis/
 https://raigulus.github.io/lore/events/green-poison-outbreak/
 https://raigulus.github.io/lore/events/gulf-coast-refinery-crisis/
+https://raigulus.github.io/lore/events/hunted-albuquerque-operation/
 https://raigulus.github.io/lore/events/lower-manhattan-biological-attack/
 https://raigulus.github.io/lore/events/shd-activation/
 https://raigulus.github.io/lore/events/warlords-of-new-york-manhunt/
@@ -159,6 +160,7 @@ https://raigulus.github.io/lore/people/andrew-ellis/
 https://raigulus.github.io/lore/people/april-kelleher/
 https://raigulus.github.io/lore/people/aurelio-diaz/
 https://raigulus.github.io/lore/people/benjamin-marsh/
+https://raigulus.github.io/lore/people/brenda-wells/
 https://raigulus.github.io/lore/people/caleb-dunne/
 https://raigulus.github.io/lore/people/cassandra-raines/
 https://raigulus.github.io/lore/people/david-georgio/
@@ -176,7 +178,9 @@ https://raigulus.github.io/lore/people/maira-kanhai/
 https://raigulus.github.io/lore/people/mantis-extremis-malis/
 https://raigulus.github.io/lore/people/marcus-georgio/
 https://raigulus.github.io/lore/people/mathias-kaminsky/
+https://raigulus.github.io/lore/people/natalya-sokolova/
 https://raigulus.github.io/lore/people/rick-valassi/
+https://raigulus.github.io/lore/people/thaddeus-greene/
 https://raigulus.github.io/lore/people/theo-parnell/
 https://raigulus.github.io/lore/people/vitaly-tchernenko/
 https://raigulus.github.io/lore/people/vivian-conley/
@@ -191,3 +195,4 @@ https://raigulus.github.io/lore/works/
 https://raigulus.github.io/lore/works/the-division-broken-dawn/
 https://raigulus.github.io/lore/works/the-division-compromised/
 https://raigulus.github.io/lore/works/the-division-extremis-malis/
+https://raigulus.github.io/lore/works/the-division-hunted/

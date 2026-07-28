@@ -36,6 +36,12 @@
       "text": "Extremis Malis depicts Black Tusk using the operative Mantis to provide improved weapons to unstable East Coast groups before the Division 2 opening crisis.",
       "assessment": "confirmed",
       "source_ids": ["dark-horse-extremis-malis-2019"]
+    },
+    {
+      "id": "black-tusk-hunted-core-exploitation",
+      "text": "Hunted depicts a source-specific Black Tusk operation that exploits captive Division Agent Maira Kanhai's technical expertise against Division Core infrastructure.",
+      "assessment": "confirmed",
+      "source_ids": ["aconyte-division-hunted-2024"]
     }
   ],
   "sections": [
@@ -65,6 +71,15 @@
           "claim_ids": ["black-tusk-extremis-malis-arms-network"]
         }
       ]
+    },
+    {
+      "heading": "Operation: Crossroads follow-up — major spoilers",
+      "paragraphs": [
+        {
+          "text": "The later licensed novel Hunted presents a separate, source-specific operation: Black Tusk exploits Maira Kanhai's technical expertise while she is captive. This extends the archive's view of pressure on Division systems without turning one novel operation into a complete account of the faction's command structure or capabilities.",
+          "claim_ids": ["black-tusk-hunted-core-exploitation"]
+        }
+      ]
     }
   ],
   "relations": [
@@ -73,12 +88,16 @@
     {"target_id": "event-black-tusk-siege", "relationship": "appears-in"},
     {"target_id": "person-mantis-extremis-malis", "relationship": "member-of"},
     {"target_id": "person-wyvern-extremis-malis", "relationship": "member-of"},
-    {"target_id": "work-the-division-extremis-malis", "relationship": "appears-in"}
+    {"target_id": "person-natalya-sokolova", "relationship": "leader-of"},
+    {"target_id": "person-maira-kanhai", "relationship": "opposed-to"},
+    {"target_id": "work-the-division-extremis-malis", "relationship": "appears-in"},
+    {"target_id": "work-the-division-hunted", "relationship": "appears-in"},
+    {"target_id": "event-hunted-albuquerque-operation", "relationship": "involves"}
   ],
   "verification": {
     "status": "source-reviewed",
-    "last_reviewed": "2026-07-19",
+    "last_reviewed": "2026-07-28",
     "human_reviewed": false,
-    "notes": "Command structure and current seasonal leadership are intentionally deferred pending a later-canon source review."
+    "notes": "Hunted evidence remains a source-specific official-transmedia layer. Current seasonal leadership is separately grounded in an official Ubisoft season source."
   }
 }
