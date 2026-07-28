@@ -1,0 +1,85 @@
+{
+  "schema_version": 2,
+  "id": "person-aurelio-diaz",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "person",
+  "title": "Aurelio Diaz",
+  "slug": "aurelio-diaz",
+  "section": "people",
+  "summary": "A Division Agent in Broken Dawn whose investigation joins April Kelleher's Midwest antiviral trail and the novel's Washington intelligence handoff.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "aurelio-broken-dawn-agent",
+      "text": "Broken Dawn's published premise identifies Aurelio Diaz as one of the Division Agents traveling with April Kelleher's antiviral investigation.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "ubisoft-broken-dawn-overview-2019",
+        "ubisoft-division-books-broken-dawn-2019"
+      ]
+    },
+    {
+      "id": "aurelio-ann-arbor-operation",
+      "text": "In the novel's source-specific plot, Aurelio helps protect the Ann Arbor research lead while pursuing the operation coordinated through the Mantis codename.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "penguin-broken-dawn-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Agent on the research trail",
+      "paragraphs": [
+        {
+          "text": "Aurelio is one of Broken Dawn's named SHD Agents. The official premise places him beside April Kelleher as the inquiry moves out of the original game's New York setting.",
+          "claim_ids": [
+            "aurelio-broken-dawn-agent"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Ann Arbor operation",
+      "paragraphs": [
+        {
+          "text": "The licensed novel makes Aurelio part of the source-specific effort to safeguard the research lead and counter the operation tied to Mantis. That connection does not identify Mantis's organization beyond what the novel establishes.",
+          "claim_ids": [
+            "aurelio-ann-arbor-operation"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "org-strategic-homeland-division",
+      "relationship": "member-of"
+    },
+    {
+      "target_id": "person-april-kelleher",
+      "relationship": "allied-with"
+    },
+    {
+      "target_id": "event-broken-dawn-antiviral-race",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "location-ann-arbor-research-site-broken-dawn",
+      "relationship": "located-at"
+    },
+    {
+      "target_id": "work-the-division-broken-dawn",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Licensed-novel record. The archive publishes no dialogue or scene transcript."
+  }
+}

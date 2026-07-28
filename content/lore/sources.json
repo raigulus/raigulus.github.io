@@ -35,6 +35,39 @@
       "notes": "Licensed Operation: Crossroads novel by Thomas Parrott. The reviewed 2022 ebook edition identifies the work as copyright Ubisoft Entertainment (eISBN 9781839081873). Record claims paraphrase the novel; no book prose is reproduced."
     },
     {
+      "id": "penguin-broken-dawn-2019",
+      "title": "Tom Clancy's The Division: Broken Dawn",
+      "publisher": "Penguin Random House Library Marketing",
+      "source_type": "official-publication",
+      "scope": "franchise-lore",
+      "published_date": "2019-03-26",
+      "accessed_date": "2026-07-28",
+      "url": "https://penguinrandomhouselibrary.com/book/?isbn=9781984803177",
+      "notes": "Official publisher record for Alex Irvine's licensed Division novel. Archive records use independently written plot summaries and factual identifiers only; no novel prose, cover art, scans, OCR text or excerpts are reproduced."
+    },
+    {
+      "id": "ubisoft-broken-dawn-overview-2019",
+      "title": "The Division: Broken Dawn Novel Explores Effects of Global Collapse",
+      "publisher": "Ubisoft News",
+      "source_type": "official-developer",
+      "scope": "franchise-lore",
+      "published_date": "2019-03-26",
+      "accessed_date": "2026-07-28",
+      "url": "https://news.ubisoft.com/en-us/article/2Q6Nchof1ack3qWsQBuHLs/the-division-broken-dawn-novel-explores-effects-of-global-collapse",
+      "notes": "Official overview placing the novel between the first game and The Division 2 and identifying its core protagonists and setting."
+    },
+    {
+      "id": "ubisoft-division-books-broken-dawn-2019",
+      "title": "Find Out More About The Division With The Books Of The Game",
+      "publisher": "Ubisoft",
+      "source_type": "official-developer",
+      "scope": "franchise-lore",
+      "published_date": "2019-01-09",
+      "accessed_date": "2026-07-28",
+      "url": "https://www.ubisoft.com/en-au/game/the-division/news-updates/htXU6ZOzs6tbQr08OIe5u/find-out-more-about-the-division-with-the-books-of-the-game",
+      "notes": "Official reading guide that describes Broken Dawn as a licensed prequel to The Division 2 and summarizes its published premise."
+    },
+    {
       "id": "ubisoft-2019-division-roots",
       "title": "5 Facts You Might Not Know About The Division",
       "publisher": "Ubisoft News",

@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "id": "person-alani-kelso",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "person",
+  "title": "Alani Kelso",
+  "slug": "alani-kelso",
+  "section": "people",
+  "summary": "A Division Agent who appears in Broken Dawn's Washington sequence as the recipient of April Kelleher's source-specific antiviral intelligence.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "kelso-broken-dawn-agent",
+      "text": "Broken Dawn depicts Alani Kelso as a Division Agent operating in Washington during the novel's final intelligence handoff.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "penguin-broken-dawn-2019"
+      ]
+    },
+    {
+      "id": "kelso-april-intelligence-handoff",
+      "text": "April Kelleher gives Kelso the novel's resulting research intelligence, including the lead's security risk and Ike Ronson's involvement.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "penguin-broken-dawn-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Washington connection",
+      "paragraphs": [
+        {
+          "text": "Kelso's Broken Dawn appearance creates a source-specific bridge from April's civilian research trail to an SHD contact in Washington. The archive labels that bridge official transmedia rather than retroactively treating it as a game mission.",
+          "claim_ids": [
+            "kelso-broken-dawn-agent",
+            "kelso-april-intelligence-handoff"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "org-strategic-homeland-division",
+      "relationship": "member-of"
+    },
+    {
+      "target_id": "person-april-kelleher",
+      "relationship": "contributes-to"
+    },
+    {
+      "target_id": "event-broken-dawn-antiviral-race",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "work-the-division-broken-dawn",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "This record is limited to the licensed novel's Washington handoff; later game-story developments require separate current-canon sourcing."
+  }
+}

@@ -98,6 +98,7 @@ https://raigulus.github.io/lore/diseases/eclipse-virus/
 https://raigulus.github.io/lore/diseases/green-poison/
 https://raigulus.github.io/lore/events/
 https://raigulus.github.io/lore/events/black-tusk-siege-of-washington/
+https://raigulus.github.io/lore/events/broken-dawn-antiviral-race/
 https://raigulus.github.io/lore/events/division-network-crisis/
 https://raigulus.github.io/lore/events/green-poison-outbreak/
 https://raigulus.github.io/lore/events/gulf-coast-refinery-crisis/
@@ -118,6 +119,7 @@ https://raigulus.github.io/lore/factions/the-molossi/
 https://raigulus.github.io/lore/factions/the-reborn/
 https://raigulus.github.io/lore/factions/true-sons/
 https://raigulus.github.io/lore/locations/
+https://raigulus.github.io/lore/locations/ann-arbor-research-site-broken-dawn/
 https://raigulus.github.io/lore/locations/battleship-texas/
 https://raigulus.github.io/lore/locations/camden-settlement/
 https://raigulus.github.io/lore/locations/camp-white-oak/
@@ -152,7 +154,10 @@ https://raigulus.github.io/lore/organizations/joint-task-force/
 https://raigulus.github.io/lore/organizations/strategic-homeland-division/
 https://raigulus.github.io/lore/people/
 https://raigulus.github.io/lore/people/aaron-keener/
+https://raigulus.github.io/lore/people/alani-kelso/
 https://raigulus.github.io/lore/people/andrew-ellis/
+https://raigulus.github.io/lore/people/april-kelleher/
+https://raigulus.github.io/lore/people/aurelio-diaz/
 https://raigulus.github.io/lore/people/benjamin-marsh/
 https://raigulus.github.io/lore/people/caleb-dunne/
 https://raigulus.github.io/lore/people/cassandra-raines/
@@ -161,6 +166,7 @@ https://raigulus.github.io/lore/people/emeline-shaw/
 https://raigulus.github.io/lore/people/faye-lau/
 https://raigulus.github.io/lore/people/gordon-amherst/
 https://raigulus.github.io/lore/people/heather-ward/
+https://raigulus.github.io/lore/people/ike-ronson/
 https://raigulus.github.io/lore/people/james-dragov/
 https://raigulus.github.io/lore/people/javier-kajika/
 https://raigulus.github.io/lore/people/jessica-kandel/
@@ -182,5 +188,6 @@ https://raigulus.github.io/lore/review-queue/
 https://raigulus.github.io/lore/sources/
 https://raigulus.github.io/lore/timeline/
 https://raigulus.github.io/lore/works/
+https://raigulus.github.io/lore/works/the-division-broken-dawn/
 https://raigulus.github.io/lore/works/the-division-compromised/
 https://raigulus.github.io/lore/works/the-division-extremis-malis/

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://raigulus.github.io/</loc><lastmod>2026-07-26</lastmod></url>
-  <url><loc>https://raigulus.github.io/about/</loc><lastmod>2026-07-26</lastmod></url>
-  <url><loc>https://raigulus.github.io/division-2/</loc><lastmod>2026-07-26</lastmod></url>
-  <url><loc>https://raigulus.github.io/division-2/missions/</loc><lastmod>2026-07-26</lastmod></url>
-  <url><loc>https://raigulus.github.io/division-2/builds/</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://raigulus.github.io/</loc><lastmod>2026-07-28</lastmod></url>
+  <url><loc>https://raigulus.github.io/about/</loc><lastmod>2026-07-28</lastmod></url>
+  <url><loc>https://raigulus.github.io/division-2/</loc><lastmod>2026-07-28</lastmod></url>
+  <url><loc>https://raigulus.github.io/division-2/missions/</loc><lastmod>2026-07-28</lastmod></url>
+  <url><loc>https://raigulus.github.io/division-2/builds/</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/loot/</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/server-status/</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/escalation/</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/prototype-gear/</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://raigulus.github.io/division-2/dark-zone-surge/</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://raigulus.github.io/division-2/legendary/</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://raigulus.github.io/division-2/manhunts/</loc><lastmod>2026-07-26</lastmod></url>
-  <url><loc>https://raigulus.github.io/division-2/bosses/</loc><lastmod>2026-07-26</lastmod></url>
-  <url><loc>https://raigulus.github.io/division-2/pvp/</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://raigulus.github.io/division-2/dark-zone-surge/</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://raigulus.github.io/division-2/legendary/</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://raigulus.github.io/division-2/manhunts/</loc><lastmod>2026-07-28</lastmod></url>
+  <url><loc>https://raigulus.github.io/division-2/bosses/</loc><lastmod>2026-07-28</lastmod></url>
+  <url><loc>https://raigulus.github.io/division-2/pvp/</loc><lastmod>2026-07-28</lastmod></url>
   <url><loc>https://raigulus.github.io/division-2/videos/the-division-2-district-union-arena-legendary-walkthrough-no-commentary/</loc><lastmod>2026-05-31</lastmod></url>
   <url><loc>https://raigulus.github.io/division-2/videos/the-division-2-capitol-building-legendary-walkthrough-no-commentary/</loc><lastmod>2026-06-01</lastmod></url>
   <url><loc>https://raigulus.github.io/division-2/videos/the-division-2-roosevelt-island-legendary-walkthrough-no-commentary/</loc><lastmod>2026-06-02</lastmod></url>
@@ -98,8 +98,9 @@
   <url><loc>https://raigulus.github.io/lore/diseases/</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/diseases/eclipse-virus/</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/diseases/green-poison/</loc><lastmod>2026-07-19</lastmod></url>
-  <url><loc>https://raigulus.github.io/lore/events/</loc><lastmod>2026-07-27</lastmod></url>
+  <url><loc>https://raigulus.github.io/lore/events/</loc><lastmod>2026-07-28</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/events/black-tusk-siege-of-washington/</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://raigulus.github.io/lore/events/broken-dawn-antiviral-race/</loc><lastmod>2026-07-28</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/events/division-network-crisis/</loc><lastmod>2026-07-19</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/events/green-poison-outbreak/</loc><lastmod>2026-07-19</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/events/gulf-coast-refinery-crisis/</loc><lastmod>2026-07-27</lastmod></url>
@@ -120,6 +121,7 @@
   <url><loc>https://raigulus.github.io/lore/factions/the-reborn/</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/factions/true-sons/</loc><lastmod>2026-07-19</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/locations/</loc><lastmod>2026-07-28</lastmod></url>
+  <url><loc>https://raigulus.github.io/lore/locations/ann-arbor-research-site-broken-dawn/</loc><lastmod>2026-07-28</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/locations/battleship-texas/</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/locations/camden-settlement/</loc><lastmod>2026-07-28</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/locations/camp-white-oak/</loc><lastmod>2026-07-19</lastmod></url>
@@ -154,7 +156,10 @@
   <url><loc>https://raigulus.github.io/lore/organizations/strategic-homeland-division/</loc><lastmod>2026-07-19</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/people/</loc><lastmod>2026-07-28</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/people/aaron-keener/</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://raigulus.github.io/lore/people/alani-kelso/</loc><lastmod>2026-07-28</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/people/andrew-ellis/</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://raigulus.github.io/lore/people/april-kelleher/</loc><lastmod>2026-07-28</lastmod></url>
+  <url><loc>https://raigulus.github.io/lore/people/aurelio-diaz/</loc><lastmod>2026-07-28</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/people/benjamin-marsh/</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/people/caleb-dunne/</loc><lastmod>2026-07-28</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/people/cassandra-raines/</loc><lastmod>2026-07-27</lastmod></url>
@@ -163,6 +168,7 @@
   <url><loc>https://raigulus.github.io/lore/people/faye-lau/</loc><lastmod>2026-07-19</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/people/gordon-amherst/</loc><lastmod>2026-07-19</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/people/heather-ward/</loc><lastmod>2026-07-28</lastmod></url>
+  <url><loc>https://raigulus.github.io/lore/people/ike-ronson/</loc><lastmod>2026-07-28</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/people/james-dragov/</loc><lastmod>2026-07-19</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/people/javier-kajika/</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/people/jessica-kandel/</loc><lastmod>2026-07-19</lastmod></url>
@@ -184,6 +190,7 @@
   <url><loc>https://raigulus.github.io/lore/sources/</loc><lastmod>2026-07-28</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/timeline/</loc><lastmod>2026-07-28</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/works/</loc><lastmod>2026-07-28</lastmod></url>
+  <url><loc>https://raigulus.github.io/lore/works/the-division-broken-dawn/</loc><lastmod>2026-07-28</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/works/the-division-compromised/</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/works/the-division-extremis-malis/</loc><lastmod>2026-07-28</lastmod></url>
 </urlset>

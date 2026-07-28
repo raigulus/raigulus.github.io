@@ -1,0 +1,90 @@
+{
+  "schema_version": 2,
+  "id": "person-ike-ronson",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "person",
+  "title": "Ike Ronson",
+  "slug": "ike-ronson",
+  "section": "people",
+  "summary": "A Broken Dawn Division Agent whose apparent cooperation conceals an operation directed through the Mantis codename and aimed at the novel's antiviral lead.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "ike-broken-dawn-agent",
+      "text": "Ubisoft's Broken Dawn overview identifies Ike Ronson as one of the Division Agents accompanying the novel's investigation.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "ubisoft-broken-dawn-overview-2019"
+      ]
+    },
+    {
+      "id": "ike-mantis-operation",
+      "text": "The novel reveals that Ike is acting under a handler called Mantis while pursuing the Ann Arbor antiviral lead; the handler's organization is not named in that work.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "penguin-broken-dawn-2019"
+      ]
+    },
+    {
+      "id": "ike-isac-status-countermeasure",
+      "text": "Broken Dawn depicts Ike using a countermeasure intended to prevent his actions from appearing as a normal Rogue Agent status in ISAC, without resolving a wider organizational identity for Mantis.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "penguin-broken-dawn-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Trusted Agent, hidden operation",
+      "paragraphs": [
+        {
+          "text": "Ike enters the published premise as an Agent on the antiviral investigation. The novel later makes him the operational link between that team and a remote handler using the Mantis codename.",
+          "claim_ids": [
+            "ike-broken-dawn-agent",
+            "ike-mantis-operation"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "ISAC ambiguity",
+      "paragraphs": [
+        {
+          "text": "The novel uses an ISAC-status countermeasure to make Ike's betrayal more complicated than a simple, visible Rogue flag. It does not, however, identify Mantis's organization or prove a connection to a different Mantis codename elsewhere in the archive.",
+          "claim_ids": [
+            "ike-isac-status-countermeasure",
+            "ike-mantis-operation"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "org-strategic-homeland-division",
+      "relationship": "former-member-of"
+    },
+    {
+      "target_id": "event-broken-dawn-antiviral-race",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "location-ann-arbor-research-site-broken-dawn",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "work-the-division-broken-dawn",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Licensed-novel record. The relation to Mantis is codename-level only and does not establish the handler's identity or organization."
+  }
+}

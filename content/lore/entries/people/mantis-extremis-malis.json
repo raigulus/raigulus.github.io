@@ -35,6 +35,23 @@
       "source_ids": [
         "dark-horse-extremis-malis-2019"
       ]
+    },
+    {
+      "id": "mantis-broken-dawn-handler-codename",
+      "text": "Broken Dawn also uses Mantis as the codename for a remote handler influencing Division Agent Ike Ronson; the novel does not name that handler's organization.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "penguin-broken-dawn-2019"
+      ]
+    },
+    {
+      "id": "mantis-cross-work-identity-unresolved",
+      "text": "The reviewed official sources do not establish that Broken Dawn's handler and the Black Tusk operative in Extremis Malis are the same individual, so this archive keeps the codename link unresolved.",
+      "assessment": "unknown",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019",
+        "penguin-broken-dawn-2019"
+      ]
     }
   ],
   "sections": [
@@ -57,6 +74,18 @@
           "text": "The final Washington sequence makes the chain of command explicit but keeps the controlling organization insulated: Mantis is removed by Black Tusk before she can be retained as a source.",
           "claim_ids": [
             "mantis-black-tusk-silenced"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Earlier codename usage",
+      "paragraphs": [
+        {
+          "text": "Broken Dawn uses the Mantis codename for a remote handler attached to Ike Ronson's operation. That novel leaves the handler's organization unnamed, so the archive treats the shared codename as a source-flagged lead rather than proof of a Black Tusk identity or a single continuous character.",
+          "claim_ids": [
+            "mantis-broken-dawn-handler-codename",
+            "mantis-cross-work-identity-unresolved"
           ]
         }
       ]
@@ -90,12 +119,16 @@
     {
       "target_id": "work-the-division-extremis-malis",
       "relationship": "appears-in"
+    },
+    {
+      "target_id": "work-the-division-broken-dawn",
+      "relationship": "appears-in"
     }
   ],
   "verification": {
     "status": "source-reviewed",
     "last_reviewed": "2026-07-28",
     "human_reviewed": false,
-    "notes": "Codename-only record. Plot outcomes are confined to the licensed graphic novel and marked major spoiler."
+    "notes": "Codename-only record. The archive does not merge same-codename appearances across licensed works without an explicit identity source. Plot outcomes are marked major spoiler."
   }
 }
