@@ -9,7 +9,7 @@ import re
 import sys
 from datetime import date
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import parse_qsl, urlparse
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -40,6 +40,22 @@ FORBIDDEN_PUBLIC_KEYS = {
     "media_blob",
     "audio_file",
     "video_file",
+    "download_url",
+    "mirror_url",
+    "file_url",
+    "storage_url",
+    "private_url",
+    "local_path",
+    "source_path",
+    "archive_path",
+    "research_copy",
+    "torrent_url",
+    "magnet_link",
+    "decryption_key",
+    "api_key",
+    "access_token",
+    "auth_token",
+    "signed_url",
 }
 FORBIDDEN_PUBLIC_EXTENSIONS = {
     ".srt",
@@ -60,6 +76,48 @@ FORBIDDEN_PUBLIC_EXTENSIONS = {
     ".cbr",
     ".cbz",
 }
+FORBIDDEN_SOURCE_HOSTS = {
+    "annas-archive.org",
+    "discord.com",
+    "discord.gg",
+    "discordapp.com",
+    "docs.google.com",
+    "drive.google.com",
+    "dropbox.com",
+    "file.io",
+    "libgen.is",
+    "libgen.li",
+    "mega.io",
+    "mega.nz",
+    "mediafire.com",
+    "oceanofpdf.com",
+    "pdfcoffee.com",
+    "pdfdrive.com",
+    "sendspace.com",
+    "t.me",
+    "telegram.me",
+    "wetransfer.com",
+    "z-library.se",
+    "z-lib.id",
+}
+SENSITIVE_QUERY_KEYS = {
+    "access_token",
+    "api_key",
+    "auth",
+    "authorization",
+    "key",
+    "password",
+    "signature",
+    "sig",
+    "token",
+    "x-amz-credential",
+    "x-amz-security-token",
+    "x-amz-signature",
+}
+MAX_PUBLIC_CLAIM_CHARS = 600
+MAX_PUBLIC_PARAGRAPH_CHARS = 800
+MAX_PUBLIC_EDITORIAL_PARAGRAPH_CHARS = 900
+MAX_PUBLIC_SUMMARY_CHARS = 800
 
 
 def load_json(path: Path):
@@ -79,6 +137,15 @@ def require_slug(record, field, where, errors):
     value = require_string(record, field, where, errors)
     if value and not SLUG_PATTERN.fullmatch(value):
         errors.append(f"{where}: invalid {field} {value}")
+    return value
+
+
+def require_public_text(record, field, where, errors, max_chars):
+    value = require_string(record, field, where, errors)
+    if value and len(value) > max_chars:
+        errors.append(
+            f"{where}: {field} exceeds the {max_chars}-character public publication limit"
+        )
     return value
 
 
@@ -122,12 +189,43 @@ def load_editorial():
 def find_forbidden_keys(value, where, errors):
     if isinstance(value, dict):
         for key, child in value.items():
-            if key in FORBIDDEN_PUBLIC_KEYS:
+            key_with_word_breaks = re.sub(r"([a-z0-9])([A-Z])", r"\1_\2", str(key))
+            normalized_key = re.sub(r"[^a-z0-9]+", "_", key_with_word_breaks.lower()).strip("_")
+            if normalized_key in FORBIDDEN_PUBLIC_KEYS:
                 errors.append(f"{where}: forbidden public field {key}")
             find_forbidden_keys(child, f"{where}.{key}", errors)
     elif isinstance(value, list):
         for index, child in enumerate(value):
             find_forbidden_keys(child, f"{where}[{index}]", errors)
+
+
+def is_forbidden_host(host):
+    return any(host == blocked or host.endswith(f".{blocked}") for blocked in FORBIDDEN_SOURCE_HOSTS)
+
+
+def validate_public_url(value, where, errors, label="URL"):
+    """Reject public links that could expose private access or copied editions."""
+    parsed = urlparse(value)
+    if parsed.scheme != "https":
+        errors.append(f"{where}: {label} must use HTTPS")
+        return
+    if not parsed.netloc:
+        errors.append(f"{where}: {label} must include a host")
+        return
+    if parsed.username or parsed.password:
+        errors.append(f"{where}: {label} must not include credentials")
+    host = (parsed.hostname or "").lower()
+    if is_forbidden_host(host):
+        errors.append(f"{where}: {label} uses a prohibited file-sharing or unofficial-copy host")
+    if Path(parsed.path).suffix.lower() in FORBIDDEN_PUBLIC_EXTENSIONS:
+        errors.append(f"{where}: {label} points to a forbidden raw transcript, media or ebook file")
+    query_keys = {key.lower() for key, _ in parse_qsl(parsed.query, keep_blank_values=True)}
+    leaked_keys = sorted(query_keys & SENSITIVE_QUERY_KEYS)
+    if leaked_keys:
+        errors.append(
+            f"{where}: {label} must not expose credential-like query parameters: "
+            + ", ".join(leaked_keys)
+        )
 
 
 def validate_records(sources, entries, vocabularies):
@@ -158,6 +256,7 @@ def validate_records(sources, entries, vocabularies):
         scope = require_string(source, "scope", where, errors)
         accessed_date = require_string(source, "accessed_date", where, errors)
         url = require_string(source, "url", where, errors)
+        find_forbidden_keys(source, where, errors)
         if source_id in source_map:
             errors.append(f"{where}: duplicate source id {source_id}")
         source_map[source_id] = source
@@ -168,8 +267,8 @@ def validate_records(sources, entries, vocabularies):
         validate_date(accessed_date, f"{where} accessed_date", errors)
         if source.get("published_date"):
             validate_date(source["published_date"], f"{where} published_date", errors)
-        if url and urlparse(url).scheme not in {"http", "https"}:
-            errors.append(f"{where}: source URL must use http or https")
+        if url:
+            validate_public_url(url, where, errors, "source URL")
 
     entry_map = {}
     paths = set()
@@ -184,7 +283,7 @@ def validate_records(sources, entries, vocabularies):
         continuity = require_string(entry, "continuity", where, errors)
         slug = require_slug(entry, "slug", where, errors)
         section = require_slug(entry, "section", where, errors)
-        require_string(entry, "summary", where, errors)
+        require_public_text(entry, "summary", where, errors, MAX_PUBLIC_SUMMARY_CHARS)
         canon_status = require_string(entry, "canon_status", where, errors)
         connection = require_string(entry, "connection_status", where, errors)
         spoiler = require_string(entry, "spoiler_level", where, errors)
@@ -216,7 +315,9 @@ def validate_records(sources, entries, vocabularies):
         for claim_index, claim in enumerate(claims):
             claim_where = f"{where} claim[{claim_index}]"
             claim_id = require_slug(claim, "id", claim_where, errors)
-            require_string(claim, "text", claim_where, errors)
+            require_public_text(
+                claim, "text", claim_where, errors, MAX_PUBLIC_CLAIM_CHARS
+            )
             assessment = require_string(claim, "assessment", claim_where, errors)
             source_ids = claim.get("source_ids")
             if not isinstance(source_ids, list) or not source_ids:
@@ -246,7 +347,13 @@ def validate_records(sources, entries, vocabularies):
                 continue
             for paragraph_index, paragraph in enumerate(paragraphs):
                 paragraph_where = f"{section_where} paragraph[{paragraph_index}]"
-                require_string(paragraph, "text", paragraph_where, errors)
+                require_public_text(
+                    paragraph,
+                    "text",
+                    paragraph_where,
+                    errors,
+                    MAX_PUBLIC_PARAGRAPH_CHARS,
+                )
                 claim_ids = paragraph.get("claim_ids")
                 if not isinstance(claim_ids, list) or not claim_ids:
                     errors.append(f"{paragraph_where}: every paragraph needs claim_ids")
@@ -441,15 +548,21 @@ def validate_editorial(editorial):
             for paragraph_index, paragraph in enumerate(paragraphs):
                 if not isinstance(paragraph, str) or not paragraph.strip():
                     errors.append(f"{section_where} paragraph[{paragraph_index}]: must be non-empty text")
+                elif len(paragraph) > MAX_PUBLIC_EDITORIAL_PARAGRAPH_CHARS:
+                    errors.append(
+                        f"{section_where} paragraph[{paragraph_index}]: exceeds the "
+                        f"{MAX_PUBLIC_EDITORIAL_PARAGRAPH_CHARS}-character public publication limit"
+                    )
         action_url = page.get("action_url")
-        if action_url and urlparse(action_url).scheme not in {"http", "https"}:
-            errors.append(f"{where}: action_url must use http or https")
+        if action_url:
+            validate_public_url(action_url, where, errors, "action_url")
+        find_forbidden_keys(page, where, errors)
     return errors
 
 
 def public_asset_errors():
     errors = []
-    roots = [LORE_CONTENT, ROOT / "assets" / "lore-media"]
+    roots = [LORE_CONTENT, ROOT / "lore", ROOT / "assets" / "lore-media"]
     for base in roots:
         if not base.exists():
             continue

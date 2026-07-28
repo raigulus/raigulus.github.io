@@ -114,6 +114,28 @@ class LoreRecordValidationTests(unittest.TestCase):
         record["full_transcript"] = "This must never enter the public record."
         self.assertTrue(any("forbidden public field" in item for item in self.validate([record])))
 
+    def test_forbidden_public_download_field_is_rejected(self):
+        record = entry()
+        record["downloadUrl"] = "https://example.com/private-copy.epub"
+        self.assertTrue(any("forbidden public field" in item for item in self.validate([record])))
+
+    def test_public_claim_length_has_a_publication_limit(self):
+        record = entry()
+        record["claims"][0]["text"] = "A" * 601
+        self.assertTrue(any("public publication limit" in item for item in self.validate([record])))
+
+    def test_unofficial_copy_host_is_rejected(self):
+        unsafe_source = source()
+        unsafe_source["url"] = "https://mega.nz/file/example"
+        errors, _ = validate_records([unsafe_source], [entry()], VOCABULARIES)
+        self.assertTrue(any("prohibited file-sharing" in item for item in errors))
+
+    def test_credential_like_query_parameter_is_rejected(self):
+        unsafe_source = source()
+        unsafe_source["url"] = "https://example.com/source?token=not-public"
+        errors, _ = validate_records([unsafe_source], [entry()], VOCABULARIES)
+        self.assertTrue(any("credential-like query" in item for item in errors))
+
     def test_relative_timeline_is_supported(self):
         record = entry()
         record["timeline"] = {
