@@ -24,6 +24,28 @@
       "notes": "Official Dark Horse product record for the Ubisoft collaboration reference book. Archive records use independently written factual metadata and high-level scope only; no book prose, page art, cover art, scans, OCR text or excerpts are reproduced."
     },
     {
+      "id": "dark-horse-division-remission-2022",
+      "title": "Tom Clancy's The Division: Remission",
+      "publisher": "Dark Horse Comics",
+      "source_type": "official-publication",
+      "scope": "franchise-lore",
+      "published_date": "2022-01-05",
+      "accessed_date": "2026-07-28",
+      "url": "https://digital.darkhorse.com/books/ca58346e0e244b07b544282d6ebd947e/tom-clancys-the-division-remission",
+      "notes": "Official Dark Horse edition for Jean-David Morvan and The Tribe's licensed Division graphic novel. Archive records use independently written factual metadata and high-level published premise only; no dialogue, panels, scans, OCR text, cover art or extracted images are reproduced."
+    },
+    {
+      "id": "ubisoft-new-york-collapse-announcement-2015",
+      "title": "The Division: New York Collapse Announced",
+      "publisher": "Ubisoft News",
+      "source_type": "official-developer",
+      "scope": "franchise-lore",
+      "published_date": "2015-08-27",
+      "accessed_date": "2026-07-28",
+      "url": "https://news.ubisoft.com/en-us/article/5gk2SP61ER31MniiwW31vq/the-division-new-york-collapse-announced",
+      "notes": "Official announcement describing Alex Irvine's in-universe urban-survival guide, its post-Black Friday New York framing and its lone-survivor annotation device. Archive records contain independently written summaries only; no book prose, removable artifacts, scans, OCR text or cover art are reproduced."
+    },
+    {
       "id": "ubisoft-extremis-malis-announcement-2018",
       "title": "Dark Horse Comics and Ubisoft Expand The Division's Lore",
       "publisher": "Ubisoft",

@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "id": "work-the-division-remission",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "work",
+  "title": "Tom Clancy's The Division: Remission",
+  "slug": "the-division-remission",
+  "section": "works",
+  "summary": "Jean-David Morvan and The Tribe's licensed Division graphic novel follows four former childhood friends as Washington, D.C. fractures after the biological attack, in a published prequel to The Division 2.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "claims": [
+    {
+      "id": "remission-official-graphic-novel",
+      "text": "Dark Horse identifies Remission as a Division graphic novel by writer Jean-David Morvan and the art team The Tribe.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-division-remission-2022"
+      ]
+    },
+    {
+      "id": "remission-division2-prequel",
+      "text": "Dark Horse positions Remission as a prequel to Tom Clancy's The Division 2, set in Washington, D.C. after a deadly biological attack has driven the United States into chaos.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-division-remission-2022"
+      ]
+    },
+    {
+      "id": "remission-four-survivors-premise",
+      "text": "The official premise follows four survivors who were once childhood friends and whose paths divide amid faction warfare in Washington, D.C.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-division-remission-2022"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A Division 2 prequel graphic novel",
+      "paragraphs": [
+        {
+          "text": "Remission is official Division transmedia rather than a game mission. Dark Horse publishes it as a graphic-novel prequel to The Division 2, with the post-attack crisis centered on Washington, D.C.",
+          "claim_ids": [
+            "remission-official-graphic-novel",
+            "remission-division2-prequel"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "A civilian-scale Washington story",
+      "paragraphs": [
+        {
+          "text": "Its published setup is deliberately smaller in scale than a player campaign: four people with a shared childhood are pulled onto different paths as violent factions contest Washington. The archive uses that official premise to map the work's place in the transmedia timeline, without publishing comic dialogue, panels or visual material.",
+          "claim_ids": [
+            "remission-four-survivors-premise"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "location-washington-dc",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Official Dark Horse product material establishes the licensed edition, creators and high-level premise. Public archive text is an independently written summary only; no dialogue, panels, cover art, scans, OCR text or downloadable edition are published."
+  }
+}
