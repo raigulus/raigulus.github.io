@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "id": "work-the-world-of-tom-clancys-the-division",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "work",
+  "title": "The World of Tom Clancy's The Division",
+  "slug": "the-world-of-tom-clancys-the-division",
+  "section": "works",
+  "summary": "Dark Horse and Ubisoft's official Division reference book, framing SHD history, training, structure, tools and mission across the first two games.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "claims": [
+    {
+      "id": "world-of-division-official-reference-book",
+      "text": "The World of Tom Clancy's The Division is an official Dark Horse and Ubisoft reference book produced in collaboration with the game's developers.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-world-of-division-2019"
+      ]
+    },
+    {
+      "id": "world-of-division-scope",
+      "text": "Ubisoft describes the book as a lore guide to the Strategic Homeland Division's classified history, training and structure, alongside its tactics, equipment and mission.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "ubisoft-2019-division-roots"
+      ]
+    },
+    {
+      "id": "world-of-division-timeline-context",
+      "text": "Ubisoft's preview places the lore book in the Division universe and identifies a timeline spanning the period between the first and second games.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "ubisoft-world-of-division-preview-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Official reference work",
+      "paragraphs": [
+        {
+          "text": "This is a reference and art book, not a standalone campaign or a source for reconstructed game scenes. Dark Horse and Ubisoft present it as a developer-collaboration guide to the Division universe.",
+          "claim_ids": [
+            "world-of-division-official-reference-book"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What it anchors in the archive",
+      "paragraphs": [
+        {
+          "text": "The book gives high-level context for the SHD's mission, organization and preparedness. Its official Ubisoft summary is used here only as an evidence locator for independently written records about the crisis framework; the archive does not reproduce its prose, artwork, layouts or timeline pages.",
+          "claim_ids": [
+            "world-of-division-scope",
+            "world-of-division-timeline-context"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "org-strategic-homeland-division",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "disease-green-poison",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "real-world-operation-dark-winter",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "real-world-directive-51",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Official product and Ubisoft material establish the book and its high-level scope. Public archive text contains original summaries and source links only; no pages, art, excerpts, OCR or downloadable edition are published."
+  }
+}
