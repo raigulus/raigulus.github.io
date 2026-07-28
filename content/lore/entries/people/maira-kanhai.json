@@ -7,11 +7,19 @@
   "title": "Maira Kanhai",
   "slug": "maira-kanhai",
   "section": "people",
-  "summary": "A Division Agent whose Operation: Crossroads story runs from Compromised's Gulf Coast crisis into Hunted's major-spoiler American Southwest pursuit.",
+  "summary": "An Operation: Crossroads protagonist whose story starts with a Division recruitment in post-Green Poison Washington, then continues through Compromised and Hunted.",
   "canon_status": "official-transmedia",
   "connection_status": "not-applicable",
   "spoiler_level": "major",
   "claims": [
+    {
+      "id": "kanhai-recruited-origin",
+      "text": "Recruited's published premise introduces Maira Kanhai as a Washington survivor with a cybersecurity background whose earlier Maryland loss precedes her opportunity to join the Strategic Homeland Division.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-recruited-2022"
+      ]
+    },
     {
       "id": "kanhai-gulf-coast-cell-lead",
       "text": "Compromised places Maira Kanhai in charge of a Division cell sent from the Kansas Core to investigate attacks on southern food convoys and Texas refinery infrastructure.",
@@ -55,6 +63,17 @@
   ],
   "sections": [
     {
+      "heading": "Recruited origin",
+      "paragraphs": [
+        {
+          "text": "The first Operation: Crossroads novel presents Kanhai before her Division career, in Washington's post-Green Poison recovery. Its recruitment story is official transmedia material, not a retroactive game-mission record.",
+          "claim_ids": [
+            "kanhai-recruited-origin"
+          ]
+        }
+      ]
+    },
+    {
       "heading": "Gulf Coast assignment",
       "paragraphs": [
         {
@@ -92,6 +111,10 @@
   ],
   "relations": [
     {
+      "target_id": "work-the-division-recruited",
+      "relationship": "appears-in"
+    },
+    {
       "target_id": "work-the-division-compromised",
       "relationship": "appears-in"
     },
@@ -120,6 +143,6 @@
     "status": "source-reviewed",
     "last_reviewed": "2026-07-28",
     "human_reviewed": false,
-    "notes": "This official-transmedia record treats Hunted's high-spoiler plot as source-specific. It does not reduce Rogue status to a single cause or reproduce novel prose."
+    "notes": "This official-transmedia record begins with Recruited's published recruitment setup and treats later high-spoiler novel plot as source-specific. It does not reduce Rogue status to a single cause or reproduce novel prose."
   }
 }

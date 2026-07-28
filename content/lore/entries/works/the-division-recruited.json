@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "id": "work-the-division-recruited",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "work",
+  "title": "Tom Clancy's The Division: Recruited",
+  "slug": "the-division-recruited",
+  "section": "works",
+  "summary": "Thomas Parrott's first Operation: Crossroads novel introduces Maira Kanhai's Division story in post-Green Poison Washington.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "claims": [
+    {
+      "id": "recruited-operation-crossroads-first-book",
+      "text": "Recruited is Thomas Parrott's first Operation: Crossroads novel in the licensed Tom Clancy's The Division publishing line, released by Aconyte Books in 2022.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-recruited-2022"
+      ]
+    },
+    {
+      "id": "recruited-published-premise",
+      "text": "The official premise places Maira Kanhai in the aftermath of Green Poison in Washington, where a Division agent's death opens a path to recruitment while a threat targets the agency.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-recruited-author-interview-2022"
+      ]
+    },
+    {
+      "id": "recruited-division2-timeline-placement",
+      "text": "Aconyte's author interview describes Recruited as taking place after The Division 2, during a period when order is beginning to return to Washington without restoring normal life.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-recruited-2022"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Operation: Crossroads, book one",
+      "paragraphs": [
+        {
+          "text": "Recruited opens Thomas Parrott's licensed Operation: Crossroads sequence. It is an official Division transmedia novel, not a game mission or a replacement for game-source chronology.",
+          "claim_ids": [
+            "recruited-operation-crossroads-first-book"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Published setup and timeline",
+      "paragraphs": [
+        {
+          "text": "The public setup follows Maira Kanhai from Washington's post-Green Poison civilian crisis toward SHD recruitment. Aconyte places that starting point after The Division 2, while the archive keeps the novel's later plot developments source-specific.",
+          "claim_ids": [
+            "recruited-published-premise",
+            "recruited-division2-timeline-placement"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-maira-kanhai",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "work-the-division-compromised",
+      "relationship": "precedes"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Official publisher metadata establishes the work, series position and public premise. Archive records use original, source-specific summaries and reproduce no novel prose, cover art or scans."
+  }
+}

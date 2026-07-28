@@ -55,6 +55,10 @@
   ],
   "relations": [
     {
+      "target_id": "work-the-division-recruited",
+      "relationship": "follows"
+    },
+    {
       "target_id": "person-maira-kanhai",
       "relationship": "appears-in"
     },

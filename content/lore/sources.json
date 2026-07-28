@@ -35,6 +35,28 @@
       "notes": "Licensed Operation: Crossroads novel by Thomas Parrott. The reviewed 2022 ebook edition identifies the work as copyright Ubisoft Entertainment (eISBN 9781839081873). Record claims paraphrase the novel; no book prose is reproduced."
     },
     {
+      "id": "aconyte-division-recruited-2022",
+      "title": "Tom Clancy's The Division: Recruited",
+      "publisher": "Aconyte Books",
+      "source_type": "official-publication",
+      "scope": "franchise-lore",
+      "published_date": "2022-02-01",
+      "accessed_date": "2026-07-28",
+      "url": "https://www.aconytebooks.com/shop/tom-clancys-the-division-recruited-by-thomas-parrott/",
+      "notes": "Official publisher record for Thomas Parrott's licensed Operation: Crossroads novel, book 1. Archive records use independently written plot summaries and factual identifiers only; no novel prose, cover art, scans, OCR text or excerpts are reproduced."
+    },
+    {
+      "id": "aconyte-recruited-author-interview-2022",
+      "title": "Paul Semel Interview: Thomas Parrott",
+      "publisher": "Aconyte Books",
+      "source_type": "official-publication",
+      "scope": "franchise-lore",
+      "published_date": "2022-03-07",
+      "accessed_date": "2026-07-28",
+      "url": "https://www.aconytebooks.com/?publicity=07-03-22-paul-semel-interview-thomas-parrot",
+      "notes": "Official publisher-hosted Thomas Parrott interview describing Recruited's placement after The Division 2. It supports only the disclosed high-level timeline context; no interview text is reproduced."
+    },
+    {
       "id": "aconyte-division-hunted-2024",
       "title": "Tom Clancy's The Division: Hunted",
       "publisher": "Aconyte Books",
