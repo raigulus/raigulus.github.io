@@ -29,6 +29,12 @@
       "text": "Agents across the country are summoned to Washington to restore the network.",
       "assessment": "confirmed",
       "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "network-crisis-extremis-malis-link",
+      "text": "Extremis Malis depicts the Division Network failure during its final Black Tusk-linked sequence, linking the prequel's investigation to the crisis that opens The Division 2.",
+      "assessment": "confirmed",
+      "source_ids": ["dark-horse-extremis-malis-2019"]
     }
   ],
   "sections": [
@@ -38,6 +44,15 @@
         {
           "text": "A nationwide network failure converts the Washington emergency into an SHD-wide mission and brings Agents from across the country to the capital.",
           "claim_ids": ["network-crisis-relative-time", "network-crisis-shutdown", "network-crisis-dc-summons"]
+        }
+      ]
+    },
+    {
+      "heading": "Extremis Malis transition",
+      "paragraphs": [
+        {
+          "text": "The licensed graphic novel places its final confrontation at the moment of the SHD-wide outage, making its source-specific investigation a direct narrative bridge into the game's opening crisis.",
+          "claim_ids": ["network-crisis-extremis-malis-link"]
         }
       ]
     }
@@ -51,7 +66,8 @@
   "relations": [
     {"target_id": "event-shd-activation", "relationship": "follows"},
     {"target_id": "location-washington-dc", "relationship": "located-at"},
-    {"target_id": "event-black-tusk-siege", "relationship": "precedes"}
+    {"target_id": "event-black-tusk-siege", "relationship": "precedes"},
+    {"target_id": "work-the-division-extremis-malis", "relationship": "follows"}
   ],
   "verification": {
     "status": "source-reviewed",

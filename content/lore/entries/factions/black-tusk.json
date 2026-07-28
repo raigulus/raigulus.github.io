@@ -30,6 +30,12 @@
       "text": "Ubisoft describes Black Tusk operators as using high-end weapons, turret drones, robotic gun platforms and other advanced armaments.",
       "assessment": "confirmed",
       "source_ids": ["ubisoft-black-tusk-endgame-2019"]
+    },
+    {
+      "id": "black-tusk-extremis-malis-arms-network",
+      "text": "Extremis Malis depicts Black Tusk using the operative Mantis to provide improved weapons to unstable East Coast groups before the Division 2 opening crisis.",
+      "assessment": "confirmed",
+      "source_ids": ["dark-horse-extremis-malis-2019"]
     }
   ],
   "sections": [
@@ -50,12 +56,24 @@
           "claim_ids": ["black-tusk-technology"]
         }
       ]
+    },
+    {
+      "heading": "Prequel arms network",
+      "paragraphs": [
+        {
+          "text": "The licensed Extremis Malis prequel adds a source-specific earlier view of Black Tusk's strategy: Mantis supplies enhanced weapons to local groups, turning existing instability into an opening for the larger operation.",
+          "claim_ids": ["black-tusk-extremis-malis-arms-network"]
+        }
+      ]
     }
   ],
   "relations": [
     {"target_id": "org-strategic-homeland-division", "relationship": "opposed-to"},
     {"target_id": "location-washington-dc", "relationship": "located-at"},
-    {"target_id": "event-black-tusk-siege", "relationship": "appears-in"}
+    {"target_id": "event-black-tusk-siege", "relationship": "appears-in"},
+    {"target_id": "person-mantis-extremis-malis", "relationship": "member-of"},
+    {"target_id": "person-wyvern-extremis-malis", "relationship": "member-of"},
+    {"target_id": "work-the-division-extremis-malis", "relationship": "appears-in"}
   ],
   "verification": {
     "status": "source-reviewed",

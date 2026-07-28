@@ -27,7 +27,16 @@ META_REFRESH_PATTERN = re.compile(
 FORBIDDEN_PUBLIC_KEYS = {
     "full_transcript",
     "raw_transcript",
+    "raw" + "_text",
+    "source_text",
     "subtitle_dump",
+    "dialogue",
+    "verbatim_quote",
+    "translated_excerpt",
+    "page_text",
+    "panel_image",
+    "scan_image",
+    "comic_panel",
     "media_blob",
     "audio_file",
     "video_file",
@@ -45,6 +54,11 @@ FORBIDDEN_PUBLIC_EXTENSIONS = {
     ".mp4",
     ".mkv",
     ".webm",
+    ".pdf",
+    ".epub",
+    ".mobi",
+    ".cbr",
+    ".cbz",
 }
 
 

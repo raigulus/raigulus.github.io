@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "id": "work-the-division-extremis-malis",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "work",
+  "title": "Tom Clancy's The Division: Extremis Malis",
+  "slug": "the-division-extremis-malis",
+  "section": "works",
+  "summary": "A licensed three-issue Division 2 prequel graphic novel that follows Agent Caleb Dunne from New York to Philadelphia and Washington as a Black Tusk-linked arms operation surfaces.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "extremis-malis-three-issue-collection",
+      "text": "Dark Horse's collected edition identifies Extremis Malis as the three-issue graphic-novel prequel to Tom Clancy's The Division 2.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019",
+        "ubisoft-extremis-malis-announcement-2018"
+      ]
+    },
+    {
+      "id": "extremis-malis-caleb-pursuit",
+      "text": "The official edition's published premise follows Division Agent Caleb Dunne as he pursues the woman responsible for his partner's death from New York toward Washington, D.C.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A direct Division 2 prequel",
+      "paragraphs": [
+        {
+          "text": "Extremis Malis is official Division transmedia: a three-issue Dark Horse graphic novel positioned as a prequel to The Division 2 rather than a game mission or player-capture source.",
+          "claim_ids": [
+            "extremis-malis-three-issue-collection"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Story route",
+      "paragraphs": [
+        {
+          "text": "Its source-specific route follows Caleb Dunne after a fatal New York encounter, through Philadelphia and toward Washington, while exposing an arms operation connected to the coming Black Tusk threat.",
+          "claim_ids": [
+            "extremis-malis-caleb-pursuit"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-caleb-dunne",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "person-heather-ward",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "person-mathias-kaminsky",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "person-mantis-extremis-malis",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "person-wyvern-extremis-malis",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "faction-the-founders",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "location-camden-settlement",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "location-independence-hall-extremis-malis",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "location-fort-detrick-extremis-malis",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "event-division-network-crisis",
+      "relationship": "precedes"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Licensed-comic record. Public text is an original summary only; the archive publishes neither comic dialogue nor visual material."
+  }
+}

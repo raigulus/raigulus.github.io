@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "id": "person-heather-ward",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "person",
+  "title": "Heather Ward",
+  "slug": "heather-ward",
+  "section": "people",
+  "summary": "A Philadelphia-based Division Agent who joins Caleb Dunne's Extremis Malis investigation into the Founders and Mantis's arms operation.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "ward-philadelphia-agent",
+      "text": "Extremis Malis introduces Heather Ward as a Division Agent working in Philadelphia.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    },
+    {
+      "id": "ward-caleb-founders-operation",
+      "text": "Ward works with Caleb Dunne against the Founders and the arms network linked to Mantis.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Philadelphia partner",
+      "paragraphs": [
+        {
+          "text": "Ward gives the story its Philadelphia Division perspective. Her partnership with Caleb connects a local settlement dispute to the broader operation Mantis is running on behalf of Black Tusk.",
+          "claim_ids": [
+            "ward-philadelphia-agent",
+            "ward-caleb-founders-operation"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "org-strategic-homeland-division",
+      "relationship": "member-of"
+    },
+    {
+      "target_id": "person-caleb-dunne",
+      "relationship": "allied-with"
+    },
+    {
+      "target_id": "faction-the-founders",
+      "relationship": "opposed-to"
+    },
+    {
+      "target_id": "work-the-division-extremis-malis",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "This record covers only the character's licensed-comic role; it does not make a broader game-continuity claim."
+  }
+}

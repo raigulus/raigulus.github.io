@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "id": "person-wyvern-extremis-malis",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "person",
+  "title": "Wyvern",
+  "slug": "wyvern-extremis-malis",
+  "section": "people",
+  "summary": "The Black Tusk superior identified by the codename Wyvern in Extremis Malis, shown directing Mantis's operation without exposing the wider command structure.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "wyvern-mantis-superior",
+      "text": "The graphic novel presents Wyvern as the Black Tusk superior receiving Mantis's reports and directing the operation after setbacks in Philadelphia.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    },
+    {
+      "id": "wyvern-mantis-termination",
+      "text": "Wyvern's communications frame Mantis as an expendable field operative, culminating in Black Tusk silencing Mantis during the Washington sequence.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Codename in the chain of command",
+      "paragraphs": [
+        {
+          "text": "Extremis Malis identifies this superior only as Wyvern. That limited identification is enough to connect Mantis's field work to Black Tusk while preserving the story's view of an intentionally compartmentalized command structure.",
+          "claim_ids": [
+            "wyvern-mantis-superior",
+            "wyvern-mantis-termination"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-mantis-extremis-malis",
+      "relationship": "leader-of"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "member-of"
+    },
+    {
+      "target_id": "work-the-division-extremis-malis",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "The record deliberately uses the comic's codename-only identification and makes no unverified identity expansion."
+  }
+}

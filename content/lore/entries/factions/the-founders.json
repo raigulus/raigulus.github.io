@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "id": "faction-the-founders",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "faction",
+  "title": "The Founders",
+  "slug": "the-founders",
+  "section": "factions",
+  "summary": "A Philadelphia militia in Extremis Malis that preys on local settlements and becomes a recipient of Mantis's enhanced weapons before the Division intervenes.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "founders-philadelphia-militia",
+      "text": "Extremis Malis depicts the Founders as an armed Philadelphia group extracting resources from local survivor communities.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    },
+    {
+      "id": "founders-mantis-weapons",
+      "text": "Mantis supplies the Founders with improved weapons, making the faction part of the Black Tusk-linked arms operation investigated by Caleb Dunne and Heather Ward.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Philadelphia pressure group",
+      "paragraphs": [
+        {
+          "text": "The Founders show how the prequel's arms network works at local scale: an already coercive militia obtains better equipment and gains more leverage over nearby survivors.",
+          "claim_ids": [
+            "founders-philadelphia-militia",
+            "founders-mantis-weapons"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-mantis-extremis-malis",
+      "relationship": "allied-with"
+    },
+    {
+      "target_id": "person-heather-ward",
+      "relationship": "opposed-to"
+    },
+    {
+      "target_id": "location-camden-settlement",
+      "relationship": "located-at"
+    },
+    {
+      "target_id": "location-independence-hall-extremis-malis",
+      "relationship": "located-at"
+    },
+    {
+      "target_id": "work-the-division-extremis-malis",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Faction is limited to its role in the licensed graphic novel; no claim of a current in-game faction presence is made."
+  }
+}

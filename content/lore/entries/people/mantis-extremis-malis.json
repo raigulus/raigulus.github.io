@@ -1,0 +1,101 @@
+{
+  "schema_version": 2,
+  "id": "person-mantis-extremis-malis",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "person",
+  "title": "Mantis",
+  "slug": "mantis-extremis-malis",
+  "section": "people",
+  "summary": "The Extremis Malis operative who arms vulnerable groups on the East Coast for Black Tusk and directly connects the graphic novel's New York, Philadelphia and Washington threads.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "mantis-chinatown-killing",
+      "text": "Mantis kills Mathias Kaminsky during the Chinatown warehouse encounter and escapes before Caleb Dunne can stop her.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    },
+    {
+      "id": "mantis-east-coast-arms-network",
+      "text": "The graphic novel depicts Mantis using improved weapons to build leverage with unstable East Coast groups, including Last Man Battalion remnants and the Founders.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    },
+    {
+      "id": "mantis-black-tusk-silenced",
+      "text": "After the Division Network failure, Mantis is killed by a hidden Black Tusk sniper while reporting to the superior identified as Wyvern.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Arms and leverage",
+      "paragraphs": [
+        {
+          "text": "Mantis is the prequel's connective antagonist: she supplies advanced weapons to groups that are already violent or desperate, allowing Black Tusk to turn local instability into a wider strategic advantage.",
+          "claim_ids": [
+            "mantis-chinatown-killing",
+            "mantis-east-coast-arms-network"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "A disposable operative",
+      "paragraphs": [
+        {
+          "text": "The final Washington sequence makes the chain of command explicit but keeps the controlling organization insulated: Mantis is removed by Black Tusk before she can be retained as a source.",
+          "claim_ids": [
+            "mantis-black-tusk-silenced"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-caleb-dunne",
+      "relationship": "opposed-to"
+    },
+    {
+      "target_id": "person-mathias-kaminsky",
+      "relationship": "opposed-to"
+    },
+    {
+      "target_id": "person-wyvern-extremis-malis",
+      "relationship": "member-of"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "member-of"
+    },
+    {
+      "target_id": "faction-last-man-battalion",
+      "relationship": "allied-with"
+    },
+    {
+      "target_id": "faction-the-founders",
+      "relationship": "allied-with"
+    },
+    {
+      "target_id": "work-the-division-extremis-malis",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Codename-only record. Plot outcomes are confined to the licensed graphic novel and marked major spoiler."
+  }
+}
