@@ -36,6 +36,12 @@
       ]
     }
   ],
+  "timeline": {
+    "sequence": 61,
+    "label": "During Warlords of New York — Pathway Park's Kajika thread",
+    "precision": "sequence-only",
+    "source_ids": ["ubisoft-tu91-kajika-2020", "raigulus-wony-hardcore-run-2026"]
+  },
   "relations": [
     {"target_id": "person-javier-kajika", "relationship": "involves"},
     {"target_id": "location-lower-manhattan", "relationship": "located-at"}

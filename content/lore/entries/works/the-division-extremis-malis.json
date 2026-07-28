@@ -54,6 +54,12 @@
       ]
     }
   ],
+  "timeline": {
+    "sequence": 29,
+    "label": "Immediately before The Division 2 — Extremis Malis reaches the SHD Network outage",
+    "precision": "relative",
+    "source_ids": ["dark-horse-extremis-malis-2019"]
+  },
   "relations": [
     {
       "target_id": "person-caleb-dunne",

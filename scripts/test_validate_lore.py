@@ -10,6 +10,7 @@ from scripts.validate_lore import (
     ROOT,
     is_redirect_page,
     load_json,
+    validate_reading_order,
     validate_inventories,
     validate_records,
 )
@@ -155,6 +156,50 @@ class LoreRecordValidationTests(unittest.TestCase):
             "source_ids": ["missing-source"],
         }
         self.assertTrue(any("timeline: unknown source id" in item for item in self.validate([record])))
+
+
+class ReadingOrderValidationTests(unittest.TestCase):
+    def reading_order(self):
+        return {
+            "schema_version": 1,
+            "title": "Test reading order",
+            "description": "A source-led test reading order.",
+            "eyebrow": "Test",
+            "intro": "Test configuration only.",
+            "groups": [
+                {
+                    "id": "test-stage",
+                    "title": "Test stage",
+                    "summary": "A validated test stage.",
+                    "items": [
+                        {
+                            "id": "test-item",
+                            "format": "Read",
+                            "title": "Test work",
+                            "spoiler_note": "No spoilers.",
+                            "description": "A validated test item.",
+                            "entry_ids": ["test-entry"],
+                            "source_ids": ["official-test-source"],
+                        }
+                    ],
+                }
+            ],
+        }
+
+    def test_valid_reading_order(self):
+        self.assertEqual(
+            validate_reading_order(self.reading_order(), [source()], [entry()]), []
+        )
+
+    def test_reading_order_rejects_unknown_entry(self):
+        reading_order = self.reading_order()
+        reading_order["groups"][0]["items"][0]["entry_ids"] = ["missing-entry"]
+        self.assertTrue(
+            any(
+                "unknown entry id" in item
+                for item in validate_reading_order(reading_order, [source()], [entry()])
+            )
+        )
 
 
 class LoreInventoryValidationTests(unittest.TestCase):

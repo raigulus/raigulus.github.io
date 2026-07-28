@@ -62,6 +62,12 @@
       ]
     }
   ],
+  "timeline": {
+    "sequence": 25,
+    "label": "Between the games — Remission's Washington prequel, without a finer source-established placement",
+    "precision": "sequence-only",
+    "source_ids": ["dark-horse-division-remission-2022"]
+  },
   "relations": [
     {
       "target_id": "location-washington-dc",

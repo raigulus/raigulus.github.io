@@ -2,8 +2,8 @@
 
 Lore pages are generated from versioned JSON records. Edit records under
 `entries/`, the shared registry in `sources.json`, coverage files under
-`inventories/`, and policy copy in `editorial.json`; do not hand-edit generated
-files under `/lore/`.
+`inventories/`, the curated route in `reading-order.json`, and policy copy in
+`editorial.json`; do not hand-edit generated files under `/lore/`.
 
 The builder recursively discovers JSON records below `entries/`, so entity
 folders can be introduced without changing the build. Controlled values live
@@ -34,12 +34,18 @@ meta refresh are deliberately excluded from canonical inventory counts.
 
 ## Directories and timeline
 
-The build creates a grouped lore directory, one index per populated section,
-and a source-led timeline at `/lore/timeline/`. Timeline entries use an explicit
-integer sequence for ordering and a reader-facing label; a calendar date is not
-required when official material establishes only relative order. Keep the
-precision value honest (`exact-date`, `month`, `year`, or `relative`) and attach
-timeline source IDs independently from the entry's prose claims.
+The build creates a grouped lore directory, one index per populated section, a
+source-led timeline at `/lore/timeline/`, and a spoiler-aware route at
+`/lore/reading-order/`. Timeline entries use an explicit integer sequence for
+ordering and a reader-facing label; a calendar date is not required when
+official material establishes only relative order. Keep the precision value
+honest (`exact-date`, `month`, `year`, `relative`, or `sequence-only`) and
+attach timeline source IDs independently from the entry's prose claims.
+
+The reading order is a practical route, not a claim that every source proves a
+single internal sequence. Every item must link to both published archive
+records and registered sources; use its spoiler note to distinguish a safe
+reading recommendation from a source-established chronology claim.
 
 ## Publication and copyright gates
 

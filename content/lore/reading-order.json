@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "title": "The Division Chronological Reading & Play Order",
+  "description": "A spoiler-aware, source-led route through The Division games and official transmedia, separating confirmed sequence from material that overlaps or lacks an exact placement.",
+  "eyebrow": "Spoiler-aware route",
+  "intro": "Use this as a chronology guide rather than a substitute for the games or published works. The route places only the sequence confirmed by official material. When a source does not establish an exact internal order, this page says so instead of inventing one.",
+  "groups": [
+    {
+      "id": "new-york-origin",
+      "title": "1. The New York origin",
+      "summary": "Begin with the outbreak and first SHD deployment. New York Collapse belongs to the early New York story, but its annotated format is safest after completing the original game if you want game-linked discoveries unspoiled.",
+      "items": [
+        {
+          "id": "play-the-division",
+          "format": "Play",
+          "title": "Tom Clancy's The Division — original New York campaign",
+          "spoiler_note": "Minor setup spoilers",
+          "description": "Start with the original campaign to establish Black Friday, the breakdown of New York and the second-wave SHD response.",
+          "entry_ids": ["event-green-poison-outbreak", "event-shd-activation"],
+          "source_ids": ["ubisoft-story-so-far-2020"]
+        },
+        {
+          "id": "read-new-york-collapse",
+          "format": "Read",
+          "title": "Tom Clancy's The Division: New York Collapse",
+          "spoiler_note": "Read after the original campaign for the lowest spoiler risk",
+          "description": "Use this official companion for its early post-Black Friday survivor frame and April Kelleher starting point. It is not a real-world emergency manual.",
+          "entry_ids": ["work-the-division-new-york-collapse", "person-april-kelleher"],
+          "source_ids": ["ubisoft-new-york-collapse-announcement-2015", "ubisoft-broken-dawn-overview-2019"]
+        }
+      ]
+    },
+    {
+      "id": "between-the-games",
+      "title": "2. Between the games",
+      "summary": "These official transmedia works sit before The Division 2. Broken Dawn is explicitly in the months between the games; Remission is a Division 2 prequel, but the official product material does not give it a finer placement against Broken Dawn.",
+      "items": [
+        {
+          "id": "read-broken-dawn",
+          "format": "Read",
+          "title": "Tom Clancy's The Division: Broken Dawn",
+          "spoiler_note": "Major novel spoilers",
+          "description": "Read after the original game and before The Division 2 for April Kelleher's Midwest antiviral lead and the bridge into the Washington era.",
+          "entry_ids": ["work-the-division-broken-dawn", "event-broken-dawn-antiviral-race"],
+          "source_ids": ["ubisoft-broken-dawn-overview-2019", "ubisoft-division-books-broken-dawn-2019"]
+        },
+        {
+          "id": "read-remission",
+          "format": "Read",
+          "title": "Tom Clancy's The Division: Remission",
+          "spoiler_note": "Minor setup spoilers",
+          "description": "Read as a Washington prequel before The Division 2. Treat it as parallel pre-game context rather than a source-proven fixed step before or after Broken Dawn.",
+          "entry_ids": ["work-the-division-remission", "location-washington-dc"],
+          "source_ids": ["dark-horse-division-remission-2022"]
+        },
+        {
+          "id": "read-extremis-malis",
+          "format": "Read",
+          "title": "Tom Clancy's The Division: Extremis Malis",
+          "spoiler_note": "Major prequel spoilers",
+          "description": "Place this last in the pre-Division 2 block: its published route connects directly to the SHD Network failure that opens the sequel.",
+          "entry_ids": ["work-the-division-extremis-malis", "event-division-network-crisis"],
+          "source_ids": ["dark-horse-extremis-malis-2019", "ubisoft-extremis-malis-announcement-2018"]
+        }
+      ]
+    },
+    {
+      "id": "washington-campaign",
+      "title": "3. Washington campaign and Episodes",
+      "summary": "Play the core The Division 2 campaign before its Black Tusk counteroffensive, then use Episodes 1–3 in their official release and content order. Inside same-episode groups the archive does not invent a story order unless the source establishes one.",
+      "items": [
+        {
+          "id": "play-division-2-core",
+          "format": "Play",
+          "title": "Tom Clancy's The Division 2 — base campaign and Tidal Basin",
+          "spoiler_note": "Major campaign spoilers",
+          "description": "This block covers the nationwide SHD Network crisis, the Black Tusk invasion of Washington and the Tidal Basin antiviral recovery.",
+          "entry_ids": ["event-division-network-crisis", "event-black-tusk-siege", "mission-tidal-basin"],
+          "source_ids": ["ubisoft-story-so-far-2020"]
+        },
+        {
+          "id": "play-episodes-one-to-three",
+          "format": "Play",
+          "title": "Year One Episodes 1–3",
+          "spoiler_note": "Major mission spoilers",
+          "description": "Continue through Episode 1's Manning National Zoo and Camp White Oak, Episode 2's Pentagon and DARPA Research Labs, and Episode 3's two Coney Island missions.",
+          "entry_ids": ["mission-manning-national-zoo", "mission-camp-white-oak", "mission-the-pentagon", "mission-darpa-research-labs", "mission-coney-island-amusement-park", "mission-coney-island-ballpark"],
+          "source_ids": ["ubisoft-manning-white-oak-2019", "ubisoft-pentagon-darpa-2019", "ubisoft-coney-island-2020"]
+        },
+        {
+          "id": "use-world-reference",
+          "format": "Reference",
+          "title": "The World of Tom Clancy's The Division",
+          "spoiler_note": "Broad franchise context",
+          "description": "Use this official reference work after the core games when you want a high-level SHD, equipment and timeline companion rather than another narrative campaign.",
+          "entry_ids": ["work-the-world-of-tom-clancys-the-division", "org-strategic-homeland-division"],
+          "source_ids": ["dark-horse-world-of-division-2019", "ubisoft-world-of-division-preview-2019"]
+        }
+      ]
+    },
+    {
+      "id": "lower-manhattan",
+      "title": "4. Return to Lower Manhattan",
+      "summary": "Warlords of New York begins after a new Lower Manhattan biological attack. The four lieutenant mission records are campaign threads, so the archive does not falsely impose one universal internal order; the captured Liberty Island segment is marked as the end of the recorded run.",
+      "items": [
+        {
+          "id": "play-warlords-of-new-york",
+          "format": "Play",
+          "title": "Warlords of New York",
+          "spoiler_note": "Major expansion spoilers",
+          "description": "Follow the Lower Manhattan attack into the Keener manhunt. The archive tracks Pathway Park, The Tombs, Stranded Tanker and Wall Street as parallel campaign records before the final Liberty Island segment.",
+          "entry_ids": ["event-lower-manhattan-biological-attack", "event-warlords-of-new-york-manhunt", "mission-pathway-park", "mission-the-tombs", "mission-stranded-tanker", "mission-wall-street", "mission-liberty-island"],
+          "source_ids": ["ubisoft-wony-overview-2020", "raigulus-wony-hardcore-run-2026"]
+        }
+      ]
+    },
+    {
+      "id": "operation-crossroads",
+      "title": "5. Operation: Crossroads",
+      "summary": "This is a confirmed internal novel sequence set after The Division 2. The sources establish book order, but not an exact placement against every later game expansion or season, so it remains a separate post-game branch.",
+      "items": [
+        {
+          "id": "read-operation-crossroads",
+          "format": "Read",
+          "title": "Recruited → Compromised → Hunted",
+          "spoiler_note": "Increasing major spoilers across the trilogy",
+          "description": "Read Thomas Parrott's Operation: Crossroads novels in published series order: Maira Kanhai's Washington entry, the Gulf Coast refinery crisis, then the Albuquerque-focused Hunted operation.",
+          "entry_ids": ["work-the-division-recruited", "work-the-division-compromised", "work-the-division-hunted"],
+          "source_ids": ["aconyte-division-recruited-2022", "aconyte-division-compromised-2022", "aconyte-division-hunted-2024"]
+        }
+      ]
+    }
+  ]
+}

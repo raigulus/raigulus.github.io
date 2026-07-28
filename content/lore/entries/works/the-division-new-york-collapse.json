@@ -62,6 +62,12 @@
       ]
     }
   ],
+  "timeline": {
+    "sequence": 20,
+    "label": "Early post-Black Friday New York — New York Collapse's survivor frame",
+    "precision": "sequence-only",
+    "source_ids": ["ubisoft-new-york-collapse-announcement-2015"]
+  },
   "relations": [
     {
       "target_id": "person-april-kelleher",

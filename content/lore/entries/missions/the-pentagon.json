@@ -42,6 +42,12 @@
       ]
     }
   ],
+  "timeline": {
+    "sequence": 43,
+    "label": "After Episode 1 — Episode 2: The Pentagon",
+    "precision": "sequence-only",
+    "source_ids": ["ubisoft-pentagon-darpa-2019"]
+  },
   "relations": [
     {"target_id": "faction-black-tusk", "relationship": "involves"},
     {"target_id": "location-the-pentagon", "relationship": "located-at"},

@@ -36,6 +36,12 @@
       ]
     }
   ],
+  "timeline": {
+    "sequence": 61,
+    "label": "During Warlords of New York — Wall Street's Dragov thread",
+    "precision": "sequence-only",
+    "source_ids": ["raigulus-wony-hardcore-run-2026"]
+  },
   "relations": [
     {"target_id": "person-james-dragov", "relationship": "involves"},
     {"target_id": "location-lower-manhattan", "relationship": "located-at"}

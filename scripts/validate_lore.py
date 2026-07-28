@@ -19,6 +19,7 @@ INVENTORY_DIR = LORE_CONTENT / "inventories"
 SOURCES_PATH = LORE_CONTENT / "sources.json"
 VOCABULARIES_PATH = LORE_CONTENT / "vocabularies.json"
 EDITORIAL_PATH = LORE_CONTENT / "editorial.json"
+READING_ORDER_PATH = LORE_CONTENT / "reading-order.json"
 
 SLUG_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 META_REFRESH_PATTERN = re.compile(
@@ -184,6 +185,10 @@ def load_inventories():
 
 def load_editorial():
     return load_json(EDITORIAL_PATH)
+
+
+def load_reading_order():
+    return load_json(READING_ORDER_PATH)
 
 
 def find_forbidden_keys(value, where, errors):
@@ -560,6 +565,71 @@ def validate_editorial(editorial):
     return errors
 
 
+def validate_reading_order(reading_order, sources, entries):
+    """Validate the curated reading order against public lore records and sources."""
+    errors = []
+    source_ids = {source["id"] for source in sources}
+    entry_ids = {entry["id"] for entry in entries}
+    where = "reading-order.json"
+    if reading_order.get("schema_version") != 1:
+        errors.append(f"{where}: schema_version must be 1")
+    for field, max_chars in (
+        ("title", MAX_PUBLIC_SUMMARY_CHARS),
+        ("description", MAX_PUBLIC_SUMMARY_CHARS),
+        ("eyebrow", MAX_PUBLIC_SUMMARY_CHARS),
+        ("intro", MAX_PUBLIC_EDITORIAL_PARAGRAPH_CHARS),
+    ):
+        require_public_text(reading_order, field, where, errors, max_chars)
+    groups = reading_order.get("groups")
+    if not isinstance(groups, list) or not groups:
+        errors.append(f"{where}: groups must be a non-empty array")
+        return errors
+    group_ids = set()
+    for group_index, group in enumerate(groups):
+        group_where = f"{where} groups[{group_index}]"
+        group_id = require_slug(group, "id", group_where, errors)
+        require_public_text(group, "title", group_where, errors, MAX_PUBLIC_SUMMARY_CHARS)
+        require_public_text(group, "summary", group_where, errors, MAX_PUBLIC_EDITORIAL_PARAGRAPH_CHARS)
+        if group_id in group_ids:
+            errors.append(f"{group_where}: duplicate group id {group_id}")
+        group_ids.add(group_id)
+        items = group.get("items")
+        if not isinstance(items, list) or not items:
+            errors.append(f"{group_where}: items must be a non-empty array")
+            continue
+        item_ids = set()
+        for item_index, item in enumerate(items):
+            item_where = f"{group_where} item[{item_index}]"
+            item_id = require_slug(item, "id", item_where, errors)
+            require_public_text(item, "format", item_where, errors, 80)
+            require_public_text(item, "title", item_where, errors, MAX_PUBLIC_SUMMARY_CHARS)
+            require_public_text(item, "spoiler_note", item_where, errors, 200)
+            require_public_text(item, "description", item_where, errors, MAX_PUBLIC_EDITORIAL_PARAGRAPH_CHARS)
+            if item_id in item_ids:
+                errors.append(f"{item_where}: duplicate item id")
+            item_ids.add(item_id)
+            linked_entries = item.get("entry_ids")
+            if not isinstance(linked_entries, list) or not linked_entries:
+                errors.append(f"{item_where}: entry_ids must be a non-empty array")
+                linked_entries = []
+            if len(linked_entries) != len(set(linked_entries)):
+                errors.append(f"{item_where}: entry_ids must be unique")
+            for entry_id in linked_entries:
+                if entry_id not in entry_ids:
+                    errors.append(f"{item_where}: unknown entry id {entry_id}")
+            cited_sources = item.get("source_ids")
+            if not isinstance(cited_sources, list) or not cited_sources:
+                errors.append(f"{item_where}: source_ids must be a non-empty array")
+                cited_sources = []
+            if len(cited_sources) != len(set(cited_sources)):
+                errors.append(f"{item_where}: source_ids must be unique")
+            for source_id in cited_sources:
+                if source_id not in source_ids:
+                    errors.append(f"{item_where}: unknown source id {source_id}")
+            find_forbidden_keys(item, item_where, errors)
+    return errors
+
+
 def public_asset_errors():
     errors = []
     roots = [LORE_CONTENT, ROOT / "lore", ROOT / "assets" / "lore-media"]
@@ -613,11 +683,13 @@ def run_validation(strict_site_inventory=False):
     inventories = load_inventories()
     vocabularies = load_json(VOCABULARIES_PATH)
     editorial = load_editorial()
+    reading_order = load_reading_order()
     errors, warnings = validate_records(sources, entries, vocabularies)
     inventory_errors, inventory_warnings = validate_inventories(inventories, vocabularies)
     errors.extend(inventory_errors)
     warnings.extend(inventory_warnings)
     errors.extend(validate_editorial(editorial))
+    errors.extend(validate_reading_order(reading_order, sources, entries))
     errors.extend(public_asset_errors())
     inventory_drift = site_inventory_warnings()
     warnings.extend(inventory_drift)

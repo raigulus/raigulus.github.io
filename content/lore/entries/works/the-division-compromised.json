@@ -53,6 +53,12 @@
       ]
     }
   ],
+  "timeline": {
+    "sequence": 71,
+    "label": "After Recruited — Operation: Crossroads continues in Compromised",
+    "precision": "relative",
+    "source_ids": ["aconyte-division-compromised-2022"]
+  },
   "relations": [
     {
       "target_id": "work-the-division-recruited",

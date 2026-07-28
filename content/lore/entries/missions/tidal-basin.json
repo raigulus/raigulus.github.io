@@ -36,6 +36,12 @@
       ]
     }
   ],
+  "timeline": {
+    "sequence": 41,
+    "label": "After the Black Tusk siege — Tidal Basin and the antiviral recovery",
+    "precision": "relative",
+    "source_ids": ["ubisoft-story-so-far-2020"]
+  },
   "relations": [
     {"target_id": "faction-black-tusk", "relationship": "involves"},
     {"target_id": "location-tidal-basin", "relationship": "located-at"},

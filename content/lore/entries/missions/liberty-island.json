@@ -36,6 +36,12 @@
       ]
     }
   ],
+  "timeline": {
+    "sequence": 62,
+    "label": "End of the recorded Warlords run — Liberty Island and the Keener encounter",
+    "precision": "sequence-only",
+    "source_ids": ["raigulus-wony-hardcore-run-2026"]
+  },
   "relations": [
     {"target_id": "person-aaron-keener", "relationship": "involves"}
   ],

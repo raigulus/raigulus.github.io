@@ -4,7 +4,7 @@
   "title": "The Division 2 Lore Coverage",
   "game": "the-division-2",
   "inventory_status": "in-progress",
-  "last_audited": "2026-07-27",
+  "last_audited": "2026-07-28",
   "notes": "Expected totals remain intentionally unknown until the in-game menus and release-by-release source inventory are captured and reconciled.",
   "categories": [
     {
@@ -60,7 +60,7 @@
       "human_reviewed_count": 0,
       "published_count": 0,
       "status": "in-progress",
-      "notes": "Six core events form a sourced relative timeline, seven Episode/stronghold missions and the five Warlords of New York main missions now have overview records; base-campaign and later seasonal mission coverage remains incomplete."
+      "notes": "Core events, officially positioned Year One mission groups and a clearly labelled Warlords of New York direct-capture route now form a sourced relative timeline; base-campaign and later seasonal mission coverage remains incomplete."
     },
     {
       "id": "td2-diseases-concepts",

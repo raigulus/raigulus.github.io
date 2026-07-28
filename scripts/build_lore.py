@@ -9,7 +9,13 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from validate_lore import ROOT, load_editorial, load_inventories, run_validation
+from validate_lore import (
+    ROOT,
+    load_editorial,
+    load_inventories,
+    load_reading_order,
+    run_validation,
+)
 
 
 BASE_URL = "https://raigulus.github.io"
@@ -286,6 +292,7 @@ def render_index(entries):
     <div class="lore-tools" aria-label="Lore archive controls">
       <a href="/lore/coverage/"><strong>Coverage</strong><span>Verified counts and acknowledged gaps</span></a>
       <a href="/lore/timeline/"><strong>Timeline</strong><span>Sourced sequence without invented dates</span></a>
+      <a href="/lore/reading-order/"><strong>Reading order</strong><span>Spoiler-aware books and game route</span></a>
       <a href="/lore/methodology/"><strong>Methodology</strong><span>Evidence, canon and review rules</span></a>
       <a href="/lore/review-queue/"><strong>Review queue</strong><span>Records awaiting human approval</span></a>
       <a href="/lore/copyright/"><strong>Copyright</strong><span>Transcript and quotation boundaries</span></a>
@@ -468,15 +475,60 @@ def render_timeline(entries, sources_by_id):
   </div>
 </li>''')
     empty = '<li class="timeline-item"><div class="timeline-copy"><p>No sourced timeline events have been added yet.</p></div></li>'
-    description = "A source-led sequence of events in The Division universe, using relative labels when exact dates are not established."
+    description = "A source-led sequence of events, missions and official transmedia in The Division universe, using relative labels when exact dates are not established."
     return f'''{head('The Division Lore Timeline', description, BASE_URL + '/lore/timeline/', 'CollectionPage')}
 <body>
 {header()}
 <main class="lore-shell">
   <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/lore/">Lore</a> / <span>Timeline</span></nav>
   <article class="lore-article">
-    <header class="lore-hero"><p class="eyebrow">Chronology</p><h1>The Division Lore Timeline</h1><p class="lede">Exact dates are shown only when a source establishes them. Relative sequence is labelled rather than converted into invented calendar dates.</p></header>
+    <header class="lore-hero"><p class="eyebrow">Chronology</p><h1>The Division Lore Timeline</h1><p class="lede">Exact dates are shown only when a source establishes them. Relative sequence is labelled rather than converted into invented calendar dates; same-position, sequence-only records may overlap or be grouped without asserting a fixed internal order.</p></header>
     <section class="lore-section"><ol class="lore-timeline">{''.join(items) or empty}</ol></section>
+  </article>
+</main>
+{footer()}
+</body>
+</html>
+'''
+
+
+def render_reading_order(reading_order, entries_by_id, sources_by_id):
+    groups = []
+    for group in reading_order["groups"]:
+        items = []
+        for item in group["items"]:
+            records = " · ".join(
+                f'<a href="{page_url(entries_by_id[entry_id])}">{esc(entries_by_id[entry_id]["title"])}</a>'
+                for entry_id in item["entry_ids"]
+            )
+            sources = ", ".join(
+                f'<a href="{esc(sources_by_id[source_id]["url"])}">{esc(sources_by_id[source_id]["title"])}</a>'
+                for source_id in item["source_ids"]
+            )
+            items.append(f'''<li class="reading-item">
+  <p class="eyebrow">{esc(item['format'])}</p>
+  <h3>{esc(item['title'])}</h3>
+  <p class="reading-spoiler">{esc(item['spoiler_note'])}</p>
+  <p>{esc(item['description'])}</p>
+  <p class="reading-records"><strong>Archive records:</strong> {records}</p>
+  <p class="timeline-sources"><strong>Sources:</strong> {sources}</p>
+</li>''')
+        groups.append(f'''<section class="lore-section reading-stage">
+  <p class="eyebrow">{esc(group['id'].replace('-', ' '))}</p>
+  <h2>{esc(group['title'])}</h2>
+  <p>{esc(group['summary'])}</p>
+  <ol class="reading-order-list">{''.join(items)}</ol>
+</section>''')
+    canonical = BASE_URL + "/lore/reading-order/"
+    return f'''{head(reading_order['title'], reading_order['description'], canonical, 'ItemList')}
+<body>
+{header()}
+<main class="lore-shell">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/lore/">Lore</a> / <span>Reading order</span></nav>
+  <article class="lore-article">
+    <header class="lore-hero"><p class="eyebrow">{esc(reading_order['eyebrow'])}</p><h1>{esc(reading_order['title'])}</h1><p class="lede">{esc(reading_order['description'])}</p></header>
+    <section class="lore-section"><p>{esc(reading_order['intro'])}</p></section>
+    {''.join(groups)}
   </article>
 </main>
 {footer()}
@@ -525,6 +577,7 @@ def update_sitemaps(entries, editorial_pages):
     urls.append(("/lore/coverage/", max(item["verification"]["last_reviewed"] for item in entries)))
     urls.append(("/lore/review-queue/", max(item["verification"]["last_reviewed"] for item in entries)))
     urls.append(("/lore/timeline/", max(item["verification"]["last_reviewed"] for item in entries)))
+    urls.append(("/lore/reading-order/", max(item["verification"]["last_reviewed"] for item in entries)))
     urls.extend(
         (f'/lore/{page["slug"]}/', max(item["verification"]["last_reviewed"] for item in entries))
         for page in editorial_pages
@@ -570,6 +623,7 @@ def main():
     entries_by_id = {entry["id"]: entry for entry in entries}
     inventories = load_inventories()
     editorial_pages = load_editorial()["pages"]
+    reading_order = load_reading_order()
     write_text(ROOT / "lore" / "index.html", render_index(entries))
     write_text(ROOT / "lore" / "sources" / "index.html", render_sources(sources))
     write_text(ROOT / "lore" / "coverage" / "index.html", render_coverage(entries, inventories))
@@ -577,6 +631,10 @@ def main():
     write_text(
         ROOT / "lore" / "timeline" / "index.html",
         render_timeline(entries, sources_by_id),
+    )
+    write_text(
+        ROOT / "lore" / "reading-order" / "index.html",
+        render_reading_order(reading_order, entries_by_id, sources_by_id),
     )
     grouped_entries = defaultdict(list)
     for entry in entries:

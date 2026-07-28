@@ -42,6 +42,12 @@
       ]
     }
   ],
+  "timeline": {
+    "sequence": 44,
+    "label": "During Episode 2 — DARPA Research Labs follows the Pentagon operation",
+    "precision": "sequence-only",
+    "source_ids": ["ubisoft-pentagon-darpa-2019"]
+  },
   "relations": [
     {"target_id": "faction-black-tusk", "relationship": "involves"},
     {"target_id": "location-the-pentagon", "relationship": "located-at"},

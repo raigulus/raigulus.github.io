@@ -42,6 +42,12 @@
       ]
     }
   ],
+  "timeline": {
+    "sequence": 42,
+    "label": "After Tidal Basin — Episode 1: Manning National Zoo",
+    "precision": "sequence-only",
+    "source_ids": ["ubisoft-manning-white-oak-2019"]
+  },
   "relations": [
     {"target_id": "faction-outcasts", "relationship": "involves"},
     {"target_id": "location-manning-national-zoo", "relationship": "located-at"}

@@ -42,6 +42,12 @@
       ]
     }
   ],
+  "timeline": {
+    "sequence": 45,
+    "label": "After Episode 2 — Episode 3: Coney Island Ballpark",
+    "precision": "sequence-only",
+    "source_ids": ["ubisoft-coney-island-2020"]
+  },
   "relations": [
     {"target_id": "faction-black-tusk", "relationship": "involves"},
     {"target_id": "person-vitaly-tchernenko", "relationship": "involves"},
