@@ -199,21 +199,33 @@ def render_entry(entry, entries_by_id, sources_by_id):
             f'<span>Accessed {esc(source["accessed_date"])}.</span></li>'
         )
 
+    title_matches = [
+        candidate
+        for candidate in entries_by_id.values()
+        if candidate["title"] == entry["title"]
+    ]
+    page_title = entry["title"]
+    heading = entry["title"]
+    if len(title_matches) > 1:
+        type_label = entry["type"].replace("-", " ").title()
+        page_title = f"{entry['title']} {type_label}"
+        heading = f"{entry['title']}: {type_label}"
+
     canonical_path = page_url(entry)
     canonical = BASE_URL + canonical_path
     verification = entry["verification"]
     aliases = ""
     if entry.get("aliases"):
         aliases = f'<p class="aliases"><strong>Also known as:</strong> {esc(", ".join(entry["aliases"]))}</p>'
-    content = f'''{head(entry['title'], entry['summary'], canonical)}
+    content = f'''{head(page_title, entry['summary'], canonical)}
 <body>
 {header()}
 <main class="lore-shell">
-  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/lore/">Lore</a> / <a href="/lore/{esc(entry['section'])}/">{esc(section_label(entry['section']))}</a> / <span>{esc(entry['title'])}</span></nav>
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/lore/">Lore</a> / <a href="/lore/{esc(entry['section'])}/">{esc(section_label(entry['section']))}</a> / <span>{esc(heading)}</span></nav>
   <article class="lore-article">
     <header class="lore-hero">
       <p class="eyebrow">{esc(entry['type'].replace('-', ' '))}</p>
-      <h1>{esc(entry['title'])}</h1>
+      <h1>{esc(heading)}</h1>
       <p class="lede">{esc(entry['summary'])}</p>
       {aliases}
       <div class="evidence-strip">
@@ -256,6 +268,19 @@ def render_entry_card(entry):
 </article>'''
 
 
+SECTION_SEO = {
+    "diseases": "The Division 2 Diseases & Lore",
+    "events": "The Division 2 Story Events & Timeline",
+    "factions": "The Division 2 Factions & Lore",
+    "locations": "The Division 2 Locations & Story Lore",
+    "missions": "The Division 2 Missions & Story",
+    "organizations": "The Division 2 Organizations & Lore",
+    "people": "The Division 2 Characters & Lore",
+    "real-world-influences": "The Division Real-World Influences",
+    "works": "The Division 2 Books, Comics & Story Lore",
+}
+
+
 def render_index(entries):
     grouped = defaultdict(list)
     for entry in entries:
@@ -271,28 +296,30 @@ def render_index(entries):
   <div class="section-heading"><div><p class="eyebrow">{len(grouped[section])} {record_word}</p><h2><a href="/lore/{esc(section)}/">{esc(section_label(section))}</a></h2></div><p>Structured, source-linked records in this category.</p></div>
   <div class="lore-grid">{cards}</div>
 </section>''')
-    description = "A source-led archive of The Division lore, characters, events, collectibles and documented real-world influences."
+    title = "The Division 2 Lore & Story Archive"
+    description = "Explore The Division 2 lore and story: characters, factions, missions, Warlords of New York, timeline and licensed transmedia, with sources."
     status_counts = Counter(entry["verification"]["status"] for entry in entries)
     status_summary = "".join(
         f'<span><strong>{count}</strong>{esc(status.replace("-", " "))}</span>'
         for status, count in sorted(status_counts.items())
     )
-    return f'''{head('The Division Lore Archive', description, BASE_URL + '/lore/', 'CollectionPage')}
+    return f'''{head(title, description, BASE_URL + '/lore/', 'CollectionPage')}
 <body>
 {header()}
 <main>
   <section class="lore-index-hero">
-    <p class="eyebrow">The Division Universe / Evidence-led archive</p>
-    <h1>The Division Lore Archive</h1>
+    <p class="eyebrow">The Division 2 lore / Evidence-led archive</p>
+    <h1>{esc(title)}</h1>
     <p>{esc(description)}</p>
+    <p class="lore-intent-copy">Follow the <a href="/lore/timeline/">The Division 2 story timeline</a>, use the <a href="/lore/reading-order/">spoiler-aware reading and play order</a>, or explore source-linked characters, missions and factions across the wider Division universe.</p>
     <div class="archive-principles"><span>No source, no claim</span><span>Canon and theory stay separate</span><span>Every page is versioned</span></div>
     <div class="archive-stats"><span><strong>{len(entries)}</strong>structured records</span>{status_summary}</div>
   </section>
   <section class="lore-index-section">
     <div class="lore-tools" aria-label="Lore archive controls">
       <a href="/lore/coverage/"><strong>Coverage</strong><span>Verified counts and acknowledged gaps</span></a>
-      <a href="/lore/timeline/"><strong>Timeline</strong><span>Sourced sequence without invented dates</span></a>
-      <a href="/lore/reading-order/"><strong>Reading order</strong><span>Spoiler-aware books and game route</span></a>
+      <a href="/lore/timeline/"><strong>The Division 2 story timeline</strong><span>Sourced sequence without invented dates</span></a>
+      <a href="/lore/reading-order/"><strong>The Division 2 reading order</strong><span>Spoiler-aware books and game route</span></a>
       <a href="/lore/methodology/"><strong>Methodology</strong><span>Evidence, canon and review rules</span></a>
       <a href="/lore/review-queue/"><strong>Review queue</strong><span>Records awaiting human approval</span></a>
       <a href="/lore/copyright/"><strong>Copyright</strong><span>Transcript and quotation boundaries</span></a>
@@ -313,17 +340,18 @@ def render_index(entries):
 
 def render_section_index(section, entries):
     label = section_label(section)
+    title = SECTION_SEO.get(section, f"The Division 2 {label} Lore")
     cards = "".join(
         render_entry_card(entry) for entry in sorted(entries, key=lambda item: item["title"])
     )
-    description = f"Source-linked {label.lower()} records in the Raigulus Division Lore Archive."
+    description = f"Source-linked {label.lower()} for The Division 2 lore and story research, with wider Division-universe context where the record requires it."
     record_word = "record" if len(entries) == 1 else "records"
-    return f'''{head(label, description, BASE_URL + f'/lore/{section}/', 'CollectionPage')}
+    return f'''{head(title, description, BASE_URL + f'/lore/{section}/', 'CollectionPage')}
 <body>
 {header()}
 <main class="lore-shell">
   <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/lore/">Lore</a> / <span>{esc(label)}</span></nav>
-  <section class="lore-index-hero category-hero"><p class="eyebrow">Lore category</p><h1>{esc(label)}</h1><p>{esc(description)}</p><div class="archive-stats"><span><strong>{len(entries)}</strong>structured {record_word}</span></div></section>
+  <section class="lore-index-hero category-hero"><p class="eyebrow">Lore category</p><h1>{esc(title)}</h1><p>{esc(description)}</p><div class="archive-stats"><span><strong>{len(entries)}</strong>structured {record_word}</span></div></section>
   <section class="lore-index-section"><div class="guide-search" data-guide-search><input type="search" data-guide-search-input placeholder="Search {esc(label.lower())}" aria-label="Search {esc(label.lower())}"><span data-guide-search-count></span></div><div class="lore-grid">{cards}</div></section>
 </main>
 <script src="/assets/search.js" defer></script>
@@ -475,14 +503,15 @@ def render_timeline(entries, sources_by_id):
   </div>
 </li>''')
     empty = '<li class="timeline-item"><div class="timeline-copy"><p>No sourced timeline events have been added yet.</p></div></li>'
-    description = "A source-led sequence of events, missions and official transmedia in The Division universe, using relative labels when exact dates are not established."
-    return f'''{head('The Division Lore Timeline', description, BASE_URL + '/lore/timeline/', 'CollectionPage')}
+    title = "The Division 2 Story Timeline & Lore Chronology"
+    description = "Follow The Division 2 story timeline through the Washington campaign, Year One Episodes and Warlords of New York, with source-linked wider Division context."
+    return f'''{head(title, description, BASE_URL + '/lore/timeline/', 'CollectionPage')}
 <body>
 {header()}
 <main class="lore-shell">
   <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/lore/">Lore</a> / <span>Timeline</span></nav>
   <article class="lore-article">
-    <header class="lore-hero"><p class="eyebrow">Chronology</p><h1>The Division Lore Timeline</h1><p class="lede">Exact dates are shown only when a source establishes them. Relative sequence is labelled rather than converted into invented calendar dates; same-position, sequence-only records may overlap or be grouped without asserting a fixed internal order.</p></header>
+    <header class="lore-hero"><p class="eyebrow">The Division 2 story chronology</p><h1>{esc(title)}</h1><p class="lede">Use this source-led Division 2 lore timeline for the Washington campaign, Year One Episodes, Warlords of New York and connected official transmedia. Exact dates are shown only when a source establishes them. Relative sequence is labelled rather than converted into invented calendar dates; same-position, sequence-only records may overlap or be grouped without asserting a fixed internal order.</p></header>
     <section class="lore-section"><ol class="lore-timeline">{''.join(items) or empty}</ol></section>
   </article>
 </main>
