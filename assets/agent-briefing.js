@@ -8,7 +8,7 @@
     ["content", "Content"],
     ["role", "Role"]
   ];
-  const state = { data: null, target: null, dateKey: null, mode: "daily", guesses: [], solved: false, selected: null };
+  const state = { data: null, target: null, dateKey: null, mode: "daily", guesses: [], solved: false, selected: null, revealLatest: false };
   const els = {};
 
   function byId(id) { return document.getElementById(id); }
@@ -103,26 +103,29 @@
     if (field === "theatre" && guess.theatreRegion === target.theatreRegion) return "near";
     return "miss";
   }
-  function yearCell(guess, target) {
-    if (guess.firstSeen === target.firstSeen) return '<td class="match year-cell">' + guess.firstSeen + "</td>";
+  function yearCell(guess, target, revealClass, revealStyle) {
+    if (guess.firstSeen === target.firstSeen) return '<td class="match year-cell' + revealClass + '"' + revealStyle + ">" + guess.firstSeen + "</td>";
     const arrow = target.firstSeen > guess.firstSeen ? "↑" : "↓";
     const label = target.firstSeen > guess.firstSeen ? "Target first appeared later" : "Target first appeared earlier";
-    return '<td class="miss year-cell">' + guess.firstSeen + '<span class="briefing-year-arrow" aria-label="' + label + '">' + arrow + "</span></td>";
+    return '<td class="miss year-cell' + revealClass + '"' + revealStyle + ">" + guess.firstSeen + '<span class="briefing-year-arrow" aria-label="' + label + '">' + arrow + "</span></td>";
   }
-  function rowMarkup(guess) {
+  function rowMarkup(guess, reveal) {
     const target = state.target;
     const targetState = guess.id === target.id ? "match" : "miss";
-    const valueCells = fields.map(function (entry) {
+    const revealClass = reveal ? " briefing-cell-reveal" : "";
+    const revealStyle = function (index) { return reveal ? ' style="--briefing-delay:' + (index * 85) + 'ms"' : ""; };
+    const valueCells = fields.map(function (entry, index) {
       const field = entry[0];
-      return '<td class="' + compareField(guess, target, field) + '">' + escapeHtml(guess[field]) + "</td>";
+      return '<td class="' + compareField(guess, target, field) + revealClass + '"' + revealStyle(index + 1) + ">" + escapeHtml(guess[field]) + "</td>";
     }).join("");
     return "<tr>" +
-      '<td class="target-cell ' + targetState + '"><div class="briefing-target"><span class="briefing-mini-dossier ' + factionClass(guess) + '">' + initials(guess.name) + '</span><span class="briefing-target-text"><span class="briefing-target-name">' + escapeHtml(guess.name) + '</span><span class="briefing-target-sub">' + escapeHtml(guess.faction) + "</span></span></div></td>" +
-      valueCells + yearCell(guess, target) +
+      '<td class="target-cell ' + targetState + revealClass + '"' + revealStyle(0) + '><div class="briefing-target"><span class="briefing-mini-dossier ' + factionClass(guess) + '">' + initials(guess.name) + '</span><span class="briefing-target-text"><span class="briefing-target-name">' + escapeHtml(guess.name) + '</span><span class="briefing-target-sub">' + escapeHtml(guess.faction) + "</span></span></div></td>" +
+      valueCells + yearCell(guess, target, revealClass, revealStyle(6)) +
       "</tr>";
   }
   function renderRows() {
-    els.rows.innerHTML = state.guesses.map(rowMarkup).join("");
+    const latestIndex = state.guesses.length - 1;
+    els.rows.innerHTML = state.guesses.map(function (guess, index) { return rowMarkup(guess, state.revealLatest && index === latestIndex); }).join("");
     els.empty.classList.toggle("is-hidden", state.guesses.length > 0);
   }
   function renderResult() {
@@ -183,8 +186,10 @@
       state.solved = true;
       recordDailySolve();
     }
+    state.revealLatest = true;
     saveDailyProgress();
     render();
+    window.setTimeout(function () { state.revealLatest = false; }, 1200);
   }
   function shareResult() {
     const date = state.mode === "daily" ? state.dateKey : "practice";
@@ -207,6 +212,7 @@
     state.guesses = [];
     state.solved = false;
     state.selected = null;
+    state.revealLatest = false;
     els.date.textContent = "Practice dossier // no daily streak";
     els.date.removeAttribute("datetime");
     els.practice.textContent = "Return to daily dossier";
@@ -220,6 +226,7 @@
     state.guesses = [];
     state.solved = false;
     state.selected = null;
+    state.revealLatest = false;
     readDailyProgress();
     els.date.textContent = "Dossier " + humanDate(state.dateKey) + " // resets 00:00 UTC";
     els.date.dateTime = state.dateKey;
