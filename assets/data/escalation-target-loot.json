@@ -33,13 +33,6 @@
       "item": "Masks"
     }
   ],
-  "last_updated": "2026-07-28 10:08",
-  "last_checked": "2026-07-29 06:40 UTC",
-  "parsed_at": "2026-07-29T06:40:29.552415+00:00",
-  "status": "pending",
-  "fetched_at": "2026-07-29T06:40:29.552415+00:00",
-  "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
   "vendor_highlights": [
     {
       "vendor": "Countdown",
@@ -85,5 +78,12 @@
   "vendor_highlights_status": "ok",
   "vendor_highlights_checked": "2026-07-29 06:40 UTC",
   "vendor_highlights_date": "2026-07-21",
-  "vendor_highlights_note": "Current dated vendor highlights are available."
+  "vendor_highlights_note": "Current dated vendor highlights are available.",
+  "last_updated": "2026-07-28 10:08",
+  "last_checked": "2026-07-29 06:40 UTC",
+  "parsed_at": "2026-07-29T06:40:29.552415+00:00",
+  "status": "pending",
+  "fetched_at": "2026-07-29T06:40:29.552415+00:00",
+  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "next_expected_update": "Around 08:00 UTC"
 }

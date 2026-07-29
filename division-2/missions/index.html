@@ -51,6 +51,7 @@
       var eventName = "outbound_click";
       if (host === "youtube.com" || host === "youtu.be") eventName = "youtube_click";
       if (host === "instagram.com") eventName = "instagram_click";
+      if (host === "discord.com" || host === "discord.gg") eventName = "discord_click";
       gtag("event", eventName, {
         link_url: url.href,
         link_domain: host,
@@ -78,6 +79,7 @@
       <a href="/division-2/bosses/">Bosses</a>
       <a href="/division-2/pvp/">PvP</a>
       <a href="/about/">About</a>
+      <a href="/discord/">Discord</a>
       <a href="https://www.youtube.com/@raigulus">YouTube</a>
     </nav>
   </header>
@@ -450,7 +452,7 @@
   </main>
   <footer class="site-footer">
     <p>Raigulus archives The Division 2 no commentary walkthroughs, mission and build guides, plus Conflict PvP, Dark Zone, Regulus, and gameplay clips.</p>
-    <p><a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="https://www.instagram.com/raigulus/">Instagram @raigulus</a> <span>/</span> <a href="https://www.facebook.com/raigulus/">Facebook</a> <span>/</span> <a href="https://x.com/ra1gulus">X @ra1gulus</a></p>
+    <p><a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="https://www.instagram.com/raigulus/">Instagram @raigulus</a> <span>/</span> <a href="https://www.facebook.com/raigulus/">Facebook</a> <span>/</span> <a href="https://x.com/ra1gulus">X @ra1gulus</a> <span>/</span> <a href="/discord/">Discord</a></p>
   </footer>
 </body>
 </html>

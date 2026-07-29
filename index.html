@@ -51,6 +51,7 @@
       var eventName = "outbound_click";
       if (host === "youtube.com" || host === "youtu.be") eventName = "youtube_click";
       if (host === "instagram.com") eventName = "instagram_click";
+      if (host === "discord.com" || host === "discord.gg") eventName = "discord_click";
       gtag("event", eventName, {
         link_url: url.href,
         link_domain: host,
@@ -79,6 +80,7 @@
       <a href="/division-2/bosses/">Bosses</a>
       <a href="/division-2/pvp/">PvP</a>
       <a href="/about/">About</a>
+      <a href="/discord/">Discord</a>
       <a href="https://www.youtube.com/@raigulus">YouTube</a>
     </nav>
   </header>
@@ -158,6 +160,17 @@
     <p>Watch this Raigulus Division 2 playlist on YouTube.</p>
   </div>
 </article></div>
+    </section>
+    <section class="section">
+          <div class="discord-widget" aria-labelledby="discord-widget-heading">
+      <div class="discord-widget-copy">
+        <p class="eyebrow">Raigulus Discord</p>
+        <h2 id="discord-widget-heading">Join the squad</h2>
+        <p>Find Division 2 players, choose your game and region roles, share runs, request videos, and follow the Raigulus archive as it grows.</p>
+        <p class="discord-widget-actions"><a href="https://discord.com/invite/fuyq8QHe">Join the server</a><a href="/discord/">Community details</a></p>
+      </div>
+      <iframe src="https://discord.com/widget?id=1170714894509805680&theme=dark" title="Raigulus Discord server widget" width="350" height="500" allowtransparency="true" frameborder="0" loading="lazy" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
     </section>
     <section class="section">
       <h2>Latest Optimized Guides</h2>
@@ -309,7 +322,7 @@
   </main>
   <footer class="site-footer">
     <p>Raigulus archives The Division 2 no commentary walkthroughs, mission and build guides, plus Conflict PvP, Dark Zone, Regulus, and gameplay clips.</p>
-    <p><a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="https://www.instagram.com/raigulus/">Instagram @raigulus</a> <span>/</span> <a href="https://www.facebook.com/raigulus/">Facebook</a> <span>/</span> <a href="https://x.com/ra1gulus">X @ra1gulus</a></p>
+    <p><a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="https://www.instagram.com/raigulus/">Instagram @raigulus</a> <span>/</span> <a href="https://www.facebook.com/raigulus/">Facebook</a> <span>/</span> <a href="https://x.com/ra1gulus">X @ra1gulus</a> <span>/</span> <a href="/discord/">Discord</a></p>
   </footer>
 </body>
 </html>
