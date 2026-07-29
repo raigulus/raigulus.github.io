@@ -228,8 +228,8 @@
       "name": "Colonel Morozova",
       "aliases": ["Morozova"],
       "alignment": "Hostile",
-      "faction": "Black Tusk",
-      "factionFamily": "Black Tusk",
+      "faction": "True Sons",
+      "factionFamily": "Washington faction",
       "theatre": "Washington, D.C. — Iron Horse",
       "theatreRegion": "Washington, D.C.",
       "content": "Operation Iron Horse",
@@ -237,7 +237,7 @@
       "role": "Raid Target",
       "roleFamily": "Major target",
       "firstSeen": 2020,
-      "brief": "The Black Tusk commander at the climax of Operation Iron Horse.",
+      "brief": "The True Sons commander at the climax of Operation Iron Horse.",
       "watchUrl": "https://www.youtube.com/@raigulus"
     },
     {
