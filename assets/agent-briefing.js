@@ -89,6 +89,8 @@
   }
   function compareField(guess, target, field) {
     if (guess[field] === target[field]) return "match";
+    // Distinct in-game factions must never read as a partial faction match.
+    if (field === "faction") return "miss";
     const groupKey = field + "Family";
     if (target[groupKey] && guess[groupKey] === target[groupKey]) return "near";
     if (field === "theatre" && guess.theatreRegion === target.theatreRegion) return "near";
