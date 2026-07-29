@@ -41,22 +41,13 @@
   function storageKey() { return "raigulus-agent-briefing-v" + state.data.version + "-" + state.dateKey; }
   function solvedDaysKey() { return "raigulus-agent-briefing-solved-v" + state.data.version; }
   function getTargetById(id) { return state.data.targets.find(function (target) { return target.id === id; }); }
-  function readDailyProgress() {
+  function startFreshDailyDossier() {
+    state.guesses = [];
+    state.solved = false;
     try {
-      const progress = JSON.parse(localStorage.getItem(storageKey()) || "{}");
-      state.guesses = Array.isArray(progress.guesses) ? progress.guesses.map(getTargetById).filter(Boolean) : [];
-      state.solved = Boolean(progress.solved) || state.guesses.some(function (target) { return target.id === state.target.id; });
+      localStorage.removeItem(storageKey());
     } catch (error) {
-      state.guesses = [];
-      state.solved = false;
-    }
-  }
-  function saveDailyProgress() {
-    if (state.mode !== "daily") return;
-    try {
-      localStorage.setItem(storageKey(), JSON.stringify({ guesses: state.guesses.map(function (target) { return target.id; }), solved: state.solved }));
-    } catch (error) {
-      // The game remains usable when storage is unavailable.
+      // A fresh dossier is still available when storage is unavailable.
     }
   }
   function recordDailySolve() {
@@ -187,7 +178,6 @@
       recordDailySolve();
     }
     state.revealLatest = true;
-    saveDailyProgress();
     render();
     window.setTimeout(function () { state.revealLatest = false; }, 1200);
   }
@@ -227,7 +217,7 @@
     state.solved = false;
     state.selected = null;
     state.revealLatest = false;
-    readDailyProgress();
+    startFreshDailyDossier();
     els.date.textContent = "Dossier " + humanDate(state.dateKey) + " // resets 00:00 UTC";
     els.date.dateTime = state.dateKey;
     els.practice.textContent = "Open practice dossier";
@@ -277,7 +267,7 @@
     initializeElements();
     els.date.textContent = "Dossier " + humanDate(state.dateKey) + " // resets 00:00 UTC";
     els.date.dateTime = state.dateKey;
-    readDailyProgress();
+    startFreshDailyDossier();
     bindEvents();
     render();
   }
