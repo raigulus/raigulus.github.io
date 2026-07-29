@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent Briefing: The Division 2 Daily Target Dossier | Raigulus</title>
+  <meta name="description" content="Play Agent Briefing, a daily The Division 2 target-dossier deduction game. Identify the target through faction, theatre, content, role and first-seen clues.">
+  <link rel="canonical" href="https://raigulus.github.io/division-2/agent-briefing/">
+  <meta property="og:title" content="Agent Briefing: The Division 2 Daily Target Dossier">
+  <meta property="og:description" content="A daily The Division 2 target-dossier deduction game from Raigulus.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://raigulus.github.io/division-2/agent-briefing/">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="/assets/agent-briefing.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Agent Briefing: The Division 2 Daily Target Dossier","url":"https://raigulus.github.io/division-2/agent-briefing/","applicationCategory":"GameApplication","operatingSystem":"Any","isAccessibleForFree":true,"description":"A daily target-dossier deduction game for The Division 2 players.","publisher":{"@type":"Organization","name":"Raigulus","url":"https://raigulus.github.io/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Agent Briefing?","acceptedAnswer":{"@type":"Answer","text":"Agent Briefing is an unofficial daily knowledge game where players identify a curated The Division 2 target using dossier clues."}},{"@type":"Question","name":"When does the daily dossier reset?","acceptedAnswer":{"@type":"Answer","text":"The daily dossier resets at 00:00 UTC. Every player receives the same target for that date."}},{"@type":"Question","name":"What do the clue colours mean?","acceptedAnswer":{"@type":"Answer","text":"Orange means an exact match, blue means a related clue, and red means the guessed dossier does not match that field."}}]}</script>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","x5tl7t5cqi");
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8XHNXWMVQ"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-C8XHNXWMVQ");</script>
+  <script src="/assets/agent-briefing.js" defer></script>
+</head>
+<body class="briefing-page">
+  <header class="site-header">
+    <a class="brand" href="/">Raigulus</a>
+    <nav aria-label="Primary navigation">
+      <a href="/division-2/">Division 2</a>
+      <a href="/division-2/missions/">Missions</a>
+      <a href="/division-2/manhunts/">Manhunts</a>
+      <a href="/lore/">Lore</a>
+      <a href="/division-2/agent-briefing/" aria-current="page">Agent Briefing</a>
+      <a href="https://www.youtube.com/@raigulus">YouTube</a>
+    </nav>
+  </header>
+  <main class="briefing-shell">
+    <p class="briefing-breadcrumbs"><a href="/division-2/">Division 2</a> <span>/</span> Agent Briefing</p>
+    <section class="briefing-hero" aria-labelledby="briefing-title">
+      <div class="briefing-hero-copy">
+        <p class="briefing-kicker">Raigulus / Daily knowledge game</p>
+        <h1 id="briefing-title">Agent Briefing</h1>
+        <p>The Division 2 Daily Target Dossier. Identify today&rsquo;s target from the dossier trail: alignment, faction, theatre, content, role and first appearance.</p>
+      </div>
+      <aside class="briefing-stamp" aria-label="Daily dossier status">
+        <span>Secure channel // active</span>
+        <strong>One target. One dossier. Every day.</strong>
+        <time id="briefing-date" datetime="">Loading date…</time>
+      </aside>
+    </section>
+
+    <section class="briefing-game" aria-labelledby="daily-dossier-title">
+      <div class="briefing-game-top">
+        <div>
+          <h2 id="daily-dossier-title">Daily target dossier</h2>
+          <p>Search a name, inspect the response grid, then narrow the field. Today&rsquo;s dossier is the same for every player.</p>
+        </div>
+        <div class="briefing-status" id="briefing-status" aria-live="polite">Attempts <strong>0</strong></div>
+      </div>
+
+      <div class="briefing-search-wrap">
+        <form class="briefing-search" id="briefing-form" novalidate>
+          <input id="briefing-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search a target: Keener, Wyvern, Coyote…" aria-label="Search a Division 2 target" aria-autocomplete="list" aria-controls="briefing-suggestions" aria-expanded="false">
+          <button type="submit" id="briefing-submit" disabled>Submit</button>
+        </form>
+        <div class="briefing-suggestions" id="briefing-suggestions" role="listbox" hidden></div>
+      </div>
+
+      <div class="briefing-board" tabindex="0" aria-label="Daily target comparison board">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Target</th>
+              <th scope="col">Alignment</th>
+              <th scope="col">Faction</th>
+              <th scope="col">Theatre</th>
+              <th scope="col">Content</th>
+              <th scope="col">Role</th>
+              <th scope="col">First seen</th>
+            </tr>
+          </thead>
+          <tbody id="briefing-rows"></tbody>
+        </table>
+        <div class="briefing-empty" id="briefing-empty">No field result yet. Start with any target in the dossier index.</div>
+      </div>
+
+      <div class="briefing-legend" aria-label="Clue legend">
+        <span><i class="match"></i> Exact match</span>
+        <span><i class="near"></i> Related clue</span>
+        <span><i></i> No match</span>
+        <span>↑ / ↓ First appearance is later / earlier</span>
+      </div>
+
+      <div class="briefing-result" id="briefing-result" hidden aria-live="polite">
+        <div class="briefing-avatar faction-rogue" id="briefing-result-avatar">TD</div>
+        <div class="briefing-result-copy">
+          <h3 id="briefing-result-heading">Dossier complete</h3>
+          <p id="briefing-result-copy"></p>
+        </div>
+        <div class="briefing-actions">
+          <button type="button" id="briefing-share">Share result</button>
+          <a id="briefing-watch" href="https://www.youtube.com/@raigulus" target="_blank" rel="noopener">Watch related run</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="briefing-bottom" aria-label="How Agent Briefing works">
+      <article class="briefing-panel">
+        <h2>How to read a dossier</h2>
+        <ul>
+          <li><strong>Orange</strong> is an exact field match.</li>
+          <li><strong>Blue</strong> means the clue is related, such as the same city or content family.</li>
+          <li><strong>Red</strong> rules out that field. The first-seen arrow points toward the target&rsquo;s earlier or later debut.</li>
+        </ul>
+      </article>
+      <article class="briefing-panel">
+        <h2>Need a warm-up?</h2>
+        <p>Practice uses a random dossier and does not affect your daily result or streak. The daily board resets at 00:00 UTC.</p>
+        <button type="button" id="briefing-practice">Open practice dossier</button>
+      </article>
+    </section>
+  </main>
+  <p class="briefing-disclaimer">Unofficial fan-made knowledge game. Not affiliated with or endorsed by Ubisoft. The Division is a Ubisoft property. <a href="/lore/">Browse the source-led lore archive</a>.</p>
+  <footer class="site-footer">
+    <p>Raigulus creates The Division 2 no commentary walkthroughs, mission guides, manhunt runs, secrets and boss fights.</p>
+    <p><a href="/division-2/">Division 2 Hub</a> <span>/</span> <a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a></p>
+  </footer>
+</body>
+</html>
