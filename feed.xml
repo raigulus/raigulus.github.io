@@ -6,12 +6,12 @@
     <atom:link href="https://raigulus.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>The latest Raigulus Division 2 walkthroughs, PvP clips, build tests, speedrun attempts, manhunts, boss guides, and no commentary gameplay.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>The Division 2 Builds and Build Tests</title>
       <link>https://raigulus.github.io/division-2/builds/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/builds/</guid>
-      <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
       <description>Video-backed Division 2 build tests for Bluescreen, Tipping Scales, Whiplash, Regulus, Rage Harvest, Toxic DZ, and Tier 10.</description>
       <category>build tests</category>
     </item>
@@ -19,7 +19,7 @@
       <title>Division 2 Loot Today, Targeted Loot &amp; Farming Guides</title>
       <link>https://raigulus.github.io/division-2/loot/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/loot/</guid>
-      <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 loot today, targeted loot, loot map context, farming routes, and Raigulus videos.</description>
       <category>loot</category>
     </item>
@@ -27,7 +27,7 @@
       <title>Division 2 Server Status, Maintenance &amp; Delta-03</title>
       <link>https://raigulus.github.io/division-2/server-status/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/server-status/</guid>
-      <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
       <description>Unofficial Division 2 server status tracker for maintenance, outage, Delta-03, official source links, and Raigulus guides.</description>
       <category>server status</category>
     </item>
@@ -35,7 +35,7 @@
       <title>Division 2 Escalation Loot Today &amp; Tier 10 Guide</title>
       <link>https://raigulus.github.io/division-2/escalation/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/escalation/</guid>
-      <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 Escalation loot today, Tier 10 matchmaking notes, vendor caches, and Raigulus videos.</description>
       <category>escalation</category>
     </item>
@@ -43,9 +43,33 @@
       <title>Division 2 Prototype Gear &amp; Escalation Vendor Guide</title>
       <link>https://raigulus.github.io/division-2/prototype-gear/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/prototype-gear/</guid>
-      <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
       <description>Division 2 Prototype Gear Cache, Escalation vendor, and gear cache planning notes.</description>
       <category>prototype gear</category>
+    </item>
+    <item>
+      <title>The Division 2 ViewPoint Museum Tier 10 | Assault Random Matchmaking [2026]</title>
+      <link>https://raigulus.github.io/division-2/videos/the-division-2-viewpoint-museum-tier-10-assault-random-matchmaking/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-viewpoint-museum-tier-10-assault-random-matchmaking/</guid>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+      <description>The Division 2 ViewPoint Museum Tier 10 Escalation run in random matchmaking with no dedicated healer and the Assault event active.</description>
+      <category>escalation run</category>
+    </item>
+    <item>
+      <title>The Division 2 Conflict PvP | Regulus Long-Range Shot [2021 Archive]</title>
+      <link>https://raigulus.github.io/division-2/videos/the-division-2-conflict-pvp-regulus-long-range-shot-2021-archive/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-conflict-pvp-regulus-long-range-shot-2021-archive/</guid>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+      <description>A 2021 Division 2 Conflict PvP archive: BLK vs TMA, featuring a long-range 1,693,185 Regulus Exotic Revolver shot.</description>
+      <category>pvp/archive clip</category>
+    </item>
+    <item>
+      <title>The Division 2 Conflict PvP | Regulus Armor Kit Punish [2021 Archive]</title>
+      <link>https://raigulus.github.io/division-2/videos/the-division-2-conflict-pvp-regulus-armor-kit-punish-2021-archive/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-conflict-pvp-regulus-armor-kit-punish-2021-archive/</guid>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+      <description>A 2021 Division 2 Conflict PvP archive with BLK, close-range Regulus pressure, and an armor-kit attempt at one HP.</description>
+      <category>pvp/archive clip</category>
     </item>
     <item>
       <title>The Division 2 Realism Mode Hardcore | Complete NYC Walkthrough | No Fast Travel [2026]</title>
@@ -342,30 +366,6 @@
       <pubDate>Tue, 23 Jun 2026 00:00:00 GMT</pubDate>
       <description>The Division 2 quick guide covering Tipping Scales + Whiplash = non gameplay, tips, and clean no commentary footage.</description>
       <category>short/tip</category>
-    </item>
-    <item>
-      <title>The Division 2 Manning National Zoo Legendary Stronghold Walkthrough | No Commentary [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-manning-national-zoo-legendary-stronghold-walkthrough-no-commentary/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-manning-national-zoo-legendary-stronghold-walkthrough-no-commentary/</guid>
-      <pubDate>Sun, 21 Jun 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Manning National Zoo Legendary stronghold walkthrough with no commentary.</description>
-      <category>legendary mission</category>
-    </item>
-    <item>
-      <title>The Division 2 Iron Horse Raid 19:03 PB | Open Gate Strat Nostalgia [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-iron-horse-raid-19-03-pb-open-gate-strat-nostalgia/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-iron-horse-raid-19-03-pb-open-gate-strat-nostalgia/</guid>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Operation Iron Horse 19:03 PB speedrun from the old Open Gate strat era, uploaded as nostalgia.</description>
-      <category>challenge/speedrun</category>
-    </item>
-    <item>
-      <title>The Division 2 Toxic Dark Zone PvE First Look | Build Testing Commentary [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-toxic-dark-zone-pve-first-look-build-testing-commentary/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-toxic-dark-zone-pve-first-look-build-testing-commentary/</guid>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Toxic Dark Zone PvE first look with commentary, build testing, Hazard Protection checks, and general impressions.</description>
-      <category>dark zone/build testing</category>
     </item>
   </channel>
 </rss>
