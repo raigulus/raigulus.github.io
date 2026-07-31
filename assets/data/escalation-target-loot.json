@@ -1,48 +1,48 @@
 {
-  "date": "2026-07-30",
+  "date": "2026-07-31",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Stranded Tanker",
-      "loot": "Kneepad"
+      "loot": "Royal Works"
     },
     {
       "mission": "ViewPoint Museum",
-      "loot": "Refactor"
+      "loot": "Umbra Initiative"
     },
     {
       "mission": "Jefferson Trade Center",
-      "loot": "Core Strength"
+      "loot": "Marksman Rifle"
     },
     {
       "mission": "Bank Headquarters",
-      "loot": "Sokolov Concern"
+      "loot": "Airaldi Holdings"
     },
     {
       "mission": "DCD Headquarters",
-      "loot": "Edelweiss GPz"
+      "loot": "Eclipse Protocol"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "MMRs"
+      "item": "SMGs"
     },
     {
       "type": "Gear",
-      "item": "Chest Pieces"
+      "item": "Backpacks"
     }
   ],
-  "last_updated": "2026-07-30 10:01",
-  "last_checked": "2026-07-31 05:04 UTC",
-  "parsed_at": "2026-07-31T05:04:45.296251+00:00",
-  "status": "pending",
-  "fetched_at": "2026-07-31T05:04:45.296251+00:00",
+  "last_updated": "2026-07-31 10:01",
+  "last_checked": "2026-07-31 08:04 UTC",
+  "parsed_at": "2026-07-31T08:04:54.733051+00:00",
+  "status": "ok",
+  "fetched_at": "2026-07-31T08:04:54.733051+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-07-31 05:04 UTC",
+  "vendor_highlights_checked": "2026-07-31 08:04 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
