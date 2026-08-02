@@ -11,7 +11,6 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [Discord Community](https://raigulus.github.io/discord/): Join the Raigulus Discord server, role selection, co-op, lore, and archive discussion.
 - [Lore Archive](https://raigulus.github.io/lore/): The Division story, timeline, reading order, and source-aware lore research.
 - [The Division 2 Hub](https://raigulus.github.io/division-2/): All optimized Division 2 guides.
-- [Agent Briefing: The Division 2 Daily Target Dossier](https://raigulus.github.io/division-2/agent-briefing/): A daily, unofficial Division 2 knowledge game that narrows a curated target through faction, theatre, content, role, and first-seen clues.
 - [Mission Walkthroughs](https://raigulus.github.io/division-2/missions/): Mission, invaded, heroic, and legendary walkthroughs.
 - [The Division 2 Builds and Build Tests](https://raigulus.github.io/division-2/builds/): Video-backed Bluescreen, Tipping Scales, Whiplash, Regulus, Rage Harvest, Toxic DZ, and Tier 10 tests.
 - [Loot Today and Targeted Loot Guide](https://raigulus.github.io/division-2/loot/): Division 2 loot today, targeted loot, loot map context, and farming videos.
