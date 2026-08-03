@@ -34,56 +34,10 @@
     }
   ],
   "last_updated": "2026-08-03 10:01",
-  "last_checked": "2026-08-03 21:44 UTC",
-  "parsed_at": "2026-08-03T21:44:15.577649+00:00",
+  "last_checked": "2026-08-03 23:13 UTC",
+  "parsed_at": "2026-08-03T23:13:12.716211+00:00",
   "status": "ok",
-  "fetched_at": "2026-08-03T21:44:15.577649+00:00",
+  "fetched_at": "2026-08-03T23:13:12.716211+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Current dated loot snapshot is available.",
-  "vendor_highlights": [
-    {
-      "vendor": "White House",
-      "item": "Zero F's",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Clan",
-      "item": "Momma Badger",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "The Campus",
-      "item": "Forge",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "The Castle",
-      "item": "Punch Drunk",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "DZ South",
-      "item": "Door-Kicker's Knock",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "DZ East",
-      "item": "Claws Out",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Chainkiller",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Hunter-Killer",
-      "note": "Named gear"
-    }
-  ],
-  "vendor_highlights_status": "ok",
-  "vendor_highlights_checked": "2026-08-03 21:44 UTC",
-  "vendor_highlights_date": "2026-08-01",
-  "vendor_highlights_note": "Current dated vendor highlights are available."
+  "snapshot_note": "Current dated loot snapshot is available."
 }
