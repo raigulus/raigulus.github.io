@@ -1,89 +1,43 @@
 {
-  "date": "2026-08-03",
+  "date": "2026-08-04",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
-      "mission": "Stranded Tanker",
-      "loot": "Pistol"
+      "mission": "The Pentagon",
+      "loot": "Fenris Group AB"
     },
     {
-      "mission": "ViewPoint Museum",
-      "loot": "Measured Assembly"
+      "mission": "DARPA Research Labs",
+      "loot": "Gloves"
     },
     {
-      "mission": "Jefferson Trade Center",
-      "loot": "Holster"
+      "mission": "District Union Arena",
+      "loot": "Grupo Sombra S.A."
     },
     {
-      "mission": "Bank Headquarters",
-      "loot": "Douglas & Harding"
+      "mission": "Roosevelt Island",
+      "loot": "Assault Rifle"
     },
     {
-      "mission": "DCD Headquarters",
-      "loot": "Ceska Vyroba S.R.O."
+      "mission": "Space Administration HQ",
+      "loot": "Refactor"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "LMGs"
+      "item": "Rifles"
     },
     {
       "type": "Gear",
-      "item": "Holsters"
+      "item": "Masks"
     }
   ],
-  "last_updated": "2026-08-03 10:01",
-  "last_checked": "2026-08-04 07:18 UTC",
-  "parsed_at": "2026-08-04T07:18:25.171461+00:00",
-  "status": "pending",
-  "fetched_at": "2026-08-04T07:18:25.171461+00:00",
+  "last_updated": "2026-08-04 10:01",
+  "last_checked": "2026-08-04 09:44 UTC",
+  "parsed_at": "2026-08-04T09:44:20.782273+00:00",
+  "status": "ok",
+  "fetched_at": "2026-08-04T09:44:20.782273+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
-  "vendor_highlights": [
-    {
-      "vendor": "White House",
-      "item": "Zero F's",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Clan",
-      "item": "Momma Badger",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "The Campus",
-      "item": "Forge",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "The Castle",
-      "item": "Punch Drunk",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "DZ South",
-      "item": "Door-Kicker's Knock",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "DZ East",
-      "item": "Claws Out",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Chainkiller",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Hunter-Killer",
-      "note": "Named gear"
-    }
-  ],
-  "vendor_highlights_status": "ok",
-  "vendor_highlights_checked": "2026-08-04 07:18 UTC",
-  "vendor_highlights_date": "2026-08-01",
-  "vendor_highlights_note": "Current dated vendor highlights are available."
+  "snapshot_note": "Current dated loot snapshot is available."
 }
