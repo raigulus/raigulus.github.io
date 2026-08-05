@@ -1,89 +1,43 @@
 {
-  "date": "2026-08-04",
+  "date": "2026-08-05",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Pentagon",
-      "loot": "Fenris Group AB"
+      "loot": "Concentrated Company"
     },
     {
       "mission": "DARPA Research Labs",
-      "loot": "Gloves"
+      "loot": "Shiny Monkey Gear"
     },
     {
       "mission": "District Union Arena",
-      "loot": "Grupo Sombra S.A."
+      "loot": "Rifle"
     },
     {
       "mission": "Roosevelt Island",
-      "loot": "Assault Rifle"
+      "loot": "Refactor"
     },
     {
       "mission": "Space Administration HQ",
-      "loot": "Refactor"
+      "loot": "Brazos de Arcabuz"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Rifles"
+      "item": "LMGs"
     },
     {
       "type": "Gear",
       "item": "Masks"
     }
   ],
-  "last_updated": "2026-08-04 10:01",
-  "last_checked": "2026-08-05 06:36 UTC",
-  "parsed_at": "2026-08-05T06:36:50.367724+00:00",
-  "status": "pending",
-  "fetched_at": "2026-08-05T06:36:50.367724+00:00",
+  "last_updated": "2026-08-05 10:01",
+  "last_checked": "2026-08-05 08:04 UTC",
+  "parsed_at": "2026-08-05T08:04:20.015222+00:00",
+  "status": "ok",
+  "fetched_at": "2026-08-05T08:04:20.015222+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
-  "vendor_highlights": [
-    {
-      "vendor": "White House",
-      "item": "Zero F's",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Clan",
-      "item": "Momma Badger",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "The Campus",
-      "item": "Forge",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "The Castle",
-      "item": "Punch Drunk",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "DZ South",
-      "item": "Door-Kicker's Knock",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "DZ East",
-      "item": "Claws Out",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Chainkiller",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Hunter-Killer",
-      "note": "Named gear"
-    }
-  ],
-  "vendor_highlights_status": "ok",
-  "vendor_highlights_checked": "2026-08-05 06:36 UTC",
-  "vendor_highlights_date": "2026-08-01",
-  "vendor_highlights_note": "Current dated vendor highlights are available."
+  "snapshot_note": "Current dated loot snapshot is available."
 }
