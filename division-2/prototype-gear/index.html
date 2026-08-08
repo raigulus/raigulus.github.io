@@ -20,6 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/styles.css">
   <script src="/assets/search.js" defer></script>
+  <script src="/assets/live-loot.js" defer></script>
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -50,6 +51,7 @@
       var eventName = "outbound_click";
       if (host === "youtube.com" || host === "youtu.be") eventName = "youtube_click";
       if (host === "instagram.com") eventName = "instagram_click";
+      if (host === "discord.com" || host === "discord.gg") eventName = "discord_click";
       gtag("event", eventName, {
         link_url: url.href,
         link_domain: host,
@@ -67,6 +69,7 @@
     <a class="brand" href="/">Raigulus</a>
     <nav>
       <a href="/division-2/">Division 2</a>
+      <a href="/division-2/builds/">Builds</a>
       <a href="/division-2/loot/">Loot</a>
       <a href="/division-2/server-status/">Server Status</a>
       <a href="/division-2/missions/">Missions</a>
@@ -75,7 +78,9 @@
       <a href="/division-2/manhunts/">Manhunts</a>
       <a href="/division-2/bosses/">Bosses</a>
       <a href="/division-2/pvp/">PvP</a>
+      <a href="/lore/">Lore</a>
       <a href="/about/">About</a>
+      <a href="/discord/">Discord</a>
       <a href="https://www.youtube.com/@raigulus">YouTube</a>
     </nav>
   </header>
@@ -86,6 +91,7 @@
         <h1>The Division 2 Prototype Gear and Escalation Vendor Guide</h1>
         <p>Prototype Gear, Prototype Gear Cache, Escalation Requisition Vendor, gear cache planning, and Raigulus farming videos grouped for search.</p>
         <!-- prototype-gear-live-start -->
+        <section class="live-loot-hub" data-live-loot-hub data-live-loot-checked="2026-07-06 10:01">
         <h2>Prototype Gear and Vendor Snapshot</h2>
         <p>Current cache and loot snapshot for Prototype Gear, Escalation vendor checks, and gear cache planning.</p>
         <table class="facts">
@@ -95,7 +101,7 @@
           <tr><th>Status</th><td>stale</td></tr>
           <tr><th>Last checked</th><td>2026-07-06 10:01</td></tr>
           <tr><th>Source snapshot updated</th><td>2026-07-06 10:01</td></tr>
-          <tr><th>Expected update window</th><td>Around 10:00 UTC / 13:00 TRT</td></tr>
+          <tr><th>Expected update window</th><td>Around 08:00 UTC</td></tr>
           <tr><th>Update note</th><td>Checked after the expected daily reset window, but the source still returned an older snapshot.</td></tr>
           <tr><th>Snapshot</th><td>Automated daily loot check</td></tr>
         </table>
@@ -108,6 +114,8 @@
         <h2>Prototype Gear and Vendor Caches</h2>
         <table class="facts"><tr><th>Weapons</th><td>MMRs</td></tr>
 <tr><th>Gear</th><td>Backpacks</td></tr></table>
+
+        </section>
 <!-- prototype-gear-live-end -->
         <h2>Cache Planning Notes</h2>
         <p>Prototype Gear Cache, Weapon Cache, Random Cache, and related gear cache searches are handled here as planning references. Check the game before spending resources, then use the videos below to compare build pressure and clear pacing.</p>
@@ -259,8 +267,8 @@
     </section>
   </main>
   <footer class="site-footer">
-    <p>Raigulus creates The Division 2 no commentary walkthroughs, heroic and legendary mission guides, manhunt runs, secrets, and boss fights.</p>
-    <p><a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="https://www.instagram.com/raigulus/">Instagram @raigulus</a></p>
+    <p>Raigulus archives The Division 2 no commentary walkthroughs, mission and build guides, plus Conflict PvP, Dark Zone, Regulus, and gameplay clips.</p>
+    <p><a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="https://www.instagram.com/raigulus/">Instagram @raigulus</a> <span>/</span> <a href="https://www.facebook.com/raigulus/">Facebook</a> <span>/</span> <a href="/discord/">Discord</a></p>
   </footer>
 </body>
 </html>

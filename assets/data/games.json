@@ -8,6 +8,10 @@
         "label": "Division 2"
       },
       {
+        "slug": "builds",
+        "label": "Builds"
+      },
+      {
         "slug": "loot",
         "label": "Loot"
       },

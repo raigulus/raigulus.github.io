@@ -33,11 +33,16 @@
       "item": "Backpacks"
     }
   ],
+  "vendor_highlights": [],
+  "vendor_highlights_status": "",
+  "vendor_highlights_checked": "",
+  "vendor_highlights_date": "",
+  "vendor_highlights_note": "",
   "last_updated": "2026-07-06 10:01",
   "last_checked": "2026-07-06 10:01",
   "parsed_at": "2026-07-06T09:10:23.111782+00:00",
   "status": "stale",
   "fetched_at": "2026-07-06T09:10:23.111782+00:00",
   "snapshot_note": "Checked after the expected daily reset window, but the source still returned an older snapshot.",
-  "next_expected_update": "Around 10:00 UTC / 13:00 TRT"
+  "next_expected_update": "Around 08:00 UTC"
 }

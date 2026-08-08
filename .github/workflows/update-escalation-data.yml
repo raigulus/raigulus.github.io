@@ -4,7 +4,11 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "7 * * * *"
-    - cron: "17,32,47 10 * * *"
+    - cron: "37 * * * *"
+    # Redundant post-reset checks: scheduled Actions can occasionally be
+    # delayed, so give the daily loot snapshot several immediate chances.
+    - cron: "1,2,3 8 * * *"
+    - cron: "17,32,47 8 * * *"
 
 permissions:
   contents: write
@@ -24,6 +28,7 @@ jobs:
       - name: Update guide data
         env:
           ESCALATION_PRIMARY_SOURCE_URL: ${{ secrets.ESCALATION_PRIMARY_SOURCE_URL }}
+          DIVISION2_VENDOR_SNAPSHOT_URL: ${{ secrets.DIVISION2_VENDOR_SNAPSHOT_URL }}
         run: python3 scripts/update-escalation-data.py --submit-indexnow
 
       - name: Commit changes
@@ -40,5 +45,16 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           suffix="$(date -u +%s%N | sha256sum | cut -c1-8)"
           git commit -m "site update $suffix"
-          git push
-          gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds"
+          for attempt in 1 2 3; do
+            if git push; then
+              gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds"
+              exit 0
+            fi
+            if [ "$attempt" = 3 ]; then
+              echo "Push was rejected after ${attempt} attempts."
+              exit 1
+            fi
+            echo "Push raced with another main update; rebasing before retry ${attempt}."
+            git fetch origin main
+            git rebase origin/main
+          done
