@@ -1,89 +1,43 @@
 {
-  "date": "2026-08-07",
+  "date": "2026-08-08",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Pentagon",
-      "loot": "Tip of the Spear"
+      "loot": "LMG"
     },
     {
       "mission": "DARPA Research Labs",
-      "loot": "Overlord Armaments"
+      "loot": "Gear Mods"
     },
     {
       "mission": "District Union Arena",
-      "loot": "Concentrated Company"
+      "loot": "Strikers Battlegear"
     },
     {
       "mission": "Roosevelt Island",
-      "loot": "Zwiadowka Sp. z o.o"
+      "loot": "Umbra Initiative"
     },
     {
       "mission": "Space Administration HQ",
-      "loot": "Wyvern Wear"
+      "loot": "Aces & Eights"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "SMGs"
+      "item": "Shotguns"
     },
     {
       "type": "Gear",
-      "item": "Chest Pieces"
+      "item": "Masks"
     }
   ],
-  "last_updated": "2026-08-07 10:01",
-  "last_checked": "2026-08-08 07:55 UTC",
-  "parsed_at": "2026-08-08T07:55:52.442076+00:00",
-  "status": "pending",
-  "fetched_at": "2026-08-08T07:55:52.442076+00:00",
+  "last_updated": "2026-08-08 10:01",
+  "last_checked": "2026-08-08 08:08 UTC",
+  "parsed_at": "2026-08-08T08:08:31.238842+00:00",
+  "status": "ok",
+  "fetched_at": "2026-08-08T08:08:31.238842+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
-  "vendor_highlights": [
-    {
-      "vendor": "Cassie",
-      "item": "Caesar's Guard",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Hunter-Killer",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "White House",
-      "item": "Axel",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Countdown",
-      "item": "Caesar's Guard",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "DZ West",
-      "item": "Firm Handshake",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Burn Out - FAMAS 2010",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Shield Splinterer - F2000",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Huntsman - FAMAS 2010",
-      "note": "Named weapon"
-    }
-  ],
-  "vendor_highlights_status": "ok",
-  "vendor_highlights_checked": "2026-08-08 07:55 UTC",
-  "vendor_highlights_date": "2026-08-04",
-  "vendor_highlights_note": "Current dated vendor highlights are available."
+  "snapshot_note": "Current dated loot snapshot is available."
 }
