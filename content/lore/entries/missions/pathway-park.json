@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "id": "mission-pathway-park",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "mission",
+  "title": "Pathway Park",
+  "slug": "pathway-park",
+  "section": "missions",
+  "summary": "A Warlords of New York main mission in Lower Manhattan that leads to Javier Kajika's final encounter.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "pathway-park-main-mission",
+      "text": "Ubisoft identifies Pathway Park as a main mission.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-tu91-kajika-2020"]
+    },
+    {
+      "id": "pathway-park-kajika",
+      "text": "Ubisoft identifies Javier Kajika as the final encounter of Pathway Park and separately calls the location his hiding place.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-tu91-kajika-2020", "ubisoft-shd-spotlight-sage-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Kajika's hideout",
+      "paragraphs": [
+        {
+          "text": "Pathway Park is a Warlords main mission whose official descriptions tie it to Javier Kajika's hiding place and final encounter.",
+          "claim_ids": ["pathway-park-main-mission", "pathway-park-kajika"]
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "sequence": 61,
+    "label": "During Warlords of New York — Pathway Park's Kajika thread",
+    "precision": "sequence-only",
+    "source_ids": ["ubisoft-tu91-kajika-2020", "raigulus-wony-hardcore-run-2026"]
+  },
+  "relations": [
+    {"target_id": "person-javier-kajika", "relationship": "involves"},
+    {"target_id": "location-lower-manhattan", "relationship": "located-at"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "This overview intentionally excludes objective-by-objective detail and mission dialogue pending a dedicated direct-capture review."
+  }
+}

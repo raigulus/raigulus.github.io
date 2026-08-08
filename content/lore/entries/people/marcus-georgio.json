@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "id": "person-marcus-georgio",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "person",
+  "title": "Marcus Georgio",
+  "slug": "marcus-georgio",
+  "section": "people",
+  "summary": "The colonel who commands the Molossi during Compromised's Gulf Coast crisis.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "georgio-molossi-command",
+      "text": "Compromised identifies Colonel Marcus Georgio as commander of the Molossi, a force that consolidates around Dallas-Fort Worth before moving toward the Gulf Coast.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    },
+    {
+      "id": "georgio-rogue-coercion",
+      "text": "The novel reveals that rogue agents coerce Georgio's expansion by threatening his captured son, David Georgio.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Molossi commander",
+      "paragraphs": [
+        {
+          "text": "Georgio presents the Molossi as protectors, but their rapid entry into refinery communities makes them a competing power center in the crisis.",
+          "claim_ids": [
+            "georgio-molossi-command"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Leverage against the colonel",
+      "paragraphs": [
+        {
+          "text": "The book eventually shows that the rogue cell has exploited Georgio's concern for David to direct the Molossi's territorial moves.",
+          "claim_ids": [
+            "georgio-rogue-coercion"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "faction-the-molossi",
+      "relationship": "leader-of"
+    },
+    {
+      "target_id": "event-gulf-coast-refinery-crisis",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "work-the-division-compromised",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "The coercion and family connection are major plot spoilers from the licensed novel."
+  }
+}

@@ -1,0 +1,52 @@
+name: Lore correction or evidence request
+description: Report an unsupported, outdated, ambiguous or incorrect lore claim.
+title: "[Lore correction]: "
+labels:
+  - lore
+  - needs-review
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page URL
+      description: Link to the exact Raigulus lore page.
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: Claim or passage
+      description: Quote only the short passage that needs review.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+      description: Explain what should change and why.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and locator
+      description: Provide a URL or source title plus timestamp, page, chapter, mission, collectible or game-build locator.
+    validations:
+      required: true
+  - type: dropdown
+    id: spoiler
+    attributes:
+      label: Spoiler level
+      options:
+        - None
+        - Minor
+        - Major
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have separated what the source states from my interpretation.
+          required: true

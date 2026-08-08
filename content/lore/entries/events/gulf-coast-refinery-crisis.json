@@ -1,0 +1,97 @@
+{
+  "schema_version": 2,
+  "id": "event-gulf-coast-refinery-crisis",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "event",
+  "title": "Gulf Coast Refinery Crisis",
+  "slug": "gulf-coast-refinery-crisis",
+  "section": "events",
+  "summary": "The Gulf Coast conflict in Compromised, where attacks on food convoys and refineries conceal a rogue-agent operation.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "gulf-crisis-supply-threat",
+      "text": "Compromised begins its Gulf Coast crisis with attacks on the southern food-convoy network and a threat to Texas refinery infrastructure relied on by survivor communities.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    },
+    {
+      "id": "gulf-crisis-faction-manipulation",
+      "text": "The novel reveals that rogue agents supply the Reborn and coerce Marcus Georgio, using the conflict to advance control over the region's refinery communities.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    },
+    {
+      "id": "gulf-crisis-battleship-operation",
+      "text": "The conflict culminates in an intervention at Battleship Texas, where the rogue operation is connected to stored Eclipse Virus payloads.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A supply crisis becomes a rogue operation",
+      "paragraphs": [
+        {
+          "text": "The initial crisis concerns the food and fuel links that keep Gulf Coast communities supplied. The novel later reframes the clash between the Reborn and the Molossi as an operation directed by rogue agents.",
+          "claim_ids": [
+            "gulf-crisis-supply-threat",
+            "gulf-crisis-faction-manipulation"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Battleship Texas",
+      "paragraphs": [
+        {
+          "text": "The major confrontation moves to Battleship Texas, linking the regional power struggle to stored Eclipse Virus payloads.",
+          "claim_ids": [
+            "gulf-crisis-battleship-operation"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "faction-the-reborn",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "faction-the-molossi",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "location-marsh-island",
+      "relationship": "occurs-during"
+    },
+    {
+      "target_id": "location-battleship-texas",
+      "relationship": "occurs-during"
+    },
+    {
+      "target_id": "disease-eclipse-virus",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "work-the-division-compromised",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "This is a source-specific umbrella event for the licensed novel. It deliberately has no exact-date placement in the game chronology."
+  }
+}

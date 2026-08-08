@@ -1,0 +1,85 @@
+{
+  "schema_version": 2,
+  "id": "person-benjamin-marsh",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "person",
+  "title": "Benjamin Marsh",
+  "slug": "benjamin-marsh",
+  "section": "people",
+  "summary": "A rogue operative named by Compromised as part of the Gulf Coast network tied to Keener associates.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "marsh-rogue-identification",
+      "text": "Compromised has ISAC identify Benjamin Marsh as a rogue agent during the Marsh Island arms rendezvous.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    },
+    {
+      "id": "marsh-known-associates",
+      "text": "The novel's ISAC identification lists Aaron Keener, Javier Kajika and Theo Parnell as Benjamin Marsh's known associates.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    },
+    {
+      "id": "marsh-marsh-island-death",
+      "text": "Marsh is killed during the Marsh Island rendezvous after betraying Cassandra Raines and the Reborn operatives present there.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Rogue-network link",
+      "paragraphs": [
+        {
+          "text": "Marsh is the novel's named link between the Gulf Coast operation and a known-associates list containing Keener, Kajika and Parnell. The record does not infer a broader hierarchy beyond that listed association.",
+          "claim_ids": [
+            "marsh-rogue-identification",
+            "marsh-known-associates"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Marsh Island betrayal",
+      "paragraphs": [
+        {
+          "text": "The arms rendezvous ends with Marsh turning on the Reborn and then dying in the same confrontation, exposing the network's use of the faction.",
+          "claim_ids": [
+            "marsh-marsh-island-death"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "location-marsh-island",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "event-gulf-coast-refinery-crisis",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "work-the-division-compromised",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "Association wording is restricted to the ISAC list presented by the licensed novel; it does not claim that Marsh is one of the four Warlords targets."
+  }
+}

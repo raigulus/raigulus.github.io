@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "id": "faction-outcasts",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "faction",
+  "title": "Outcasts",
+  "slug": "outcasts",
+  "section": "factions",
+  "summary": "A hostile Division 2 faction whose continued activity and developing alliance with the True Sons and Hyenas are confirmed in official seasonal material.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "outcasts-active-faction",
+      "text": "The Pact identifies the Outcasts as an active faction with faction-specific Kill Squads, rewards and materials in the Retaliation system.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-pact-2025"]
+    },
+    {
+      "id": "outcasts-pact",
+      "text": "Official season framing says the leadership of the Outcasts, True Sons and Hyenas are forging a pact and planning a major operation.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-gamescom-pact-2025"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Verified seasonal status",
+      "paragraphs": [
+        {
+          "text": "The Outcasts remain an active hostile faction and enter a developing three-faction alignment with the True Sons and Hyenas in The Pact season.",
+          "claim_ids": ["outcasts-active-faction", "outcasts-pact"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "org-strategic-homeland-division", "relationship": "opposed-to"},
+    {"target_id": "faction-true-sons", "relationship": "allied-with"},
+    {"target_id": "faction-hyenas", "relationship": "allied-with"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "This is intentionally a limited page. Origin, ideology and named leadership will not be added until direct mission or collectible evidence is captured and registered."
+  }
+}

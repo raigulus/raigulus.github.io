@@ -1,0 +1,85 @@
+{
+  "schema_version": 2,
+  "id": "person-april-kelleher",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "person",
+  "title": "April Kelleher",
+  "slug": "april-kelleher",
+  "section": "people",
+  "summary": "The civilian survivor at the center of Broken Dawn, whose research trail connects New York, Ann Arbor and a source-specific Washington handoff to Alani Kelso.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "april-broken-dawn-protagonist",
+      "text": "Ubisoft's Broken Dawn overview identifies April Kelleher as the novel's civilian protagonist and links her to its Division Agent team.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "ubisoft-broken-dawn-overview-2019",
+        "ubisoft-division-books-broken-dawn-2019"
+      ]
+    },
+    {
+      "id": "april-research-to-washington",
+      "text": "In the novel's source-specific story, April follows a research lead from New York to Ann Arbor and delivers the resulting intelligence to Alani Kelso in Washington.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "penguin-broken-dawn-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Civilian route into the story",
+      "paragraphs": [
+        {
+          "text": "April is the civilian point of view in the official novel's published premise. Her trail creates the narrative reason for an SHD team to leave New York and pursue a possible antiviral lead.",
+          "claim_ids": [
+            "april-broken-dawn-protagonist"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Washington handoff",
+      "paragraphs": [
+        {
+          "text": "Broken Dawn's later source-specific sequence lets April transfer the research lead to Alani Kelso in Washington. It is a transmedia connection, not evidence that the novel's events are a playable Division 2 mission.",
+          "claim_ids": [
+            "april-research-to-washington"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-aurelio-diaz",
+      "relationship": "allied-with"
+    },
+    {
+      "target_id": "person-alani-kelso",
+      "relationship": "contributes-to"
+    },
+    {
+      "target_id": "event-broken-dawn-antiviral-race",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "location-ann-arbor-research-site-broken-dawn",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "work-the-division-broken-dawn",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Licensed-novel record. Plot is summarized independently and classified as major spoiler."
+  }
+}

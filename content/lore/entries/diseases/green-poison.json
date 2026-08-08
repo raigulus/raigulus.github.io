@@ -1,0 +1,71 @@
+{
+  "schema_version": 2,
+  "id": "disease-green-poison",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "disease",
+  "title": "Green Poison",
+  "slug": "green-poison",
+  "section": "diseases",
+  "summary": "The engineered smallpox outbreak also called the Dollar Flu, whose Black Friday spread drives the collapse depicted across The Division franchise.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "aliases": ["Dollar Flu"],
+  "claims": [
+    {
+      "id": "green-poison-alias-impact",
+      "text": "Ubisoft's glossary identifies Green Poison as the Dollar Flu and links it to mass deaths, quarantine, riots and New York's collapse.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-division-glossary-2018"]
+    },
+    {
+      "id": "green-poison-black-friday",
+      "text": "The franchise story recap places the Green Poison outbreak on Black Friday.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "green-poison-creator",
+      "text": "Virologist Gordon Amherst created Green Poison; Vitaly Tchernenko was not involved in its development.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "green-poison-global",
+      "text": "Official franchise background says the United States was hit hardest but cases also emerged elsewhere in the world.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-2019-division-roots"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Outbreak and collapse",
+      "paragraphs": [
+        {
+          "text": "Green Poison is the biological trigger for the franchise's institutional collapse. It spreads during the Black Friday period and becomes widely known as the Dollar Flu.",
+          "claim_ids": ["green-poison-alias-impact", "green-poison-black-friday"]
+        }
+      ]
+    },
+    {
+      "heading": "Origin and reach",
+      "paragraphs": [
+        {
+          "text": "The games identify Gordon Amherst as its creator. The crisis is centered on the United States, but official background does not describe it as exclusively American.",
+          "claim_ids": ["green-poison-creator", "green-poison-global"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "person-gordon-amherst", "relationship": "created-by"},
+    {"target_id": "event-green-poison-outbreak", "relationship": "causes"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "This page covers the foundational outbreak only; later antiviral and variant developments require separate versioned records."
+  }
+}

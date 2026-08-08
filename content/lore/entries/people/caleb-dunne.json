@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "id": "person-caleb-dunne",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "person",
+  "title": "Caleb Dunne",
+  "slug": "caleb-dunne",
+  "section": "people",
+  "summary": "A Division Agent and the lead character of Extremis Malis, whose pursuit of Mantis follows a fatal New York warehouse operation into the Division 2 prequel's East Coast story.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "caleb-division-agent",
+      "text": "Extremis Malis identifies Caleb Dunne as a Division Agent and its central pursuing character.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    },
+    {
+      "id": "caleb-mantis-pursuit",
+      "text": "After Mathias Kaminsky is killed during a Chinatown warehouse encounter, Caleb follows the operative known as Mantis through Philadelphia and toward Washington.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "From New York to Philadelphia",
+      "paragraphs": [
+        {
+          "text": "Caleb begins the graphic novel as a Division Agent on a Chinatown warehouse operation. The killing of his partner turns the case into a pursuit that carries the prequel beyond Manhattan.",
+          "claim_ids": [
+            "caleb-division-agent",
+            "caleb-mantis-pursuit"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "org-strategic-homeland-division",
+      "relationship": "member-of"
+    },
+    {
+      "target_id": "person-mathias-kaminsky",
+      "relationship": "allied-with"
+    },
+    {
+      "target_id": "person-heather-ward",
+      "relationship": "allied-with"
+    },
+    {
+      "target_id": "person-mantis-extremis-malis",
+      "relationship": "opposed-to"
+    },
+    {
+      "target_id": "work-the-division-extremis-malis",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Character and plot outcome are source-specific to the licensed graphic novel and are marked major spoiler."
+  }
+}

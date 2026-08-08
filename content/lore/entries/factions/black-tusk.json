@@ -1,0 +1,103 @@
+{
+  "schema_version": 2,
+  "id": "faction-black-tusk",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "faction",
+  "title": "Black Tusk",
+  "slug": "black-tusk",
+  "section": "factions",
+  "summary": "An advanced private military faction that sabotages the Division Network, invades Washington and pursues national control through high-end weapons and robotics.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "aliases": ["Black Tusks"],
+  "claims": [
+    {
+      "id": "black-tusk-private-military",
+      "text": "The official story recap identifies Black Tusk as a private military group that enters Washington and places the city under siege.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "black-tusk-network-sabotage",
+      "text": "Black Tusk sabotaged the nationwide Division Network as part of a campaign to undermine SHD and seize control of the country.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "black-tusk-technology",
+      "text": "Ubisoft describes Black Tusk operators as using high-end weapons, turret drones, robotic gun platforms and other advanced armaments.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-black-tusk-endgame-2019"]
+    },
+    {
+      "id": "black-tusk-extremis-malis-arms-network",
+      "text": "Extremis Malis depicts Black Tusk using the operative Mantis to provide improved weapons to unstable East Coast groups before the Division 2 opening crisis.",
+      "assessment": "confirmed",
+      "source_ids": ["dark-horse-extremis-malis-2019"]
+    },
+    {
+      "id": "black-tusk-hunted-core-exploitation",
+      "text": "Hunted depicts a source-specific Black Tusk operation that exploits captive Division Agent Maira Kanhai's technical expertise against Division Core infrastructure.",
+      "assessment": "confirmed",
+      "source_ids": ["aconyte-division-hunted-2024"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The endgame invasion",
+      "paragraphs": [
+        {
+          "text": "Black Tusk changes the strategic situation after the initial Washington campaign: the group arrives as an organized invading force rather than another local militia.",
+          "claim_ids": ["black-tusk-private-military", "black-tusk-network-sabotage"]
+        }
+      ]
+    },
+    {
+      "heading": "Capabilities",
+      "paragraphs": [
+        {
+          "text": "Their battlefield identity is built around trained operators, high-end weapons and autonomous or robotic support platforms.",
+          "claim_ids": ["black-tusk-technology"]
+        }
+      ]
+    },
+    {
+      "heading": "Prequel arms network",
+      "paragraphs": [
+        {
+          "text": "The licensed Extremis Malis prequel adds a source-specific earlier view of Black Tusk's strategy: Mantis supplies enhanced weapons to local groups, turning existing instability into an opening for the larger operation.",
+          "claim_ids": ["black-tusk-extremis-malis-arms-network"]
+        }
+      ]
+    },
+    {
+      "heading": "Operation: Crossroads follow-up — major spoilers",
+      "paragraphs": [
+        {
+          "text": "The later licensed novel Hunted presents a separate, source-specific operation: Black Tusk exploits Maira Kanhai's technical expertise while she is captive. This extends the archive's view of pressure on Division systems without turning one novel operation into a complete account of the faction's command structure or capabilities.",
+          "claim_ids": ["black-tusk-hunted-core-exploitation"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "org-strategic-homeland-division", "relationship": "opposed-to"},
+    {"target_id": "location-washington-dc", "relationship": "located-at"},
+    {"target_id": "event-black-tusk-siege", "relationship": "appears-in"},
+    {"target_id": "person-mantis-extremis-malis", "relationship": "member-of"},
+    {"target_id": "person-wyvern-extremis-malis", "relationship": "member-of"},
+    {"target_id": "person-natalya-sokolova", "relationship": "leader-of"},
+    {"target_id": "person-maira-kanhai", "relationship": "opposed-to"},
+    {"target_id": "work-the-division-extremis-malis", "relationship": "appears-in"},
+    {"target_id": "work-the-division-hunted", "relationship": "appears-in"},
+    {"target_id": "event-hunted-albuquerque-operation", "relationship": "involves"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Hunted evidence remains a source-specific official-transmedia layer. Current seasonal leadership is separately grounded in an official Ubisoft season source."
+  }
+}

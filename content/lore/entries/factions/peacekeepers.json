@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "id": "faction-peacekeepers",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "faction",
+  "title": "Peacekeepers",
+  "slug": "peacekeepers",
+  "section": "factions",
+  "summary": "A friendly Lower Manhattan survivor group formed by civilians and former Joint Task Force members.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "claims": [
+    {
+      "id": "peacekeepers-composition",
+      "text": "The Peacekeepers are civilians and JTF veterans who banded together.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-factions-2020", "ubisoft-wony-overview-2020"]
+    },
+    {
+      "id": "peacekeepers-survival-training",
+      "text": "By Warlords of New York, the group has survived for more than eight months and developed better training.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-factions-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Civilian defense",
+      "paragraphs": [
+        {
+          "text": "The Peacekeepers represent organized civilian survival reinforced by former JTF experience, making them a friendly counterpart to Lower Manhattan's hostile factions.",
+          "claim_ids": ["peacekeepers-composition", "peacekeepers-survival-training"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "org-strategic-homeland-division", "relationship": "allied-with"},
+    {"target_id": "location-lower-manhattan", "relationship": "located-at"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Named members and settlement-level details await direct game evidence."
+  }
+}

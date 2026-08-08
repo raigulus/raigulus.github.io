@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "id": "person-mantis-extremis-malis",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "person",
+  "title": "Mantis",
+  "slug": "mantis-extremis-malis",
+  "section": "people",
+  "summary": "The Extremis Malis operative who arms vulnerable groups on the East Coast for Black Tusk and directly connects the graphic novel's New York, Philadelphia and Washington threads.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "mantis-chinatown-killing",
+      "text": "Mantis kills Mathias Kaminsky during the Chinatown warehouse encounter and escapes before Caleb Dunne can stop her.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    },
+    {
+      "id": "mantis-east-coast-arms-network",
+      "text": "The graphic novel depicts Mantis using improved weapons to build leverage with unstable East Coast groups, including Last Man Battalion remnants and the Founders.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    },
+    {
+      "id": "mantis-black-tusk-silenced",
+      "text": "After the Division Network failure, Mantis is killed by a hidden Black Tusk sniper while reporting to the superior identified as Wyvern.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    },
+    {
+      "id": "mantis-broken-dawn-handler-codename",
+      "text": "Broken Dawn also uses Mantis as the codename for a remote handler influencing Division Agent Ike Ronson; the novel does not name that handler's organization.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "penguin-broken-dawn-2019"
+      ]
+    },
+    {
+      "id": "mantis-cross-work-identity-unresolved",
+      "text": "The reviewed official sources do not establish that Broken Dawn's handler and the Black Tusk operative in Extremis Malis are the same individual, so this archive keeps the codename link unresolved.",
+      "assessment": "unknown",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019",
+        "penguin-broken-dawn-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Arms and leverage",
+      "paragraphs": [
+        {
+          "text": "Mantis is the prequel's connective antagonist: she supplies advanced weapons to groups that are already violent or desperate, allowing Black Tusk to turn local instability into a wider strategic advantage.",
+          "claim_ids": [
+            "mantis-chinatown-killing",
+            "mantis-east-coast-arms-network"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "A disposable operative",
+      "paragraphs": [
+        {
+          "text": "The final Washington sequence makes the chain of command explicit but keeps the controlling organization insulated: Mantis is removed by Black Tusk before she can be retained as a source.",
+          "claim_ids": [
+            "mantis-black-tusk-silenced"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Earlier codename usage",
+      "paragraphs": [
+        {
+          "text": "Broken Dawn uses the Mantis codename for a remote handler attached to Ike Ronson's operation. That novel leaves the handler's organization unnamed, so the archive treats the shared codename as a source-flagged lead rather than proof of a Black Tusk identity or a single continuous character.",
+          "claim_ids": [
+            "mantis-broken-dawn-handler-codename",
+            "mantis-cross-work-identity-unresolved"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-caleb-dunne",
+      "relationship": "opposed-to"
+    },
+    {
+      "target_id": "person-mathias-kaminsky",
+      "relationship": "opposed-to"
+    },
+    {
+      "target_id": "person-wyvern-extremis-malis",
+      "relationship": "member-of"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "member-of"
+    },
+    {
+      "target_id": "faction-last-man-battalion",
+      "relationship": "allied-with"
+    },
+    {
+      "target_id": "faction-the-founders",
+      "relationship": "allied-with"
+    },
+    {
+      "target_id": "work-the-division-extremis-malis",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "work-the-division-broken-dawn",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Codename-only record. The archive does not merge same-codename appearances across licensed works without an explicit identity source. Plot outcomes are marked major spoiler."
+  }
+}

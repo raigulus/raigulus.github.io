@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "id": "person-larae-barrett",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "person",
+  "title": "Larae Barrett",
+  "slug": "larae-barrett",
+  "section": "people",
+  "summary": "The former Rikers leader whose death leaves the faction leaderless and divided into multiple sub-groups.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "barrett-rikers-leader",
+      "text": "The official faction recap says Larae Barrett led the Rikers' campaign of vengeance and destruction after Green Poison struck.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-factions-2020"]
+    },
+    {
+      "id": "barrett-death-splinter",
+      "text": "The Division killed Barrett, leaving the Rikers leaderless and causing the faction to split into multiple sub-groups.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-factions-2020", "ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Riker succession",
+      "paragraphs": [
+        {
+          "text": "Barrett's death is the turning point between the first game's unified Rikers and the splinter groups encountered later, including James Dragov's Lower Manhattan force.",
+          "claim_ids": ["barrett-rikers-leader", "barrett-death-splinter"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "faction-rikers", "relationship": "former-leader-of"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "The title follows the established character spelling; one recap body renders the surname as Barret."
+  }
+}

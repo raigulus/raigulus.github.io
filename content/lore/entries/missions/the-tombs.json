@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "id": "mission-the-tombs",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "mission",
+  "title": "The Tombs",
+  "slug": "the-tombs",
+  "section": "missions",
+  "summary": "A chaptered Warlords of New York mission segment in the Raigulus direct capture that reaches Theo Parnell's encounter.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "tombs-wony-capture",
+      "text": "The Raigulus direct capture labels The Tombs as a Warlords of New York mission segment.",
+      "assessment": "confirmed",
+      "source_ids": ["raigulus-wony-hardcore-run-2026"]
+    },
+    {
+      "id": "tombs-parnell-encounter",
+      "text": "The same chaptered capture records the Theo Parnell encounter after The Tombs segment.",
+      "assessment": "confirmed",
+      "source_ids": ["raigulus-wony-hardcore-run-2026"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Mission record",
+      "paragraphs": [
+        {
+          "text": "The archive's direct capture documents The Tombs and its Theo Parnell encounter as part of the Warlords of New York run. It does not publish a mission transcript or infer unrecorded objectives.",
+          "claim_ids": ["tombs-wony-capture", "tombs-parnell-encounter"]
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "sequence": 61,
+    "label": "During Warlords of New York — The Tombs' Parnell thread",
+    "precision": "sequence-only",
+    "source_ids": ["raigulus-wony-hardcore-run-2026"]
+  },
+  "relations": [
+    {"target_id": "person-theo-parnell", "relationship": "involves"},
+    {"target_id": "location-lower-manhattan", "relationship": "located-at"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "Mission identification and encounter timing are source-reviewed from the public capture; broader mission context remains open for official or menu evidence."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "id": "event-warlords-of-new-york-manhunt",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "event",
+  "title": "Warlords of New York Manhunt",
+  "slug": "warlords-of-new-york-manhunt",
+  "section": "events",
+  "summary": "The Lower Manhattan campaign that sends SHD Agents after Aaron Keener following the biological attack attributed to him.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "wony-manhunt-response",
+      "text": "Ubisoft's Warlords of New York overview says SHD Agents are sent to Lower Manhattan after a biological attack to hunt Aaron Keener and stop further attacks.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-overview-2020"]
+    },
+    {
+      "id": "wony-manhunt-campaign-structure",
+      "text": "The same official overview describes five investigation threads that link main and side missions, including five main missions and eight side missions.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-overview-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Campaign response",
+      "paragraphs": [
+        {
+          "text": "The Warlords campaign is framed as SHD's response to the Lower Manhattan attack: Agents pursue Keener through an open-ended campaign whose investigation threads connect the main and side missions.",
+          "claim_ids": ["wony-manhunt-response", "wony-manhunt-campaign-structure"]
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "sequence": 60,
+    "label": "After the Lower Manhattan attack — SHD begins the Warlords manhunt",
+    "precision": "relative",
+    "source_ids": ["ubisoft-wony-overview-2020"]
+  },
+  "relations": [
+    {"target_id": "event-lower-manhattan-biological-attack", "relationship": "follows"},
+    {"target_id": "person-aaron-keener", "relationship": "involves"},
+    {"target_id": "location-lower-manhattan", "relationship": "located-at"},
+    {"target_id": "mission-pathway-park", "relationship": "involves"},
+    {"target_id": "mission-the-tombs", "relationship": "involves"},
+    {"target_id": "mission-stranded-tanker", "relationship": "involves"},
+    {"target_id": "mission-wall-street", "relationship": "involves"},
+    {"target_id": "mission-liberty-island", "relationship": "involves"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "This record covers the officially described campaign setup and structure, not a claim that the archive has complete collectible or dialogue coverage."
+  }
+}

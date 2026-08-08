@@ -1,0 +1,85 @@
+{
+  "schema_version": 2,
+  "id": "location-ann-arbor-research-site-broken-dawn",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "location",
+  "title": "Ann Arbor Research Site (Broken Dawn)",
+  "slug": "ann-arbor-research-site-broken-dawn",
+  "section": "locations",
+  "summary": "The source-specific Ann Arbor research destination in Broken Dawn, where a possible broad-spectrum antiviral becomes the focus of the novel's Mantis-directed conflict.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "ann-arbor-antiviral-site",
+      "text": "Broken Dawn's published premise directs its protagonists toward a Midwest research lead involving a potential broad-spectrum antiviral.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "ubisoft-broken-dawn-overview-2019",
+        "ubisoft-division-books-broken-dawn-2019"
+      ]
+    },
+    {
+      "id": "ann-arbor-mantis-threat",
+      "text": "The licensed novel places the Ann Arbor research lead under threat from the operation coordinated through the Mantis codename.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "penguin-broken-dawn-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Novel-only research destination",
+      "paragraphs": [
+        {
+          "text": "The Ann Arbor research site is a Broken Dawn location, not a confirmed playable game space. It matters because the novel's published antiviral lead becomes a target for competing groups.",
+          "claim_ids": [
+            "ann-arbor-antiviral-site"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Contested lead",
+      "paragraphs": [
+        {
+          "text": "The novel's source-specific conflict puts the research site at risk from a Mantis-directed operation. That does not identify the handler's organization or convert the location into a confirmed Black Tusk facility.",
+          "claim_ids": [
+            "ann-arbor-mantis-threat"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "event-broken-dawn-antiviral-race",
+      "relationship": "located-at"
+    },
+    {
+      "target_id": "person-april-kelleher",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "person-aurelio-diaz",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "person-ike-ronson",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "work-the-division-broken-dawn",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Source-specific licensed-novel location. Its relationship to a real-world city does not make the fictional research operation a real-world claim."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "id": "person-natalya-sokolova",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "person",
+  "title": "Natalya Sokolova",
+  "slug": "natalya-sokolova",
+  "section": "people",
+  "summary": "The Black Tusk leader in The Division 2's seasonal story, also named in Hunted's source-specific account of the operation exploiting Maira Kanhai.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "sokolova-season-11-leadership",
+      "text": "Ubisoft's Season 11 overview identifies Natalya Sokolova as taking a visible leadership role in Black Tusk's more aggressive Washington campaigns.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-season-11-reign-of-fire-2023"]
+    },
+    {
+      "id": "sokolova-hunted-operation",
+      "text": "Hunted identifies Sokolova as the Black Tusk authority connected to the source-specific operation that exploits Maira Kanhai while she is captive.",
+      "assessment": "confirmed",
+      "source_ids": ["aconyte-division-hunted-2024"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Black Tusk leadership in game story",
+      "paragraphs": [
+        {
+          "text": "The Division 2's official seasonal story places Sokolova in an overt leadership role as Black Tusk's Washington campaign becomes more aggressive.",
+          "claim_ids": ["sokolova-season-11-leadership"]
+        }
+      ]
+    },
+    {
+      "heading": "Operation: Crossroads connection — major spoilers",
+      "paragraphs": [
+        {
+          "text": "Hunted attaches Sokolova to a distinct Black Tusk operation involving Maira Kanhai. That novel connection is recorded as a source-specific bridge; it is not used to invent missing operational details for the game's wider chronology.",
+          "claim_ids": ["sokolova-hunted-operation"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "faction-black-tusk", "relationship": "leader-of"},
+    {"target_id": "person-maira-kanhai", "relationship": "opposed-to"},
+    {"target_id": "event-hunted-albuquerque-operation", "relationship": "involves"},
+    {"target_id": "work-the-division-hunted", "relationship": "appears-in"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Game-canon leadership is sourced to Ubisoft. The novel connection is labeled official transmedia and is not treated as a substitute for seasonal game chronology."
+  }
+}

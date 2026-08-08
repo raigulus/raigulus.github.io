@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "pages": [
+    {
+      "slug": "methodology",
+      "title": "Research Methodology",
+      "description": "How the Raigulus Division Lore Archive separates evidence, canon, interpretation and uncertainty.",
+      "eyebrow": "Editorial standard",
+      "sections": [
+        {
+          "heading": "No source, no claim",
+          "paragraphs": [
+            "Every factual lore statement is recorded as a claim and linked to one or more registered sources. A source must support the exact scope of the claim; a related page or search snippet is not enough.",
+            "Direct game captures and official publications are preferred. Community material can identify research leads, but it cannot be the only support for a published factual claim. A registered link is an evidence locator, not permission to reproduce the material behind it."
+          ]
+        },
+        {
+          "heading": "Fact, fiction and comparison",
+          "paragraphs": [
+            "Real-world records, Division continuity and editorial comparison are labelled separately. Similarity is not treated as proof of influence, and contradictions remain visible rather than being resolved by guesswork."
+          ]
+        },
+        {
+          "heading": "Human publication gate",
+          "paragraphs": [
+            "Automated research may reach source-reviewed status, but only a designated human editor can approve human-reviewed or published status. Review dates and unresolved notes remain attached to each record."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "copyright",
+      "title": "Copyright and Quotation Policy",
+      "description": "The archive publishes original, source-led analysis and evidence locators, never copied editions, scripts, scans, panels or book excerpts.",
+      "eyebrow": "Publication boundary",
+      "sections": [
+        {
+          "heading": "Public pages use original expression",
+          "paragraphs": [
+            "Public pages may publish identifying metadata, independently written summaries, factual lore points, relationship maps and source links. Transmedia records do not publish dialogue, captions, OCR text, translated excerpts, chapter-by-chapter or page-by-page retellings, panels, cover art, scans or downloaded editions.",
+            "There is no automatic safe word count or percentage for copying another work. When a source is a book, comic or other expressive work, the archive's default is no verbatim quotation and no visual reproduction unless a separate rights review documents permission or a narrowly necessary exception.",
+            "A lore page must add original analysis rather than substitute for the source. It may identify a documented fact or high-level narrative connection, but it must not reconstruct the work's prose, scene sequence, panel sequence or other protected expression."
+          ]
+        },
+        {
+          "heading": "Source and media gate",
+          "paragraphs": [
+            "Published lore claims use official publisher, developer, government, primary-record or lawfully captured direct-game sources. Unofficial mirrors, file lockers, peer-to-peer links, leaked files and access-controlled material obtained without permission are not accepted as public lore sources.",
+            "A source URL may identify where a lawful public edition or official statement can be found, but it cannot point to a downloadable ebook, comic archive, transcript, raw audio, extracted game asset or credentialed/private file. Covers, logos, author photographs, comic art and promotional artwork are excluded unless the archive has a documented right to use them.",
+            "Original gameplay capture is used here as an evidence locator, not as a redistributed game asset. It is never mirrored as a downloadable site file and does not itself create permission to reuse footage, music, voice or other game assets; any publication beyond the factual record must comply with the applicable publisher and platform policies."
+          ]
+        },
+        {
+          "heading": "Names, titles and brand use",
+          "paragraphs": [
+            "Titles, character names and short identifying labels are used only to identify the subject of independent commentary. The archive does not imply publisher approval, reproduce publisher branding as its own, or present source material as a substitute for an official edition."
+          ]
+        },
+        {
+          "heading": "Private research material",
+          "paragraphs": [
+            "Only lawfully obtained or explicitly authorized research material may be used in the private research workflow. The workflow must not use or publicize copies from unofficial mirrors, peer-to-peer services, file lockers or access controls bypassed without permission.",
+            "Private research artifacts never belong in the public repository or its source registry. The repository guard rejects common raw-text, transcript, scan, ebook, download-link, credential and media fields or file formats from public lore paths."
+          ]
+        },
+        {
+          "heading": "Rights-holder concerns",
+          "paragraphs": [
+            "If a rights-holder identifies a specific public page, claim or asset that may exceed this boundary, that item is removed from public publication while its source and rights basis are reviewed. A correction report should identify the exact URL and material at issue; reporters should not post private legal documents or access credentials in a public issue.",
+            "Platform-level copyright notices follow the hosting platform's reporting process. This archive treats a notice as a reason to preserve the record of review, not as permission to republish the disputed material elsewhere."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "corrections",
+      "title": "Corrections and Evidence Requests",
+      "description": "How to report an error, source conflict or missing piece of Division lore evidence.",
+      "eyebrow": "Open review",
+      "action_url": "https://github.com/raigulus/raigulus.github.io/issues/new?template=lore-correction.yml",
+      "action_label": "Open a lore correction report",
+      "sections": [
+        {
+          "heading": "What to include",
+          "paragraphs": [
+            "Identify the page and exact claim, explain the correction, and provide the strongest available source with a timestamp, page, chapter, mission, collectible or game-build locator.",
+            "Conflicting evidence is recorded as disputed until it can be responsibly resolved. Reports are not treated as verified merely because they are plausible or widely repeated."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "evidence-intake",
+      "title": "Collectible Evidence Intake",
+      "description": "The capture checklist used to turn in-game collectibles, comms and recordings into reviewable lore records.",
+      "eyebrow": "Research intake",
+      "action_url": "https://github.com/raigulus/raigulus.github.io/issues/new?template=lore-evidence.yml",
+      "action_label": "Submit a collectible evidence record",
+      "sections": [
+        {
+          "heading": "Required capture set",
+          "paragraphs": [
+            "Capture the in-game collection menu showing the category, item title and completion position; add the map, mission or room locator where the item is obtained; record platform, interface language and the exact game build or season.",
+            "For audio, provide only a lawfully captured or authorized recording privately to the authorized research agent and list every speaker you can identify. Uncertain speakers must remain marked unknown rather than being guessed."
+          ]
+        },
+        {
+          "heading": "What becomes public",
+          "paragraphs": [
+            "The public record contains identifying metadata, an original summary, key lore claims, speaker attribution confidence and precise evidence locators. Complete audio, video, subtitle dumps and working transcripts stay outside this public repository unless a separate rights review approves them.",
+            "A collectible is counted as captured only after its identity and locator are evidenced. It is source-reviewed only after the media or menu capture supports every published claim, and it is published only after human approval."
+          ]
+        },
+        {
+          "heading": "Duplicate and conflict handling",
+          "paragraphs": [
+            "Alternate-language or later-build captures are linked to the same collectible identity rather than counted twice. If wording, speaker labels or placement changes between builds, both observations remain versioned and the conflict is shown instead of silently overwritten."
+          ]
+        }
+      ]
+    }
+  ]
+}

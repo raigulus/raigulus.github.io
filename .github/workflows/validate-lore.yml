@@ -1,0 +1,40 @@
+name: Validate Lore Archive
+
+on:
+  pull_request:
+    paths:
+      - "content/lore/**"
+      - "schemas/**"
+      - "scripts/build_lore.py"
+      - "scripts/validate_lore.py"
+      - "scripts/test_validate_lore.py"
+      - "assets/lore.css"
+      - "assets/lore-timeline.css"
+      - "assets/lore-directory.css"
+      - "lore/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate lore records
+        run: python3 scripts/validate_lore.py --strict-site-inventory
+
+      - name: Run lore guardrail tests
+        run: python3 -m unittest scripts/test_validate_lore.py
+
+      - name: Rebuild lore pages
+        run: python3 scripts/build_lore.py
+
+      - name: Check generated pages
+        run: python3 scripts/check_lore_pages.py
+
+      - name: Confirm generated pages are current
+        run: git diff --exit-code -- lore sitemap.xml sitemap.txt

@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "id": "person-rick-valassi",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "person",
+  "title": "Rick Valassi",
+  "slug": "rick-valassi",
+  "section": "people",
+  "summary": "A reporter and broadcaster who remains on the air after the events of the first game.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "claims": [
+    {
+      "id": "valassi-role",
+      "text": "The official story recap describes Rick Valassi as a reporter and broadcaster.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "valassi-still-broadcasting",
+      "text": "Following the events of The Division, Valassi remains active and continues broadcasting.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Continuing broadcast",
+      "paragraphs": [
+        {
+          "text": "Valassi represents the continuing media voice that survives beyond the first New York crisis, although this overview does not yet catalog his individual broadcasts.",
+          "claim_ids": ["valassi-role", "valassi-still-broadcasting"]
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Broadcast-by-broadcast coverage belongs to the collectible intake and speaker-review workflow."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "id": "person-theo-parnell",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "person",
+  "title": "Theo Parnell",
+  "slug": "theo-parnell",
+  "section": "people",
+  "summary": "A former member of Aaron Keener's team who is named as the first target in Year 6 Season 2 and appears in the Warlords of New York Tombs mission capture.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "parnell-keener-team",
+      "text": "Ubisoft's Year 6 Season 2 overview identifies Theo Parnell as the first former Keener team member Agents must secure.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-y6s2-shades-red-2024"]
+    },
+    {
+      "id": "parnell-tombs-capture",
+      "text": "The Raigulus direct capture labels The Tombs as a Warlords of New York mission segment and shows its Theo Parnell encounter.",
+      "assessment": "confirmed",
+      "source_ids": ["raigulus-wony-hardcore-run-2026"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Recorded Warlords encounter",
+      "paragraphs": [
+        {
+          "text": "The Tombs is the recorded Warlords of New York mission context for Parnell in the archive capture. A later official season places him among Keener's former team members and makes him its first named target.",
+          "claim_ids": ["parnell-tombs-capture", "parnell-keener-team"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "mission-the-tombs", "relationship": "appears-in"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "The entry distinguishes the recorded Warlords encounter from later seasonal narrative. Detailed biography and current status require a dedicated evidence pass."
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": 2,
+  "id": "work-the-division-broken-dawn",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "work",
+  "title": "Tom Clancy's The Division: Broken Dawn",
+  "slug": "the-division-broken-dawn",
+  "section": "works",
+  "summary": "Alex Irvine's licensed Division novel follows April Kelleher and Division Agents across a post-outbreak research trail in the months between the first game and The Division 2.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "broken-dawn-official-prequel",
+      "text": "Ubisoft describes Broken Dawn as an official Division novel set in the months between the first game and The Division 2, with a story separate from the game's player campaign.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "ubisoft-broken-dawn-overview-2019",
+        "ubisoft-division-books-broken-dawn-2019"
+      ]
+    },
+    {
+      "id": "broken-dawn-published-premise",
+      "text": "Its published premise follows April Kelleher and Division Agents Aurelio Diaz and Ike Ronson through a Midwest lead involving a potential broad-spectrum antiviral.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "ubisoft-broken-dawn-overview-2019",
+        "ubisoft-division-books-broken-dawn-2019",
+        "penguin-broken-dawn-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A bridge between the games",
+      "paragraphs": [
+        {
+          "text": "Broken Dawn is licensed Division transmedia rather than a game mission. Ubisoft positions it in the gap between the first game and The Division 2, so this archive labels its claims official transmedia and keeps its story scope distinct from player-campaign chronology.",
+          "claim_ids": [
+            "broken-dawn-official-prequel"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Research trail",
+      "paragraphs": [
+        {
+          "text": "The novel's source-specific route moves from New York toward a Midwest antiviral lead. It connects civilian survivor April Kelleher with Agents Aurelio Diaz and Ike Ronson, then opens a Washington intelligence handoff that later game readers can recognize without turning the novel into a substitute for game evidence.",
+          "claim_ids": [
+            "broken-dawn-published-premise"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-april-kelleher",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "person-aurelio-diaz",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "person-ike-ronson",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "person-alani-kelso",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "person-mantis-extremis-malis",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "event-broken-dawn-antiviral-race",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "location-ann-arbor-research-site-broken-dawn",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "event-division-network-crisis",
+      "relationship": "precedes"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Licensed-novel record. Public text is an independently written summary only; no prose, cover art, scans, OCR text or excerpts are published."
+  }
+}

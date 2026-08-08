@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "id": "location-lower-manhattan",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "location",
+  "title": "Lower Manhattan",
+  "slug": "lower-manhattan",
+  "section": "locations",
+  "summary": "The New York setting of Warlords of New York, divided among returning factions and rogue Agents during the hunt for Aaron Keener.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "lower-manhattan-wony-setting",
+      "text": "Warlords of New York sends SHD Agents to Lower Manhattan to hunt Aaron Keener and his rogue-agent network.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-overview-2020"]
+    },
+    {
+      "id": "lower-manhattan-factions",
+      "text": "The expansion overview identifies reorganized Rikers, Cleaners and Peacekeepers among the groups operating in Lower Manhattan.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-overview-2020", "ubisoft-wony-factions-2020"]
+    },
+    {
+      "id": "lower-manhattan-attack",
+      "text": "The expansion campaign begins in response to a biological attack that killed civilians and SHD Agents in Lower Manhattan.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-overview-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Return to New York",
+      "paragraphs": [
+        {
+          "text": "Lower Manhattan shifts The Division 2 from Washington back to New York, where SHD investigates a biological attack and pursues Keener.",
+          "claim_ids": ["lower-manhattan-wony-setting", "lower-manhattan-attack"]
+        }
+      ]
+    },
+    {
+      "heading": "Faction landscape",
+      "paragraphs": [
+        {
+          "text": "Returning groups are not frozen in their first-game form: official material describes the Rikers and Cleaners as reorganized, while Peacekeepers combine civilians and JTF veterans.",
+          "claim_ids": ["lower-manhattan-factions"]
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Named zones, missions and collectible locations remain outside this overview."
+  }
+}

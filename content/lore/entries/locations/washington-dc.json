@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "id": "location-washington-dc",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "location",
+  "title": "Washington, D.C.",
+  "slug": "washington-dc",
+  "section": "locations",
+  "summary": "The primary setting of The Division 2, where institutional collapse, civilian reconstruction and competing factions converge around the U.S. capital.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "claims": [
+    {
+      "id": "dc-collapse-premise",
+      "text": "The official story premise places Washington on the brink of collapse amid lawlessness, instability and rumours of a Capitol coup.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-division2-story-factions"]
+    },
+    {
+      "id": "dc-shd-summons",
+      "text": "Several months after the first game's events, Agents across the country are summoned to Washington after the nationwide Division Network goes down.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "dc-faction-conflict",
+      "text": "Ubisoft presents Washington as contested by hostile factions and defended through Division operations and civilian settlements.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-division2-story-factions", "ubisoft-black-tusk-endgame-2019"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Capital in crisis",
+      "paragraphs": [
+        {
+          "text": "Washington is not just a backdrop: the failure of the SHD Network and the struggle over federal institutions make the city the strategic center of The Division 2's opening campaign.",
+          "claim_ids": ["dc-collapse-premise", "dc-shd-summons"]
+        }
+      ]
+    },
+    {
+      "heading": "Territory and reconstruction",
+      "paragraphs": [
+        {
+          "text": "The city's neighborhoods, control points and settlements express the continuing conflict between hostile factions, SHD Agents and organized civilians.",
+          "claim_ids": ["dc-faction-conflict"]
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "District-by-district pages and landmark histories remain a later inventory task."
+  }
+}

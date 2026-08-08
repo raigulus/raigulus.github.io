@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "id": "person-vivian-conley",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "person",
+  "title": "Vivian Conley",
+  "slug": "vivian-conley",
+  "section": "people",
+  "summary": "The Cleaner leader in Warlords of New York and one of Aaron Keener's four lieutenants.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "conley-cleaner-leader",
+      "text": "The Warlords of New York faction recap identifies Vivian Conley as the new leader under whom the Cleaners regroup and recruit.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-factions-2020"]
+    },
+    {
+      "id": "conley-keener-lieutenant",
+      "text": "Conley is one of Aaron Keener's four lieutenants.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-factions-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Cleaner regrouping",
+      "paragraphs": [
+        {
+          "text": "Conley's leadership marks the Cleaners' reorganization after Joe Ferro's death and ties the returning faction to Keener's Lower Manhattan network.",
+          "claim_ids": ["conley-cleaner-leader", "conley-keener-lieutenant"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "faction-cleaners", "relationship": "leader-of"},
+    {"target_id": "location-lower-manhattan", "relationship": "located-at"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Mission outcome and biographical detail require separate direct evidence."
+  }
+}

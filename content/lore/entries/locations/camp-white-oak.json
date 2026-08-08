@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "id": "location-camp-white-oak",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "location",
+  "title": "Camp White Oak",
+  "slug": "camp-white-oak",
+  "section": "locations",
+  "summary": "A remote woodland estate used as a strategic Black Tusk position and extraction site for President Ellis.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "white-oak-estate",
+      "text": "Ubisoft describes Camp White Oak as an estate in the woodlands near a strategic Black Tusk position.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-manning-white-oak-2019"]
+    },
+    {
+      "id": "white-oak-ellis",
+      "text": "Black Tusk extracts President Ellis from Camp White Oak before Division Agents can reach him.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Extraction site",
+      "paragraphs": [
+        {
+          "text": "Camp White Oak combines a concealed woodland position with a failed Division pursuit: Black Tusk removes Ellis before Agents can capture him.",
+          "claim_ids": ["white-oak-estate", "white-oak-ellis"]
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Later seasonal uses of this location must be versioned separately."
+  }
+}

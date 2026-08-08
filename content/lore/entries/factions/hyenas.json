@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "id": "faction-hyenas",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "faction",
+  "title": "Hyenas",
+  "slug": "hyenas",
+  "section": "factions",
+  "summary": "A hostile Washington faction recognizable by gas masks and, in later seasonal material, an expanding Spice operation tied to the Dark Zones.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "claims": [
+    {
+      "id": "hyenas-washington-faction",
+      "text": "Ubisoft identifies the gasmask-wearing Hyenas as one of the hostile factions operating in Washington during The Division 2 campaign.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-black-tusk-endgame-2019"]
+    },
+    {
+      "id": "hyenas-potent-spice",
+      "text": "The Into the Dark season places the Hyenas behind Potent Spice experiments and material movement through the Toxic Dark Zone.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-into-dark-2026"]
+    },
+    {
+      "id": "hyenas-pact-presence",
+      "text": "The Pact treats the Hyenas as an active faction with its own Retaliation rewards and faction-specific materials.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-pact-2025"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Washington presence",
+      "paragraphs": [
+        {
+          "text": "The Hyenas are part of the original hostile faction landscape in Washington and remain active in later seasons.",
+          "claim_ids": ["hyenas-washington-faction", "hyenas-pact-presence"]
+        }
+      ]
+    },
+    {
+      "heading": "Spice operations",
+      "paragraphs": [
+        {
+          "text": "Later official material connects the group to Potent Spice production and chemical-material movement through a Toxic Dark Zone.",
+          "claim_ids": ["hyenas-potent-spice"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "org-strategic-homeland-division", "relationship": "opposed-to"},
+    {"target_id": "location-washington-dc", "relationship": "located-at"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Founding history and leadership are withheld until direct collectible or mission evidence is inventoried."
+  }
+}

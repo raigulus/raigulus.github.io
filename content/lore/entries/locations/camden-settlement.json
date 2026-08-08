@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "id": "location-camden-settlement",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "location",
+  "title": "Camden Settlement",
+  "slug": "camden-settlement",
+  "section": "locations",
+  "summary": "A Philadelphia survivor settlement in Extremis Malis whose conflict with the Founders gives Caleb Dunne and Heather Ward their local lead.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "camden-founders-pressure",
+      "text": "The graphic novel uses the Camden settlement as the community pressured by the Founders' armed demands in Philadelphia.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    },
+    {
+      "id": "camden-division-lead",
+      "text": "Heather Ward and Caleb Dunne use the settlement's conflict to trace the Founders' connection to Mantis's weapons operation.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The local lead",
+      "paragraphs": [
+        {
+          "text": "Camden is the point where a community-level protection problem becomes evidence of the wider arms network. It is recorded as a source-specific settlement, not as real-world visitor or safety information.",
+          "claim_ids": [
+            "camden-founders-pressure",
+            "camden-division-lead"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "faction-the-founders",
+      "relationship": "located-at"
+    },
+    {
+      "target_id": "person-heather-ward",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "work-the-division-extremis-malis",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Fictional-use location record from the licensed graphic novel."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": 2,
+  "id": "work-the-division-hunted",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "work",
+  "title": "Tom Clancy's The Division: Hunted",
+  "slug": "the-division-hunted",
+  "section": "works",
+  "summary": "Thomas Parrott's licensed third Operation: Crossroads novel continues Maira Kanhai's story when her reported Rogue status sends a Division cell across the American Southwest.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "hunted-operation-crossroads-third-book",
+      "text": "Hunted is Thomas Parrott's third Operation: Crossroads novel in the licensed Tom Clancy's The Division publishing line, published by Aconyte Books in 2024.",
+      "assessment": "confirmed",
+      "source_ids": ["aconyte-division-hunted-2024"]
+    },
+    {
+      "id": "hunted-published-premise",
+      "text": "The published premise follows Brenda Wells as she forms a specialized Division cell after evidence identifies her former recruit Maira Kanhai as Rogue in the American Southwest.",
+      "assessment": "confirmed",
+      "source_ids": ["aconyte-division-hunted-2024"]
+    },
+    {
+      "id": "hunted-crossroads-continuation",
+      "text": "Hunted continues the Operation: Crossroads Maira Kanhai arc after Compromised, while its major plot outcomes remain specific to this licensed novel.",
+      "assessment": "confirmed",
+      "source_ids": ["aconyte-division-hunted-2024"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Operation: Crossroads, book three",
+      "paragraphs": [
+        {
+          "text": "Hunted is a licensed Division transmedia novel rather than a game mission. It is Thomas Parrott's third Operation: Crossroads volume and continues the Maira Kanhai thread opened in the earlier books.",
+          "claim_ids": ["hunted-operation-crossroads-third-book", "hunted-crossroads-continuation"]
+        }
+      ]
+    },
+    {
+      "heading": "Published setup",
+      "paragraphs": [
+        {
+          "text": "The public setup puts Brenda Wells on an American Southwest search for Maira after ISAC evidence reports Maira as Rogue. The archive marks the linked character and event records as major spoilers before discussing the novel's resolution.",
+          "claim_ids": ["hunted-published-premise"]
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "sequence": 72,
+    "label": "After Compromised — Operation: Crossroads continues in Hunted",
+    "precision": "relative",
+    "source_ids": ["aconyte-division-hunted-2024"]
+  },
+  "relations": [
+    {"target_id": "work-the-division-compromised", "relationship": "follows"},
+    {"target_id": "person-maira-kanhai", "relationship": "appears-in"},
+    {"target_id": "person-brenda-wells", "relationship": "appears-in"},
+    {"target_id": "event-hunted-albuquerque-operation", "relationship": "appears-in"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Official publisher metadata establishes the work and public premise. Archive plot records use original, source-specific summaries and reproduce no book prose, cover art or scans."
+  }
+}

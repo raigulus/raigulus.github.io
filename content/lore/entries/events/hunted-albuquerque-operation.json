@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "id": "event-hunted-albuquerque-operation",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "event",
+  "title": "Hunted Albuquerque Operation",
+  "slug": "hunted-albuquerque-operation",
+  "section": "events",
+  "summary": "Hunted's major-spoiler American Southwest operation, where Black Tusk exploits Maira Kanhai and a temporary coalition moves against the Albuquerque facility.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "hunted-event-published-search",
+      "text": "Hunted's public premise sends Brenda Wells and a specialized Division cell into the American Southwest to investigate evidence that Maira Kanhai is Rogue.",
+      "assessment": "confirmed",
+      "source_ids": ["aconyte-division-hunted-2024"]
+    },
+    {
+      "id": "hunted-event-core-exploit",
+      "text": "In the novel's source-specific plot, Black Tusk uses Maira Kanhai's coerced technical work in an attack on Division Core infrastructure and holds the related operation at an Albuquerque facility.",
+      "assessment": "confirmed",
+      "source_ids": ["aconyte-division-hunted-2024"]
+    },
+    {
+      "id": "hunted-event-temporary-coalition",
+      "text": "Hunted depicts Brenda Wells's cell joining a temporary alignment with the Molossi and the Reborn to move against the Albuquerque Black Tusk operation.",
+      "assessment": "confirmed",
+      "source_ids": ["aconyte-division-hunted-2024"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "From a Rogue report to a search",
+      "paragraphs": [
+        {
+          "text": "The public setup is a search for Maira after ISAC evidence marks her as Rogue. The investigation, however, reaches a Black Tusk operation that has direct implications for Division infrastructure.",
+          "claim_ids": ["hunted-event-published-search", "hunted-event-core-exploit"]
+        }
+      ]
+    },
+    {
+      "heading": "A temporary coalition — major spoilers",
+      "paragraphs": [
+        {
+          "text": "The novel's Albuquerque confrontation brings an unusual, temporary alignment: Wells's Division cell, the Molossi and the Reborn move against Black Tusk. It is a tactical response within Hunted, not evidence of a permanent alliance among those groups.",
+          "claim_ids": ["hunted-event-temporary-coalition"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "person-maira-kanhai", "relationship": "involves"},
+    {"target_id": "person-brenda-wells", "relationship": "involves"},
+    {"target_id": "person-natalya-sokolova", "relationship": "involves"},
+    {"target_id": "person-thaddeus-greene", "relationship": "involves"},
+    {"target_id": "faction-black-tusk", "relationship": "involves"},
+    {"target_id": "faction-the-molossi", "relationship": "involves"},
+    {"target_id": "faction-the-reborn", "relationship": "involves"},
+    {"target_id": "work-the-division-hunted", "relationship": "appears-in"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Licensed-novel umbrella event. It has no exact-date placement in game chronology, publishes no source prose and treats the coalition as temporary and source-specific."
+  }
+}

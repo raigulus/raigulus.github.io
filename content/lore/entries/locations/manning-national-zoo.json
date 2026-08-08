@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "id": "location-manning-national-zoo",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "location",
+  "title": "Manning National Zoo",
+  "slug": "manning-national-zoo",
+  "section": "locations",
+  "summary": "The Episode 1 location fortified by the Outcasts after Emeline Shaw retreats from Roosevelt Island.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "zoo-shaw-refuge",
+      "text": "Emeline Shaw retreats into Manning National Zoo after her defeat on Roosevelt Island.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-manning-white-oak-2019"]
+    },
+    {
+      "id": "zoo-outcast-fortification",
+      "text": "Outcasts protect Shaw inside the zoo with followers and blockades.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-manning-white-oak-2019"]
+    },
+    {
+      "id": "zoo-environmental-infographics",
+      "text": "The mission brief notes animal-species infographics distributed through the zoo environment.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-manning-white-oak-2019"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Outcast fortress",
+      "paragraphs": [
+        {
+          "text": "The zoo becomes an improvised Outcast fortress and the setting for the pursuit of Emeline Shaw, while its environmental displays preserve traces of the site's pre-collapse purpose.",
+          "claim_ids": ["zoo-shaw-refuge", "zoo-outcast-fortification", "zoo-environmental-infographics"]
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Environmental text and exact collectible locations require direct capture."
+  }
+}

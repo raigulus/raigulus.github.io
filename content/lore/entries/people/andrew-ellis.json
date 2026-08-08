@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "id": "person-andrew-ellis",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "person",
+  "title": "Andrew Ellis",
+  "slug": "andrew-ellis",
+  "section": "people",
+  "summary": "The former Speaker who becomes President during the crisis, is rescued from the True Sons and is later exposed as a Black Tusk collaborator.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "ellis-president-hostage",
+      "text": "The official story recap identifies Ellis as the former Speaker of the House and missing President held by the True Sons at Capitol Hill.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "ellis-black-tusk",
+      "text": "Ellis was working with Black Tusk, took the broad-spectrum antiviral and was later extracted by the faction from Camp White Oak.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Rescue and betrayal",
+      "paragraphs": [
+        {
+          "text": "Ellis first appears to be a rescue objective and source of the encryption key needed to reach the antiviral. His cooperation with Black Tusk turns that recovery into a betrayal and a later pursuit at Camp White Oak.",
+          "claim_ids": ["ellis-president-hostage", "ellis-black-tusk"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "faction-true-sons", "relationship": "held-by"},
+    {"target_id": "faction-black-tusk", "relationship": "allied-with"},
+    {"target_id": "mission-camp-white-oak", "relationship": "appears-in"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Later seasonal developments involving Ellis are outside this first campaign-and-Episode-1 record."
+  }
+}

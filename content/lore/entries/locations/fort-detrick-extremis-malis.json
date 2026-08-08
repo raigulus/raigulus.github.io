@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "id": "location-fort-detrick-extremis-malis",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "location",
+  "title": "Fort Detrick (Extremis Malis)",
+  "slug": "fort-detrick-extremis-malis",
+  "section": "locations",
+  "summary": "The source-specific Fort Detrick setting in Extremis Malis, where Mantis's operation intersects with the graphic novel's final Washington-bound escalation.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "fort-detrick-fictional-attack",
+      "text": "Extremis Malis portrays Fort Detrick as a target in the escalating Black Tusk-linked operation before the story's final Washington sequence.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    },
+    {
+      "id": "fort-detrick-mantis-route",
+      "text": "The location appears on Mantis's route as the Division team closes in on the network's Washington connection.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A fictional escalation point",
+      "paragraphs": [
+        {
+          "text": "The archive records Fort Detrick only as it appears in Extremis Malis's fictional plot. It is not a guide to the real installation, a statement about its current status, or a source of real-world security information.",
+          "claim_ids": [
+            "fort-detrick-fictional-attack",
+            "fort-detrick-mantis-route"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-mantis-extremis-malis",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "work-the-division-extremis-malis",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Real-world place name is used only in its licensed fictional context."
+  }
+}

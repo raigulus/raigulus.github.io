@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "id": "location-midtown-manhattan",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "location",
+  "title": "Midtown Manhattan",
+  "slug": "midtown-manhattan",
+  "section": "locations",
+  "summary": "The central operating area Division Agents are activated to secure against the Rikers, Cleaners and Last Man Battalion.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "claims": [
+    {
+      "id": "midtown-activation-area",
+      "text": "After Green Poison, SHD Agents are activated to help secure Midtown Manhattan.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "midtown-hostile-factions",
+      "text": "The Rikers, Cleaners and Last Man Battalion are the three violent factions named in that mission.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Original Division deployment",
+      "paragraphs": [
+        {
+          "text": "Midtown Manhattan is the core crisis area of the original activation, where SHD supports the effort to restore security against three organized hostile factions.",
+          "claim_ids": ["midtown-activation-area", "midtown-hostile-factions"]
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "District and landmark records will be separated after a first-game location inventory."
+  }
+}

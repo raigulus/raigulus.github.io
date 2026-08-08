@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "id": "disease-eclipse-virus",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "disease",
+  "title": "Eclipse Virus",
+  "slug": "eclipse-virus",
+  "section": "diseases",
+  "summary": "A novel-source viral threat named in Compromised during the rogue operation at Battleship Texas.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "eclipse-payload-identification",
+      "text": "In Compromised, the rogue system ANNA identifies the stored viral payloads at Battleship Texas as the Eclipse Virus.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    },
+    {
+      "id": "eclipse-green-poison-connection",
+      "text": "A character in the novel describes Eclipse as a more lethal virus derived from Green Poison; this is recorded as the novel's in-story account rather than a technical specification.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A source-bounded threat record",
+      "paragraphs": [
+        {
+          "text": "The book identifies a stored viral threat as Eclipse Virus during the Battleship Texas operation. Its account connects Eclipse to Green Poison, but this archive does not convert narrative dialogue into a medical or technical claim beyond that source scope.",
+          "claim_ids": [
+            "eclipse-payload-identification",
+            "eclipse-green-poison-connection"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "disease-green-poison",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "location-battleship-texas",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "work-the-division-compromised",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "This record preserves the novel's terminology and attribution. It does not make real-world disease claims or infer a full in-game technical profile."
+  }
+}

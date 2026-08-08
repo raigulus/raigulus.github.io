@@ -1,0 +1,94 @@
+{
+  "schema_version": 2,
+  "id": "work-the-division-compromised",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "work",
+  "title": "Tom Clancy's The Division: Compromised",
+  "slug": "the-division-compromised",
+  "section": "works",
+  "summary": "Thomas Parrott's licensed Operation: Crossroads novel follows a Division cell drawn into a Gulf Coast supply crisis after the events of its preceding novel.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "compromised-operation-crossroads-second-book",
+      "text": "Compromised is Thomas Parrott's second Operation: Crossroads novel in the licensed Tom Clancy's The Division publishing line.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    },
+    {
+      "id": "compromised-gulf-coast-premise",
+      "text": "The novel's published premise places Division Agent Maira Kanhai in a Texas refinery crisis involving environmental extremists and a private military force.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Operation: Crossroads",
+      "paragraphs": [
+        {
+          "text": "Compromised is a licensed Division transmedia novel, not a game mission or a replacement for game-source chronology. It is the second Operation: Crossroads book by Thomas Parrott.",
+          "claim_ids": [
+            "compromised-operation-crossroads-second-book"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Gulf Coast story scope",
+      "paragraphs": [
+        {
+          "text": "Its source-specific story follows Maira Kanhai into a Texas Gulf Coast dispute over refinery infrastructure, bringing novel-origin factions and rogue activity into the archive with major-spoiler handling.",
+          "claim_ids": [
+            "compromised-gulf-coast-premise"
+          ]
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "sequence": 71,
+    "label": "After Recruited — Operation: Crossroads continues in Compromised",
+    "precision": "relative",
+    "source_ids": ["aconyte-division-compromised-2022"]
+  },
+  "relations": [
+    {
+      "target_id": "work-the-division-recruited",
+      "relationship": "follows"
+    },
+    {
+      "target_id": "person-maira-kanhai",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "faction-the-reborn",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "faction-the-molossi",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "event-gulf-coast-refinery-crisis",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "work-the-division-hunted",
+      "relationship": "precedes"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "Licensed-novel evidence is intentionally labeled official transmedia. Plot records remain source-specific and are not represented as direct game capture."
+  }
+}

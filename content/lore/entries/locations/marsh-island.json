@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "id": "location-marsh-island",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "location",
+  "title": "Marsh Island",
+  "slug": "marsh-island",
+  "section": "locations",
+  "summary": "A remote wetland rendezvous beyond Vermilion Bay in Compromised's Gulf Coast storyline.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "marsh-island-vermilion-location",
+      "text": "Compromised describes Marsh Island as a former wilderness refuge beyond Vermilion Bay, reached by water through surrounding wetlands.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    },
+    {
+      "id": "marsh-island-rogue-rendezvous",
+      "text": "The island is the location of the rogue arms rendezvous with Cassandra Raines and the Reborn, where the manipulation of the Gulf Coast factions is exposed.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Wetland rendezvous",
+      "paragraphs": [
+        {
+          "text": "The novel uses Marsh Island's isolated wetlands as the meeting point for a covert arms transfer beyond Vermilion Bay.",
+          "claim_ids": [
+            "marsh-island-vermilion-location",
+            "marsh-island-rogue-rendezvous"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-cassandra-raines",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "person-benjamin-marsh",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "event-gulf-coast-refinery-crisis",
+      "relationship": "located-at"
+    },
+    {
+      "target_id": "work-the-division-compromised",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "Geographic description is limited to the novel's fictional-use account and is not a real-world travel reference."
+  }
+}

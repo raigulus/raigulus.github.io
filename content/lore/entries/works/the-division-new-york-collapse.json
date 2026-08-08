@@ -1,0 +1,87 @@
+{
+  "schema_version": 2,
+  "id": "work-the-division-new-york-collapse",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "work",
+  "title": "Tom Clancy's The Division: New York Collapse",
+  "slug": "the-division-new-york-collapse",
+  "section": "works",
+  "summary": "Alex Irvine's licensed Division companion frames post-Black Friday New York through an in-universe urban-survival guide and a survivor's annotations, establishing April Kelleher's story before Broken Dawn.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "claims": [
+    {
+      "id": "new-york-collapse-official-survival-guide",
+      "text": "Ubisoft announced New York Collapse as Alex Irvine's official Division companion: an urban-survival field guide set against post-Black Friday New York City.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "ubisoft-new-york-collapse-announcement-2015"
+      ]
+    },
+    {
+      "id": "new-york-collapse-survivor-annotation-frame",
+      "text": "Its official published framing combines a pre-collapse guide with handwritten notes and accounts from a lone survivor investigating the collapse.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "ubisoft-new-york-collapse-announcement-2015"
+      ]
+    },
+    {
+      "id": "new-york-collapse-april-continuity",
+      "text": "Ubisoft later identifies April Kelleher as New York Collapse's protagonist and describes Broken Dawn as continuing her story into the period before The Division 2.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "ubisoft-broken-dawn-overview-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "An in-universe survival guide",
+      "paragraphs": [
+        {
+          "text": "New York Collapse is official Division transmedia, but it is neither a game mission nor a real-world emergency manual. Ubisoft presents it as a fictional urban-survival field-guide format rooted in the post-Black Friday New York setting.",
+          "claim_ids": [
+            "new-york-collapse-official-survival-guide"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "April Kelleher's starting point",
+      "paragraphs": [
+        {
+          "text": "The guide's annotated survivor frame makes it a useful source-specific entry point for April Kelleher. Ubisoft's later Broken Dawn material explicitly carries her story forward, while this archive retains only high-level, independently written continuity context rather than reproducing book pages, annotations or artifacts.",
+          "claim_ids": [
+            "new-york-collapse-survivor-annotation-frame",
+            "new-york-collapse-april-continuity"
+          ]
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "sequence": 20,
+    "label": "Early post-Black Friday New York — New York Collapse's survivor frame",
+    "precision": "sequence-only",
+    "source_ids": ["ubisoft-new-york-collapse-announcement-2015"]
+  },
+  "relations": [
+    {
+      "target_id": "person-april-kelleher",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "work-the-division-broken-dawn",
+      "relationship": "precedes"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Official Ubisoft material establishes the work, its high-level framing and its connection to April Kelleher. Public archive text is original summary only; it contains no prose, cover art, scans, OCR text, removable artifacts or downloadable edition."
+  }
+}

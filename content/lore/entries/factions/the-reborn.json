@@ -1,0 +1,116 @@
+{
+  "schema_version": 2,
+  "id": "faction-the-reborn",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "faction",
+  "title": "The Reborn",
+  "slug": "the-reborn",
+  "section": "factions",
+  "summary": "An anti-fossil-fuel extremist faction that drives Compromised's Gulf Coast refinery conflict.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "reborn-convoy-attacks",
+      "text": "Compromised identifies the Reborn as the force attacking southern food convoys and advancing on Gulf Coast refinery communities.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    },
+    {
+      "id": "reborn-fossil-fuel-aim",
+      "text": "The faction's broadcasts frame continuing fossil-fuel production as an offense that must be stopped, making the Groves refinery a primary target.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    },
+    {
+      "id": "reborn-rogue-supply",
+      "text": "The novel reveals that the Reborn's leadership accepted military material from rogue agents, who used the faction as part of a wider Gulf Coast manipulation.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    },
+    {
+      "id": "reborn-hunted-temporary-alliance",
+      "text": "Hunted depicts the Reborn joining a temporary, source-specific alignment with the Division against Black Tusk during the Albuquerque operation.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-hunted-2024"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Conflict over the supply network",
+      "paragraphs": [
+        {
+          "text": "The Reborn target the transport and refinery infrastructure that survivor communities rely on, presenting their campaign as a break with fossil-fuel dependence.",
+          "claim_ids": [
+            "reborn-convoy-attacks",
+            "reborn-fossil-fuel-aim"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Used by rogue agents",
+      "paragraphs": [
+        {
+          "text": "Compromised presents the faction as a manipulated actor rather than an isolated Gulf Coast force: rogue agents supply its leadership while steering the regional confrontation toward their own goals.",
+          "claim_ids": [
+            "reborn-rogue-supply"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "A temporary later alignment — major spoilers",
+      "paragraphs": [
+        {
+          "text": "Hunted later places the Reborn in a temporary alignment against Black Tusk. That source-specific response does not erase the faction's earlier Gulf Coast campaign, nor does it establish a permanent alliance with the Division or the Molossi.",
+          "claim_ids": [
+            "reborn-hunted-temporary-alliance"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-cassandra-raines",
+      "relationship": "leader-of"
+    },
+    {
+      "target_id": "faction-the-molossi",
+      "relationship": "opposed-to"
+    },
+    {
+      "target_id": "event-gulf-coast-refinery-crisis",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "work-the-division-compromised",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "event-hunted-albuquerque-operation",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "work-the-division-hunted",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "A licensed-novel faction record. The Hunted alignment is temporary, source-specific, and does not generalize the Reborn beyond these stories."
+  }
+}

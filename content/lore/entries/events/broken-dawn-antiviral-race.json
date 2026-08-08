@@ -1,0 +1,115 @@
+{
+  "schema_version": 2,
+  "id": "event-broken-dawn-antiviral-race",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "event",
+  "title": "Broken Dawn Antiviral Race",
+  "slug": "broken-dawn-antiviral-race",
+  "section": "events",
+  "summary": "The source-specific Broken Dawn pursuit of a possible broad-spectrum antiviral, with April Kelleher and Division Agents racing a Mantis-directed operation to reach the Ann Arbor research lead.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "broken-dawn-antiviral-premise",
+      "text": "Ubisoft's published premise identifies a possible broad-spectrum antiviral as the research lead at the center of Broken Dawn's Midwest journey.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "ubisoft-broken-dawn-overview-2019",
+        "ubisoft-division-books-broken-dawn-2019"
+      ]
+    },
+    {
+      "id": "broken-dawn-research-handoff",
+      "text": "In the novel's source-specific plot, the Ann Arbor research lead is threatened by the Mantis-directed operation while information and samples are moved toward Washington.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "penguin-broken-dawn-2019"
+      ]
+    },
+    {
+      "id": "broken-dawn-not-final-cure",
+      "text": "Broken Dawn's potential antiviral is a novel-specific research lead; its existence is not presented here as proof of a completed, franchise-wide cure.",
+      "assessment": "editorial-distinction",
+      "source_ids": [
+        "ubisoft-broken-dawn-overview-2019",
+        "penguin-broken-dawn-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A possible antiviral, not a finished cure",
+      "paragraphs": [
+        {
+          "text": "Broken Dawn's published premise centers on a potential broad-spectrum antiviral. The archive records that as a source-specific research lead and does not promote it into a confirmed cure for the wider franchise.",
+          "claim_ids": [
+            "broken-dawn-antiviral-premise",
+            "broken-dawn-not-final-cure"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The race for Ann Arbor",
+      "paragraphs": [
+        {
+          "text": "The licensed novel frames the Ann Arbor site as a contested research destination. April, Aurelio and their allies work to protect the lead while the Mantis-directed operation tries to control it; the resulting intelligence moves on to Washington.",
+          "claim_ids": [
+            "broken-dawn-research-handoff"
+          ]
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "sequence": 25,
+    "label": "Months between the first game and The Division 2 — Broken Dawn's antiviral pursuit",
+    "precision": "relative",
+    "source_ids": [
+      "ubisoft-broken-dawn-overview-2019"
+    ]
+  },
+  "relations": [
+    {
+      "target_id": "disease-green-poison",
+      "relationship": "follows"
+    },
+    {
+      "target_id": "person-april-kelleher",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "person-aurelio-diaz",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "person-ike-ronson",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "person-alani-kelso",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "location-ann-arbor-research-site-broken-dawn",
+      "relationship": "located-at"
+    },
+    {
+      "target_id": "work-the-division-broken-dawn",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "event-division-network-crisis",
+      "relationship": "precedes"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Licensed-novel event. The entry distinguishes a possible treatment lead from a completed cure and publishes no source prose."
+  }
+}

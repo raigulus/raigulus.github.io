@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "id": "org-strategic-homeland-division",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "organization",
+  "title": "Strategic Homeland Division",
+  "slug": "strategic-homeland-division",
+  "section": "organizations",
+  "summary": "The secret emergency organization commonly called the Division or SHD, whose trained civilian Agents are activated when national systems fail.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "aliases": ["SHD", "The Division", "Shade"],
+  "claims": [
+    {
+      "id": "shd-secret-training",
+      "text": "SHD Agents trained secretly for years and were activated after the Green Poison outbreak to help secure Manhattan.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "shd-civilian-agents",
+      "text": "Ubisoft describes Division Agents as a secret government cadre of highly trained civilians called upon in dire emergencies.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-division-glossary-2018"]
+    },
+    {
+      "id": "shd-fictional-annex",
+      "text": "Within the fictional setting, Ubisoft links SHD's creation to a classified annex of Directive 51; the public real-world directive does not establish SHD.",
+      "assessment": "confirmed-fictional-extension",
+      "source_ids": ["ubisoft-2019-division-roots", "white-house-2007-nspd51"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Role in the crisis",
+      "paragraphs": [
+        {
+          "text": "SHD is a last-resort emergency organization built around trained civilian Agents. The first game's crisis activates Agents after ordinary response systems begin to fail.",
+          "claim_ids": ["shd-secret-training", "shd-civilian-agents"]
+        }
+      ]
+    },
+    {
+      "heading": "Fictional legal foundation",
+      "paragraphs": [
+        {
+          "text": "The Division universe extends a real continuity directive with a fictional classified annex. That story device is not evidence of a real SHD organization.",
+          "claim_ids": ["shd-fictional-annex"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "real-world-directive-51", "relationship": "confirmed-influence"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "Core institutional claims are based on official Ubisoft material; later changes to SHD leadership remain outside this first-pass scope."
+  }
+}

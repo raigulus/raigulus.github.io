@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "id": "person-cassandra-raines",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "person",
+  "title": "Cassandra Raines",
+  "slug": "cassandra-raines",
+  "section": "people",
+  "summary": "The Reborn's public leader, known as the Voice, in Compromised's Gulf Coast conflict.",
+  "aliases": [
+    "The Voice"
+  ],
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "raines-leads-reborn",
+      "text": "Compromised identifies Cassandra Raines as the public leader of the Reborn and the speaker of the group's broadcasts.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    },
+    {
+      "id": "raines-groves-threat",
+      "text": "In a broadcast, Raines announces that the Reborn will target the oil refinery in Groves because the group regards continued fossil-fuel production as unacceptable.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    },
+    {
+      "id": "raines-marsh-island-death",
+      "text": "The novel depicts Raines being fatally betrayed during the rogue arms rendezvous on Marsh Island.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "aconyte-division-compromised-2022"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The Voice of the Reborn",
+      "paragraphs": [
+        {
+          "text": "Raines presents herself as the Reborn's public voice and turns the Groves refinery into a symbolic target for the faction's anti-fossil-fuel campaign.",
+          "claim_ids": [
+            "raines-leads-reborn",
+            "raines-groves-threat"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rogue betrayal",
+      "paragraphs": [
+        {
+          "text": "At Marsh Island, the relationship that supplied the Reborn with military material collapses violently. The novel treats Raines's death as the turning point that exposes the rogue network's manipulation.",
+          "claim_ids": [
+            "raines-marsh-island-death"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "faction-the-reborn",
+      "relationship": "leader-of"
+    },
+    {
+      "target_id": "location-marsh-island",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "event-gulf-coast-refinery-crisis",
+      "relationship": "involves"
+    },
+    {
+      "target_id": "work-the-division-compromised",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "The character and outcome are sourced solely to the licensed novel and are marked major spoiler."
+  }
+}

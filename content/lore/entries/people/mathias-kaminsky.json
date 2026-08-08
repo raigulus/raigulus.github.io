@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "id": "person-mathias-kaminsky",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "person",
+  "title": "Mathias Kaminsky",
+  "slug": "mathias-kaminsky",
+  "section": "people",
+  "summary": "Caleb Dunne's Division partner in Extremis Malis, killed by Mantis during the opening Chinatown warehouse encounter.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "kaminsky-caleb-partner",
+      "text": "Extremis Malis presents Mathias Kaminsky as Caleb Dunne's Division partner in the Chinatown warehouse operation.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    },
+    {
+      "id": "kaminsky-mantis-killing",
+      "text": "Mantis kills Kaminsky after the warehouse confrontation, which makes the pursuit of Mantis the graphic novel's immediate personal stake for Caleb.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The opening loss",
+      "paragraphs": [
+        {
+          "text": "Kaminsky's death is the event that turns the New York lead into Caleb's personal pursuit of Mantis. The archive records it as a major spoiler because the official edition uses it to launch the full prequel route.",
+          "claim_ids": [
+            "kaminsky-caleb-partner",
+            "kaminsky-mantis-killing"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "org-strategic-homeland-division",
+      "relationship": "member-of"
+    },
+    {
+      "target_id": "person-caleb-dunne",
+      "relationship": "allied-with"
+    },
+    {
+      "target_id": "person-mantis-extremis-malis",
+      "relationship": "opposed-to"
+    },
+    {
+      "target_id": "work-the-division-extremis-malis",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Outcome is a major plot spoiler in the licensed graphic novel."
+  }
+}

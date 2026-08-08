@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "id": "location-independence-hall-extremis-malis",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "location",
+  "title": "Independence Hall (Extremis Malis)",
+  "slug": "independence-hall-extremis-malis",
+  "section": "locations",
+  "summary": "The Philadelphia historical-site setting used by Extremis Malis as a Founders weapons cache and the key evidence location in Caleb Dunne and Heather Ward's investigation.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "independence-hall-founders-cache",
+      "text": "Extremis Malis depicts Independence Hall as a Founders cache where Caleb Dunne and Heather Ward find equipment linking the group to Mantis's operation.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    },
+    {
+      "id": "independence-hall-satcom-evidence",
+      "text": "The Division team recovers satellite-communications evidence at the location, shifting the investigation from the Founders toward the wider East Coast network.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "dark-horse-extremis-malis-2019"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Evidence cache",
+      "paragraphs": [
+        {
+          "text": "In the graphic novel's fictional setting, Independence Hall functions as both a weapons cache and an intelligence lead. It is included for its source-specific lore role, not as a depiction of the real site's current condition or operations.",
+          "claim_ids": [
+            "independence-hall-founders-cache",
+            "independence-hall-satcom-evidence"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "faction-the-founders",
+      "relationship": "located-at"
+    },
+    {
+      "target_id": "person-caleb-dunne",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "person-heather-ward",
+      "relationship": "appears-in"
+    },
+    {
+      "target_id": "work-the-division-extremis-malis",
+      "relationship": "appears-in"
+    }
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Real-world place name is used solely to describe the licensed fiction's setting; no reproduced art or real-world operational claim is included."
+  }
+}

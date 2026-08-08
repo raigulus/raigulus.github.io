@@ -1,0 +1,79 @@
+name: Collectible or mission evidence
+description: Submit a traceable in-game capture for the Division lore archive.
+title: "[Lore evidence]: "
+labels:
+  - lore
+  - needs-review
+body:
+  - type: dropdown
+    id: record_type
+    attributes:
+      label: Record type
+      options:
+        - Audio collectible or comm
+        - Text collectible
+        - Mission or objective
+        - Person or speaker
+        - Faction or organization
+        - Location
+        - Other lore evidence
+    validations:
+      required: true
+  - type: input
+    id: game_build
+    attributes:
+      label: Game, platform and build
+      description: Example — The Division 2, PC, TUY8S2.1.
+    validations:
+      required: true
+  - type: input
+    id: interface_language
+    attributes:
+      label: Interface and audio language
+      description: Record both when they differ.
+    validations:
+      required: true
+  - type: input
+    id: in_game_identity
+    attributes:
+      label: Exact in-game title and collection
+      description: Copy the category, collection and item title exactly as displayed.
+    validations:
+      required: true
+  - type: textarea
+    id: locator
+    attributes:
+      label: Evidence locator
+      description: Give the menu position plus map district, mission, room, checkpoint or timestamp needed to reproduce the observation.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots and private asset reference
+      description: Attach menu or locator screenshots. For full audio/video, provide only the private handoff reference; do not upload complete copyrighted media or scripts to this public issue.
+    validations:
+      required: true
+  - type: input
+    id: speakers
+    attributes:
+      label: Speakers shown or heard
+      description: Use unknown where the game does not identify a speaker.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What the evidence establishes
+      description: Summarize in your own words and separate direct observation from interpretation. Do not paste a full transcript.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Evidence checks
+      options:
+        - label: I recorded the exact build, language and in-game locator.
+          required: true
+        - label: I have not uploaded a complete copyrighted transcript, audio file or video to this public issue.
+          required: true
+        - label: I marked uncertain names, speakers and interpretations as uncertain.
+          required: true

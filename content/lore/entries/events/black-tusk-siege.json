@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "id": "event-black-tusk-siege",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "event",
+  "title": "Black Tusk Siege of Washington",
+  "slug": "black-tusk-siege-of-washington",
+  "section": "events",
+  "summary": "The endgame invasion in which Black Tusk enters Washington, places the city under siege and reveals its campaign against SHD.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "siege-after-capitol",
+      "text": "Black Tusk enters Washington after Agents restore the network, rescue President Ellis and retake Capitol Hill from the True Sons.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "siege-city",
+      "text": "The private military group places Washington under siege.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    },
+    {
+      "id": "siege-antiviral",
+      "text": "After confronting Black Tusk at Tidal Basin, Division Agents recover the antivirals taken during the campaign.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-story-so-far-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Strategic reversal",
+      "paragraphs": [
+        {
+          "text": "The siege begins when the opening campaign appears close to victory. Black Tusk's arrival reveals that the network failure and struggle over the antiviral belong to a broader national campaign.",
+          "claim_ids": ["siege-after-capitol", "siege-city", "siege-antiviral"]
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "sequence": 40,
+    "label": "After Capitol Hill is retaken — Black Tusk invades Washington",
+    "precision": "relative",
+    "source_ids": ["ubisoft-story-so-far-2020"]
+  },
+  "relations": [
+    {"target_id": "event-division-network-crisis", "relationship": "follows"},
+    {"target_id": "faction-black-tusk", "relationship": "involves"},
+    {"target_id": "location-washington-dc", "relationship": "located-at"},
+    {"target_id": "event-lower-manhattan-biological-attack", "relationship": "precedes"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "This event page covers the official 2020 recap and does not yet enumerate every invaded mission."
+  }
+}

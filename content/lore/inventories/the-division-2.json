@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "the-division-2-lore-inventory",
+  "title": "The Division 2 Lore Coverage",
+  "game": "the-division-2",
+  "inventory_status": "in-progress",
+  "last_audited": "2026-07-28",
+  "notes": "Expected totals remain intentionally unknown until the in-game menus and release-by-release source inventory are captured and reconciled.",
+  "categories": [
+    {
+      "id": "td2-collectibles",
+      "label": "Lore-bearing collectibles",
+      "expected_count": null,
+      "captured_count": 0,
+      "source_reviewed_count": 0,
+      "human_reviewed_count": 0,
+      "published_count": 0,
+      "status": "inventory-pending",
+      "notes": "Category and set totals will be added only after direct in-game inventory evidence is available."
+    },
+    {
+      "id": "td2-people",
+      "label": "People",
+      "expected_count": null,
+      "captured_count": 14,
+      "source_reviewed_count": 14,
+      "human_reviewed_count": 0,
+      "published_count": 0,
+      "status": "in-progress",
+      "notes": "Fourteen core people now have source-reviewed overview records across the outbreak, Warlords of New York, the campaign and early Episodes; no completeness claim has been made."
+    },
+    {
+      "id": "td2-factions",
+      "label": "Factions and organizations",
+      "expected_count": null,
+      "captured_count": 10,
+      "source_reviewed_count": 10,
+      "human_reviewed_count": 0,
+      "published_count": 0,
+      "status": "in-progress",
+      "notes": "Eight factions, SHD and the JTF now have source-reviewed overview records; leadership and subgroup coverage remains incomplete."
+    },
+    {
+      "id": "td2-locations",
+      "label": "Locations",
+      "expected_count": null,
+      "captured_count": 10,
+      "source_reviewed_count": 10,
+      "human_reviewed_count": 0,
+      "published_count": 0,
+      "status": "in-progress",
+      "notes": "Ten major locations in The Division 2's narrative and its first-game context have overview records; district and landmark coverage remains incomplete."
+    },
+    {
+      "id": "td2-missions-events",
+      "label": "Missions and events",
+      "expected_count": null,
+      "captured_count": 18,
+      "source_reviewed_count": 18,
+      "human_reviewed_count": 0,
+      "published_count": 0,
+      "status": "in-progress",
+      "notes": "Core events, officially positioned Year One mission groups and a clearly labelled Warlords of New York direct-capture route now form a sourced relative timeline; base-campaign and later seasonal mission coverage remains incomplete."
+    },
+    {
+      "id": "td2-diseases-concepts",
+      "label": "Diseases and concepts",
+      "expected_count": null,
+      "captured_count": 1,
+      "source_reviewed_count": 1,
+      "human_reviewed_count": 0,
+      "published_count": 0,
+      "status": "in-progress",
+      "notes": "Green Poison has a foundational overview; antiviral, variants and technical concepts remain separate future records."
+    }
+  ]
+}

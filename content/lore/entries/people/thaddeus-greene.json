@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "id": "person-thaddeus-greene",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-transmedia",
+  "type": "person",
+  "title": "Thaddeus Greene",
+  "slug": "thaddeus-greene",
+  "section": "people",
+  "summary": "A Hunted character identified by ISAC at the novel's climax as the masked Hunter who attacks Brenda Wells's cell.",
+  "canon_status": "official-transmedia",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "greene-hunted-hunter-identification",
+      "text": "Hunted identifies the masked combatant who attacks Brenda Wells's cell as Thaddeus Greene in an ISAC result, while Greene's status is classified.",
+      "assessment": "confirmed",
+      "source_ids": ["aconyte-division-hunted-2024"]
+    },
+    {
+      "id": "greene-no-general-hunter-origin",
+      "text": "This one novel identification does not establish a universal origin, command structure or identity rule for Hunters elsewhere in The Division.",
+      "assessment": "unknown",
+      "source_ids": ["aconyte-division-hunted-2024"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A source-specific Hunter identification — major spoilers",
+      "paragraphs": [
+        {
+          "text": "At Hunted's climax, ISAC identifies the masked attacker as Thaddeus Greene and marks his status classified. The archive records that as a source-specific identification rather than flattening the mystery of every Hunter into one answer.",
+          "claim_ids": ["greene-hunted-hunter-identification", "greene-no-general-hunter-origin"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "person-brenda-wells", "relationship": "opposed-to"},
+    {"target_id": "event-hunted-albuquerque-operation", "relationship": "involves"},
+    {"target_id": "work-the-division-hunted", "relationship": "appears-in"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-28",
+    "human_reviewed": false,
+    "notes": "Major-spoiler licensed-novel record. It records one named Hunter appearance and explicitly leaves broader Hunter origin and organization unresolved."
+  }
+}

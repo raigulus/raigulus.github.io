@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "id": "faction-cleaners",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "faction",
+  "title": "Cleaners",
+  "slug": "cleaners",
+  "section": "factions",
+  "summary": "A faction formed from sanitation workers and first responders who attempt to eradicate infection through fire.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "cleaners-origin",
+      "text": "The Cleaners are former sanitation workers and first responders.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-factions-2020"]
+    },
+    {
+      "id": "cleaners-fire-doctrine",
+      "text": "Their original leader Joe Ferro adopted fire as the faction's method for eliminating Green Poison.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-factions-2020"]
+    },
+    {
+      "id": "cleaners-wony-regroup",
+      "text": "By Warlords of New York, the Cleaners have regrouped with new recruits under Vivian Conley, one of Aaron Keener's lieutenants.",
+      "assessment": "confirmed",
+      "source_ids": ["ubisoft-wony-factions-2020"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Origin and doctrine",
+      "paragraphs": [
+        {
+          "text": "The Cleaners turn public-service backgrounds into an extreme containment ideology, treating fire as the answer to infection.",
+          "claim_ids": ["cleaners-origin", "cleaners-fire-doctrine"]
+        }
+      ]
+    },
+    {
+      "heading": "Warlords reorganization",
+      "paragraphs": [
+        {
+          "text": "The faction survives the loss of its original leader and reappears in Lower Manhattan with new leadership and recruits.",
+          "claim_ids": ["cleaners-wony-regroup"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {"target_id": "org-strategic-homeland-division", "relationship": "opposed-to"},
+    {"target_id": "location-lower-manhattan", "relationship": "located-at"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-19",
+    "human_reviewed": false,
+    "notes": "This page covers the official Warlords of New York faction recap and not every later seasonal change."
+  }
+}

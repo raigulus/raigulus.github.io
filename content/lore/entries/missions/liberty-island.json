@@ -1,0 +1,54 @@
+{
+  "schema_version": 2,
+  "id": "mission-liberty-island",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "mission",
+  "title": "Liberty Island",
+  "slug": "liberty-island",
+  "section": "missions",
+  "summary": "The final Warlords of New York mission segment in the Raigulus direct capture, culminating in the Aaron Keener encounter.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "major",
+  "claims": [
+    {
+      "id": "liberty-island-wony-capture",
+      "text": "The Raigulus direct capture labels Liberty Island as the final recorded Warlords of New York mission segment.",
+      "assessment": "confirmed",
+      "source_ids": ["raigulus-wony-hardcore-run-2026"]
+    },
+    {
+      "id": "liberty-island-keener-encounter",
+      "text": "The same chaptered capture records the Aaron Keener encounter and ending sequence after the Liberty Island segment.",
+      "assessment": "confirmed",
+      "source_ids": ["raigulus-wony-hardcore-run-2026"]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Final recorded mission",
+      "paragraphs": [
+        {
+          "text": "The archive's direct capture places Liberty Island at the end of the Warlords run and records the Aaron Keener encounter that follows. This record limits itself to the visibly captured sequence.",
+          "claim_ids": ["liberty-island-wony-capture", "liberty-island-keener-encounter"]
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "sequence": 62,
+    "label": "End of the recorded Warlords run — Liberty Island and the Keener encounter",
+    "precision": "sequence-only",
+    "source_ids": ["raigulus-wony-hardcore-run-2026"]
+  },
+  "relations": [
+    {"target_id": "person-aaron-keener", "relationship": "involves"}
+  ],
+  "verification": {
+    "status": "source-reviewed",
+    "last_reviewed": "2026-07-27",
+    "human_reviewed": false,
+    "notes": "The entry identifies the captured final segment only. Later seasonal developments and wider narrative consequences require separate source review."
+  }
+}
