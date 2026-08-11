@@ -34,10 +34,56 @@
     }
   ],
   "last_updated": "2026-08-11 17:14",
-  "last_checked": "2026-08-11 21:25 UTC",
-  "parsed_at": "2026-08-11T21:25:22.420267+00:00",
+  "last_checked": "2026-08-11 21:57 UTC",
+  "parsed_at": "2026-08-11T21:57:14.010451+00:00",
   "status": "ok",
-  "fetched_at": "2026-08-11T21:25:22.420267+00:00",
+  "fetched_at": "2026-08-11T21:57:14.010451+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Current dated loot snapshot is available."
+  "snapshot_note": "Current dated loot snapshot is available.",
+  "vendor_highlights": [
+    {
+      "vendor": "Cassie",
+      "item": "Caesar's Guard",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Hunter-Killer",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "White House",
+      "item": "Axel",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "Caesar's Guard",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "DZ West",
+      "item": "Firm Handshake",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Burn Out - FAMAS 2010",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Shield Splinterer - F2000",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Huntsman - FAMAS 2010",
+      "note": "Named weapon"
+    }
+  ],
+  "vendor_highlights_status": "ok",
+  "vendor_highlights_checked": "2026-08-11 21:57 UTC",
+  "vendor_highlights_date": "2026-08-04",
+  "vendor_highlights_note": "Current dated vendor highlights are available."
 }
