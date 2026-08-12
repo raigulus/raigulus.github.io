@@ -1,43 +1,48 @@
 {
-  "date": "2026-08-11",
+  "date": "2026-08-12",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Wall Street",
-      "loot": "Walker, Harris & Co"
+      "loot": "Tip of the Spear"
     },
     {
       "mission": "Roosevelt Island",
-      "loot": "Pistol"
+      "loot": "Murakami Industries"
     },
     {
       "mission": "DCD Headquarters",
-      "loot": "Tipping Scales"
+      "loot": "Core Strength"
     },
     {
       "mission": "Air & Space Museum",
-      "loot": "Golan Gear Ltd"
+      "loot": "Ongoing Directive"
     },
     {
       "mission": "District Union Arena",
-      "loot": "5.11 Tactical"
+      "loot": "Gila Guard"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Shotguns"
+      "item": "Pistols"
     },
     {
       "type": "Gear",
-      "item": "Gloves"
+      "item": "Backpacks"
     }
   ],
-  "last_updated": "2026-08-11 17:14",
-  "last_checked": "2026-08-12 06:55 UTC",
-  "parsed_at": "2026-08-12T06:55:34.446258+00:00",
-  "status": "pending",
-  "fetched_at": "2026-08-12T06:55:34.446258+00:00",
+  "last_updated": "2026-08-12 10:01",
+  "last_checked": "2026-08-12 08:26 UTC",
+  "parsed_at": "2026-08-12T08:26:26.513964+00:00",
+  "status": "ok",
+  "fetched_at": "2026-08-12T08:26:26.513964+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot."
+  "snapshot_note": "Current dated loot snapshot is available.",
+  "vendor_highlights": [],
+  "vendor_highlights_status": "pending",
+  "vendor_highlights_checked": "2026-08-12 08:26 UTC",
+  "vendor_highlights_date": "",
+  "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
