@@ -40,6 +40,10 @@
         "label": "Bosses"
       },
       {
+        "slug": "incursions-raids",
+        "label": "Incursions & Raids"
+      },
+      {
         "slug": "pvp",
         "label": "PvP"
       }

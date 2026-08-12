@@ -4,14 +4,14 @@
     <title>Raigulus Division 2 Video Feed</title>
     <link>https://raigulus.github.io/division-2/</link>
     <atom:link href="https://raigulus.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <description>The latest Raigulus Division 2 walkthroughs, PvP clips, build tests, speedrun attempts, manhunts, boss guides, and no commentary gameplay.</description>
+    <description>The latest Raigulus Division 2 walkthroughs, Incursion and raid clears, PvP clips, build tests, manhunts, boss guides, and gameplay.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 08 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>The Division 2 Builds and Build Tests</title>
       <link>https://raigulus.github.io/division-2/builds/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/builds/</guid>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
       <description>Video-backed Division 2 build tests for Bluescreen, Tipping Scales, Whiplash, Regulus, Rage Harvest, Toxic DZ, and Tier 10.</description>
       <category>build tests</category>
     </item>
@@ -19,7 +19,7 @@
       <title>Division 2 Loot Today, Targeted Loot &amp; Farming Guides</title>
       <link>https://raigulus.github.io/division-2/loot/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/loot/</guid>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
       <description>Division 2 loot today, targeted loot, loot map context, farming routes, and Raigulus videos.</description>
       <category>loot</category>
     </item>
@@ -27,7 +27,7 @@
       <title>Division 2 Server Status, Maintenance &amp; Delta-03</title>
       <link>https://raigulus.github.io/division-2/server-status/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/server-status/</guid>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
       <description>Unofficial Division 2 server status tracker for maintenance, outage, Delta-03, official source links, and Raigulus guides.</description>
       <category>server status</category>
     </item>
@@ -35,7 +35,7 @@
       <title>Division 2 Escalation Loot Today &amp; Tier 10 Guide</title>
       <link>https://raigulus.github.io/division-2/escalation/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/escalation/</guid>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
       <description>Division 2 Escalation loot today, Tier 10 matchmaking notes, vendor caches, and Raigulus videos.</description>
       <category>escalation</category>
     </item>
@@ -43,9 +43,41 @@
       <title>Division 2 Prototype Gear &amp; Escalation Vendor Guide</title>
       <link>https://raigulus.github.io/division-2/prototype-gear/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/prototype-gear/</guid>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
       <description>Division 2 Prototype Gear Cache, Escalation vendor, and gear cache planning notes.</description>
       <category>prototype gear</category>
+    </item>
+    <item>
+      <title>The Division 2 Incursions &amp; Raids - Full Clears and Guides</title>
+      <link>https://raigulus.github.io/division-2/incursions-raids/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/incursions-raids/</guid>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Broken Rain Day One full-clear progression, exact boss chapters, Incursion mechanics, and Operation Iron Horse raid archives.</description>
+      <category>incursions and raids</category>
+    </item>
+    <item>
+      <title>The Division 2 Broken Rain Incursion - We Cleared It Blind on Day One [4K60]</title>
+      <link>https://raigulus.github.io/division-2/videos/the-division-2-broken-rain-incursion-we-cleared-it-blind-on-day-one-4k60/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-broken-rain-incursion-we-cleared-it-blind-on-day-one-4k60/</guid>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
+      <description>A complete 4K60 Broken Rain Incursion blind Day One clear with live team comms, exact chapters, boss progression, and the reward chest.</description>
+      <category>raid/incursion</category>
+    </item>
+    <item>
+      <title>The Division 2 Into the Dark Scout 8 Complete Guide | East Mall [Y8S2]</title>
+      <link>https://raigulus.github.io/division-2/videos/the-division-2-into-the-dark-scout-8-complete-guide-east-mall-y8s2/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-into-the-dark-scout-8-complete-guide-east-mall-y8s2/</guid>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
+      <description>The Division 2 Into the Dark Y8S2 Scout 8 East Mall guide covering every objective in one continuous Heroic 4K60 route.</description>
+      <category>manhunt</category>
+    </item>
+    <item>
+      <title>They Had a 4-Stack. We Still Took the Win | The Division 2 Conflict</title>
+      <link>https://raigulus.github.io/division-2/videos/they-had-a-4-stack-we-still-took-the-win-the-division-2-conflict/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/they-had-a-4-stack-we-still-took-the-win-the-division-2-conflict/</guid>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 GMT</pubDate>
+      <description>A full 2021 Division 2 Conflict archive match: BLK plus one random against a coordinated TMA 4-stack, ending in a win.</description>
+      <category>pvp/archive clip</category>
     </item>
     <item>
       <title>The Division 2 Roosevelt Island Tier 10 Solo Flawless | Tipping Scales + Whiplash [2026]</title>
@@ -54,6 +86,14 @@
       <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
       <description>The Division 2 Tipping Scales Whiplash LMG build for non-stop shooting, Tier 6 gameplay, and reduced reload downtime.</description>
       <category>build/showcase</category>
+    </item>
+    <item>
+      <title>6-Kill Conflict Streak | The Division 2 PvP #shorts</title>
+      <link>https://raigulus.github.io/division-2/videos/6-kill-conflict-streak-the-division-2-pvp-shorts/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/6-kill-conflict-streak-the-division-2-pvp-shorts/</guid>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Six kills from the BLK vs MVP Division 2 Conflict match in one short PvP streak, with the full archived match available separately.</description>
+      <category>pvp/archive clip</category>
     </item>
     <item>
       <title>The Division 2 Conflict Gameplay | BLK vs MVP 3+randomv4 | Archive Clip</title>
@@ -334,38 +374,6 @@
       <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
       <description>The Division 2 Coney Island Amusement Park Tier 10 Escalation run with full gameplay, enemy waves, objectives, and loot checks.</description>
       <category>escalation run</category>
-    </item>
-    <item>
-      <title>The Division 2 Tier 10 Escalation | 117 Kills with Rage Harvest [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-tier-10-escalation-117-kills-with-rage-harvest/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-tier-10-escalation-117-kills-with-rage-harvest/</guid>
-      <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Tier 10 Escalation run with 117 kills during Rage Harvest, testing whether the event is OP or painful.</description>
-      <category>build/showcase</category>
-    </item>
-    <item>
-      <title>The Division 2 Dark Zone Surge Starts July 7 | DZ XP #shorts</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-dark-zone-surge-starts-july-7-dz-xp-shorts/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-dark-zone-surge-starts-july-7-dz-xp-shorts/</guid>
-      <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Dark Zone Surge runs July 7-14, 2026 with 3x DZ XP, double DZ Currency, and XP protection.</description>
-      <category>short/tip</category>
-    </item>
-    <item>
-      <title>Raigulus vs uD1eByHunter | The Division 2 Dark Zone Door 1v1 [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/raigulus-vs-ud1ebyhunter-the-division-2-dark-zone-door-1v1/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/raigulus-vs-ud1ebyhunter-the-division-2-dark-zone-door-1v1/</guid>
-      <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 friendly Dark Zone door 1v1 vs uD1eByHunter with Regulus shots, trades, and no-rules DZ PvP.</description>
-      <category>pvp/archive clip</category>
-    </item>
-    <item>
-      <title>The Division 2 DARPA Tier 10 Escalation | 6M Rage Harvest Hits [2026]</title>
-      <link>https://raigulus.github.io/division-2/videos/the-division-2-darpa-tier-10-escalation-6m-rage-harvest-hits/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-darpa-tier-10-escalation-6m-rage-harvest-hits/</guid>
-      <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 DARPA Tier 10 Escalation run with Rage Harvest, Bluescreen, Tipping Scales, and 6M per-bullet damage.</description>
-      <category>build/showcase</category>
     </item>
   </channel>
 </rss>

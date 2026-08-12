@@ -1,6 +1,6 @@
 # Raigulus
 
-> Raigulus publishes The Division 2 no commentary walkthroughs, mission and build guides, plus Conflict PvP, Dark Zone, Regulus, and gameplay clips.
+> Raigulus publishes The Division 2 walkthroughs, Broken Rain Incursion and raid clears, build guides, Conflict PvP, Dark Zone, Regulus, and gameplay clips.
 
 The canonical website is https://raigulus.github.io. The YouTube handle is @raigulus.
 
@@ -21,6 +21,7 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [Legendary Mission Walkthroughs](https://raigulus.github.io/division-2/legendary/): District Union Arena, Capitol Building, Roosevelt Island, and Manning National Zoo legendary runs.
 - [Manhunt Walkthroughs](https://raigulus.github.io/division-2/manhunts/): Manhunt routes and target guides.
 - [Boss Guides](https://raigulus.github.io/division-2/bosses/): Boss encounters and secret boss triggers.
+- [Incursions and Raids](https://raigulus.github.io/division-2/incursions-raids/): Broken Rain Day One full clear, exact boss chapters, Incursion mechanics, and Iron Horse raid archives.
 - [PvP & Conflict Archive](https://raigulus.github.io/division-2/pvp/): Conflict PvP matches, Regulus clips, creator fights, and nostalgia archive videos.
 - [RSS Feed](https://raigulus.github.io/feed.xml): Machine-readable feed for blog directories and feed readers.
 
@@ -37,16 +38,16 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 
 ## Top Guides
 
-- [The Division 2 District Union Arena Legendary Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-district-union-arena-legendary-walkthrough-no-commentary/): The Division 2 District Union Arena Legendary walkthrough with no commentary.
-- [The Division 2 Capitol Building Legendary Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-capitol-building-legendary-walkthrough-no-commentary/): The Division 2 Capitol Building Legendary walkthrough with no commentary.
-- [The Division 2 Roosevelt Island Legendary Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-roosevelt-island-legendary-walkthrough-no-commentary/): The Division 2 Roosevelt Island Legendary walkthrough with no commentary.
-- [The Division 2 Manning National Zoo Legendary Stronghold Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-manning-national-zoo-legendary-stronghold-walkthrough-no-commentary/): The Division 2 Manning National Zoo Legendary stronghold walkthrough with no commentary.
-- [The Division 2 Grand Washington Hotel Invaded Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-grand-washington-hotel-invaded-walkthrough-no-commentary/): The Division 2 Grand Washington Hotel Invaded walkthrough with no commentary.
-- [The Division 2 Air and Space Museum Invaded Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-air-and-space-museum-invaded-walkthrough-no-commentary/): The Division 2 Air and Space Museum Invaded walkthrough with no commentary.
-- [The Division 2 Bank Headquarters Invaded Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-bank-headquarters-invaded-walkthrough-no-commentary/): The Division 2 Bank Headquarters Invaded walkthrough with no commentary.
-- [The Division 2 Jefferson Plaza Invaded Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-jefferson-plaza-invaded-walkthrough-no-commentary/): The Division 2 Jefferson Plaza Invaded walkthrough with no commentary.
-- [The Division 2 DCD Headquarters Invaded Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-dcd-headquarters-invaded-walkthrough-no-commentary/): The Division 2 DCD Headquarters Invaded walkthrough with no commentary.
-- [The Division 2 Camp White Oak Invaded Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-camp-white-oak-invaded-walkthrough-no-commentary/): The Division 2 Camp White Oak Invaded walkthrough with no commentary.
+- [The Division 2 Broken Rain Incursion - We Cleared It Blind on Day One [4K60]](https://raigulus.github.io/division-2/videos/the-division-2-broken-rain-incursion-we-cleared-it-blind-on-day-one-4k60/): A complete 4K60 Broken Rain Incursion blind Day One clear with live team comms, exact chapters, boss progression, and the reward chest.
+- [The Division 2 Into the Dark Scout 8 Complete Guide | East Mall [Y8S2]](https://raigulus.github.io/division-2/videos/the-division-2-into-the-dark-scout-8-complete-guide-east-mall-y8s2/): The Division 2 Into the Dark Y8S2 Scout 8 East Mall guide covering every objective in one continuous Heroic 4K60 route.
+- [They Had a 4-Stack. We Still Took the Win | The Division 2 Conflict](https://raigulus.github.io/division-2/videos/they-had-a-4-stack-we-still-took-the-win-the-division-2-conflict/): A full 2021 Division 2 Conflict archive match: BLK plus one random against a coordinated TMA 4-stack, ending in a win.
+- [The Division 2 Roosevelt Island Tier 10 Solo Flawless | Tipping Scales + Whiplash [2026]](https://raigulus.github.io/division-2/videos/the-division-2-roosevelt-island-tier-10-solo-flawless-tipping-scales-whiplash/): The Division 2 Tipping Scales Whiplash LMG build for non-stop shooting, Tier 6 gameplay, and reduced reload downtime.
+- [6-Kill Conflict Streak | The Division 2 PvP #shorts](https://raigulus.github.io/division-2/videos/6-kill-conflict-streak-the-division-2-pvp-shorts/): Six kills from the BLK vs MVP Division 2 Conflict match in one short PvP streak, with the full archived match available separately.
+- [The Division 2 Conflict Gameplay | BLK vs MVP 3+randomv4 | Archive Clip](https://raigulus.github.io/division-2/videos/the-division-2-conflict-gameplay-blk-vs-mvp-3-randomv4-archive-clip/): The Division 2 archive gameplay clip kept for PvP, Conflict, and nostalgia reference.
+- [The Division 2 Tipping Scales Whiplash LMG Build | Non-Stop Shooting [2026]](https://raigulus.github.io/division-2/videos/the-division-2-tipping-scales-whiplash-lmg-build-non-stop-shooting-2/): The Division 2 Tipping Scales Whiplash LMG build for non-stop shooting, Tier 6 gameplay, and reduced reload downtime.
+- [The Division 2 Eagle Bearer Headshot Build | Conflict Match Win | Archive Clip](https://raigulus.github.io/division-2/videos/the-division-2-eagle-bearer-headshot-build-conflict-match-win-archive-clip/): The Division 2 archive gameplay clip kept for PvP, Conflict, and nostalgia reference.
+- [The Division 2 Tipping Scales Whiplash LMG Build | Non-Stop Shooting [2026]](https://raigulus.github.io/division-2/videos/the-division-2-tipping-scales-whiplash-lmg-build-non-stop-shooting-3/): The Division 2 Tipping Scales Whiplash LMG build for non-stop shooting, Tier 6 gameplay, and reduced reload downtime.
+- [The Division 2 Into the Dark Week 7 Scout 7 Manhunt Walkthrough | No Commentary [2026]](https://raigulus.github.io/division-2/videos/the-division-2-into-the-dark-week-7-scout-7-manhunt-walkthrough-no-commentary/): The Division 2 Into the Dark Week 7 Scout 7 manhunt walkthrough with no commentary.
 
 ## SameAs
 
