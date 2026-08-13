@@ -1,43 +1,89 @@
 {
-  "date": "2026-08-12",
+  "date": "2026-08-13",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Wall Street",
-      "loot": "Tip of the Spear"
+      "loot": "Golan Gear Ltd"
     },
     {
       "mission": "Roosevelt Island",
-      "loot": "Murakami Industries"
+      "loot": "Measured Assembly"
     },
     {
       "mission": "DCD Headquarters",
-      "loot": "Core Strength"
+      "loot": "Petrov Defense Group"
     },
     {
       "mission": "Air & Space Museum",
-      "loot": "Ongoing Directive"
+      "loot": "Habsburg Guard"
     },
     {
       "mission": "District Union Arena",
-      "loot": "Gila Guard"
+      "loot": "Holster"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Pistols"
+      "item": "Rifles"
     },
     {
       "type": "Gear",
-      "item": "Backpacks"
+      "item": "Holsters"
     }
   ],
-  "last_updated": "2026-08-12 10:01",
-  "last_checked": "2026-08-13 07:00 UTC",
-  "parsed_at": "2026-08-13T07:00:11.963341+00:00",
-  "status": "pending",
-  "fetched_at": "2026-08-13T07:00:11.963341+00:00",
+  "last_updated": "2026-08-13 10:17",
+  "last_checked": "2026-08-13 08:38 UTC",
+  "parsed_at": "2026-08-13T08:38:20.361321+00:00",
+  "status": "ok",
+  "fetched_at": "2026-08-13T08:38:20.361321+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot."
+  "snapshot_note": "Current dated loot snapshot is available.",
+  "vendor_highlights": [
+    {
+      "vendor": "White House",
+      "item": "Backbone",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Clan",
+      "item": "Bober",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "Zero F's",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "The Castle",
+      "item": "Spot-on",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "DZ South",
+      "item": "Matador",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Zero F's",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Hunter-Killer",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "Thorn - SPAS-12",
+      "note": "Named weapon"
+    }
+  ],
+  "vendor_highlights_status": "ok",
+  "vendor_highlights_checked": "2026-08-13 08:38 UTC",
+  "vendor_highlights_date": "2026-08-13",
+  "vendor_highlights_note": "Current dated vendor highlights are available."
 }
