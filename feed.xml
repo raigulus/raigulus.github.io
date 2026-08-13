@@ -6,55 +6,7 @@
     <atom:link href="https://raigulus.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>The latest Raigulus Division 2 walkthroughs, Incursion and raid clears, PvP clips, build tests, manhunts, boss guides, and gameplay.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Aug 2026 00:00:00 GMT</lastBuildDate>
-    <item>
-      <title>The Division 2 Builds and Build Tests</title>
-      <link>https://raigulus.github.io/division-2/builds/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/builds/</guid>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
-      <description>Video-backed Division 2 build tests for Bluescreen, Tipping Scales, Whiplash, Regulus, Rage Harvest, Toxic DZ, and Tier 10.</description>
-      <category>build tests</category>
-    </item>
-    <item>
-      <title>Division 2 Loot Today, Targeted Loot &amp; Farming Guides</title>
-      <link>https://raigulus.github.io/division-2/loot/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/loot/</guid>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
-      <description>Division 2 loot today, targeted loot, loot map context, farming routes, and Raigulus videos.</description>
-      <category>loot</category>
-    </item>
-    <item>
-      <title>Division 2 Server Status, Maintenance &amp; Delta-03</title>
-      <link>https://raigulus.github.io/division-2/server-status/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/server-status/</guid>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
-      <description>Unofficial Division 2 server status tracker for maintenance, outage, Delta-03, official source links, and Raigulus guides.</description>
-      <category>server status</category>
-    </item>
-    <item>
-      <title>Division 2 Escalation Loot Today &amp; Tier 10 Guide</title>
-      <link>https://raigulus.github.io/division-2/escalation/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/escalation/</guid>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
-      <description>Division 2 Escalation loot today, Tier 10 matchmaking notes, vendor caches, and Raigulus videos.</description>
-      <category>escalation</category>
-    </item>
-    <item>
-      <title>Division 2 Prototype Gear &amp; Escalation Vendor Guide</title>
-      <link>https://raigulus.github.io/division-2/prototype-gear/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/prototype-gear/</guid>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
-      <description>Division 2 Prototype Gear Cache, Escalation vendor, and gear cache planning notes.</description>
-      <category>prototype gear</category>
-    </item>
-    <item>
-      <title>The Division 2 Incursions &amp; Raids - Full Clears and Guides</title>
-      <link>https://raigulus.github.io/division-2/incursions-raids/</link>
-      <guid isPermaLink="true">https://raigulus.github.io/division-2/incursions-raids/</guid>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
-      <description>Broken Rain Day One full-clear progression, exact boss chapters, Incursion mechanics, and Operation Iron Horse raid archives.</description>
-      <category>incursions and raids</category>
-    </item>
+    <lastBuildDate>Fri, 14 Aug 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>The Division 2 Broken Rain Incursion - We Cleared It Blind on Day One [4K60]</title>
       <link>https://raigulus.github.io/division-2/videos/the-division-2-broken-rain-incursion-we-cleared-it-blind-on-day-one-4k60/</link>
@@ -80,12 +32,12 @@
       <category>pvp/archive clip</category>
     </item>
     <item>
-      <title>The Division 2 Roosevelt Island Tier 10 Solo Flawless | Tipping Scales + Whiplash [2026]</title>
+      <title>The Division 2 Roosevelt Island Tier 10 Solo Flawless | Tipping Scales + Whiplash [4K60]</title>
       <link>https://raigulus.github.io/division-2/videos/the-division-2-roosevelt-island-tier-10-solo-flawless-tipping-scales-whiplash/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-roosevelt-island-tier-10-solo-flawless-tipping-scales-whiplash/</guid>
       <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Tipping Scales Whiplash LMG build for non-stop shooting, Tier 6 gameplay, and reduced reload downtime.</description>
-      <category>build/showcase</category>
+      <description>Solo flawless Roosevelt Island Tier 10 run in The Division 2 using Tipping Scales and Whiplash, captured in 4K60.</description>
+      <category>escalation run</category>
     </item>
     <item>
       <title>6-Kill Conflict Streak | The Division 2 PvP #shorts</title>
@@ -104,12 +56,12 @@
       <category>pvp/archive clip</category>
     </item>
     <item>
-      <title>The Division 2 Tipping Scales Whiplash LMG Build | Non-Stop Shooting [2026]</title>
+      <title>The Division 2 District Union Arena Tier 10 Solo | Whiplash + Centurion + Tipping Scales [4K60]</title>
       <link>https://raigulus.github.io/division-2/videos/the-division-2-tipping-scales-whiplash-lmg-build-non-stop-shooting-2/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-tipping-scales-whiplash-lmg-build-non-stop-shooting-2/</guid>
       <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Tipping Scales Whiplash LMG build for non-stop shooting, Tier 6 gameplay, and reduced reload downtime.</description>
-      <category>build/showcase</category>
+      <description>Solo District Union Arena Tier 10 run in The Division 2 using Whiplash, Centurion's Scabbard, and Tipping Scales in 4K60.</description>
+      <category>escalation run</category>
     </item>
     <item>
       <title>The Division 2 Eagle Bearer Headshot Build | Conflict Match Win | Archive Clip</title>
@@ -120,12 +72,12 @@
       <category>pvp/archive clip</category>
     </item>
     <item>
-      <title>The Division 2 Tipping Scales Whiplash LMG Build | Non-Stop Shooting [2026]</title>
+      <title>The Division 2 DCD Headquarters Tier 10 Solo | Trader + Centurion + Tipping Scales [4K60]</title>
       <link>https://raigulus.github.io/division-2/videos/the-division-2-tipping-scales-whiplash-lmg-build-non-stop-shooting-3/</link>
       <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/the-division-2-tipping-scales-whiplash-lmg-build-non-stop-shooting-3/</guid>
       <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
-      <description>The Division 2 Tipping Scales Whiplash LMG build for non-stop shooting, Tier 6 gameplay, and reduced reload downtime.</description>
-      <category>build/showcase</category>
+      <description>Solo DCD Headquarters Tier 10 run in The Division 2 using Trader, Centurion's Scabbard, and Tipping Scales in 4K60.</description>
+      <category>escalation run</category>
     </item>
     <item>
       <title>The Division 2 Into the Dark Week 7 Scout 7 Manhunt Walkthrough | No Commentary [2026]</title>

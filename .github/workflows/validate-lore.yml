@@ -12,6 +12,8 @@ on:
       - "assets/lore-timeline.css"
       - "assets/lore-directory.css"
       - "lore/**"
+      - "sitemap.xml"
+      - "sitemap.txt"
   workflow_dispatch:
 
 permissions:

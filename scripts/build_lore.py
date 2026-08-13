@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import html
 import json
+import re
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -617,27 +618,83 @@ def update_sitemaps(entries, editorial_pages):
         for section in sorted({entry["section"] for entry in entries})
     )
 
-    urls = sorted(set(urls))
+    desired = dict(urls)
 
     xml_path = ROOT / "sitemap.xml"
     xml_lines = xml_path.read_text(encoding="utf-8").splitlines(keepends=True)
-    lore_prefix = f"  <url><loc>{BASE_URL}/lore/"
-    xml = "".join(line for line in xml_lines if not line.startswith(lore_prefix))
-    nodes = "".join(
-        f"  <url><loc>{BASE_URL + path}</loc><lastmod>{lastmod}</lastmod></url>\n"
-        for path, lastmod in urls
+    node_pattern = re.compile(
+        rf"^  <url><loc>{re.escape(BASE_URL)}(?P<path>/lore/[^<]*)</loc>"
+        r"<lastmod>(?P<lastmod>\d{4}-\d{2}-\d{2})</lastmod></url>\n?$"
     )
-    xml = xml.replace("</urlset>", nodes + "</urlset>")
-    xml_path.write_text(xml, encoding="utf-8")
+    existing_order = []
+    existing_lastmods = {}
+    insertion_index = None
+    retained_lines = []
+    for line in xml_lines:
+        match = node_pattern.match(line)
+        if not match:
+            retained_lines.append(line)
+            continue
+        if insertion_index is None:
+            insertion_index = len(retained_lines)
+        path = match.group("path")
+        if path in desired:
+            existing_order.append(path)
+            existing_lastmods[path] = match.group("lastmod")
+
+    if insertion_index is None:
+        insertion_index = next(
+            (
+                index
+                for index, line in enumerate(retained_lines)
+                if f"<loc>{BASE_URL}/division-2/videos/" in line
+            ),
+            len(retained_lines) - 1,
+        )
+
+    new_paths = sorted(set(desired) - set(existing_order))
+    ordered_paths = existing_order + new_paths
+    nodes = []
+    for path in ordered_paths:
+        # Never move lastmod backwards after a wider site refresh. A later
+        # record review still advances the date, while repeated lore builds
+        # remain byte-for-byte stable.
+        lastmod = max(existing_lastmods.get(path, "0000-00-00"), desired[path])
+        nodes.append(
+            f"  <url><loc>{BASE_URL + path}</loc><lastmod>{lastmod}</lastmod></url>\n"
+        )
+    xml_lines = retained_lines[:insertion_index] + nodes + retained_lines[insertion_index:]
+    xml_path.write_text("".join(xml_lines), encoding="utf-8")
 
     text_path = ROOT / "sitemap.txt"
-    existing = [
-        line
-        for line in text_path.read_text(encoding="utf-8").splitlines()
-        if not line.startswith(f"{BASE_URL}/lore/")
-    ]
-    existing.extend(BASE_URL + path for path, _ in urls)
-    text_path.write_text("\n".join(existing) + "\n", encoding="utf-8")
+    text_lines = text_path.read_text(encoding="utf-8").splitlines()
+    lore_prefix = f"{BASE_URL}/lore/"
+    retained = []
+    existing_paths = []
+    insertion_index = None
+    for line in text_lines:
+        if not line.startswith(lore_prefix):
+            retained.append(line)
+            continue
+        if insertion_index is None:
+            insertion_index = len(retained)
+        path = line.removeprefix(BASE_URL)
+        if path in desired:
+            existing_paths.append(path)
+
+    if insertion_index is None:
+        insertion_index = next(
+            (
+                index
+                for index, line in enumerate(retained)
+                if line.startswith(f"{BASE_URL}/division-2/videos/")
+            ),
+            len(retained),
+        )
+    ordered_paths = existing_paths + sorted(set(desired) - set(existing_paths))
+    lore_lines = [BASE_URL + path for path in ordered_paths]
+    text_lines = retained[:insertion_index] + lore_lines + retained[insertion_index:]
+    text_path.write_text("\n".join(text_lines) + "\n", encoding="utf-8")
 
 
 def main():
