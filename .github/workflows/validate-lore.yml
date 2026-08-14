@@ -11,7 +11,12 @@ on:
       - "assets/lore.css"
       - "assets/lore-timeline.css"
       - "assets/lore-directory.css"
+      - "assets/data/videos.json"
       - "lore/**"
+      - "division-2/**"
+      - "index.html"
+      - "llms.txt"
+      - "scripts/sync_site_metadata.py"
       - "sitemap.xml"
       - "sitemap.txt"
   workflow_dispatch:
@@ -37,6 +42,9 @@ jobs:
 
       - name: Check generated pages
         run: python3 scripts/check_lore_pages.py
+
+      - name: Check generated site metadata
+        run: python3 scripts/sync_site_metadata.py --check
 
       - name: Confirm generated pages are current
         run: git diff --exit-code -- lore sitemap.xml sitemap.txt
