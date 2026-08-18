@@ -1,43 +1,89 @@
 {
-  "date": "2026-08-17",
+  "date": "2026-08-18",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
-      "mission": "Wall Street",
-      "loot": "Wyvern Wear"
+      "mission": "Pathway Park",
+      "loot": "LMG"
     },
     {
-      "mission": "Roosevelt Island",
-      "loot": "Golan Gear Ltd"
+      "mission": "Camp White Oak",
+      "loot": "Lengmo"
     },
     {
-      "mission": "DCD Headquarters",
-      "loot": "Murakami Industries"
+      "mission": "Grand Washington Hotel",
+      "loot": "Aces & Eights"
     },
     {
-      "mission": "Air & Space Museum",
-      "loot": "Sokolov Concern"
+      "mission": "Jefferson Trade Center",
+      "loot": "Hotshot"
     },
     {
-      "mission": "District Union Arena",
-      "loot": "Core Strength"
+      "mission": "Federal Emergency Bunker",
+      "loot": "Shotgun"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Assault Rifles"
+      "item": "LMGs"
     },
     {
       "type": "Gear",
       "item": "Kneepads"
     }
   ],
-  "last_updated": "2026-08-17 10:54",
-  "last_checked": "2026-08-18 09:05 UTC",
-  "parsed_at": "2026-08-18T09:05:35.979670+00:00",
-  "status": "stale",
-  "fetched_at": "2026-08-18T09:05:35.979670+00:00",
+  "last_updated": "2026-08-18 11:08",
+  "last_checked": "2026-08-18 09:42 UTC",
+  "parsed_at": "2026-08-18T09:42:14.385771+00:00",
+  "status": "ok",
+  "fetched_at": "2026-08-18T09:42:14.385771+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Checked after the expected daily reset window, but the source still returned an older snapshot."
+  "snapshot_note": "Current dated loot snapshot is available.",
+  "vendor_highlights": [
+    {
+      "vendor": "White House",
+      "item": "Backbone",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Clan",
+      "item": "Bober",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "Zero F's",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "The Castle",
+      "item": "Spot-on",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "DZ South",
+      "item": "Matador",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Zero F's",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Hunter-Killer",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "Thorn - SPAS-12",
+      "note": "Named weapon"
+    }
+  ],
+  "vendor_highlights_status": "ok",
+  "vendor_highlights_checked": "2026-08-18 09:42 UTC",
+  "vendor_highlights_date": "2026-08-13",
+  "vendor_highlights_note": "Current dated vendor highlights are available."
 }
