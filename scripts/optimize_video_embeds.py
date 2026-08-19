@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import html
 import re
 from pathlib import Path
 
@@ -16,13 +17,30 @@ EMBED_RE = re.compile(
 SCRIPT_TAG = '  <script src="/assets/video-player.js" defer></script>\n'
 
 
-def facade(match: re.Match[str]) -> str:
+def facade(match: re.Match[str], description: str | None = None) -> str:
     indent = match.group("indent")
     video_id = match.group("video_id")
     title = match.group("title")
+    alt = f"Video thumbnail: {title}."
+    if description:
+        sent = description.strip()
+        for sep in (". ", "! ", "? "):
+            if sep in sent:
+                sent = sent[: sent.index(sep) + 1]
+                break
+        else:
+            sent = sent.rstrip(".") + "."
+        alt = f"{alt} {sent}"
+        if len(alt) > 200:
+            room = 200 - len(f"Video thumbnail: {title}.") - 2
+            cut = sent[:room]
+            if " " in cut:
+                cut = cut.rsplit(" ", 1)[0]
+            alt = f"Video thumbnail: {title}. {cut.rstrip('.,;:')}..."
+    alt = html.escape(alt, quote=True)
     return f'''{indent}<div class="watch video-facade" data-video-id="{video_id}" data-video-title="{title}">
           <button class="video-facade-button" type="button" aria-label="Play {title}">
-            <img src="https://i.ytimg.com/vi/{video_id}/hqdefault.jpg" alt="" width="480" height="360" decoding="async" fetchpriority="high">
+            <img src="https://i.ytimg.com/vi/{video_id}/hqdefault.jpg" alt="{alt}" width="480" height="360" decoding="async" fetchpriority="high">
             <span class="video-facade-play" aria-hidden="true"></span>
             <span class="video-facade-label">Play video</span>
           </button>
@@ -48,7 +66,9 @@ def optimize(path: Path) -> bool:
         return False
 
     video_id = match.group("video_id")
-    content = EMBED_RE.sub(facade, content, count=1)
+    desc_m = re.search(r'<meta name="description" content="([^"]*)"', content)
+    description = desc_m.group(1) if desc_m else None
+    content = EMBED_RE.sub(lambda m: facade(m, description), content, count=1)
     if "/assets/video-player.js" not in content:
         anchor = '  <script src="/assets/search.js" defer></script>\n'
         if anchor in content:
