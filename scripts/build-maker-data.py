@@ -15,6 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "assets" / "data" / "build-maker.json"
+PREV = ROOT / "assets" / "data" / "build-maker-prev.json"
 BASE = "https://raw.githubusercontent.com/div2hub/game-data/main"
 
 FILES = [
@@ -77,6 +78,10 @@ def main():
         },
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
+    # Eski surumu yedekle (changelog diff'i icin)
+    if OUT.exists():
+        PREV.write_bytes(OUT.read_bytes())
+        print(f"Eski surum yedeklendi: {PREV.name}")
     OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"\nYazildi: {OUT} ({OUT.stat().st_size / 1024:.0f} KB)")
 
