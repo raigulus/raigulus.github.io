@@ -1,0 +1,248 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-brooklyn-history",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Brooklyn - History",
+  "slug": "td2-comms-brooklyn-history",
+  "section": "collectibles",
+  "summary": "A collection of 9 comms from The Division universe, scraped from the Fandom wiki hub page. 9 entries include full audio transcripts; 9 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 9,
+  "claims": [
+    {
+      "id": "td2-comms-brooklyn-history-comm-1",
+      "text": "Comm \"Baby\": The first baby is born in Brooklyn. (Location: Brooklyn (409, 1899))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-history"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-history-comm-2",
+      "text": "Comm \"Building Bridges\": Rikers help build the Bridge. (Location: Brooklyn (294, 1409))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-history"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-history-comm-3",
+      "text": "Comm \"Art\": Rat Queen admiring the art installation. (Location: Brooklyn (141, 1872))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-history"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-history-comm-4",
+      "text": "Comm \"Free\": he first Rikers escape from Manhattan to Brooklyn. (Location: Brooklyn (267, 1789))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-history"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-history-comm-5",
+      "text": "Comm \"Hostages\": Civilians are taken hostage by the Rikers. (Location: Brooklyn (111, 1206))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-history"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-history-comm-6",
+      "text": "Comm \"Police\": The Clinic is attacked, they call One Police Plaza for help. (Location: Brooklyn (492, 1624))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-history"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-history-comm-7",
+      "text": "Comm \"Territory\": Rikers take Brooklyn Heights. (Location: Brooklyn (496, 1223))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-history"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-history-comm-8",
+      "text": "Comm \"Weapons\": Rikers plan to attack One Police Plaza and raid the armory. (Location: Brooklyn (307, 1542))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-history"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-history-comm-9",
+      "text": "Comm \"Ready\": Civilians are ready to survive the winter without power or CERA drops. (Location: Brooklyn (113, 1397))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-history"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Baby",
+      "paragraphs": [
+        {
+          "text": "The first baby is born in Brooklyn. Features AGENT HOSKINS, PATRICIA THOMPSON. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-history-comm-1"
+          ]
+        },
+        {
+          "text": "The first baby is born in Brooklyn. Features AGENT HOSKINS, PATRICIA THOMPSON. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-history-comm-1"
+          ]
+        }
+      ],
+      "location": "Brooklyn (409, 1899)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:History_-_Baby.ogg"
+    },
+    {
+      "heading": "Building Bridges",
+      "paragraphs": [
+        {
+          "text": "Rikers help build the Bridge. Features AUTO, THEO PARNELL. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-history-comm-2"
+          ]
+        },
+        {
+          "text": "Rikers help build the Bridge. Features AUTO, THEO PARNELL. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-history-comm-2"
+          ]
+        },
+        {
+          "text": "Rikers help build the Bridge. Features AUTO, THEO PARNELL. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-history-comm-2"
+          ]
+        }
+      ],
+      "location": "Brooklyn (294, 1409)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:History_-_Building_Bridges.ogg"
+    },
+    {
+      "heading": "Art",
+      "paragraphs": [
+        {
+          "text": "Rat Queen admiring the art installation. Features DONNIE, RAT QUEEN, VINNIE-GOUGH. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-history-comm-3"
+          ]
+        }
+      ],
+      "location": "Brooklyn (141, 1872)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:History_-_Art.ogg"
+    },
+    {
+      "heading": "Free",
+      "paragraphs": [
+        {
+          "text": "he first Rikers escape from Manhattan to Brooklyn. Features BOMBSHELL, SARAH. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-history-comm-4"
+          ]
+        }
+      ],
+      "location": "Brooklyn (267, 1789)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:History_-_Free.ogg"
+    },
+    {
+      "heading": "Hostages",
+      "paragraphs": [
+        {
+          "text": "Civilians are taken hostage by the Rikers. Features AGENT HOSKINS, BOMBSHELL, CHLOE. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-history-comm-5"
+          ]
+        }
+      ],
+      "location": "Brooklyn (111, 1206)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:History_-_Hostages.ogg"
+    },
+    {
+      "heading": "Police",
+      "paragraphs": [
+        {
+          "text": "The Clinic is attacked, they call One Police Plaza for help. Features PATRICIA THOMPSON, VICKY. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-history-comm-6"
+          ]
+        }
+      ],
+      "location": "Brooklyn (492, 1624)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:History_-_Police.ogg"
+    },
+    {
+      "heading": "Territory",
+      "paragraphs": [
+        {
+          "text": "Rikers take Brooklyn Heights. Features DONNIE, VINNIE-GOUGH. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-history-comm-7"
+          ]
+        }
+      ],
+      "location": "Brooklyn (496, 1223)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:History_-_Territory.ogg"
+    },
+    {
+      "heading": "Weapons",
+      "paragraphs": [
+        {
+          "text": "Rikers plan to attack One Police Plaza and raid the armory. Features BOMBSHELL, DONNIE, VINNIE-GOUGH. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-history-comm-8"
+          ]
+        }
+      ],
+      "location": "Brooklyn (307, 1542)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:History_-_Weapons.ogg"
+    },
+    {
+      "heading": "Ready",
+      "paragraphs": [
+        {
+          "text": "Civilians are ready to survive the winter without power or CERA drops. Features AGENT HOSKINS, RODNEY BISHOP, SARAH. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-history-comm-9"
+          ]
+        }
+      ],
+      "location": "Brooklyn (113, 1397)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:History_-_Ready.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-theo-parnell",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-rikers",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Brooklyn_-_History. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Brooklyn_-_History",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

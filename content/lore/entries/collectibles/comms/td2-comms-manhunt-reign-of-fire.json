@@ -1,0 +1,587 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-manhunt-reign-of-fire",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Manhunt - Reign of Fire",
+  "slug": "td2-comms-manhunt-reign-of-fire",
+  "section": "collectibles",
+  "summary": "A collection of 20 comms from The Division universe, scraped from the Fandom wiki hub page. 20 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 20,
+  "claims": [
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-1",
+      "text": "Comm \"Morale\": Charles \"Chunks\" Crawford gives Natalya Sokolova a sitrep",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-2",
+      "text": "Comm \"Supply\": Charles \"Chunks\" Crawford gives Natalya Sokolova a supplies update",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-3",
+      "text": "Comm \"Paranoid\": Charles \"Chunks\" Crawford discusses the rumors",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-4",
+      "text": "Comm \"Mortars\": Lieutenant Bantam gives General Anderson a sitrep",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-5",
+      "text": "Comm \"Castle\": Lieutenant Bantam gives General Anderson an update on the Castle",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-6",
+      "text": "Comm \"Stovepipe Recordings: Radioactive\": Natalya Sokolova ensures \"Stovepipe\" that the rumors aren't true",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-7",
+      "text": "Comm \"Friends\": Mort \"Cursed\" Kellogg talks to Natalya Sokolova about the new recruits",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-8",
+      "text": "Comm \"Specialized\": Mort \"Cursed\" Kellogg gives Natalya Sokolova a sitrep",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-9",
+      "text": "Comm \"Cook\": Mort \"Cursed\" Kellogg talks to Natalya Sokolova about a new prisoner",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-10",
+      "text": "Comm \"Stovepipe Recordings: Impressed\": Natalya Sokolova sends her regards",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-11",
+      "text": "Comm \"Stovepipe Recordings: Iodine\": Natalya Sokolova asks \"Chunks\" about the effects of radiation poisoning",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-12",
+      "text": "Comm \"Stovepipe Recordings: Resupply\": Lieutenant Bantam makes a supply request",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-13",
+      "text": "Comm \"Stovepipe Recordings: Saint Louis\": Lieutenant Bantam and Mort \"Cursed\" Kellogg discuss the rumors",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-14",
+      "text": "Comm \"Stovepipe Recordings: Experiments\": Stovepipe\" calls Natalya Sokolova to",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-15",
+      "text": "Comm \"Sweeps\": Beatrice \"Auntie\" Kaplan gives General Anderson a sitrep",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-16",
+      "text": "Comm \"Favor\": Beatrice \"Auntie\" Kaplan asks General Anderson for a favor",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-17",
+      "text": "Comm \"Numbers\": Beatrice \"Auntie\" Kaplan reach out to Mort \"Cursed\" Kellogg",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-18",
+      "text": "Comm \"Special\": Natalya Sokolova asks Zachary \"Stovepipe\" Beattie",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-19",
+      "text": "Comm \"Hypothetical\": Natalya Sokolova asks Zachary \"Stovepipe\" Beattie a question",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-reign-of-fire-comm-20",
+      "text": "Comm \"Housing\": Natalya Sokolova asks Zachary \"Stovepipe\" Beattie about housing",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-reign-of-fire"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Morale",
+      "paragraphs": [
+        {
+          "text": "Charles \"Chunks\" Crawford gives Natalya Sokolova a sitrep Features CHARLES \"CHUNKS\" CRAWFORD, NATALYA SOKOLOVA. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-1"
+          ]
+        },
+        {
+          "text": "Charles \"Chunks\" Crawford gives Natalya Sokolova a sitrep Features NATALYA SOKOLOVA. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Morale.ogg"
+    },
+    {
+      "heading": "Supply",
+      "paragraphs": [
+        {
+          "text": "Charles \"Chunks\" Crawford gives Natalya Sokolova a supplies update Features CHARLES \"CHUNKS\" CRAWFORD, NATALYA SOKOLOVA. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-2"
+          ]
+        },
+        {
+          "text": "Charles \"Chunks\" Crawford gives Natalya Sokolova a supplies update Features CHARLES \"CHUNKS\" CRAWFORD, NATALYA SOKOLOVA. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Supply.ogg"
+    },
+    {
+      "heading": "Paranoid",
+      "paragraphs": [
+        {
+          "text": "Charles \"Chunks\" Crawford discusses the rumors Features CHARLES \"CHUNKS\" CRAWFORD, NATALYA SOKOLOVA. Contains 15 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-3"
+          ]
+        },
+        {
+          "text": "Charles \"Chunks\" Crawford discusses the rumors Features CHARLES \"CHUNKS\" CRAWFORD, NATALYA SOKOLOVA. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Paranoid.ogg"
+    },
+    {
+      "heading": "Mortars",
+      "paragraphs": [
+        {
+          "text": "Lieutenant Bantam gives General Anderson a sitrep Features GENERAL ANDERSON, LIEUTENANT BANTAM. Contains 15 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-4"
+          ]
+        },
+        {
+          "text": "Lieutenant Bantam gives General Anderson a sitrep Features GENERAL ANDERSON, LIEUTENANT BANTAM. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Mortars.ogg"
+    },
+    {
+      "heading": "Castle",
+      "paragraphs": [
+        {
+          "text": "Lieutenant Bantam gives General Anderson an update on the Castle Features GENERAL ANDERSON, LIEUTENANT BANTAM. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-5"
+          ]
+        },
+        {
+          "text": "Lieutenant Bantam gives General Anderson an update on the Castle Features GENERAL ANDERSON, LIEUTENANT BANTAM. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Castle.ogg"
+    },
+    {
+      "heading": "Stovepipe Recordings: Radioactive",
+      "paragraphs": [
+        {
+          "text": "Radioactive\": Natalya Sokolova ensures \"Stovepipe\" that the rumors aren't true Features NATALYA SOKOLOVA, ZACHARY \"STOVEPIPE\" BEATTIE. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-6"
+          ]
+        },
+        {
+          "text": "Radioactive\": Natalya Sokolova ensures \"Stovepipe\" that the rumors aren't true Features NATALYA SOKOLOVA. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Stovepipe_Recordings_Rafioactive.ogg"
+    },
+    {
+      "heading": "Friends",
+      "paragraphs": [
+        {
+          "text": "Mort \"Cursed\" Kellogg talks to Natalya Sokolova about the new recruits Features MORT \"CURSED\" KELLOGG, NATALYA SOKOLOVA. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-7"
+          ]
+        },
+        {
+          "text": "Mort \"Cursed\" Kellogg talks to Natalya Sokolova about the new recruits Features MORT \"CURSED\" KELLOGG, NATALYA SOKOLOVA. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Friends.ogg"
+    },
+    {
+      "heading": "Specialized",
+      "paragraphs": [
+        {
+          "text": "Mort \"Cursed\" Kellogg gives Natalya Sokolova a sitrep Features MORT \"CURSED\" KELLOGG, NATALYA SOKOLOVA. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-8"
+          ]
+        },
+        {
+          "text": "Mort \"Cursed\" Kellogg gives Natalya Sokolova a sitrep Features NATALYA SOKOLOVA. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Specialized.ogg"
+    },
+    {
+      "heading": "Cook",
+      "paragraphs": [
+        {
+          "text": "Mort \"Cursed\" Kellogg talks to Natalya Sokolova about a new prisoner Features MORT \"CURSED\" KELLOGG, NATALYA SOKOLOVA. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-9"
+          ]
+        },
+        {
+          "text": "Mort \"Cursed\" Kellogg talks to Natalya Sokolova about a new prisoner Features MORT \"CURSED\" KELLOGG, NATALYA SOKOLOVA. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Cook.ogg"
+    },
+    {
+      "heading": "Stovepipe Recordings: Impressed",
+      "paragraphs": [
+        {
+          "text": "Impressed\": Natalya Sokolova sends her regards Features NATALYA SOKOLOVA. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-10"
+          ]
+        },
+        {
+          "text": "Manny, you really do have an eye for talent. First Schaeffer, then Lewis and Wally. Imagine my surprise when I discovered you even managed to recruit Vik. I thought you hated him after what happened at Odea, but here you are, welcoming old enemies into your house and giving them the literal keys to the Castle. I haven't decided if you're a genius with boundless empathy or a moron who actually believes that people can change. People don't change. Most of the time, if you think someone has changed it's because you never really saw them. You never look close enough to see if the person staring back at you is genuine or is hiding their true intentions. That's why you're so easy to fool. And why I will always be two steps ahead of you.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-10"
+          ]
+        },
+        {
+          "text": "I have the Black Tusk, the real True Sons, and the Hunters at my disposal, while your agent have civilians chasing water bottles.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-10"
+          ]
+        },
+        {
+          "text": "Impressed\": Natalya Sokolova sends her regards Features NATALYA SOKOLOVA, VIKRAM MALIK. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-10"
+          ]
+        },
+        {
+          "text": "When you're ready to surrender, I would be more than happy to reunite you two love birds. I hear stress can do terrible things to a pregnancy, especially in older women. Manny, if you really do love her, you might want to hurry. Oh, and Agent, I hope to see you soon.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Stovepipe_Recordings_Impressed.ogg"
+    },
+    {
+      "heading": "Stovepipe Recordings: Iodine",
+      "paragraphs": [
+        {
+          "text": "Iodine\": Natalya Sokolova asks \"Chunks\" about the effects of radiation poisoning Features CHARLES \"CHUNKS\" CRAWFORD, NATALYA SOKOLOVA. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-11"
+          ]
+        },
+        {
+          "text": "Iodine\": Natalya Sokolova asks \"Chunks\" about the effects of radiation poisoning Features CHARLES \"CHUNKS\" CRAWFORD, NATALYA SOKOLOVA. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-11"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Stovepipe_Recordings_Iodine.ogg"
+    },
+    {
+      "heading": "Stovepipe Recordings: Resupply",
+      "paragraphs": [
+        {
+          "text": "Resupply\": Lieutenant Bantam makes a supply request Features GENERAL ANDERSON, LIEUTENANT BANTAM. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-12"
+          ]
+        },
+        {
+          "text": "Resupply\": Lieutenant Bantam makes a supply request Features GENERAL ANDERSON, LIEUTENANT BANTAM. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-12"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Stovepipe_Recordings_Ressuply.ogg"
+    },
+    {
+      "heading": "Stovepipe Recordings: Saint Louis",
+      "paragraphs": [
+        {
+          "text": "Saint Louis\": Lieutenant Bantam and Mort \"Cursed\" Kellogg discuss the rumors Features LIEUTENANT BANTAM, MORT \"CURSED\" KELLOGG. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-13"
+          ]
+        },
+        {
+          "text": "MORT \"CURSED\" KELLOGG: (laughs) Brother, I think your helmet's on too tight.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-13"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Stovepipe_Recordings_Saint_Louis.ogg"
+    },
+    {
+      "heading": "Stovepipe Recordings: Experiments",
+      "paragraphs": [
+        {
+          "text": "Experiments\": Stovepipe\" calls Natalya Sokolova to Features NATALYA SOKOLOVA, ZACHARY \"STOVEPIPE\" BEATTIE, https. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-14"
+          ]
+        },
+        {
+          "text": "Experiments\": Stovepipe\" calls Natalya Sokolova to Features NATALYA SOKOLOVA, ZACHARY \"STOVEPIPE\" BEATTIE. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-14"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Sweeps",
+      "paragraphs": [
+        {
+          "text": "Beatrice \"Auntie\" Kaplan gives General Anderson a sitrep Features BEATRICE \"AUNTIE\" KAPLAN, GENERAL ANDERSON. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-15"
+          ]
+        },
+        {
+          "text": "Beatrice \"Auntie\" Kaplan gives General Anderson a sitrep Features BEATRICE \"AUNTIE\" KAPLAN, GENERAL ANDERSON. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-15"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Sweeps.ogg"
+    },
+    {
+      "heading": "Favor",
+      "paragraphs": [
+        {
+          "text": "Beatrice \"Auntie\" Kaplan asks General Anderson for a favor Features BEATRICE \"AUNTIE\" KAPLAN, GENERAL ANDERSON. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-16"
+          ]
+        },
+        {
+          "text": "Beatrice \"Auntie\" Kaplan asks General Anderson for a favor Features BEATRICE \"AUNTIE\" KAPLAN, GENERAL ANDERSON. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-16"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Favor.ogg"
+    },
+    {
+      "heading": "Numbers",
+      "paragraphs": [
+        {
+          "text": "Washington, D.C.\nBEATRICE \"AUNTIE\" KAPLAN: Permission denied.\nMORT \"CURSED\" KELLOGG: Why?\nBEATRICE \"AUNTIE\" KAPLAN: Worried I'll draw too much attention. Need to stay on mission. Worried that I'll get distracted or something. Who knows.\nMORT \"CURSED\" KELLOGG: That's too bad. I was really looking forward to meeting ya.\nBEATRICE \"AUNTIE\" KAPLAN: Me too. Is it true you were stationed at Germany when this all went down?\nMORT \"CURSED\" KELLOGG: It is.\nBEATRICE \"AUNTIE\" KAPLAN: You ever see combat before this?\nMORT \"CURSED\" KELLOGG: I've been deployed.\nBEATRICE \"AUNTIE\" KAPLAN: What's your number?\nMORT \"CURSED\" KELLOGG: Before this? Um...twenty or thirty. After fifty, I stopped counting.\nBEATRICE \"AUNTIE\" KAPLAN: Really?\nMORT \"CURSED\" KELLOGG: Yeah, too hard to keep track.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-17"
+          ]
+        },
+        {
+          "text": "BEATRICE \"AUNTIE\" KAPLAN: Not for me.\nMORT \"CURSED\" KELLOGG: What's your number?\nBEATRICE \"AUNTIE\" KAPLAN: 372.\nMORT \"CURSED\" KELLOGG: We're you deployed before this?\nBEATRICE \"AUNTIE\" KAPLAN: Nope. Went through basic and joined the guard, but never got to see any reaction until the JTF was activated.\nMORT \"CURSED\" KELLOGG: 372 kills this year. That's impressive.\nBEATRICE \"AUNTIE\" KAPLAN: 371... actually.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-17"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Numbers.ogg"
+    },
+    {
+      "heading": "Special",
+      "paragraphs": [
+        {
+          "text": "Mort \"Cursed\" Kellogg gives Natalya Sokolova a sitrep Features NATALYA SOKOLOVA, ZACHARY \"STOVEPIPE\" BEATTIE. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-18"
+          ]
+        },
+        {
+          "text": "Mort \"Cursed\" Kellogg gives Natalya Sokolova a sitrep Features NATALYA SOKOLOVA, ZACHARY \"STOVEPIPE\" BEATTIE. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-18"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Special.ogg"
+    },
+    {
+      "heading": "Hypothetical",
+      "paragraphs": [
+        {
+          "text": "Natalya Sokolova asks Zachary \"Stovepipe\" Beattie a question Features NATALYA SOKOLOVA, ZACHARY \"STOVEPIPE\" BEATTIE. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-19"
+          ]
+        },
+        {
+          "text": "Natalya Sokolova asks Zachary \"Stovepipe\" Beattie a question Features NATALYA SOKOLOVA, ZACHARY \"STOVEPIPE\" BEATTIE. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-19"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Hypothetical.ogg"
+    },
+    {
+      "heading": "Housing",
+      "paragraphs": [
+        {
+          "text": "Natalya Sokolova asks Zachary \"Stovepipe\" Beattie about housing Features NATALYA SOKOLOVA, ZACHARY \"STOVEPIPE\" BEATTIE. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-20"
+          ]
+        },
+        {
+          "text": "Natalya Sokolova asks Zachary \"Stovepipe\" Beattie about housing Features NATALYA SOKOLOVA, ZACHARY \"STOVEPIPE\" BEATTIE. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-reign-of-fire-comm-20"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Reign_of_Fire_-_Housing.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-natalya-sokolova",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "location-washington-dc",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-true-sons",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Reign_of_Fire. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Reign_of_Fire",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020",
+      "ubisoft-season-11-reign-of-fire-2023"
+    ]
+  }
+}

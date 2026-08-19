@@ -1,0 +1,235 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-shay",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Shay",
+  "slug": "td2-comms-shay",
+  "section": "collectibles",
+  "summary": "A collection of 8 comms from The Division universe, scraped from the Fandom wiki hub page. 8 entries include full audio transcripts; 8 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 8,
+  "claims": [
+    {
+      "id": "td2-comms-shay-comm-1",
+      "text": "Comm \"Georgetown\": Shay Montgomery talks about Victor Tranh and how Georgetown was exposed to DC-62 (Location: Southwest (2497, 1030))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-shay"
+      ]
+    },
+    {
+      "id": "td2-comms-shay-comm-2",
+      "text": "Comm \"Refugee Camp\": Shay Montgomery talks about her experience in a CERA camp run by True Sons (Location: West End (2239, 912))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-shay"
+      ]
+    },
+    {
+      "id": "td2-comms-shay-comm-3",
+      "text": "Comm \"Purpose\": Shay Montgomery talks about why she escaped the camp (Location: Judiciary Square (1791, 4620))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-shay"
+      ]
+    },
+    {
+      "id": "td2-comms-shay-comm-4",
+      "text": "Comm \"Making a Difference\": Shay Montgomery talks about a family she helped after escaping the camps (Location: Judiciary Square (1497, 4495))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-shay"
+      ]
+    },
+    {
+      "id": "td2-comms-shay-comm-5",
+      "text": "Comm \"Reflective\": Shay Montgomery reflects on her life before the lockdown and how far she has come (Location: East Mall (789, 3324))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-shay"
+      ]
+    },
+    {
+      "id": "td2-comms-shay-comm-6",
+      "text": "Comm \"Capital Station\": Shay Montgomery talks about the events that led to Capitol Station being abandoned (Location: West Potomac Park (798, 2977))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-shay"
+      ]
+    },
+    {
+      "id": "td2-comms-shay-comm-7",
+      "text": "Comm \"Orphans\": Shay Montgomery talks about a little boy she plans on resettling at the Theater (Location: Southwest (375, 4014))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-shay"
+      ]
+    },
+    {
+      "id": "td2-comms-shay-comm-8",
+      "text": "Comm \"Haunted\": Shay Montgomery talks about going back to the CERA camp in DZ South (Location: Southwest (393, 4241))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-shay"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Georgetown",
+      "paragraphs": [
+        {
+          "text": "Shay Montgomery talks about Victor Tranh and how Georgetown was exposed to DC-62 Features SHAY MONTGOMERY. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-shay-comm-1"
+          ]
+        },
+        {
+          "text": "That's where Victor Tranh came in. Professor Tranh was a big deal in neighborhood politics, and it didn't take much for him to convince people that the right thing to do was evict the patients and spray the neighborhood. It would make all of them safe, he promised. Now I knew this was bullshit - they hadn't had any time to run tests on this DC-62 stuff he was talking about - and I said so. Loudly.\nAnd that's when Victor Tranh lied. He told people I was sick, too, which I wasn't, at least not yet. He had me kicked out with the rest of the infected. Sent us to the CERA camp down by the river and sprayed his DC-62.\nI hear it killed him. Justice, she works in funny ways.",
+          "claim_ids": [
+            "td2-comms-shay-comm-1"
+          ]
+        }
+      ],
+      "location": "Southwest (2497, 1030)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Shay_Comms_-_Georgetown.ogg"
+    },
+    {
+      "heading": "Refugee Camp",
+      "paragraphs": [
+        {
+          "text": "Shay Montgomery talks about her experience in a CERA camp run by True Sons Features SHAY MONTGOMERY. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-shay-comm-2"
+          ]
+        }
+      ],
+      "location": "West End (2239, 912)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Shay_Comms_-_Refugee_Camp.ogg"
+    },
+    {
+      "heading": "Purpose",
+      "paragraphs": [
+        {
+          "text": "Shay Montgomery talks about why she escaped the camp Features SHAY MONTGOMERY. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-shay-comm-3"
+          ]
+        }
+      ],
+      "location": "Judiciary Square (1791, 4620)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Shay_Comms_-_Purpose.ogg"
+    },
+    {
+      "heading": "Making a Difference",
+      "paragraphs": [
+        {
+          "text": "Shay Montgomery talks about a family she helped after escaping the camps Features SHAY MONTGOMERY. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-shay-comm-4"
+          ]
+        },
+        {
+          "text": "I could tell that story about twenty different families around the city, and all those stories would be true. I'm not bragging. I'm asking you what you're doing to make a difference, and if you're just surviving, to think about doing a little more than that.",
+          "claim_ids": [
+            "td2-comms-shay-comm-4"
+          ]
+        }
+      ],
+      "location": "Judiciary Square (1497, 4495)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Shay_Comms_-_Making_a_Difference.ogg"
+    },
+    {
+      "heading": "Reflective",
+      "paragraphs": [
+        {
+          "text": "Shay Montgomery reflects on her life before the lockdown and how far she has come Features SHAY MONTGOMERY. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-shay-comm-5"
+          ]
+        },
+        {
+          "text": "I don't even know if anyone else who was at that party is still alive. And yet here I am, about to breach the Capital Station Dark Zone again, looking for meds for the people who've fallen through the cracks of whatever system's left.\nI like to think I'm doing the right thing.",
+          "claim_ids": [
+            "td2-comms-shay-comm-5"
+          ]
+        }
+      ],
+      "location": "East Mall (789, 3324)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Shay_Comms_-_Reflective.ogg"
+    },
+    {
+      "heading": "Capital Station",
+      "paragraphs": [
+        {
+          "text": "Shay Montgomery talks about the events that led to Capitol Station being abandoned Features SHAY MONTGOMERY. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-shay-comm-6"
+          ]
+        },
+        {
+          "text": "I'm more interested in what got left at the field hospital. There's still meds there, still sterile equipment and surgical supplies. Hell, there's even clean toilet paper. I've been in there three times and haven't come close to cleaning it out.\nI worry 'm getting predictable. But so far, it's been worth the risk.",
+          "claim_ids": [
+            "td2-comms-shay-comm-6"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (798, 2977)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Shay_Comms_-_Capital_Station.ogg"
+    },
+    {
+      "heading": "Orphans",
+      "paragraphs": [
+        {
+          "text": "Shay Montgomery talks about a little boy she plans on resettling at the Theater Features SHAY MONTGOMERY. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-shay-comm-7"
+          ]
+        }
+      ],
+      "location": "Southwest (375, 4014)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Shay_Comms_-_Orphans.ogg"
+    },
+    {
+      "heading": "Haunted",
+      "paragraphs": [
+        {
+          "text": "Shay Montgomery talks about going back to the CERA camp in DZ South Features SHAY MONTGOMERY. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-shay-comm-8"
+          ]
+        },
+        {
+          "text": "Shit. Got DC-62 on my shoes. That'll have to come off. Not the first time, though. Won't be the last.",
+          "claim_ids": [
+            "td2-comms-shay-comm-8"
+          ]
+        }
+      ],
+      "location": "Southwest (393, 4241)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Shay_Comms_-_Haunted.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "faction-true-sons",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Shay. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Shay",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

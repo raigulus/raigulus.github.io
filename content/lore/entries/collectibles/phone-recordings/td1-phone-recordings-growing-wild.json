@@ -1,0 +1,178 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td1-phone-recordings-growing-wild",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD1 Phone Recordings: Growing Wild",
+  "slug": "td1-phone-recordings-growing-wild",
+  "section": "collectibles",
+  "summary": "A collection of 7 phone recordings from The Division universe, scraped from the Fandom wiki hub page. 7 entries include full audio transcripts; 7 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "phone-recordings",
+  "total_entries": 7,
+  "claims": [
+    {
+      "id": "td1-phone-recordings-growing-wild-comm-1",
+      "text": "Comm \"Statement of Purpose\": Elizabeth Hirsch explains what she's doing (Location: Piers South (1938, 618))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-growing-wild"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-growing-wild-comm-2",
+      "text": "Comm \"Family's Gone\": A recollection of what happened to her family (Location: Piers South (2073, 628))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-growing-wild"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-growing-wild-comm-3",
+      "text": "Comm \"First Night Alone\": Hirsch's first night without her family in the city (Location: Piers South (2229, 740))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-growing-wild"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-growing-wild-comm-4",
+      "text": "Comm \"Going Hungry\": Coming to terms with the fact that there's no food (Location: Piers South (2249, 619))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-growing-wild"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-growing-wild-comm-5",
+      "text": "Comm \"Pursed\": An encounter on the streets (Location: Piers North (2347, 646))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-growing-wild"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-growing-wild-comm-6",
+      "text": "Comm \"Becoming a Survivor\": Hirsch finds the determination and will to go on (Location: Piers North (2329, 822))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-growing-wild"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-growing-wild-comm-7",
+      "text": "Comm \"New Statement of Purpose\": Hirsch re-invents herself for her new surroundings (Location: Piers North (2356, 771))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-growing-wild"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Statement of Purpose",
+      "paragraphs": [
+        {
+          "text": "Elizabeth Hirsch explains what she's doing Features ELIZABETH HIRSCH. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-growing-wild-comm-1"
+          ]
+        }
+      ],
+      "location": "Piers South (1938, 618)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Statement_of_Purpose.ogg"
+    },
+    {
+      "heading": "Family's Gone",
+      "paragraphs": [
+        {
+          "text": "A recollection of what happened to her family Features ELIZABETH HIRSCH. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-growing-wild-comm-2"
+          ]
+        }
+      ],
+      "location": "Piers South (2073, 628)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Family%27s_Gone.ogg"
+    },
+    {
+      "heading": "First Night Alone",
+      "paragraphs": [
+        {
+          "text": "Hirsch's first night without her family in the city Features ELIZABETH HIRSCH. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-growing-wild-comm-3"
+          ]
+        }
+      ],
+      "location": "Piers South (2229, 740)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Night_Alone.ogg"
+    },
+    {
+      "heading": "Going Hungry",
+      "paragraphs": [
+        {
+          "text": "Coming to terms with the fact that there's no food Features ELIZABETH HIRSCH. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-growing-wild-comm-4"
+          ]
+        }
+      ],
+      "location": "Piers South (2249, 619)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Going_Hungry.ogg"
+    },
+    {
+      "heading": "Pursed",
+      "paragraphs": [
+        {
+          "text": "An encounter on the streets Features ELIZABETH HIRSCH. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-growing-wild-comm-5"
+          ]
+        }
+      ],
+      "location": "Piers North (2347, 646)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Pursed.ogg"
+    },
+    {
+      "heading": "Becoming a Survivor",
+      "paragraphs": [
+        {
+          "text": "Hirsch finds the determination and will to go on Features ELIZABETH HIRSCH. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-growing-wild-comm-6"
+          ]
+        }
+      ],
+      "location": "Piers North (2329, 822)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Becoming_a_Survivor.ogg"
+    },
+    {
+      "heading": "New Statement of Purpose",
+      "paragraphs": [
+        {
+          "text": "Hirsch re-invents herself for her new surroundings Features ELIZABETH HIRSCH. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-growing-wild-comm-7"
+          ]
+        }
+      ],
+      "location": "Piers North (2356, 771)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:New_Statement_of_Purpose.ogg"
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Phone_Recordings/Growing_Wild. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Phone_Recordings/Growing_Wild",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions"
+    ]
+  }
+}

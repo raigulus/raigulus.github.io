@@ -1,0 +1,565 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-manhunt-first-rogue",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Manhunt - First Rogue",
+  "slug": "td2-comms-manhunt-first-rogue",
+  "section": "collectibles",
+  "summary": "A collection of 22 comms from The Division universe, scraped from the Fandom wiki hub page. 22 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 22,
+  "claims": [
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-1",
+      "text": "Comm \"Daddy\": Bridgette Douglas and Aaron Keener talk about her father, Charles Douglas",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-2",
+      "text": "Comm \"Range\": Bridgette Douglas updates Aaron Keener about her father",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-3",
+      "text": "Comm \"Ellis\": Bridgette Douglas updates Aaron Keener about POTUS Andrew Ellis",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-4",
+      "text": "Comm \"Chickenhawk\": Bridgette Douglas updates Aaron Keener about Chickenhawk",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-5",
+      "text": "Comm \"Well Done\": Aaron Keener leaves a message for a new recruit",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-6",
+      "text": "Comm \"Welcome Home\": Aaron Keener leaves a message",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-7",
+      "text": "Comm \"Lions\": Aaron Keener meets Melanie Hoskins.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-8",
+      "text": "Comm \"Hydra\": Aaron Keener syncs with Bridgette Douglas",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-9",
+      "text": "Comm \"Stable\": Aaron Keener syncs with Melanie Hoskins",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-10",
+      "text": "Comm \"Girdle\": Aaron Keener syncs with Bridgette Douglas",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-11",
+      "text": "Comm \"Antenna\": Manny Ortega and Mari Singh decompress after a long day",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-12",
+      "text": "Comm \"Black\": Manny Ortega and Mari Singh decompress after Kelso goes missing",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-13",
+      "text": "Comm \"Diamond\": Manny Ortega and Mari Singh decompress after Kelso joins a new team",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-14",
+      "text": "Comm \"Control\": Manny Ortega and Mari Singh decompress",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-15",
+      "text": "Comm \"Roster\": Aaron Keener debriefs with Melanie Hoskins",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-16",
+      "text": "Comm \"Evolve\": Aaron Keener has a change of heart",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-17",
+      "text": "Comm \"Recruit\": Aaron Keener recruits Melanie Hoskins for a special assignment",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-18",
+      "text": "Comm \"Labor\": Aaron Keener asks for an update on the special assignment",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-19",
+      "text": "Comm \"Cease Fire\": Aaron Keener and Manny Ortega have a discussion",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-20",
+      "text": "Comm \"Trust\": Aaron Keener and Manny Ortega have a discussion",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-21",
+      "text": "Comm \"Terms\": Aaron Keener and Manny Ortega have a discussion",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-first-rogue-comm-22",
+      "text": "Comm \"Aligned\": Aaron Keener and Manny Ortega have a discussion",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-first-rogue"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Daddy",
+      "paragraphs": [
+        {
+          "text": "Bridgette Douglas and Aaron Keener talk about her father, Charles Douglas Features AARON KEENER, VIPER. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-1"
+          ]
+        },
+        {
+          "text": "Bridgette Douglas and Aaron Keener talk about her father, Charles Douglas Features AARON KEENER, VIPER. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Daddy.ogg"
+    },
+    {
+      "heading": "Range",
+      "paragraphs": [
+        {
+          "text": "Bridgette Douglas updates Aaron Keener about her father Features AARON KEENER, VIPER. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-2"
+          ]
+        },
+        {
+          "text": "Bridgette Douglas updates Aaron Keener about her father Features VIPER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Range.ogg"
+    },
+    {
+      "heading": "Ellis",
+      "paragraphs": [
+        {
+          "text": "Bridgette Douglas updates Aaron Keener about POTUS Andrew Ellis Features AARON KEENER, VIPER. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Ellis.ogg"
+    },
+    {
+      "heading": "Chickenhawk",
+      "paragraphs": [
+        {
+          "text": "Bridgette Douglas updates Aaron Keener about Chickenhawk Features AARON KEENER, VIPER. Contains 14 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Chickenhawk.ogg"
+    },
+    {
+      "heading": "Well Done",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener leaves a message for a new recruit Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Well_Done.ogg"
+    },
+    {
+      "heading": "Welcome Home",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener leaves a message Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Welcome_Home.ogg"
+    },
+    {
+      "heading": "Lions",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener meets Melanie Hoskins. Features AARON KEENER, AGENT HOSKINS. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-7"
+          ]
+        },
+        {
+          "text": "Aaron Keener meets Melanie Hoskins. Features multiple speakers including AARON KEENER, CALVIN MCMANUS, NSA ANALYST. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Lions.ogg"
+    },
+    {
+      "heading": "Hydra",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener syncs with Bridgette Douglas Features AARON KEENER, VIPER. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-8"
+          ]
+        },
+        {
+          "text": "Aaron Keener syncs with Bridgette Douglas Features AARON KEENER, VIPER. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Hydra.ogg"
+    },
+    {
+      "heading": "Stable",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener syncs with Melanie Hoskins Features AARON KEENER, AGENT HOSKINS. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-9"
+          ]
+        },
+        {
+          "text": "Aaron Keener syncs with Melanie Hoskins Features AARON KEENER, AGENT HOSKINS. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Stable.ogg"
+    },
+    {
+      "heading": "Girdle",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener syncs with Bridgette Douglas Features AARON KEENER, VIPER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-10"
+          ]
+        },
+        {
+          "text": "Aaron Keener syncs with Bridgette Douglas Features AARON KEENER, VIPER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Girdle.ogg"
+    },
+    {
+      "heading": "Antenna",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega and Mari Singh decompress after a long day Features MANNY ORTEGA, MARI SINGH. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-11"
+          ]
+        },
+        {
+          "text": "Manny Ortega and Mari Singh decompress after a long day Features MANNY ORTEGA, MARI SINGH. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-11"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Antenna.ogg"
+    },
+    {
+      "heading": "Black",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega and Mari Singh decompress after Kelso goes missing Features MANNY ORTEGA, MARI SINGH. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-12"
+          ]
+        },
+        {
+          "text": "Manny Ortega and Mari Singh decompress after Kelso goes missing Features MANNY ORTEGA, MARI SINGH. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-12"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Black.ogg"
+    },
+    {
+      "heading": "Diamond",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega and Mari Singh decompress after Kelso joins a new team Features MANNY ORTEGA, MARI SINGH. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-13"
+          ]
+        },
+        {
+          "text": "Manny Ortega and Mari Singh decompress after Kelso joins a new team Features MANNY ORTEGA, MARI SINGH. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-13"
+          ]
+        },
+        {
+          "text": "Manny Ortega and Mari Singh decompress after Kelso joins a new team Features MANNY ORTEGA, MARI SINGH. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-13"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Diamond.ogg"
+    },
+    {
+      "heading": "Control",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega and Mari Singh decompress Features MANNY ORTEGA, MARI SINGH. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-14"
+          ]
+        },
+        {
+          "text": "Manny Ortega and Mari Singh decompress Features MANNY ORTEGA, MARI SINGH. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-14"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Control.ogg"
+    },
+    {
+      "heading": "Roster",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener debriefs with Melanie Hoskins Features AARON KEENER, AGENT HOSKINS. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-15"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Roster.ogg"
+    },
+    {
+      "heading": "Evolve",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener has a change of heart Features AARON KEENER, AGENT HOSKINS. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-16"
+          ]
+        },
+        {
+          "text": "Aaron Keener has a change of heart Features AARON KEENER, AGENT HOSKINS. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-16"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Evolve.ogg"
+    },
+    {
+      "heading": "Recruit",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener leaves a message for a new recruit Features AARON KEENER, AGENT HOSKINS. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-17"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Recruit.ogg"
+    },
+    {
+      "heading": "Labor",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener asks for an update on the special assignment Features AARON KEENER, AGENT HOSKINS. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-18"
+          ]
+        },
+        {
+          "text": "Aaron Keener asks for an update on the special assignment Features AGENT HOSKINS. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-18"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Labor.ogg"
+    },
+    {
+      "heading": "Cease Fire",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener and Manny Ortega have a discussion Features AARON KEENER, MANNY ORTEGA. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-19"
+          ]
+        },
+        {
+          "text": "Aaron Keener and Manny Ortega have a discussion Features AARON KEENER, MANNY ORTEGA. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-19"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Cease_Fire.ogg"
+    },
+    {
+      "heading": "Trust",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener and Manny Ortega have a discussion Features AARON KEENER, MANNY ORTEGA. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-20"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Trust.ogg"
+    },
+    {
+      "heading": "Terms",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener and Manny Ortega have a discussion Features AARON KEENER, MANNY ORTEGA. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-21"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Terms.ogg"
+    },
+    {
+      "heading": "Aligned",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener and Manny Ortega have a discussion Features AARON KEENER, MANNY ORTEGA. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-first-rogue-comm-22"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:First_Rogue_-_Aligned.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-andrew-ellis",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Manhunt_-_First_Rogue. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Manhunt_-_First_Rogue",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

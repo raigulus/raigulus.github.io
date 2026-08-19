@@ -1,0 +1,206 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-campus",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Campus",
+  "slug": "td2-comms-campus",
+  "section": "collectibles",
+  "summary": "A collection of 8 comms from The Division universe, scraped from the Fandom wiki hub page. 8 entries include full audio transcripts; 8 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 8,
+  "claims": [
+    {
+      "id": "td2-comms-campus-comm-1",
+      "text": "Comm \"Quarantine Staff\": Henry Hayes, the leader of the Campus settlement, tries to find out what happened to his wife, a nurse at the Roosevelt Island quarantine (Location: Downtown West (2257, 2290))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-campus"
+      ]
+    },
+    {
+      "id": "td2-comms-campus-comm-2",
+      "text": "Comm \"Food Scarcity\": Henry Hayes, the leader of the Campus settlement, laments the food scarcity and is reassured that they will find a way to feed the community (Location: Downtown West (2183, 2047))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-campus"
+      ]
+    },
+    {
+      "id": "td2-comms-campus-comm-3",
+      "text": "Comm \"Building Community\": Henry Hayes, the leader of the Campus settlement, announces the community and lays out a new plan of action (Location: Downtown West (2228, 1973))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-campus"
+      ]
+    },
+    {
+      "id": "td2-comms-campus-comm-4",
+      "text": "Comm \"Help Wanted\": Henry Hayes, the leader of the Campus settlement, confides in another civilian that they need help (Location: Downtown West (2372, 2321))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-campus"
+      ]
+    },
+    {
+      "id": "td2-comms-campus-comm-5",
+      "text": "Comm \"Mystery Meat\": A gardener serves stew to a reluctant civilian (Location: Constitution Hall (1697, 2309))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-campus"
+      ]
+    },
+    {
+      "id": "td2-comms-campus-comm-6",
+      "text": "Comm \"Grief Counseling\": Henry Hayes gives advice and consoles one of the Campus civilians (Location: West End (2405, 1272))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-campus"
+      ]
+    },
+    {
+      "id": "td2-comms-campus-comm-7",
+      "text": "Comm \"Leader Elected\": Henry Hayes gives a speech after being elected the leader of the Campus settlement (Location: Judiciary Square (2030, 4607))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-campus"
+      ]
+    },
+    {
+      "id": "td2-comms-campus-comm-8",
+      "text": "Comm \"Garden Tour\": Henry Hayes gets a tour of the vegetable gardens at the Campus settlement, from one of the civilians (Location: Judiciary Square (2196, 4499))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-campus"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Quarantine Staff",
+      "paragraphs": [
+        {
+          "text": "Henry Hayes, the leader of the Campus settlement, tries to find out what happened to his wife, a nurse at the Roosevelt Island quarantine Features CAMPUS CIVILIAN, HENRY HEYES. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-campus-comm-1"
+          ]
+        }
+      ],
+      "location": "Downtown West (2257, 2290)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Campus_Comms_-_Quarantine_Staff.ogg"
+    },
+    {
+      "heading": "Food Scarcity",
+      "paragraphs": [
+        {
+          "text": "Henry Hayes, the leader of the Campus settlement, laments the food scarcity and is reassured that they will find a way to feed the community Features CAMPUS CIVILIAN, HENRY HEYES. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-campus-comm-2"
+          ]
+        },
+        {
+          "text": "Henry Hayes, the leader of the Campus settlement, laments the food scarcity and is reassured that they will find a way to feed the community Features CAMPUS CIVILIAN, HENRY HEYES. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-campus-comm-2"
+          ]
+        }
+      ],
+      "location": "Downtown West (2183, 2047)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Campus_Comms_-_Food_Scarcity.ogg"
+    },
+    {
+      "heading": "Building Community",
+      "paragraphs": [
+        {
+          "text": "Henry Hayes, the leader of the Campus settlement, announces the community and lays out a new plan of action Features HENRY HEYES. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-campus-comm-3"
+          ]
+        }
+      ],
+      "location": "Downtown West (2228, 1973)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Campus_Comms_-_Building_Community.ogg"
+    },
+    {
+      "heading": "Help Wanted",
+      "paragraphs": [
+        {
+          "text": "Henry Hayes, the leader of the Campus settlement, confides in another civilian that they need help Features CAMPUS CIVILIAN, HENRY HEYES. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-campus-comm-4"
+          ]
+        }
+      ],
+      "location": "Downtown West (2372, 2321)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Campus_Comms_-_Help_Wanted.ogg"
+    },
+    {
+      "heading": "Mystery Meat",
+      "paragraphs": [
+        {
+          "text": "A gardener serves stew to a reluctant civilian Features CAMPUS CIVILIAN 1, CAMPUS CIVILIAN 2. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-campus-comm-5"
+          ]
+        }
+      ],
+      "location": "Constitution Hall (1697, 2309)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Campus_Comms_-_Mystery_Meat.ogg"
+    },
+    {
+      "heading": "Grief Counseling",
+      "paragraphs": [
+        {
+          "text": "Henry Hayes gives advice and consoles one of the Campus civilians Features CAMPUS CIVILIAN, HENRY HEYES. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-campus-comm-6"
+          ]
+        }
+      ],
+      "location": "West End (2405, 1272)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Campus_Comms_-_Grief_Counseling.ogg"
+    },
+    {
+      "heading": "Leader Elected",
+      "paragraphs": [
+        {
+          "text": "Henry Hayes gives a speech after being elected the leader of the Campus settlement Features HENRY HEYES. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-campus-comm-7"
+          ]
+        }
+      ],
+      "location": "Judiciary Square (2030, 4607)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Campus_Comms_-_Leader_Elected.ogg"
+    },
+    {
+      "heading": "Garden Tour",
+      "paragraphs": [
+        {
+          "text": "Henry Hayes gets a tour of the vegetable gardens at the Campus settlement, from one of the civilians Features CAMPUS CIVILIAN, HENRY HEYES. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-campus-comm-8"
+          ]
+        }
+      ],
+      "location": "Judiciary Square (2196, 4499)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Campus_Comms_-_Garden_Tour.ogg"
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Campus. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Campus",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

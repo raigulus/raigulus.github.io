@@ -16,19 +16,26 @@
       "id": "coney-episode-three",
       "text": "Episode 3 brings Division Agents back to New York, specifically Coney Island, for two main missions.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-coney-island-2020", "ubisoft-story-so-far-2020"]
+      "source_ids": [
+        "ubisoft-coney-island-2020",
+        "ubisoft-story-so-far-2020"
+      ]
     },
     {
       "id": "coney-ballpark",
       "text": "Black Tusk holds Vitaly Tchernenko at the Coney Island Ballpark.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-coney-island-2020"]
+      "source_ids": [
+        "ubisoft-coney-island-2020"
+      ]
     },
     {
       "id": "coney-amusement",
       "text": "Cleaners are active at the Coney Island Amusement Park.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-coney-island-2020"]
+      "source_ids": [
+        "ubisoft-coney-island-2020"
+      ]
     }
   ],
   "sections": [
@@ -37,12 +44,45 @@
       "paragraphs": [
         {
           "text": "Coney Island extends the conflict beyond Washington and divides Episode 3 between the rescue of Tchernenko from Black Tusk and a separate confrontation with the Cleaners.",
-          "claim_ids": ["coney-episode-three", "coney-ballpark", "coney-amusement"]
+          "claim_ids": [
+            "coney-episode-three",
+            "coney-ballpark",
+            "coney-amusement"
+          ]
         }
       ]
     }
   ],
-  "relations": [],
+  "relations": [
+    {
+      "target_id": "collectible-td2-comms-brooklyn-bridge",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "collectible-td2-comms-manhunt-rise-up",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "collectible-td2-comms-manhunt-puppeteers",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "collectible-td2-comms-manhunt-price-of-power",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "collectible-td2-comms-manhunt-hidden-alliance",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "collectible-td2-comms-manhunt-end-of-watch",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "collectible-td2-comms-manhunt-concealed-agenda",
+      "relationship": "mentioned-in"
+    }
+  ],
   "verification": {
     "status": "source-reviewed",
     "last_reviewed": "2026-07-19",

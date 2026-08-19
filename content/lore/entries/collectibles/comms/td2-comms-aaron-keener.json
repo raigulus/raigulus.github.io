@@ -1,0 +1,288 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-aaron-keener",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Aaron Keener",
+  "slug": "td2-comms-aaron-keener",
+  "section": "collectibles",
+  "summary": "A collection of 10 comms from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 1 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td2-comms-aaron-keener-comm-1",
+      "text": "Comm \"Wall Street\": Keener is working on Wall Street as a stock broker, talking to an investor on the phone (Location: Financial District (1415, 895))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-aaron-keener"
+      ]
+    },
+    {
+      "id": "td2-comms-aaron-keener-comm-2",
+      "text": "Comm \"Wedding Ring\": Keener talks to another Division agent who asked him about the wedding ring on his finger",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-aaron-keener"
+      ]
+    },
+    {
+      "id": "td2-comms-aaron-keener-comm-3",
+      "text": "Comm \"Wildcards\": Keener talks with another rogue agent about their psychological evaluation that was part of the Division recruitment program",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-aaron-keener"
+      ]
+    },
+    {
+      "id": "td2-comms-aaron-keener-comm-4",
+      "text": "Comm \"Rogue Cells\": Keener and another rogue agent discuss how to organize and execute separate Rogue operations",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-aaron-keener"
+      ]
+    },
+    {
+      "id": "td2-comms-aaron-keener-comm-5",
+      "text": "Comm \"Keener's Psych Evaluation\": A SHD psychologist is screening Keener as part of the recruitment process",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-aaron-keener"
+      ]
+    },
+    {
+      "id": "td2-comms-aaron-keener-comm-6",
+      "text": "Comm \"Abandoned\": Abandoned by the JTF, Keener turns his back on the Division and goes Rogue",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-aaron-keener"
+      ]
+    },
+    {
+      "id": "td2-comms-aaron-keener-comm-7",
+      "text": "Comm \"The Network\": Theo Parnell explains the high-level function of his network-creation to Keener",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-aaron-keener"
+      ]
+    },
+    {
+      "id": "td2-comms-aaron-keener-comm-8",
+      "text": "Comm \"Philosophical\": Now an Agent of the Division, Keener reflects on his former work on Wall Street",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-aaron-keener"
+      ]
+    },
+    {
+      "id": "td2-comms-aaron-keener-comm-9",
+      "text": "Comm \"Seeing Things Clearly Now\": Keener is talking with another Rogue Agent about how their perspective has changed after The Outbreak",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-aaron-keener"
+      ]
+    },
+    {
+      "id": "td2-comms-aaron-keener-comm-10",
+      "text": "Comm \"Keener's Legacy\": Keener and another Rogue Agent discuss what each of their legacy is",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-aaron-keener"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Wall Street",
+      "paragraphs": [
+        {
+          "text": "Keener is working on Wall Street as a stock broker, talking to an investor on the phone Features AARON KEENER, CIVILIAN. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-aaron-keener-comm-1"
+          ]
+        },
+        {
+          "text": "Keener is working on Wall Street as a stock broker, talking to an investor on the phone Features CIVILIAN. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-aaron-keener-comm-1"
+          ]
+        }
+      ],
+      "location": "Financial District (1415, 895)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Aaron_Keener_Comms_-_Wall_Street.ogg"
+    },
+    {
+      "heading": "Wedding Ring",
+      "paragraphs": [
+        {
+          "text": "Keener talks to another Division agent who asked him about the wedding ring on his finger Features AARON KEENER, AGENT NICOLS. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-aaron-keener-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Aaron_Keener_Comms_-_Wedding_Ring.ogg"
+    },
+    {
+      "heading": "Wildcards",
+      "paragraphs": [
+        {
+          "text": "Keener talks with another rogue agent about their psychological evaluation that was part of the Division recruitment program Features AARON KEENER, NEPTUNE. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-aaron-keener-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Aaron_Keener_Comms_-_Wildcards.ogg"
+    },
+    {
+      "heading": "Rogue Cells",
+      "paragraphs": [
+        {
+          "text": "Keener and another rogue agent discuss how to organize and execute separate Rogue operations Features AARON KEENER, JUPITER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-aaron-keener-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Aaron_Keener_Comms_-_Rogue_Cells.ogg"
+    },
+    {
+      "heading": "Keener's Psych Evaluation",
+      "paragraphs": [
+        {
+          "text": "A SHD psychologist is screening Keener as part of the recruitment process Features AARON KEENER, PSYCHOLOGIST. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-aaron-keener-comm-5"
+          ]
+        },
+        {
+          "text": "A SHD psychologist is screening Keener as part of the recruitment process Features AARON KEENER, PSYCHOLOGIST. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-aaron-keener-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Aaron_Keener_Comms_-_Keener%27s_Psych_Evaluation.ogg"
+    },
+    {
+      "heading": "Abandoned",
+      "paragraphs": [
+        {
+          "text": "Abandoned by the JTF, Keener turns his back on the Division and goes Rogue Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-aaron-keener-comm-6"
+          ]
+        },
+        {
+          "text": "But what kind of mission is that? The government doesn't care about us. We're expendable, sure, but they have carelessly thrown us aside for no reason. And why should we sacrifice ourselves for a state that doesn't deserve it? We should all take a moment to reflect on that, and ask if the mission still stands. Me, I'm not so sure anymore",
+          "claim_ids": [
+            "td2-comms-aaron-keener-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Aaron_Keener_Comms_-_Abandoned.ogg"
+    },
+    {
+      "heading": "The Network",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell explains the high-level function of his network-creation to Keener Features AARON KEENER, THEO PARNELL. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-aaron-keener-comm-7"
+          ]
+        },
+        {
+          "text": "Theo Parnell explains the high-level function of his network-creation to Keener Features AARON KEENER, THEO PARNELL. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-aaron-keener-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Aaron_Keener_Comms_-_The_Network.ogg"
+    },
+    {
+      "heading": "Philosophical",
+      "paragraphs": [
+        {
+          "text": "Now an Agent of the Division, Keener reflects on his former work on Wall Street Features AARON KEENER, VENUS. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-aaron-keener-comm-8"
+          ]
+        },
+        {
+          "text": "Now an Agent of the Division, Keener reflects on his former work on Wall Street Features AARON KEENER, VENUS. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-aaron-keener-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Aaron_Keener_Comms_-_Philosophical.ogg"
+    },
+    {
+      "heading": "Seeing Things Clearly Now",
+      "paragraphs": [
+        {
+          "text": "Keener is talking with another Rogue Agent about how their perspective has changed after The Outbreak Features AARON KEENER, JUPITER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-aaron-keener-comm-9"
+          ]
+        },
+        {
+          "text": "Keener is talking with another Rogue Agent about how their perspective has changed after The Outbreak Features AARON KEENER, JUPITER. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-aaron-keener-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Aaron_Keener_Comms_-_Seeing_Things_Clearly_Now.ogg"
+    },
+    {
+      "heading": "Keener's Legacy",
+      "paragraphs": [
+        {
+          "text": "Keener and another Rogue Agent discuss what each of their legacy is Features AARON KEENER, SATURN. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-aaron-keener-comm-10"
+          ]
+        },
+        {
+          "text": "Keener and another Rogue Agent discuss what each of their legacy is Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-aaron-keener-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Aaron_Keener_Comms_-_Keener%27s_Legacy.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-theo-parnell",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "mission-wall-street",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Aaron_Keener. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Aaron_Keener",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

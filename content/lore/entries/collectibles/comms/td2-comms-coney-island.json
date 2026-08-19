@@ -1,0 +1,236 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-coney-island",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Coney Island",
+  "slug": "td2-comms-coney-island",
+  "section": "collectibles",
+  "summary": "A collection of 9 comms from The Division universe, scraped from the Fandom wiki hub page. 9 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 9,
+  "claims": [
+    {
+      "id": "td2-comms-coney-island-comm-1",
+      "text": "Comm \"Collaboration\": Keener talks with Conley about their collaboration and goals",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-coney-island"
+      ]
+    },
+    {
+      "id": "td2-comms-coney-island-comm-2",
+      "text": "Comm \"New Friends\": Keener informs Tchernenko about his next \"partnership",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-coney-island"
+      ]
+    },
+    {
+      "id": "td2-comms-coney-island-comm-3",
+      "text": "Comm \"Trade Agreement\": Keener talks with Dolores Jones about the deal with Tchernenko",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-coney-island"
+      ]
+    },
+    {
+      "id": "td2-comms-coney-island-comm-4",
+      "text": "Comm \"Are You Threatening Me\": Tchernenko reveals the truth behind his collaboration with Keener",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-coney-island"
+      ]
+    },
+    {
+      "id": "td2-comms-coney-island-comm-5",
+      "text": "Comm \"Speculation\": Tchernenko speculates what Keener intends to do with the new virus",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-coney-island"
+      ]
+    },
+    {
+      "id": "td2-comms-coney-island-comm-6",
+      "text": "Comm \"Set Up\": Keener works with Conley",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-coney-island"
+      ]
+    },
+    {
+      "id": "td2-comms-coney-island-comm-7",
+      "text": "Comm \"Ashes to Ashes\": Conley gives information and orders to the Cleaners",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-coney-island"
+      ]
+    },
+    {
+      "id": "td2-comms-coney-island-comm-8",
+      "text": "Comm \"As Far As You Can Throw Him\": Dolores Jones and Keener have a chat",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-coney-island"
+      ]
+    },
+    {
+      "id": "td2-comms-coney-island-comm-9",
+      "text": "Comm \"Practice Makes Perfect\": Keener and Tchernenko talk about a failed experiment",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-coney-island"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Collaboration",
+      "paragraphs": [
+        {
+          "text": "Keener talks with Conley about their collaboration and goals Features AARON KEENER, VIVIAN CONLEY. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-coney-island-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Coney_Island_Comms_-_Collaboration.ogg"
+    },
+    {
+      "heading": "New Friends",
+      "paragraphs": [
+        {
+          "text": "Keener informs Tchernenko about his next \"partnership Features AARON KEENER, VITALY TCHERNENKO. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-coney-island-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Coney_Island_Comms_-_New_Friends.ogg"
+    },
+    {
+      "heading": "Trade Agreement",
+      "paragraphs": [
+        {
+          "text": "Keener talks with Dolores Jones about the deal with Tchernenko Features AARON KEENER, DOLORES JONES. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-coney-island-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Coney_Island_Comms_-_Trade_Agreement.ogg"
+    },
+    {
+      "heading": "Are You Threatening Me",
+      "paragraphs": [
+        {
+          "text": "Tchernenko reveals the truth behind his collaboration with Keener Features VITALY TCHERNENKO. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-coney-island-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Coney_Island_Comms_-_Are_You_Threatening_Me.ogg"
+    },
+    {
+      "heading": "Speculation",
+      "paragraphs": [
+        {
+          "text": "Tchernenko speculates what Keener intends to do with the new virus Features VITALY TCHERNENKO. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-coney-island-comm-5"
+          ]
+        },
+        {
+          "text": "I don't know how anyone could live with themselves after the things he's done. I don't know how to live myself. I didn't know what I was doing when I was working with Amherst. That work was about science, not the application. I didn't see the applications. But, now... with Keener's virus... I see too many, and all of them terrify me.",
+          "claim_ids": [
+            "td2-comms-coney-island-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Coney_Island_Comms_-_Speculation.ogg"
+    },
+    {
+      "heading": "Set Up",
+      "paragraphs": [
+        {
+          "text": "Keener works with Conley Features AARON KEENER, VIVIAN CONLEY. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-coney-island-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Coney_Island_Comms_-_Set_Up.ogg"
+    },
+    {
+      "heading": "Ashes to Ashes",
+      "paragraphs": [
+        {
+          "text": "Conley gives information and orders to the Cleaners Features CLEANER, VIVIAN CONLEY. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-coney-island-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Coney_Island_Comms_-_Ashes_to_Ashes.ogg"
+    },
+    {
+      "heading": "As Far As You Can Throw Him",
+      "paragraphs": [
+        {
+          "text": "Dolores Jones and Keener have a chat Features AARON KEENER, DOLORES JONES. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-coney-island-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Coney_Island_Comms_-_As_Fas_As_You_Can_Throw_Him.ogg"
+    },
+    {
+      "heading": "Practice Makes Perfect",
+      "paragraphs": [
+        {
+          "text": "Keener and Tchernenko talk about a failed experiment Features AARON KEENER, VITALY TCHERNENKO. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-coney-island-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Coney_Island_Comms_-_Practice_Makes_Perfect.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-vivian-conley",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-vitaly-tchernenko",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-cleaners",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Coney_Island. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Coney_Island",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020",
+      "ubisoft-coney-island-2020"
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td1-phone-recordings-national-guard",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD1 Phone Recordings: National Guard",
+  "slug": "td1-phone-recordings-national-guard",
+  "section": "collectibles",
+  "summary": "A collection of 7 phone recordings from The Division universe, scraped from the Fandom wiki hub page. 7 entries include full audio transcripts; 7 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "phone-recordings",
+  "total_entries": 7,
+  "claims": [
+    {
+      "id": "td1-phone-recordings-national-guard-comm-1",
+      "text": "Comm \"National Guard 1\": National Guard soldier shares his experience of the crisis (Location: Kips Bay (1018, 2921))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-national-guard"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-national-guard-comm-2",
+      "text": "Comm \"National Guard 2\": National Guard soldier shares his experience of the crisis (Location: Kips Bay (1028, 3043))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-national-guard"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-national-guard-comm-3",
+      "text": "Comm \"National Guard 3\": National Guard soldier shares his experience of the crisis (Location: Kips Bay (1122, 2781))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-national-guard"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-national-guard-comm-4",
+      "text": "Comm \"National Guard 4\": National Guard soldier shares his experience of the crisis (Location: Kips Bay (936, 3239))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-national-guard"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-national-guard-comm-5",
+      "text": "Comm \"National Guard 5\": National Guard soldier shares his experience of the crisis (Location: Murray Hill (1220, 2504))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-national-guard"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-national-guard-comm-6",
+      "text": "Comm \"National Guard 6\": National Guard soldier shares his experience of the crisis (Location: Murray Hill (1301, 2481))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-national-guard"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-national-guard-comm-7",
+      "text": "Comm \"National Guard 7\": National Guard soldier shares his experience of the crisis (Location: Murray Hill (1446, 2509))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-national-guard"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "National Guard 1",
+      "paragraphs": [
+        {
+          "text": "National Guard soldier shares his experience of the crisis Features SPECIALIST ROBERT ARMITAGE. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-national-guard-comm-1"
+          ]
+        }
+      ],
+      "location": "Kips Bay (1018, 2921)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:National_Guard_1.ogg"
+    },
+    {
+      "heading": "National Guard 2",
+      "paragraphs": [
+        {
+          "text": "National Guard soldier shares his experience of the crisis Features SPECIALIST ROBERT ARMITAGE. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-national-guard-comm-2"
+          ]
+        }
+      ],
+      "location": "Kips Bay (1028, 3043)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:National_Guard_2.ogg"
+    },
+    {
+      "heading": "National Guard 3",
+      "paragraphs": [
+        {
+          "text": "National Guard soldier shares his experience of the crisis Features SPECIALIST ROBERT ARMITAGE. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-national-guard-comm-3"
+          ]
+        }
+      ],
+      "location": "Kips Bay (1122, 2781)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:National_Guard_3.ogg"
+    },
+    {
+      "heading": "National Guard 4",
+      "paragraphs": [
+        {
+          "text": "National Guard soldier shares his experience of the crisis Features SPECIALIST ROBERT ARMITAGE. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-national-guard-comm-4"
+          ]
+        }
+      ],
+      "location": "Kips Bay (936, 3239)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:National_Guard_4.ogg"
+    },
+    {
+      "heading": "National Guard 5",
+      "paragraphs": [
+        {
+          "text": "National Guard soldier shares his experience of the crisis Features SPECIALIST ROBERT ARMITAGE. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-national-guard-comm-5"
+          ]
+        }
+      ],
+      "location": "Murray Hill (1220, 2504)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:National_Guard_5.ogg"
+    },
+    {
+      "heading": "National Guard 6",
+      "paragraphs": [
+        {
+          "text": "National Guard soldier shares his experience of the crisis Features SPECIALIST ROBERT ARMITAGE. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-national-guard-comm-6"
+          ]
+        }
+      ],
+      "location": "Murray Hill (1301, 2481)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:National_Guard_6.ogg"
+    },
+    {
+      "heading": "National Guard 7",
+      "paragraphs": [
+        {
+          "text": "National Guard soldier shares his experience of the crisis Features SPECIALIST ROBERT ARMITAGE. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-national-guard-comm-7"
+          ]
+        }
+      ],
+      "location": "Murray Hill (1446, 2509)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:National_Guard_7.ogg"
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Phone_Recordings/National_Guard. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Phone_Recordings/National_Guard",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions"
+    ]
+  }
+}

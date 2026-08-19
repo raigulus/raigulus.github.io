@@ -1,0 +1,178 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td1-phone-recordings-come-together",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD1 Phone Recordings: Come Together",
+  "slug": "td1-phone-recordings-come-together",
+  "section": "collectibles",
+  "summary": "A collection of 7 phone recordings from The Division universe, scraped from the Fandom wiki hub page. 7 entries include full audio transcripts; 7 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "phone-recordings",
+  "total_entries": 7,
+  "claims": [
+    {
+      "id": "td1-phone-recordings-come-together-comm-1",
+      "text": "Comm \"Introduction\": Meet Sarah Cardozo (Location: Piers South (2009, 673))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-come-together"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-come-together-comm-2",
+      "text": "Comm \"In the Neighborhood\": A neighborhood history since Green Poison (Location: Piers South (2194, 777))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-come-together"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-come-together-comm-3",
+      "text": "Comm \"Impending Arrival\": A sense that something new is coming (Location: Piers South (2264, 816))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-come-together"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-come-together-comm-4",
+      "text": "Comm \"The first Cleaner\": Cardozo's first encounter with a Cleaner (Location: Piers South (1963, 770))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-come-together"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-come-together-comm-5",
+      "text": "Comm \"The first LMB\": Cardozo's first encounter with a member of the LMB (Location: Piers North (2623, 869))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-come-together"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-come-together-comm-6",
+      "text": "Comm \"Collaboration\": Cardozo views the factions working together (Location: Piers South (2574, 813))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-come-together"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-come-together-comm-7",
+      "text": "Comm \"Farewell\": Cardozo vows to leave the neighborhood before it's too late (Location: Piers North (2574, 813))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-come-together"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Introduction",
+      "paragraphs": [
+        {
+          "text": "Meet Sarah Cardozo Features SARAH CORDOZO. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-come-together-comm-1"
+          ]
+        }
+      ],
+      "location": "Piers South (2009, 673)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Introduction_Cordozo.ogg"
+    },
+    {
+      "heading": "In the Neighborhood",
+      "paragraphs": [
+        {
+          "text": "A neighborhood history since Green Poison Features SARAH CORDOZO. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-come-together-comm-2"
+          ]
+        }
+      ],
+      "location": "Piers South (2194, 777)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:In_the_Neighborhood.ogg"
+    },
+    {
+      "heading": "Impending Arrival",
+      "paragraphs": [
+        {
+          "text": "A sense that something new is coming Features SARAH CORDOZO. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-come-together-comm-3"
+          ]
+        }
+      ],
+      "location": "Piers South (2264, 816)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Impending_Arrival.ogg"
+    },
+    {
+      "heading": "The first Cleaner",
+      "paragraphs": [
+        {
+          "text": "Cardozo's first encounter with a Cleaner Features SARAH CORDOZO. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-come-together-comm-4"
+          ]
+        }
+      ],
+      "location": "Piers South (1963, 770)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_first_Cleaner.ogg"
+    },
+    {
+      "heading": "The first LMB",
+      "paragraphs": [
+        {
+          "text": "Cardozo's first encounter with a member of the LMB Features SARAH CORDOZO. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-come-together-comm-5"
+          ]
+        }
+      ],
+      "location": "Piers North (2623, 869)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_first_LMB.ogg"
+    },
+    {
+      "heading": "Collaboration",
+      "paragraphs": [
+        {
+          "text": "Cardozo views the factions working together Features SARAH CORDOZO. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-come-together-comm-6"
+          ]
+        }
+      ],
+      "location": "Piers South (2574, 813)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Collaboration.ogg"
+    },
+    {
+      "heading": "Farewell",
+      "paragraphs": [
+        {
+          "text": "Cardozo vows to leave the neighborhood before it's too late Features SARAH CORDOZO. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-come-together-comm-7"
+          ]
+        }
+      ],
+      "location": "Piers North (2574, 813)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Farewell.ogg"
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Phone_Recordings/Come_Together. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Phone_Recordings/Come_Together",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions"
+    ]
+  }
+}

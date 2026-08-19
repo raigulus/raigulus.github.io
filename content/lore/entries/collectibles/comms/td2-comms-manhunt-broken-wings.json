@@ -1,0 +1,1038 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-manhunt-broken-wings",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Manhunt - Broken Wings",
+  "slug": "td2-comms-manhunt-broken-wings",
+  "section": "collectibles",
+  "summary": "A collection of 44 comms from The Division universe, scraped from the Fandom wiki hub page. 26 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 44,
+  "claims": [
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-1",
+      "text": "Comm \"Debrief\": Manny Ortega does an intake interview with John Yazzie after the incident at the Mexican Embassy",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-2",
+      "text": "Comm \"Reassigned\": Manny Ortega talks to John Yazzie about a new assignment",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-3",
+      "text": "Comm \"Check-in\": Manny Ortega talks to John Yazzie how he feels in his new role",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-4",
+      "text": "Comm \"Transpo\": Manny Ortega talks to John Yazzie about the future of transportation",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-5",
+      "text": "Comm \"John\": Debrief with John",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-6",
+      "text": "Comm \"Chad\": Eva Garcia leaves a message for her mom about Chad",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-7",
+      "text": "Comm \"Athena\": Eva Garcia leaves a message for her mom about Athena",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-8",
+      "text": "Comm \"Kazi\": Eva Garcia leaves a message for her mom about Kazi",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-9",
+      "text": "Comm \"Moving\": Eva Garcia leaves a message for her mom about moving to a new settlement",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-10",
+      "text": "Comm \"Eva\": Debrief with Eva",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-11",
+      "text": "Comm \"Relocation\": Lauren Fong talks to Manny Ortega about relocating from their community to the Castle",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-12",
+      "text": "Comm \"Introductions\": Lauren Fong introduces her deaf girlfriend to Mari Singh",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-13",
+      "text": "Comm \"Improvements\": Lauren Fong tells Mari Singh about some improvements they've made to the aquaponics system",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-14",
+      "text": "Comm \"Request\": Mari Singh asks Lauren Fong if they can grow some special crops for her",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-15",
+      "text": "Comm \"Lauren\": Debrief with Lauren",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-16",
+      "text": "Comm \"Wally Session\": Mitchell Billings has a session with Candice \"Wally\" Wallace",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-17",
+      "text": "Comm \"MITCHELL BILLINGS: How are you feeling today, \"Wally\"?\": WALLY\": Good. Weird. But good.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-18",
+      "text": "Comm \"MITCHELL BILLINGS: It's gonna take time to adjust and find you role in this community.\": WALLY\": Oh, I've already got a job, and I'm not alone, I've got Fred.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-19",
+      "text": "Comm \"MITCHELL BILLINGS: That's good. Is he your boyfriend?\": WALLY\": Oh god no. Fred? We're just friends. He couldn't handle this. Besides, I'm pretty sure he's still broken after the bullshit his ex put him through.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-20",
+      "text": "Comm \"MITCHELL BILLINGS: Well, I'm glad to see you haven't lose your sense of humor.\": WALLY\": When you're not laughing you're crying and if you're crying, you're dying.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-21",
+      "text": "Comm \"MITCHELL BILLINGS: You've been through a lot haven't you.\": WALLY\": You wouldn't believe it. No one ever believes the truth.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-22",
+      "text": "Comm \"MITCHELL BILLINGS: You know, I find sometimes people surprise you, if you let them.\": WALLY\": That's hard, doc. To let people in, if you never let them in, they can never disappoint you.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-23",
+      "text": "Comm \"MITCHELL BILLINGS: You know, sometimes people use their strength and humor as a shield.\": WALLY\": Or a weapon.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-24",
+      "text": "Comm \"MITCHELL BILLINGS: Exactly, this is a safe place, you don't have to protect yourself anymore. You can put down the armor.\": WALLY\": Dammit, you're good, doc.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-25",
+      "text": "Comm \"MITCHELL BILLINGS: Why did you join the True Sons?\": WALLY\": Shit. Guess we're diving deep today. It seemed like a good idea at the time.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-26",
+      "text": "Comm \"MITCHELL BILLINGS: Even with what happened at Roosevelt Island?\": WALLY\": I didn't know fuck all about that. My job was keeping the lights on. You focus on the job, you can lose sight of a lot of fucked up shit.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-27",
+      "text": "Comm \"MITCHELL BILLINGS: Do you think Ridgeway kept you in the dark on purpose?\": WALLY\": I think everyone does that. There's no way for anyone to know everything, so people only tell what you need to know to get the job done, that's leadership and chain of command. You follow orders and trust they are for a reason.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-28",
+      "text": "Comm \"MITCHELL BILLINGS: In the end, you decided to stop following orders, what changed?\": WALLY\": We did. Ridgeway wanted to cut our losses. We all know about acceptable loss. We know about collateral damage, but Anderson, he was chasing danger. He was courting loss. He wasn't trying to stop the hemorrhaging. With Ridgeway, we were doing what we had to, to save the most people. With Anderson, he just wanted power, how else do you explain him partnering with Sokolova?",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-29",
+      "text": "Comm \"Fred Session\": Mitchell Billings has a session with Captain Lewis",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-30",
+      "text": "Comm \"Kelso Session\": Mitchell Billings has a session with Agent Kelso",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-31",
+      "text": "Comm \"Manny Session\": Mitchell Billings has a session with Manny Ortega",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-32",
+      "text": "Comm \"Mitchell\": Debrief with Mitchell",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-33",
+      "text": "Comm \"Tacos\": Manny Ortega visits Mari Singh at the Aquarium for tacos",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-34",
+      "text": "Comm \"Ceviche\": Mari Singh brings Manny Ortega some fresh tilapia to make his \"famous ceviche",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-35",
+      "text": "Comm \"Fish Fry\": Candice \"Wally\" Wallace and Captain Fred Lewis enjoy a fish fry at the Castle",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-36",
+      "text": "Comm \"Washington, D.C.\": WALLY\": Oh my god, did you try the fish tacos? They are so freaking good.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-37",
+      "text": "Comm \"CAPTAIN LEWIS: Right? If they lead with this, we could have overthrown the Black Tusk.\": WALLY\": Hindsight. I'm glad you made it out.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-38",
+      "text": "Comm \"CAPTAIN LEWIS: Me too. I wish more of us made it.\": WALLY\": Nope, stop. We can't go there. If we start crying we'll never stop.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-39",
+      "text": "Comm \"MANNY ORTEGA: We're not public.\": WALLY\": Shit, Mari have you tried this ceviche?",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-40",
+      "text": "Comm \"MARI SINGH: Of course.\": WALLY\": You gotta have some.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-41",
+      "text": "Comm \"MARI SINGH: I'm good.\": WALLY\": You're missing out.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-42",
+      "text": "Comm \"MANNY ORTEGA: Okay, I think it's time for bed.\": WALLY\": I'll take care of our boy, go get your girl.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-43",
+      "text": "Comm \"Positive\": Mari Singh tells Manny Ortega that she is pregnant",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-broken-wings-comm-44",
+      "text": "Comm \"Mari\": Debrief with Mari",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-broken-wings"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Debrief",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega does an intake interview with John Yazzie after the incident at the Mexican Embassy Features JOHN YAZZIE, MANNY ORTEGA. Contains 14 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-1"
+          ]
+        },
+        {
+          "text": "Manny Ortega does an intake interview with John Yazzie after the incident at the Mexican Embassy Features JOHN YAZZIE, MANNY ORTEGA. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Debrief.ogg"
+    },
+    {
+      "heading": "Reassigned",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega talks to John Yazzie about a new assignment Features JOHN YAZZIE, MANNY ORTEGA. Contains 16 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-2"
+          ]
+        },
+        {
+          "text": "Manny Ortega talks to John Yazzie about a new assignment Features JOHN YAZZIE, MANNY ORTEGA. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Reassigned.ogg"
+    },
+    {
+      "heading": "Check-in",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega talks to John Yazzie how he feels in his new role Features JOHN YAZZIE, MANNY ORTEGA. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-3"
+          ]
+        },
+        {
+          "text": "Manny Ortega talks to John Yazzie how he feels in his new role Features JOHN YAZZIE, MANNY ORTEGA. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Check-in.ogg"
+    },
+    {
+      "heading": "Transpo",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega talks to John Yazzie about the future of transportation Features JOHN YAZZIE, MANNY ORTEGA. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-4"
+          ]
+        },
+        {
+          "text": "Manny Ortega talks to John Yazzie about the future of transportation Features JOHN YAZZIE, MANNY ORTEGA. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Transpo.ogg"
+    },
+    {
+      "heading": "John",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega does an intake interview with John Yazzie after the incident at the Mexican Embassy Features JOHN YAZZIE, MANNY ORTEGA. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-5"
+          ]
+        },
+        {
+          "text": "Manny Ortega does an intake interview with John Yazzie after the incident at the Mexican Embassy Features JOHN YAZZIE, MANNY ORTEGA. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_John.ogg"
+    },
+    {
+      "heading": "Chad",
+      "paragraphs": [
+        {
+          "text": "Eva Garcia leaves a message for her mom about Chad Features EVA GARCIA. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Chad.ogg"
+    },
+    {
+      "heading": "Athena",
+      "paragraphs": [
+        {
+          "text": "Eva Garcia leaves a message for her mom about Athena Features EVA GARCIA. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Athena.ogg"
+    },
+    {
+      "heading": "Kazi",
+      "paragraphs": [
+        {
+          "text": "Eva Garcia leaves a message for her mom about Kazi Features EVA GARCIA. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Kazi.ogg"
+    },
+    {
+      "heading": "Moving",
+      "paragraphs": [
+        {
+          "text": "Eva Garcia leaves a message for her mom about moving to a new settlement Features EVA GARCIA. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-9"
+          ]
+        },
+        {
+          "text": "I miss, you mom. Love you. Hope you're not dead. Fuck. Sorry, mom. Sorry. Call me back, okay. I love you. Bye.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Moving.ogg"
+    },
+    {
+      "heading": "Eva",
+      "paragraphs": [
+        {
+          "text": "Eva Garcia leaves a message for her mom about Chad Features EVA GARCIA, MANNY ORTEGA. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-10"
+          ]
+        },
+        {
+          "text": "Eva Garcia leaves a message for her mom about Chad Features EVA GARCIA. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Eva.ogg"
+    },
+    {
+      "heading": "Relocation",
+      "paragraphs": [
+        {
+          "text": "Lauren Fong talks to Manny Ortega about relocating from their community to the Castle Features LAUREN FONG, MANNY ORTEGA. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-11"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Relocation.ogg"
+    },
+    {
+      "heading": "Introductions",
+      "paragraphs": [
+        {
+          "text": "Lauren Fong introduces her deaf girlfriend to Mari Singh Features LAUREN FONG, MARI SINGH. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-12"
+          ]
+        },
+        {
+          "text": "Lauren Fong introduces her deaf girlfriend to Mari Singh Features LAUREN FONG, MARI SINGH. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-12"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Introductions.ogg"
+    },
+    {
+      "heading": "Improvements",
+      "paragraphs": [
+        {
+          "text": "Lauren Fong tells Mari Singh about some improvements they've made to the aquaponics system Features LAUREN FONG, MARI SINGH. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-13"
+          ]
+        },
+        {
+          "text": "Lauren Fong tells Mari Singh about some improvements they've made to the aquaponics system Features LAUREN FONG, MARI SINGH. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-13"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Improvements.ogg"
+    },
+    {
+      "heading": "Request",
+      "paragraphs": [
+        {
+          "text": "Mari Singh asks Lauren Fong if they can grow some special crops for her Features LAUREN FONG, MARI SINGH. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-14"
+          ]
+        },
+        {
+          "text": "Mari Singh asks Lauren Fong if they can grow some special crops for her Features LAUREN FONG, MARI SINGH. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-14"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Request.ogg"
+    },
+    {
+      "heading": "Lauren",
+      "paragraphs": [
+        {
+          "text": "Lauren Fong talks to Manny Ortega about relocating from their community to the Castle Features LAUREN FONG, MANNY ORTEGA. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-15"
+          ]
+        },
+        {
+          "text": "Lauren Fong talks to Manny Ortega about relocating from their community to the Castle Features LAUREN FONG, MANNY ORTEGA. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-15"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Lauren.ogg"
+    },
+    {
+      "heading": "Wally Session",
+      "paragraphs": [
+        {
+          "text": "Washington, D.C.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-16"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Wally_Session.ogg"
+    },
+    {
+      "heading": "MITCHELL BILLINGS: How are you feeling today, \"Wally\"?",
+      "paragraphs": [
+        {
+          "text": "WALLY\": Good. Weird. But good.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-17"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "MITCHELL BILLINGS: It's gonna take time to adjust and find you role in this community.",
+      "paragraphs": [
+        {
+          "text": "WALLY\": Oh, I've already got a job, and I'm not alone, I've got Fred.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-18"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "MITCHELL BILLINGS: That's good. Is he your boyfriend?",
+      "paragraphs": [
+        {
+          "text": "WALLY\": Oh god no. Fred? We're just friends. He couldn't handle this. Besides, I'm pretty sure he's still broken after the bullshit his ex put him through.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-19"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "MITCHELL BILLINGS: Well, I'm glad to see you haven't lose your sense of humor.",
+      "paragraphs": [
+        {
+          "text": "WALLY\": When you're not laughing you're crying and if you're crying, you're dying.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-20"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "MITCHELL BILLINGS: You've been through a lot haven't you.",
+      "paragraphs": [
+        {
+          "text": "WALLY\": You wouldn't believe it. No one ever believes the truth.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-21"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "MITCHELL BILLINGS: You know, I find sometimes people surprise you, if you let them.",
+      "paragraphs": [
+        {
+          "text": "WALLY\": That's hard, doc. To let people in, if you never let them in, they can never disappoint you.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-22"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "MITCHELL BILLINGS: You know, sometimes people use their strength and humor as a shield.",
+      "paragraphs": [
+        {
+          "text": "WALLY\": Or a weapon.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-23"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "MITCHELL BILLINGS: Exactly, this is a safe place, you don't have to protect yourself anymore. You can put down the armor.",
+      "paragraphs": [
+        {
+          "text": "WALLY\": Dammit, you're good, doc.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-24"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "MITCHELL BILLINGS: Why did you join the True Sons?",
+      "paragraphs": [
+        {
+          "text": "WALLY\": Shit. Guess we're diving deep today. It seemed like a good idea at the time.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-25"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "MITCHELL BILLINGS: Even with what happened at Roosevelt Island?",
+      "paragraphs": [
+        {
+          "text": "WALLY\": I didn't know fuck all about that. My job was keeping the lights on. You focus on the job, you can lose sight of a lot of fucked up shit.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-26"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "MITCHELL BILLINGS: Do you think Ridgeway kept you in the dark on purpose?",
+      "paragraphs": [
+        {
+          "text": "WALLY\": I think everyone does that. There's no way for anyone to know everything, so people only tell what you need to know to get the job done, that's leadership and chain of command. You follow orders and trust they are for a reason.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-27"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "MITCHELL BILLINGS: In the end, you decided to stop following orders, what changed?",
+      "paragraphs": [
+        {
+          "text": "WALLY\": We did. Ridgeway wanted to cut our losses. We all know about acceptable loss. We know about collateral damage, but Anderson, he was chasing danger. He was courting loss. He wasn't trying to stop the hemorrhaging. With Ridgeway, we were doing what we had to, to save the most people. With Anderson, he just wanted power, how else do you explain him partnering with Sokolova?",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-28"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Fred Session",
+      "paragraphs": [
+        {
+          "text": "Mitchell Billings has a session with Captain Lewis Features CAPTAIN LEWIS, MITCHELL BILLINGS. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-29"
+          ]
+        },
+        {
+          "text": "Mitchell Billings has a session with Captain Lewis Features CAPTAIN LEWIS, MITCHELL BILLINGS. Contains 15 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-29"
+          ]
+        },
+        {
+          "text": "Mitchell Billings has a session with Captain Lewis Features CAPTAIN LEWIS, MITCHELL BILLINGS. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-29"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Fred_Session.ogg"
+    },
+    {
+      "heading": "Kelso Session",
+      "paragraphs": [
+        {
+          "text": "Mitchell Billings has a session with Agent Kelso Features AGENT KELSO, MITCHELL BILLINGS. Contains 16 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-30"
+          ]
+        },
+        {
+          "text": "Mitchell Billings has a session with Agent Kelso Features AGENT KELSO, MITCHELL BILLINGS. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-30"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Kelso_Session.ogg"
+    },
+    {
+      "heading": "Manny Session",
+      "paragraphs": [
+        {
+          "text": "Mitchell Billings has a session with Manny Ortega Features MANNY ORTEGA, MITCHELL BILLINGS. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-31"
+          ]
+        },
+        {
+          "text": "Mitchell Billings has a session with Manny Ortega Features MANNY ORTEGA, MITCHELL BILLINGS. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-31"
+          ]
+        },
+        {
+          "text": "Mitchell Billings has a session with Manny Ortega Features MANNY ORTEGA, MITCHELL BILLINGS. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-31"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Manny_Session.ogg"
+    },
+    {
+      "heading": "Mitchell",
+      "paragraphs": [
+        {
+          "text": "Mitchell Billings has a session with Candice \"Wally\" Wallace Features MANNY ORTEGA, MITCHELL BILLINGS. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-32"
+          ]
+        },
+        {
+          "text": "Mitchell Billings has a session with Candice \"Wally\" Wallace Features MANNY ORTEGA, MITCHELL BILLINGS. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-32"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Mitchell.ogg"
+    },
+    {
+      "heading": "Tacos",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega visits Mari Singh at the Aquarium for tacos Features MANNY ORTEGA, MARI SINGH. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-33"
+          ]
+        },
+        {
+          "text": "Manny Ortega visits Mari Singh at the Aquarium for tacos Features MARI SINGH. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-33"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Tacos.ogg"
+    },
+    {
+      "heading": "Ceviche",
+      "paragraphs": [
+        {
+          "text": "Mari Singh brings Manny Ortega some fresh tilapia to make his \"famous ceviche Features CINDY MCALLISTER, MANNY ORTEGA, MARI SINGH. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-34"
+          ]
+        },
+        {
+          "text": "Mari Singh brings Manny Ortega some fresh tilapia to make his \"famous ceviche Features MANNY ORTEGA, MARI SINGH. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-34"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Ceviche.ogg"
+    },
+    {
+      "heading": "Fish Fry",
+      "paragraphs": [
+        {
+          "text": "Candice \"Wally\" Wallace and Captain Fred Lewis enjoy a fish fry at the Castle",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-35"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Fish_Fry.ogg"
+    },
+    {
+      "heading": "Washington, D.C.",
+      "paragraphs": [
+        {
+          "text": "WALLY\": Oh my god, did you try the fish tacos? They are so freaking good.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-36"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "CAPTAIN LEWIS: Right? If they lead with this, we could have overthrown the Black Tusk.",
+      "paragraphs": [
+        {
+          "text": "WALLY\": Hindsight. I'm glad you made it out.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-37"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "CAPTAIN LEWIS: Me too. I wish more of us made it.",
+      "paragraphs": [
+        {
+          "text": "Me too. I wish more of us made it.\": WALLY\": Nope, stop. We can't go there. If we start crying we'll never stop. Features CAPTAIN LEWIS, MANNY ORTEGA. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-38"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "MANNY ORTEGA: We're not public.",
+      "paragraphs": [
+        {
+          "text": "WALLY\": Shit, Mari have you tried this ceviche?",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-39"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "MARI SINGH: Of course.",
+      "paragraphs": [
+        {
+          "text": "WALLY\": You gotta have some.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-40"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "MARI SINGH: I'm good.",
+      "paragraphs": [
+        {
+          "text": "I'm good.\": WALLY\": You're missing out. Features CAPTAIN LEWIS, MANNY ORTEGA, MARI SINGH. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-41"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "MANNY ORTEGA: Okay, I think it's time for bed.",
+      "paragraphs": [
+        {
+          "text": "WALLY\": I'll take care of our boy, go get your girl.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-42"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Positive",
+      "paragraphs": [
+        {
+          "text": "Mari Singh tells Manny Ortega that she is pregnant Features MANNY ORTEGA, MARI SINGH. Contains 14 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-43"
+          ]
+        },
+        {
+          "text": "Mari Singh tells Manny Ortega that she is pregnant Features MANNY ORTEGA, MARI SINGH. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-43"
+          ]
+        },
+        {
+          "text": "Mari Singh tells Manny Ortega that she is pregnant Features MANNY ORTEGA, MARI SINGH. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-43"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Positive.ogg"
+    },
+    {
+      "heading": "Mari",
+      "paragraphs": [
+        {
+          "text": "Lauren Fong introduces her deaf girlfriend to Mari Singh Features MANNY ORTEGA, MARI SINGH. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-44"
+          ]
+        },
+        {
+          "text": "Lauren Fong introduces her deaf girlfriend to Mari Singh Features MANNY ORTEGA, MARI SINGH. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-broken-wings-comm-44"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Broken_Wings_-_Mari.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "location-washington-dc",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-true-sons",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Broken_Wings. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Broken_Wings",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

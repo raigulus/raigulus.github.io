@@ -1,0 +1,153 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-brooklyn-friendly",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Brooklyn - Friendly",
+  "slug": "td2-comms-brooklyn-friendly",
+  "section": "collectibles",
+  "summary": "A collection of 4 comms from The Division universe, scraped from the Fandom wiki hub page. 4 entries include full audio transcripts; 4 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 4,
+  "claims": [
+    {
+      "id": "td2-comms-brooklyn-friendly-comm-1",
+      "text": "Comm \"Cleaners\": Doctor Kandel calling for help when the Cleaners attacked. (Location: Brooklyn (63, 1838))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-friendly"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-friendly-comm-2",
+      "text": "Comm \"Sacrifice\": Rogues dying trying to save civilians from the Cleaner attack. (Location: Brooklyn (602, 1522))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-friendly"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-friendly-comm-3",
+      "text": "Comm \"Power Stations\": Theo setting up the power stations with Sarah. (Location: Brooklyn (598, 1308))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-friendly"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-friendly-comm-4",
+      "text": "Comm \"Expectations\": Theo taking his girlfriend on a date and finding out they are having a baby. (Location: Brooklyn (524, 1543))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-friendly"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Cleaners",
+      "paragraphs": [
+        {
+          "text": "Doctor Kandel calling for help when the Cleaners attacked. Features AGENT HOSKINS, JESSICA KANDEL. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-friendly-comm-1"
+          ]
+        }
+      ],
+      "location": "Brooklyn (63, 1838)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Cleaners_Brooklyn.ogg"
+    },
+    {
+      "heading": "Sacrifice",
+      "paragraphs": [
+        {
+          "text": "Rogues dying trying to save civilians from the Cleaner attack. Features BILL, PAIGE, PATRICIA THOMPSON. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-friendly-comm-2"
+          ]
+        },
+        {
+          "text": "Rogues dying trying to save civilians from the Cleaner attack. Features BILL. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-friendly-comm-2"
+          ]
+        }
+      ],
+      "location": "Brooklyn (602, 1522)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Sacrifice.ogg"
+    },
+    {
+      "heading": "Power Stations",
+      "paragraphs": [
+        {
+          "text": "Theo setting up the power stations with Sarah. Features SARAH, THEO PARNELL. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-friendly-comm-3"
+          ]
+        },
+        {
+          "text": "Theo setting up the power stations with Sarah. Features SARAH, THEO PARNELL. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-friendly-comm-3"
+          ]
+        }
+      ],
+      "location": "Brooklyn (598, 1308)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Power_Stations.ogg"
+    },
+    {
+      "heading": "Expectations",
+      "paragraphs": [
+        {
+          "text": "Theo taking his girlfriend on a date and finding out they are having a baby. Features MARAL MCCARTHY, THEO PARNELL. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-friendly-comm-4"
+          ]
+        },
+        {
+          "text": "Theo taking his girlfriend on a date and finding out they are having a baby. Features MARAL MCCARTHY, THEO PARNELL. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-friendly-comm-4"
+          ]
+        },
+        {
+          "text": "Theo taking his girlfriend on a date and finding out they are having a baby. Features MARAL MCCARTHY. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-friendly-comm-4"
+          ]
+        }
+      ],
+      "location": "Brooklyn (524, 1543)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Expectations.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-theo-parnell",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-jessica-kandel",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-cleaners",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Brooklyn_-_Friendly. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Brooklyn_-_Friendly",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

@@ -1,0 +1,504 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-manhunt-keener-s-legacy",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Manhunt - Keener's Legacy",
+  "slug": "td2-comms-manhunt-keener-s-legacy",
+  "section": "collectibles",
+  "summary": "A collection of 20 comms from The Division universe, scraped from the Fandom wiki hub page. 20 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 20,
+  "claims": [
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-1",
+      "text": "Comm \"Test Results\": Lori Baker and a nurse discuss how to handle the influx of patients at a CERA hospital",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-2",
+      "text": "Comm \"Not This Time\": Lori Baker and a nurse discuss how to handle weak and vulnerable patients at a CERA hospital",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-3",
+      "text": "Comm \"Elevator Pitch\": Keener convinces Lori Baker to help him eradicate the weak",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-4",
+      "text": "Comm \"Callsigns\": Keener convinces Lori Baker to help him bring Carter Leroux back to good health",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-5",
+      "text": "Comm \"Regaining Control\": Tegan Silver opposes the JTF's decision to pull out from the Dark Zone",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-6",
+      "text": "Comm \"Encrypted ECHOs\": Tegan Silver is briefed on Aaron Keener and tasked with reconstructing his encrypted ECHOs",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-7",
+      "text": "Comm \"Luna's Offer\": Tegan Silver contacts Aaron Keener and offers to feed him information on Division operations",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-8",
+      "text": "Comm \"The Consulate\": Tegan Silver informs Keener an impending Division assault at the Russian Consulate",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-9",
+      "text": "Comm \"Leroux's Psyche Eval\": Elijah Le and another Division recruiter discuss the results of Carter Leroux's psyche evaluation",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-10",
+      "text": "Comm \"Taking Control\": Elijah Le agrees to support the LMB after the JTF's withdrawal from the Dark Zone",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-11",
+      "text": "Comm \"Sorry About Bliss\": Keener convinces Elijah Le to join him after the death of Charles Bliss",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-12",
+      "text": "Comm \"Power Play\": Elijah Le and Carter Leroux disagree over who will take control after Keener's death",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-13",
+      "text": "Comm \"Emergency Recruitment\": Smokejumper Jason Barnes is recruited and activated to coordinate fire defense systems in New York",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-14",
+      "text": "Comm \"Checking Out\": Jason Barnes checks himself out of hospital after suffering from smoke inhalation injury",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-15",
+      "text": "Comm \"Nature's Decision\": Barnes makes a fatalistic declaration for the Division after checking himself out of hospital",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-16",
+      "text": "Comm \"Changing Course\": Keener manipulates Jason Barnes into",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-17",
+      "text": "Comm \"SetBacks\": Hornet vows to fulfill Keener's Legacy after recovering from his injuries in Russian Consulate",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-18",
+      "text": "Comm \"Eclipse\": Hornet demonstrates the power of the Eclipse Virus to get the Outcasts on his side",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-19",
+      "text": "Comm \"Dying Breath\": Hornet and an unknown leader of another rogue cell make delivery arrangements for the Eclipse Virus",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-keener-s-legacy-comm-20",
+      "text": "Comm \"Back From The Dead\": Schaeffer fails to recruit Hornet to the Black Tusk after the death of Aaron Keener",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-keeners-legacy"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Test Results",
+      "paragraphs": [
+        {
+          "text": "Lori Baker and a nurse discuss how to handle the influx of patients at a CERA hospital Features CERA NURSE, TERMITE. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-1"
+          ]
+        },
+        {
+          "text": "Lori Baker and a nurse discuss how to handle the influx of patients at a CERA hospital Features TERMITE. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_The_Results.ogg"
+    },
+    {
+      "heading": "Not This Time",
+      "paragraphs": [
+        {
+          "text": "Lori Baker and a nurse discuss how to handle weak and vulnerable patients at a CERA hospital Features CERA NURSE, TERMITE. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_Not_This_Time.ogg"
+    },
+    {
+      "heading": "Elevator Pitch",
+      "paragraphs": [
+        {
+          "text": "Keener convinces Lori Baker to help him eradicate the weak Features AARON KEENER, TERMITE. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-3"
+          ]
+        },
+        {
+          "text": "Keener convinces Lori Baker to help him eradicate the weak Features TERMITE. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_Elevator_Pitch.ogg"
+    },
+    {
+      "heading": "Callsigns",
+      "paragraphs": [
+        {
+          "text": "Keener convinces Lori Baker to help him bring Carter Leroux back to good health Features AARON KEENER, TERMITE. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_Callsigns.ogg"
+    },
+    {
+      "heading": "Regaining Control",
+      "paragraphs": [
+        {
+          "text": "Tegan Silver opposes the JTF's decision to pull out from the Dark Zone Features LUNA, SHD RECRUITER. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_Regaining_Control.ogg"
+    },
+    {
+      "heading": "Encrypted ECHOs",
+      "paragraphs": [
+        {
+          "text": "Tegan Silver is briefed on Aaron Keener and tasked with reconstructing his encrypted ECHOs Features AGENT KELSO, LUNA. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_Encrypted_ECHOs.ogg"
+    },
+    {
+      "heading": "Luna's Offer",
+      "paragraphs": [
+        {
+          "text": "Tegan Silver contacts Aaron Keener and offers to feed him information on Division operations Features AARON KEENER, LUNA. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-7"
+          ]
+        },
+        {
+          "text": "Tegan Silver contacts Aaron Keener and offers to feed him information on Division operations Features AARON KEENER, LUNA. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_Luna%27s_Offer.ogg"
+    },
+    {
+      "heading": "The Consulate",
+      "paragraphs": [
+        {
+          "text": "Tegan Silver informs Keener an impending Division assault at the Russian Consulate Features AARON KEENER, LUNA. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_The_Consulate.ogg"
+    },
+    {
+      "heading": "Leroux's Psyche Eval",
+      "paragraphs": [
+        {
+          "text": "Elijah Le and another Division recruiter discuss the results of Carter Leroux's psyche evaluation Features HUNTSMAN, SHD RECRUITER. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-9"
+          ]
+        },
+        {
+          "text": "Elijah Le and another Division recruiter discuss the results of Carter Leroux's psyche evaluation Features HUNTSMAN, SHD RECRUITER. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_Leroux%27s_Psyche_Eval.ogg"
+    },
+    {
+      "heading": "Taking Control",
+      "paragraphs": [
+        {
+          "text": "Elijah Le agrees to support the LMB after the JTF's withdrawal from the Dark Zone Features HUNTSMAN. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_Taking_Control.ogg"
+    },
+    {
+      "heading": "Sorry About Bliss",
+      "paragraphs": [
+        {
+          "text": "Keener convinces Elijah Le to join him after the death of Charles Bliss Features AARON KEENER, HUNTSMAN. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-11"
+          ]
+        },
+        {
+          "text": "Keener convinces Elijah Le to join him after the death of Charles Bliss Features AARON KEENER, HUNTSMAN, LUNA. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-11"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_Sorry_About_Bliss.ogg"
+    },
+    {
+      "heading": "Power Play",
+      "paragraphs": [
+        {
+          "text": "Elijah Le and Carter Leroux disagree over who will take control after Keener's death Features HORNET, HUNTSMAN. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-12"
+          ]
+        },
+        {
+          "text": "Elijah Le and Carter Leroux disagree over who will take control after Keener's death Features HORNET. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-12"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_Power_Play.ogg"
+    },
+    {
+      "heading": "Emergency Recruitment",
+      "paragraphs": [
+        {
+          "text": "Smokejumper Jason Barnes is recruited and activated to coordinate fire defense systems in New York Features SHD RECRUITER, TITAN. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-13"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_Emergency_Recruitment.ogg"
+    },
+    {
+      "heading": "Checking Out",
+      "paragraphs": [
+        {
+          "text": "Jason Barnes checks himself out of hospital after suffering from smoke inhalation injury Features CERA NURSE, TITAN. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-14"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_Checking_Out.ogg"
+    },
+    {
+      "heading": "Nature's Decision",
+      "paragraphs": [
+        {
+          "text": "Barnes makes a fatalistic declaration for the Division after checking himself out of hospital Features TITAN. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-15"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_Nature%27s_Decision.ogg"
+    },
+    {
+      "heading": "Changing Course",
+      "paragraphs": [
+        {
+          "text": "Keener manipulates Jason Barnes into Features AARON KEENER, TITAN, https. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-16"
+          ]
+        },
+        {
+          "text": "Keener manipulates Jason Barnes into Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-16"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "SetBacks",
+      "paragraphs": [
+        {
+          "text": "Hornet vows to fulfill Keener's Legacy after recovering from his injuries in Russian Consulate Features AARON KEENER, HORNET, TERMITE. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-17"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_Setbacks.ogg"
+    },
+    {
+      "heading": "Eclipse",
+      "paragraphs": [
+        {
+          "text": "Hornet demonstrates the power of the Eclipse Virus to get the Outcasts on his side Features HORNET, OUTCAST 1, OUTCAST 2. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-18"
+          ]
+        },
+        {
+          "text": "Hornet demonstrates the power of the Eclipse Virus to get the Outcasts on his side Features HORNET. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-18"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_Eclipse.ogg"
+    },
+    {
+      "heading": "Dying Breath",
+      "paragraphs": [
+        {
+          "text": "Hornet and an unknown leader of another rogue cell make delivery arrangements for the Eclipse Virus Features HORNET, UNKNOWN ROGUE AGENT. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-19"
+          ]
+        },
+        {
+          "text": "Hornet and an unknown leader of another rogue cell make delivery arrangements for the Eclipse Virus Features UNKNOWN ROGUE AGENT. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-19"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_Dying_Breath.ogg"
+    },
+    {
+      "heading": "Back From The Dead",
+      "paragraphs": [
+        {
+          "text": "Schaeffer fails to recruit Hornet to the Black Tusk after the death of Aaron Keener Features BARDON SCHAEFFER, HORNET. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-20"
+          ]
+        },
+        {
+          "text": "Schaeffer fails to recruit Hornet to the Black Tusk after the death of Aaron Keener Features BARDON SCHAEFFER, HORNET. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-keener-s-legacy-comm-20"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Legacy_-_Back_From_The_Dead.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-outcasts",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Keener's_Legacy. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Keener's_Legacy",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-dark-zone",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Dark Zone",
+  "slug": "td2-comms-dark-zone",
+  "section": "collectibles",
+  "summary": "A collection of 10 comms from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 10 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td2-comms-dark-zone-comm-1",
+      "text": "Comm \"Guard Duty\": Soldier reminds his squad of their mission (Location: Dark Zone East (2145, 4699))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-dark-zone"
+      ]
+    },
+    {
+      "id": "td2-comms-dark-zone-comm-2",
+      "text": "Comm \"DC-62\": A worker goes over the manifest and is concerned about the supplies coming into Capital Station (Location: Dark Zone East (1680, 4846))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-dark-zone"
+      ]
+    },
+    {
+      "id": "td2-comms-dark-zone-comm-3",
+      "text": "Comm \"Evacuate\": A doctor calls for help to organize an evacuation of Capitol Station (Location: Dark Zone East (1942, 5450))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-dark-zone"
+      ]
+    },
+    {
+      "id": "td2-comms-dark-zone-comm-4",
+      "text": "Comm \"Shay\": A civilian tells a story about a folk hero, Shay Montgomery. (Location: Dark Zone South (587, 3130))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-dark-zone"
+      ]
+    },
+    {
+      "id": "td2-comms-dark-zone-comm-5",
+      "text": "Comm \"Doubts\": A guard calls in to report what's been happening at the refugee camp (Location: Dark Zone South (358, 3410))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-dark-zone"
+      ]
+    },
+    {
+      "id": "td2-comms-dark-zone-comm-6",
+      "text": "Comm \"Contaminated\": A guard calls in to report DC-62 in the water supply (Location: Dark Zone South (494, 3519))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-dark-zone"
+      ]
+    },
+    {
+      "id": "td2-comms-dark-zone-comm-7",
+      "text": "Comm \"The Wall\": A wealthy woman talks about how effective Victor Tranh was at getting the wall built (Location: Dark Zone West (2787, 878))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-dark-zone"
+      ]
+    },
+    {
+      "id": "td2-comms-dark-zone-comm-8",
+      "text": "Comm \"Safeguarding\": A wealthy man laments his position (Location: Dark Zone West (2807, 358))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-dark-zone"
+      ]
+    },
+    {
+      "id": "td2-comms-dark-zone-comm-9",
+      "text": "Comm \"Toxic\": A worker reports the DC-62 is toxic (Location: Dark Zone West (2541, 351))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-dark-zone"
+      ]
+    },
+    {
+      "id": "td2-comms-dark-zone-comm-10",
+      "text": "Comm \"Privilege\": A city worker explains why Georgetown was chosen for DC-62 (Location: Dark Zone West (2292, 855))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-dark-zone"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Guard Duty",
+      "paragraphs": [
+        {
+          "text": "Soldier reminds his squad of their mission Features JTF SOLDIER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-dark-zone-comm-1"
+          ]
+        }
+      ],
+      "location": "Dark Zone East (2145, 4699)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_DZ_Comms_-_Guard_Duty.ogg"
+    },
+    {
+      "heading": "DC-62",
+      "paragraphs": [
+        {
+          "text": "A worker goes over the manifest and is concerned about the supplies coming into Capital Station Features CIVILIAN WORKER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-dark-zone-comm-2"
+          ]
+        }
+      ],
+      "location": "Dark Zone East (1680, 4846)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_DZ_Comms_-_DC-62.ogg"
+    },
+    {
+      "heading": "Evacuate",
+      "paragraphs": [
+        {
+          "text": "A doctor calls for help to organize an evacuation of Capitol Station Features CIVILIAN DOCTOR. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-dark-zone-comm-3"
+          ]
+        }
+      ],
+      "location": "Dark Zone East (1942, 5450)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_DZ_Comms_-_Evacuate.ogg"
+    },
+    {
+      "heading": "Shay",
+      "paragraphs": [
+        {
+          "text": "A civilian tells a story about a folk hero, Shay Montgomery. Features CONTAMINATED CIVILIAN. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-dark-zone-comm-4"
+          ]
+        }
+      ],
+      "location": "Dark Zone South (587, 3130)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_DZ_Comms_-_Shay.ogg"
+    },
+    {
+      "heading": "Doubts",
+      "paragraphs": [
+        {
+          "text": "A guard calls in to report what's been happening at the refugee camp Features JTF SOLDIER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-dark-zone-comm-5"
+          ]
+        }
+      ],
+      "location": "Dark Zone South (358, 3410)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_DZ_Comms_-_Doubts.ogg"
+    },
+    {
+      "heading": "Contaminated",
+      "paragraphs": [
+        {
+          "text": "A guard calls in to report DC-62 in the water supply Features JTF SOLDIER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-dark-zone-comm-6"
+          ]
+        }
+      ],
+      "location": "Dark Zone South (494, 3519)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_DZ_Comms_-_Contaminated.ogg"
+    },
+    {
+      "heading": "The Wall",
+      "paragraphs": [
+        {
+          "text": "A wealthy woman talks about how effective Victor Tranh was at getting the wall built Features ELDERLY CIVILIAN. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-dark-zone-comm-7"
+          ]
+        }
+      ],
+      "location": "Dark Zone West (2787, 878)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_DZ_Comms_-_The_Wall.ogg"
+    },
+    {
+      "heading": "Safeguarding",
+      "paragraphs": [
+        {
+          "text": "A wealthy man laments his position Features WEALTHY CIVILIAN. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-dark-zone-comm-8"
+          ]
+        }
+      ],
+      "location": "Dark Zone West (2807, 358)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_DZ_Comms_-_Safeguarding.ogg"
+    },
+    {
+      "heading": "Toxic",
+      "paragraphs": [
+        {
+          "text": "A worker reports the DC-62 is toxic Features CIVILIAN WORKER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-dark-zone-comm-9"
+          ]
+        }
+      ],
+      "location": "Dark Zone West (2541, 351)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_DZ_Comms_-_Toxic.ogg"
+    },
+    {
+      "heading": "Privilege",
+      "paragraphs": [
+        {
+          "text": "A city worker explains why Georgetown was chosen for DC-62 Features CIVILIAN WORKER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-dark-zone-comm-10"
+          ]
+        }
+      ],
+      "location": "Dark Zone West (2292, 855)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_DZ_Comms_-_Privilege.ogg"
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Dark_Zone. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Dark_Zone",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

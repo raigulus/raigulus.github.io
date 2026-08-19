@@ -1,0 +1,254 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-profile-agent-kelso",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Profile - Agent Kelso",
+  "slug": "td2-comms-profile-agent-kelso",
+  "section": "collectibles",
+  "summary": "A collection of 9 comms from The Division universe, scraped from the Fandom wiki hub page. 9 entries include full audio transcripts; 9 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 9,
+  "claims": [
+    {
+      "id": "td2-comms-profile-agent-kelso-comm-1",
+      "text": "Comm \"Psych Assessment\": Division recruiters discuss Alani Kelso's psych evaluation (Location: Constitution Hall (1595, 2135))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-agent-kelso"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-agent-kelso-comm-2",
+      "text": "Comm \"Preparations\": Agent Kelso gives her grandmother some advice during the early days of the outbreak (Location: East Mall (870, 1862))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-agent-kelso"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-agent-kelso-comm-3",
+      "text": "Comm \"Network Failure\": Agent Kelso and Agent Brooks discuss next steps after the SHD Network has gone down (Location: Federal Triangle (1599, 3379))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-agent-kelso"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-agent-kelso-comm-4",
+      "text": "Comm \"The Moment\": Agent Kelso shares the moment that made her want to join the Division (Location: Federal Triangle (1462, 3631))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-agent-kelso"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-agent-kelso-comm-5",
+      "text": "Comm \"Doubts\": Agent Kelso talks to Manny Ortega about her doubts (Location: West Potomac Park (1079, 2076))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-agent-kelso"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-agent-kelso-comm-6",
+      "text": "Comm \"Malasadas\": Agent Kelso talks to Manny Ortega about what she misses from the old world (Location: Southwest (708, 4558))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-agent-kelso"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-agent-kelso-comm-7",
+      "text": "Comm \"The Sheriff\": Agent Kelso and Manny Ortega talk about the Sheriff (Location: West End (2184, 1400))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-agent-kelso"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-agent-kelso-comm-8",
+      "text": "Comm \"Castle Survivor\": Agent Kelso talks to a Theater physician about one of the survivors from the Castle settlement attack (Location: Downtown East (1788, 3790))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-agent-kelso"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-agent-kelso-comm-9",
+      "text": "Comm \"A New Enemy\": Agent Kelso and Manny Ortega discuss Black Tusk (Location: White House (1915, 2766))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-agent-kelso"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Psych Assessment",
+      "paragraphs": [
+        {
+          "text": "Division recruiters discuss Alani Kelso's psych evaluation Features SHD OFFICER, SHD RECRUITER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-agent-kelso-comm-1"
+          ]
+        },
+        {
+          "text": "Division recruiters discuss Alani Kelso's psych evaluation Features SHD OFFICER, SHD RECRUITER. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-agent-kelso-comm-1"
+          ]
+        }
+      ],
+      "location": "Constitution Hall (1595, 2135)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Agent_Kelso_Comms_-_Psych_Assessment.ogg"
+    },
+    {
+      "heading": "Preparations",
+      "paragraphs": [
+        {
+          "text": "Agent Kelso gives her grandmother some advice during the early days of the outbreak Features ALANI KELSO, GRANDMOTHER KELSO, ﻿﻿ALANI KELSO. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-agent-kelso-comm-2"
+          ]
+        }
+      ],
+      "location": "East Mall (870, 1862)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Agent_Kelso_Comms_-_Preparations.ogg"
+    },
+    {
+      "heading": "Network Failure",
+      "paragraphs": [
+        {
+          "text": "Agent Kelso and Agent Brooks discuss next steps after the SHD Network has gone down Features AGENT BROOKS, ALANI KELSO. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-agent-kelso-comm-3"
+          ]
+        }
+      ],
+      "location": "Federal Triangle (1599, 3379)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Agent_Kelso_Comms_-_Network_Failure.ogg"
+    },
+    {
+      "heading": "The Moment",
+      "paragraphs": [
+        {
+          "text": "Agent Kelso shares the moment that made her want to join the Division Features AGENT BROOKS, AGENT KELSO. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-agent-kelso-comm-4"
+          ]
+        },
+        {
+          "text": "Agent Kelso shares the moment that made her want to join the Division Features AGENT KELSO. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-agent-kelso-comm-4"
+          ]
+        }
+      ],
+      "location": "Federal Triangle (1462, 3631)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Agent_Kelso_Comms_-_The_Moment.ogg"
+    },
+    {
+      "heading": "Doubts",
+      "paragraphs": [
+        {
+          "text": "Agent Kelso talks to Manny Ortega about her doubts Features AGENT KELSO, MANNY ORTEGA. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-agent-kelso-comm-5"
+          ]
+        },
+        {
+          "text": "Agent Kelso talks to Manny Ortega about her doubts Features AGENT KELSO, MANNY ORTEGA. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-agent-kelso-comm-5"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (1079, 2076)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Agent_Kelso_Comms_-_Doubts.ogg"
+    },
+    {
+      "heading": "Malasadas",
+      "paragraphs": [
+        {
+          "text": "Agent Kelso talks to Manny Ortega about what she misses from the old world Features AGENT KELSO, MANNY ORTEGA. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-agent-kelso-comm-6"
+          ]
+        }
+      ],
+      "location": "Southwest (708, 4558)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Agent_Kelso_Comms_-_Malasadas.ogg"
+    },
+    {
+      "heading": "The Sheriff",
+      "paragraphs": [
+        {
+          "text": "Agent Kelso and Manny Ortega talk about the Sheriff Features AGENT KELSO, MANNY ORTEGA. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-agent-kelso-comm-7"
+          ]
+        }
+      ],
+      "location": "West End (2184, 1400)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Agent_Kelso_Comms_-_The_Sheriff.ogg"
+    },
+    {
+      "heading": "Castle Survivor",
+      "paragraphs": [
+        {
+          "text": "Agent Kelso talks to a Theater physician about one of the survivors from the Castle settlement attack Features AGENT KELSO, DOCTOR. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-agent-kelso-comm-8"
+          ]
+        }
+      ],
+      "location": "Downtown East (1788, 3790)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Agent_Kelso_Comms_-_Castle_Survivor.ogg"
+    },
+    {
+      "heading": "A New Enemy",
+      "paragraphs": [
+        {
+          "text": "Agent Kelso and Manny Ortega discuss Black Tusk Features AGENT KELSO, MANNY ORTEGA. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-agent-kelso-comm-9"
+          ]
+        },
+        {
+          "text": "Agent Kelso and Manny Ortega discuss Black Tusk Features AGENT KELSO, MANNY ORTEGA. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-agent-kelso-comm-9"
+          ]
+        }
+      ],
+      "location": "White House (1915, 2766)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Agent_Kelso_Comms_-_A_New_Enemy.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-alani-kelso",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Profile_-_Agent_Kelso. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Profile_-_Agent_Kelso",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

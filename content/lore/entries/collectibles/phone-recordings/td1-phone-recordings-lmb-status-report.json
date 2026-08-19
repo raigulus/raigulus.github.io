@@ -1,0 +1,191 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td1-phone-recordings-lmb-status-report",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD1 Phone Recordings: LMB Status Report",
+  "slug": "td1-phone-recordings-lmb-status-report",
+  "section": "collectibles",
+  "summary": "A collection of 7 phone recordings from The Division universe, scraped from the Fandom wiki hub page. 7 entries include full audio transcripts; 7 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "phone-recordings",
+  "total_entries": 7,
+  "claims": [
+    {
+      "id": "td1-phone-recordings-lmb-status-report-comm-1",
+      "text": "Comm \"Introduction\": Meet Russell Colfax (Location: Piers South (2016, 539))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-lmb-status-report"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-lmb-status-report-comm-2",
+      "text": "Comm \"Personal History\": Colfax's history with the LMB (Location: Piers South (1938, 730))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-lmb-status-report"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-lmb-status-report-comm-3",
+      "text": "Comm \"Fighting Rikers\": Reminiscences about the good old days fighting against Rikers (Location: Piers South (2047, 773))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-lmb-status-report"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-lmb-status-report-comm-4",
+      "text": "Comm \"Cleaners\": Colfax's thoughts on the Cleaners (Location: Piers North (2569, 651))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-lmb-status-report"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-lmb-status-report-comm-5",
+      "text": "Comm \"Working Agreement\": Colfax spells out that there is now a working agreement between the LMB, the Rikers and the Cleaners (Location: Piers North (2566, 713))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-lmb-status-report"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-lmb-status-report-comm-6",
+      "text": "Comm \"Looking for Keener\": Confirmation that the factions are in WSP to look for Aaron Keener (Location: Piers North (2694, 784))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-lmb-status-report"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-lmb-status-report-comm-7",
+      "text": "Comm \"Editional Commentary\": Colfax's opinion on the working arrangement (Location: Piers North (2505, 498))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-lmb-status-report"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Introduction",
+      "paragraphs": [
+        {
+          "text": "Meet Russell Colfax Features SERGEANT RUSSELL COLFAX. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-lmb-status-report-comm-1"
+          ]
+        }
+      ],
+      "location": "Piers South (2016, 539)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Introduction_Colfax.ogg"
+    },
+    {
+      "heading": "Personal History",
+      "paragraphs": [
+        {
+          "text": "Colfax's history with the LMB Features SERGEANT RUSSELL COLFAX. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-lmb-status-report-comm-2"
+          ]
+        }
+      ],
+      "location": "Piers South (1938, 730)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Personal_History_Colfax.ogg"
+    },
+    {
+      "heading": "Fighting Rikers",
+      "paragraphs": [
+        {
+          "text": "Reminiscences about the good old days fighting against Rikers Features SERGEANT RUSSELL COLFAX. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-lmb-status-report-comm-3"
+          ]
+        }
+      ],
+      "location": "Piers South (2047, 773)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Fighting_Rikers.ogg"
+    },
+    {
+      "heading": "Cleaners",
+      "paragraphs": [
+        {
+          "text": "Colfax's thoughts on the Cleaners Features SERGEANT RUSSELL COLFAX. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-lmb-status-report-comm-4"
+          ]
+        }
+      ],
+      "location": "Piers North (2569, 651)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Cleaners.ogg"
+    },
+    {
+      "heading": "Working Agreement",
+      "paragraphs": [
+        {
+          "text": "Colfax spells out that there is now a working agreement between the LMB, the Rikers and the Cleaners Features SERGEANT RUSSELL COLFAX. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-lmb-status-report-comm-5"
+          ]
+        }
+      ],
+      "location": "Piers North (2566, 713)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Working_Agreement.ogg"
+    },
+    {
+      "heading": "Looking for Keener",
+      "paragraphs": [
+        {
+          "text": "Confirmation that the factions are in WSP to look for Aaron Keener Features SERGEANT RUSSELL COLFAX. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-lmb-status-report-comm-6"
+          ]
+        }
+      ],
+      "location": "Piers North (2694, 784)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Looking_for_Keener.ogg"
+    },
+    {
+      "heading": "Editional Commentary",
+      "paragraphs": [
+        {
+          "text": "Colfax's opinion on the working arrangement Features SERGEANT RUSSELL COLFAX. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-lmb-status-report-comm-7"
+          ]
+        }
+      ],
+      "location": "Piers North (2505, 498)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Editional_Commentary.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-rikers",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-cleaners",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Phone_Recordings/LMB_Status_Report. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Phone_Recordings/LMB_Status_Report",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions"
+    ]
+  }
+}

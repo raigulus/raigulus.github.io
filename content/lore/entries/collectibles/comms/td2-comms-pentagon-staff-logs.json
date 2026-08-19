@@ -1,0 +1,244 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-pentagon-staff-logs",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Pentagon Staff Logs",
+  "slug": "td2-comms-pentagon-staff-logs",
+  "section": "collectibles",
+  "summary": "A collection of 10 comms from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td2-comms-pentagon-staff-logs-comm-1",
+      "text": "Comm \"Christmas Party\": Pre-outbreak Christmas party plans",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-pentagon-staff-logs"
+      ]
+    },
+    {
+      "id": "td2-comms-pentagon-staff-logs-comm-2",
+      "text": "Comm \"Outbreak Response\": Discussion about the outbreak",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-pentagon-staff-logs"
+      ]
+    },
+    {
+      "id": "td2-comms-pentagon-staff-logs-comm-3",
+      "text": "Comm \"Quarantine Measures\": Pentagon quarantine goes into effect",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-pentagon-staff-logs"
+      ]
+    },
+    {
+      "id": "td2-comms-pentagon-staff-logs-comm-4",
+      "text": "Comm \"Essential Personnel\": Non-essential personnel are sent home",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-pentagon-staff-logs"
+      ]
+    },
+    {
+      "id": "td2-comms-pentagon-staff-logs-comm-5",
+      "text": "Comm \"Project Phoenix\": The team discusses the work on the bioreactor",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-pentagon-staff-logs"
+      ]
+    },
+    {
+      "id": "td2-comms-pentagon-staff-logs-comm-6",
+      "text": "Comm \"Cafeteria Blues\": A glum conversation in an empty food court",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-pentagon-staff-logs"
+      ]
+    },
+    {
+      "id": "td2-comms-pentagon-staff-logs-comm-7",
+      "text": "Comm \"First Burial\": One of the team members passes on",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-pentagon-staff-logs"
+      ]
+    },
+    {
+      "id": "td2-comms-pentagon-staff-logs-comm-8",
+      "text": "Comm \"Quiet Contemplation\": Will this plan pay off?",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-pentagon-staff-logs"
+      ]
+    },
+    {
+      "id": "td2-comms-pentagon-staff-logs-comm-9",
+      "text": "Comm \"Hopeless Situation\": The bioreactor is built, but no antivirals work",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-pentagon-staff-logs"
+      ]
+    },
+    {
+      "id": "td2-comms-pentagon-staff-logs-comm-10",
+      "text": "Comm \"Final Evacuation\": Last call, everyone out",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-pentagon-staff-logs"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Christmas Party",
+      "paragraphs": [
+        {
+          "text": "Pre-outbreak Christmas party plans Features ALAN JAMES, LIZ RODRIGUEZ. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-pentagon-staff-logs-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Pentagon_Staff_Logs_Comms_-_Christmas_Party.ogg"
+    },
+    {
+      "heading": "Outbreak Response",
+      "paragraphs": [
+        {
+          "text": "Discussion about the outbreak Features ALAN JAMES, LIZ RODRIGUEZ. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-pentagon-staff-logs-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Pentagon_Staff_Logs_Comms_-_Outbreak_Response.ogg"
+    },
+    {
+      "heading": "Quarantine Measures",
+      "paragraphs": [
+        {
+          "text": "Pentagon quarantine goes into effect Features ALAN JAMES, LIZ RODRIGUEZ. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-pentagon-staff-logs-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Pentagon_Staff_Logs_Comms_-_Quarantine_Measures.ogg"
+    },
+    {
+      "heading": "Essential Personnel",
+      "paragraphs": [
+        {
+          "text": "Non-essential personnel are sent home Features ALAN JAMES, LIZ RODRIGUEZ. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-pentagon-staff-logs-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Pentagon_Staff_Logs_Comms_-_Essential_Personnel.ogg"
+    },
+    {
+      "heading": "Project Phoenix",
+      "paragraphs": [
+        {
+          "text": "The team discusses the work on the bioreactor Features ALAN JAMES, LIZ RODRIGUEZ. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-pentagon-staff-logs-comm-5"
+          ]
+        },
+        {
+          "text": "The team discusses the work on the bioreactor Features ALAN JAMES. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-pentagon-staff-logs-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Pentagon_Staff_Logs_Comms_-_Project_Phoenix.ogg"
+    },
+    {
+      "heading": "Cafeteria Blues",
+      "paragraphs": [
+        {
+          "text": "A glum conversation in an empty food court Features ALAN JAMES, LIZ RODRIGUEZ. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-pentagon-staff-logs-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Pentagon_Staff_Logs_Comms_-_Cafeteria_Blues.ogg"
+    },
+    {
+      "heading": "First Burial",
+      "paragraphs": [
+        {
+          "text": "One of the team members passes on Features ALAN JAMES, LIZ RODRIGUEZ. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-pentagon-staff-logs-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Pentagon_Staff_Logs_Comms_-_First_Burial.ogg"
+    },
+    {
+      "heading": "Quiet Contemplation",
+      "paragraphs": [
+        {
+          "text": "Will this plan pay off? Features ALAN JAMES, LIZ RODRIGUEZ. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-pentagon-staff-logs-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Pentagon_Staff_Logs_Comms_-_Quiet_Contemplation.ogg"
+    },
+    {
+      "heading": "Hopeless Situation",
+      "paragraphs": [
+        {
+          "text": "The bioreactor is built, but no antivirals work Features ALAN JAMES, LIZ RODRIGUEZ. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-pentagon-staff-logs-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Pentagon_Staff_Logs_Comms_-_Hopeless_Situation.ogg"
+    },
+    {
+      "heading": "Final Evacuation",
+      "paragraphs": [
+        {
+          "text": "Last call, everyone out Features ALAN JAMES, LIZ RODRIGUEZ. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-pentagon-staff-logs-comm-10"
+          ]
+        },
+        {
+          "text": "Last call, everyone out Features ALAN JAMES. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-pentagon-staff-logs-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Pentagon_Staff_Logs_Comms_-_Final_Evacuation.ogg"
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Pentagon_Staff_Logs. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Pentagon_Staff_Logs",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

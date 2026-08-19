@@ -1,0 +1,210 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-profile-emeline-shaw",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Profile - Emeline Shaw",
+  "slug": "td2-comms-profile-emeline-shaw",
+  "section": "collectibles",
+  "summary": "A collection of 8 comms from The Division universe, scraped from the Fandom wiki hub page. 8 entries include full audio transcripts; 8 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 8,
+  "claims": [
+    {
+      "id": "td2-comms-profile-emeline-shaw-comm-1",
+      "text": "Comm \"Prosecution\": Emeline Shaw as a prosecutor before the outbreak (Location: Manning National Zoo (278, 844))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-emeline-shaw"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-emeline-shaw-comm-2",
+      "text": "Comm \"Population Control\": Emeline Shaw and Harlan Lloyd discuss dealing with their prisoners (Location: Foggy Bottom (1673, 1191))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-emeline-shaw"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-emeline-shaw-comm-3",
+      "text": "Comm \"Legacy\": Emeline Shaw talks to Harlan Lloyd about the movement after her death (Location: Roosevelt Island (1657, 558))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-emeline-shaw"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-emeline-shaw-comm-4",
+      "text": "Comm \"Making Examples\": Emeline Shaw and Harlan Lloyd discuss dealing with a prisoner (Location: Foggy Bottom (1554, 1141))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-emeline-shaw"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-emeline-shaw-comm-5",
+      "text": "Comm \"Motivation\": Emeline Shaw talks to one of her followers (Location: Roosevelt Island (1798, 477))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-emeline-shaw"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-emeline-shaw-comm-6",
+      "text": "Comm \"Controlling the Narrative\": Emeline Shaw and Harlan Lloyd take care of JTF reports (Location: West End (2698, 1573))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-emeline-shaw"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-emeline-shaw-comm-7",
+      "text": "Comm \"Savannah\": Emeline searches for her daughter at the quarantine (Location: Manning National Zoo (588, 807))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-emeline-shaw"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-emeline-shaw-comm-8",
+      "text": "Comm \"Nightmares\": Emeline Shaw asks Harlan Lloyd about medication (Location: Manning National Zoo (421, 416))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-emeline-shaw"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Prosecution",
+      "paragraphs": [
+        {
+          "text": "Emeline Shaw as a prosecutor before the outbreak Features EMELINE SHAW. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-emeline-shaw-comm-1"
+          ]
+        }
+      ],
+      "location": "Manning National Zoo (278, 844)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Emeline_Comms_-_Prosecution.ogg"
+    },
+    {
+      "heading": "Population Control",
+      "paragraphs": [
+        {
+          "text": "Emeline Shaw and Harlan Lloyd discuss dealing with their prisoners Features EMELINE SHAW, HARLAN LLOYD. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-emeline-shaw-comm-2"
+          ]
+        }
+      ],
+      "location": "Foggy Bottom (1673, 1191)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Emeline_Comms_-_Population_Control.ogg"
+    },
+    {
+      "heading": "Legacy",
+      "paragraphs": [
+        {
+          "text": "Emeline Shaw talks to Harlan Lloyd about the movement after her death Features EMELINE SHAW, HARLAN LLOYD. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-emeline-shaw-comm-3"
+          ]
+        }
+      ],
+      "location": "Roosevelt Island (1657, 558)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Emeline_Comms_-_Legacy.ogg"
+    },
+    {
+      "heading": "Making Examples",
+      "paragraphs": [
+        {
+          "text": "Emeline Shaw and Harlan Lloyd discuss dealing with a prisoner Features EMELINE SHAW, HARLAN LLOYD. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-emeline-shaw-comm-4"
+          ]
+        }
+      ],
+      "location": "Foggy Bottom (1554, 1141)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Emeline_Comms_-_Making_Examples.ogg"
+    },
+    {
+      "heading": "Motivation",
+      "paragraphs": [
+        {
+          "text": "Emeline Shaw talks to one of her followers Features EMELINE SHAW, OUTCAST MEMBER. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-emeline-shaw-comm-5"
+          ]
+        }
+      ],
+      "location": "Roosevelt Island (1798, 477)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Emeline_Comms_-_Motivation.ogg"
+    },
+    {
+      "heading": "Controlling the Narrative",
+      "paragraphs": [
+        {
+          "text": "Emeline Shaw and Harlan Lloyd take care of JTF reports Features EMELINE SHAW, HARLAN LLOYD. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-emeline-shaw-comm-6"
+          ]
+        }
+      ],
+      "location": "West End (2698, 1573)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Emeline_Comms_-_Controlling_the_Narrative.ogg"
+    },
+    {
+      "heading": "Savannah",
+      "paragraphs": [
+        {
+          "text": "Emeline searches for her daughter at the quarantine Features EMELINE SHAW, JTF GUARD. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-emeline-shaw-comm-7"
+          ]
+        }
+      ],
+      "location": "Manning National Zoo (588, 807)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Emeline_Comms_-_Savannah.ogg"
+    },
+    {
+      "heading": "Nightmares",
+      "paragraphs": [
+        {
+          "text": "Emeline Shaw asks Harlan Lloyd about medication Features EMELINE SHAW, HARLAN LLOYD. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-emeline-shaw-comm-8"
+          ]
+        }
+      ],
+      "location": "Manning National Zoo (421, 416)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Emeline_Comms_-_Nightmares.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-emeline-shaw",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "location-manning-national-zoo",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Profile_-_Emeline_Shaw. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Profile_-_Emeline_Shaw",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020",
+      "ubisoft-manning-white-oak-2019"
+    ]
+  }
+}

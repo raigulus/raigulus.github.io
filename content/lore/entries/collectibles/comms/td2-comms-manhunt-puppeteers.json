@@ -1,0 +1,887 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-manhunt-puppeteers",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Manhunt - Puppeteers",
+  "slug": "td2-comms-manhunt-puppeteers",
+  "section": "collectibles",
+  "summary": "A collection of 35 comms from The Division universe, scraped from the Fandom wiki hub page. 30 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 35,
+  "claims": [
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-1",
+      "text": "Comm \"Coney Debrief\": Manny Ortega does a debrief with Cindy McAllister after the events at Coney Island",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-2",
+      "text": "Comm \"Coping\": Manny Ortega checks in with Cindy McAllister and offers some advice",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-3",
+      "text": "Comm \"Reassigned\": Agent Alani Kelso asks Cindy McAllister to help her with the Black Tusk threat. Manny Ortega tells Kelso that Cindy has a new assignment",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-4",
+      "text": "Comm \"Wally\": Manny Ortega introduces Cindy McAllister to Candace \"Wally\" Wallace",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-5",
+      "text": "Comm \"CINDY MCALLISTER: Nice to meet you, \"Wally\". Any special skills I should know about for job placement.\": WALLY\": Are you serious?",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-6",
+      "text": "Comm \"CINDY MCALLISTER: Yes.\": WALLY\": Okay, um, engineer, computers, helped run a nuclear power plant for the last six months. So, infrastructure and power.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-7",
+      "text": "Comm \"CINDY MCALLISTER: How are you at puzzles?\": WALLY\": Great. Love them. The more impossible to solve the better.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-8",
+      "text": "Comm \"CINDY MCALLISTER: I recovered this encrypted file from a Hunter drone, haven't been able to break the encryption, maybe you could take a stab at it.\": WALLY\": Oh, sure. Is that my job, now?",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-9",
+      "text": "Comm \"CINDY MCALLISTER: If you can crack the encryption.\": WALLY\": Sweet. I was a little worried you were gonna put me to work shucking corn or some bullshit.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-10",
+      "text": "Comm \"CINDY MCALLISTER: You're an engineer. If you're going into food production I'd put you on the aquaponics system.\": WALLY\": You got a fish farm?",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-11",
+      "text": "Comm \"Cindy\": Debrief with Cindy",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-12",
+      "text": "Comm \"Kenly\": Mel Arnold reports that Jack Arnold and their team have gone missing after doing a special assignment at Kenly College",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-13",
+      "text": "Comm \"Update\": Mel Arnold demands an update about Kenly College",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-14",
+      "text": "Comm \"Reunited\": Manny Ortega reunites Jack and Mel Arnold",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-15",
+      "text": "Comm \"Career Change\": Mel and Jack Arnold update Cindy McAllister on their new jobs at the Castle",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-16",
+      "text": "Comm \"Mel\": Debrief with Mel",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-17",
+      "text": "Comm \"Kenly Debrief\": Manny Ortega does a debrief with Jack Arnold after the events at Kenly College",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-18",
+      "text": "Comm \"Transmission 1\": Jack Arnold plays the first recovered transmission for Manny Ortega",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-19",
+      "text": "Comm \"Transmission 2\": Jack Arnold plays the second recovered transmission for Manny Ortega",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-20",
+      "text": "Comm \"Transmission 3\": Jack Arnold plays the third recovered transmission for Manny Ortega",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-21",
+      "text": "Comm \"Jack\": Debrief with Jack",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-22",
+      "text": "Comm \"Surrender\": Vikram Malik makes his way to the Campus Settlement and asks to talk to Manny Ortega",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-23",
+      "text": "Comm \"Negotiations\": Manny Ortega negotiates the terms of Vikram Malik's residency",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-24",
+      "text": "Comm \"Power\": Vikram Malik delivers a recording about Natalya Sokolova",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-25",
+      "text": "Comm \"Bunkers\": Vikram Malik delivers a recording about Calvin McManus",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-26",
+      "text": "Comm \"Vik\": Debrief with Vik",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-27",
+      "text": "Comm \"Bored\": Birdie\" talks to Natalya Sokolova",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-28",
+      "text": "Comm \"Bro\": Vikram Malik is reunited with \"Birdie",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-29",
+      "text": "Comm \"Grid\": Vikram Malik and \"Birdie\" stabilize the Castle's power grid",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-30",
+      "text": "Comm \"Key\": Birdie\" tells Manny Ortega about the Black Tusk security systems",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-31",
+      "text": "Comm \"Birdie\": Debrief with Birdie",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-32",
+      "text": "Comm \"Reports\": Brian Johnson gives a report as he approaches DC",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-33",
+      "text": "Comm \"Moonshine\": Brian Johnson talks to Cindy McAllister after the events at the Grand Washington Hotel",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-34",
+      "text": "Comm \"Recruitment\": Brian Johnson gets a new assignment",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-puppeteers-comm-35",
+      "text": "Comm \"Promotion\": Brian Johnson gets a promotion",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-puppeteers"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Coney Debrief",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega does a debrief with Cindy McAllister after the events at Coney Island Features CINDY MCALLISTER, MANNY ORTEGA. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-1"
+          ]
+        },
+        {
+          "text": "Manny Ortega does a debrief with Cindy McAllister after the events at Coney Island Features CINDY MCALLISTER, MANNY ORTEGA. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Coney_Debrief.ogg"
+    },
+    {
+      "heading": "Coping",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega checks in with Cindy McAllister and offers some advice Features CINDY MCALLISTER, MANNY ORTEGA. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-2"
+          ]
+        },
+        {
+          "text": "Manny Ortega checks in with Cindy McAllister and offers some advice Features CINDY MCALLISTER, MANNY ORTEGA. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Coping.ogg"
+    },
+    {
+      "heading": "Reassigned",
+      "paragraphs": [
+        {
+          "text": "Agent Alani Kelso asks Cindy McAllister to help her with the Black Tusk threat. Manny Ortega tells Kelso that Cindy has a new assignment Features AGENT KELSO, CINDY MCALLISTER, MANNY ORTEGA. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-3"
+          ]
+        },
+        {
+          "text": "Agent Alani Kelso asks Cindy McAllister to help her with the Black Tusk threat. Manny Ortega tells Kelso that Cindy has a new assignment Features AGENT KELSO, MANNY ORTEGA. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Reassigned.ogg"
+    },
+    {
+      "heading": "Wally",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega introduces Cindy McAllister to Candace \"Wally\" Wallace Features MANNY ORTEGA. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Wally.ogg"
+    },
+    {
+      "heading": "CINDY MCALLISTER: Nice to meet you, \"Wally\". Any special skills I should know about for job placement.",
+      "paragraphs": [
+        {
+          "text": "WALLY\": Are you serious?",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-5"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "CINDY MCALLISTER: Yes.",
+      "paragraphs": [
+        {
+          "text": "WALLY\": Okay, um, engineer, computers, helped run a nuclear power plant for the last six months. So, infrastructure and power.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-6"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "CINDY MCALLISTER: How are you at puzzles?",
+      "paragraphs": [
+        {
+          "text": "WALLY\": Great. Love them. The more impossible to solve the better.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-7"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "CINDY MCALLISTER: I recovered this encrypted file from a Hunter drone, haven't been able to break the encryption, maybe you could take a stab at it.",
+      "paragraphs": [
+        {
+          "text": "WALLY\": Oh, sure. Is that my job, now?",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-8"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "CINDY MCALLISTER: If you can crack the encryption.",
+      "paragraphs": [
+        {
+          "text": "WALLY\": Sweet. I was a little worried you were gonna put me to work shucking corn or some bullshit.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-9"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "CINDY MCALLISTER: You're an engineer. If you're going into food production I'd put you on the aquaponics system.",
+      "paragraphs": [
+        {
+          "text": "You're an engineer. If you're going into food production I'd put you on the aquaponics system.\": WALLY\": You got a fish farm? Features CINDY MCALLISTER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-10"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Cindy",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega does a debrief with Cindy McAllister after the events at Coney Island Features CINDY MCALLISTER, MANNY ORTEGA. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-11"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Cindy.ogg"
+    },
+    {
+      "heading": "Kenly",
+      "paragraphs": [
+        {
+          "text": "Mel Arnold reports that Jack Arnold and their team have gone missing after doing a special assignment at Kenly College Features MANNY ORTEGA, MEL ARNOLD. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-12"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Kenly.ogg"
+    },
+    {
+      "heading": "Update",
+      "paragraphs": [
+        {
+          "text": "Mel Arnold demands an update about Kenly College Features MANNY ORTEGA, MEL ARNOLD. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-13"
+          ]
+        },
+        {
+          "text": "Mel Arnold demands an update about Kenly College Features MANNY ORTEGA, MEL ARNOLD. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-13"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Update.ogg"
+    },
+    {
+      "heading": "Reunited",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega reunites Jack and Mel Arnold Features JACK ARNOLD, MANNY ORTEGA, MEL ARNOLD. Contains 16 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-14"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Reunited.ogg"
+    },
+    {
+      "heading": "Career Change",
+      "paragraphs": [
+        {
+          "text": "Mel and Jack Arnold update Cindy McAllister on their new jobs at the Castle Features CINDY MCALLISTER, JACK ARNOLD, MEL ARNOLD. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-15"
+          ]
+        },
+        {
+          "text": "Mel and Jack Arnold update Cindy McAllister on their new jobs at the Castle Features multiple speakers including CINDY MCALLISTER, JACK ARNOLD, MEL ARNOLD. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-15"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Career_Change.ogg"
+    },
+    {
+      "heading": "Mel",
+      "paragraphs": [
+        {
+          "text": "Mel Arnold reports that Jack Arnold and their team have gone missing after doing a special assignment at Kenly College Features MANNY ORTEGA, MEL ARNOLD. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-16"
+          ]
+        },
+        {
+          "text": "Mel Arnold reports that Jack Arnold and their team have gone missing after doing a special assignment at Kenly College Features MANNY ORTEGA, MEL ARNOLD. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-16"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Mel.ogg"
+    },
+    {
+      "heading": "Kenly Debrief",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega does a debrief with Jack Arnold after the events at Kenly College Features JACK ARNOLD, MANNY ORTEGA. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-17"
+          ]
+        },
+        {
+          "text": "Manny Ortega does a debrief with Jack Arnold after the events at Kenly College Features JACK ARNOLD, MANNY ORTEGA. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-17"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Kenly_Debrief.ogg"
+    },
+    {
+      "heading": "Transmission 1",
+      "paragraphs": [
+        {
+          "text": "Jack Arnold plays the first recovered transmission for Manny Ortega Features JACK ARNOLD, MANNY ORTEGA. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-18"
+          ]
+        },
+        {
+          "text": "Jack Arnold plays the first recovered transmission for Manny Ortega Features multiple speakers including JACK ARNOLD, MANNY ORTEGA, NATALYA SOKOLOVA. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-18"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Transmission_1.ogg"
+    },
+    {
+      "heading": "Transmission 2",
+      "paragraphs": [
+        {
+          "text": "Jack Arnold plays the second recovered transmission for Manny Ortega Features multiple speakers including JACK ARNOLD, MANNY ORTEGA, NATALYA SOKOLOVA. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-19"
+          ]
+        },
+        {
+          "text": "Jack Arnold plays the second recovered transmission for Manny Ortega Features CALVIN MCMANUS, NATALYA SOKOLOVA. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-19"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Transmission_2.ogg"
+    },
+    {
+      "heading": "Transmission 3",
+      "paragraphs": [
+        {
+          "text": "Jack Arnold plays the third recovered transmission for Manny Ortega Features multiple speakers including JACK ARNOLD, MANNY ORTEGA, NATALYA SOKOLOVA. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-20"
+          ]
+        },
+        {
+          "text": "Jack Arnold plays the third recovered transmission for Manny Ortega Features CALVIN MCMANUS, NATALYA SOKOLOVA. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-20"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Transmission_3.ogg"
+    },
+    {
+      "heading": "Jack",
+      "paragraphs": [
+        {
+          "text": "Mel Arnold reports that Jack Arnold and their team have gone missing after doing a special assignment at Kenly College Features JACK ARNOLD, MANNY ORTEGA. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-21"
+          ]
+        },
+        {
+          "text": "Mel Arnold reports that Jack Arnold and their team have gone missing after doing a special assignment at Kenly College Features JACK ARNOLD, MANNY ORTEGA. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-21"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Jack.ogg"
+    },
+    {
+      "heading": "Surrender",
+      "paragraphs": [
+        {
+          "text": "Vikram Malik makes his way to the Campus Settlement and asks to talk to Manny Ortega Features CASTLE GUARD, MANNY ORTEGA, VIKRAM MALIK. Contains 15 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-22"
+          ]
+        },
+        {
+          "text": "Vikram Malik makes his way to the Campus Settlement and asks to talk to Manny Ortega Features CASTLE GUARD, VIKRAM MALIK. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-22"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Surrender.ogg"
+    },
+    {
+      "heading": "Negotiations",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega negotiates the terms of Vikram Malik's residency Features MANNY ORTEGA, VIKRAM MALIK. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-23"
+          ]
+        },
+        {
+          "text": "Manny Ortega negotiates the terms of Vikram Malik's residency Features MANNY ORTEGA, VIKRAM MALIK. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-23"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Negotiations.ogg"
+    },
+    {
+      "heading": "Power",
+      "paragraphs": [
+        {
+          "text": "Yes.\": WALLY\": Okay, um, engineer, computers, helped run a nuclear power plant for the last six months. So, infrastructure and power. Features NATALYA SOKOLOVA, ODEA SYSTEM, VIKRAM MALIK. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-24"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Power.ogg"
+    },
+    {
+      "heading": "Bunkers",
+      "paragraphs": [
+        {
+          "text": "Vikram Malik delivers a recording about Calvin McManus Features CALVIN MCMANUS, VIKRAM MALIK. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-25"
+          ]
+        },
+        {
+          "text": "Vikram Malik delivers a recording about Calvin McManus Features CALVIN MCMANUS, VIKRAM MALIK. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-25"
+          ]
+        },
+        {
+          "text": "Vikram Malik delivers a recording about Calvin McManus Features VIKRAM MALIK. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-25"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Bunkers.ogg"
+    },
+    {
+      "heading": "Vik",
+      "paragraphs": [
+        {
+          "text": "Vikram Malik makes his way to the Campus Settlement and asks to talk to Manny Ortega Features MANNY ORTEGA, VIKRAM MALIK. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-26"
+          ]
+        },
+        {
+          "text": "Vikram Malik makes his way to the Campus Settlement and asks to talk to Manny Ortega Features MANNY ORTEGA. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-26"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Vik.ogg"
+    },
+    {
+      "heading": "Bored",
+      "paragraphs": [
+        {
+          "text": "Birdie\" talks to Natalya Sokolova Features BIRDIE, NATALYA SOKOLOVA. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-27"
+          ]
+        },
+        {
+          "text": "Birdie\" talks to Natalya Sokolova Features BIRDIE, NATALYA SOKOLOVA. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-27"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Bored.ogg"
+    },
+    {
+      "heading": "Bro",
+      "paragraphs": [
+        {
+          "text": "Vikram Malik is reunited with \"Birdie Features BIRDIE, VIKRAM MALIK. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-28"
+          ]
+        },
+        {
+          "text": "Vikram Malik is reunited with \"Birdie Features BIRDIE, VIKRAM MALIK. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-28"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Bro.ogg"
+    },
+    {
+      "heading": "Grid",
+      "paragraphs": [
+        {
+          "text": "Vikram Malik and \"Birdie\" stabilize the Castle's power grid Features BIRDIE, MANNY ORTEGA, VIKRAM MALIK. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-29"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Grid.ogg"
+    },
+    {
+      "heading": "Key",
+      "paragraphs": [
+        {
+          "text": "Birdie\" tells Manny Ortega about the Black Tusk security systems Features BIRDIE, MANNY ORTEGA. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-30"
+          ]
+        },
+        {
+          "text": "Birdie\" tells Manny Ortega about the Black Tusk security systems Features BIRDIE, MANNY ORTEGA. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-30"
+          ]
+        },
+        {
+          "text": "Birdie\" tells Manny Ortega about the Black Tusk security systems Features BIRDIE. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-30"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Key.ogg"
+    },
+    {
+      "heading": "Birdie",
+      "paragraphs": [
+        {
+          "text": "Birdie\" talks to Natalya Sokolova Features BIRDIE, MANNY ORTEGA. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-31"
+          ]
+        },
+        {
+          "text": "Birdie\" talks to Natalya Sokolova Features BIRDIE. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-31"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Birdie.ogg"
+    },
+    {
+      "heading": "Reports",
+      "paragraphs": [
+        {
+          "text": "Mel Arnold reports that Jack Arnold and their team have gone missing after doing a special assignment at Kenly College Features AGENT JOHNSON. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-32"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Reports.ogg"
+    },
+    {
+      "heading": "Moonshine",
+      "paragraphs": [
+        {
+          "text": "Brian Johnson talks to Cindy McAllister after the events at the Grand Washington Hotel Features AGENT JOHNSON, CINDY MCALLISTER. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-33"
+          ]
+        },
+        {
+          "text": "Brian Johnson talks to Cindy McAllister after the events at the Grand Washington Hotel Features AGENT JOHNSON, CINDY MCALLISTER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-33"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Moonshine.ogg"
+    },
+    {
+      "heading": "Recruitment",
+      "paragraphs": [
+        {
+          "text": "Brian Johnson gets a new assignment Features AGENT JOHNSON, CALVIN MCMANUS. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-34"
+          ]
+        },
+        {
+          "text": "Brian Johnson gets a new assignment Features AGENT JOHNSON, CALVIN MCMANUS. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-34"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Recruitment.ogg"
+    },
+    {
+      "heading": "Promotion",
+      "paragraphs": [
+        {
+          "text": "Brian Johnson gets a promotion Features AGENT JOHNSON, CALVIN MCMANUS. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-35"
+          ]
+        },
+        {
+          "text": "Brian Johnson gets a promotion Features AGENT JOHNSON, CALVIN MCMANUS. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-puppeteers-comm-35"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Puppeteers_-_Promotion.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-natalya-sokolova",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-alani-kelso",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "location-coney-island",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Puppeteers. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Puppeteers",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

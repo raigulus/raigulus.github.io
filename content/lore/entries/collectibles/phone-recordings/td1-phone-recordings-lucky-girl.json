@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td1-phone-recordings-lucky-girl",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD1 Phone Recordings: Lucky Girl",
+  "slug": "td1-phone-recordings-lucky-girl",
+  "section": "collectibles",
+  "summary": "A collection of 2 phone recordings from The Division universe, scraped from the Fandom wiki hub page. 2 entries include full audio transcripts; 2 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "phone-recordings",
+  "total_entries": 2,
+  "claims": [
+    {
+      "id": "td1-phone-recordings-lucky-girl-comm-1",
+      "text": "Comm \"Competition\": Young girl partaking in radio competition (Location: Pennsylvania Plaza (874, 1171))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-lucky-girl"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-lucky-girl-comm-2",
+      "text": "Comm \"Winner\": Young girl wins concert tickets (Location: Pennsylvania Plaza (1119, 1322))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-lucky-girl"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Competition",
+      "paragraphs": [
+        {
+          "text": "Young girl partaking in radio competition Features ALI, NAOMI. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-lucky-girl-comm-1"
+          ]
+        }
+      ],
+      "location": "Pennsylvania Plaza (874, 1171)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Competition.ogg"
+    },
+    {
+      "heading": "Winner",
+      "paragraphs": [
+        {
+          "text": "Young girl wins concert tickets Features ALI, NAOMI. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-lucky-girl-comm-2"
+          ]
+        }
+      ],
+      "location": "Pennsylvania Plaza (1119, 1322)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Winner.ogg"
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Phone_Recordings/Lucky_Girl. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Phone_Recordings/Lucky_Girl",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions"
+    ]
+  }
+}

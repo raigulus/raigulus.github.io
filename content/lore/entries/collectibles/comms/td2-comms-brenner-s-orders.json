@@ -1,0 +1,242 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-brenner-s-orders",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Brenner's Orders",
+  "slug": "td2-comms-brenner-s-orders",
+  "section": "collectibles",
+  "summary": "A collection of 10 comms from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td2-comms-brenner-s-orders-comm-1",
+      "text": "Comm \"Brenner's Orders\": Brenner gets a new command",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brenners-orders"
+      ]
+    },
+    {
+      "id": "td2-comms-brenner-s-orders-comm-2",
+      "text": "Comm \"Air Support\": Directing airlifted supplies for the drill",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brenners-orders"
+      ]
+    },
+    {
+      "id": "td2-comms-brenner-s-orders-comm-3",
+      "text": "Comm \"DARPA Lab\": The team enters the biolab",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brenners-orders"
+      ]
+    },
+    {
+      "id": "td2-comms-brenner-s-orders-comm-4",
+      "text": "Comm \"Plan B\": Discovery of the maintenance tunnels",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brenners-orders"
+      ]
+    },
+    {
+      "id": "td2-comms-brenner-s-orders-comm-5",
+      "text": "Comm \"Assume Control\": Brenner's pep talk to the team",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brenners-orders"
+      ]
+    },
+    {
+      "id": "td2-comms-brenner-s-orders-comm-6",
+      "text": "Comm \"Pentagon Defenses\": One of the teams reports on Pentagon defenses",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brenners-orders"
+      ]
+    },
+    {
+      "id": "td2-comms-brenner-s-orders-comm-7",
+      "text": "Comm \"Drone Testing\": Going through the drone testing lab equipment",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brenners-orders"
+      ]
+    },
+    {
+      "id": "td2-comms-brenner-s-orders-comm-8",
+      "text": "Comm \"Hovercraft Landing\": The hovercraft makes landfall at The Pentagon",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brenners-orders"
+      ]
+    },
+    {
+      "id": "td2-comms-brenner-s-orders-comm-9",
+      "text": "Comm \"Drill Setup\": Brenner oversees the drill construction",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brenners-orders"
+      ]
+    },
+    {
+      "id": "td2-comms-brenner-s-orders-comm-10",
+      "text": "Comm \"SHD Prototypes\": Brenners discovers DARPA's prototypes",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brenners-orders"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Brenner's Orders",
+      "paragraphs": [
+        {
+          "text": "Brenner gets a new command Features BARDON SCHAEFFER, PETRUS BRENNER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brenner-s-orders-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Brenner%27s_Orders_Comms_-_Brenner%27s_Orders.ogg"
+    },
+    {
+      "heading": "Air Support",
+      "paragraphs": [
+        {
+          "text": "Directing airlifted supplies for the drill Features JOHN \"ARCHITECT\" FIGGS, PETRUS BRENNER. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brenner-s-orders-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Brenner%27s_Orders_Comms_-_Air_Support.ogg"
+    },
+    {
+      "heading": "DARPA Lab",
+      "paragraphs": [
+        {
+          "text": "The team enters the biolab Features BLACK TUSK SOLDIER, PETRUS BRENNER. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brenner-s-orders-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Brenner%27s_Orders_Comms_-_DARPA_Lab.ogg"
+    },
+    {
+      "heading": "Plan B",
+      "paragraphs": [
+        {
+          "text": "Discovery of the maintenance tunnels Features BEN \"MEGA\" REINHOLD, PETRUS BRENNER. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brenner-s-orders-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Brenner%27s_Orders_Comms_-_Plan_B.ogg"
+    },
+    {
+      "heading": "Assume Control",
+      "paragraphs": [
+        {
+          "text": "Brenner's pep talk to the team Features PETRUS BRENNER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brenner-s-orders-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Brenner%27s_Orders_-_Assume_Control.ogg"
+    },
+    {
+      "heading": "Pentagon Defenses",
+      "paragraphs": [
+        {
+          "text": "One of the teams reports on Pentagon defenses Features BEN \"MEGA\" REINHOLD, PETRUS BRENNER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brenner-s-orders-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Brenner%27s_Orders_Comms_-_Pentagon_Defenses.ogg"
+    },
+    {
+      "heading": "Drone Testing",
+      "paragraphs": [
+        {
+          "text": "Going through the drone testing lab equipment Features DESHAWN \"ECHO LEADER\" GRIFFIN, PETRUS BRENNER. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brenner-s-orders-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Brenner%27s_Orders_Comms_-_Drone_Testing.ogg"
+    },
+    {
+      "heading": "Hovercraft Landing",
+      "paragraphs": [
+        {
+          "text": "The hovercraft makes landfall at The Pentagon Features PETRUS BRENNER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brenner-s-orders-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Brenner%27s_Orders_Comms_-_Hovercraft_Landing.ogg"
+    },
+    {
+      "heading": "Drill Setup",
+      "paragraphs": [
+        {
+          "text": "Brenner oversees the drill construction Features BLACK TUSK SOLDIER, PETRUS BRENNER. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brenner-s-orders-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Brenner%27s_Orders_Comms_-_Drill_Setup.ogg"
+    },
+    {
+      "heading": "SHD Prototypes",
+      "paragraphs": [
+        {
+          "text": "Brenners discovers DARPA's prototypes Features JOHN \"ARCHITECT\" FIGGS, PETRUS BRENNER. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brenner-s-orders-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Brenner%27s_Orders_Comms_-_SHD_Prototypes.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "location-the-pentagon",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Brenner's_Orders. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Brenner's_Orders",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020",
+      "ubisoft-pentagon-darpa-2019"
+    ]
+  }
+}

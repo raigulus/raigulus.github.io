@@ -1,0 +1,455 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-manhunt-shadow-tide",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Manhunt - Shadow Tide",
+  "slug": "td2-comms-manhunt-shadow-tide",
+  "section": "collectibles",
+  "summary": "A collection of 20 comms from The Division universe, scraped from the Fandom wiki hub page. 20 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 20,
+  "claims": [
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-1",
+      "text": "Comm \"Midtown Sitrep\": Division agent Chadwick Brandon gives a sitrep from Midtown",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-2",
+      "text": "Comm \"Without a Fight\": Rogue agent Molly Henderson tries to recruit Chadwick Brandon",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-3",
+      "text": "Comm \"Fully Committed\": Chadwick Brandon reports to Molly Henderson's safehouse",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-4",
+      "text": "Comm \"Neptune\": Jupiter, aka Molly Henderson, gives her team an update",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-5",
+      "text": "Comm \"Backup\": Venus and Jupiter have a discussion about their backup",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-6",
+      "text": "Comm \"Respect\": Venus and Jupiter discuss interpersonal conflicts",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-7",
+      "text": "Comm \"Took Care of It\": Venus and Jupiter discuss conflict resolution tactics",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-8",
+      "text": "Comm \"First Contact\": Jupiter checks in with Saturn at the NYC safehouse",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-9",
+      "text": "Comm \"Safehouse\": Saturn reports the status of the safehouse",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-10",
+      "text": "Comm \"Care Package\": Jupiter receives a special delivery from Aaron Keener",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-11",
+      "text": "Comm \"Stay Back\": Jupiter tells Saturn she's not going to Washington, D.C.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-12",
+      "text": "Comm \"Conley's Guys\": Jupiter sets expectations for her new crew",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-13",
+      "text": "Comm \"Mistake\": Agents Ryan Chang and Alani Kelso disagree on moving supplies",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-14",
+      "text": "Comm \"Mutual Friend\": Agent Ryan Chang makes first contact with rogue agent Molly Henderson, aka Jupiter",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-15",
+      "text": "Comm \"Strike Team\": Jupiter arrives in DC and has a first meeting with Mercury",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-16",
+      "text": "Comm \"Solar System\": xxxxx",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-17",
+      "text": "Comm \"Land\": After weeks on a boat, the Cleaners disembark and set up a new base",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-18",
+      "text": "Comm \"Fuel\": Cleaners use their aviation expertise to search for fuel reserves left behind",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-19",
+      "text": "Comm \"The Room\": A Cleaner accidentally discovers a secret room after attempting to sanitize an altar",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shadow-tide-comm-20",
+      "text": "Comm \"Testing\": Jupiter runs tests one of Conley's prototypes.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shadow-tide"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Midtown Sitrep",
+      "paragraphs": [
+        {
+          "text": "Division agent Chadwick Brandon gives a sitrep from Midtown Features NEPTUNE. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_Midtown_SitRep.ogg"
+    },
+    {
+      "heading": "Without a Fight",
+      "paragraphs": [
+        {
+          "text": "Rogue agent Molly Henderson tries to recruit Chadwick Brandon Features JUPITER, NEPTUNE. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_Without_a_Fight.ogg"
+    },
+    {
+      "heading": "Fully Committed",
+      "paragraphs": [
+        {
+          "text": "Chadwick Brandon reports to Molly Henderson's safehouse Features JUPITER, NEPTUNE. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_Fully_Committed.ogg"
+    },
+    {
+      "heading": "Neptune",
+      "paragraphs": [
+        {
+          "text": "Jupiter, aka Molly Henderson, gives her team an update Features JUPITER, NEPTUNE. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_Neptune.ogg"
+    },
+    {
+      "heading": "Backup",
+      "paragraphs": [
+        {
+          "text": "Venus and Jupiter have a discussion about their backup Features JUPITER, VENUS. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_Backup.ogg"
+    },
+    {
+      "heading": "Respect",
+      "paragraphs": [
+        {
+          "text": "Venus and Jupiter discuss interpersonal conflicts Features JUPITER, VENUS. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_Respect.ogg"
+    },
+    {
+      "heading": "Took Care of It",
+      "paragraphs": [
+        {
+          "text": "Venus and Jupiter discuss conflict resolution tactics Features JUPITER, VENUS. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_Took_Care_of_It.ogg"
+    },
+    {
+      "heading": "First Contact",
+      "paragraphs": [
+        {
+          "text": "Jupiter checks in with Saturn at the NYC safehouse Features JUPITER, SATURN. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_First_Contact.ogg"
+    },
+    {
+      "heading": "Safehouse",
+      "paragraphs": [
+        {
+          "text": "Chadwick Brandon reports to Molly Henderson's safehouse Features JUPITER, SATURN. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_Safehouse.ogg"
+    },
+    {
+      "heading": "Care Package",
+      "paragraphs": [
+        {
+          "text": "Jupiter receives a special delivery from Aaron Keener Features JUPITER, SATURN. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_Care_Package.ogg"
+    },
+    {
+      "heading": "Stay Back",
+      "paragraphs": [
+        {
+          "text": "Jupiter tells Saturn she's not going to Washington, D.C. Features JUPITER, SATURN. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-11"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_Stay_Back.ogg"
+    },
+    {
+      "heading": "Conley's Guys",
+      "paragraphs": [
+        {
+          "text": "Jupiter sets expectations for her new crew Features JUPITER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-12"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_Conley%27s_Guys.ogg"
+    },
+    {
+      "heading": "Mistake",
+      "paragraphs": [
+        {
+          "text": "Agents Ryan Chang and Alani Kelso disagree on moving supplies Features AGENT KELSO, MERCURY. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-13"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_Mistake.ogg"
+    },
+    {
+      "heading": "Mutual Friend",
+      "paragraphs": [
+        {
+          "text": "Agent Ryan Chang makes first contact with rogue agent Molly Henderson, aka Jupiter Features JUPITER, MERCURY. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-14"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_Mutual_Friend.ogg"
+    },
+    {
+      "heading": "Strike Team",
+      "paragraphs": [
+        {
+          "text": "Jupiter arrives in DC and has a first meeting with Mercury Features JUPITER, MERCURY. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-15"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_Strike_Team.ogg"
+    },
+    {
+      "heading": "Solar System",
+      "paragraphs": [
+        {
+          "text": "xxxxx Features JUPITER, MERCURY. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-16"
+          ]
+        },
+        {
+          "text": "xxxxx Features JUPITER, MERCURY. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-16"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_Solar_System.ogg"
+    },
+    {
+      "heading": "Land",
+      "paragraphs": [
+        {
+          "text": "After weeks on a boat, the Cleaners disembark and set up a new base Features CLEANER 1, CLEANER 2. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-17"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_Land.ogg"
+    },
+    {
+      "heading": "Fuel",
+      "paragraphs": [
+        {
+          "text": "Cleaners use their aviation expertise to search for fuel reserves left behind Features CLEANER, MCKINNEY. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-18"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_Fuel.ogg"
+    },
+    {
+      "heading": "The Room",
+      "paragraphs": [
+        {
+          "text": "A Cleaner accidentally discovers a secret room after attempting to sanitize an altar Features JUPITER, MCKINNEY. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-19"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shadow_Tide_-_The_Room.ogg"
+    },
+    {
+      "heading": "Testing",
+      "paragraphs": [
+        {
+          "text": "Jupiter runs tests one of Conley's prototypes. Features CLEANER, JUPITER, https. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shadow-tide-comm-20"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-alani-kelso",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "location-washington-dc",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-cleaners",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Shadow_Tide. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Shadow_Tide",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020",
+      "ubisoft-season-11-reign-of-fire-2023"
+    ]
+  }
+}

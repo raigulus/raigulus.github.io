@@ -16,19 +16,26 @@
       "id": "dc-collapse-premise",
       "text": "The official story premise places Washington on the brink of collapse amid lawlessness, instability and rumours of a Capitol coup.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-division2-story-factions"]
+      "source_ids": [
+        "ubisoft-division2-story-factions"
+      ]
     },
     {
       "id": "dc-shd-summons",
       "text": "Several months after the first game's events, Agents across the country are summoned to Washington after the nationwide Division Network goes down.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-story-so-far-2020"]
+      "source_ids": [
+        "ubisoft-story-so-far-2020"
+      ]
     },
     {
       "id": "dc-faction-conflict",
       "text": "Ubisoft presents Washington as contested by hostile factions and defended through Division operations and civilian settlements.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-division2-story-factions", "ubisoft-black-tusk-endgame-2019"]
+      "source_ids": [
+        "ubisoft-division2-story-factions",
+        "ubisoft-black-tusk-endgame-2019"
+      ]
     }
   ],
   "sections": [
@@ -37,7 +44,10 @@
       "paragraphs": [
         {
           "text": "Washington is not just a backdrop: the failure of the SHD Network and the struggle over federal institutions make the city the strategic center of The Division 2's opening campaign.",
-          "claim_ids": ["dc-collapse-premise", "dc-shd-summons"]
+          "claim_ids": [
+            "dc-collapse-premise",
+            "dc-shd-summons"
+          ]
         }
       ]
     },
@@ -46,12 +56,31 @@
       "paragraphs": [
         {
           "text": "The city's neighborhoods, control points and settlements express the continuing conflict between hostile factions, SHD Agents and organized civilians.",
-          "claim_ids": ["dc-faction-conflict"]
+          "claim_ids": [
+            "dc-faction-conflict"
+          ]
         }
       ]
     }
   ],
-  "relations": [],
+  "relations": [
+    {
+      "target_id": "collectible-td2-comms-manhunt-broken-wings",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "collectible-td2-comms-manhunt-reign-of-fire",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "collectible-td2-comms-manhunt-end-of-watch",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "collectible-td2-comms-manhunt-shadow-tide",
+      "relationship": "mentioned-in"
+    }
+  ],
   "verification": {
     "status": "source-reviewed",
     "last_reviewed": "2026-07-19",

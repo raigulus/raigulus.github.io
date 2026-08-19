@@ -1,0 +1,267 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-profile-president-ellis",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Profile - President Ellis",
+  "slug": "td2-comms-profile-president-ellis",
+  "section": "collectibles",
+  "summary": "A collection of 10 comms from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 10 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td2-comms-profile-president-ellis-comm-1",
+      "text": "Comm \"White House Gossip\": House Speaker Andrew Ellis talks to a colleague about President Waller and Vice President Mendez (Location: White House (1997, 2904))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-president-ellis"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-president-ellis-comm-2",
+      "text": "Comm \"Opportunities\": House Speaker Andrew Ellis talks to a mysterious messenger about an opportunity (Location: West Potomac Park (811, 2293))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-president-ellis"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-president-ellis-comm-3",
+      "text": "Comm \"The Mendez Problem\": House Speaker Andrew Ellis talks to a colleague about the newly sworn-in President Mendez (Location: West Potomac Park (837, 2658))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-president-ellis"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-president-ellis-comm-4",
+      "text": "Comm \"Next in Line\": House Speaker Andrew Ellis learns that President Mendez has committed suicide (Location: Southwest (492, 4619))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-president-ellis"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-president-ellis-comm-5",
+      "text": "Comm \"Introductions\": President Andrew Ellis meets the CEO of Black Tusk (Location: West Potomac Park (735, 2281))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-president-ellis"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-president-ellis-comm-6",
+      "text": "Comm \"Going to DC\": The Black Tusk CEO tells President Ellis to go to DC (Location: West Potomac Park (746, 2347))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-president-ellis"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-president-ellis-comm-7",
+      "text": "Comm \"Delegation\": President Ellis gives his aide some new responsibilities as he's leaving for DC (Location: Southwest (488, 4624))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-president-ellis"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-president-ellis-comm-8",
+      "text": "Comm \"Double Play\": President Ellis talks to a trusted colleague about the situation with Black Tusk (Location: Camp White Oak (477, 436))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-president-ellis"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-president-ellis-comm-9",
+      "text": "Comm \"Facility Access\": President Ellis meets with Bardon Schaeffer and discuss the broad-spectrum antiviral and the facility where it's located (Location: Camp White Oak (297, 384))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-president-ellis"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-president-ellis-comm-10",
+      "text": "Comm \"Taking Charge\": President Ellis talks to his mysterious benefactor about next steps (Location: Camp White Oak (142, 663))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-president-ellis"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "White House Gossip",
+      "paragraphs": [
+        {
+          "text": "House Speaker Andrew Ellis talks to a colleague about President Waller and Vice President Mendez Features ANDREW ELLIS, COUNCELOR DAVIS. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-president-ellis-comm-1"
+          ]
+        }
+      ],
+      "location": "White House (1997, 2904)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ellis_Comms_-_White_House_Gossip.ogg"
+    },
+    {
+      "heading": "Opportunities",
+      "paragraphs": [
+        {
+          "text": "House Speaker Andrew Ellis talks to a mysterious messenger about an opportunity Features ANDREW ELLIS, UNKNOWN. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-president-ellis-comm-2"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (811, 2293)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ellis_Comms_-_Opportunities.ogg"
+    },
+    {
+      "heading": "The Mendez Problem",
+      "paragraphs": [
+        {
+          "text": "House Speaker Andrew Ellis talks to a colleague about the newly sworn-in President Mendez Features ANDREW ELLIS, COUNCELOR DAVIS. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-president-ellis-comm-3"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (837, 2658)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ellis_Comms_-_The_Mendez_Problem.ogg"
+    },
+    {
+      "heading": "Next in Line",
+      "paragraphs": [
+        {
+          "text": "House Speaker Andrew Ellis learns that President Mendez has committed suicide Features ANDREW ELLIS, COUNCELOR DAVIS. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-president-ellis-comm-4"
+          ]
+        }
+      ],
+      "location": "Southwest (492, 4619)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ellis_Comms_-_Next_in_Line.ogg"
+    },
+    {
+      "heading": "Introductions",
+      "paragraphs": [
+        {
+          "text": "President Andrew Ellis meets the CEO of Black Tusk Features PRESIDENT ELLIS, UNKNOWN. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-president-ellis-comm-5"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (735, 2281)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ellis_Comms_-_Introductions.ogg"
+    },
+    {
+      "heading": "Going to DC",
+      "paragraphs": [
+        {
+          "text": "The Black Tusk CEO tells President Ellis to go to DC Features PRESIDENT ELLIS, UNKNOWN. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-president-ellis-comm-6"
+          ]
+        },
+        {
+          "text": "The Black Tusk CEO tells President Ellis to go to DC Features UNKNOWN. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-president-ellis-comm-6"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (746, 2347)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ellis_Comms_-_Going_to_DC.ogg"
+    },
+    {
+      "heading": "Delegation",
+      "paragraphs": [
+        {
+          "text": "President Ellis gives his aide some new responsibilities as he's leaving for DC Features PRESIDENT ELLIS, SARA. Contains 15 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-president-ellis-comm-7"
+          ]
+        }
+      ],
+      "location": "Southwest (488, 4624)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ellis_Comms_-_Delegation.ogg"
+    },
+    {
+      "heading": "Double Play",
+      "paragraphs": [
+        {
+          "text": "President Ellis talks to a trusted colleague about the situation with Black Tusk Features COUNCELOR DAVIS, PRESIDENT ELLIS. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-president-ellis-comm-8"
+          ]
+        }
+      ],
+      "location": "Camp White Oak (477, 436)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ellis_Comms_-_Double_Play.ogg"
+    },
+    {
+      "heading": "Facility Access",
+      "paragraphs": [
+        {
+          "text": "President Ellis meets with Bardon Schaeffer and discuss the broad-spectrum antiviral and the facility where it's located Features BARDON SCHAEFFER, PRESIDENT ELLIS. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-president-ellis-comm-9"
+          ]
+        },
+        {
+          "text": "President Ellis meets with Bardon Schaeffer and discuss the broad-spectrum antiviral and the facility where it's located Features BARDON SCHAEFFER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-president-ellis-comm-9"
+          ]
+        }
+      ],
+      "location": "Camp White Oak (297, 384)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ellis_Comms_-_Facility_Access.ogg"
+    },
+    {
+      "heading": "Taking Charge",
+      "paragraphs": [
+        {
+          "text": "President Ellis talks to his mysterious benefactor about next steps Features PRESIDENT ELLIS, UNKNOWN. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-president-ellis-comm-10"
+          ]
+        }
+      ],
+      "location": "Camp White Oak (142, 663)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ellis_Comms_-_Taking_Charge.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-andrew-ellis",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "location-camp-white-oak",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Profile_-_President_Ellis. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Profile_-_President_Ellis",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

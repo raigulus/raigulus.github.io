@@ -1,0 +1,183 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td1-phone-recordings-keener-s-reports",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD1 Phone Recordings: Keener's Reports",
+  "slug": "td1-phone-recordings-keener-s-reports",
+  "section": "collectibles",
+  "summary": "A collection of 7 phone recordings from The Division universe, scraped from the Fandom wiki hub page. 7 entries include full audio transcripts; 7 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "phone-recordings",
+  "total_entries": 7,
+  "claims": [
+    {
+      "id": "td1-phone-recordings-keener-s-reports-comm-1",
+      "text": "Comm \"Keener's Reports 1\": An unknown First Wave Division agent reports in (Location: Murray Hill (1360, 2615))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-keeners-reports"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-keener-s-reports-comm-2",
+      "text": "Comm \"Keener's Reports 2\": An unknown First Wave Division agent reports in (Location: Murray Hill (1294, 3046))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-keeners-reports"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-keener-s-reports-comm-3",
+      "text": "Comm \"Keener's Reports 3\": An unknown First Wave Division agent reports in (Location: Murray Hill (1430, 2951))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-keeners-reports"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-keener-s-reports-comm-4",
+      "text": "Comm \"Keener's Reports 4\": An unknown First Wave Division agent reports in (Location: Turtle Bay (1680, 2703))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-keeners-reports"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-keener-s-reports-comm-5",
+      "text": "Comm \"Keener's Reports 5\": An unknown First Wave Division agent reports in (Location: Turtle Bay (1827, 2500))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-keeners-reports"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-keener-s-reports-comm-6",
+      "text": "Comm \"Keener's Reports 6\": An unknown First Wave Division agent reports in (Location: Turtle Bay (1683, 2814))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-keeners-reports"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-keener-s-reports-comm-7",
+      "text": "Comm \"Keener's Reports 7\": An unknown First Wave Division agent reports in (Location: Turtle Bay (1933, 2853))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-keeners-reports"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Keener's Reports 1",
+      "paragraphs": [
+        {
+          "text": "An unknown First Wave Division agent reports in Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-keener-s-reports-comm-1"
+          ]
+        }
+      ],
+      "location": "Murray Hill (1360, 2615)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Report_1.ogg"
+    },
+    {
+      "heading": "Keener's Reports 2",
+      "paragraphs": [
+        {
+          "text": "An unknown First Wave Division agent reports in Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-keener-s-reports-comm-2"
+          ]
+        }
+      ],
+      "location": "Murray Hill (1294, 3046)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Report_2.ogg"
+    },
+    {
+      "heading": "Keener's Reports 3",
+      "paragraphs": [
+        {
+          "text": "An unknown First Wave Division agent reports in Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-keener-s-reports-comm-3"
+          ]
+        }
+      ],
+      "location": "Murray Hill (1430, 2951)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Report_3.ogg"
+    },
+    {
+      "heading": "Keener's Reports 4",
+      "paragraphs": [
+        {
+          "text": "An unknown First Wave Division agent reports in Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-keener-s-reports-comm-4"
+          ]
+        }
+      ],
+      "location": "Turtle Bay (1680, 2703)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Report_4.ogg"
+    },
+    {
+      "heading": "Keener's Reports 5",
+      "paragraphs": [
+        {
+          "text": "An unknown First Wave Division agent reports in Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-keener-s-reports-comm-5"
+          ]
+        }
+      ],
+      "location": "Turtle Bay (1827, 2500)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Report_5.ogg"
+    },
+    {
+      "heading": "Keener's Reports 6",
+      "paragraphs": [
+        {
+          "text": "An unknown First Wave Division agent reports in Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-keener-s-reports-comm-6"
+          ]
+        }
+      ],
+      "location": "Turtle Bay (1683, 2814)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Report_6.ogg"
+    },
+    {
+      "heading": "Keener's Reports 7",
+      "paragraphs": [
+        {
+          "text": "An unknown First Wave Division agent reports in Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-keener-s-reports-comm-7"
+          ]
+        }
+      ],
+      "location": "Turtle Bay (1933, 2853)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Keener%27s_Report_7.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Phone_Recordings/Keener's_Reports. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Phone_Recordings/Keener's_Reports",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions"
+    ]
+  }
+}

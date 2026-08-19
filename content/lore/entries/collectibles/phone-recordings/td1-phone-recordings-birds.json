@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td1-phone-recordings-birds",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD1 Phone Recordings: Birds",
+  "slug": "td1-phone-recordings-birds",
+  "section": "collectibles",
+  "summary": "A collection of 2 phone recordings from The Division universe, scraped from the Fandom wiki hub page. 2 entries include full audio transcripts; 2 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "phone-recordings",
+  "total_entries": 2,
+  "claims": [
+    {
+      "id": "td1-phone-recordings-birds-comm-1",
+      "text": "Comm \"Birds\": Escaped Riker calling ex-wife (Location: Pennsylvania Plaza (738, 1067))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-birds"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-birds-comm-2",
+      "text": "Comm \"Peace\": Escaped Riker calling ex-wife again (Location: Pennsylvania Plaza (1127, 1489))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-birds"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Birds",
+      "paragraphs": [
+        {
+          "text": "Escaped Riker calling ex-wife Features ESCAPED RIKER, JEN. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-birds-comm-1"
+          ]
+        }
+      ],
+      "location": "Pennsylvania Plaza (738, 1067)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Birds.ogg"
+    },
+    {
+      "heading": "Peace",
+      "paragraphs": [
+        {
+          "text": "Escaped Riker calling ex-wife again Features ESCAPED RIKER, JEN. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-birds-comm-2"
+          ]
+        }
+      ],
+      "location": "Pennsylvania Plaza (1127, 1489)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Peace.ogg"
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Phone_Recordings/Birds. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Phone_Recordings/Birds",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions"
+    ]
+  }
+}

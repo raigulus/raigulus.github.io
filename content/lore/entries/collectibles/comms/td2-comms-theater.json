@@ -1,0 +1,235 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-theater",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Theater",
+  "slug": "td2-comms-theater",
+  "section": "collectibles",
+  "summary": "A collection of 8 comms from The Division universe, scraped from the Fandom wiki hub page. 8 entries include full audio transcripts; 8 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 8,
+  "claims": [
+    {
+      "id": "td2-comms-theater-comm-1",
+      "text": "Comm \"Settling Down\": A small group of survivors decide to make the Theater their home (Location: Downtown East (1796, 3605))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-theater"
+      ]
+    },
+    {
+      "id": "td2-comms-theater-comm-2",
+      "text": "Comm \"Firearms Training\": Odessa Sawyer trains civilians in how to properly handle firearms (Location: Federal Triangle (1656, 4029))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-theater"
+      ]
+    },
+    {
+      "id": "td2-comms-theater-comm-3",
+      "text": "Comm \"Strategy\": Odessa Sawyer and Agent Kelso talk shop and make a plan for keeping the Theater settlement safe (Location: Federal Triangle (1430, 4109))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-theater"
+      ]
+    },
+    {
+      "id": "td2-comms-theater-comm-4",
+      "text": "Comm \"New Crew\": Two civilians contemplate joining the Hyenas, Odessa sets them straight (Location: Downtown East (1820, 3553))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-theater"
+      ]
+    },
+    {
+      "id": "td2-comms-theater-comm-5",
+      "text": "Comm \"Hyena Interrogation\": Odessa Sawyer interrogates a Hyena (Location: Downtown East (2276, 3462))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-theater"
+      ]
+    },
+    {
+      "id": "td2-comms-theater-comm-6",
+      "text": "Comm \"Peter Problems\": Odessa scolds her daughter for being careless and spending time with Peter (Location: Downtown East (1925, 3173))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-theater"
+      ]
+    },
+    {
+      "id": "td2-comms-theater-comm-7",
+      "text": "Comm \"Addiction\": A concerned civilian tries to get Peter to stop taking spice (Location: Downtown East (1921, 3337))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-theater"
+      ]
+    },
+    {
+      "id": "td2-comms-theater-comm-8",
+      "text": "Comm \"Sustainable Power\": Two engineers make a plan to build a wind turbine to power the Theater settlement (Location: Judiciary Square (2073, 4315))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-theater"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Settling Down",
+      "paragraphs": [
+        {
+          "text": "A small group of survivors decide to make the Theater their home Features CIVILIAN, THEATER CIVILIAN, UNIDENTIFIED MALE. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theater-comm-1"
+          ]
+        }
+      ],
+      "location": "Downtown East (1796, 3605)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Theater_Comms_-_Settling_Down.ogg"
+    },
+    {
+      "heading": "Firearms Training",
+      "paragraphs": [
+        {
+          "text": "Odessa Sawyer trains civilians in how to properly handle firearms Features ENGINEER, ODESSA SAWYER, PETER. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theater-comm-2"
+          ]
+        }
+      ],
+      "location": "Federal Triangle (1656, 4029)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Theater_Comms_-_Firearms_Training.ogg"
+    },
+    {
+      "heading": "Strategy",
+      "paragraphs": [
+        {
+          "text": "Odessa Sawyer and Agent Kelso talk shop and make a plan for keeping the Theater settlement safe Features AGENT KELSO, ODESSA SAWYER. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theater-comm-3"
+          ]
+        },
+        {
+          "text": "Odessa Sawyer and Agent Kelso talk shop and make a plan for keeping the Theater settlement safe Features AGENT KELSO. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theater-comm-3"
+          ]
+        }
+      ],
+      "location": "Federal Triangle (1430, 4109)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Theater_Comms_-_Strategy.ogg"
+    },
+    {
+      "heading": "New Crew",
+      "paragraphs": [
+        {
+          "text": "Two civilians contemplate joining the Hyenas, Odessa sets them straight Features ODESSA SAWYER, PETER, THEATER CIVILIAN. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theater-comm-4"
+          ]
+        },
+        {
+          "text": "Two civilians contemplate joining the Hyenas, Odessa sets them straight Features ODESSA SAWYER, THEATER CIVILIAN. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theater-comm-4"
+          ]
+        }
+      ],
+      "location": "Downtown East (1820, 3553)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Theater_Comms_-_New_Crew.ogg"
+    },
+    {
+      "heading": "Hyena Interrogation",
+      "paragraphs": [
+        {
+          "text": "Odessa Sawyer interrogates a Hyena Features HYENA MEMBER, ODESSA SAWYER. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theater-comm-5"
+          ]
+        }
+      ],
+      "location": "Downtown East (2276, 3462)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Theater_Comms_-_Hyena_Interrogation.ogg"
+    },
+    {
+      "heading": "Peter Problems",
+      "paragraphs": [
+        {
+          "text": "Odessa scolds her daughter for being careless and spending time with Peter Features ELEANOR SAWYER, ODESSA SAWYER. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theater-comm-6"
+          ]
+        },
+        {
+          "text": "Odessa scolds her daughter for being careless and spending time with Peter Features ELEANOR SAWYER, ODESSA SAWYER. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theater-comm-6"
+          ]
+        }
+      ],
+      "location": "Downtown East (1925, 3173)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Theater_Comms_-_Peter_Problems.ogg"
+    },
+    {
+      "heading": "Addiction",
+      "paragraphs": [
+        {
+          "text": "A concerned civilian tries to get Peter to stop taking spice Features PETER, THEATER CIVILIAN. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theater-comm-7"
+          ]
+        },
+        {
+          "text": "A concerned civilian tries to get Peter to stop taking spice Features PETER, THEATER CIVILIAN. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theater-comm-7"
+          ]
+        }
+      ],
+      "location": "Downtown East (1921, 3337)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Theater_Comms_-_Addiction.ogg"
+    },
+    {
+      "heading": "Sustainable Power",
+      "paragraphs": [
+        {
+          "text": "Two engineers make a plan to build a wind turbine to power the Theater settlement Features CIVILIAN, ENGINEER. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theater-comm-8"
+          ]
+        },
+        {
+          "text": "Two engineers make a plan to build a wind turbine to power the Theater settlement Features CIVILIAN, ENGINEER. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theater-comm-8"
+          ]
+        }
+      ],
+      "location": "Judiciary Square (2073, 4315)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Theater_Comms_-_Sustainable_Power.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "faction-hyenas",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Theater. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Theater",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

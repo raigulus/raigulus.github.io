@@ -1,0 +1,121 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-castle",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Castle",
+  "slug": "td2-comms-castle",
+  "section": "collectibles",
+  "summary": "A collection of 4 comms from The Division universe, scraped from the Fandom wiki hub page. 4 entries include full audio transcripts; 4 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 4,
+  "claims": [
+    {
+      "id": "td2-comms-castle-comm-1",
+      "text": "Comm \"Castle Treaty\": The treaty between the True Sons and the Castle Settlement is strained (Location: East Mall (888, 4551))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-castle"
+      ]
+    },
+    {
+      "id": "td2-comms-castle-comm-2",
+      "text": "Comm \"Questioning Authority\": Castle leaders argue about their relationship with the True Sons (Location: East Mall (975, 3855))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-castle"
+      ]
+    },
+    {
+      "id": "td2-comms-castle-comm-3",
+      "text": "Comm \"Paying Tribute\": Castle leaders voice their concerns with \"paying tribute\" to the True Sons (Location: Southwest (714, 3827))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-castle"
+      ]
+    },
+    {
+      "id": "td2-comms-castle-comm-4",
+      "text": "Comm \"Keeping Watch\": Castle leaders track an increase in hostile activity (Location: Southwest (572, 3901))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-castle"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Castle Treaty",
+      "paragraphs": [
+        {
+          "text": "The treaty between the True Sons and the Castle Settlement is strained Features CASTLE LEADER, TRUE SONS BOSS. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-castle-comm-1"
+          ]
+        }
+      ],
+      "location": "East Mall (888, 4551)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Castle_Comms_-_Castle_Treaty.ogg"
+    },
+    {
+      "heading": "Questioning Authority",
+      "paragraphs": [
+        {
+          "text": "Castle leaders argue about their relationship with the True Sons Features CASTLE CIVILIAN, CASTLE LEADER. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-castle-comm-2"
+          ]
+        }
+      ],
+      "location": "East Mall (975, 3855)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Castle_Comms_-_Questioning_Authority.ogg"
+    },
+    {
+      "heading": "Paying Tribute",
+      "paragraphs": [
+        {
+          "text": "Castle leaders voice their concerns with \"paying tribute\" to the True Sons Features CASTLE CIVILIAN, CASTLE LEADER, TRUE SONS BOSS. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-castle-comm-3"
+          ]
+        }
+      ],
+      "location": "Southwest (714, 3827)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Castle_Comms_-_Paying_Tribute.ogg"
+    },
+    {
+      "heading": "Keeping Watch",
+      "paragraphs": [
+        {
+          "text": "Castle leaders track an increase in hostile activity Features CASTLE CIVILIAN, CASTLE LEADER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-castle-comm-4"
+          ]
+        }
+      ],
+      "location": "Southwest (572, 3901)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Castle_Comms_-_Keeping_Watch.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "faction-true-sons",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Castle. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Castle",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

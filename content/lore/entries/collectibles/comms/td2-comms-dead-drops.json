@@ -1,0 +1,209 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-dead-drops",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Dead Drops",
+  "slug": "td2-comms-dead-drops",
+  "section": "collectibles",
+  "summary": "A collection of 8 comms from The Division universe, scraped from the Fandom wiki hub page. 8 entries include full audio transcripts; 8 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 8,
+  "claims": [
+    {
+      "id": "td2-comms-dead-drops-comm-1",
+      "text": "Comm \"Warning\": Aaron Keener broadcasts a warning to any who would dare to pursue him (Location: Downtown West (1905, 2053))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-dead-drops"
+      ]
+    },
+    {
+      "id": "td2-comms-dead-drops-comm-2",
+      "text": "Comm \"Patience\": Aaron Keener sends out a broadcast to potential rogue agents (Location: Constitution Hall (1583, 2120))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-dead-drops"
+      ]
+    },
+    {
+      "id": "td2-comms-dead-drops-comm-3",
+      "text": "Comm \"Hometown\": Aaron Keener talks about New York (Location: West Potomac Park (1228, 1575))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-dead-drops"
+      ]
+    },
+    {
+      "id": "td2-comms-dead-drops-comm-4",
+      "text": "Comm \"Vitaly\": Aaron Keener talks about working with Vitaly Tchernenko (Location: Foggy Bottom (1625, 1479))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-dead-drops"
+      ]
+    },
+    {
+      "id": "td2-comms-dead-drops-comm-5",
+      "text": "Comm \"Open Gates\": Aaron Keener reflects on the end of the quarantine in Manhattan (Location: West End (2169, 1542))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-dead-drops"
+      ]
+    },
+    {
+      "id": "td2-comms-dead-drops-comm-6",
+      "text": "Comm \"Simple Math\": Aaron Keener talks about compartmentalizing his kills (Location: Downtown East (2116, 3117))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-dead-drops"
+      ]
+    },
+    {
+      "id": "td2-comms-dead-drops-comm-7",
+      "text": "Comm \"Greener Poison\": Aaron Keener waxes philosophical, about his plans for the future (Location: Federal Triangle (1716, 3501))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-dead-drops"
+      ]
+    },
+    {
+      "id": "td2-comms-dead-drops-comm-8",
+      "text": "Comm \"Recordings\": Aaron Keener takes a moment to explain why he is making these recordings (Location: Downtown East (1802, 3682))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-dead-drops"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Warning",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener broadcasts a warning to any who would dare to pursue him Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-dead-drops-comm-1"
+          ]
+        }
+      ],
+      "location": "Downtown West (1905, 2053)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Dead_Drops_-_Warning.ogg"
+    },
+    {
+      "heading": "Patience",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener sends out a broadcast to potential rogue agents Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-dead-drops-comm-2"
+          ]
+        }
+      ],
+      "location": "Constitution Hall (1583, 2120)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Dead_Drops_-_Patience.ogg"
+    },
+    {
+      "heading": "Hometown",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener talks about New York Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-dead-drops-comm-3"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (1228, 1575)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Dead_Drops_-_Hometown.ogg"
+    },
+    {
+      "heading": "Vitaly",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener talks about working with Vitaly Tchernenko Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-dead-drops-comm-4"
+          ]
+        }
+      ],
+      "location": "Foggy Bottom (1625, 1479)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Dead_Drops_-_Vitaly.ogg"
+    },
+    {
+      "heading": "Open Gates",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener reflects on the end of the quarantine in Manhattan Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-dead-drops-comm-5"
+          ]
+        }
+      ],
+      "location": "West End (2169, 1542)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Dead_Drops_-_Open_Gates.ogg"
+    },
+    {
+      "heading": "Simple Math",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener talks about compartmentalizing his kills Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-dead-drops-comm-6"
+          ]
+        }
+      ],
+      "location": "Downtown East (2116, 3117)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Dead_Drops_-_Simple_Math.ogg"
+    },
+    {
+      "heading": "Greener Poison",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener waxes philosophical, about his plans for the future Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-dead-drops-comm-7"
+          ]
+        }
+      ],
+      "location": "Federal Triangle (1716, 3501)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Dead_Drops_-_Greener_Poison.ogg"
+    },
+    {
+      "heading": "Recordings",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener takes a moment to explain why he is making these recordings Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-dead-drops-comm-8"
+          ]
+        }
+      ],
+      "location": "Downtown East (1802, 3682)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Dead_Drops_-_Recordings.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-vitaly-tchernenko",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Dead_Drops. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Dead_Drops",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

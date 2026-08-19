@@ -1,0 +1,273 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-javier-kajika",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Javier Kajika",
+  "slug": "td2-comms-javier-kajika",
+  "section": "collectibles",
+  "summary": "A collection of 10 comms from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td2-comms-javier-kajika-comm-1",
+      "text": "Comm \"Request Denied\": A JTF Captain refuses a backup request from Javier Kajika",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-javier-kajika"
+      ]
+    },
+    {
+      "id": "td2-comms-javier-kajika-comm-2",
+      "text": "Comm \"Outsiders\": Kajika is briefed about the JTF on the way to the Dark Zone",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-javier-kajika"
+      ]
+    },
+    {
+      "id": "td2-comms-javier-kajika-comm-3",
+      "text": "Comm \"Accountability\": Kajika interrogates a JTF officer about the Dark Zone evacuation",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-javier-kajika"
+      ]
+    },
+    {
+      "id": "td2-comms-javier-kajika-comm-4",
+      "text": "Comm \"Rogue Agents\": Two agents discuss the fragility of the Division",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-javier-kajika"
+      ]
+    },
+    {
+      "id": "td2-comms-javier-kajika-comm-5",
+      "text": "Comm \"Mutual Benefit\": Conley and Keener discuss Kajika's role with the Cleaners",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-javier-kajika"
+      ]
+    },
+    {
+      "id": "td2-comms-javier-kajika-comm-6",
+      "text": "Comm \"Settling Grievances\": Kajika makes first contact with distrustful Cleaners",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-javier-kajika"
+      ]
+    },
+    {
+      "id": "td2-comms-javier-kajika-comm-7",
+      "text": "Comm \"Not the Time\": Kajika presses Keener for intel on the JTF",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-javier-kajika"
+      ]
+    },
+    {
+      "id": "td2-comms-javier-kajika-comm-8",
+      "text": "Comm \"Non-Negotiable\": Kajika gives the Cleaners intel about an incoming JTF convoy",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-javier-kajika"
+      ]
+    },
+    {
+      "id": "td2-comms-javier-kajika-comm-9",
+      "text": "Comm \"Nancy\": Cleaners make preparations to get Nancy operational",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-javier-kajika"
+      ]
+    },
+    {
+      "id": "td2-comms-javier-kajika-comm-10",
+      "text": "Comm \"Kajika's Psych Eval\": Two SHD recruiters discuss the results of Kajika's psychological evaluation",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-javier-kajika"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Request Denied",
+      "paragraphs": [
+        {
+          "text": "A JTF Captain refuses a backup request from Javier Kajika Features JAVIER KAJIKA, JTF CAPTAIN. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-javier-kajika-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Kajika_Comms_-_Request_Denied.ogg"
+    },
+    {
+      "heading": "Outsiders",
+      "paragraphs": [
+        {
+          "text": "Kajika is briefed about the JTF on the way to the Dark Zone Features AGENT COSWALD, JAVIER KAJIKA. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-javier-kajika-comm-2"
+          ]
+        },
+        {
+          "text": "Kajika is briefed about the JTF on the way to the Dark Zone Features JAVIER KAJIKA. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-javier-kajika-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Kajika_Comms_-_Outsiders.ogg"
+    },
+    {
+      "heading": "Accountability",
+      "paragraphs": [
+        {
+          "text": "Kajika interrogates a JTF officer about the Dark Zone evacuation Features JAVIER KAJIKA, JTF OFFICER. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-javier-kajika-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Kajika_Comms_-_Accountability.ogg"
+    },
+    {
+      "heading": "Rogue Agents",
+      "paragraphs": [
+        {
+          "text": "Two agents discuss the fragility of the Division Features AGENT COLLINS, AGENT YARROW, ISAC. Contains 14 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-javier-kajika-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Kajika_Comms_-_Rogue_Agents.ogg"
+    },
+    {
+      "heading": "Mutual Benefit",
+      "paragraphs": [
+        {
+          "text": "Conley and Keener discuss Kajika's role with the Cleaners Features AARON KEENER, VIVIAN CONLEY. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-javier-kajika-comm-5"
+          ]
+        },
+        {
+          "text": "Conley and Keener discuss Kajika's role with the Cleaners Features VIVIAN CONLEY. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-javier-kajika-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Kajika_Comms_-_Mutural_Benefit.ogg"
+    },
+    {
+      "heading": "Settling Grievances",
+      "paragraphs": [
+        {
+          "text": "Kajika makes first contact with distrustful Cleaners Features CLEANER, JAVIER KAJIKA. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-javier-kajika-comm-6"
+          ]
+        },
+        {
+          "text": "Kajika makes first contact with distrustful Cleaners Features CLEANER, JAVIER KAJIKA. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-javier-kajika-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Kajika_Comms_-_Settling_Grievances.ogg"
+    },
+    {
+      "heading": "Not the Time",
+      "paragraphs": [
+        {
+          "text": "Kajika presses Keener for intel on the JTF Features AARON KEENER, JAVIER KAJIKA. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-javier-kajika-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Kajika_Comms_-_Not_the_Time.ogg"
+    },
+    {
+      "heading": "Non-Negotiable",
+      "paragraphs": [
+        {
+          "text": "Kajika gives the Cleaners intel about an incoming JTF convoy Features CLEANER, JAVIER KAJIKA. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-javier-kajika-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Kajika_Comms_-_Non-Negotiable.ogg"
+    },
+    {
+      "heading": "Nancy",
+      "paragraphs": [
+        {
+          "text": "Cleaners make preparations to get Nancy operational Features CLEANER 1, CLEANER 2. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-javier-kajika-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Kajika_Comms_-_Nancy.ogg"
+    },
+    {
+      "heading": "Kajika's Psych Eval",
+      "paragraphs": [
+        {
+          "text": "Two SHD recruiters discuss the results of Kajika's psychological evaluation Features SHD RECRUITER 1, SHD RECRUITER 2. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-javier-kajika-comm-10"
+          ]
+        },
+        {
+          "text": "Two SHD recruiters discuss the results of Kajika's psychological evaluation Features SHD RECRUITER 1, SHD RECRUITER 2. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-javier-kajika-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Kajika_Comms_-_Kajika%27s_Psych_Eval.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-vivian-conley",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-javier-kajika",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-cleaners",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Javier_Kajika. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Javier_Kajika",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

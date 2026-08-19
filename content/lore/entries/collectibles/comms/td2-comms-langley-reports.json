@@ -1,0 +1,238 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-langley-reports",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Langley Reports",
+  "slug": "td2-comms-langley-reports",
+  "section": "collectibles",
+  "summary": "A collection of 10 comms from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td2-comms-langley-reports-comm-1",
+      "text": "Comm \"Mexican Sitrep\": Situation Report on Mexico's status",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-langley-reports"
+      ]
+    },
+    {
+      "id": "td2-comms-langley-reports-comm-2",
+      "text": "Comm \"Canadian Sitrep\": Situation Report on Canada's status",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-langley-reports"
+      ]
+    },
+    {
+      "id": "td2-comms-langley-reports-comm-3",
+      "text": "Comm \"Russian Sitrep\": Situation Report on Russia's status",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-langley-reports"
+      ]
+    },
+    {
+      "id": "td2-comms-langley-reports-comm-4",
+      "text": "Comm \"Japan Sitrep\": Situation Report on Japan's status",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-langley-reports"
+      ]
+    },
+    {
+      "id": "td2-comms-langley-reports-comm-5",
+      "text": "Comm \"Indian Sitrep\": Situation Report on India's status",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-langley-reports"
+      ]
+    },
+    {
+      "id": "td2-comms-langley-reports-comm-6",
+      "text": "Comm \"European Sitrep\": Situation Report on Europe's status",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-langley-reports"
+      ]
+    },
+    {
+      "id": "td2-comms-langley-reports-comm-7",
+      "text": "Comm \"Middle Eastern Sitrep\": Situation Report on Middle East's status",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-langley-reports"
+      ]
+    },
+    {
+      "id": "td2-comms-langley-reports-comm-8",
+      "text": "Comm \"Asian Sitrep\": Situation Report on Asia's status",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-langley-reports"
+      ]
+    },
+    {
+      "id": "td2-comms-langley-reports-comm-9",
+      "text": "Comm \"South American Sitrep\": Situation Report on South America's status",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-langley-reports"
+      ]
+    },
+    {
+      "id": "td2-comms-langley-reports-comm-10",
+      "text": "Comm \"African Sitrep\": Situation Report on Africa's status",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-langley-reports"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Mexican Sitrep",
+      "paragraphs": [
+        {
+          "text": "Situation Report on Mexico's status Features BRIGADIER GENERAL GREENE, ZARA JEFFERS. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-langley-reports-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Langley_Reports_Comm_-_Mexican_SitRep.ogg"
+    },
+    {
+      "heading": "Canadian Sitrep",
+      "paragraphs": [
+        {
+          "text": "Situation Report on Canada's status Features BRIGADIER GENERAL GREENE, ZARA JEFFERS. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-langley-reports-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Langley_Reports_Comm_-_Canadian_SitRep.ogg"
+    },
+    {
+      "heading": "Russian Sitrep",
+      "paragraphs": [
+        {
+          "text": "Situation Report on Russia's status Features BRIGADIER GENERAL GREENE, ZARA JEFFERS. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-langley-reports-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Langley_Reports_Comm_-_Russian_SitRep.ogg"
+    },
+    {
+      "heading": "Japan Sitrep",
+      "paragraphs": [
+        {
+          "text": "Situation Report on Japan's status Features BRIGADIER GENERAL GREENE, ZARA JEFFERS. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-langley-reports-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Langley_Reports_Comm_-_Japan_SitRep.ogg"
+    },
+    {
+      "heading": "Indian Sitrep",
+      "paragraphs": [
+        {
+          "text": "Situation Report on India's status Features BRIGADIER GENERAL GREENE, ZARA JEFFERS. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-langley-reports-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Langley_Reports_Comm_-_Indian_SitRep.ogg"
+    },
+    {
+      "heading": "European Sitrep",
+      "paragraphs": [
+        {
+          "text": "Situation Report on Europe's status Features BRIGADIER GENERAL GREENE, ZARA JEFFERS. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-langley-reports-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Langley_Reports_Comm_-_European_SitRep.ogg"
+    },
+    {
+      "heading": "Middle Eastern Sitrep",
+      "paragraphs": [
+        {
+          "text": "Situation Report on Middle East's status Features BRIGADIER GENERAL GREENE, ZARA JEFFERS. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-langley-reports-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Langley_Reports_Comm_-_Middle_Eastern_SitRep.ogg"
+    },
+    {
+      "heading": "Asian Sitrep",
+      "paragraphs": [
+        {
+          "text": "Situation Report on Asia's status Features BRIGADIER GENERAL GREENE, ZARA JEFFERS. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-langley-reports-comm-8"
+          ]
+        },
+        {
+          "text": "Situation Report on Asia's status Features ZARA JEFFERS. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-langley-reports-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Langley_Reports_Comm_-_Asian_SitRep.ogg"
+    },
+    {
+      "heading": "South American Sitrep",
+      "paragraphs": [
+        {
+          "text": "Situation Report on South America's status Features BRIGADIER GENERAL GREENE, ZARA JEFFERS. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-langley-reports-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Langley_Reports_Comm_-_South_American_SitRep.ogg"
+    },
+    {
+      "heading": "African Sitrep",
+      "paragraphs": [
+        {
+          "text": "Situation Report on Africa's status Features BRIGADIER GENERAL GREENE, ZARA JEFFERS. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-langley-reports-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Langley_Reports_Comm_-_African_SitRep.ogg"
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Langley_Reports. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Langley_Reports",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

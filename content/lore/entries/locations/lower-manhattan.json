@@ -16,19 +16,26 @@
       "id": "lower-manhattan-wony-setting",
       "text": "Warlords of New York sends SHD Agents to Lower Manhattan to hunt Aaron Keener and his rogue-agent network.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-wony-overview-2020"]
+      "source_ids": [
+        "ubisoft-wony-overview-2020"
+      ]
     },
     {
       "id": "lower-manhattan-factions",
       "text": "The expansion overview identifies reorganized Rikers, Cleaners and Peacekeepers among the groups operating in Lower Manhattan.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-wony-overview-2020", "ubisoft-wony-factions-2020"]
+      "source_ids": [
+        "ubisoft-wony-overview-2020",
+        "ubisoft-wony-factions-2020"
+      ]
     },
     {
       "id": "lower-manhattan-attack",
       "text": "The expansion campaign begins in response to a biological attack that killed civilians and SHD Agents in Lower Manhattan.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-wony-overview-2020"]
+      "source_ids": [
+        "ubisoft-wony-overview-2020"
+      ]
     }
   ],
   "sections": [
@@ -37,7 +44,10 @@
       "paragraphs": [
         {
           "text": "Lower Manhattan shifts The Division 2 from Washington back to New York, where SHD investigates a biological attack and pursues Keener.",
-          "claim_ids": ["lower-manhattan-wony-setting", "lower-manhattan-attack"]
+          "claim_ids": [
+            "lower-manhattan-wony-setting",
+            "lower-manhattan-attack"
+          ]
         }
       ]
     },
@@ -46,12 +56,39 @@
       "paragraphs": [
         {
           "text": "Returning groups are not frozen in their first-game form: official material describes the Rikers and Cleaners as reorganized, while Peacekeepers combine civilians and JTF veterans.",
-          "claim_ids": ["lower-manhattan-factions"]
+          "claim_ids": [
+            "lower-manhattan-factions"
+          ]
         }
       ]
     }
   ],
-  "relations": [],
+  "relations": [
+    {
+      "target_id": "collectible-td2-comms-brooklyn-bridge",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "collectible-td2-comms-manhunt-rise-up",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "collectible-td2-comms-manhunt-price-of-power",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "collectible-td2-comms-manhunt-hidden-alliance",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "collectible-td2-comms-manhunt-end-of-watch",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "collectible-td2-comms-manhunt-concealed-agenda",
+      "relationship": "mentioned-in"
+    }
+  ],
   "verification": {
     "status": "source-reviewed",
     "last_reviewed": "2026-07-19",

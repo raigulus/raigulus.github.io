@@ -1,0 +1,256 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-theo-parnell",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Theo Parnell",
+  "slug": "td2-comms-theo-parnell",
+  "section": "collectibles",
+  "summary": "A collection of 9 comms from The Division universe, scraped from the Fandom wiki hub page. 9 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 9,
+  "claims": [
+    {
+      "id": "td2-comms-theo-parnell-comm-1",
+      "text": "Comm \"Message\": Theo Parnell tells the world his truth",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-theo-parnell"
+      ]
+    },
+    {
+      "id": "td2-comms-theo-parnell-comm-2",
+      "text": "Comm \"Midterms\": Henry Parnell finds out what really happened to the teacher's car",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-theo-parnell"
+      ]
+    },
+    {
+      "id": "td2-comms-theo-parnell-comm-3",
+      "text": "Comm \"Reports\": Theo Parnell has a tense conversation with his brother, Harry, about their father's death",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-theo-parnell"
+      ]
+    },
+    {
+      "id": "td2-comms-theo-parnell-comm-4",
+      "text": "Comm \"Paper Trail\": Division agent Theo Parnell investigates",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-theo-parnell"
+      ]
+    },
+    {
+      "id": "td2-comms-theo-parnell-comm-5",
+      "text": "Comm \"Clearance\": Aaron Keener encourages Theo Parnell",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-theo-parnell"
+      ]
+    },
+    {
+      "id": "td2-comms-theo-parnell-comm-6",
+      "text": "Comm \"Power\": Aaron Keener checks in on Theo Parnell's research",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-theo-parnell"
+      ]
+    },
+    {
+      "id": "td2-comms-theo-parnell-comm-7",
+      "text": "Comm \"Specs\": Aaron Keener checks in on Theo Parnell's progress",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-theo-parnell"
+      ]
+    },
+    {
+      "id": "td2-comms-theo-parnell-comm-8",
+      "text": "Comm \"Recon\": Theo Parnell does recon at City Hall",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-theo-parnell"
+      ]
+    },
+    {
+      "id": "td2-comms-theo-parnell-comm-9",
+      "text": "Comm \"Protection\": Theo Parnell meets Judge",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-theo-parnell"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Message",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell tells the world his truth Features THEO PARNELL. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theo-parnell-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Theo_Comms_-_Message.ogg"
+    },
+    {
+      "heading": "Midterms",
+      "paragraphs": [
+        {
+          "text": "Henry Parnell finds out what really happened to the teacher's car Features CONGRESSMAN HENRY PARNELL, THEO PARNELL. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theo-parnell-comm-2"
+          ]
+        },
+        {
+          "text": "Henry Parnell finds out what really happened to the teacher's car Features CONGRESSMAN HENRY PARNELL, THEO PARNELL. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theo-parnell-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Theo_Comms_-_Midterms.ogg"
+    },
+    {
+      "heading": "Reports",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell has a tense conversation with his brother, Harry, about their father's death Features HARRY PARNELL, THEO PARNELL. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theo-parnell-comm-3"
+          ]
+        },
+        {
+          "text": "Theo Parnell has a tense conversation with his brother, Harry, about their father's death Features THEO PARNELL. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theo-parnell-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Theo_Comms_-_Reports.ogg"
+    },
+    {
+      "heading": "Paper Trail",
+      "paragraphs": [
+        {
+          "text": "Division agent Theo Parnell investigates Features THEO PARNELL, https. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theo-parnell-comm-4"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Clearance",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener encourages Theo Parnell Features AARON KEENER, THEO PARNELL. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theo-parnell-comm-5"
+          ]
+        },
+        {
+          "text": "Aaron Keener encourages Theo Parnell Features AARON KEENER, THEO PARNELL. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theo-parnell-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Theo_Comms_-_Clearance.ogg"
+    },
+    {
+      "heading": "Power",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener checks in on Theo Parnell's research Features AARON KEENER, THEO PARNELL. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theo-parnell-comm-6"
+          ]
+        },
+        {
+          "text": "Aaron Keener checks in on Theo Parnell's research Features AARON KEENER, THEO PARNELL. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theo-parnell-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Theo_Comms_-_Power.ogg"
+    },
+    {
+      "heading": "Specs",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener checks in on Theo Parnell's progress Features AARON KEENER, THEO PARNELL. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theo-parnell-comm-7"
+          ]
+        },
+        {
+          "text": "Aaron Keener checks in on Theo Parnell's progress Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theo-parnell-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Theo_Comms_-_Specs.ogg"
+    },
+    {
+      "heading": "Recon",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell does recon at City Hall Features AARON KEENER, THEO PARNELL. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theo-parnell-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Theo_Comms_-_Recon.ogg"
+    },
+    {
+      "heading": "Protection",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell meets Judge Features JUDGE, THEO PARNELL. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theo-parnell-comm-9"
+          ]
+        },
+        {
+          "text": "Theo Parnell meets Judge Features THEO PARNELL. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-theo-parnell-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Theo_Comms_-_Protection.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-theo-parnell",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Theo_Parnell. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Theo_Parnell",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

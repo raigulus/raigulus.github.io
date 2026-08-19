@@ -1,0 +1,263 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-true-sons",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: True Sons",
+  "slug": "td2-comms-true-sons",
+  "section": "collectibles",
+  "summary": "A collection of 10 comms from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 10 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td2-comms-true-sons-comm-1",
+      "text": "Comm \"Relocation Order\": Ridgeway gives orders to his men to move refugees to Roosevelt Island (Location: East Mall (980, 4412))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-true-sons"
+      ]
+    },
+    {
+      "id": "td2-comms-true-sons-comm-2",
+      "text": "Comm \"Roosevelt Supplies\": Ridgeway orders his medic to cut their losses and stockpile supplies intended to treat the sick (Location: Foggy Bottom (2037, 1312))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-true-sons"
+      ]
+    },
+    {
+      "id": "td2-comms-true-sons-comm-3",
+      "text": "Comm \"Ridgeway Sentencing\": Ridgeway is sentenced for his crimes against civilians and refugees (Location: East Mall (1056, 4515))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-true-sons"
+      ]
+    },
+    {
+      "id": "td2-comms-true-sons-comm-4",
+      "text": "Comm \"Negotiations\": Antwon Ridgeway refuses to negotiate (Location: Federal Triangle (1373, 3605))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-true-sons"
+      ]
+    },
+    {
+      "id": "td2-comms-true-sons-comm-5",
+      "text": "Comm \"Weaponized DC-62\": Captain Wilson and Ridgeway discuss potential applications of DC-62 (Location: Southwest (527, 3773))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-true-sons"
+      ]
+    },
+    {
+      "id": "td2-comms-true-sons-comm-6",
+      "text": "Comm \"The Castle\": Ridgeway makes the call to bomb the Castle settlement (Location: East Mall (973, 3593))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-true-sons"
+      ]
+    },
+    {
+      "id": "td2-comms-true-sons-comm-7",
+      "text": "Comm \"Death and Taxes\": Ridgeway personally visits a small civilian community who has not been paying their taxes (Location: East Mall (1138, 3903))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-true-sons"
+      ]
+    },
+    {
+      "id": "td2-comms-true-sons-comm-8",
+      "text": "Comm \"Fortifications\": True Sons discuss the progress on building fortifications (Location: East Mall (1042, 3740))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-true-sons"
+      ]
+    },
+    {
+      "id": "td2-comms-true-sons-comm-9",
+      "text": "Comm \"Close Encounter\": A True Sons soldier talks to Ridgeway about a close encounter with Outcasts (Location: East Mall (948, 3953))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-true-sons"
+      ]
+    },
+    {
+      "id": "td2-comms-true-sons-comm-10",
+      "text": "Comm \"Acceptable Losses\": Ridgeway meets with an advisor to formulate a plan to maintain control of DC, after losing several battles to Division agents (Location: Southwest (615, 4164))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-true-sons"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Relocation Order",
+      "paragraphs": [
+        {
+          "text": "Ridgeway gives orders to his men to move refugees to Roosevelt Island Features COLONEL RIDGEWAY, TRUE SONS SOLDIER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-true-sons-comm-1"
+          ]
+        }
+      ],
+      "location": "East Mall (980, 4412)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_TS_Comms_-_Relocation_Order.ogg"
+    },
+    {
+      "heading": "Roosevelt Supplies",
+      "paragraphs": [
+        {
+          "text": "Ridgeway orders his medic to cut their losses and stockpile supplies intended to treat the sick Features COLONEL RIDGEWAY, TRUE SONS MEDIC. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-true-sons-comm-2"
+          ]
+        },
+        {
+          "text": "Ridgeway orders his medic to cut their losses and stockpile supplies intended to treat the sick Features COLONEL RIDGEWAY, TRUE SONS MEDIC. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-true-sons-comm-2"
+          ]
+        }
+      ],
+      "location": "Foggy Bottom (2037, 1312)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_TS_Comms_-_Roosevelt_Supplies.ogg"
+    },
+    {
+      "heading": "Ridgeway Sentencing",
+      "paragraphs": [
+        {
+          "text": "Ridgeway is sentenced for his crimes against civilians and refugees Features JUDGE. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-true-sons-comm-3"
+          ]
+        }
+      ],
+      "location": "East Mall (1056, 4515)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_TS_Comms_-_Ridgeway_Sentence.ogg"
+    },
+    {
+      "heading": "Negotiations",
+      "paragraphs": [
+        {
+          "text": "Antwon Ridgeway refuses to negotiate Features GENERAL RIDGEWAY, TRUE SONS SOLDIER. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-true-sons-comm-4"
+          ]
+        }
+      ],
+      "location": "Federal Triangle (1373, 3605)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_TS_Comms_-_Negotiations.ogg"
+    },
+    {
+      "heading": "Weaponized DC-62",
+      "paragraphs": [
+        {
+          "text": "Captain Wilson and Ridgeway discuss potential applications of DC-62 Features CAPTAIN WILSON, GENERAL RIDGEWAY. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-true-sons-comm-5"
+          ]
+        }
+      ],
+      "location": "Southwest (527, 3773)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_TS_Comms_-_Weaponized_DC-62.ogg"
+    },
+    {
+      "heading": "The Castle",
+      "paragraphs": [
+        {
+          "text": "Ridgeway makes the call to bomb the Castle settlement Features CAPTAIN WILSON, GENERAL RIDGEWAY. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-true-sons-comm-6"
+          ]
+        }
+      ],
+      "location": "East Mall (973, 3593)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_TS_Comms_-_The_Castle.ogg"
+    },
+    {
+      "heading": "Death and Taxes",
+      "paragraphs": [
+        {
+          "text": "Ridgeway personally visits a small civilian community who has not been paying their taxes Features CIVILIAN, GENERAL RIDGEWAY. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-true-sons-comm-7"
+          ]
+        },
+        {
+          "text": "Ridgeway personally visits a small civilian community who has not been paying their taxes Features CIVILIAN, GENERAL RIDGEWAY. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-true-sons-comm-7"
+          ]
+        }
+      ],
+      "location": "East Mall (1138, 3903)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_TS_Comms_-_Death_and_Taxes.ogg"
+    },
+    {
+      "heading": "Fortifications",
+      "paragraphs": [
+        {
+          "text": "True Sons discuss the progress on building fortifications Features TRUE SONS SOLDIER 1, TRUE SONS SOLDIER 2. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-true-sons-comm-8"
+          ]
+        }
+      ],
+      "location": "East Mall (1042, 3740)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_TS_Comms_-_Fortifications.ogg"
+    },
+    {
+      "heading": "Close Encounter",
+      "paragraphs": [
+        {
+          "text": "A True Sons soldier talks to Ridgeway about a close encounter with Outcasts Features GENERAL RIDGEWAY, TRUE SONS SOLDIER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-true-sons-comm-9"
+          ]
+        }
+      ],
+      "location": "East Mall (948, 3953)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_TS_Comms_-_Close_Encounter.ogg"
+    },
+    {
+      "heading": "Acceptable Losses",
+      "paragraphs": [
+        {
+          "text": "Ridgeway meets with an advisor to formulate a plan to maintain control of DC, after losing several battles to Division agents Features GENERAL RIDGEWAY, TRUE SONS SOLDIER. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-true-sons-comm-10"
+          ]
+        }
+      ],
+      "location": "Southwest (615, 4164)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_TS_Comms_-_Acceptable_Losses.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "faction-true-sons",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-outcasts",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/True_Sons. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/True_Sons",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

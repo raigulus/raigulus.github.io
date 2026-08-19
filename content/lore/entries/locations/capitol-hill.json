@@ -16,13 +16,17 @@
       "id": "capitol-ellis-key",
       "text": "The True Sons hold President Ellis and his encryption key at Capitol Hill.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-story-so-far-2020"]
+      "source_ids": [
+        "ubisoft-story-so-far-2020"
+      ]
     },
     {
       "id": "capitol-retaken",
       "text": "Division Agents rescue Ellis and retake Capitol Hill from the True Sons before Black Tusk enters Washington.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-story-so-far-2020"]
+      "source_ids": [
+        "ubisoft-story-so-far-2020"
+      ]
     }
   ],
   "sections": [
@@ -31,12 +35,20 @@
       "paragraphs": [
         {
           "text": "Retaking Capitol Hill appears to complete the struggle against the True Sons and unlock the route to the antiviral, but it immediately precedes the Black Tusk siege.",
-          "claim_ids": ["capitol-ellis-key", "capitol-retaken"]
+          "claim_ids": [
+            "capitol-ellis-key",
+            "capitol-retaken"
+          ]
         }
       ]
     }
   ],
-  "relations": [],
+  "relations": [
+    {
+      "target_id": "collectible-td2-comms-profile-antwon-ridgeway",
+      "relationship": "mentioned-in"
+    }
+  ],
   "verification": {
     "status": "source-reviewed",
     "last_reviewed": "2026-07-19",

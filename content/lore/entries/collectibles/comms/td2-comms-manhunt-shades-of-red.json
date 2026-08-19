@@ -1,0 +1,508 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-manhunt-shades-of-red",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Manhunt - Shades of Red",
+  "slug": "td2-comms-manhunt-shades-of-red",
+  "section": "collectibles",
+  "summary": "A collection of 20 comms from The Division universe, scraped from the Fandom wiki hub page. 20 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 20,
+  "claims": [
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-1",
+      "text": "Comm \"Fractal\": Theo Parnell has an intimate conversation with Mathias \"Trig\" Schneider",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-2",
+      "text": "Comm \"ANNA\": Theo Parnell asks Trig what he knows about ANNA",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-3",
+      "text": "Comm \"Simulation\": Theo Parnell asks Trig about the training simulation.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-4",
+      "text": "Comm \"Trig\": Theo Parnell reports back to Aaron Keener about his call with Trig",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-5",
+      "text": "Comm \"Conley\": Theo Parnell reports back to Aaron Keener about Conley's intel",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-6",
+      "text": "Comm \"Upload\": Theo Parnell reports the results of the first upload test to Aaron Keener",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-7",
+      "text": "Comm \"Prototype\": Theo Parnell reports the results of the first test to Aaron Keener",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-8",
+      "text": "Comm \"USB\": Theo Parnell receives the USB",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-9",
+      "text": "Comm \"Bunker\": Theo Parnell learns the location of a bunker",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-10",
+      "text": "Comm \"Network\": Theo Parnell talks to Trig about security concerns",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-11",
+      "text": "Comm \"Change\": Theo Parnell asks Melanie Hoskins for advice",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-12",
+      "text": "Comm \"New\": Theo Parnell asks Melanie Hoskins for advice",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-13",
+      "text": "Comm \"NEMESIS\": Theo Parnell asks Trig about the NEMESIS program",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-14",
+      "text": "Comm \"Positive\": Theo Parnell asks Melanie Hoskins for advice",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-15",
+      "text": "Comm \"Balance\": Theo Parnell asks Melanie Hoskins for advice",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-16",
+      "text": "Comm \"Purpose\": Theo Parnell tells Aaron Keener the truth",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-17",
+      "text": "Comm \"Scanned\": Theo Parnell reports back to Aaron Keener the results of the scan",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-18",
+      "text": "Comm \"Wipe\": Theo Parnell confirms the wipe",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-19",
+      "text": "Comm \"Roster\": Theo Parnell reviews the roster",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-shades-of-red-comm-20",
+      "text": "Comm \"Masked\": Theo Parnell find schematics for a mask",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-shades-of-red"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Fractal",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell has an intimate conversation with Mathias \"Trig\" Schneider Features MATHIAS \"TRIG\" SCHNEIDER, THEO PARNELL. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_Fractal.ogg"
+    },
+    {
+      "heading": "ANNA",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell asks Trig what he knows about ANNA Features MATHIAS \"TRIG\" SCHNEIDER, THEO PARNELL. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-2"
+          ]
+        },
+        {
+          "text": "Theo Parnell asks Trig what he knows about ANNA Features MATHIAS \"TRIG\" SCHNEIDER, THEO PARNELL. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_ANNA.ogg"
+    },
+    {
+      "heading": "Simulation",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell asks Trig about the training simulation. Features MATHIAS \"TRIG\" SCHNEIDER, THEO PARNELL. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_Simulation.ogg"
+    },
+    {
+      "heading": "Trig",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell has an intimate conversation with Mathias \"Trig\" Schneider Features AARON KEENER, THEO PARNELL. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_Trig.ogg"
+    },
+    {
+      "heading": "Conley",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell reports back to Aaron Keener about Conley's intel Features AARON KEENER, THEO PARNELL. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_Conley.ogg"
+    },
+    {
+      "heading": "Upload",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell reports the results of the first upload test to Aaron Keener Features AARON KEENER, THEO PARNELL. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_Upload.ogg"
+    },
+    {
+      "heading": "Prototype",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell reports the results of the first test to Aaron Keener Features AARON KEENER, THEO PARNELL. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_Prototype.ogg"
+    },
+    {
+      "heading": "USB",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell receives the USB Features AGENT HOSKINS, THEO PARNELL. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-8"
+          ]
+        },
+        {
+          "text": "Theo Parnell receives the USB Features AGENT HOSKINS. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_USB.ogg"
+    },
+    {
+      "heading": "Bunker",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell learns the location of a bunker Features AGENT HOSKINS, THEO PARNELL. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-9"
+          ]
+        },
+        {
+          "text": "Theo Parnell learns the location of a bunker Features THEO PARNELL. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_Bunker.ogg"
+    },
+    {
+      "heading": "Network",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell talks to Trig about security concerns Features MATHIAS \"TRIG\" SCHNEIDER, THEO PARNELL. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_Network.ogg"
+    },
+    {
+      "heading": "Change",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell asks Melanie Hoskins for advice Features AGENT HOSKINS, THEO PARNELL. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-11"
+          ]
+        },
+        {
+          "text": "Theo Parnell asks Melanie Hoskins for advice Features AGENT HOSKINS, THEO PARNELL. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-11"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_Change.ogg"
+    },
+    {
+      "heading": "New",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell asks Melanie Hoskins for advice Features AGENT HOSKINS, THEO PARNELL. Contains 14 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-12"
+          ]
+        },
+        {
+          "text": "Theo Parnell asks Melanie Hoskins for advice Features AGENT HOSKINS, THEO PARNELL. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-12"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_New.ogg"
+    },
+    {
+      "heading": "NEMESIS",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell asks Trig about the NEMESIS program Features MATHIAS \"TRIG\" SCHNEIDER, THEO PARNELL. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-13"
+          ]
+        },
+        {
+          "text": "Theo Parnell asks Trig about the NEMESIS program Features MATHIAS \"TRIG\" SCHNEIDER, THEO PARNELL. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-13"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_Nemesis.ogg"
+    },
+    {
+      "heading": "Positive",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell asks Melanie Hoskins for advice Features AARON KEENER, AGENT HOSKINS, THEO PARNELL. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-14"
+          ]
+        },
+        {
+          "text": "Theo Parnell asks Melanie Hoskins for advice Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-14"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_Positive.ogg"
+    },
+    {
+      "heading": "Balance",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell asks Melanie Hoskins for advice Features AGENT HOSKINS, THEO PARNELL. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-15"
+          ]
+        },
+        {
+          "text": "Theo Parnell asks Melanie Hoskins for advice Features AGENT HOSKINS, THEO PARNELL. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-15"
+          ]
+        },
+        {
+          "text": "Theo Parnell asks Melanie Hoskins for advice Features AGENT HOSKINS. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-15"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_Balance.ogg"
+    },
+    {
+      "heading": "Purpose",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell tells Aaron Keener the truth Features AARON KEENER, THEO PARNELL. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-16"
+          ]
+        },
+        {
+          "text": "Theo Parnell tells Aaron Keener the truth Features AARON KEENER, THEO PARNELL. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-16"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_Purpose.ogg"
+    },
+    {
+      "heading": "Scanned",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell reports back to Aaron Keener the results of the scan Features AARON KEENER, THEO PARNELL. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-17"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_Scanned.ogg"
+    },
+    {
+      "heading": "Wipe",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell confirms the wipe Features AARON KEENER, THEO PARNELL. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-18"
+          ]
+        },
+        {
+          "text": "Theo Parnell confirms the wipe Features AARON KEENER, THEO PARNELL. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-18"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_Wipe.ogg"
+    },
+    {
+      "heading": "Roster",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell reviews the roster Features AARON KEENER, THEO PARNELL. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-19"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_Roster.ogg"
+    },
+    {
+      "heading": "Masked",
+      "paragraphs": [
+        {
+          "text": "Theo Parnell find schematics for a mask Features THEO PARNELL. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-shades-of-red-comm-20"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Shades_of_Red_-_Masked.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-theo-parnell",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Shades_of_Red. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Shades_of_Red",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020",
+      "ubisoft-y6s2-shades-red-2024"
+    ]
+  }
+}

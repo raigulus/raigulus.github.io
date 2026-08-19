@@ -1,0 +1,216 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-manhunt-concealed-agenda",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Manhunt - Concealed Agenda",
+  "slug": "td2-comms-manhunt-concealed-agenda",
+  "section": "collectibles",
+  "summary": "A collection of 1 comms from The Division universe, scraped from the Fandom wiki hub page. 1 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 1,
+  "claims": [
+    {
+      "id": "td2-comms-manhunt-concealed-agenda-comm-1",
+      "text": "Comm \"Comms\"",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-concealed-agenda"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Comms",
+      "paragraphs": [
+        {
+          "text": "Hyenas\nTrue Sons\nOutcasts\nBlack Tusk\nJTF\nDivision\nGovernment\nDark Zone\nContaminated Areas\nDead Drops\nCampus\nCastle\nTheater\nNew York\nLower Manhattan\nConey Island\nProfile: Agent Kelso\nProfile: Antwon Ridgeway\nProfile: Emeline Shaw\nProfile: Henry Hayes\nProfile: Odessa Sawyer\nProfile: President Ellis\nLangley Reports\nPentagon Staff Logs\nBrenner's Orders\nShay\nRoy Benitez\nPaul Rhodes\nAaron Keener\nJames Dragov\nJavier Kajika\nTheo Parnell\nVivian Conley\nFaye Lau\nManhunt: Shadow Tide\nManhunt: Keener's Legacy\nManhunt: Concealed Agenda\nManhunt: End of Watch\nManhunt: Hidden Alliance\nManhunt: Price of Power\nManhunt: Reign of Fire\nManhunt: Broken Wings\nManhunt: Puppeteers\nManhunt: Vanguard\nManhunt: First Rogue\nManhunt: Shades of Red\nManhunt: Burden of Truth\nManhunt: Crossroads\nManhunt: The Pact",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        },
+        {
+          "text": "Features multiple speakers including Incursion, Manhunt, SHADE. Contains 16 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        },
+        {
+          "text": "Features RIKER, SHADE, https. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        },
+        {
+          "text": "Features BARDON SCHAEFFER, SHADE, https. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        },
+        {
+          "text": "Features multiple speakers including HYENA MEMBER, NATALYA SOKOLOVA, https. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        },
+        {
+          "text": "Features multiple speakers including HYENA MEMBER, WRAITH, https. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        },
+        {
+          "text": "Features BARDON SCHAEFFER, WRAITH, https. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        },
+        {
+          "text": "Features BARDON SCHAEFFER, WRAITH, https. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        },
+        {
+          "text": "Features multiple speakers including DUSK, TRUE SONS SOLDIER, https. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        },
+        {
+          "text": "Features multiple speakers including DUSK, TRUE SONS SOLDIER, https. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        },
+        {
+          "text": "Features BARDON SCHAEFFER, DUSK, https. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        },
+        {
+          "text": "Features BARDON SCHAEFFER, SHADE, https. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        },
+        {
+          "text": "Features multiple speakers including BELFRY, DUSK, https. Contains 20 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        },
+        {
+          "text": "Features multiple speakers including BELFRY, DUSK, https. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        },
+        {
+          "text": "Features BARDON SCHAEFFER, FAYE LAU, https. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        },
+        {
+          "text": "Features BARDON SCHAEFFER, FAYE LAU, https. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        },
+        {
+          "text": "Features multiple speakers including AGENT KELSO, FAYE LAU, https. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        },
+        {
+          "text": "Features multiple speakers including AGENT KELSO, BARDON SCHAEFFER, https. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        },
+        {
+          "text": "FAYE LAU Pretty sure you need depth perception for that gig.\nBARDON SCHAEFFER Wouldn't work even if you had a robo-eye. I've seen you in the field. You like getting your hands dirty.\nFAYE LAU No I don't. But, I'm not afraid to do what's necessary.\nBARDON SCHAEFFER You ready to work directly for the president. For your country?\nFAYE LAU Funny.\nBARDON SCHAEFFER What's funny?\nFAYE LAU You just promoted me to my old job.\nBARDON SCHAEFFER The Division was activated by the president, but as soon they went against him and your AI forgot to update with the line of succession, you stopped working for the president. The way I see it, you and the rogues we've recruited are the only agents still on mission. But that doesn't mean I have to like it or you.",
+          "claim_ids": [
+            "td2-comms-manhunt-concealed-agenda-comm-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-vivian-conley",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-theo-parnell",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-natalya-sokolova",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-javier-kajika",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-james-dragov",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-faye-lau",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-emeline-shaw",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "location-lower-manhattan",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "location-coney-island",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-true-sons",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-outcasts",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-hyenas",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Concealed_Agenda. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Concealed_Agenda",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

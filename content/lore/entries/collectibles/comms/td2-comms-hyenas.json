@@ -1,0 +1,263 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-hyenas",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Hyenas",
+  "slug": "td2-comms-hyenas",
+  "section": "collectibles",
+  "summary": "A collection of 10 comms from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 10 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td2-comms-hyenas-comm-1",
+      "text": "Comm \"Piñata Party\": Two Hyenas prepare an attack on unsuspecting civilians (Location: White House (1795, 3087))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-hyenas"
+      ]
+    },
+    {
+      "id": "td2-comms-hyenas-comm-2",
+      "text": "Comm \"Heavy Load\": Two Hyenas deal with an abundance of things (Location: Downtown East (2167, 3447))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-hyenas"
+      ]
+    },
+    {
+      "id": "td2-comms-hyenas-comm-3",
+      "text": "Comm \"Special Shipment\": Hyenas get a delivery from their \"secret admirer (Location: Downtown East (2057, 4019))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-hyenas"
+      ]
+    },
+    {
+      "id": "td2-comms-hyenas-comm-4",
+      "text": "Comm \"Assets\": Hyenas have obtained a valuable new asset (Location: Downtown West (2171, 2464))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-hyenas"
+      ]
+    },
+    {
+      "id": "td2-comms-hyenas-comm-5",
+      "text": "Comm \"Missing Prisoners\": A Hyena gets rid of some prisoners (Location: Downtown East (1890, 3662))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-hyenas"
+      ]
+    },
+    {
+      "id": "td2-comms-hyenas-comm-6",
+      "text": "Comm \"First Council Meeting\": Hyenas meet to discuss the True Sons threat and form the Council (Location: Federal Triangle (1574, 4027))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-hyenas"
+      ]
+    },
+    {
+      "id": "td2-comms-hyenas-comm-7",
+      "text": "Comm \"Restructuring\": Hyenas Council members talk about the need for restructuring the current leadership (Location: Judiciary Square (2120, 4208))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-hyenas"
+      ]
+    },
+    {
+      "id": "td2-comms-hyenas-comm-8",
+      "text": "Comm \"Runners\": Hyenas deal with victims running away (Location: Downtown East (1898, 3389))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-hyenas"
+      ]
+    },
+    {
+      "id": "td2-comms-hyenas-comm-9",
+      "text": "Comm \"Spice Instructions\": Hyena member gives a quick briefing on how to make the drug, spice (Location: Judiciary Square (2201, 4174))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-hyenas"
+      ]
+    },
+    {
+      "id": "td2-comms-hyenas-comm-10",
+      "text": "Comm \"Economics\": Hyenas Council members make plans to secure the future (Location: Downtown East (2197, 3572))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-hyenas"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Piñata Party",
+      "paragraphs": [
+        {
+          "text": "Two Hyenas prepare an attack on unsuspecting civilians Features HYENA MEMBER 1, HYENA MEMBER 2. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-hyenas-comm-1"
+          ]
+        }
+      ],
+      "location": "White House (1795, 3087)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Hyena_Comms_-_Pinata_Party.ogg"
+    },
+    {
+      "heading": "Heavy Load",
+      "paragraphs": [
+        {
+          "text": "Two Hyenas deal with an abundance of things Features HYENA MEMBER 1, HYENA MEMBER 2. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-hyenas-comm-2"
+          ]
+        }
+      ],
+      "location": "Downtown East (2167, 3447)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Hyena_Comms_-_Heavy_Load.ogg"
+    },
+    {
+      "heading": "Special Shipment",
+      "paragraphs": [
+        {
+          "text": "Hyenas get a delivery from their \"secret admirer Features HYENA MEMBER 1, HYENA MEMBER 2, HYENA MEMBER 3. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-hyenas-comm-3"
+          ]
+        }
+      ],
+      "location": "Downtown East (2057, 4019)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Hyena_Comms_-_Special_Shipment.ogg"
+    },
+    {
+      "heading": "Assets",
+      "paragraphs": [
+        {
+          "text": "Hyenas have obtained a valuable new asset Features multiple speakers including HYENA MEMBER 1, HYENA MEMBER 2, PRESIDENT ELLIS. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-hyenas-comm-4"
+          ]
+        }
+      ],
+      "location": "Downtown West (2171, 2464)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Hyena_Comms_-_Assets.ogg"
+    },
+    {
+      "heading": "Missing Prisoners",
+      "paragraphs": [
+        {
+          "text": "A Hyena gets rid of some prisoners Features HYENA MEMBER 1, HYENA MEMBER 2. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-hyenas-comm-5"
+          ]
+        }
+      ],
+      "location": "Downtown East (1890, 3662)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Hyena_Comms_-_Missing_Prisoners.ogg"
+    },
+    {
+      "heading": "First Council Meeting",
+      "paragraphs": [
+        {
+          "text": "Hyenas meet to discuss the True Sons threat and form the Council Features multiple speakers including COYOTE, HYENA BOSS 1, HYENA BOSS 2. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-hyenas-comm-6"
+          ]
+        },
+        {
+          "text": "Hyenas meet to discuss the True Sons threat and form the Council Features COYOTE, HYENA MEMBER. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-hyenas-comm-6"
+          ]
+        }
+      ],
+      "location": "Federal Triangle (1574, 4027)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Hyena_Comms_-_First_Council_Meeting.ogg"
+    },
+    {
+      "heading": "Restructuring",
+      "paragraphs": [
+        {
+          "text": "Hyenas Council members talk about the need for restructuring the current leadership Features HYENA MEMBER 1, HYENA MEMBER 2. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-hyenas-comm-7"
+          ]
+        }
+      ],
+      "location": "Judiciary Square (2120, 4208)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Hyena_Comms_-_Restructuring.ogg"
+    },
+    {
+      "heading": "Runners",
+      "paragraphs": [
+        {
+          "text": "Hyenas deal with victims running away Features HYENA MEMBER 1, HYENA MEMBER 2. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-hyenas-comm-8"
+          ]
+        }
+      ],
+      "location": "Downtown East (1898, 3389)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Hyena_Comms_-_Runners.ogg"
+    },
+    {
+      "heading": "Spice Instructions",
+      "paragraphs": [
+        {
+          "text": "Hyena member gives a quick briefing on how to make the drug, spice Features HYENA MEMBER 1. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-hyenas-comm-9"
+          ]
+        }
+      ],
+      "location": "Judiciary Square (2201, 4174)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Hyena_Comms_-_Spice_Instructions.ogg"
+    },
+    {
+      "heading": "Economics",
+      "paragraphs": [
+        {
+          "text": "Hyenas Council members make plans to secure the future Features HYENA MEMBER 1, HYENA MEMBER 2. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-hyenas-comm-10"
+          ]
+        },
+        {
+          "text": "Hyenas Council members make plans to secure the future Features HYENA MEMBER 1. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-hyenas-comm-10"
+          ]
+        }
+      ],
+      "location": "Downtown East (2197, 3572)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Hyena_Comms_-_Economics.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "faction-true-sons",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-hyenas",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Hyenas. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Hyenas",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

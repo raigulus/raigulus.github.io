@@ -1,0 +1,389 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-brooklyn-hostiles",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Brooklyn - Hostiles",
+  "slug": "td2-comms-brooklyn-hostiles",
+  "section": "collectibles",
+  "summary": "A collection of 16 comms from The Division universe, scraped from the Fandom wiki hub page. 16 entries include full audio transcripts; 16 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 16,
+  "claims": [
+    {
+      "id": "td2-comms-brooklyn-hostiles-comm-1",
+      "text": "Comm \"Grant\": Matthew Grant meets Richard Danvers. (Location: Brooklyn (454, 1514))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-hostiles"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-hostiles-comm-2",
+      "text": "Comm \"Director\": Matthew Grant hands over his directorial duties to his DP. (Location: Brooklyn (702, 1752))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-hostiles"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-hostiles-comm-3",
+      "text": "Comm \"SFX\": Danvers recruits Grant for his filmmaking special effects skills. (Location: Brooklyn (594, 1747))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-hostiles"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-hostiles-comm-4",
+      "text": "Comm \"Guard Rails\": Kids test the guard rails. (Location: Brooklyn (521, 1867))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-hostiles"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-hostiles-comm-5",
+      "text": "Comm \"Clinic\": Cleaners planning attack on the Clinic. (Location: Brooklyn (617, 1609))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-hostiles"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-hostiles-comm-6",
+      "text": "Comm \"Meret\": Grant giving the Cleaners the Purple Flame for the attack on the Meret Estate. (Location: Brooklyn (295, 1520))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-hostiles"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-hostiles-comm-7",
+      "text": "Comm \"Attack\": Danvers orders the attack on the Clinic. (Location: Brooklyn (673, 1652))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-hostiles"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-hostiles-comm-8",
+      "text": "Comm \"Collab\": Grant and Danvers collaboration. (Location: Brooklyn (326, 1613))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-hostiles"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-hostiles-comm-9",
+      "text": "Comm \"Exports\": Purple Flame being exported to Danvers. (Location: Brooklyn (1809, 1461))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-hostiles"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-hostiles-comm-10",
+      "text": "Comm \"Success\": Purple Flame used at Meret Estate a successful test. (Location: Brooklyn (1795, 1529))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-hostiles"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-hostiles-comm-11",
+      "text": "Comm \"Present\": Danvers telling Grant he's got a present for him. (Location: Brooklyn (1881, 1477))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-hostiles"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-hostiles-comm-12",
+      "text": "Comm \"Negotiations\": Danvers gets an update from the Rat Queen. (Location: Brooklyn (33, 1096))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-hostiles"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-hostiles-comm-13",
+      "text": "Comm \"Tech\": Danvers delivering tech to the Rat Queen. (Location: Brooklyn (572, 1346))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-hostiles"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-hostiles-comm-14",
+      "text": "Comm \"New Voice\": Danvers giving the Rat Queen her new voice. (Location: Brooklyn (54, 1945))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-hostiles"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-hostiles-comm-15",
+      "text": "Comm \"MG Update\": Danvers and Grant update. (Location: Brooklyn (1787, 1089))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-hostiles"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-hostiles-comm-16",
+      "text": "Comm \"RQ Update\": Danvers and the Rat Queen update. (Location: Brooklyn (1921, 1099))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-hostiles"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Grant",
+      "paragraphs": [
+        {
+          "text": "Matthew Grant meets Richard Danvers. Features MATTHEW GRANT, RICHARD DANVERS. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-hostiles-comm-1"
+          ]
+        }
+      ],
+      "location": "Brooklyn (454, 1514)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Hostiles_-_Grant.ogg"
+    },
+    {
+      "heading": "Director",
+      "paragraphs": [
+        {
+          "text": "Matthew Grant hands over his directorial duties to his DP. Features HOLLINGS, MATTHEW GRANT. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-hostiles-comm-2"
+          ]
+        }
+      ],
+      "location": "Brooklyn (702, 1752)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Hostiles_-_Director.ogg"
+    },
+    {
+      "heading": "SFX",
+      "paragraphs": [
+        {
+          "text": "Danvers recruits Grant for his filmmaking special effects skills. Features MATTHEW GRANT, RICHARD DANVERS. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-hostiles-comm-3"
+          ]
+        }
+      ],
+      "location": "Brooklyn (594, 1747)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Hostiles_-_SFX.ogg"
+    },
+    {
+      "heading": "Guard Rails",
+      "paragraphs": [
+        {
+          "text": "Kids test the guard rails. Features CHLOE, SARAH, STEVIE. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-hostiles-comm-4"
+          ]
+        },
+        {
+          "text": "Kids test the guard rails. Features SARAH. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-hostiles-comm-4"
+          ]
+        }
+      ],
+      "location": "Brooklyn (521, 1867)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Hostiles_-_Guard_Rails.ogg"
+    },
+    {
+      "heading": "Clinic",
+      "paragraphs": [
+        {
+          "text": "Cleaners planning attack on the Clinic. Features RICHARD DANVERS, STEWART. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-hostiles-comm-5"
+          ]
+        }
+      ],
+      "location": "Brooklyn (617, 1609)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Hostiles_-_Clinic.ogg"
+    },
+    {
+      "heading": "Meret",
+      "paragraphs": [
+        {
+          "text": "Grant giving the Cleaners the Purple Flame for the attack on the Meret Estate. Features HELLFIRE, MATTHEW GRANT. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-hostiles-comm-6"
+          ]
+        }
+      ],
+      "location": "Brooklyn (295, 1520)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Hostiles_-_Meret.ogg"
+    },
+    {
+      "heading": "Attack",
+      "paragraphs": [
+        {
+          "text": "Cleaners planning attack on the Clinic. Features RICHARD DANVERS, STEWART. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-hostiles-comm-7"
+          ]
+        }
+      ],
+      "location": "Brooklyn (673, 1652)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Hostiles_-_Attack.ogg"
+    },
+    {
+      "heading": "Collab",
+      "paragraphs": [
+        {
+          "text": "Grant and Danvers collaboration. Features AARON KEENER (ACTOR), MATTHEW GRANT, RICHARD DANVERS. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-hostiles-comm-8"
+          ]
+        },
+        {
+          "text": "Grant and Danvers collaboration. Features MATTHEW GRANT, RICHARD DANVERS. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-hostiles-comm-8"
+          ]
+        }
+      ],
+      "location": "Brooklyn (326, 1613)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Hostiles_-_Collab.ogg"
+    },
+    {
+      "heading": "Exports",
+      "paragraphs": [
+        {
+          "text": "Purple Flame being exported to Danvers. Features JASINSKI, RICHARD DANVERS. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-hostiles-comm-9"
+          ]
+        }
+      ],
+      "location": "Brooklyn (1809, 1461)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Hostiles_-_Exports.ogg"
+    },
+    {
+      "heading": "Success",
+      "paragraphs": [
+        {
+          "text": "Purple Flame used at Meret Estate a successful test. Features JASINSKI, RICHARD DANVERS. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-hostiles-comm-10"
+          ]
+        }
+      ],
+      "location": "Brooklyn (1795, 1529)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Hostiles_-_Success.ogg"
+    },
+    {
+      "heading": "Present",
+      "paragraphs": [
+        {
+          "text": "Danvers telling Grant he's got a present for him. Features MATTHEW GRANT, RICHARD DANVERS. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-hostiles-comm-11"
+          ]
+        }
+      ],
+      "location": "Brooklyn (1881, 1477)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Hostiles_-_Present.ogg"
+    },
+    {
+      "heading": "Negotiations",
+      "paragraphs": [
+        {
+          "text": "Danvers gets an update from the Rat Queen. Features RAT QUEEN, RICHARD DANVERS. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-hostiles-comm-12"
+          ]
+        }
+      ],
+      "location": "Brooklyn (33, 1096)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Hostiles_-_Negotiations.ogg"
+    },
+    {
+      "heading": "Tech",
+      "paragraphs": [
+        {
+          "text": "Danvers delivering tech to the Rat Queen. Features RAT QUEEN, RICHARD DANVERS. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-hostiles-comm-13"
+          ]
+        }
+      ],
+      "location": "Brooklyn (572, 1346)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Hostiles_-_Tech.ogg"
+    },
+    {
+      "heading": "New Voice",
+      "paragraphs": [
+        {
+          "text": "Danvers giving the Rat Queen her new voice. Features RAT QUEEN, RICHARD DANVERS. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-hostiles-comm-14"
+          ]
+        }
+      ],
+      "location": "Brooklyn (54, 1945)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Hostiles_-_New_Voice.ogg"
+    },
+    {
+      "heading": "MG Update",
+      "paragraphs": [
+        {
+          "text": "Danvers and Grant update. Features RICHARD DANVERS. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-hostiles-comm-15"
+          ]
+        }
+      ],
+      "location": "Brooklyn (1787, 1089)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Hostiles_-_MG_Update.ogg"
+    },
+    {
+      "heading": "RQ Update",
+      "paragraphs": [
+        {
+          "text": "Danvers and the Rat Queen update. Features RICHARD DANVERS. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-brooklyn-hostiles-comm-16"
+          ]
+        }
+      ],
+      "location": "Brooklyn (1921, 1099)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Hostiles_-_RQ_Update.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-cleaners",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Brooklyn_-_Hostiles. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Brooklyn_-_Hostiles",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-government",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Government",
+  "slug": "td2-comms-government",
+  "section": "collectibles",
+  "summary": "A collection of 13 comms from The Division universe, scraped from the Fandom wiki hub page. 13 entries include full audio transcripts; 11 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 13,
+  "claims": [
+    {
+      "id": "td2-comms-government-comm-1",
+      "text": "Comm \"Black Friday Briefing\": First POTUS briefing on the outbreak where he receives privileged information, hinting at the scope of the disaster (Location: White House (1744, 2765))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-government"
+      ]
+    },
+    {
+      "id": "td2-comms-government-comm-2",
+      "text": "Comm \"Directive 51\": POTUS, VP, and Speaker of the House meet to discuss invoking Directive 51 (Location: White House (1907, 2742))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-government"
+      ]
+    },
+    {
+      "id": "td2-comms-government-comm-3",
+      "text": "Comm \"Border Control\": POTUS discusses border policies with the president of Mexico (Location: White House (1875, 2752))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-government"
+      ]
+    },
+    {
+      "id": "td2-comms-government-comm-4",
+      "text": "Comm \"DC-62 Trials\": Government officials decide whether or not to use DC-62 (Location: West End (2021, 1103))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-government"
+      ]
+    },
+    {
+      "id": "td2-comms-government-comm-5",
+      "text": "Comm \"25th Amendment\": White House staff members learn that POTUS has died (Location: White House (1945, 2811))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-government"
+      ]
+    },
+    {
+      "id": "td2-comms-government-comm-6",
+      "text": "Comm \"Bipartisan Support\": A large bipartisan group, from all levels of the government, put their squabbling aside and assemble to volunteer",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-government"
+      ]
+    },
+    {
+      "id": "td2-comms-government-comm-7",
+      "text": "Comm \"Aides Assemble\": A group of underpaid, overcaffeinated aides work through the night on last minute amendments to a bill, despite all horror around them.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-government"
+      ]
+    },
+    {
+      "id": "td2-comms-government-comm-8",
+      "text": "Comm \"Raven Rock\": Politicians talking about evacuating to a secure location (Location: White House (2246, 2856))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-government"
+      ]
+    },
+    {
+      "id": "td2-comms-government-comm-9",
+      "text": "Comm \"UN Briefing\": President Mendez meets with the UN to ascertain the effects of Green Poison around the globe (Location: Southwest (761, 3550))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-government"
+      ]
+    },
+    {
+      "id": "td2-comms-government-comm-10",
+      "text": "Comm \"Keener Briefing\": Meeting to discuss Keener, the Rogue Agents in NYC, and activating the second wave (Location: Southwest (699, 3798))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-government"
+      ]
+    },
+    {
+      "id": "td2-comms-government-comm-11",
+      "text": "Comm \"Possible Subterfuge\": Former Vice President Mendez, after being sworn in as POTUS, shares his suspicions with Andrew Ellis (Location: White House (1895, 2787))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-government"
+      ]
+    },
+    {
+      "id": "td2-comms-government-comm-12",
+      "text": "Comm \"Essential Evacuation\": Evacuation of key government staff from Washington (Location: West Potomac Park (1177, 2836))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-government"
+      ]
+    },
+    {
+      "id": "td2-comms-government-comm-13",
+      "text": "Comm \"Black Box\": Air Force One black box tape (Location: East Mall (1036, 4787))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-government"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Black Friday Briefing",
+      "paragraphs": [
+        {
+          "text": "First POTUS briefing on the outbreak where he receives privileged information, hinting at the scope of the disaster Features PRESIDENT WALLER, PRESIDENT'S AIDE. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-government-comm-1"
+          ]
+        },
+        {
+          "text": "PRESIDENT'S AIDE: They've got problems of their own, sir. The truth is we don't know. We just don't know.",
+          "claim_ids": [
+            "td2-comms-government-comm-1"
+          ]
+        }
+      ],
+      "location": "White House (1744, 2765)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Government_Comms_-_Black_Friday_Briefing.ogg"
+    },
+    {
+      "heading": "Directive 51",
+      "paragraphs": [
+        {
+          "text": "POTUS, VP, and Speaker of the House meet to discuss invoking Directive 51 Features ANDREW ELLIS, PRESIDENT WALLER, VICE PRESIDENT MENDEZ. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-government-comm-2"
+          ]
+        }
+      ],
+      "location": "White House (1907, 2742)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Government_Comms_-_Directive_51.ogg"
+    },
+    {
+      "heading": "Border Control",
+      "paragraphs": [
+        {
+          "text": "POTUS discusses border policies with the president of Mexico Features PRESIDENT WALLER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-government-comm-3"
+          ]
+        }
+      ],
+      "location": "White House (1875, 2752)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Government_Comms_-_Border_Control.ogg"
+    },
+    {
+      "heading": "DC-62 Trials",
+      "paragraphs": [
+        {
+          "text": "Government officials decide whether or not to use DC-62 Features JTF GENERAL, PRESIDENT'S AIDE. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-government-comm-4"
+          ]
+        }
+      ],
+      "location": "West End (2021, 1103)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Government_Comms_-_DC-62_Trials.ogg"
+    },
+    {
+      "heading": "25th Amendment",
+      "paragraphs": [
+        {
+          "text": "White House staff members learn that POTUS has died Features PRESIDENT'S AIDE, WHITE HOUSE STAFF. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-government-comm-5"
+          ]
+        }
+      ],
+      "location": "White House (1945, 2811)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Government_Comms_-_25th_Amendment.ogg"
+    },
+    {
+      "heading": "Bipartisan Support",
+      "paragraphs": [
+        {
+          "text": "A large bipartisan group, from all levels of the government, put their squabbling aside and assemble to volunteer Features multiple speakers including LANNAN, WHITE HOUSE STAFF, https. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-government-comm-6"
+          ]
+        },
+        {
+          "text": "A large bipartisan group, from all levels of the government, put their squabbling aside and assemble to volunteer Features WHITE HOUSE STAFF, ZIMMERMAN. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-government-comm-6"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Aides Assemble",
+      "paragraphs": [
+        {
+          "text": "A group of underpaid, overcaffeinated aides work through the night on last minute amendments to a bill, despite all horror around them. Features multiple speakers including POLITICAL AIDE 2, RAMON, https. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-government-comm-7"
+          ]
+        },
+        {
+          "text": "A group of underpaid, overcaffeinated aides work through the night on last minute amendments to a bill, despite all horror around them. Features POLITICAL AIDE 1, POLITICAL AIDE 2, RAMON. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-government-comm-7"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Raven Rock",
+      "paragraphs": [
+        {
+          "text": "Politicians talking about evacuating to a secure location Features CONGRESSWOMAN, SENATOR. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-government-comm-8"
+          ]
+        }
+      ],
+      "location": "White House (2246, 2856)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Government_Comms_-_Raven_Rock.ogg"
+    },
+    {
+      "heading": "UN Briefing",
+      "paragraphs": [
+        {
+          "text": "President Mendez meets with the UN to ascertain the effects of Green Poison around the globe Features PRESIDENT MENDEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-government-comm-9"
+          ]
+        },
+        {
+          "text": "President Mendez meets with the UN to ascertain the effects of Green Poison around the globe Features AMBASSADOR MINICH. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-government-comm-9"
+          ]
+        }
+      ],
+      "location": "Southwest (761, 3550)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Government_Comms_-_UN_Briefing.ogg"
+    },
+    {
+      "heading": "Keener Briefing",
+      "paragraphs": [
+        {
+          "text": "Meeting to discuss Keener, the Rogue Agents in NYC, and activating the second wave Features JTF GENERAL, PRESIDENT WALLER. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-government-comm-10"
+          ]
+        }
+      ],
+      "location": "Southwest (699, 3798)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Government_Comms_-_Keener_Briefing.ogg"
+    },
+    {
+      "heading": "Possible Subterfuge",
+      "paragraphs": [
+        {
+          "text": "Former Vice President Mendez, after being sworn in as POTUS, shares his suspicions with Andrew Ellis Features ANDREW ELLIS, PRESIDENT MENDEZ. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-government-comm-11"
+          ]
+        }
+      ],
+      "location": "White House (1895, 2787)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Government_Comms_-_Possible_Subterfuge.ogg"
+    },
+    {
+      "heading": "Essential Evacuation",
+      "paragraphs": [
+        {
+          "text": "Evacuation of key government staff from Washington Features PRESIDENT'S AIDE, WHITE HOUSE STAFF. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-government-comm-12"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (1177, 2836)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Government_Comms_-_Essential_Evacuation.ogg"
+    },
+    {
+      "heading": "Black Box",
+      "paragraphs": [
+        {
+          "text": "Air Force One black box tape Features AIR FORCE ONE PILOT, CONTROL TOWER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-government-comm-13"
+          ]
+        },
+        {
+          "text": "Air Force One black box tape Features AIR FORCE ONE PILOT. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-government-comm-13"
+          ]
+        }
+      ],
+      "location": "East Mall (1036, 4787)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Government_Comms_-_Black_Box.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-andrew-ellis",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Government. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Government",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020",
+      "ubisoft-pentagon-darpa-2019"
+    ]
+  }
+}

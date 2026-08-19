@@ -1,0 +1,247 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-division",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Division",
+  "slug": "td2-comms-division",
+  "section": "collectibles",
+  "summary": "A collection of 10 comms from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 10 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td2-comms-division-comm-1",
+      "text": "Comm \"Kelso Recruitment\": Agent Alani Kelso is recruited by SHD (Location: West Potomac Park (1009, 2938))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-division"
+      ]
+    },
+    {
+      "id": "td2-comms-division-comm-2",
+      "text": "Comm \"Kelso's Apartment\": Agent Kelso watches the news reporting on the outbreak (Location: White House (1465, 2723))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-division"
+      ]
+    },
+    {
+      "id": "td2-comms-division-comm-3",
+      "text": "Comm \"Broad-Spectrum Antiviral\": Kelso briefs Manny on the DCD broad-spectrum antiviral (Location: White House (1618, 2662))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-division"
+      ]
+    },
+    {
+      "id": "td2-comms-division-comm-4",
+      "text": "Comm \"Theater Recruitment\": Agent Kelso meets with the Theater Leader Odessa Sawyer and agrees to help them however she can (Location: East Mall (1066, 3280))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-division"
+      ]
+    },
+    {
+      "id": "td2-comms-division-comm-5",
+      "text": "Comm \"Agent AWOL\": Agent Clark tries to convince Agent Miller to stay on mission (Location: Foggy Bottom (1544, 1500))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-division"
+      ]
+    },
+    {
+      "id": "td2-comms-division-comm-6",
+      "text": "Comm \"Sawyer's Separated\": Agent Odessa Sawyer has to leave her husband and daughter when she is activated (Location: Downtown East (2340, 4051))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-division"
+      ]
+    },
+    {
+      "id": "td2-comms-division-comm-7",
+      "text": "Comm \"Sawyer Reunited\": Agent Odessa Sawyer is reunited with her daughter after being discharged from active duty (Location: Downtown East (1960, 3851))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-division"
+      ]
+    },
+    {
+      "id": "td2-comms-division-comm-8",
+      "text": "Comm \"Odessa Recruited\": Odessa Sawyer, a former SHD agent, is recruited to the leader of the Theater settlement (Location: Federal Triangle (1716, 4007))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-division"
+      ]
+    },
+    {
+      "id": "td2-comms-division-comm-9",
+      "text": "Comm \"Priority Target: Keener\": Update to all agents regarding Keener's status and Rogue Agents in Manhattan (Location: West Potomac Park (953, 2116))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-division"
+      ]
+    },
+    {
+      "id": "td2-comms-division-comm-10",
+      "text": "Comm \"Priority Target: Amherst (Update)\": Message to all agents regarding Amherst, Green Poison, and Black Friday (Location: Downtown East (2085, 3234))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-division"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Kelso Recruitment",
+      "paragraphs": [
+        {
+          "text": "Agent Alani Kelso is recruited by SHD Features AGENT KELSO, SHD RECRUITER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-division-comm-1"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (1009, 2938)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Division_Comms_-_Kelso_Recruitment.ogg"
+    },
+    {
+      "heading": "Kelso's Apartment",
+      "paragraphs": [
+        {
+          "text": "Agent Kelso watches the news reporting on the outbreak Features AGENT KELSO, NEWS ANCHOR. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-division-comm-2"
+          ]
+        }
+      ],
+      "location": "White House (1465, 2723)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Division_Comms_-_Kelso%27s_Apartment.ogg"
+    },
+    {
+      "heading": "Broad-Spectrum Antiviral",
+      "paragraphs": [
+        {
+          "text": "Kelso briefs Manny on the DCD broad-spectrum antiviral Features AGENT KELSO, MANNY ORTEGA. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-division-comm-3"
+          ]
+        }
+      ],
+      "location": "White House (1618, 2662)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Division_Comms_-_Broad-Spectrum_Antiviral.ogg"
+    },
+    {
+      "heading": "Theater Recruitment",
+      "paragraphs": [
+        {
+          "text": "Agent Kelso meets with the Theater Leader Odessa Sawyer and agrees to help them however she can Features AGENT KELSO, ODESSA SAWYER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-division-comm-4"
+          ]
+        }
+      ],
+      "location": "East Mall (1066, 3280)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Division_Comms_-_Theater_Recruitment.ogg"
+    },
+    {
+      "heading": "Agent AWOL",
+      "paragraphs": [
+        {
+          "text": "Agent Clark tries to convince Agent Miller to stay on mission Features AGENT CLARK, AGENT MILLER. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-division-comm-5"
+          ]
+        }
+      ],
+      "location": "Foggy Bottom (1544, 1500)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Division_Comms_-_Agent_AWOL.ogg"
+    },
+    {
+      "heading": "Sawyer's Separated",
+      "paragraphs": [
+        {
+          "text": "Agent Odessa Sawyer has to leave her husband and daughter when she is activated Features multiple speakers including JTF SOLDIER, MR. SAWYER, ODESSA SAWYER. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-division-comm-6"
+          ]
+        }
+      ],
+      "location": "Downtown East (2340, 4051)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Division_Comms_-_Sawyer%27s_Separated.ogg"
+    },
+    {
+      "heading": "Sawyer Reunited",
+      "paragraphs": [
+        {
+          "text": "Agent Odessa Sawyer is reunited with her daughter after being discharged from active duty Features ELEANOR SAWYER, ODESSA SAWYER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-division-comm-7"
+          ]
+        }
+      ],
+      "location": "Downtown East (1960, 3851)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Division_Comms_-_Sawyer%27s_Reunited.ogg"
+    },
+    {
+      "heading": "Odessa Recruited",
+      "paragraphs": [
+        {
+          "text": "Odessa Sawyer, a former SHD agent, is recruited to the leader of the Theater settlement Features ODESSA SAWYER, THOMAS. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-division-comm-8"
+          ]
+        }
+      ],
+      "location": "Federal Triangle (1716, 4007)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Division_Comms_-_Odessa_Recruited.ogg"
+    },
+    {
+      "heading": "Priority Target: Keener",
+      "paragraphs": [
+        {
+          "text": "Keener\": Update to all agents regarding Keener's status and Rogue Agents in Manhattan Features ANNOUNCER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-division-comm-9"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (953, 2116)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Division_Comms_-_Priority_Target_Keener.ogg"
+    },
+    {
+      "heading": "Priority Target: Amherst (Update)",
+      "paragraphs": [
+        {
+          "text": "Amherst (Update)\": Message to all agents regarding Amherst, Green Poison, and Black Friday Features ANNOUNCER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-division-comm-10"
+          ]
+        }
+      ],
+      "location": "Downtown East (2085, 3234)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Division_Comms_-_Priority_Target_Amherst_(Update).ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-alani-kelso",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Division. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Division",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

@@ -1,0 +1,476 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-manhunt-the-pact",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Manhunt - The Pact",
+  "slug": "td2-comms-manhunt-the-pact",
+  "section": "collectibles",
+  "summary": "A collection of 19 comms from The Division universe, scraped from the Fandom wiki hub page. 19 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 19,
+  "claims": [
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-1",
+      "text": "Comm \"Deliveries\": Calvin McManus checks in on a delivery",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-2",
+      "text": "Comm \"Cleaners\": Calvin McManus checks in on a delivery",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-3",
+      "text": "Comm \"AI Decision-Making\": Natalya Sokolova enquires about a new AI",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-4",
+      "text": "Comm \"Debrief\": Manny interviews the Manager about Natalia Sokolova's pressure to ramp up production",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-5",
+      "text": "Comm \"True Sons\": Natalya Sokolova introduces General Anderson to the Sokolov Concern wing of the operation",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-6",
+      "text": "Comm \"Party Planning\": Manny and the Manager discuss logistics",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-7",
+      "text": "Comm \"Recruitment\": Bardon Schaeffer recruits the Manager as a double agent",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-8",
+      "text": "Comm \"Reunion\": Schaeffer and the Manager run into each other at the BOO",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-9",
+      "text": "Comm \"Hyenas\": Bardon Schaeffer discusses the Hyena alliance",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-10",
+      "text": "Comm \"Networks\": Natalya Sokolova discusses the limitations of the current systems",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-11",
+      "text": "Comm \"Bug Reports\": Calvin McManus asks about anomalies with the tech",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-12",
+      "text": "Comm \"[[Rikers (The Pact)}|Rikers]]\": Calvin McManus checks in on a delivery",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-13",
+      "text": "Comm \"Production\": Natalya Sokolova discusses the state of Sokolov Concern",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-14",
+      "text": "Comm \"Resources\": Natalya Sokolova gets an update on the current state of the supply lines",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-15",
+      "text": "Comm \"RSVP\": Mayhem accepts an invitation",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-16",
+      "text": "Comm \"Dressing Down\": Natalya Sokolova expresses her displeasure",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-17",
+      "text": "Comm \"Quid Pro Quo\": Natalya Sokolova never does a favor for free",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-18",
+      "text": "Comm \"The Name Game\": General Anderson discusses a recruitment concern with a subordinate",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-the-pact-comm-19",
+      "text": "Comm \"Rogues\": Bardon Schaeffer discusses the Rogue threat",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-the-pact"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Deliveries",
+      "paragraphs": [
+        {
+          "text": "Calvin McManus checks in on a delivery Features CALVIN MCMANUS, THE MANAGER. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_Deliveries.ogg"
+    },
+    {
+      "heading": "Cleaners",
+      "paragraphs": [
+        {
+          "text": "Calvin McManus checks in on a delivery Features CALVIN MCMANUS, THE MANAGER. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_Cleaners.ogg"
+    },
+    {
+      "heading": "AI Decision-Making",
+      "paragraphs": [
+        {
+          "text": "Natalya Sokolova enquires about a new AI Features CLAIRE ORTIZ, NATALYA SOKOLOVA. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_AI_Decision-Making.ogg"
+    },
+    {
+      "heading": "Debrief",
+      "paragraphs": [
+        {
+          "text": "Manny interviews the Manager about Natalia Sokolova's pressure to ramp up production Features MANNY ORTEGA, THE MANAGER. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-4"
+          ]
+        },
+        {
+          "text": "Manny interviews the Manager about Natalia Sokolova's pressure to ramp up production Features MANNY ORTEGA, THE MANAGER. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_Debrief.ogg"
+    },
+    {
+      "heading": "True Sons",
+      "paragraphs": [
+        {
+          "text": "Natalya Sokolova introduces General Anderson to the Sokolov Concern wing of the operation Features GENERAL ANDERSON, NATALYA SOKOLOVA, THE MANAGER. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_True_Sons.ogg"
+    },
+    {
+      "heading": "Party Planning",
+      "paragraphs": [
+        {
+          "text": "Manny and the Manager discuss logistics Features MANNY ORTEGA, THE MANAGER. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-6"
+          ]
+        },
+        {
+          "text": "Manny and the Manager discuss logistics Features MANNY ORTEGA, THE MANAGER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_Party_Planning.ogg"
+    },
+    {
+      "heading": "Recruitment",
+      "paragraphs": [
+        {
+          "text": "Bardon Schaeffer recruits the Manager as a double agent Features BARDON SCHAEFFER, THE MANAGER. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_Recruitment.ogg"
+    },
+    {
+      "heading": "Reunion",
+      "paragraphs": [
+        {
+          "text": "Schaeffer and the Manager run into each other at the BOO Features BARDON SCHAEFFER, THE MANAGER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_Reunion.ogg"
+    },
+    {
+      "heading": "Hyenas",
+      "paragraphs": [
+        {
+          "text": "Bardon Schaeffer discusses the Hyena alliance Features BARDON SCHAEFFER, THE MANAGER. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_Hyenas.ogg"
+    },
+    {
+      "heading": "Networks",
+      "paragraphs": [
+        {
+          "text": "Natalya Sokolova discusses the limitations of the current systems Features NATALYA SOKOLOVA, THE MANAGER. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-10"
+          ]
+        },
+        {
+          "text": "Natalya Sokolova discusses the limitations of the current systems Features NATALYA SOKOLOVA, THE MANAGER. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_Networks.ogg"
+    },
+    {
+      "heading": "Bug Reports",
+      "paragraphs": [
+        {
+          "text": "Calvin McManus asks about anomalies with the tech Features CALVIN MCMANUS, THE MANAGER. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-11"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_Bug_Reports.ogg"
+    },
+    {
+      "heading": "[[Rikers (The Pact)}|Rikers]]",
+      "paragraphs": [
+        {
+          "text": "Calvin McManus checks in on a delivery Features CALVIN MCMANUS, THE MANAGER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-12"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_Rikers.ogg"
+    },
+    {
+      "heading": "Production",
+      "paragraphs": [
+        {
+          "text": "Manny interviews the Manager about Natalia Sokolova's pressure to ramp up production Features NATALYA SOKOLOVA, THE MANAGER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-13"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_Production.ogg"
+    },
+    {
+      "heading": "Resources",
+      "paragraphs": [
+        {
+          "text": "Natalya Sokolova gets an update on the current state of the supply lines Features NATALYA SOKOLOVA, THE MANAGER. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-14"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_Resources.ogg"
+    },
+    {
+      "heading": "RSVP",
+      "paragraphs": [
+        {
+          "text": "Mayhem accepts an invitation Features First up, MAYHEM, Second. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-15"
+          ]
+        },
+        {
+          "text": "Do all that, and sure, I'll come to your little fuckin' boat party or whatever. Sounds like fun. You gonna have those mini-quiches? Fuckin' love those things.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-15"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_RSVP.ogg"
+    },
+    {
+      "heading": "Dressing Down",
+      "paragraphs": [
+        {
+          "text": "Natalya Sokolova expresses her displeasure Features GENERAL ANDERSON, NATALYA SOKOLOVA. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-16"
+          ]
+        },
+        {
+          "text": "Natalya Sokolova expresses her displeasure Features GENERAL ANDERSON, NATALYA SOKOLOVA. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-16"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_Dressing_Down.ogg"
+    },
+    {
+      "heading": "Quid Pro Quo",
+      "paragraphs": [
+        {
+          "text": "Natalya Sokolova never does a favor for free Features HARLAN LLOYD, NATALYA SOKOLOVA. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-17"
+          ]
+        },
+        {
+          "text": "Natalya Sokolova never does a favor for free Features HARLAN LLOYD, NATALYA SOKOLOVA. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-17"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_Quid_Pro_Quo.ogg"
+    },
+    {
+      "heading": "The Name Game",
+      "paragraphs": [
+        {
+          "text": "General Anderson discusses a recruitment concern with a subordinate Features GENERAL ANDERSON. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-18"
+          ]
+        },
+        {
+          "text": "General Anderson discusses a recruitment concern with a subordinate Features GENERAL ANDERSON. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-18"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_The_Name_Game.ogg"
+    },
+    {
+      "heading": "Rogues",
+      "paragraphs": [
+        {
+          "text": "Bardon Schaeffer discusses the Rogue threat Features BARDON SCHAEFFER, THE MANAGER. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-the-pact-comm-19"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Pact_-_Rogues.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-natalya-sokolova",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-true-sons",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-rikers",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-hyenas",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-cleaners",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Manhunt_-_The_Pact. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Manhunt_-_The_Pact",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020",
+      "ubisoft-pact-2025"
+    ]
+  }
+}

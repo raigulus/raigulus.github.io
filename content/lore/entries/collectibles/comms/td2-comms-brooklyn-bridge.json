@@ -1,0 +1,224 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-brooklyn-bridge",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Brooklyn - Bridge",
+  "slug": "td2-comms-brooklyn-bridge",
+  "section": "collectibles",
+  "summary": "A collection of 7 comms from The Division universe, scraped from the Fandom wiki hub page. 7 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 7,
+  "claims": [
+    {
+      "id": "td2-comms-brooklyn-bridge-comm-1",
+      "text": "Comm \"Comms\"",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-bridge"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-bridge-comm-2",
+      "text": "Comm \"xxxxxx\": xxxxxxx",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-bridge"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-bridge-comm-3",
+      "text": "Comm \"xxxxxx\": xxxxxxx",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-bridge"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-bridge-comm-4",
+      "text": "Comm \"xxxxxx\": xxxxxxx",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-bridge"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-bridge-comm-5",
+      "text": "Comm \"xxxxxx\": xxxxxxx",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-bridge"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-bridge-comm-6",
+      "text": "Comm \"xxxxxx\": xxxxxxx",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-bridge"
+      ]
+    },
+    {
+      "id": "td2-comms-brooklyn-bridge-comm-7",
+      "text": "Comm \"xxxxxx\": xxxxxxx",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-brooklyn-bridge"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Comms",
+      "paragraphs": [
+        {
+          "text": "Hyenas\nTrue Sons\nOutcasts\nBlack Tusk\nJTF\nDivision\nGovernment\nDark Zone\nContaminated Areas\nDead Drops\nCampus\nCastle\nTheater\nNew York\nLower Manhattan\nConey Island\nProfile: Agent Kelso\nProfile: Antwon Ridgeway\nProfile: Emeline Shaw\nProfile: Henry Hayes\nProfile: Odessa Sawyer\nProfile: President Ellis\nLangley Reports\nPentagon Staff Logs\nBrenner's Orders\nShay\nRoy Benitez\nPaul Rhodes\nAaron Keener\nJames Dragov\nJavier Kajika\nTheo Parnell\nVivian Conley\nFaye Lau\nManhunt: Shadow Tide\nManhunt: Keener's Legacy\nManhunt: Concealed Agenda\nManhunt: End of Watch\nManhunt: Hidden Alliance\nManhunt: Price of Power\nManhunt: Reign of Fire\nManhunt: Broken Wings\nManhunt: Puppeteers\nManhunt: Vanguard\nManhunt: First Rogue\nManhunt: Shades of Red\nManhunt: Burden of Truth\nManhunt: Crossroads\nManhunt: The Pact",
+          "claim_ids": [
+            "td2-comms-brooklyn-bridge-comm-1"
+          ]
+        },
+        {
+          "text": "Manhunt: Mutiny\nManhunt: Rise Up\nIncursion: Paradise Lost\nBrooklyn: Bridge\nBrooklyn: Friendly\nBrooklyn: History\nBrooklyn: Hostiles\nBTSU Team 9\nDESCENT",
+          "claim_ids": [
+            "td2-comms-brooklyn-bridge-comm-1"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "xxxxxx",
+      "paragraphs": [
+        {
+          "text": "noiconnoicon\nBrooklyn (xxxxx)\nxxxxxx: xxxxxxx",
+          "claim_ids": [
+            "td2-comms-brooklyn-bridge-comm-2"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "xxxxxx",
+      "paragraphs": [
+        {
+          "text": "noiconnoicon\nBrooklyn (xxxxx)\nxxxxxx: xxxxxxx",
+          "claim_ids": [
+            "td2-comms-brooklyn-bridge-comm-3"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "xxxxxx",
+      "paragraphs": [
+        {
+          "text": "noiconnoicon\nBrooklyn (xxxxx)\nxxxxxx: xxxxxxx",
+          "claim_ids": [
+            "td2-comms-brooklyn-bridge-comm-4"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "xxxxxx",
+      "paragraphs": [
+        {
+          "text": "noiconnoicon\nBrooklyn (xxxxx)\nxxxxxx: xxxxxxx",
+          "claim_ids": [
+            "td2-comms-brooklyn-bridge-comm-5"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "xxxxxx",
+      "paragraphs": [
+        {
+          "text": "noiconnoicon\nBrooklyn (xxxxx)\nxxxxxx: xxxxxxx",
+          "claim_ids": [
+            "td2-comms-brooklyn-bridge-comm-6"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "xxxxxx",
+      "paragraphs": [
+        {
+          "text": "noiconnoicon\nBrooklyn (xxxxx)\nxxxxxx: xxxxxxx",
+          "claim_ids": [
+            "td2-comms-brooklyn-bridge-comm-7"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-vivian-conley",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-theo-parnell",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-javier-kajika",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-james-dragov",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-faye-lau",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-emeline-shaw",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "location-lower-manhattan",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "location-coney-island",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-true-sons",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-outcasts",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-hyenas",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Brooklyn_-_Bridge. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Brooklyn_-_Bridge",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

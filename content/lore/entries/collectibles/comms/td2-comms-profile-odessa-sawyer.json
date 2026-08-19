@@ -1,0 +1,259 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-profile-odessa-sawyer",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Profile - Odessa Sawyer",
+  "slug": "td2-comms-profile-odessa-sawyer",
+  "section": "collectibles",
+  "summary": "A collection of 10 comms from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 10 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td2-comms-profile-odessa-sawyer-comm-1",
+      "text": "Comm \"Them\": Odessa Sawyer keeps an agent on mission (Location: Downtown East (1950, 3796))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-odessa-sawyer"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-odessa-sawyer-comm-2",
+      "text": "Comm \"Back to Work\": Odessa Sawyer steals a private moment with her husband (Location: Downtown East (1757, 3797))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-odessa-sawyer"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-odessa-sawyer-comm-3",
+      "text": "Comm \"It's a Trap\": Odessa Sawyer tries to guide some civilians through a mission (Location: Downtown East (1678, 3722))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-odessa-sawyer"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-odessa-sawyer-comm-4",
+      "text": "Comm \"Lies\": Odessa Sawyer talks to an addict at the Theater (Location: Downtown East (1678, 3722))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-odessa-sawyer"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-odessa-sawyer-comm-5",
+      "text": "Comm \"Regrets\": Odessa Sawyer talks to Agent Kelso about her family (Location: Federal Triangle (1717, 3748))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-odessa-sawyer"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-odessa-sawyer-comm-6",
+      "text": "Comm \"The Usual\": Odessa Sawyer's daughter Eleanor tries to understand why her mom is freezing out her friend Alani Kelso (Location: Federal Triangle (1725, 3880))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-odessa-sawyer"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-odessa-sawyer-comm-7",
+      "text": "Comm \"Fourth of July\": Odessa Sawyer and her daughter Eleanor talk about family gatherings (Location: Downtown East (1926, 3753))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-odessa-sawyer"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-odessa-sawyer-comm-8",
+      "text": "Comm \"You're Twenty\": Odessa Sawyer's daughter Eleanor apologizes to her mother (Location: Downtown East (1796, 3912))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-odessa-sawyer"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-odessa-sawyer-comm-9",
+      "text": "Comm \"Care Package\": Henry Hayes tells Odessa Sawyer to expect a care package from the Campus (Location: Federal Triangle (1686, 3804))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-odessa-sawyer"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-odessa-sawyer-comm-10",
+      "text": "Comm \"Civility\": Odessa Sawyer invites \"Saint\" Alex to stop going down a bad path and join the Theater (Location: Downtown East (1925, 3916))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-odessa-sawyer"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Them",
+      "paragraphs": [
+        {
+          "text": "Odessa Sawyer keeps an agent on mission Features AGENT EDWARDS, ODESSA SAWYER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-odessa-sawyer-comm-1"
+          ]
+        }
+      ],
+      "location": "Downtown East (1950, 3796)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Sawyer_Comms_-_Them.ogg"
+    },
+    {
+      "heading": "Back to Work",
+      "paragraphs": [
+        {
+          "text": "Odessa Sawyer steals a private moment with her husband Features MR. SAWYER, ODESSA SAWYER. Contains 14 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-odessa-sawyer-comm-2"
+          ]
+        }
+      ],
+      "location": "Downtown East (1757, 3797)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Sawyer_Comms_-_Back_to_Work.ogg"
+    },
+    {
+      "heading": "It's a Trap",
+      "paragraphs": [
+        {
+          "text": "Odessa Sawyer tries to guide some civilians through a mission Features CIVILIAN, ODESSA SAWYER, TRACY. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-odessa-sawyer-comm-3"
+          ]
+        }
+      ],
+      "location": "Downtown East (1678, 3722)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Sawyer_Comms_-_It%27s_a_Trap.ogg"
+    },
+    {
+      "heading": "Lies",
+      "paragraphs": [
+        {
+          "text": "Odessa Sawyer talks to an addict at the Theater Features ADDICT, ODESSA SAWYER. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-odessa-sawyer-comm-4"
+          ]
+        }
+      ],
+      "location": "Downtown East (1678, 3722)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Sawyer_Comms_-_Lies.ogg"
+    },
+    {
+      "heading": "Regrets",
+      "paragraphs": [
+        {
+          "text": "Odessa Sawyer talks to Agent Kelso about her family Features AGENT KELSO, ODESSA SAWYER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-odessa-sawyer-comm-5"
+          ]
+        }
+      ],
+      "location": "Federal Triangle (1717, 3748)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Sawyer_Comms_-_Regrets.ogg"
+    },
+    {
+      "heading": "The Usual",
+      "paragraphs": [
+        {
+          "text": "Odessa Sawyer's daughter Eleanor tries to understand why her mom is freezing out her friend Alani Kelso Features ELEANOR SAWYER, ODESSA SAWYER. Contains 14 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-odessa-sawyer-comm-6"
+          ]
+        }
+      ],
+      "location": "Federal Triangle (1725, 3880)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Sawyer_Comms_-_The_Usual.ogg"
+    },
+    {
+      "heading": "Fourth of July",
+      "paragraphs": [
+        {
+          "text": "Odessa Sawyer and her daughter Eleanor talk about family gatherings Features ELEANOR SAWYER, ODESSA SAWYER. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-odessa-sawyer-comm-7"
+          ]
+        }
+      ],
+      "location": "Downtown East (1926, 3753)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Sawyer_Comms_-_Fourth_of_July.ogg"
+    },
+    {
+      "heading": "You're Twenty",
+      "paragraphs": [
+        {
+          "text": "Odessa Sawyer's daughter Eleanor apologizes to her mother Features ELEANOR SAWYER, ODESSA SAWYER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-odessa-sawyer-comm-8"
+          ]
+        }
+      ],
+      "location": "Downtown East (1796, 3912)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Sawyer_Comms_-_You%27re_Twenty.ogg"
+    },
+    {
+      "heading": "Care Package",
+      "paragraphs": [
+        {
+          "text": "Henry Hayes tells Odessa Sawyer to expect a care package from the Campus Features HENRY HAYES, ODESSA SAWYER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-odessa-sawyer-comm-9"
+          ]
+        },
+        {
+          "text": "Henry Hayes tells Odessa Sawyer to expect a care package from the Campus Features ODESSA SAWYER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-odessa-sawyer-comm-9"
+          ]
+        }
+      ],
+      "location": "Federal Triangle (1686, 3804)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Sawyer_Comms_-_Care_Package.ogg"
+    },
+    {
+      "heading": "Civility",
+      "paragraphs": [
+        {
+          "text": "Odessa Sawyer invites \"Saint\" Alex to stop going down a bad path and join the Theater Features ODESSA SAWYER, SAINT. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-odessa-sawyer-comm-10"
+          ]
+        },
+        {
+          "text": "Odessa Sawyer invites \"Saint\" Alex to stop going down a bad path and join the Theater Features ODESSA SAWYER, SAINT. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-odessa-sawyer-comm-10"
+          ]
+        }
+      ],
+      "location": "Downtown East (1925, 3916)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Sawyer_Comms_-_Civility.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-alani-kelso",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Profile_-_Odessa_Sawyer. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Profile_-_Odessa_Sawyer",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

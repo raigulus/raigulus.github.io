@@ -1,0 +1,321 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-outcasts",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Outcasts",
+  "slug": "td2-comms-outcasts",
+  "section": "collectibles",
+  "summary": "A collection of 12 comms from The Division universe, scraped from the Fandom wiki hub page. 12 entries include full audio transcripts; 12 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 12,
+  "claims": [
+    {
+      "id": "td2-comms-outcasts-comm-1",
+      "text": "Comm \"Cistern\": Two Outcasts scouting for communities (Location: Downtown West (1907, 2311))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-outcasts"
+      ]
+    },
+    {
+      "id": "td2-comms-outcasts-comm-2",
+      "text": "Comm \"Message for Henry\": Outcasts deliver a message to Campus leader Henry Hayes (Location: Foggy Bottom (1931, 2427))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-outcasts"
+      ]
+    },
+    {
+      "id": "td2-comms-outcasts-comm-3",
+      "text": "Comm \"Keeping Survivors\": Outcast decide to keep a survivor (Location: Foggy Bottom (1596, 1828))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-outcasts"
+      ]
+    },
+    {
+      "id": "td2-comms-outcasts-comm-4",
+      "text": "Comm \"Rations\": An infected civilian argues with one of Ridgeway's True Sons about the distribution of rations (Location: Foggy Bottom (1772, 1711))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-outcasts"
+      ]
+    },
+    {
+      "id": "td2-comms-outcasts-comm-5",
+      "text": "Comm \"Plotting\": Emeline plots with other people in quarantine to take over the island (Location: Foggy Bottom (1392, 1173))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-outcasts"
+      ]
+    },
+    {
+      "id": "td2-comms-outcasts-comm-6",
+      "text": "Comm \"True Son Captured\": Emeline speaks with a member of the True Sons, her Outcasts have captured (Location: Constitution Hall (1762, 2274))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-outcasts"
+      ]
+    },
+    {
+      "id": "td2-comms-outcasts-comm-7",
+      "text": "Comm \"Complicit\": Outcasts murder civilians for being \"complicit\" in their suffering (Location: Constitution Hall (1658, 2007))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-outcasts"
+      ]
+    },
+    {
+      "id": "td2-comms-outcasts-comm-8",
+      "text": "Comm \"Asymptomatic\": Emeline provides her doctor with her blood to build a weapon (Location: Constitution Hall (1658, 2007))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-outcasts"
+      ]
+    },
+    {
+      "id": "td2-comms-outcasts-comm-9",
+      "text": "Comm \"JTF Interrogation\": A young JTF soldier is being interrogated and asked why they didn't stop Ridgeway and the others (Location: Downtown West (2006, 1798))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-outcasts"
+      ]
+    },
+    {
+      "id": "td2-comms-outcasts-comm-10",
+      "text": "Comm \"Condemnation\": Emeline explains who she believes is responsible for the Roosevelt Island quarantine (Location: Downtown West (2275, 1972))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-outcasts"
+      ]
+    },
+    {
+      "id": "td2-comms-outcasts-comm-11",
+      "text": "Comm \"Emeline's End\": An Outcast asks Emeline when it will end (Location: West Potomac Park (947, 1525))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-outcasts"
+      ]
+    },
+    {
+      "id": "td2-comms-outcasts-comm-12",
+      "text": "Comm \"Humanity\": Emeline forces one of her Outcasts to confront his wife's killer (Location: West Potomac Park (1190, 1400))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-outcasts"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Cistern",
+      "paragraphs": [
+        {
+          "text": "Two Outcasts scouting for communities Features OUTCAST MEMBER 1, OUTCAST MEMBER 2. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-outcasts-comm-1"
+          ]
+        },
+        {
+          "text": "Two Outcasts scouting for communities Features OUTCAST MEMBER 1. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-outcasts-comm-1"
+          ]
+        }
+      ],
+      "location": "Downtown West (1907, 2311)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Outcast_Comms_-_Cistern.ogg"
+    },
+    {
+      "heading": "Message for Henry",
+      "paragraphs": [
+        {
+          "text": "Outcasts deliver a message to Campus leader Henry Hayes Features HENRY HAYES, OUTCAST MEMBER. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-outcasts-comm-2"
+          ]
+        },
+        {
+          "text": "Outcasts deliver a message to Campus leader Henry Hayes Features OUTCAST MEMBER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-outcasts-comm-2"
+          ]
+        }
+      ],
+      "location": "Foggy Bottom (1931, 2427)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Outcast_Comms_-_Message_for_Henry.ogg"
+    },
+    {
+      "heading": "Keeping Survivors",
+      "paragraphs": [
+        {
+          "text": "Outcast decide to keep a survivor Features OUTCAST MEMBER 1, OUTCAST MEMBER 2. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-outcasts-comm-3"
+          ]
+        }
+      ],
+      "location": "Foggy Bottom (1596, 1828)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Outcast_Comms_-_Keeping_Survivors.ogg"
+    },
+    {
+      "heading": "Rations",
+      "paragraphs": [
+        {
+          "text": "An infected civilian argues with one of Ridgeway's True Sons about the distribution of rations Features CONTAMINATED CIVILIAN, JTF SOLDIER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-outcasts-comm-4"
+          ]
+        }
+      ],
+      "location": "Foggy Bottom (1772, 1711)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Outcast_Comms_-_Rations.ogg"
+    },
+    {
+      "heading": "Plotting",
+      "paragraphs": [
+        {
+          "text": "Emeline plots with other people in quarantine to take over the island Features CONTAMINATED CIVILIAN, EMELINE SHAW, HARLAN LLOYD. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-outcasts-comm-5"
+          ]
+        }
+      ],
+      "location": "Foggy Bottom (1392, 1173)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Outcast_Comms_-_Plotting.ogg"
+    },
+    {
+      "heading": "True Son Captured",
+      "paragraphs": [
+        {
+          "text": "Emeline speaks with a member of the True Sons, her Outcasts have captured Features multiple speakers including CONTAMINATED CIVILIAN 2, EMELINE SHAW, TRUE SONS MEMBER. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-outcasts-comm-6"
+          ]
+        }
+      ],
+      "location": "Constitution Hall (1762, 2274)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Outcast_Comms_-_True_Son_Captured.ogg"
+    },
+    {
+      "heading": "Complicit",
+      "paragraphs": [
+        {
+          "text": "Outcasts murder civilians for being \"complicit\" in their suffering Features OUTCASTS MEMBER 1, OUTCASTS MEMBER 2, THEATER CIVILIAN. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-outcasts-comm-7"
+          ]
+        }
+      ],
+      "location": "Constitution Hall (1658, 2007)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Outcast_Comms_-_Complict.ogg"
+    },
+    {
+      "heading": "Asymptomatic",
+      "paragraphs": [
+        {
+          "text": "Emeline provides her doctor with her blood to build a weapon Features EMELINE SHAW, OUTCASTS MEMBER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-outcasts-comm-8"
+          ]
+        }
+      ],
+      "location": "Constitution Hall (1658, 2007)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Outcast_Comms_-_Asymptomatic.ogg"
+    },
+    {
+      "heading": "JTF Interrogation",
+      "paragraphs": [
+        {
+          "text": "A young JTF soldier is being interrogated and asked why they didn't stop Ridgeway and the others Features EMELINE SHAW, JTF SOLDIER, OUTCASTS MEMBER. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-outcasts-comm-9"
+          ]
+        }
+      ],
+      "location": "Downtown West (2006, 1798)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Outcast_Comms_-_JTF_Interrogation.ogg"
+    },
+    {
+      "heading": "Condemnation",
+      "paragraphs": [
+        {
+          "text": "Emeline explains who she believes is responsible for the Roosevelt Island quarantine Features EMELINE SHAW, OUTCASTS MEMBER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-outcasts-comm-10"
+          ]
+        },
+        {
+          "text": "I want justice. And so I condemn them. All of them. And I will not rest until they are punished.",
+          "claim_ids": [
+            "td2-comms-outcasts-comm-10"
+          ]
+        }
+      ],
+      "location": "Downtown West (2275, 1972)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Outcast_Comms_-_Condemnation.ogg"
+    },
+    {
+      "heading": "Emeline's End",
+      "paragraphs": [
+        {
+          "text": "An Outcast asks Emeline when it will end Features EMELINE SHAW, OUTCASTS MEMBER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-outcasts-comm-11"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (947, 1525)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Outcast_Comms_-_Emeline%27s_End.ogg"
+    },
+    {
+      "heading": "Humanity",
+      "paragraphs": [
+        {
+          "text": "Emeline forces one of her Outcasts to confront his wife's killer Features EMELINE SHAW, OUTCASTS MEMBER, TRUE SONS MEMBER. Contains 15 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-outcasts-comm-12"
+          ]
+        },
+        {
+          "text": "Emeline forces one of her Outcasts to confront his wife's killer Features EMELINE SHAW, OUTCASTS MEMBER, TRUE SONS MEMBER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-outcasts-comm-12"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (1190, 1400)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Outcast_Comms_-_Humanity.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-emeline-shaw",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-true-sons",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-outcasts",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Outcasts. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Outcasts",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

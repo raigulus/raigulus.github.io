@@ -1,0 +1,367 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td1-phone-recordings-jtf",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD1 Phone Recordings: JTF",
+  "slug": "td1-phone-recordings-jtf",
+  "section": "collectibles",
+  "summary": "A collection of 16 phone recordings from The Division universe, scraped from the Fandom wiki hub page. 16 entries include full audio transcripts; 16 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "phone-recordings",
+  "total_entries": 16,
+  "claims": [
+    {
+      "id": "td1-phone-recordings-jtf-comm-1",
+      "text": "Comm \"JTF Interview\": Journalist interviews a JTF spokesperson (Location: Chelsea (642, 869))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-jtf"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-jtf-comm-2",
+      "text": "Comm \"Working Overtime\": Two doctors talk about the pressure (Location: Chelsea (802, 905))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-jtf"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-jtf-comm-3",
+      "text": "Comm \"Sick Inmates\": Corrections officer talks about sick inmates (Location: Garment District (1206, 1035))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-jtf"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-jtf-comm-4",
+      "text": "Comm \"Coming Home\": National Guard soldier shares some good news (Location: Garment District (1384, 1124))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-jtf"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-jtf-comm-5",
+      "text": "Comm \"Translator\": JTF soldier requests a translator (Location: Garment District (1205, 1620))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-jtf"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-jtf-comm-6",
+      "text": "Comm \"Power Plant\": Power plant employee calls home (Location: Garment District (1228, 1477))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-jtf"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-jtf-comm-7",
+      "text": "Comm \"Dark Zone\": Journalist interviews JTF spokesperson about the Dark Zone (Location: Hudson Yards (1083, 614))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-jtf"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-jtf-comm-8",
+      "text": "Comm \"Store Owner\": Store owner calls 911 about attackers (Location: Hudson Yards (1235, 755))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-jtf"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-jtf-comm-9",
+      "text": "Comm \"Showing Symptoms\": Scared woman calling CERA helpline (Location: Hudson Yards (1285, 641))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-jtf"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-jtf-comm-10",
+      "text": "Comm \"Crisis Center Robbery\": Crisis Center getting robbed (Location: Hudson Yards (1202, 771))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-jtf"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-jtf-comm-11",
+      "text": "Comm \"Missing Person\": Concerned woman reporting missing brother (Location: Chelsea (649, 1392))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-jtf"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-jtf-comm-12",
+      "text": "Comm \"Quitting the LMB\": Female LMB soldier decides to quit (Location: Tenderloin (484, 1604))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-jtf"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-jtf-comm-13",
+      "text": "Comm \"Engine Failure\": Coast Guard talking about some findings (Location: Tenderloin (476, 2058))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-jtf"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-jtf-comm-14",
+      "text": "Comm \"Savages\": Two soldiers discussing LMB and human cruelty (Location: Tenderloin (660, 1700))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-jtf"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-jtf-comm-15",
+      "text": "Comm \"Hospital Beds\": Doctor talks about current state of hospital beds (Location: Clinton (2164, 1043))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-jtf"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-jtf-comm-16",
+      "text": "Comm \"Collapse\": 911 call about a friend who's passed out (Location: Hell's Kitchen (1765, 947))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-jtf"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "JTF Interview",
+      "paragraphs": [
+        {
+          "text": "Journalist interviews a JTF spokesperson Features JTF SPOKESPERSON, REPORTER. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-jtf-comm-1"
+          ]
+        }
+      ],
+      "location": "Chelsea (642, 869)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:JTF_Interview.ogg"
+    },
+    {
+      "heading": "Working Overtime",
+      "paragraphs": [
+        {
+          "text": "Two doctors talk about the pressure Features MAN, WOMAN. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-jtf-comm-2"
+          ]
+        }
+      ],
+      "location": "Chelsea (802, 905)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Working_Overtime.ogg"
+    },
+    {
+      "heading": "Sick Inmates",
+      "paragraphs": [
+        {
+          "text": "Corrections officer talks about sick inmates Features JOHN, VIC. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-jtf-comm-3"
+          ]
+        }
+      ],
+      "location": "Garment District (1206, 1035)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Sick_Inmates.ogg"
+    },
+    {
+      "heading": "Coming Home",
+      "paragraphs": [
+        {
+          "text": "National Guard soldier shares some good news Features JANE, WOMAN. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-jtf-comm-4"
+          ]
+        }
+      ],
+      "location": "Garment District (1384, 1124)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Coming_Home.ogg"
+    },
+    {
+      "heading": "Translator",
+      "paragraphs": [
+        {
+          "text": "JTF soldier requests a translator Features COOPER, RECEPTIONIST. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-jtf-comm-5"
+          ]
+        }
+      ],
+      "location": "Garment District (1205, 1620)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Translator.ogg"
+    },
+    {
+      "heading": "Power Plant",
+      "paragraphs": [
+        {
+          "text": "Power plant employee calls home Features JACK, WOMAN. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-jtf-comm-6"
+          ]
+        }
+      ],
+      "location": "Garment District (1228, 1477)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Power_Plant.ogg"
+    },
+    {
+      "heading": "Dark Zone",
+      "paragraphs": [
+        {
+          "text": "Journalist interviews JTF spokesperson about the Dark Zone Features CERA REPRESENTATIVE, REPORTER. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-jtf-comm-7"
+          ]
+        }
+      ],
+      "location": "Hudson Yards (1083, 614)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Dark_Zone.ogg"
+    },
+    {
+      "heading": "Store Owner",
+      "paragraphs": [
+        {
+          "text": "Store owner calls 911 about attackers Features OPERATOR, SHOP OWNER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-jtf-comm-8"
+          ]
+        }
+      ],
+      "location": "Hudson Yards (1235, 755)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Store_Owner.ogg"
+    },
+    {
+      "heading": "Showing Symptoms",
+      "paragraphs": [
+        {
+          "text": "Scared woman calling CERA helpline Features CERA OPERATOR, WOMAN. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-jtf-comm-9"
+          ]
+        }
+      ],
+      "location": "Hudson Yards (1285, 641)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Showing_Symptoms.ogg"
+    },
+    {
+      "heading": "Crisis Center Robbery",
+      "paragraphs": [
+        {
+          "text": "Crisis Center getting robbed Features MAN, RIOTER, WOMAN. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-jtf-comm-10"
+          ]
+        }
+      ],
+      "location": "Hudson Yards (1202, 771)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Crisis_Center_Robbery.ogg"
+    },
+    {
+      "heading": "Missing Person",
+      "paragraphs": [
+        {
+          "text": "Concerned woman reporting missing brother Features CERA, WOMAN. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-jtf-comm-11"
+          ]
+        }
+      ],
+      "location": "Chelsea (649, 1392)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Missing_Person.ogg"
+    },
+    {
+      "heading": "Quitting the LMB",
+      "paragraphs": [
+        {
+          "text": "Female LMB soldier decides to quit Features LMB 1, LMB 2. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-jtf-comm-12"
+          ]
+        }
+      ],
+      "location": "Tenderloin (484, 1604)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Quitting_the_LMB.ogg"
+    },
+    {
+      "heading": "Engine Failure",
+      "paragraphs": [
+        {
+          "text": "Coast Guard talking about some findings Features JTF 1, JTF 2. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-jtf-comm-13"
+          ]
+        }
+      ],
+      "location": "Tenderloin (476, 2058)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Engine_Failure.ogg"
+    },
+    {
+      "heading": "Savages",
+      "paragraphs": [
+        {
+          "text": "Two soldiers discussing LMB and human cruelty Features JTF, LMB. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-jtf-comm-14"
+          ]
+        }
+      ],
+      "location": "Tenderloin (660, 1700)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Savages.ogg"
+    },
+    {
+      "heading": "Hospital Beds",
+      "paragraphs": [
+        {
+          "text": "Doctor talks about current state of hospital beds Features MAN, WOMAN. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-jtf-comm-15"
+          ]
+        }
+      ],
+      "location": "Clinton (2164, 1043)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Hospital_Beds.ogg"
+    },
+    {
+      "heading": "Collapse",
+      "paragraphs": [
+        {
+          "text": "911 call about a friend who's passed out Features 911 OPERATOR, WOMAN. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-jtf-comm-16"
+          ]
+        }
+      ],
+      "location": "Hell's Kitchen (1765, 947)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Collapse.ogg"
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Phone_Recordings/JTF. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Phone_Recordings/JTF",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions"
+    ]
+  }
+}

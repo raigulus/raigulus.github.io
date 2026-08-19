@@ -1,0 +1,394 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-manhunt-crossroads",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Manhunt - Crossroads",
+  "slug": "td2-comms-manhunt-crossroads",
+  "section": "collectibles",
+  "summary": "A collection of 14 comms from The Division universe, scraped from the Fandom wiki hub page. 14 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 14,
+  "claims": [
+    {
+      "id": "td2-comms-manhunt-crossroads-comm-1",
+      "text": "Comm \"The Wingman\": Manny debriefs with Schaeffer about Bridgette",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-crossroads"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-crossroads-comm-2",
+      "text": "Comm \"The Code Name\": Manny debriefs with Schaeffer",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-crossroads"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-crossroads-comm-3",
+      "text": "Comm \"The Pain\": Manny debriefs with Schaeffer",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-crossroads"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-crossroads-comm-4",
+      "text": "Comm \"The Bunker\": Manny debriefs with Schaeffer about the bunkers",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-crossroads"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-crossroads-comm-5",
+      "text": "Comm \"The Plan\": Manny debriefs with Schaeffer about the clearance",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-crossroads"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-crossroads-comm-6",
+      "text": "Comm \"The Recruiter\": Manny debriefs with Schaeffer about Agent Johnson",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-crossroads"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-crossroads-comm-7",
+      "text": "Comm \"The Traitor\": Manny debriefs with Schaeffer about Andrew Ellis",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-crossroads"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-crossroads-comm-8",
+      "text": "Comm \"The Cyclops\": Manny debriefs with Schaeffer about code names",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-crossroads"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-crossroads-comm-9",
+      "text": "Comm \"The Heiress\": Manny debriefs with Schaeffer about Mackenzie Meret",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-crossroads"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-crossroads-comm-10",
+      "text": "Comm \"The Diamond\": Manny debriefs with Schaeffer about Diamond",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-crossroads"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-crossroads-comm-11",
+      "text": "Comm \"The Plant\": Manny debriefs with Schaeffer about Doctor Summers",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-crossroads"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-crossroads-comm-12",
+      "text": "Comm \"The Manager\": Manny debriefs with Schaeffer about The Manager",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-crossroads"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-crossroads-comm-13",
+      "text": "Comm \"Cats\": Keiko needs to vent about the Manager and goes on a rant about him",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-crossroads"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-crossroads-comm-14",
+      "text": "Comm \"Declaration of Will\": Being fearful for his life, the Manager",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-crossroads"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The Wingman",
+      "paragraphs": [
+        {
+          "text": "Manny debriefs with Schaeffer about Bridgette Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-1"
+          ]
+        },
+        {
+          "text": "Manny debriefs with Schaeffer about Bridgette Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Crossroads_-_The_Wingman.ogg"
+    },
+    {
+      "heading": "The Code Name",
+      "paragraphs": [
+        {
+          "text": "Manny debriefs with Schaeffer Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-2"
+          ]
+        },
+        {
+          "text": "Manny debriefs with Schaeffer Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Crossroads_-_The_Code_Name.ogg"
+    },
+    {
+      "heading": "The Pain",
+      "paragraphs": [
+        {
+          "text": "Manny debriefs with Schaeffer Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Crossroads_-_The_Pain.ogg"
+    },
+    {
+      "heading": "The Bunker",
+      "paragraphs": [
+        {
+          "text": "Manny debriefs with Schaeffer about the bunkers Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Crossroads_-_The_Bunker.ogg"
+    },
+    {
+      "heading": "The Plan",
+      "paragraphs": [
+        {
+          "text": "Manny debriefs with Schaeffer about the clearance Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-5"
+          ]
+        },
+        {
+          "text": "Manny debriefs with Schaeffer about the clearance Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Crossroads_-_The_Plan.ogg"
+    },
+    {
+      "heading": "The Recruiter",
+      "paragraphs": [
+        {
+          "text": "Manny debriefs with Schaeffer about Agent Johnson Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-6"
+          ]
+        },
+        {
+          "text": "Manny debriefs with Schaeffer about Agent Johnson Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Crossroads_-_The_Recruiter.ogg"
+    },
+    {
+      "heading": "The Traitor",
+      "paragraphs": [
+        {
+          "text": "Manny debriefs with Schaeffer about Andrew Ellis Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-7"
+          ]
+        },
+        {
+          "text": "Manny debriefs with Schaeffer about Andrew Ellis Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Crossroads_-_The_Traitor.ogg"
+    },
+    {
+      "heading": "The Cyclops",
+      "paragraphs": [
+        {
+          "text": "Manny debriefs with Schaeffer about code names Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Crossroads_-_The_Cyclops.ogg"
+    },
+    {
+      "heading": "The Heiress",
+      "paragraphs": [
+        {
+          "text": "Manny debriefs with Schaeffer about Mackenzie Meret Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-9"
+          ]
+        },
+        {
+          "text": "Manny debriefs with Schaeffer about Mackenzie Meret Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-9"
+          ]
+        },
+        {
+          "text": "Manny debriefs with Schaeffer about Mackenzie Meret Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-9"
+          ]
+        },
+        {
+          "text": "Manny debriefs with Schaeffer about Mackenzie Meret Features BARDON SCHAEFFER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Crossroads_-_The_Heiress.ogg"
+    },
+    {
+      "heading": "The Diamond",
+      "paragraphs": [
+        {
+          "text": "Manny debriefs with Schaeffer about Diamond Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-10"
+          ]
+        },
+        {
+          "text": "Manny debriefs with Schaeffer about Diamond Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Crossroads_-_The_Diamond.ogg"
+    },
+    {
+      "heading": "The Plant",
+      "paragraphs": [
+        {
+          "text": "Manny debriefs with Schaeffer about Doctor Summers Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-11"
+          ]
+        },
+        {
+          "text": "Manny debriefs with Schaeffer about Doctor Summers Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-11"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Crossroads_-_The_Plant.ogg"
+    },
+    {
+      "heading": "The Manager",
+      "paragraphs": [
+        {
+          "text": "Manny debriefs with Schaeffer about The Manager Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-12"
+          ]
+        },
+        {
+          "text": "Manny debriefs with Schaeffer about The Manager Features BARDON SCHAEFFER, MANNY ORTEGA. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-12"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Crossroads_-_The_Manager.ogg"
+    },
+    {
+      "heading": "Cats",
+      "paragraphs": [
+        {
+          "text": "Keiko needs to vent about the Manager and goes on a rant about him Features KEIKO NAKAMA. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-13"
+          ]
+        },
+        {
+          "text": "I hate his sweaters. Cat-sweaters. Every single one has a goddamn cat on 'em. And every time he smiles at me and says \"good morning\" or \"oh, look at that sunset over the river\" or \"mmh, this mocha is perfect\" or \"oh my god, have you seen Kitty Fluffy Kiss Kiss?\". Just shut up! I just wanna tear off his perfect mustache, shoot his cat and dump 'em both in the Potomac. Who'd miss them? Who'd care? Then again, I'm the only person this moron's got in his life...\nThen all of this is over, maybe I should give them both a merciful death. Just a \"hey, go grab me that thing over there on the table\" and BLAMO! Yeah, maybe I'll just do that...",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-13"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Crossroads_-_Cats.ogg"
+    },
+    {
+      "heading": "Declaration of Will",
+      "paragraphs": [
+        {
+          "text": "Being fearful for his life, the Manager Features THE MANAGER, https. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-14"
+          ]
+        },
+        {
+          "text": "I know. You've often told me how you'd like to see what a high velocity, large caliber bullet would do to her, but I know there's love in you as well. She will only require daily cat food. If in a pinch, every second day will also do. Pets. Not bullets - pets. She likes to be pet. Softly. Kindly. If not daily, if not weekly, then monthly. Or bi-monthly if I knew you well enough. Anyway, I trust you to respect my last wish. Thanks, Keiko.",
+          "claim_ids": [
+            "td2-comms-manhunt-crossroads-comm-14"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-andrew-ellis",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Crossroads. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Crossroads",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

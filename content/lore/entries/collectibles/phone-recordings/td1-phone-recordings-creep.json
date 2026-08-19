@@ -1,0 +1,94 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td1-phone-recordings-creep",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD1 Phone Recordings: Creep",
+  "slug": "td1-phone-recordings-creep",
+  "section": "collectibles",
+  "summary": "A collection of 3 phone recordings from The Division universe, scraped from the Fandom wiki hub page. 3 entries include full audio transcripts; 3 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "phone-recordings",
+  "total_entries": 3,
+  "claims": [
+    {
+      "id": "td1-phone-recordings-creep-comm-1",
+      "text": "Comm \"Phone Harassment 1\": Woman getting harassed by anonymous caller (Location: Hudson Yards (1354, 668))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-creep"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-creep-comm-2",
+      "text": "Comm \"Phone Harassment 2\": Woman getting harassed by anonymous caller (Location: Hudson Yards (1360, 952))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-creep"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-creep-comm-3",
+      "text": "Comm \"Phone Harassment 3\": Silvia returns the call (Location: Pennsylvania Plaza (824, 1341))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-creep"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Phone Harassment 1",
+      "paragraphs": [
+        {
+          "text": "Woman getting harassed by anonymous caller Features RICK, SILVIA. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-creep-comm-1"
+          ]
+        }
+      ],
+      "location": "Hudson Yards (1354, 668)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Phone_Harrasment_2.ogg"
+    },
+    {
+      "heading": "Phone Harassment 2",
+      "paragraphs": [
+        {
+          "text": "Woman getting harassed by anonymous caller Features RICK, SILVIA, WOMAN. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-creep-comm-2"
+          ]
+        }
+      ],
+      "location": "Hudson Yards (1360, 952)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Phone_Harrasment_3.ogg"
+    },
+    {
+      "heading": "Phone Harassment 3",
+      "paragraphs": [
+        {
+          "text": "Silvia returns the call Features RICK, SILVIA. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-creep-comm-3"
+          ]
+        }
+      ],
+      "location": "Pennsylvania Plaza (824, 1341)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Phone_Harrasment_1.ogg"
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Phone_Recordings/Creep. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Phone_Recordings/Creep",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions"
+    ]
+  }
+}

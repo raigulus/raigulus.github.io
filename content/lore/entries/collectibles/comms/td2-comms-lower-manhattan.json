@@ -1,0 +1,343 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-lower-manhattan",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Lower Manhattan",
+  "slug": "td2-comms-lower-manhattan",
+  "section": "collectibles",
+  "summary": "A collection of 15 comms from The Division universe, scraped from the Fandom wiki hub page. 15 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 15,
+  "claims": [
+    {
+      "id": "td2-comms-lower-manhattan-comm-1",
+      "text": "Comm \"Closed Off\": Manhattan bridge have just closed off, effectively quarantining the island",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-lower-manhattan"
+      ]
+    },
+    {
+      "id": "td2-comms-lower-manhattan-comm-2",
+      "text": "Comm \"Fallen Soldiers\": The family watch Keener searching the bodies of JTF soldiers",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-lower-manhattan"
+      ]
+    },
+    {
+      "id": "td2-comms-lower-manhattan-comm-3",
+      "text": "Comm \"Red Rings\": Mark has suspicious; Keener attempts to allay them",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-lower-manhattan"
+      ]
+    },
+    {
+      "id": "td2-comms-lower-manhattan-comm-4",
+      "text": "Comm \"Overheard Whispering\": Mark and Sarah quietly discuss their suspicions, but are overheard",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-lower-manhattan"
+      ]
+    },
+    {
+      "id": "td2-comms-lower-manhattan-comm-5",
+      "text": "Comm \"Promised Land\": Keener points Mark and Sarah in the direction of the promised land - New Jersey",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-lower-manhattan"
+      ]
+    },
+    {
+      "id": "td2-comms-lower-manhattan-comm-6",
+      "text": "Comm \"Night Crossing\": Mark and Sarah prepare to row across the Hudson River to leave Manhattan",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-lower-manhattan"
+      ]
+    },
+    {
+      "id": "td2-comms-lower-manhattan-comm-7",
+      "text": "Comm \"Hard Right\": Keener explains his motivation for helping Mark and Sarah",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-lower-manhattan"
+      ]
+    },
+    {
+      "id": "td2-comms-lower-manhattan-comm-8",
+      "text": "Comm \"New Home\": Al finds Mark a place to stay in the West Village",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-lower-manhattan"
+      ]
+    },
+    {
+      "id": "td2-comms-lower-manhattan-comm-9",
+      "text": "Comm \"Trouble Brewing\": Mark and Sarah make their way to a new place to live",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-lower-manhattan"
+      ]
+    },
+    {
+      "id": "td2-comms-lower-manhattan-comm-10",
+      "text": "Comm \"Terrible Violence\": Mark and Sarah arrive at their new home, only to find it site of violent conflict",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-lower-manhattan"
+      ]
+    },
+    {
+      "id": "td2-comms-lower-manhattan-comm-11",
+      "text": "Comm \"The Stranger\": A stranger confronts Satah, and Mark is captured",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-lower-manhattan"
+      ]
+    },
+    {
+      "id": "td2-comms-lower-manhattan-comm-12",
+      "text": "Comm \"Who Cares\": The stranger gloats about his crimes, but another mystery man confronts him",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-lower-manhattan"
+      ]
+    },
+    {
+      "id": "td2-comms-lower-manhattan-comm-13",
+      "text": "Comm \"Somewhere Safe\": Keener offers to assist the family in finding a safer location to stay",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-lower-manhattan"
+      ]
+    },
+    {
+      "id": "td2-comms-lower-manhattan-comm-14",
+      "text": "Comm \"Decent People\": Keener insists on helping the family",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-lower-manhattan"
+      ]
+    },
+    {
+      "id": "td2-comms-lower-manhattan-comm-15",
+      "text": "Comm \"Combat Planning\": Keener's sidekick recons a hostile position. Keener likes the odds",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-lower-manhattan"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Closed Off",
+      "paragraphs": [
+        {
+          "text": "Manhattan bridge have just closed off, effectively quarantining the island Features AL, MARK. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-lower-manhattan-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Lower_Manhattan_Comms_-_Closed_Off.ogg"
+    },
+    {
+      "heading": "Fallen Soldiers",
+      "paragraphs": [
+        {
+          "text": "The family watch Keener searching the bodies of JTF soldiers Features AARON KEENER, MARK, SARAH. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-lower-manhattan-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Lower_Manhattan_Comms_-_Fallen_Soldiers.ogg"
+    },
+    {
+      "heading": "Red Rings",
+      "paragraphs": [
+        {
+          "text": "Mark has suspicious; Keener attempts to allay them Features AARON KEENER, MARK. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-lower-manhattan-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Lower_Manhattan_Comms_-_Red_Rings.ogg"
+    },
+    {
+      "heading": "Overheard Whispering",
+      "paragraphs": [
+        {
+          "text": "Mark and Sarah quietly discuss their suspicions, but are overheard Features AARON KEENER, MARK, SARAH. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-lower-manhattan-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Lower_Manhattan_Comms_-_Overheard_Whispering.ogg"
+    },
+    {
+      "heading": "Promised Land",
+      "paragraphs": [
+        {
+          "text": "Keener points Mark and Sarah in the direction of the promised land - New Jersey Features AARON KEENER, MARK, SARAH. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-lower-manhattan-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Lower_Manhattan_Comms_-_Promised_Land.ogg"
+    },
+    {
+      "heading": "Night Crossing",
+      "paragraphs": [
+        {
+          "text": "Mark and Sarah prepare to row across the Hudson River to leave Manhattan Features AARON KEENER, MARK, SARAH. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-lower-manhattan-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Lower_Manhattan_Comms_-_Night_Crossing.ogg"
+    },
+    {
+      "heading": "Hard Right",
+      "paragraphs": [
+        {
+          "text": "Keener explains his motivation for helping Mark and Sarah Features AARON KEENER, UNKNOWN SPEAKER. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-lower-manhattan-comm-7"
+          ]
+        },
+        {
+          "text": "Keener explains his motivation for helping Mark and Sarah Features AARON KEENER, UNKNOWN SPEAKER. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-lower-manhattan-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Lower_Manhattan_Comms_-_Hard_Right.ogg"
+    },
+    {
+      "heading": "New Home",
+      "paragraphs": [
+        {
+          "text": "Al finds Mark a place to stay in the West Village Features AL, MARK. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-lower-manhattan-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Lower_Manhattan_Comms_-_New_Home.ogg"
+    },
+    {
+      "heading": "Trouble Brewing",
+      "paragraphs": [
+        {
+          "text": "Mark and Sarah make their way to a new place to live Features MARK, SARAH. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-lower-manhattan-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Lower_Manhattan_Comms_-_Trouble_Brewing.ogg"
+    },
+    {
+      "heading": "Terrible Violence",
+      "paragraphs": [
+        {
+          "text": "Mark and Sarah arrive at their new home, only to find it site of violent conflict Features MARK, SARAH. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-lower-manhattan-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Lower_Manhattan_Comms_-_Terrible_Violence.ogg"
+    },
+    {
+      "heading": "The Stranger",
+      "paragraphs": [
+        {
+          "text": "A stranger confronts Satah, and Mark is captured Features MARK, SARAH, STRANGER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-lower-manhattan-comm-11"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Lower_Manhattan_Comms_-_The_Stranger.ogg"
+    },
+    {
+      "heading": "Who Cares",
+      "paragraphs": [
+        {
+          "text": "The stranger gloats about his crimes, but another mystery man confronts him Features multiple speakers including AARON KEENER, MARK, STRANGER. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-lower-manhattan-comm-12"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Lower_Manhattan_Comms_-_Who_Cares.ogg"
+    },
+    {
+      "heading": "Somewhere Safe",
+      "paragraphs": [
+        {
+          "text": "Keener offers to assist the family in finding a safer location to stay Features multiple speakers including AARON KEENER, MARK, SARAH. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-lower-manhattan-comm-13"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Lower_Manhattan_Comms_-_Somewhere_Safe.ogg"
+    },
+    {
+      "heading": "Decent People",
+      "paragraphs": [
+        {
+          "text": "Keener insists on helping the family Features AARON KEENER, UNKNOWN SPEAKER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-lower-manhattan-comm-14"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Lower_Manhattan_Comms_-_Decent_People.ogg"
+    },
+    {
+      "heading": "Combat Planning",
+      "paragraphs": [
+        {
+          "text": "Keener's sidekick recons a hostile position. Keener likes the odds Features AARON KEENER, MARK, UNKNOWN SPEAKER. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-lower-manhattan-comm-15"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Lower_Manhattan_Comms_-_Combat_Planning.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Lower_Manhattan. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Lower_Manhattan",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

@@ -1,0 +1,573 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-manhunt-vanguard",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Manhunt - Vanguard",
+  "slug": "td2-comms-manhunt-vanguard",
+  "section": "collectibles",
+  "summary": "A collection of 21 comms from The Division universe, scraped from the Fandom wiki hub page. 21 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 21,
+  "claims": [
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-1",
+      "text": "Comm \"Parnell\": A civilian is rescued by Rogue Agent Theo Parnell",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-2",
+      "text": "Comm \"Keener\": Paul Rhodes and Roy Benitez discuss Aaron Keener with Mackenzie Meret",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-3",
+      "text": "Comm \"Dragov\": A civilian is rescued by Rogue Agents Theo Parnell and James Dragov",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-4",
+      "text": "Comm \"Connections\": Aaron Keener is introduced to Bridgette Douglas",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-5",
+      "text": "Comm \"Conley\": A civilian is rescued by Rogue Agents Aaron Keener and Vivian Conley",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-6",
+      "text": "Comm \"Kajika\": A civilian is relocated by Rogue Agents Aaron Keener and Javier Kajika",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-7",
+      "text": "Comm \"Benefit\": Aaron Keener meets Mackenzie Meret at a benefit for the Brooklyn free clinic",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-8",
+      "text": "Comm \"Offer\": Aaron Keener makes Mackenzie Meret an offer she can ref",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-9",
+      "text": "Comm \"Bracelets\": Mackenzie Meret shows off the bracelet she made for Bridgette Douglas",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-10",
+      "text": "Comm \"Code Name\": An agent agrees to a code name for their clandestine mission",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-11",
+      "text": "Comm \"Breakfast\": In the wake of the attack on City Hall, two agents get to know each other over breakfast",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-12",
+      "text": "Comm \"Lunch\": After taking out Rogue Agent Javier Kajika, two agents discuss the mission over lunch",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-13",
+      "text": "Comm \"The Plan\": Keener briefs the new recruit on the plan",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-14",
+      "text": "Comm \"The Fallout\": Keener and the new recruit reach a new agreement",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-15",
+      "text": "Comm \"The Update\": Keener briefs the new recruit about a new weapon in their armory",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-16",
+      "text": "Comm \"Drinks\": After taking out Rogue Agent Theo Parnell, two agents discuss the mission over drinks",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-17",
+      "text": "Comm \"Invitation\": The Agent receives an invitation",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-18",
+      "text": "Comm \"Dinner\": After taking out Rogue Agent Vivian Conley, two agents discuss the mission over dinner",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-19",
+      "text": "Comm \"Dessert\": Dessert",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-20",
+      "text": "Comm \"Community\": Mackenzie Meret tells Bridgette Douglas that she's not leaving New York",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-vanguard-comm-21",
+      "text": "Comm \"Ready\": An Agent agrees to work with Keener",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-vanguard"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Parnell",
+      "paragraphs": [
+        {
+          "text": "A civilian is rescued by Rogue Agent Theo Parnell Features AARON KEENER, MARAL MCCARTHY, THEO PARNELL. Contains 15 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-1"
+          ]
+        },
+        {
+          "text": "A civilian is rescued by Rogue Agent Theo Parnell Features AARON KEENER, MARAL MCCARTHY. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_Parnell.ogg"
+    },
+    {
+      "heading": "Keener",
+      "paragraphs": [
+        {
+          "text": "Paul Rhodes and Roy Benitez discuss Aaron Keener with Mackenzie Meret Features MACKENZIE MERET, PAUL RHODES, ROY BENITEZ. Contains 15 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-2"
+          ]
+        },
+        {
+          "text": "Paul Rhodes and Roy Benitez discuss Aaron Keener with Mackenzie Meret Features MACKENZIE MERET, PAUL RHODES, ROY BENITEZ. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-2"
+          ]
+        },
+        {
+          "text": "Paul Rhodes and Roy Benitez discuss Aaron Keener with Mackenzie Meret Features MACKENZIE MERET, ROY BENITEZ. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_Keener.ogg"
+    },
+    {
+      "heading": "Dragov",
+      "paragraphs": [
+        {
+          "text": "A civilian is rescued by Rogue Agents Theo Parnell and James Dragov Features MARAL MCCARTHY, THEO PARNELL. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-3"
+          ]
+        },
+        {
+          "text": "A civilian is rescued by Rogue Agents Theo Parnell and James Dragov Features MARAL MCCARTHY, THEO PARNELL. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_Dragov.ogg"
+    },
+    {
+      "heading": "Connections",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener is introduced to Bridgette Douglas Features AARON KEENER, MACKENZIE MERET, VIPER. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-4"
+          ]
+        },
+        {
+          "text": "Aaron Keener is introduced to Bridgette Douglas Features AARON KEENER, VIPER. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_Connections.ogg"
+    },
+    {
+      "heading": "Conley",
+      "paragraphs": [
+        {
+          "text": "A civilian is rescued by Rogue Agents Aaron Keener and Vivian Conley Features AARON KEENER, RODNEY BISHOP. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_Conley.ogg"
+    },
+    {
+      "heading": "Kajika",
+      "paragraphs": [
+        {
+          "text": "A civilian is relocated by Rogue Agents Aaron Keener and Javier Kajika Features AARON KEENER, RODNEY BISHOP, THEO PARNELL. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-6"
+          ]
+        },
+        {
+          "text": "A civilian is relocated by Rogue Agents Aaron Keener and Javier Kajika Features AARON KEENER, MARAL MCCARTHY, RODNEY BISHOP. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_Kajika.ogg"
+    },
+    {
+      "heading": "Benefit",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener meets Mackenzie Meret at a benefit for the Brooklyn free clinic Features AARON KEENER, MACKENZIE MERET. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_Benefit.ogg"
+    },
+    {
+      "heading": "Offer",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener makes Mackenzie Meret an offer she can ref Features AARON KEENER, MACKENZIE MERET. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_Offer.ogg"
+    },
+    {
+      "heading": "Bracelets",
+      "paragraphs": [
+        {
+          "text": "Mackenzie Meret shows off the bracelet she made for Bridgette Douglas Features AARON KEENER, MACKENZIE MERET, VIPER. Contains 14 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_Bracelets.ogg"
+    },
+    {
+      "heading": "Code Name",
+      "paragraphs": [
+        {
+          "text": "An agent agrees to a code name for their clandestine mission Features AARON KEENER, THEO PARNELL. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_Code_Name.ogg"
+    },
+    {
+      "heading": "Breakfast",
+      "paragraphs": [
+        {
+          "text": "In the wake of the attack on City Hall, two agents get to know each other over breakfast Features AARON KEENER, VIPER. Contains 15 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-11"
+          ]
+        },
+        {
+          "text": "In the wake of the attack on City Hall, two agents get to know each other over breakfast Features AARON KEENER, VIPER. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-11"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_Breakfast.ogg"
+    },
+    {
+      "heading": "Lunch",
+      "paragraphs": [
+        {
+          "text": "After taking out Rogue Agent Javier Kajika, two agents discuss the mission over lunch Features AARON KEENER, VIPER. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-12"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_Lunch.ogg"
+    },
+    {
+      "heading": "The Plan",
+      "paragraphs": [
+        {
+          "text": "Keener briefs the new recruit on the plan Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-13"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_The_Plan.ogg"
+    },
+    {
+      "heading": "The Fallout",
+      "paragraphs": [
+        {
+          "text": "Keener and the new recruit reach a new agreement Features AARON KEENER, VIPER. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-14"
+          ]
+        },
+        {
+          "text": "Keener and the new recruit reach a new agreement Features AARON KEENER, VIPER. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-14"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_The_Fallout.ogg"
+    },
+    {
+      "heading": "The Update",
+      "paragraphs": [
+        {
+          "text": "Keener briefs the new recruit about a new weapon in their armory Features AARON KEENER, VIPER. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-15"
+          ]
+        },
+        {
+          "text": "Keener briefs the new recruit about a new weapon in their armory Features AARON KEENER, VIPER. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-15"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_The_Update.ogg"
+    },
+    {
+      "heading": "Drinks",
+      "paragraphs": [
+        {
+          "text": "After taking out Rogue Agent Theo Parnell, two agents discuss the mission over drinks Features AARON KEENER, THEO PARNELL, VIPER. Contains 15 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-16"
+          ]
+        },
+        {
+          "text": "After taking out Rogue Agent Theo Parnell, two agents discuss the mission over drinks Features AARON KEENER, THEO PARNELL, VIPER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-16"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_Drinks.ogg"
+    },
+    {
+      "heading": "Invitation",
+      "paragraphs": [
+        {
+          "text": "The Agent receives an invitation Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-17"
+          ]
+        },
+        {
+          "text": "We're the same. We're survivors. But you need to ask yourself, who has earned the right to tell you what to do? How many more good people have to die for the brass to survive? How many people have to die so Nat can have her little empire? I know you signed on to \"save what remains\". But sometimes, what remains isn't worth saving, if all it does is kill you faster.\nI know, you... You thought you got me. You saw my body, you felt my corpse, you watched my lips flap through your contact lens and ISAC declare \"agent deceased\". Agent. Deceased. But, uh, the identification was never confirmed. Our little performance was enough to convince the powers that be we were gone, no longer a threat, and Lau was with the Black Tusk, so we could continue with our work.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-17"
+          ]
+        },
+        {
+          "text": "Agent, I know if you're wondering you made the right choice, staying the course. I want to build a bridge between us. Another, uh, safe haven, if you will. And now that Kelso has seen the light, I hope you will too.\nSee you soon.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-17"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_Invitation.ogg"
+    },
+    {
+      "heading": "Dinner",
+      "paragraphs": [
+        {
+          "text": "After taking out Rogue Agent Vivian Conley, two agents discuss the mission over dinner Features AARON KEENER, VIPER. Contains 14 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-18"
+          ]
+        },
+        {
+          "text": "After taking out Rogue Agent Vivian Conley, two agents discuss the mission over dinner Features AARON KEENER, VIPER. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-18"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_Dinner.ogg"
+    },
+    {
+      "heading": "Dessert",
+      "paragraphs": [
+        {
+          "text": "Dessert Features AARON KEENER, VIPER. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-19"
+          ]
+        },
+        {
+          "text": "Dessert Features AARON KEENER, VIPER. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-19"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_Dessert.ogg"
+    },
+    {
+      "heading": "Community",
+      "paragraphs": [
+        {
+          "text": "Mackenzie Meret tells Bridgette Douglas that she's not leaving New York Features MACKENZIE MERET, VIPER. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-20"
+          ]
+        },
+        {
+          "text": "Mackenzie Meret tells Bridgette Douglas that she's not leaving New York Features MACKENZIE MERET, VIPER. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-20"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_Community.ogg"
+    },
+    {
+      "heading": "Ready",
+      "paragraphs": [
+        {
+          "text": "An Agent agrees to work with Keener Features AARON KEENER, THEO PARNELL. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-21"
+          ]
+        },
+        {
+          "text": "An Agent agrees to work with Keener Features AARON KEENER, THEO PARNELL. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-vanguard-comm-21"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Vanguard_-_Ready.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-vivian-conley",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-theo-parnell",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-javier-kajika",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-james-dragov",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Vanguard. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Vanguard",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

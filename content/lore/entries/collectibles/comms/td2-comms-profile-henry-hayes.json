@@ -1,0 +1,224 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-profile-henry-hayes",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Profile - Henry Hayes",
+  "slug": "td2-comms-profile-henry-hayes",
+  "section": "collectibles",
+  "summary": "A collection of 8 comms from The Division universe, scraped from the Fandom wiki hub page. 8 entries include full audio transcripts; 8 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 8,
+  "claims": [
+    {
+      "id": "td2-comms-profile-henry-hayes-comm-1",
+      "text": "Comm \"Stan\": Henry Hayes delivers a eulogy for a fallen member of the Campus (Location: Downtown West (2133, 2007))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-henry-hayes"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-henry-hayes-comm-2",
+      "text": "Comm \"Hiding\": Henry Hayes tries to take a moment for himself (Location: Downtown West (2078, 2008))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-henry-hayes"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-henry-hayes-comm-3",
+      "text": "Comm \"Downside\": Henry Hayes talks to a community member about making repairs to the power grid (Location: Downtown West (2051, 2038))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-henry-hayes"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-henry-hayes-comm-4",
+      "text": "Comm \"Systems\": Henry Hayes settles am argument between two community members over a trench (Location: Downtown West (2036, 2042))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-henry-hayes"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-henry-hayes-comm-5",
+      "text": "Comm \"Overstay\": Henry Hayes stands up to someone who is no longer welcome at the Campus (Location: Downtown West (2041, 2006))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-henry-hayes"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-henry-hayes-comm-6",
+      "text": "Comm \"Thursday\": Henry Hayes confronts a community member who is not straight with him when he fails (Location: Downtown West (2035, 1983))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-henry-hayes"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-henry-hayes-comm-7",
+      "text": "Comm \"All You Could\": Henry Hayes sits vigil over a fallen member of the community (Location: Downtown West (2063, 2000))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-henry-hayes"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-henry-hayes-comm-8",
+      "text": "Comm \"Anniversary\": Henry Hayes consoles a member of the community (Location: Downtown West (2080, 2030))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-henry-hayes"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Stan",
+      "paragraphs": [
+        {
+          "text": "Henry Hayes delivers a eulogy for a fallen member of the Campus Features HENRY HAYES. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-henry-hayes-comm-1"
+          ]
+        }
+      ],
+      "location": "Downtown West (2133, 2007)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Henry_Comms_-_Stan.ogg"
+    },
+    {
+      "heading": "Hiding",
+      "paragraphs": [
+        {
+          "text": "Henry Hayes tries to take a moment for himself Features CAMPUS MEMBER, HENRY HAYES. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-henry-hayes-comm-2"
+          ]
+        }
+      ],
+      "location": "Downtown West (2078, 2008)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Henry_Comms_-_Hiding.ogg"
+    },
+    {
+      "heading": "Downside",
+      "paragraphs": [
+        {
+          "text": "Henry Hayes talks to a community member about making repairs to the power grid Features CAMPUS MEMBER, HENRY HAYES. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-henry-hayes-comm-3"
+          ]
+        },
+        {
+          "text": "Henry Hayes talks to a community member about making repairs to the power grid Features CAMPUS MEMBER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-henry-hayes-comm-3"
+          ]
+        }
+      ],
+      "location": "Downtown West (2051, 2038)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Henry_Comms_-_Downside.ogg"
+    },
+    {
+      "heading": "Systems",
+      "paragraphs": [
+        {
+          "text": "Henry Hayes settles am argument between two community members over a trench Features HENRY HAYES, JANINE, MARK. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-henry-hayes-comm-4"
+          ]
+        },
+        {
+          "text": "Henry Hayes settles am argument between two community members over a trench Features HENRY HAYES, JANINE, MARK. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-henry-hayes-comm-4"
+          ]
+        }
+      ],
+      "location": "Downtown West (2036, 2042)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Henry_Comms_-_Systems.ogg"
+    },
+    {
+      "heading": "Overstay",
+      "paragraphs": [
+        {
+          "text": "Henry Hayes stands up to someone who is no longer welcome at the Campus Features HENRY HAYES, MAN. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-henry-hayes-comm-5"
+          ]
+        }
+      ],
+      "location": "Downtown West (2041, 2006)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Henry_Comms_-_Overstay.ogg"
+    },
+    {
+      "heading": "Thursday",
+      "paragraphs": [
+        {
+          "text": "Henry Hayes confronts a community member who is not straight with him when he fails Features HENRY HAYES, MARK. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-henry-hayes-comm-6"
+          ]
+        },
+        {
+          "text": "Henry Hayes confronts a community member who is not straight with him when he fails Features HENRY HAYES. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-henry-hayes-comm-6"
+          ]
+        }
+      ],
+      "location": "Downtown West (2035, 1983)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Henry_Comms_-_Thursday.ogg"
+    },
+    {
+      "heading": "All You Could",
+      "paragraphs": [
+        {
+          "text": "Henry Hayes sits vigil over a fallen member of the community Features CAMPUS MEMBER, HENRY HAYES. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-henry-hayes-comm-7"
+          ]
+        }
+      ],
+      "location": "Downtown West (2063, 2000)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Henry_Comms_-_All_You_Could.ogg"
+    },
+    {
+      "heading": "Anniversary",
+      "paragraphs": [
+        {
+          "text": "Henry Hayes consoles a member of the community Features CAMPUS MEMBER, HENRY HAYES. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-henry-hayes-comm-8"
+          ]
+        },
+        {
+          "text": "Henry Hayes consoles a member of the community Features CAMPUS MEMBER, HENRY HAYES. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-henry-hayes-comm-8"
+          ]
+        }
+      ],
+      "location": "Downtown West (2080, 2030)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Henry_Comms_-_Anniversary.ogg"
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Profile_-_Henry_Hayes. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Profile_-_Henry_Hayes",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

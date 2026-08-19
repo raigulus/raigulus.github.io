@@ -1,0 +1,221 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-new-york",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: New York",
+  "slug": "td2-comms-new-york",
+  "section": "collectibles",
+  "summary": "A collection of 8 comms from The Division universe, scraped from the Fandom wiki hub page. 8 entries include full audio transcripts; 8 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 8,
+  "claims": [
+    {
+      "id": "td2-comms-new-york-comm-1",
+      "text": "Comm \"Second Wave\": Captain Benitez briefs his team about two agents, recovered from a downed helo, coming to the Base of Operations (Location: West Potomac Park (1070, 2658))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-new-york"
+      ]
+    },
+    {
+      "id": "td2-comms-new-york-comm-2",
+      "text": "Comm \"NYC Crew\": Captain Benitez gives a status report on the Division staff in Manhattan (Location: Downtown West (2154, 2412))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-new-york"
+      ]
+    },
+    {
+      "id": "td2-comms-new-york-comm-3",
+      "text": "Comm \"Update: Cleaners\": Captain Benitez gives a status report on the Cleaners, after their leader Joe Ferro is taken out (Location: Constitution Hall (1372, 2282))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-new-york"
+      ]
+    },
+    {
+      "id": "td2-comms-new-york-comm-4",
+      "text": "Comm \"Update: Virus\": Captain Benitez gives a status report on the current state of Amherst's virus (Location: East Mall (841, 4836))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-new-york"
+      ]
+    },
+    {
+      "id": "td2-comms-new-york-comm-5",
+      "text": "Comm \"Update: Keener\": Captain Benitez gives a status report on Aaron Keener (Location: Judiciary Square (2194, 4663))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-new-york"
+      ]
+    },
+    {
+      "id": "td2-comms-new-york-comm-6",
+      "text": "Comm \"Turning Point\": Captain Benitez considers the death of Bliss and the rise of Keener (Location: Downtown East (1947, 4008))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-new-york"
+      ]
+    },
+    {
+      "id": "td2-comms-new-york-comm-7",
+      "text": "Comm \"Update: LMB\": Captain Benitez gives a status report on the LMB, after their leader Charles Bliss is taken out (Location: West End (2512, 1461))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-new-york"
+      ]
+    },
+    {
+      "id": "td2-comms-new-york-comm-8",
+      "text": "Comm \"Update: Rikers\": Captain Benitez gives a status report on the Rikers, after their leader Larae Barrett is taken out (Location: Downtown West (1902, 2446))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-new-york"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Second Wave",
+      "paragraphs": [
+        {
+          "text": "Captain Benitez briefs his team about two agents, recovered from a downed helo, coming to the Base of Operations Features ROY BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-new-york-comm-1"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (1070, 2658)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_NY_Comms_-_Second_Wave.ogg"
+    },
+    {
+      "heading": "NYC Crew",
+      "paragraphs": [
+        {
+          "text": "Captain Benitez gives a status report on the Division staff in Manhattan Features ROY BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-new-york-comm-2"
+          ]
+        }
+      ],
+      "location": "Downtown West (2154, 2412)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_NY_Comms_-_NYC_Crew.ogg"
+    },
+    {
+      "heading": "Update: Cleaners",
+      "paragraphs": [
+        {
+          "text": "Cleaners\": Captain Benitez gives a status report on the Cleaners, after their leader Joe Ferro is taken out Features ROY BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-new-york-comm-3"
+          ]
+        }
+      ],
+      "location": "Constitution Hall (1372, 2282)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_NY_Comms_-_Update_Cleaners.ogg"
+    },
+    {
+      "heading": "Update: Virus",
+      "paragraphs": [
+        {
+          "text": "Virus\": Captain Benitez gives a status report on the current state of Amherst's virus Features ROY BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-new-york-comm-4"
+          ]
+        }
+      ],
+      "location": "East Mall (841, 4836)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_NY_Comms_-_Update_Virus.ogg"
+    },
+    {
+      "heading": "Update: Keener",
+      "paragraphs": [
+        {
+          "text": "Keener\": Captain Benitez gives a status report on Aaron Keener Features ROY BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-new-york-comm-5"
+          ]
+        }
+      ],
+      "location": "Judiciary Square (2194, 4663)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_NY_Comms_-_Update_Keener.ogg"
+    },
+    {
+      "heading": "Turning Point",
+      "paragraphs": [
+        {
+          "text": "Captain Benitez considers the death of Bliss and the rise of Keener Features ROY BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-new-york-comm-6"
+          ]
+        }
+      ],
+      "location": "Downtown East (1947, 4008)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_NY_Comms_-_Turning_Point.ogg"
+    },
+    {
+      "heading": "Update: LMB",
+      "paragraphs": [
+        {
+          "text": "LMB\": Captain Benitez gives a status report on the LMB, after their leader Charles Bliss is taken out Features ROY BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-new-york-comm-7"
+          ]
+        }
+      ],
+      "location": "West End (2512, 1461)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_NY_Comms_-_Update_LMB.ogg"
+    },
+    {
+      "heading": "Update: Rikers",
+      "paragraphs": [
+        {
+          "text": "Rikers\": Captain Benitez gives a status report on the Rikers, after their leader Larae Barrett is taken out Features ROY BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-new-york-comm-8"
+          ]
+        }
+      ],
+      "location": "Downtown West (1902, 2446)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_NY_Comms_-_Update_Rikers.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-larae-barrett",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-joe-ferro",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-rikers",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-cleaners",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/New_York. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/New_York",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

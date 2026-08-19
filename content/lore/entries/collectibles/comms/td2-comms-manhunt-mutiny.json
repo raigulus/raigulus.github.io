@@ -1,0 +1,345 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-manhunt-mutiny",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Manhunt - Mutiny",
+  "slug": "td2-comms-manhunt-mutiny",
+  "section": "collectibles",
+  "summary": "A collection of 14 comms from The Division universe, scraped from the Fandom wiki hub page. 14 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 14,
+  "claims": [
+    {
+      "id": "td2-comms-manhunt-mutiny-comm-1",
+      "text": "Comm \"Crackdown\": Anderson calls his Lieutenant to question resource allocation",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-mutiny"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-mutiny-comm-2",
+      "text": "Comm \"Reaching Out\": A defector tries to negotiate with some True Sons after a firefight",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-mutiny"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-mutiny-comm-3",
+      "text": "Comm \"The Informant\": Anderson gives a promotion to Major Kernel after he uncovers an assassination plot",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-mutiny"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-mutiny-comm-4",
+      "text": "Comm \"Resource Management\": True Sons defectors try to secure additional resources for Operation Rising Echo",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-mutiny"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-mutiny-comm-5",
+      "text": "Comm \"Groveling\": True Sons soldiers discuss Anderson's lack of transparency about the failed pact with Black Tusk",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-mutiny"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-mutiny-comm-6",
+      "text": "Comm \"Surveillance\": A couple True Sons security guards cycle through surveillance footage",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-mutiny"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-mutiny-comm-7",
+      "text": "Comm \"Waking Up\": xxxxxxxxxxxxxxxxxxx",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-mutiny"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-mutiny-comm-8",
+      "text": "Comm \"Uprising\": A True Sons Lieutenant interrogates a suspected defector about mysterious graffiti calling for an uprising",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-mutiny"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-mutiny-comm-9",
+      "text": "Comm \"Full House\": A group of True Sons raid a building where suspected defectors are holding an ominous meeting",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-mutiny"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-mutiny-comm-10",
+      "text": "Comm \"Assassination Plot\": A group of defectors run through their plan to assassinate Anderson",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-mutiny"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-mutiny-comm-11",
+      "text": "Comm \"Encounter\": Kelso describes an impactful encounter with a True Sons defector",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-mutiny"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-mutiny-comm-12",
+      "text": "Comm \"Last Chance\": A Black Tusk Lieutenant acting on behalf of Nat orders Anderson to pull out of East Mall",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-mutiny"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-mutiny-comm-13",
+      "text": "Comm \"Get Out\": Adkins calls an old flame and warns her about the uprising",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-mutiny"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-mutiny-comm-14",
+      "text": "Comm \"Silence\": Anderson decides to take drastic measures to make a group of captured defectors talk",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-mutiny"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Crackdown",
+      "paragraphs": [
+        {
+          "text": "Anderson calls his Lieutenant to question resource allocation Features GENERAL ANDERSON, TRUE SONS LIEUTENANT. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-mutiny-comm-1"
+          ]
+        },
+        {
+          "text": "Anderson calls his Lieutenant to question resource allocation Features GENERAL ANDERSON, TRUE SONS LIEUTENANT. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-mutiny-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Mutiny_-_Crackdown.ogg"
+    },
+    {
+      "heading": "Reaching Out",
+      "paragraphs": [
+        {
+          "text": "A defector tries to negotiate with some True Sons after a firefight Features multiple speakers including LIEUTENANT ADKINS, TRUE SONS 2, TRUE SONS 3. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-mutiny-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Mutiny_-_Reaching_Out.ogg"
+    },
+    {
+      "heading": "The Informant",
+      "paragraphs": [
+        {
+          "text": "Anderson gives a promotion to Major Kernel after he uncovers an assassination plot Features GENERAL ANDERSON, MAJOR KERNEL. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-mutiny-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Mutiny_-_The_Informant.ogg"
+    },
+    {
+      "heading": "Resource Management",
+      "paragraphs": [
+        {
+          "text": "True Sons defectors try to secure additional resources for Operation Rising Echo Features LIEUTENANT ADKINS, WALLY. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-mutiny-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Mutiny_-_Resource_Management.ogg"
+    },
+    {
+      "heading": "Groveling",
+      "paragraphs": [
+        {
+          "text": "True Sons soldiers discuss Anderson's lack of transparency about the failed pact with Black Tusk Features TRUE SONS 1, TRUE SONS 2. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-mutiny-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Mutiny_-_Groveling.ogg"
+    },
+    {
+      "heading": "Surveillance",
+      "paragraphs": [
+        {
+          "text": "A couple True Sons security guards cycle through surveillance footage Features TRUE SONS 1, TRUE SONS 2. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-mutiny-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Mutiny_-_Surveillance.ogg"
+    },
+    {
+      "heading": "Waking Up",
+      "paragraphs": [
+        {
+          "text": "xxxxxxxxxxxxxxxxxxx Features TRUE SONS 1, TRUE SONS 2. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-mutiny-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Mutiny_-_Waking_Up.ogg"
+    },
+    {
+      "heading": "Uprising",
+      "paragraphs": [
+        {
+          "text": "A True Sons Lieutenant interrogates a suspected defector about mysterious graffiti calling for an uprising Features TRUE SONS LIEUTENANT, TRUE SONS SOLDIER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-mutiny-comm-8"
+          ]
+        },
+        {
+          "text": "A True Sons Lieutenant interrogates a suspected defector about mysterious graffiti calling for an uprising Features TRUE SONS LIEUTENANT, TRUE SONS SOLDIER. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-mutiny-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Mutiny_-_Uprising.ogg"
+    },
+    {
+      "heading": "Full House",
+      "paragraphs": [
+        {
+          "text": "A group of True Sons raid a building where suspected defectors are holding an ominous meeting Features multiple speakers including CIVILIAN 2, CIVILIAN 3, TRUE SONS SOLDIER 4. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-mutiny-comm-9"
+          ]
+        },
+        {
+          "text": "A group of True Sons raid a building where suspected defectors are holding an ominous meeting Features CIVILIAN 3. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-mutiny-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Mutiny_-_Full_House.ogg"
+    },
+    {
+      "heading": "Assassination Plot",
+      "paragraphs": [
+        {
+          "text": "Anderson gives a promotion to Major Kernel after he uncovers an assassination plot Features multiple speakers including LIEUTENANT ADKINS, TRUE SONS DEFECTOR 1, TRUE SONS DEFECTOR 2. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-mutiny-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Mutiny_-_Assasination_Plot.ogg"
+    },
+    {
+      "heading": "Encounter",
+      "paragraphs": [
+        {
+          "text": "Kelso describes an impactful encounter with a True Sons defector Features AGENT KELSO. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-mutiny-comm-11"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Mutiny_-_Encounter.ogg"
+    },
+    {
+      "heading": "Last Chance",
+      "paragraphs": [
+        {
+          "text": "A Black Tusk Lieutenant acting on behalf of Nat orders Anderson to pull out of East Mall Features BLACK TUSK SECURITY, GENERAL ANDERSON. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-mutiny-comm-12"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Mutiny_-_Last_Chance.ogg"
+    },
+    {
+      "heading": "Get Out",
+      "paragraphs": [
+        {
+          "text": "Adkins calls an old flame and warns her about the uprising Features LIEUTENANT ADKINS, TRUE SONS DEFECTOR. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-mutiny-comm-13"
+          ]
+        },
+        {
+          "text": "Adkins calls an old flame and warns her about the uprising Features LIEUTENANT ADKINS. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-mutiny-comm-13"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Mutiny_-_Get_Out.ogg"
+    },
+    {
+      "heading": "Silence",
+      "paragraphs": [
+        {
+          "text": "Anderson decides to take drastic measures to make a group of captured defectors talk Features GENERAL ANDERSON, TRUE SONS CORPORAL. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-mutiny-comm-14"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Mutiny_-_Silence.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "faction-true-sons",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Mutiny. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Mutiny",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

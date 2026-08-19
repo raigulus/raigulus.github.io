@@ -1,0 +1,265 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-profile-antwon-ridgeway",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Profile - Antwon Ridgeway",
+  "slug": "td2-comms-profile-antwon-ridgeway",
+  "section": "collectibles",
+  "summary": "A collection of 10 comms from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 10 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td2-comms-profile-antwon-ridgeway-comm-1",
+      "text": "Comm \"A Belief\": Antwon Ridgeway attends a mandatory session with a psychologist (Location: West Potomac Park (1595, 2135))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-antwon-ridgeway"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-antwon-ridgeway-comm-2",
+      "text": "Comm \"Logistics\": Antwon Ridgeway meets with President Mendez about setting up quarantine measures (Location: East Mall (852, 4181))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-antwon-ridgeway"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-antwon-ridgeway-comm-3",
+      "text": "Comm \"Court Martial\": Antwon Ridgeway defends himself to a court martial panel (Location: East Mall (870, 4224))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-antwon-ridgeway"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-antwon-ridgeway-comm-4",
+      "text": "Comm \"Superior\": Antwon Ridgeway handles a subordinate (Location: East Mall (857, 4319))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-antwon-ridgeway"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-antwon-ridgeway-comm-5",
+      "text": "Comm \"Greatest Ambition\": Corporal Masters liberates Colonel Ridgeway (Location: East Mall (844, 4289))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-antwon-ridgeway"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-antwon-ridgeway-comm-6",
+      "text": "Comm \"Sticking Around\": Antwon Ridgeway talks about where his loyalties lie (Location: West Potomac Park (944, 1595))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-antwon-ridgeway"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-antwon-ridgeway-comm-7",
+      "text": "Comm \"Ground Rules\": Antwon Ridgeway makes it clear what is expected of his new recruits (Location: Capitol Hill (1049, 5187))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-antwon-ridgeway"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-antwon-ridgeway-comm-8",
+      "text": "Comm \"Collateral Damage\": Antwon Ridgeway discusses what really happened that required him to attended mandatory counseling (Location: West Potomac Park (1022, 1591))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-antwon-ridgeway"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-antwon-ridgeway-comm-9",
+      "text": "Comm \"Liquid Courage\": Antwon Ridgeway drinks a bit too much and speaks honestly about what he really thinks of the Division and JTF (Location: Capitol Hill (982, 5191))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-antwon-ridgeway"
+      ]
+    },
+    {
+      "id": "td2-comms-profile-antwon-ridgeway-comm-10",
+      "text": "Comm \"The Cause\": Antwon Ridgeway rallies his troops and reminds them what they are fighting for (Location: Capitol Hill (1042, 5233))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-profile-antwon-ridgeway"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A Belief",
+      "paragraphs": [
+        {
+          "text": "Antwon Ridgeway attends a mandatory session with a psychologist Features ANTWON RIDGEWAY, PSYCHIATRIST. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-antwon-ridgeway-comm-1"
+          ]
+        },
+        {
+          "text": "Antwon Ridgeway attends a mandatory session with a psychologist Features ANTWON RIDGEWAY, PSYCHIATRIST. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-antwon-ridgeway-comm-1"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (1595, 2135)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ridgeway_Comms_-_A_Belief.ogg"
+    },
+    {
+      "heading": "Logistics",
+      "paragraphs": [
+        {
+          "text": "Antwon Ridgeway meets with President Mendez about setting up quarantine measures Features ANTWON RIDGEWAY, VICE PRESIDENT MENDEZ. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-antwon-ridgeway-comm-2"
+          ]
+        },
+        {
+          "text": "Antwon Ridgeway meets with President Mendez about setting up quarantine measures Features ANTWON RIDGEWAY, VICE PRESIDENT MENDEZ. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-antwon-ridgeway-comm-2"
+          ]
+        }
+      ],
+      "location": "East Mall (852, 4181)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ridgeway_Comms_-_Logistics.ogg"
+    },
+    {
+      "heading": "Court Martial",
+      "paragraphs": [
+        {
+          "text": "Antwon Ridgeway defends himself to a court martial panel Features ANTWON RIDGEWAY, GENERAL. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-antwon-ridgeway-comm-3"
+          ]
+        },
+        {
+          "text": "Antwon Ridgeway defends himself to a court martial panel Features ANTWON RIDGEWAY. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-antwon-ridgeway-comm-3"
+          ]
+        }
+      ],
+      "location": "East Mall (870, 4224)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ridgeway_Comms_-_Court_Martial.ogg"
+    },
+    {
+      "heading": "Superior",
+      "paragraphs": [
+        {
+          "text": "Antwon Ridgeway handles a subordinate Features ANTWON RIDGEWAY, SUBORDINATE. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-antwon-ridgeway-comm-4"
+          ]
+        }
+      ],
+      "location": "East Mall (857, 4319)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ridgeway_Comms_-_Superior.ogg"
+    },
+    {
+      "heading": "Greatest Ambition",
+      "paragraphs": [
+        {
+          "text": "Corporal Masters liberates Colonel Ridgeway Features COLONEL RIDGEWAY, CORPORAL MASTERS. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-antwon-ridgeway-comm-5"
+          ]
+        }
+      ],
+      "location": "East Mall (844, 4289)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ridgeway_Comms_-_Greatest_Ambition.ogg"
+    },
+    {
+      "heading": "Sticking Around",
+      "paragraphs": [
+        {
+          "text": "Antwon Ridgeway talks about where his loyalties lie Features GENERAL RIDGEWAY, STAFF SERGEANT WADE. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-antwon-ridgeway-comm-6"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (944, 1595)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ridgeway_Comms_-_Sticking_Around.ogg"
+    },
+    {
+      "heading": "Ground Rules",
+      "paragraphs": [
+        {
+          "text": "Antwon Ridgeway makes it clear what is expected of his new recruits Features GENERAL RIDGEWAY. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-antwon-ridgeway-comm-7"
+          ]
+        }
+      ],
+      "location": "Capitol Hill (1049, 5187)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ridgeway_Comms_-_Ground_Rules.ogg"
+    },
+    {
+      "heading": "Collateral Damage",
+      "paragraphs": [
+        {
+          "text": "Antwon Ridgeway discusses what really happened that required him to attended mandatory counseling Features GENERAL RIDGEWAY, MAN. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-antwon-ridgeway-comm-8"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (1022, 1591)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ridgeway_Comms_-_Collateral_Damage.ogg"
+    },
+    {
+      "heading": "Liquid Courage",
+      "paragraphs": [
+        {
+          "text": "Antwon Ridgeway drinks a bit too much and speaks honestly about what he really thinks of the Division and JTF Features GENERAL RIDGEWAY. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-antwon-ridgeway-comm-9"
+          ]
+        }
+      ],
+      "location": "Capitol Hill (982, 5191)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ridgeway_Comms_-_Liquid_Courage.ogg"
+    },
+    {
+      "heading": "The Cause",
+      "paragraphs": [
+        {
+          "text": "Antwon Ridgeway rallies his troops and reminds them what they are fighting for Features GENERAL RIDGEWAY. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-profile-antwon-ridgeway-comm-10"
+          ]
+        }
+      ],
+      "location": "Capitol Hill (1042, 5233)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Ridgeway_Comms_-_The_Cause.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "location-capitol-hill",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Profile_-_Antwon_Ridgeway. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Profile_-_Antwon_Ridgeway",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

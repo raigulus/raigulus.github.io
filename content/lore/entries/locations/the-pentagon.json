@@ -16,19 +16,25 @@
       "id": "pentagon-abandoned",
       "text": "The Pentagon is abandoned shortly after the Green Poison outbreak and subsequently damaged by floods and storms.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-pentagon-darpa-2019"]
+      "source_ids": [
+        "ubisoft-pentagon-darpa-2019"
+      ]
     },
     {
       "id": "pentagon-black-tusk-entry",
       "text": "After the facility's lockdown, Black Tusk is the first outside force to enter and places the complex under siege.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-pentagon-darpa-2019"]
+      "source_ids": [
+        "ubisoft-pentagon-darpa-2019"
+      ]
     },
     {
       "id": "pentagon-strategic-assets",
       "text": "The complex contains computational resources, underground DARPA laboratories and strategically valuable assets sought by Black Tusk.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-pentagon-darpa-2019"]
+      "source_ids": [
+        "ubisoft-pentagon-darpa-2019"
+      ]
     }
   ],
   "sections": [
@@ -37,12 +43,21 @@
       "paragraphs": [
         {
           "text": "Episode 2 presents the Pentagon as both a disaster-damaged institutional ruin and a store of technology that could shift the balance between Black Tusk and the Division.",
-          "claim_ids": ["pentagon-abandoned", "pentagon-black-tusk-entry", "pentagon-strategic-assets"]
+          "claim_ids": [
+            "pentagon-abandoned",
+            "pentagon-black-tusk-entry",
+            "pentagon-strategic-assets"
+          ]
         }
       ]
     }
   ],
-  "relations": [],
+  "relations": [
+    {
+      "target_id": "collectible-td2-comms-brenner-s-orders",
+      "relationship": "mentioned-in"
+    }
+  ],
   "verification": {
     "status": "source-reviewed",
     "last_reviewed": "2026-07-19",

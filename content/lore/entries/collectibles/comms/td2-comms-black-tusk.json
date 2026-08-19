@@ -1,0 +1,259 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-black-tusk",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Black Tusk",
+  "slug": "td2-comms-black-tusk",
+  "section": "collectibles",
+  "summary": "A collection of 10 comms from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 10 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td2-comms-black-tusk-comm-1",
+      "text": "Comm \"Puppeteers\": Bardon Schaeffer and his supervisor discuss their roles in \"the new dynasty (Location: Southwest (4784, 689))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-black-tusk"
+      ]
+    },
+    {
+      "id": "td2-comms-black-tusk-comm-2",
+      "text": "Comm \"Secret Service\": Two Secret Service agents tend to President Mendez (Location: Southwest (5043, 720))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-black-tusk"
+      ]
+    },
+    {
+      "id": "td2-comms-black-tusk-comm-3",
+      "text": "Comm \"Taking D.C.\": Bardon Schaeffer's supervisor briefs the team on their mission in D.C. (Location: East Mall (1224, 4522))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-black-tusk"
+      ]
+    },
+    {
+      "id": "td2-comms-black-tusk-comm-4",
+      "text": "Comm \"New Orders\": Bardon Schaeffer gets new orders from his supervisor (Location: West Potomac Park (985, 2318))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-black-tusk"
+      ]
+    },
+    {
+      "id": "td2-comms-black-tusk-comm-5",
+      "text": "Comm \"Paperwork\": Radio communication regarding the treatment of civilians (Location: Downtown West (1931, 2133))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-black-tusk"
+      ]
+    },
+    {
+      "id": "td2-comms-black-tusk-comm-6",
+      "text": "Comm \"SHD Network\": Bardon Schaeffer's unit plans to take out the SHD Network (Location: Federal Triangle (1554, 3154))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-black-tusk"
+      ]
+    },
+    {
+      "id": "td2-comms-black-tusk-comm-7",
+      "text": "Comm \"Antiviral\": Bardon Schaeffer and his supervisor discuss potential broad-spectrum antivirals and their applications (Location: West Potomac Park (1009, 3032))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-black-tusk"
+      ]
+    },
+    {
+      "id": "td2-comms-black-tusk-comm-8",
+      "text": "Comm \"Progress Report\": Bardon Schaeffer gives a progress report on his unit and determines if they are ready to be deployed (Location: West Potomac Park (858, 2720))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-black-tusk"
+      ]
+    },
+    {
+      "id": "td2-comms-black-tusk-comm-9",
+      "text": "Comm \"Tactics\": Bardon Schaeffer's unit discusses tactics for taking out The Division (Location: Downtown East (2431, 3894))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-black-tusk"
+      ]
+    },
+    {
+      "id": "td2-comms-black-tusk-comm-10",
+      "text": "Comm \"D.C. Briefing\": Bardon Schaeffer gets briefed on the hostile situation in D.C. (Location: Southwest (691, 4909))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-black-tusk"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Puppeteers",
+      "paragraphs": [
+        {
+          "text": "Bardon Schaeffer and his supervisor discuss their roles in \"the new dynasty Features BARDON SCHAEFFER, BLACK TUSK COMMANDING OFFICER. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-black-tusk-comm-1"
+          ]
+        },
+        {
+          "text": "Bardon Schaeffer and his supervisor discuss their roles in \"the new dynasty Features BARDON SCHAEFFER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-black-tusk-comm-1"
+          ]
+        }
+      ],
+      "location": "Southwest (4784, 689)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Black_Tusk_Comms_-_Puppeteers.ogg"
+    },
+    {
+      "heading": "Secret Service",
+      "paragraphs": [
+        {
+          "text": "Two Secret Service agents tend to President Mendez Features AGENT JOHNSON, AGENT SMITH. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-black-tusk-comm-2"
+          ]
+        }
+      ],
+      "location": "Southwest (5043, 720)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Black_Tusk_Comms_-_Secret_Service.ogg"
+    },
+    {
+      "heading": "Taking D.C.",
+      "paragraphs": [
+        {
+          "text": "Bardon Schaeffer's supervisor briefs the team on their mission in D.C. Features BLACK TUSK COMMANDING OFFICER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-black-tusk-comm-3"
+          ]
+        }
+      ],
+      "location": "East Mall (1224, 4522)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Black_Tusk_Comms_-_Taking_DC.ogg"
+    },
+    {
+      "heading": "New Orders",
+      "paragraphs": [
+        {
+          "text": "Bardon Schaeffer gets new orders from his supervisor Features BARDON SCHAEFFER, UNKNOWN. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-black-tusk-comm-4"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (985, 2318)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Black_Tusk_Comms_-_New_Orders.ogg"
+    },
+    {
+      "heading": "Paperwork",
+      "paragraphs": [
+        {
+          "text": "Radio communication regarding the treatment of civilians Features BLACK TUSK SOLDIER 1, BLACK TUSK SOLDIER 2. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-black-tusk-comm-5"
+          ]
+        }
+      ],
+      "location": "Downtown West (1931, 2133)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Black_Tusk_Comms_-_Paperwork.ogg"
+    },
+    {
+      "heading": "SHD Network",
+      "paragraphs": [
+        {
+          "text": "Bardon Schaeffer's unit plans to take out the SHD Network Features multiple speakers including BARDON SCHAEFFER, JACK BONNEY, PETRUS BRENNER. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-black-tusk-comm-6"
+          ]
+        }
+      ],
+      "location": "Federal Triangle (1554, 3154)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Black_Tusk_Comms_-_SHD_Network.ogg"
+    },
+    {
+      "heading": "Antiviral",
+      "paragraphs": [
+        {
+          "text": "Bardon Schaeffer and his supervisor discuss potential broad-spectrum antivirals and their applications Features BARDON SCHAEFFER, UNKNOWN. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-black-tusk-comm-7"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (1009, 3032)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Black_Tusk_Comms_-_Antiviral.ogg"
+    },
+    {
+      "heading": "Progress Report",
+      "paragraphs": [
+        {
+          "text": "Bardon Schaeffer gives a progress report on his unit and determines if they are ready to be deployed Features BARDON SCHAEFFER, UNKNOWN. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-black-tusk-comm-8"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (858, 2720)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Black_Tusk_Comms_-_Progress_Report.ogg"
+    },
+    {
+      "heading": "Tactics",
+      "paragraphs": [
+        {
+          "text": "Bardon Schaeffer's unit discusses tactics for taking out The Division Features multiple speakers including ELIJAH SUMNER, ELLIS GALVESTON, MILLA RADEK. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-black-tusk-comm-9"
+          ]
+        }
+      ],
+      "location": "Downtown East (2431, 3894)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Black_Tusk_Comms_-_Tactics.ogg"
+    },
+    {
+      "heading": "D.C. Briefing",
+      "paragraphs": [
+        {
+          "text": "Bardon Schaeffer gets briefed on the hostile situation in D.C. Features BARDON SCHAEFFER, ELIJAH SUMNER, PETRUS BRENNER. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-black-tusk-comm-10"
+          ]
+        },
+        {
+          "text": "Bardon Schaeffer gets briefed on the hostile situation in D.C. Features BARDON SCHAEFFER, ELIJAH SUMNER, PETRUS BRENNER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-black-tusk-comm-10"
+          ]
+        }
+      ],
+      "location": "Southwest (691, 4909)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Black_Tusk_Comms_-_DC_Briefing.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Black_Tusk. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Black_Tusk",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td1-phone-recordings-keener-s-confession",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD1 Phone Recordings: Keener's Confession",
+  "slug": "td1-phone-recordings-keener-s-confession",
+  "section": "collectibles",
+  "summary": "A collection of 5 phone recordings from The Division universe, scraped from the Fandom wiki hub page. 5 entries include full audio transcripts; 5 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "phone-recordings",
+  "total_entries": 5,
+  "claims": [
+    {
+      "id": "td1-phone-recordings-keener-s-confession-comm-1",
+      "text": "Comm \"Re-Introduction\": Aaron Keener re-introduces himself (Location: Piers South (2105, 738))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-keeners-confession"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-keener-s-confession-comm-2",
+      "text": "Comm \"Confirmation of Location\": Keener confirms that he has been on the West Side Piers (Location: Piers South (21113, 536))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-keeners-confession"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-keener-s-confession-comm-3",
+      "text": "Comm \"Transition\": More from the mind of Aaron Keener (Location: Piers North (2665, 536))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-keeners-confession"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-keener-s-confession-comm-4",
+      "text": "Comm \"The Escape Plan\": How Keener intends to get off Manhattan (Location: Piers North (2489, 626))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-keeners-confession"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-keener-s-confession-comm-5",
+      "text": "Comm \"Farewell\": A goodbye and an offer (Location: Piers North (2409, 810))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-keeners-confession"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Re-Introduction",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener re-introduces himself Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-keener-s-confession-comm-1"
+          ]
+        }
+      ],
+      "location": "Piers South (2105, 738)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Re-Introduction.ogg"
+    },
+    {
+      "heading": "Confirmation of Location",
+      "paragraphs": [
+        {
+          "text": "Keener confirms that he has been on the West Side Piers Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-keener-s-confession-comm-2"
+          ]
+        }
+      ],
+      "location": "Piers South (21113, 536)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Confirmation_of_Location.ogg"
+    },
+    {
+      "heading": "Transition",
+      "paragraphs": [
+        {
+          "text": "More from the mind of Aaron Keener Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-keener-s-confession-comm-3"
+          ]
+        }
+      ],
+      "location": "Piers North (2665, 536)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Transition.ogg"
+    },
+    {
+      "heading": "The Escape Plan",
+      "paragraphs": [
+        {
+          "text": "How Keener intends to get off Manhattan Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-keener-s-confession-comm-4"
+          ]
+        }
+      ],
+      "location": "Piers North (2489, 626)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Escape_Plan.ogg"
+    },
+    {
+      "heading": "Farewell",
+      "paragraphs": [
+        {
+          "text": "A goodbye and an offer Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-keener-s-confession-comm-5"
+          ]
+        }
+      ],
+      "location": "Piers North (2409, 810)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Farewell.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Phone_Recordings/Keener's_Confession. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Phone_Recordings/Keener's_Confession",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions"
+    ]
+  }
+}

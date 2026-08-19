@@ -1,0 +1,239 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-vivian-conley",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Vivian Conley",
+  "slug": "td2-comms-vivian-conley",
+  "section": "collectibles",
+  "summary": "A collection of 8 comms from The Division universe, scraped from the Fandom wiki hub page. 8 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 8,
+  "claims": [
+    {
+      "id": "td2-comms-vivian-conley-comm-1",
+      "text": "Comm \"Crossing A Line\": Vivian's coworker disagrees with her methods and questions her ethics",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-vivian-conley"
+      ]
+    },
+    {
+      "id": "td2-comms-vivian-conley-comm-2",
+      "text": "Comm \"Vivian's Psych Eval\": Two SHD recruiters discuss the results of Vivian Conley's psychological evaluation",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-vivian-conley"
+      ]
+    },
+    {
+      "id": "td2-comms-vivian-conley-comm-3",
+      "text": "Comm \"In The Dark Zone\": Abandoned First Wave agents; Vivian Conley and Aaron Keener meet in the Dark Zone",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-vivian-conley"
+      ]
+    },
+    {
+      "id": "td2-comms-vivian-conley-comm-4",
+      "text": "Comm \"Found Left For Dead\": Roaming the Dark Zone, a group of Cleaners stumble upon a severely injured agent; Vivian Conley, left for dead and barely alive",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-vivian-conley"
+      ]
+    },
+    {
+      "id": "td2-comms-vivian-conley-comm-5",
+      "text": "Comm \"The Second In Line\": Cleaners discuss who should take over as their leader in case anything would ever happen to Joe Ferro",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-vivian-conley"
+      ]
+    },
+    {
+      "id": "td2-comms-vivian-conley-comm-6",
+      "text": "Comm \"The Start Of A Beautiful Friendship\": Vivian Conley and Aaron Keener meet again and many things have changed since their last encounter",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-vivian-conley"
+      ]
+    },
+    {
+      "id": "td2-comms-vivian-conley-comm-7",
+      "text": "Comm \"Fuel The Fire\": Vivian Conley suggests that the Cleaners start producing their own fuel",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-vivian-conley"
+      ]
+    },
+    {
+      "id": "td2-comms-vivian-conley-comm-8",
+      "text": "Comm \"The Stranded Crew\": Inside the stranded oil tanker, the crew realize that they are being observed by somebody outside",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-vivian-conley"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Crossing A Line",
+      "paragraphs": [
+        {
+          "text": "Vivian's coworker disagrees with her methods and questions her ethics Features CIVILIAN, VIVIAN CONLEY. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-vivian-conley-comm-1"
+          ]
+        },
+        {
+          "text": "Vivian's coworker disagrees with her methods and questions her ethics Features CIVILIAN, VIVIAN CONLEY. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-vivian-conley-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Conley_Comms_-_Crossing_A_Line.ogg"
+    },
+    {
+      "heading": "Vivian's Psych Eval",
+      "paragraphs": [
+        {
+          "text": "Two SHD recruiters discuss the results of Vivian Conley's psychological evaluation Features SHD RECRUITER 1, SHD RECRUITER 2. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-vivian-conley-comm-2"
+          ]
+        },
+        {
+          "text": "Two SHD recruiters discuss the results of Vivian Conley's psychological evaluation Features SHD RECRUITER 1, SHD RECRUITER 2. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-vivian-conley-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Conley_Comms_-_Vivian%27s_Psych_Eval.ogg"
+    },
+    {
+      "heading": "In The Dark Zone",
+      "paragraphs": [
+        {
+          "text": "Abandoned First Wave agents; Vivian Conley and Aaron Keener meet in the Dark Zone Features AARON KEENER, VIVIAN CONLEY. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-vivian-conley-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Conley_Comms_-_In_The_Dark_Zone.ogg"
+    },
+    {
+      "heading": "Found Left For Dead",
+      "paragraphs": [
+        {
+          "text": "Roaming the Dark Zone, a group of Cleaners stumble upon a severely injured agent; Vivian Conley, left for dead and barely alive Features CLEANER 1, CLEANER 2, VIVIAN CONLEY. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-vivian-conley-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Conley_Comms_-_Found_Left_For_Dead.ogg"
+    },
+    {
+      "heading": "The Second In Line",
+      "paragraphs": [
+        {
+          "text": "Cleaners discuss who should take over as their leader in case anything would ever happen to Joe Ferro Features CLEANER 1, CLEANER 2. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-vivian-conley-comm-5"
+          ]
+        },
+        {
+          "text": "Cleaners discuss who should take over as their leader in case anything would ever happen to Joe Ferro Features CLEANER 2. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-vivian-conley-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Conley_Comms_-_The_Second_In_Line.ogg"
+    },
+    {
+      "heading": "The Start Of A Beautiful Friendship",
+      "paragraphs": [
+        {
+          "text": "Vivian Conley and Aaron Keener meet again and many things have changed since their last encounter Features AARON KEENER, VIVIAN CONLEY. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-vivian-conley-comm-6"
+          ]
+        },
+        {
+          "text": "Vivian Conley and Aaron Keener meet again and many things have changed since their last encounter Features AARON KEENER, VIVIAN CONLEY. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-vivian-conley-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Conley_Comms_-_The_Start_Of_A_Beautiful_Friendship.ogg"
+    },
+    {
+      "heading": "Fuel The Fire",
+      "paragraphs": [
+        {
+          "text": "Vivian Conley suggests that the Cleaners start producing their own fuel Features CLEANER, VIVIAN CONLEY. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-vivian-conley-comm-7"
+          ]
+        },
+        {
+          "text": "Vivian Conley suggests that the Cleaners start producing their own fuel Features CLEANER, VIVIAN CONLEY. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-vivian-conley-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Conley_Comms_-_Fuel_The_Fire.ogg"
+    },
+    {
+      "heading": "The Stranded Crew",
+      "paragraphs": [
+        {
+          "text": "Inside the stranded oil tanker, the crew realize that they are being observed by somebody outside Features GRY VESTERBERG, LARS ÅLBORG. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-vivian-conley-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Conley_Comms_-_The_Stranded_Crew.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-vivian-conley",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-joe-ferro",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-cleaners",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Vivian_Conley. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Vivian_Conley",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

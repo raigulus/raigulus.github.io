@@ -1,0 +1,262 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td1-phone-recordings-before-outbreak",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD1 Phone Recordings: Before Outbreak",
+  "slug": "td1-phone-recordings-before-outbreak",
+  "section": "collectibles",
+  "summary": "A collection of 11 phone recordings from The Division universe, scraped from the Fandom wiki hub page. 11 entries include full audio transcripts; 11 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "phone-recordings",
+  "total_entries": 11,
+  "claims": [
+    {
+      "id": "td1-phone-recordings-before-outbreak-comm-1",
+      "text": "Comm \"The Thing\": Two guys chatting about a deal (Location: Chelsea (557, 1052))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-before-outbreak"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-before-outbreak-comm-2",
+      "text": "Comm \"On Fleek\": Two girls chatting about a pop star (Location: Chelsea (469, 1321))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-before-outbreak"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-before-outbreak-comm-3",
+      "text": "Comm \"Wishlist\": Parents talk about Black Friday shopping plans (Location: Hell's Kitchen (1540, 775))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-before-outbreak"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-before-outbreak-comm-4",
+      "text": "Comm \"Clubbing\": Girl tries to convince friend to come out clubbing (Location: Hell's Kitchen (1511, 959))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-before-outbreak"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-before-outbreak-comm-5",
+      "text": "Comm \"I Hate NYC\": Man shares his opinion on the city (Location: Hell's Kitchen (1684, 625))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-before-outbreak"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-before-outbreak-comm-6",
+      "text": "Comm \"Sneeze\": Woman shares a horrible experience (Location: Hell's Kitchen (1603, 785))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-before-outbreak"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-before-outbreak-comm-7",
+      "text": "Comm \"Farmland\": Man reveals he bought a farm (Location: Hell's Kitchen (1688, 799))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-before-outbreak"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-before-outbreak-comm-8",
+      "text": "Comm \"The Killer\": Detective receiving a mysterious phone call (Location: Hell's Kitchen (1775, 774))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-before-outbreak"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-before-outbreak-comm-9",
+      "text": "Comm \"Christmas Menu\": Couple discuss the Christmas menu (Location: Hell's Kitchen (1617, 942))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-before-outbreak"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-before-outbreak-comm-10",
+      "text": "Comm \"Make the News\": Photographer dealing with producer (Location: Clinton (1934, 891))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-before-outbreak"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-before-outbreak-comm-11",
+      "text": "Comm \"Surprise Visit\": Parents call their daughter about surprise visit (Location: Clinton (2099, 790))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-before-outbreak"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The Thing",
+      "paragraphs": [
+        {
+          "text": "Two guys chatting about a deal Features MAN 1, MAN 2. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-before-outbreak-comm-1"
+          ]
+        }
+      ],
+      "location": "Chelsea (557, 1052)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Thing.ogg"
+    },
+    {
+      "heading": "On Fleek",
+      "paragraphs": [
+        {
+          "text": "Two girls chatting about a pop star Features GIRL 1, GIRL 2, WOMAN. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-before-outbreak-comm-2"
+          ]
+        }
+      ],
+      "location": "Chelsea (469, 1321)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:On_Fleek.ogg"
+    },
+    {
+      "heading": "Wishlist",
+      "paragraphs": [
+        {
+          "text": "Parents talk about Black Friday shopping plans Features JANET, MAN. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-before-outbreak-comm-3"
+          ]
+        }
+      ],
+      "location": "Hell's Kitchen (1540, 775)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Wishlist.ogg"
+    },
+    {
+      "heading": "Clubbing",
+      "paragraphs": [
+        {
+          "text": "Girl tries to convince friend to come out clubbing Features WOMAN 1, WOMAN 2. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-before-outbreak-comm-4"
+          ]
+        }
+      ],
+      "location": "Hell's Kitchen (1511, 959)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Clubbing.ogg"
+    },
+    {
+      "heading": "I Hate NYC",
+      "paragraphs": [
+        {
+          "text": "Man shares his opinion on the city Features MAN 1, MAN 2. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-before-outbreak-comm-5"
+          ]
+        }
+      ],
+      "location": "Hell's Kitchen (1684, 625)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:I_Hate_NYC.ogg"
+    },
+    {
+      "heading": "Sneeze",
+      "paragraphs": [
+        {
+          "text": "Woman shares a horrible experience Features WOMAN 1, WOMAN 2. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-before-outbreak-comm-6"
+          ]
+        }
+      ],
+      "location": "Hell's Kitchen (1603, 785)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Sneeze.ogg"
+    },
+    {
+      "heading": "Farmland",
+      "paragraphs": [
+        {
+          "text": "Man reveals he bought a farm Features MAN 1, MAN 2. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-before-outbreak-comm-7"
+          ]
+        }
+      ],
+      "location": "Hell's Kitchen (1688, 799)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Farmland.ogg"
+    },
+    {
+      "heading": "The Killer",
+      "paragraphs": [
+        {
+          "text": "Detective receiving a mysterious phone call Features DETECTIVE, DETECTIVE MERCIER, UNKNOWN. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-before-outbreak-comm-8"
+          ]
+        }
+      ],
+      "location": "Hell's Kitchen (1775, 774)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Killer.ogg"
+    },
+    {
+      "heading": "Christmas Menu",
+      "paragraphs": [
+        {
+          "text": "Couple discuss the Christmas menu Features MAN, WOMAN. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-before-outbreak-comm-9"
+          ]
+        }
+      ],
+      "location": "Hell's Kitchen (1617, 942)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Christmas_Menu.ogg"
+    },
+    {
+      "heading": "Make the News",
+      "paragraphs": [
+        {
+          "text": "Photographer dealing with producer Features MAN, WOMAN. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-before-outbreak-comm-10"
+          ]
+        }
+      ],
+      "location": "Clinton (1934, 891)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Make_the_News.ogg"
+    },
+    {
+      "heading": "Surprise Visit",
+      "paragraphs": [
+        {
+          "text": "Parents call their daughter about surprise visit Features ANSWERING MACHINE, WOMAN. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-before-outbreak-comm-11"
+          ]
+        }
+      ],
+      "location": "Clinton (2099, 790)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Surprise_Visit.ogg"
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Phone_Recordings/Before_Outbreak. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Phone_Recordings/Before_Outbreak",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions"
+    ]
+  }
+}

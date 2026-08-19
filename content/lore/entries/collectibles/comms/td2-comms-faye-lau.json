@@ -1,0 +1,277 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-faye-lau",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Faye Lau",
+  "slug": "td2-comms-faye-lau",
+  "section": "collectibles",
+  "summary": "A collection of 10 comms from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td2-comms-faye-lau-comm-1",
+      "text": "Comm \"Network Down\": Faye discusses the implications of the SHD Network blackout with Benitez",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-faye-lau"
+      ]
+    },
+    {
+      "id": "td2-comms-faye-lau-comm-2",
+      "text": "Comm \"Prisoner Transfer\": Faye and Schaeffer discuss the terms of a deal for the rogue agent she took captive",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-faye-lau"
+      ]
+    },
+    {
+      "id": "td2-comms-faye-lau-comm-3",
+      "text": "Comm \"Rogue Discussion\": Faye imprisons a rogue agent working for the Black Tusk",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-faye-lau"
+      ]
+    },
+    {
+      "id": "td2-comms-faye-lau-comm-4",
+      "text": "Comm \"No Quit\": Faye and her sister Heather discuss the Division",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-faye-lau"
+      ]
+    },
+    {
+      "id": "td2-comms-faye-lau-comm-5",
+      "text": "Comm \"Between Shifts\": The JTF informs Faye Lau of an attack on the Hell's Kitchen settlement",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-faye-lau"
+      ]
+    },
+    {
+      "id": "td2-comms-faye-lau-comm-6",
+      "text": "Comm \"Corporal Punishment\": Faye Lau confronts a Riker involved with the attack on Hell's Kitchen",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-faye-lau"
+      ]
+    },
+    {
+      "id": "td2-comms-faye-lau-comm-7",
+      "text": "Comm \"Liquid Amnesia\": Benitez consoles Faye after her sister's burial",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-faye-lau"
+      ]
+    },
+    {
+      "id": "td2-comms-faye-lau-comm-8",
+      "text": "Comm \"Prisoner Interrogation\": Faye interrogates the rogue agent about Black Tusk and Schaeffer",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-faye-lau"
+      ]
+    },
+    {
+      "id": "td2-comms-faye-lau-comm-9",
+      "text": "Comm \"Combining Forces\": Faye and Benitez argue about trying to combine forces with Rhodes and Haven",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-faye-lau"
+      ]
+    },
+    {
+      "id": "td2-comms-faye-lau-comm-10",
+      "text": "Comm \"Off Mission\": Faye and her prisoner discuss loyalty to the Division",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-faye-lau"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Network Down",
+      "paragraphs": [
+        {
+          "text": "Faye discusses the implications of the SHD Network blackout with Benitez Features FAYE LAU, ROY BENITEZ. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-faye-lau-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Faye_Comms_-_Network_Down.ogg"
+    },
+    {
+      "heading": "Prisoner Transfer",
+      "paragraphs": [
+        {
+          "text": "Faye and Schaeffer discuss the terms of a deal for the rogue agent she took captive Features BARDON SCHAEFFER, FAYE LAU. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-faye-lau-comm-2"
+          ]
+        },
+        {
+          "text": "Faye and Schaeffer discuss the terms of a deal for the rogue agent she took captive Features BARDON SCHAEFFER, FAYE LAU. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-faye-lau-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Faye_Comms_-_Prisoner_Transfer.ogg"
+    },
+    {
+      "heading": "Rogue Discussion",
+      "paragraphs": [
+        {
+          "text": "Faye imprisons a rogue agent working for the Black Tusk Features AGENT COSWALD, FAYE LAU. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-faye-lau-comm-3"
+          ]
+        },
+        {
+          "text": "Faye imprisons a rogue agent working for the Black Tusk Features AGENT COSWALD, FAYE LAU. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-faye-lau-comm-3"
+          ]
+        },
+        {
+          "text": "Faye imprisons a rogue agent working for the Black Tusk Features AGENT COSWALD, FAYE LAU. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-faye-lau-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Faye_Comms_-_Rogue_Discussion.ogg"
+    },
+    {
+      "heading": "No Quit",
+      "paragraphs": [
+        {
+          "text": "Faye and her sister Heather discuss the Division Features FAYE LAU, HEATHER LAU. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-faye-lau-comm-4"
+          ]
+        },
+        {
+          "text": "Faye and her sister Heather discuss the Division Features FAYE LAU. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-faye-lau-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Faye_Comms_-_No_Quit.ogg"
+    },
+    {
+      "heading": "Between Shifts",
+      "paragraphs": [
+        {
+          "text": "The JTF informs Faye Lau of an attack on the Hell's Kitchen settlement Features FAYE LAU, JTF SOLDIER. Contains 14 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-faye-lau-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Faye_Comms_-_Between_Shifts.ogg"
+    },
+    {
+      "heading": "Corporal Punishment",
+      "paragraphs": [
+        {
+          "text": "Faye Lau confronts a Riker involved with the attack on Hell's Kitchen Features FAYE LAU, RIKER. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-faye-lau-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Faye_Comms_-_Corporal_Punishment.ogg"
+    },
+    {
+      "heading": "Liquid Amnesia",
+      "paragraphs": [
+        {
+          "text": "Benitez consoles Faye after her sister's burial Features FAYE LAU, ROY BENITEZ. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-faye-lau-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Faye_Comms_-_Liquid_Amnesia.ogg"
+    },
+    {
+      "heading": "Prisoner Interrogation",
+      "paragraphs": [
+        {
+          "text": "Faye interrogates the rogue agent about Black Tusk and Schaeffer Features AGENT COSWALD, FAYE LAU. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-faye-lau-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Faye_Comms_-_Prisoner_Interrogation.ogg"
+    },
+    {
+      "heading": "Combining Forces",
+      "paragraphs": [
+        {
+          "text": "Faye and Benitez argue about trying to combine forces with Rhodes and Haven Features FAYE LAU, ROY BENITEZ. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-faye-lau-comm-9"
+          ]
+        },
+        {
+          "text": "Faye and Benitez argue about trying to combine forces with Rhodes and Haven Features ROY BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-faye-lau-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Faye_Comms_-_Combining_Forces.ogg"
+    },
+    {
+      "heading": "Off Mission",
+      "paragraphs": [
+        {
+          "text": "Faye and her prisoner discuss loyalty to the Division Features AGENT COSWALD, FAYE LAU. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-faye-lau-comm-10"
+          ]
+        },
+        {
+          "text": "Faye and her prisoner discuss loyalty to the Division Features AGENT COSWALD, FAYE LAU. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-faye-lau-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Faye_Comms_-_Off_Mission.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-faye-lau",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Faye_Lau. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Faye_Lau",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

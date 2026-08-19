@@ -1,0 +1,273 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-james-dragov",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: James Dragov",
+  "slug": "td2-comms-james-dragov",
+  "section": "collectibles",
+  "summary": "A collection of 10 comms from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td2-comms-james-dragov-comm-1",
+      "text": "Comm \"Wealth Corrupts\": Dragov becomes disillusioned with the Division",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-james-dragov"
+      ]
+    },
+    {
+      "id": "td2-comms-james-dragov-comm-2",
+      "text": "Comm \"The Stick\": Keener threatens Dragov if his milestones aren't met",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-james-dragov"
+      ]
+    },
+    {
+      "id": "td2-comms-james-dragov-comm-3",
+      "text": "Comm \"Prison Sentence\": Dragov disobeys an order and goes rogue",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-james-dragov"
+      ]
+    },
+    {
+      "id": "td2-comms-james-dragov-comm-4",
+      "text": "Comm \"Recruitment Drive\": Duchess recruits Dragov to lead the Rikers by a former inmate",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-james-dragov"
+      ]
+    },
+    {
+      "id": "td2-comms-james-dragov-comm-5",
+      "text": "Comm \"Proven Strength\": Dragov solidifies his hold on the Rikers",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-james-dragov"
+      ]
+    },
+    {
+      "id": "td2-comms-james-dragov-comm-6",
+      "text": "Comm \"Family Matters\": Keener approaches Dragov after exposing his violent side",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-james-dragov"
+      ]
+    },
+    {
+      "id": "td2-comms-james-dragov-comm-7",
+      "text": "Comm \"The Fixer\": Dragov discusses Keener's unique needs",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-james-dragov"
+      ]
+    },
+    {
+      "id": "td2-comms-james-dragov-comm-8",
+      "text": "Comm \"Grocery Shopping\": Dragov orders the Rikers to gather supplies for Keener",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-james-dragov"
+      ]
+    },
+    {
+      "id": "td2-comms-james-dragov-comm-9",
+      "text": "Comm \"Charging Bull\": Dragov leads an assault on a Wall Street enclave",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-james-dragov"
+      ]
+    },
+    {
+      "id": "td2-comms-james-dragov-comm-10",
+      "text": "Comm \"Family History\": Dragov lays out the ground rules for his family of Rikers",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-james-dragov"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Wealth Corrupts",
+      "paragraphs": [
+        {
+          "text": "Dragov becomes disillusioned with the Division Features JAMES DRAGOV, ROGUE AGENT. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-james-dragov-comm-1"
+          ]
+        },
+        {
+          "text": "Dragov becomes disillusioned with the Division Features JAMES DRAGOV. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-james-dragov-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Dragov_Comms_-_Wealth_Corrupts.ogg"
+    },
+    {
+      "heading": "The Stick",
+      "paragraphs": [
+        {
+          "text": "Keener threatens Dragov if his milestones aren't met Features AARON KEENER, JAMES DRAGOV. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-james-dragov-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Dragov_Comms_-_The_Stick.ogg"
+    },
+    {
+      "heading": "Prison Sentence",
+      "paragraphs": [
+        {
+          "text": "Dragov disobeys an order and goes rogue Features JAMES DRAGOV, WARDEN O'BRIEN. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-james-dragov-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Dragov_Comms_-_Prison_Sentence.ogg"
+    },
+    {
+      "heading": "Recruitment Drive",
+      "paragraphs": [
+        {
+          "text": "Duchess recruits Dragov to lead the Rikers by a former inmate Features DUCHESS, JAMES DRAGOV. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-james-dragov-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Dragov_Comms_-_Recruitment_Drive.ogg"
+    },
+    {
+      "heading": "Proven Strength",
+      "paragraphs": [
+        {
+          "text": "Dragov solidifies his hold on the Rikers Features JAMES DRAGOV. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-james-dragov-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Dragov_Comms_-_Proven_Strength.ogg"
+    },
+    {
+      "heading": "Family Matters",
+      "paragraphs": [
+        {
+          "text": "Keener approaches Dragov after exposing his violent side Features AARON KEENER, JAMES DRAGOV. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-james-dragov-comm-6"
+          ]
+        },
+        {
+          "text": "Keener approaches Dragov after exposing his violent side Features AARON KEENER, JAMES DRAGOV. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-james-dragov-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Dragov_Comms_-_Family_Matters.ogg"
+    },
+    {
+      "heading": "The Fixer",
+      "paragraphs": [
+        {
+          "text": "Dragov discusses Keener's unique needs Features AARON KEENER, JAMES DRAGOV. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-james-dragov-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Dragov_Comms_-_The_Fixer.ogg"
+    },
+    {
+      "heading": "Grocery Shopping",
+      "paragraphs": [
+        {
+          "text": "Dragov orders the Rikers to gather supplies for Keener Features multiple speakers including DUCHESS, JAMES DRAGOV, RIKER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-james-dragov-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Dragov_Comms_-_Grocery_Shopping.ogg"
+    },
+    {
+      "heading": "Charging Bull",
+      "paragraphs": [
+        {
+          "text": "Dragov leads an assault on a Wall Street enclave Features DUCHESS, HEAVY, JAMES DRAGOV. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-james-dragov-comm-9"
+          ]
+        },
+        {
+          "text": "Dragov leads an assault on a Wall Street enclave Features JAMES DRAGOV. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-james-dragov-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Dragov_Comms_-_Charging_Bull.ogg"
+    },
+    {
+      "heading": "Family History",
+      "paragraphs": [
+        {
+          "text": "Dragov lays out the ground rules for his family of Rikers Features JAMES DRAGOV. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-james-dragov-comm-10"
+          ]
+        },
+        {
+          "text": "I chose the law. And all I saw was a different side of the same coin. Police? Corrupt thugs, taking petty bribes. Division? Hah. Delusional killers of the highest order. The apple doesn't fall far from the tree. You... yeah. You're criminals. I am too. We all are. But you didn't deserve what they did to you. So now, we'll take what we can. It's time to ring in a new era!",
+          "claim_ids": [
+            "td2-comms-james-dragov-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Dragov_Comms_-_Family_History.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-james-dragov",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "mission-wall-street",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-rikers",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/James_Dragov. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/James_Dragov",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

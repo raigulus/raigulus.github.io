@@ -1,0 +1,144 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-btsu-team-9",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: BTSU Team 9",
+  "slug": "td2-comms-btsu-team-9",
+  "section": "collectibles",
+  "summary": "A collection of 5 comms from The Division universe, scraped from the Fandom wiki hub page. 5 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 5,
+  "claims": [
+    {
+      "id": "td2-comms-btsu-team-9-comm-1",
+      "text": "Comm \"BTSU Team 9 - Overview\": Intercepted notes about the formation of an elite new BTSU Kill Squad",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-btsu-team-9"
+      ]
+    },
+    {
+      "id": "td2-comms-btsu-team-9-comm-2",
+      "text": "Comm \"BTSU Team 9 - Colin \"Stitch\" Stachinsky\": Psychological profile of Colin \"Stitch\" Stachinsky, Team Medic",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-btsu-team-9"
+      ]
+    },
+    {
+      "id": "td2-comms-btsu-team-9-comm-3",
+      "text": "Comm \"BTSU Team 9 - Lucy \"Car Bomb\" Jimenez\": Psychological profile of Lucy \"Car Bomb\" Jimenez, Team close-combat Expert",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-btsu-team-9"
+      ]
+    },
+    {
+      "id": "td2-comms-btsu-team-9-comm-4",
+      "text": "Comm \"BTSU Team 9 - Emily \"Countdown\" Zhao\": Psychological profile of Emily \"Countdown\" Zhao, Team Sniper",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-btsu-team-9"
+      ]
+    },
+    {
+      "id": "td2-comms-btsu-team-9-comm-5",
+      "text": "Comm \"BTSU Team 9 - Alvin \"Cleanhands\" Tolliver\": Psychological profile of Alvin \"Cleanhands\" Tolliver, Team drone warfare Expert",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-btsu-team-9"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "BTSU Team 9 - Overview",
+      "paragraphs": [
+        {
+          "text": "Intercepted notes about the formation of an elite new BTSU Kill Squad Features THE DIRECTOR. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-btsu-team-9-comm-1"
+          ]
+        },
+        {
+          "text": "Following are my personnel suggestions for the pilot program, which I've dubbed BTSU Team Nine. On receiving you \"go,\" I can have the team operational within three months, ready to deploy to... well, whatever theater of operations you see fit.",
+          "claim_ids": [
+            "td2-comms-btsu-team-9-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:BTSU_Team_9_-_Overview.ogg"
+    },
+    {
+      "heading": "BTSU Team 9 - Colin \"Stitch\" Stachinsky",
+      "paragraphs": [
+        {
+          "text": "Psychological profile of Colin \"Stitch\" Stachinsky, Team Medic Features THE DIRECTOR. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-btsu-team-9-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:BTSU_Team_9_-_Colin_Stitch_Stachinsky.ogg"
+    },
+    {
+      "heading": "BTSU Team 9 - Lucy \"Car Bomb\" Jimenez",
+      "paragraphs": [
+        {
+          "text": "Psychological profile of Lucy \"Car Bomb\" Jimenez, Team close-combat Expert Features THE DIRECTOR. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-btsu-team-9-comm-3"
+          ]
+        },
+        {
+          "text": "Put a Warhound on the squad and we might even get some tech improvements out of it.",
+          "claim_ids": [
+            "td2-comms-btsu-team-9-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:BTSU_Team_9_-_Lucy_Car_Bomb_Jimenez.ogg"
+    },
+    {
+      "heading": "BTSU Team 9 - Emily \"Countdown\" Zhao",
+      "paragraphs": [
+        {
+          "text": "Psychological profile of Emily \"Countdown\" Zhao, Team Sniper Features THE DIRECTOR. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-btsu-team-9-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:BTSU_Team_9_-_Emily_Countdown_Zero.ogg"
+    },
+    {
+      "heading": "BTSU Team 9 - Alvin \"Cleanhands\" Tolliver",
+      "paragraphs": [
+        {
+          "text": "Psychological profile of Alvin \"Cleanhands\" Tolliver, Team drone warfare Expert Features THE DIRECTOR. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-btsu-team-9-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:BTSU_Team_9_-_Alivn_Clean_Hands_Tolliver.ogg"
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/BTSU_Team_9. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/BTSU_Team_9",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

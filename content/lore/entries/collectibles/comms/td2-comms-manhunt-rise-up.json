@@ -1,0 +1,110 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-manhunt-rise-up",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Manhunt - Rise Up",
+  "slug": "td2-comms-manhunt-rise-up",
+  "section": "collectibles",
+  "summary": "A collection of 1 comms from The Division universe, scraped from the Fandom wiki hub page. 1 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 1,
+  "claims": [
+    {
+      "id": "td2-comms-manhunt-rise-up-comm-1",
+      "text": "Comm \"Comms\"",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-rise-up"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Comms",
+      "paragraphs": [
+        {
+          "text": "Hyenas\nTrue Sons\nOutcasts\nBlack Tusk\nJTF\nDivision\nGovernment\nDark Zone\nContaminated Areas\nDead Drops\nCampus\nCastle\nTheater\nNew York\nLower Manhattan\nConey Island\nProfile: Agent Kelso\nProfile: Antwon Ridgeway\nProfile: Emeline Shaw\nProfile: Henry Hayes\nProfile: Odessa Sawyer\nProfile: President Ellis\nLangley Reports\nPentagon Staff Logs\nBrenner's Orders\nShay\nRoy Benitez\nPaul Rhodes\nAaron Keener\nJames Dragov\nJavier Kajika\nTheo Parnell\nVivian Conley\nFaye Lau\nManhunt: Shadow Tide\nManhunt: Keener's Legacy\nManhunt: Concealed Agenda\nManhunt: End of Watch\nManhunt: Hidden Alliance\nManhunt: Price of Power\nManhunt: Reign of Fire\nManhunt: Broken Wings\nManhunt: Puppeteers\nManhunt: Vanguard\nManhunt: First Rogue\nManhunt: Shades of Red\nManhunt: Burden of Truth\nManhunt: Crossroads\nManhunt: The Pact",
+          "claim_ids": [
+            "td2-comms-manhunt-rise-up-comm-1"
+          ]
+        },
+        {
+          "text": "Manhunt: Mutiny\nManhunt: Rise Up\nIncursion: Paradise Lost\nBrooklyn: Bridge\nBrooklyn: Friendly\nBrooklyn: History\nBrooklyn: Hostiles\nBTSU Team 9\nDESCENT\nTemplate:Comms Manhunt: Rise Up",
+          "claim_ids": [
+            "td2-comms-manhunt-rise-up-comm-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-vivian-conley",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-theo-parnell",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-javier-kajika",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-james-dragov",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-faye-lau",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-emeline-shaw",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "location-lower-manhattan",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "location-coney-island",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-true-sons",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-outcasts",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-hyenas",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Rise_Up. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Rise_Up",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

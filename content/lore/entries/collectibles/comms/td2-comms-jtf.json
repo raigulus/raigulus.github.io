@@ -1,0 +1,229 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-jtf",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: JTF",
+  "slug": "td2-comms-jtf",
+  "section": "collectibles",
+  "summary": "A collection of 8 comms from The Division universe, scraped from the Fandom wiki hub page. 8 entries include full audio transcripts; 8 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 8,
+  "claims": [
+    {
+      "id": "td2-comms-jtf-comm-1",
+      "text": "Comm \"Ortega Deployed\": Manny Ortega's last phone call with his mother, before being deployed (Location: West Potomac Park (1124, 2705))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-jtf"
+      ]
+    },
+    {
+      "id": "td2-comms-jtf-comm-2",
+      "text": "Comm \"New Assignment\": Manny Ortega arrives at a JTF camp and gets a new assignment (Location: West Potomac Park (1232, 2542))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-jtf"
+      ]
+    },
+    {
+      "id": "td2-comms-jtf-comm-3",
+      "text": "Comm \"True Sons Debrief\": Manny Ortega calls over radio, giving offsite leadership an update on the True Sons situation, in early spring (Location: White House (1544, 2889))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-jtf"
+      ]
+    },
+    {
+      "id": "td2-comms-jtf-comm-4",
+      "text": "Comm \"SITREP\": Manny Ortega gives his superior officer an update on the situation in DC, in early summer (Location: White House (1946, 3000))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-jtf"
+      ]
+    },
+    {
+      "id": "td2-comms-jtf-comm-5",
+      "text": "Comm \"Georgetown Patrol\": Two local police officers discuss the current state of the crisis, on their way to check on the CERA post in Georgetown (Location: East Mall (872, 3662))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-jtf"
+      ]
+    },
+    {
+      "id": "td2-comms-jtf-comm-6",
+      "text": "Comm \"Quarantine\": JTF soldiers face resistance as they send infected civilians and personnel to the Roosevelt Island quarantine (Location: Foggy Bottom (2025, 1492))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-jtf"
+      ]
+    },
+    {
+      "id": "td2-comms-jtf-comm-7",
+      "text": "Comm \"Roosevelt Failure\": Candid conversation between senior JTF staff regarding the Roosevelt Island debacle (Location: Foggy Bottom (1454, 1188))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-jtf"
+      ]
+    },
+    {
+      "id": "td2-comms-jtf-comm-8",
+      "text": "Comm \"Line of Succession\": JTF soldiers in the White House react to the death of President Mendez (Location: East Mall (1043, 4184))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-jtf"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Ortega Deployed",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega's last phone call with his mother, before being deployed Features JTF LIEUTENANT, MANNY ORTEGA, MRS. ORTEGA. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-jtf-comm-1"
+          ]
+        },
+        {
+          "text": "Manny Ortega's last phone call with his mother, before being deployed Features MANNY ORTEGA, MRS. ORTEGA. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-jtf-comm-1"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (1124, 2705)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_JTF_Comms_-_Ortega_Deployed.ogg"
+    },
+    {
+      "heading": "New Assignment",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega arrives at a JTF camp and gets a new assignment Features JTF COMMANDER, MANNY ORTEGA. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-jtf-comm-2"
+          ]
+        },
+        {
+          "text": "Manny Ortega arrives at a JTF camp and gets a new assignment Features JTF COMMANDER, MANNY ORTEGA. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-jtf-comm-2"
+          ]
+        }
+      ],
+      "location": "West Potomac Park (1232, 2542)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_JTF_Comms_-_New_Assignment.ogg"
+    },
+    {
+      "heading": "True Sons Debrief",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega calls over radio, giving offsite leadership an update on the True Sons situation, in early spring Features JTF MAJOR, MANNY ORTEGA. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-jtf-comm-3"
+          ]
+        }
+      ],
+      "location": "White House (1544, 2889)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_JTF_Comms_-_True_Sons_Debrief.ogg"
+    },
+    {
+      "heading": "SITREP",
+      "paragraphs": [
+        {
+          "text": "Manny Ortega gives his superior officer an update on the situation in DC, in early summer Features JTF MAJOR, MANNY ORTEGA. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-jtf-comm-4"
+          ]
+        }
+      ],
+      "location": "White House (1946, 3000)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_JTF_Comms_-_SITREP.ogg"
+    },
+    {
+      "heading": "Georgetown Patrol",
+      "paragraphs": [
+        {
+          "text": "Two local police officers discuss the current state of the crisis, on their way to check on the CERA post in Georgetown Features POLICE OFFICER 1, POLICE OFFICER 2. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-jtf-comm-5"
+          ]
+        },
+        {
+          "text": "Two local police officers discuss the current state of the crisis, on their way to check on the CERA post in Georgetown Features POLICE OFFICER 1, POLICE OFFICER 2. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-jtf-comm-5"
+          ]
+        }
+      ],
+      "location": "East Mall (872, 3662)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_JTF_Comms_-_Georgetown_Patrol.ogg"
+    },
+    {
+      "heading": "Quarantine",
+      "paragraphs": [
+        {
+          "text": "JTF soldiers face resistance as they send infected civilians and personnel to the Roosevelt Island quarantine Features multiple speakers including AMY, JTF SOLDIER 1, MOTHER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-jtf-comm-6"
+          ]
+        }
+      ],
+      "location": "Foggy Bottom (2025, 1492)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_JTF_Comms_-_Quarantine.ogg"
+    },
+    {
+      "heading": "Roosevelt Failure",
+      "paragraphs": [
+        {
+          "text": "Candid conversation between senior JTF staff regarding the Roosevelt Island debacle Features JTF CAPTAIN, JTF COMMANDER, JTF MAJOR. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-jtf-comm-7"
+          ]
+        },
+        {
+          "text": "Candid conversation between senior JTF staff regarding the Roosevelt Island debacle Features JTF CAPTAIN, JTF COMMANDER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-jtf-comm-7"
+          ]
+        }
+      ],
+      "location": "Foggy Bottom (1454, 1188)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_JTF_Comms_-_Roosevelt_Failure.ogg"
+    },
+    {
+      "heading": "Line of Succession",
+      "paragraphs": [
+        {
+          "text": "JTF soldiers in the White House react to the death of President Mendez Features JTF SOLDIER 1, JTF SOLDIER 2. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-jtf-comm-8"
+          ]
+        }
+      ],
+      "location": "East Mall (1043, 4184)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_JTF_Comms_-_Line_of_Succession.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "faction-true-sons",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/JTF. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/JTF",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

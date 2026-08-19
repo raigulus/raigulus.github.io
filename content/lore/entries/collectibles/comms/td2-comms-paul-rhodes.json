@@ -1,0 +1,265 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-paul-rhodes",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Paul Rhodes",
+  "slug": "td2-comms-paul-rhodes",
+  "section": "collectibles",
+  "summary": "A collection of 10 comms from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td2-comms-paul-rhodes-comm-1",
+      "text": "Comm \"Take Responsibility\": Rhodes confronts Faye about the corruption of the First Wave",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-paul-rhodes"
+      ]
+    },
+    {
+      "id": "td2-comms-paul-rhodes-comm-2",
+      "text": "Comm \"Aftermath Assessment\": Rhodes assess the hurricane damage and asks if other settlements are alright",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-paul-rhodes"
+      ]
+    },
+    {
+      "id": "td2-comms-paul-rhodes-comm-3",
+      "text": "Comm \"Something New\": Rhodes talks to Benitez about breaking off and starting something new",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-paul-rhodes"
+      ]
+    },
+    {
+      "id": "td2-comms-paul-rhodes-comm-4",
+      "text": "Comm \"You Can't Fire Me, I Quit\": Rhodes resigns from his role as technical advisor at the Base of Operations",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-paul-rhodes"
+      ]
+    },
+    {
+      "id": "td2-comms-paul-rhodes-comm-5",
+      "text": "Comm \"Everyone's Got a Role\": Rhodes holds a pep talk with a small group of former JTF",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-paul-rhodes"
+      ]
+    },
+    {
+      "id": "td2-comms-paul-rhodes-comm-6",
+      "text": "Comm \"Room for Improvement\": Rhodes is met with open arms from the Haven community",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-paul-rhodes"
+      ]
+    },
+    {
+      "id": "td2-comms-paul-rhodes-comm-7",
+      "text": "Comm \"Get Lost\": Rhodes turns away a visiting Division agent",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-paul-rhodes"
+      ]
+    },
+    {
+      "id": "td2-comms-paul-rhodes-comm-8",
+      "text": "Comm \"Rikers Outside\": Rhodes discusses a group of Rikers heading for the perimeter of Haven",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-paul-rhodes"
+      ]
+    },
+    {
+      "id": "td2-comms-paul-rhodes-comm-9",
+      "text": "Comm \"Storm Brewing\": Rhodes and others prepare the settlement for an incoming hurricane",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-paul-rhodes"
+      ]
+    },
+    {
+      "id": "td2-comms-paul-rhodes-comm-10",
+      "text": "Comm \"Storm Preparations\": Rhodes gives another community an idea of what they need to prepare for the storm",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-paul-rhodes"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Take Responsibility",
+      "paragraphs": [
+        {
+          "text": "Rhodes confronts Faye about the corruption of the First Wave Features FAYE LAU, PAUL RHODES. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-paul-rhodes-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Rhodes_Comms_-_Take_Responsibility.ogg"
+    },
+    {
+      "heading": "Aftermath Assessment",
+      "paragraphs": [
+        {
+          "text": "Rhodes assess the hurricane damage and asks if other settlements are alright Features CIVILIAN GUARD, PAUL RHODES. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-paul-rhodes-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Rhodes_Comms_-_Aftermath_Assessment.ogg"
+    },
+    {
+      "heading": "Something New",
+      "paragraphs": [
+        {
+          "text": "Rhodes talks to Benitez about breaking off and starting something new Features PAUL RHODES, ROY BENITEZ. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-paul-rhodes-comm-3"
+          ]
+        },
+        {
+          "text": "Rhodes talks to Benitez about breaking off and starting something new Features PAUL RHODES, ROY BENITEZ. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-paul-rhodes-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Rhodes_Comms_-_Something_New.ogg"
+    },
+    {
+      "heading": "You Can't Fire Me, I Quit",
+      "paragraphs": [
+        {
+          "text": "Rhodes resigns from his role as technical advisor at the Base of Operations Features FAYE LAU, PAUL RHODES. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-paul-rhodes-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Rhodes_Comms_-_You_Can%27t_Fire_Me,_I_Quit.ogg"
+    },
+    {
+      "heading": "Everyone's Got a Role",
+      "paragraphs": [
+        {
+          "text": "Rhodes holds a pep talk with a small group of former JTF Features JTF GUARD, PAUL RHODES. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-paul-rhodes-comm-5"
+          ]
+        },
+        {
+          "text": "Rhodes holds a pep talk with a small group of former JTF Features PAUL RHODES. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-paul-rhodes-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Rhodes_Comms_-_Everyone%27s_Got_a_Role.ogg"
+    },
+    {
+      "heading": "Room for Improvement",
+      "paragraphs": [
+        {
+          "text": "Rhodes is met with open arms from the Haven community Features CIVILIAN GUARD, PAUL RHODES. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-paul-rhodes-comm-6"
+          ]
+        },
+        {
+          "text": "Rhodes is met with open arms from the Haven community Features CIVILIAN GUARD, PAUL RHODES. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-paul-rhodes-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Rhodes_Comms_-_Room_for_Improvement.ogg"
+    },
+    {
+      "heading": "Get Lost",
+      "paragraphs": [
+        {
+          "text": "Rhodes turns away a visiting Division agent Features AGENT BAKER, PAUL RHODES. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-paul-rhodes-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Rhodes_Comms_-_Get_Lost.ogg"
+    },
+    {
+      "heading": "Rikers Outside",
+      "paragraphs": [
+        {
+          "text": "Rhodes discusses a group of Rikers heading for the perimeter of Haven Features CIVILIAN GUARD 1, CIVILIAN GUARD 2, PAUL RHODES. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-paul-rhodes-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Rhodes_Comms_-_Rikers_Outside.ogg"
+    },
+    {
+      "heading": "Storm Brewing",
+      "paragraphs": [
+        {
+          "text": "Rhodes and others prepare the settlement for an incoming hurricane Features CIVILIAN GUARD 1, CIVILIAN GUARD 2, PAUL RHODES. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-paul-rhodes-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Rhodes_Comms_-_Storm_Brewing.ogg"
+    },
+    {
+      "heading": "Storm Preparations",
+      "paragraphs": [
+        {
+          "text": "Rhodes gives another community an idea of what they need to prepare for the storm Features CIVILIAN GUARD, PAUL RHODES. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-paul-rhodes-comm-10"
+          ]
+        },
+        {
+          "text": "Rhodes gives another community an idea of what they need to prepare for the storm Features CIVILIAN GUARD, PAUL RHODES. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-paul-rhodes-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Rhodes_Comms_-_Storm_Preparations.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-faye-lau",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-rikers",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Paul_Rhodes. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Paul_Rhodes",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

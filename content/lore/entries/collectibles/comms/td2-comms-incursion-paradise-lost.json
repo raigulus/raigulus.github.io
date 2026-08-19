@@ -1,0 +1,273 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-incursion-paradise-lost",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Incursion - Paradise Lost",
+  "slug": "td2-comms-incursion-paradise-lost",
+  "section": "collectibles",
+  "summary": "A collection of 10 comms from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td2-comms-incursion-paradise-lost-comm-1",
+      "text": "Comm \"SetUp\": Natalya Sokolova tours the Meret Estate with Mackenzie Meret",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-incursion-paradise-lost"
+      ]
+    },
+    {
+      "id": "td2-comms-incursion-paradise-lost-comm-2",
+      "text": "Comm \"Speakeasy\": Mackenzie Meret invites Natalya Sokolova to a fundraiser",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-incursion-paradise-lost"
+      ]
+    },
+    {
+      "id": "td2-comms-incursion-paradise-lost-comm-3",
+      "text": "Comm \"Confirm\": Natalya Sokolova asks for a favor",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-incursion-paradise-lost"
+      ]
+    },
+    {
+      "id": "td2-comms-incursion-paradise-lost-comm-4",
+      "text": "Comm \"Honeymoon\": Wright approaches Johnson about paying a visit to the Meret Estate",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-incursion-paradise-lost"
+      ]
+    },
+    {
+      "id": "td2-comms-incursion-paradise-lost-comm-5",
+      "text": "Comm \"Outbreak\": Martinez and Johnson decide whether or not to go with Wright",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-incursion-paradise-lost"
+      ]
+    },
+    {
+      "id": "td2-comms-incursion-paradise-lost-comm-6",
+      "text": "Comm \"Brave\": Natalya Sokolova wishes Mackenzie Meret a happy birthday",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-incursion-paradise-lost"
+      ]
+    },
+    {
+      "id": "td2-comms-incursion-paradise-lost-comm-7",
+      "text": "Comm \"Recruitment\": Natalya Sokolova checks in with Wright",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-incursion-paradise-lost"
+      ]
+    },
+    {
+      "id": "td2-comms-incursion-paradise-lost-comm-8",
+      "text": "Comm \"Condolences\": Mackenzie Meret calls Natalya Sokolova to offer her condolences",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-incursion-paradise-lost"
+      ]
+    },
+    {
+      "id": "td2-comms-incursion-paradise-lost-comm-9",
+      "text": "Comm \"Kids\": Martinez and Johnson meet their new \"kids",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-incursion-paradise-lost"
+      ]
+    },
+    {
+      "id": "td2-comms-incursion-paradise-lost-comm-10",
+      "text": "Comm \"Vows\": Martinez and Johnson exchange wedding vows",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-incursion-paradise-lost"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "SetUp",
+      "paragraphs": [
+        {
+          "text": "Natalya Sokolova tours the Meret Estate with Mackenzie Meret Features MACKENZIE MERET, NATALYA SOKOLOVA. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-incursion-paradise-lost-comm-1"
+          ]
+        },
+        {
+          "text": "Natalya Sokolova tours the Meret Estate with Mackenzie Meret Features NATALYA SOKOLOVA. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-incursion-paradise-lost-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Meret_Estate_Comm_-_SetUp.ogg"
+    },
+    {
+      "heading": "Speakeasy",
+      "paragraphs": [
+        {
+          "text": "Mackenzie Meret invites Natalya Sokolova to a fundraiser Features MACKENZIE MERET, NATALYA SOKOLOVA. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-incursion-paradise-lost-comm-2"
+          ]
+        },
+        {
+          "text": "Mackenzie Meret invites Natalya Sokolova to a fundraiser Features MACKENZIE MERET, NATALYA SOKOLOVA. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-incursion-paradise-lost-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Meret_Estate_Comm_-_Speakeasy.ogg"
+    },
+    {
+      "heading": "Confirm",
+      "paragraphs": [
+        {
+          "text": "Natalya Sokolova asks for a favor Features HELLFIRE, NATALYA SOKOLOVA. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-incursion-paradise-lost-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Meret_Estate_Comm_-_Confirm.ogg"
+    },
+    {
+      "heading": "Honeymoon",
+      "paragraphs": [
+        {
+          "text": "Wright approaches Johnson about paying a visit to the Meret Estate Features HELLFIRE, JOHNSON. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-incursion-paradise-lost-comm-4"
+          ]
+        },
+        {
+          "text": "Wright approaches Johnson about paying a visit to the Meret Estate Features HELLFIRE. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-incursion-paradise-lost-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Meret_Estate_Comm_-_Honeymoon.ogg"
+    },
+    {
+      "heading": "Outbreak",
+      "paragraphs": [
+        {
+          "text": "Martinez and Johnson decide whether or not to go with Wright Features JOHNSON, MARTINEZ. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-incursion-paradise-lost-comm-5"
+          ]
+        },
+        {
+          "text": "Martinez and Johnson decide whether or not to go with Wright Features JOHNSON. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-incursion-paradise-lost-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Meret_Estate_Comm_-_Outbreak.ogg"
+    },
+    {
+      "heading": "Brave",
+      "paragraphs": [
+        {
+          "text": "Natalya Sokolova wishes Mackenzie Meret a happy birthday Features MACKENZIE MERET, NATALYA SOKOLOVA. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-incursion-paradise-lost-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Meret_Estate_Comm_-_Brave.ogg"
+    },
+    {
+      "heading": "Recruitment",
+      "paragraphs": [
+        {
+          "text": "Natalya Sokolova checks in with Wright Features HELLFIRE, NATALYA SOKOLOVA. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-incursion-paradise-lost-comm-7"
+          ]
+        },
+        {
+          "text": "Natalya Sokolova checks in with Wright Features HELLFIRE, NATALYA SOKOLOVA. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-incursion-paradise-lost-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Meret_Estate_Comm_-_Recruitment.ogg"
+    },
+    {
+      "heading": "Condolences",
+      "paragraphs": [
+        {
+          "text": "Mackenzie Meret calls Natalya Sokolova to offer her condolences Features MACKENZIE MERET, NATALYA SOKOLOVA. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-incursion-paradise-lost-comm-8"
+          ]
+        },
+        {
+          "text": "Mackenzie Meret calls Natalya Sokolova to offer her condolences Features MACKENZIE MERET, NATALYA SOKOLOVA. Contains 4 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-incursion-paradise-lost-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Meret_Estate_Comm_-_Condolences.ogg"
+    },
+    {
+      "heading": "Kids",
+      "paragraphs": [
+        {
+          "text": "Martinez and Johnson meet their new \"kids Features multiple speakers including HELLFIRE, ISAC, JOHNSON. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-incursion-paradise-lost-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Meret_Estate_Comm_-_Kids.ogg"
+    },
+    {
+      "heading": "Vows",
+      "paragraphs": [
+        {
+          "text": "Martinez and Johnson exchange wedding vows Features JOHNSON, MARTINEZ. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-incursion-paradise-lost-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Meret_Estate_Comm_-_Vows.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-natalya-sokolova",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Incursion_-_Paradise_Lost. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Incursion_-_Paradise_Lost",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

@@ -1,0 +1,413 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-manhunt-burden-of-truth",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Manhunt - Burden of Truth",
+  "slug": "td2-comms-manhunt-burden-of-truth",
+  "section": "collectibles",
+  "summary": "A collection of 14 comms from The Division universe, scraped from the Fandom wiki hub page. 14 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 14,
+  "claims": [
+    {
+      "id": "td2-comms-manhunt-burden-of-truth-comm-1",
+      "text": "Comm \"Honey Pot\": Bridgette Douglas debriefs with Aaron Keener",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-burden-of-truth"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-burden-of-truth-comm-2",
+      "text": "Comm \"Meet Cute\": Bridgette Douglas meets Faye Lau",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-burden-of-truth"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-burden-of-truth-comm-3",
+      "text": "Comm \"Mission\": Bridgette Douglas practices recruiting Faye Lau for a secret mission",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-burden-of-truth"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-burden-of-truth-comm-4",
+      "text": "Comm \"Green Light\": Bridgette Douglas debriefs with Aaron Keener",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-burden-of-truth"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-burden-of-truth-comm-5",
+      "text": "Comm \"Red Light\": Bridgette Douglas and Bardon Schaeffer discuss the mission",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-burden-of-truth"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-burden-of-truth-comm-6",
+      "text": "Comm \"Chickenhawk\": Bridgette Douglas gives a Faye Lau update",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-burden-of-truth"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-burden-of-truth-comm-7",
+      "text": "Comm \"Vanguard\": Bridgette Douglas and Bardon Schaeffer discuss Aaron Keener",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-burden-of-truth"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-burden-of-truth-comm-8",
+      "text": "Comm \"Glasses\": Bridgette Douglas and Bardon Schaeffer discuss Theo Parnell",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-burden-of-truth"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-burden-of-truth-comm-9",
+      "text": "Comm \"Asset\": Bridgette Douglas and Bardon Schaeffer discuss Natalya Sokolova's asset in DC",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-burden-of-truth"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-burden-of-truth-comm-10",
+      "text": "Comm \"Fish Tacos\": Bridgette Douglas and Bardon Schaeffer discuss the Castle",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-burden-of-truth"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-burden-of-truth-comm-11",
+      "text": "Comm \"Recruiter\": Bridgette Douglas and Aaron Keener discuss Brian Johnson",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-burden-of-truth"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-burden-of-truth-comm-12",
+      "text": "Comm \"Nat\": Bridgette Douglas and Aaron Keener discuss Natalya Sokolova",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-burden-of-truth"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-burden-of-truth-comm-13",
+      "text": "Comm \"Watch\": Bridgette Douglas shows Bardon Schaeffer the cuff Mackenzie Meret made for her to hide her watch",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-burden-of-truth"
+      ]
+    },
+    {
+      "id": "td2-comms-manhunt-burden-of-truth-comm-14",
+      "text": "Comm \"The Key\": Bardon Schaeffer agrees to join the Rogues",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-manhunt-burden-of-truth"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Honey Pot",
+      "paragraphs": [
+        {
+          "text": "Bridgette Douglas debriefs with Aaron Keener Features AARON KEENER, VIPER. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-1"
+          ]
+        },
+        {
+          "text": "Bridgette Douglas debriefs with Aaron Keener Features AARON KEENER, VIPER. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Burden_of_Truth_-_Honey_Pot.ogg"
+    },
+    {
+      "heading": "Meet Cute",
+      "paragraphs": [
+        {
+          "text": "Bridgette Douglas meets Faye Lau Features AARON KEENER, FAYE LAU, VIPER. Contains 13 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-2"
+          ]
+        },
+        {
+          "text": "Bridgette Douglas meets Faye Lau Features AARON KEENER, VIPER. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Burden_of_Truth_-_Meet_Cute.ogg"
+    },
+    {
+      "heading": "Mission",
+      "paragraphs": [
+        {
+          "text": "Bridgette Douglas practices recruiting Faye Lau for a secret mission Features AARON KEENER, VIPER. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-3"
+          ]
+        },
+        {
+          "text": "Bridgette Douglas practices recruiting Faye Lau for a secret mission Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Burden_of_Truth_-_Mission.ogg"
+    },
+    {
+      "heading": "Green Light",
+      "paragraphs": [
+        {
+          "text": "Bridgette Douglas debriefs with Aaron Keener Features AARON KEENER, VIPER. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-4"
+          ]
+        },
+        {
+          "text": "Bridgette Douglas debriefs with Aaron Keener Features AARON KEENER, VIPER. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Burden_of_Truth_-_Green_Light.ogg"
+    },
+    {
+      "heading": "Red Light",
+      "paragraphs": [
+        {
+          "text": "Bridgette Douglas and Bardon Schaeffer discuss the mission Features BARDON SCHAEFFER, VIPER. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-5"
+          ]
+        },
+        {
+          "text": "Bridgette Douglas and Bardon Schaeffer discuss the mission Features VIPER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Burden_of_Truth_-_Red_Light.ogg"
+    },
+    {
+      "heading": "Chickenhawk",
+      "paragraphs": [
+        {
+          "text": "Bridgette Douglas gives a Faye Lau update Features AARON KEENER, VIPER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-6"
+          ]
+        },
+        {
+          "text": "Bridgette Douglas gives a Faye Lau update Features VIPER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Burden_of_Truth_-_Chickenhawk.ogg"
+    },
+    {
+      "heading": "Vanguard",
+      "paragraphs": [
+        {
+          "text": "Bridgette Douglas and Bardon Schaeffer discuss Aaron Keener Features BARDON SCHAEFFER, VIPER. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Burden_of_Truth_-_Vanguard.ogg"
+    },
+    {
+      "heading": "Glasses",
+      "paragraphs": [
+        {
+          "text": "Bridgette Douglas and Bardon Schaeffer discuss Theo Parnell Features ANNA, BARDON SCHAEFFER, VIPER. Contains 17 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-8"
+          ]
+        },
+        {
+          "text": "Bridgette Douglas and Bardon Schaeffer discuss Theo Parnell Features BARDON SCHAEFFER, VIPER. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Burden_of_Truth_-_Glasses.ogg"
+    },
+    {
+      "heading": "Asset",
+      "paragraphs": [
+        {
+          "text": "Bridgette Douglas and Bardon Schaeffer discuss Natalya Sokolova's asset in DC Features BARDON SCHAEFFER, VIPER. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Burden_of_Truth_-_Asset.ogg"
+    },
+    {
+      "heading": "Fish Tacos",
+      "paragraphs": [
+        {
+          "text": "Bridgette Douglas and Bardon Schaeffer discuss the Castle Features BARDON SCHAEFFER, VIPER. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Burden_of_Truth_-_Fish_Taco.ogg"
+    },
+    {
+      "heading": "Recruiter",
+      "paragraphs": [
+        {
+          "text": "Bridgette Douglas and Aaron Keener discuss Brian Johnson Features AARON KEENER, VIPER. Contains 12 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-11"
+          ]
+        },
+        {
+          "text": "Bridgette Douglas and Aaron Keener discuss Brian Johnson Features AARON KEENER, VIPER. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-11"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Burden_of_Truth_-_Recruiter.ogg"
+    },
+    {
+      "heading": "Nat",
+      "paragraphs": [
+        {
+          "text": "Bridgette Douglas and Bardon Schaeffer discuss Natalya Sokolova's asset in DC Features AARON KEENER, VIPER. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-12"
+          ]
+        },
+        {
+          "text": "Bridgette Douglas and Bardon Schaeffer discuss Natalya Sokolova's asset in DC Features AARON KEENER, VIPER. Contains 3 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-12"
+          ]
+        },
+        {
+          "text": "Bridgette Douglas and Bardon Schaeffer discuss Natalya Sokolova's asset in DC Features VIPER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-12"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Burden_of_Truth_-_Nat.ogg"
+    },
+    {
+      "heading": "Watch",
+      "paragraphs": [
+        {
+          "text": "Bridgette Douglas shows Bardon Schaeffer the cuff Mackenzie Meret made for her to hide her watch Features BARDON SCHAEFFER, VIPER. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-13"
+          ]
+        },
+        {
+          "text": "Bridgette Douglas shows Bardon Schaeffer the cuff Mackenzie Meret made for her to hide her watch Features BARDON SCHAEFFER, VIPER. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-13"
+          ]
+        },
+        {
+          "text": "Bridgette Douglas shows Bardon Schaeffer the cuff Mackenzie Meret made for her to hide her watch Features VIPER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-13"
+          ]
+        },
+        {
+          "text": "And occasionally making titanium bracelets for her friends with really inappropriate inscriptions.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-13"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Burden_of_Truth_-_Watch.ogg"
+    },
+    {
+      "heading": "The Key",
+      "paragraphs": [
+        {
+          "text": "Bardon Schaeffer agrees to join the Rogues Features AARON KEENER, BARDON SCHAEFFER. Contains 15 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-14"
+          ]
+        },
+        {
+          "text": "Bardon Schaeffer agrees to join the Rogues Features AARON KEENER. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-manhunt-burden-of-truth-comm-14"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Burden_of_Truth_-_The_Key.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-theo-parnell",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-natalya-sokolova",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-faye-lau",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "person-aaron-keener",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Burden_of_Truth. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Manhunt_-_Burden_of_Truth",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

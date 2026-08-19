@@ -1,0 +1,157 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td1-phone-recordings-calling-the-other-side",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD1 Phone Recordings: Calling the Other Side",
+  "slug": "td1-phone-recordings-calling-the-other-side",
+  "section": "collectibles",
+  "summary": "A collection of 6 phone recordings from The Division universe, scraped from the Fandom wiki hub page. 6 entries include full audio transcripts; 6 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "phone-recordings",
+  "total_entries": 6,
+  "claims": [
+    {
+      "id": "td1-phone-recordings-calling-the-other-side-comm-1",
+      "text": "Comm \"Introduction\": Meet Charlotte Clark (Location: Piers South (1858, 507))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-calling-the-other-side"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-calling-the-other-side-comm-2",
+      "text": "Comm \"Personal History\": Who is Charlotte Clark and why is she here (Location: Piers South (2170, 694))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-calling-the-other-side"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-calling-the-other-side-comm-3",
+      "text": "Comm \"The Making of a Rogue\": Clark goes rogue for the first time (Location: Piers South (1874, 663))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-calling-the-other-side"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-calling-the-other-side-comm-4",
+      "text": "Comm \"Setting Up Shop\": How Clark set up her operations and went into business (Location: Piers North (2473, 826))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-calling-the-other-side"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-calling-the-other-side-comm-5",
+      "text": "Comm \"Solo Operations\": Why Clark works solo (Location: Piers North (2638, 481))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-calling-the-other-side"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-calling-the-other-side-comm-6",
+      "text": "Comm \"Current Status\": Clark's current operating status and plans for the future (Location: Piers North (2478, 946))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-calling-the-other-side"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Introduction",
+      "paragraphs": [
+        {
+          "text": "Meet Charlotte Clark Features CHARLOTTE CLARK. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-calling-the-other-side-comm-1"
+          ]
+        }
+      ],
+      "location": "Piers South (1858, 507)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Introduction_Clark.ogg"
+    },
+    {
+      "heading": "Personal History",
+      "paragraphs": [
+        {
+          "text": "Who is Charlotte Clark and why is she here Features CHARLOTTE CLARK. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-calling-the-other-side-comm-2"
+          ]
+        }
+      ],
+      "location": "Piers South (2170, 694)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Personal_History.ogg"
+    },
+    {
+      "heading": "The Making of a Rogue",
+      "paragraphs": [
+        {
+          "text": "Clark goes rogue for the first time Features CHARLOTTE CLARK. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-calling-the-other-side-comm-3"
+          ]
+        }
+      ],
+      "location": "Piers South (1874, 663)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:The_Making_of_a_Rogue.ogg"
+    },
+    {
+      "heading": "Setting Up Shop",
+      "paragraphs": [
+        {
+          "text": "How Clark set up her operations and went into business Features CHARLOTTE CLARK. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-calling-the-other-side-comm-4"
+          ]
+        }
+      ],
+      "location": "Piers North (2473, 826)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Setting_Up_Shop.ogg"
+    },
+    {
+      "heading": "Solo Operations",
+      "paragraphs": [
+        {
+          "text": "Why Clark works solo Features CHARLOTTE CLARK. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-calling-the-other-side-comm-5"
+          ]
+        }
+      ],
+      "location": "Piers North (2638, 481)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Solo_Operations.ogg"
+    },
+    {
+      "heading": "Current Status",
+      "paragraphs": [
+        {
+          "text": "Clark's current operating status and plans for the future Features CHARLOTTE CLARK. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-calling-the-other-side-comm-6"
+          ]
+        }
+      ],
+      "location": "Piers North (2478, 946)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Current_Status.ogg"
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Phone_Recordings/Calling_the_Other_Side. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Phone_Recordings/Calling_the_Other_Side",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions"
+    ]
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td1-phone-recordings-directive-51",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD1 Phone Recordings: Directive 51",
+  "slug": "td1-phone-recordings-directive-51",
+  "section": "collectibles",
+  "summary": "A collection of 10 phone recordings from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 10 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "phone-recordings",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td1-phone-recordings-directive-51-comm-1",
+      "text": "Comm \"Directive 51 - 1\": Captain Roy Benitez briefs the JTF on Directive 51 (Location: Flatiron District (199, 2486))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-directive-51"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-directive-51-comm-2",
+      "text": "Comm \"Directive 51 - 2\": Captain Roy Benitez briefs the JTF on Directive 51 (Location: Turtle Bay (1842, 2933))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-directive-51"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-directive-51-comm-3",
+      "text": "Comm \"Directive 51 - 3\": Captain Roy Benitez briefs the JTF on Directive 51 (Location: Murray Hill (1512, 2704))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-directive-51"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-directive-51-comm-4",
+      "text": "Comm \"Directive 51 - 4\": Captain Roy Benitez briefs the JTF on Directive 51 (Location: Flatiron District (479, 2320))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-directive-51"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-directive-51-comm-5",
+      "text": "Comm \"Directive 51 - 5\": Captain Roy Benitez briefs the JTF on Directive 51 (Location: Flatiron District (552, 2242))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-directive-51"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-directive-51-comm-6",
+      "text": "Comm \"Directive 51 - 6\": Captain Roy Benitez briefs the JTF on Directive 51 (Location: Flatiron District (319, 2505))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-directive-51"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-directive-51-comm-7",
+      "text": "Comm \"Directive 51 - 7\": Captain Roy Benitez briefs the JTF on Directive 51 (Location: Flatiron District (819, 2362))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-directive-51"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-directive-51-comm-8",
+      "text": "Comm \"Directive 51 - 8\": Captain Roy Benitez briefs the JTF on Directive 51 (Location: Gramercy (646, 2880))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-directive-51"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-directive-51-comm-9",
+      "text": "Comm \"Directive 51 - 9\": Captain Roy Benitez briefs the JTF on Directive 51 (Location: Gramercy (722, 2514))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-directive-51"
+      ]
+    },
+    {
+      "id": "td1-phone-recordings-directive-51-comm-10",
+      "text": "Comm \"Directive 51 - 10\": Captain Roy Benitez briefs the JTF on Directive 51 (Location: Gramercy (383, 2855))",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-phone-recordings-directive-51"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Directive 51 - 1",
+      "paragraphs": [
+        {
+          "text": "Captain Roy Benitez briefs the JTF on Directive 51 Features BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-directive-51-comm-1"
+          ]
+        }
+      ],
+      "location": "Flatiron District (199, 2486)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Directive_51-1.ogg"
+    },
+    {
+      "heading": "Directive 51 - 2",
+      "paragraphs": [
+        {
+          "text": "Captain Roy Benitez briefs the JTF on Directive 51 Features BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-directive-51-comm-2"
+          ]
+        }
+      ],
+      "location": "Turtle Bay (1842, 2933)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Directive_51-2.ogg"
+    },
+    {
+      "heading": "Directive 51 - 3",
+      "paragraphs": [
+        {
+          "text": "Captain Roy Benitez briefs the JTF on Directive 51 Features BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-directive-51-comm-3"
+          ]
+        }
+      ],
+      "location": "Murray Hill (1512, 2704)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Directive_51-3.ogg"
+    },
+    {
+      "heading": "Directive 51 - 4",
+      "paragraphs": [
+        {
+          "text": "Captain Roy Benitez briefs the JTF on Directive 51 Features BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-directive-51-comm-4"
+          ]
+        }
+      ],
+      "location": "Flatiron District (479, 2320)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Directive_51-4.ogg"
+    },
+    {
+      "heading": "Directive 51 - 5",
+      "paragraphs": [
+        {
+          "text": "Captain Roy Benitez briefs the JTF on Directive 51 Features BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-directive-51-comm-5"
+          ]
+        }
+      ],
+      "location": "Flatiron District (552, 2242)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Directive_51-5.ogg"
+    },
+    {
+      "heading": "Directive 51 - 6",
+      "paragraphs": [
+        {
+          "text": "Captain Roy Benitez briefs the JTF on Directive 51 Features BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-directive-51-comm-6"
+          ]
+        }
+      ],
+      "location": "Flatiron District (319, 2505)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Directive_51-6.ogg"
+    },
+    {
+      "heading": "Directive 51 - 7",
+      "paragraphs": [
+        {
+          "text": "Captain Roy Benitez briefs the JTF on Directive 51 Features BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-directive-51-comm-7"
+          ]
+        }
+      ],
+      "location": "Flatiron District (819, 2362)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Directive_51-7.ogg"
+    },
+    {
+      "heading": "Directive 51 - 8",
+      "paragraphs": [
+        {
+          "text": "Captain Roy Benitez briefs the JTF on Directive 51 Features BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-directive-51-comm-8"
+          ]
+        }
+      ],
+      "location": "Gramercy (646, 2880)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Directive_51-8.ogg"
+    },
+    {
+      "heading": "Directive 51 - 9",
+      "paragraphs": [
+        {
+          "text": "Captain Roy Benitez briefs the JTF on Directive 51 Features BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-directive-51-comm-9"
+          ]
+        }
+      ],
+      "location": "Gramercy (722, 2514)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Directive_51-9.ogg"
+    },
+    {
+      "heading": "Directive 51 - 10",
+      "paragraphs": [
+        {
+          "text": "Captain Roy Benitez briefs the JTF on Directive 51 Features BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td1-phone-recordings-directive-51-comm-10"
+          ]
+        }
+      ],
+      "location": "Gramercy (383, 2855)",
+      "audio_url": "https://thedivision.fandom.com/wiki/File:Directive_51-10.ogg"
+    }
+  ],
+  "relations": [],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Phone_Recordings/Directive_51. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Phone_Recordings/Directive_51",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions"
+    ]
+  }
+}

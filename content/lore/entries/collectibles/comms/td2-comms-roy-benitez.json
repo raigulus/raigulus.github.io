@@ -1,0 +1,275 @@
+{
+  "schema_version": 2,
+  "id": "collectible-td2-comms-roy-benitez",
+  "franchise": "tom-clancys-the-division",
+  "continuity": "division-game-universe",
+  "type": "collectible",
+  "title": "TD2 Comms: Roy Benitez",
+  "slug": "td2-comms-roy-benitez",
+  "section": "collectibles",
+  "summary": "A collection of 10 comms from The Division universe, scraped from the Fandom wiki hub page. 10 entries include full audio transcripts; 0 have known map locations.",
+  "canon_status": "game-canon",
+  "connection_status": "not-applicable",
+  "spoiler_level": "minor",
+  "collectible_subtype": "comms",
+  "total_entries": 10,
+  "claims": [
+    {
+      "id": "td2-comms-roy-benitez-comm-1",
+      "text": "Comm \"Reasons for Leaving\": A JTF soldier tells Benitez that he's leaving to join the Peacekeepers",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-roy-benitez"
+      ]
+    },
+    {
+      "id": "td2-comms-roy-benitez-comm-2",
+      "text": "Comm \"Pep Talk\": Benitez offers words of encouragement to his team",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-roy-benitez"
+      ]
+    },
+    {
+      "id": "td2-comms-roy-benitez-comm-3",
+      "text": "Comm \"Supply Situation\": Benitez and Faye discuss the current supply situation",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-roy-benitez"
+      ]
+    },
+    {
+      "id": "td2-comms-roy-benitez-comm-4",
+      "text": "Comm \"Take a Break\": Benitez speaks with the local priest in the Base of Operations library",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-roy-benitez"
+      ]
+    },
+    {
+      "id": "td2-comms-roy-benitez-comm-5",
+      "text": "Comm \"Rikers Attack\": Benitez learns about the Rikers' attack on a nearby settlement in Hell's Kitchen",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-roy-benitez"
+      ]
+    },
+    {
+      "id": "td2-comms-roy-benitez-comm-6",
+      "text": "Comm \"Loyalty Program\": Benitez talks to one of his officers who has remained loyal to the JTF",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-roy-benitez"
+      ]
+    },
+    {
+      "id": "td2-comms-roy-benitez-comm-7",
+      "text": "Comm \"Survivor's Guilt\": Benitez struggles with survivor's guilt and shares this with a priest",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-roy-benitez"
+      ]
+    },
+    {
+      "id": "td2-comms-roy-benitez-comm-8",
+      "text": "Comm \"Reality Distortion\": Faye and Benitez discuss tactical choices. Faye fails to comprehend reality",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-roy-benitez"
+      ]
+    },
+    {
+      "id": "td2-comms-roy-benitez-comm-9",
+      "text": "Comm \"Last Rites\": The priest gives Benitez a pep talk after last rites are given for a fallen soldier",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-roy-benitez"
+      ]
+    },
+    {
+      "id": "td2-comms-roy-benitez-comm-10",
+      "text": "Comm \"Good Day\": A JTF officer debriefs Benitez after a productive day",
+      "assessment": "confirmed",
+      "source_ids": [
+        "wiki-comms-roy-benitez"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Reasons for Leaving",
+      "paragraphs": [
+        {
+          "text": "A JTF soldier tells Benitez that he's leaving to join the Peacekeepers Features KOWALSKI, ROY BENITEZ. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-roy-benitez-comm-1"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Benitez_Comms_-_Reasons_for_Leaving.ogg"
+    },
+    {
+      "heading": "Pep Talk",
+      "paragraphs": [
+        {
+          "text": "Benitez offers words of encouragement to his team Features ROY BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-roy-benitez-comm-2"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Benitez_Comms_-_Pep_Talk.ogg"
+    },
+    {
+      "heading": "Supply Situation",
+      "paragraphs": [
+        {
+          "text": "Benitez and Faye discuss the current supply situation Features FAYE LAU, ROY BENITEZ. Contains 7 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-roy-benitez-comm-3"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Benitez_Comms_-_Supply_Situation.ogg"
+    },
+    {
+      "heading": "Take a Break",
+      "paragraphs": [
+        {
+          "text": "Benitez speaks with the local priest in the Base of Operations library Features PRIEST, ROY BENITEZ. Contains 10 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-roy-benitez-comm-4"
+          ]
+        },
+        {
+          "text": "Benitez speaks with the local priest in the Base of Operations library Features ROY BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-roy-benitez-comm-4"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Benitez_Comms_-_Take_a_Break.ogg"
+    },
+    {
+      "heading": "Rikers Attack",
+      "paragraphs": [
+        {
+          "text": "Benitez learns about the Rikers' attack on a nearby settlement in Hell's Kitchen Features ROY BENITEZ, STEPHANIE RIPLEY. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-roy-benitez-comm-5"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Benitez_Comms_-_Rikers_Attack.ogg"
+    },
+    {
+      "heading": "Loyalty Program",
+      "paragraphs": [
+        {
+          "text": "Benitez talks to one of his officers who has remained loyal to the JTF Features CIVILIAN GUARD, ROY BENITEZ. Contains 9 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-roy-benitez-comm-6"
+          ]
+        },
+        {
+          "text": "Benitez talks to one of his officers who has remained loyal to the JTF Features CIVILIAN GUARD. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-roy-benitez-comm-6"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Benitez_Comms_-_Loyalty_Program.ogg"
+    },
+    {
+      "heading": "Survivor's Guilt",
+      "paragraphs": [
+        {
+          "text": "Benitez struggles with survivor's guilt and shares this with a priest Features PRIEST, ROY BENITEZ. Contains 11 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-roy-benitez-comm-7"
+          ]
+        },
+        {
+          "text": "Benitez struggles with survivor's guilt and shares this with a priest Features ROY BENITEZ. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-roy-benitez-comm-7"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Benitez_Comms_-_Survivor%27s_Guilt.ogg"
+    },
+    {
+      "heading": "Reality Distortion",
+      "paragraphs": [
+        {
+          "text": "Faye and Benitez discuss tactical choices. Faye fails to comprehend reality Features FAYE LAU, ROY BENITEZ. Contains 8 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-roy-benitez-comm-8"
+          ]
+        },
+        {
+          "text": "Faye and Benitez discuss tactical choices. Faye fails to comprehend reality Features FAYE LAU, ROY BENITEZ. Contains 2 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-roy-benitez-comm-8"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Benitez_Comms_-_Reality_Distortion.ogg"
+    },
+    {
+      "heading": "Last Rites",
+      "paragraphs": [
+        {
+          "text": "The priest gives Benitez a pep talk after last rites are given for a fallen soldier Features PRIEST, ROY BENITEZ. Contains 5 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-roy-benitez-comm-9"
+          ]
+        },
+        {
+          "text": "The priest gives Benitez a pep talk after last rites are given for a fallen soldier Features PRIEST. Contains 1 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-roy-benitez-comm-9"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Benitez_Comms_-_Last_Rites.ogg"
+    },
+    {
+      "heading": "Good Day",
+      "paragraphs": [
+        {
+          "text": "A JTF officer debriefs Benitez after a productive day Features JTF OFFICER, ROY BENITEZ. Contains 6 dialogue exchanges.",
+          "claim_ids": [
+            "td2-comms-roy-benitez-comm-10"
+          ]
+        }
+      ],
+      "audio_url": "https://thedivision.fandom.com/wiki/File:TD2_-_Benitez_Comms_-_Good_Day.ogg"
+    }
+  ],
+  "relations": [
+    {
+      "target_id": "person-faye-lau",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-rikers",
+      "relationship": "mentioned-in"
+    },
+    {
+      "target_id": "faction-peacekeepers",
+      "relationship": "mentioned-in"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "last_reviewed": "2026-08-19",
+    "human_reviewed": false,
+    "notes": "Source: The Division Fandom Wiki. Full transcript available at: https://thedivision.fandom.com/wiki/Comms/Roy_Benitez. This entry contains paraphrased summaries only; no copyrighted dialogue text is stored.",
+    "source_url": "https://thedivision.fandom.com/wiki/Comms/Roy_Benitez",
+    "additional_source_ids": [
+      "ubisoft-division2-story-factions",
+      "ubisoft-wony-overview-2020"
+    ]
+  }
+}

@@ -16,19 +16,25 @@
       "id": "zoo-shaw-refuge",
       "text": "Emeline Shaw retreats into Manning National Zoo after her defeat on Roosevelt Island.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-manning-white-oak-2019"]
+      "source_ids": [
+        "ubisoft-manning-white-oak-2019"
+      ]
     },
     {
       "id": "zoo-outcast-fortification",
       "text": "Outcasts protect Shaw inside the zoo with followers and blockades.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-manning-white-oak-2019"]
+      "source_ids": [
+        "ubisoft-manning-white-oak-2019"
+      ]
     },
     {
       "id": "zoo-environmental-infographics",
       "text": "The mission brief notes animal-species infographics distributed through the zoo environment.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-manning-white-oak-2019"]
+      "source_ids": [
+        "ubisoft-manning-white-oak-2019"
+      ]
     }
   ],
   "sections": [
@@ -37,12 +43,21 @@
       "paragraphs": [
         {
           "text": "The zoo becomes an improvised Outcast fortress and the setting for the pursuit of Emeline Shaw, while its environmental displays preserve traces of the site's pre-collapse purpose.",
-          "claim_ids": ["zoo-shaw-refuge", "zoo-outcast-fortification", "zoo-environmental-infographics"]
+          "claim_ids": [
+            "zoo-shaw-refuge",
+            "zoo-outcast-fortification",
+            "zoo-environmental-infographics"
+          ]
         }
       ]
     }
   ],
-  "relations": [],
+  "relations": [
+    {
+      "target_id": "collectible-td2-comms-profile-emeline-shaw",
+      "relationship": "mentioned-in"
+    }
+  ],
   "verification": {
     "status": "source-reviewed",
     "last_reviewed": "2026-07-19",
