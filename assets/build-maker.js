@@ -415,8 +415,42 @@
       applyState(s);
       renderSlots();
       renderSummary();
+      loadChangelog();
     })
     .catch(function (err) {
       $("bm-data-meta").textContent = "Data could not be loaded: " + err.message;
     });
+
+  function loadChangelog() {
+    var meta = $("bm-changelog-meta"), box = $("bm-changelog");
+    fetch("/assets/data/build-maker-changelog.json")
+      .then(function (r) { return r.json(); })
+      .then(function (c) {
+        var t = c.meta.totals;
+        if (!c.sections.length) {
+          meta.textContent = "No changes since the last data update. The changelog appears automatically after each patch refresh.";
+          box.innerHTML = "";
+          return;
+        }
+        meta.textContent = "Changes between " + (c.meta.prev_data || "previous data").slice(0, 10) +
+          " and " + (c.meta.cur_data || "current data").slice(0, 10) + " — " +
+          t.added + " added, " + t.removed + " removed, " + t.changed + " modified.";
+        var html = c.sections.map(function (s) {
+          var h = '<div class="bm-changelog-group"><h3>' + s.group + '</h3>';
+          if (s.added.length) h += '<p class="bm-chg bm-chg-added"><strong>Added:</strong> ' + esc(s.added.join(", ")) + '</p>';
+          if (s.removed.length) h += '<p class="bm-chg bm-chg-removed"><strong>Removed:</strong> ' + esc(s.removed.join(", ")) + '</p>';
+          if (s.changed.length) h += '<p class="bm-chg bm-chg-changed"><strong>Modified:</strong> ' +
+            esc(s.changed.map(function (x) { return x.name + " (" + x.fields.join(", ") + ")"; }).join(", ")) + '</p>';
+          return h + "</div>";
+        }).join("");
+        box.innerHTML = html;
+      })
+      .catch(function () {
+        meta.textContent = "Changelog unavailable.";
+      });
+  }
+
+  function esc(str) {
+    return String(str).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
 })();

@@ -516,3 +516,9 @@ body.theme-assassins-creed .archive-notes{
 .bm-item:hover{background:rgba(245,90,0,.25)}
 .bm-item-name{font-weight:600;font-size:13.5px}
 .bm-item-sub{font-size:12px;color:rgba(255,255,255,.5)}
+.bm-changelog-group{margin-bottom:14px}
+.bm-changelog-group h3{margin:0 0 4px;font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:rgba(255,255,255,.7)}
+.bm-chg{margin:2px 0;font-size:13px;line-height:1.5}
+.bm-chg-added{color:#7bd88f}
+.bm-chg-removed{color:#ff8a8a}
+.bm-chg-changed{color:#ffd479}
