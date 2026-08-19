@@ -78,6 +78,15 @@ def main():
         },
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
+    # Veri degismedi mi kontrol et (meta.generated haric) -> idempotent
+    if OUT.exists():
+        old = json.loads(OUT.read_text(encoding="utf-8"))
+        old.pop("meta", None)
+        new = dict(out)
+        new.pop("meta", None)
+        if old == new:
+            print("Veri degismedi — dosya guncellenmedi (idempotent).")
+            return
     # Eski surumu yedekle (changelog diff'i icin)
     if OUT.exists():
         PREV.write_bytes(OUT.read_bytes())
