@@ -8,6 +8,6 @@
   "message": "Servers appear operational based on the checked official source.",
   "source_label": "Official Ubisoft service status",
   "source_url": "https://ubistatic-a.akamaihd.net/0115/tctd2/status.html",
-  "fetched_at": "2026-08-21T14:08:53.436006+00:00",
-  "last_checked": "2026-08-21 14:08 UTC"
+  "fetched_at": "2026-08-21T14:45:21.794826+00:00",
+  "last_checked": "2026-08-21 14:45 UTC"
 }
