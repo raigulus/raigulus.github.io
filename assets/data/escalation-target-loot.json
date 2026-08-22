@@ -1,89 +1,43 @@
 {
-  "date": "2026-08-21",
+  "date": "2026-08-22",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Pathway Park",
-      "loot": "Urban Lookout"
+      "loot": "Ortiz: Reficere"
     },
     {
       "mission": "Camp White Oak",
-      "loot": "Shotgun"
+      "loot": "Electrique"
     },
     {
       "mission": "Grand Washington Hotel",
-      "loot": "Grupo Sombra S.A."
+      "loot": "Hard Wired"
     },
     {
       "mission": "Jefferson Trade Center",
-      "loot": "Body Armor"
+      "loot": "Providence Defense"
     },
     {
       "mission": "Federal Emergency Bunker",
-      "loot": "Concentrated Company"
+      "loot": "5.11 Tactical"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "SMGs"
+      "item": "Shotguns"
     },
     {
       "type": "Gear",
-      "item": "Gloves"
+      "item": "Holsters"
     }
   ],
-  "last_updated": "2026-08-21 10:01",
-  "last_checked": "2026-08-22 07:56 UTC",
-  "parsed_at": "2026-08-22T07:56:40.113462+00:00",
-  "status": "pending",
-  "fetched_at": "2026-08-22T07:56:40.113462+00:00",
+  "last_updated": "2026-08-22 10:27",
+  "last_checked": "2026-08-22 08:39 UTC",
+  "parsed_at": "2026-08-22T08:39:25.906141+00:00",
+  "status": "ok",
+  "fetched_at": "2026-08-22T08:39:25.906141+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
-  "vendor_highlights": [
-    {
-      "vendor": "White House",
-      "item": "Backbone",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Clan",
-      "item": "Bober",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Countdown",
-      "item": "Zero F's",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "The Castle",
-      "item": "Spot-on",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "DZ South",
-      "item": "Matador",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Zero F's",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Hunter-Killer",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Countdown",
-      "item": "Thorn - SPAS-12",
-      "note": "Named weapon"
-    }
-  ],
-  "vendor_highlights_status": "ok",
-  "vendor_highlights_checked": "2026-08-22 07:56 UTC",
-  "vendor_highlights_date": "2026-08-13",
-  "vendor_highlights_note": "Current dated vendor highlights are available."
+  "snapshot_note": "Current dated loot snapshot is available."
 }
