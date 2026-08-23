@@ -1,48 +1,48 @@
 {
-  "date": "2026-08-22",
+  "date": "2026-08-23",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Pathway Park",
-      "loot": "Ortiz: Reficere"
+      "loot": "Zwiadowka Sp. z o.o"
     },
     {
       "mission": "Camp White Oak",
-      "loot": "Electrique"
-    },
-    {
-      "mission": "Grand Washington Hotel",
       "loot": "Hard Wired"
     },
     {
+      "mission": "Grand Washington Hotel",
+      "loot": "Wyvern Wear"
+    },
+    {
       "mission": "Jefferson Trade Center",
-      "loot": "Providence Defense"
+      "loot": "Sokolov Concern"
     },
     {
       "mission": "Federal Emergency Bunker",
-      "loot": "5.11 Tactical"
+      "loot": "Skill Mods"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Shotguns"
+      "item": "Assault Rifles"
     },
     {
       "type": "Gear",
-      "item": "Holsters"
+      "item": "Gloves"
     }
   ],
-  "last_updated": "2026-08-22 10:27",
-  "last_checked": "2026-08-23 08:59 UTC",
-  "parsed_at": "2026-08-23T08:59:57.010666+00:00",
-  "status": "stale",
-  "fetched_at": "2026-08-23T08:59:57.010666+00:00",
+  "last_updated": "2026-08-23 11:05",
+  "last_checked": "2026-08-23 09:35 UTC",
+  "parsed_at": "2026-08-23T09:35:52.654465+00:00",
+  "status": "ok",
+  "fetched_at": "2026-08-23T09:35:52.654465+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Checked after the expected daily reset window, but the source still returned an older snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-08-23 08:59 UTC",
+  "vendor_highlights_checked": "2026-08-23 09:35 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
