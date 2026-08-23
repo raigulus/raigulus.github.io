@@ -34,15 +34,15 @@
     }
   ],
   "last_updated": "2026-08-22 10:27",
-  "last_checked": "2026-08-23 03:10 UTC",
-  "parsed_at": "2026-08-23T03:10:53.703318+00:00",
+  "last_checked": "2026-08-23 03:30 UTC",
+  "parsed_at": "2026-08-23T03:30:53.928091+00:00",
   "status": "pending",
-  "fetched_at": "2026-08-23T03:10:53.703318+00:00",
+  "fetched_at": "2026-08-23T03:30:53.928091+00:00",
   "next_expected_update": "Around 08:00 UTC",
   "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-08-23 03:10 UTC",
+  "vendor_highlights_checked": "2026-08-23 03:30 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
