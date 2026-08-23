@@ -75,6 +75,43 @@ def esc(value: str) -> str:
     return html.escape(str(value), quote=True)
 
 
+MAX_TITLE_CHARS = 60  # Google truncates SERP titles around ~60 chars
+LEGACY_SUMMARY_MARKERS = ("nostalgia reference",)
+
+
+def check_title(title: str, slug: str) -> None:
+    if len(title) > MAX_TITLE_CHARS:
+        raise SystemExit(
+            f"Title too long ({len(title)} chars, max {MAX_TITLE_CHARS}) for '{slug}':\n"
+            f"  {title}\n"
+            f"Shorten the title in the spec before adding this video."
+        )
+
+
+def default_summary(spec: dict) -> str:
+    """Editorial fallback when a spec has no usable summary."""
+    core = spec["mission"]
+    cluster = spec["cluster"]
+    if cluster == "pvp/archive clip":
+        return f"{core} - archived The Division 2 Conflict PvP clip from Raigulus."
+    if cluster == "escalation run":
+        return f"{core} - Division 2 Escalation run with route notes and loot checks from Raigulus."
+    if cluster == "manhunt":
+        return f"{core} - Division 2 manhunt walkthrough covering objectives and route flow from Raigulus."
+    if cluster == "raid/incursion":
+        return f"{core} - Division 2 raid and incursion clear archive from Raigulus."
+    if cluster == "side activity":
+        return f"{core} - Division 2 open world activity run from Raigulus."
+    return f"{core} - The Division 2 gameplay archive from Raigulus."[:160]
+
+
+def resolve_summary(spec: dict) -> str:
+    summary = (spec.get("summary") or "").strip()
+    if not summary or any(m in summary for m in LEGACY_SUMMARY_MARKERS):
+        return default_summary(spec)
+    return summary[:160]
+
+
 def fmt_duration(seconds) -> str:
     if not seconds:
         return "Not listed"
@@ -562,6 +599,7 @@ def main() -> int:
             print(f"SKIP (already present): {slug}")
             continue
         tags = list(dict.fromkeys([t.strip().lower() for t in spec["tags"]] + ["raigulus"]))
+        check_title(spec["title"], slug)
         record = {
             "title": spec["title"],
             "url": url,
@@ -578,7 +616,7 @@ def main() -> int:
             "tags": tags,
             # internal-only helpers (stripped before writing videos.json)
             "_slug": slug,
-            "_summary": spec["summary"],
+            "_summary": resolve_summary(spec),
             "_guide_summary": spec["guide_summary"],
             "_playlist": spec["playlist"],
             "_duration_seconds": spec.get("duration_seconds") or 0,
