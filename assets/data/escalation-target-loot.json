@@ -34,10 +34,10 @@
     }
   ],
   "last_updated": "2026-08-24 10:25",
-  "last_checked": "2026-08-24 17:38 UTC",
+  "last_checked": "2026-08-24 18:01 UTC",
   "parsed_at": "2026-08-24T17:38:02.902226+00:00",
   "status": "ok",
-  "fetched_at": "2026-08-24T17:38:02.902226+00:00",
+  "fetched_at": "2026-08-24T18:01:12.562537+00:00",
   "next_expected_update": "Around 08:00 UTC",
   "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [
@@ -85,5 +85,6 @@
   "vendor_highlights_status": "ok",
   "vendor_highlights_checked": "2026-08-24 17:38 UTC",
   "vendor_highlights_date": "2026-08-23",
-  "vendor_highlights_note": "Current dated vendor highlights are available."
+  "vendor_highlights_note": "Current dated vendor highlights are available.",
+  "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
 }
