@@ -1,0 +1,44 @@
+[
+  {
+    "title": "IRON WILL Breaks Division 2 PvP — 800K Headshot Proof",
+    "youtube_url": "https://www.youtube.com/watch?v=_M882-m4PQQ",
+    "slug": "iron-will-breaks-division-2-pvp-800k-headshot-proof",
+    "mission": "Iron Will PvP Breakdown",
+    "cluster": "pvp/archive clip",
+    "difficulty": "PvP",
+    "target": "Iron Will Exotic Chest Breakdown",
+    "published_date": "2026-08-25",
+    "duration_seconds": 487,
+    "chapters": [
+      {"start": "0:00", "title": "The Cold Open"},
+      {"start": "0:24", "title": "What Actually Changed"},
+      {"start": "0:52", "title": "The Old Meta: Determined + Headhunter"},
+      {"start": "1:38", "title": "IRON WILL — The New Exotic Chest"},
+      {"start": "2:50", "title": "What I Like About It"},
+      {"start": "3:26", "title": "Where It Goes Wrong: PvP"},
+      {"start": "4:38", "title": "My Own Numbers (800K Regulus)"},
+      {"start": "6:08", "title": "The Question For The Developers"},
+      {"start": "7:43", "title": "My Proposal"}
+    ],
+    "guide_summary": "Iron Will exotic chest breakdown: 2s PvE / 3s PvP cooldown, 800K Regulus headshot proof from my own testing, and my proposal to disable the conversion in Conflict and the Dark Zone.",
+    "playlist": "pvp",
+    "tags": [
+      "division 2 iron will",
+      "division 2 iron will exotic",
+      "division 2 red horizon",
+      "division 2 pvp",
+      "division 2 pvp breakdown",
+      "division 2 exotic chest",
+      "division 2 determined nerf",
+      "division 2 headhunter",
+      "regulus build",
+      "division 2 regulus",
+      "division 2 conflict",
+      "division 2 new season",
+      "division 2 800k headshot",
+      "division 2 marksman rifle",
+      "raigulus iron will"
+    ],
+    "summary": "Iron Will exotic chest breakdown with my own test numbers: 800K Regulus headshot damage, 3s PvP cooldown analysis, and my proposal to disable the guaranteed headshot conversion in Conflict and the Dark Zone."
+  }
+]
