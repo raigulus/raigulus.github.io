@@ -107,7 +107,7 @@
     if (!raw || raw === "N/A") return null;
     var key = slotKey + ":" + field;
     if (state.cfg[key]) return state.cfg[key];
-    if (raw.indexOf("fixed:") === 0) return raw.slice(7);
+    if (raw.indexOf("fixed:") === 0) return raw.slice(6);
     return null; /* selectable but not chosen */
   }
   function isSelectable(item, field) {
@@ -230,6 +230,12 @@
       '<button type="button" class="bm-slot-change" data-slot="' + key + '">Change</button></div>';
   }
 
+  var CFG_PLACEHOLDER = {
+    core: "Select core\u2026", minor: "Select attribute\u2026", wminor: "Select attribute\u2026",
+    gmod: "Select mod\u2026", gtalent: "Select talent\u2026", wtalent: "Select talent\u2026",
+    wmod: "Select attachment\u2026"
+  };
+
   function cfgRow(slotKey, item, field, label, kind) {
     if (!item) return "";
     var raw = item[field];
@@ -240,10 +246,10 @@
       return '<button type="button" class="bm-cfg" data-cfg="' + slotKey + ":" + field + '" ' +
         (d && d.tip ? 'title="' + esc(d.tip) + '"' : "") + ">" +
         '<span class="bm-cfg-k">' + label + "</span>" +
-        '<span class="bm-cfg-v' + (d ? "" : " empty") + '">' + (d ? esc(d.text) : "Select\u2026") + "</span></button>";
+        '<span class="bm-cfg-v' + (d ? "" : " empty") + '">' + (d ? esc(d.text) : CFG_PLACEHOLDER[kind] || "Select\u2026") + "</span></button>";
     }
     if (raw.indexOf("fixed:") === 0) {
-      var fd = displayFor(kind, raw.slice(7));
+      var fd = displayFor(kind, raw.slice(6));
       return '<div class="bm-fixed"' + (fd.tip ? ' title="' + esc(fd.tip) + '"' : "") + ">" +
         '<span class="bm-cfg-k">' + label + '</span><span class="bm-cfg-v">' + esc(fd.text) + "</span></div>";
     }
@@ -544,7 +550,7 @@
       if (picker.kind === "gear") items = DATA.gear[picker.slot];
       else if (picker.kind === "weapon") {
         Object.keys(DATA.weapons).forEach(function (f) {
-          DATA.weapons[f].forEach(function (w) { items.push(w); });
+          DATA.weapons[f].forEach(function (w) { items.push(Object.assign({ _cat: f }, w)); });
         });
       } else items = DATA.skills;
     } else {
