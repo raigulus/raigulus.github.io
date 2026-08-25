@@ -34,10 +34,56 @@
     }
   ],
   "last_updated": "2026-08-24 10:25",
-  "last_checked": "2026-08-25 05:07 UTC",
-  "parsed_at": "2026-08-25T05:07:39.779817+00:00",
+  "last_checked": "2026-08-25 05:39 UTC",
+  "parsed_at": "2026-08-25T05:39:18.665765+00:00",
   "status": "pending",
-  "fetched_at": "2026-08-25T05:07:39.779817+00:00",
+  "fetched_at": "2026-08-25T05:39:18.665765+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot."
+  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "vendor_highlights": [
+    {
+      "vendor": "The Castle",
+      "item": "Forge",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Grease",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Hunter-Killer",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "Grease",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "White House",
+      "item": "Glory Daze - Custom P416 G3",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Clan",
+      "item": "Lud - Mk16",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "The Theater",
+      "item": "Achilles - USC .45 ACP",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "DZ East",
+      "item": "Commando - Paratrooper SVD",
+      "note": "Named weapon"
+    }
+  ],
+  "vendor_highlights_status": "ok",
+  "vendor_highlights_checked": "2026-08-25 05:39 UTC",
+  "vendor_highlights_date": "2026-08-23",
+  "vendor_highlights_note": "Current dated vendor highlights are available."
 }
