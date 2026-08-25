@@ -523,3 +523,24 @@ body.theme-assassins-creed .archive-notes{
 .bm-chg-removed{color:#ff8a8a}
 .bm-chg-changed{color:#ffd479}
 .bm-disclaimer{margin-top:14px;padding:10px 12px;border:1px solid rgba(255,255,255,.14);border-radius:8px;background:rgba(255,255,255,.03);font-size:12.5px;color:rgba(255,255,255,.6)}
+/* build maker v2: config rows, weapon visuals, totals */
+.bm-slot{flex-wrap:wrap}
+.bm-cfg,.bm-fixed{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;padding:5px 9px;margin-top:6px;border-radius:6px;font-size:12px;text-align:left}
+.bm-cfg{border:1px dashed rgba(255,255,255,.22);background:none;color:#fff;cursor:pointer}
+.bm-cfg:hover{border-color:#f55a00;background:rgba(245,90,0,.12)}
+.bm-fixed{border:1px solid rgba(255,255,255,.09);color:rgba(255,255,255,.85)}
+.bm-cfg-k{flex-shrink:0;color:rgba(255,255,255,.45);text-transform:uppercase;font-size:10px;letter-spacing:.07em;padding-top:1px}
+.bm-cfg-v{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bm-cfg-v.empty{color:rgba(255,255,255,.38);font-weight:400}
+.bm-wsvg{width:64px;height:auto;flex-shrink:0;align-self:center}
+.bm-wstats{display:flex;flex-wrap:wrap;gap:2px 12px;width:100%;margin-top:4px;font-size:11.5px;color:rgba(255,255,255,.6)}
+.bm-wstats b{color:rgba(255,255,255,.85);font-weight:700;margin-right:2px}
+.bm-item-wrap{display:block;min-width:0}
+.bm-item-desc{display:block;font-size:11.5px;line-height:1.45;color:rgba(255,255,255,.55);margin-top:3px;white-space:normal}
+.bm-note{font-size:11px;font-weight:400;text-transform:none;letter-spacing:0;color:rgba(255,255,255,.45)}
+.bm-totals{max-height:260px;overflow-y:auto;padding-right:4px}
+.bm-stat-row{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:4px 2px;border-bottom:1px solid rgba(255,255,255,.06)}
+.bm-stat-row b{color:#ffb27d;white-space:nowrap}
+.bm-unassigned{color:#ffd479}
+.bm-talents li{margin-bottom:7px}
+.bm-talent-desc{display:block;font-size:12px;line-height:1.45;color:rgba(255,255,255,.55)}
