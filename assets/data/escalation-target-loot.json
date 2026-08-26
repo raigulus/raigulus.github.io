@@ -34,10 +34,56 @@
     }
   ],
   "last_updated": "2026-08-25 10:08",
-  "last_checked": "2026-08-26 08:54 UTC",
-  "parsed_at": "2026-08-26T08:54:52.639879+00:00",
+  "last_checked": "2026-08-26 09:02 UTC",
+  "parsed_at": "2026-08-26T09:02:55.983118+00:00",
   "status": "stale",
-  "fetched_at": "2026-08-26T08:54:52.639879+00:00",
+  "fetched_at": "2026-08-26T09:02:55.983118+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Checked after the expected daily reset window, but the source still returned an older snapshot."
+  "snapshot_note": "Checked after the expected daily reset window, but the source still returned an older snapshot.",
+  "vendor_highlights": [
+    {
+      "vendor": "Countdown",
+      "item": "Backbone",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "The Campus",
+      "item": "Spot-on",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "The Castle",
+      "item": "Forge",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "DZ East",
+      "item": "Claws Out",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "White House",
+      "item": "Grown Great - M1928",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Clan",
+      "item": "Cuélebre – Military M870",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "The Darkness - SOCOM Mk20 SSR",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "The Grudge - CMMG Banshee",
+      "note": "Named weapon"
+    }
+  ],
+  "vendor_highlights_status": "ok",
+  "vendor_highlights_checked": "2026-08-26 09:02 UTC",
+  "vendor_highlights_date": "2026-08-26",
+  "vendor_highlights_note": "Current dated vendor highlights are available."
 }
