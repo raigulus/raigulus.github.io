@@ -1,45 +1,45 @@
 {
-  "date": "2026-08-27",
+  "date": "2026-08-28",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Liberty Island",
-      "loot": "Habsburg Guard"
+      "loot": "Tipping Scales"
     },
     {
       "mission": "Potomac Event Center",
-      "loot": "Edelweiss GPz"
+      "loot": "Body Armor"
     },
     {
       "mission": "American History Museum",
-      "loot": "Measured Assembly"
+      "loot": "Electrique"
     },
     {
       "mission": "Jefferson Plaza",
-      "loot": "Palisade Steelworks"
+      "loot": "Refactor"
     },
     {
       "mission": "Air & Space Museum",
-      "loot": "Rifle"
+      "loot": "Gear Mods"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Pistols"
+      "item": "Assault Rifles"
     },
     {
       "type": "Gear",
-      "item": "Kneepads"
+      "item": "Masks"
     }
   ],
-  "last_updated": "2026-08-27 16:02",
-  "last_checked": "2026-08-28 06:16 UTC",
-  "parsed_at": "2026-08-28T06:16:19.307996+00:00",
-  "status": "pending",
-  "fetched_at": "2026-08-28T06:16:19.307996+00:00",
+  "last_updated": "2026-08-28 15:55",
+  "last_checked": "2026-08-28 18:33 UTC",
+  "parsed_at": "2026-08-28T18:33:07.035630+00:00",
+  "status": "ok",
+  "fetched_at": "2026-08-28T18:33:07.035630+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [
     {
       "vendor": "Countdown",
@@ -83,7 +83,7 @@
     }
   ],
   "vendor_highlights_status": "ok",
-  "vendor_highlights_checked": "2026-08-28 06:16 UTC",
+  "vendor_highlights_checked": "2026-08-28 18:33 UTC",
   "vendor_highlights_date": "2026-08-26",
   "vendor_highlights_note": "Current dated vendor highlights are available."
 }
