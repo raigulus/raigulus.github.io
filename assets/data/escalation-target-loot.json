@@ -1,43 +1,89 @@
 {
-  "date": "2026-08-29",
+  "date": "2026-08-30",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Liberty Island",
-      "loot": "Shiny Monkey Gear"
+      "loot": "Measured Assembly"
     },
     {
       "mission": "Potomac Event Center",
-      "loot": "Wyvern Wear"
+      "loot": "LMG"
     },
     {
       "mission": "American History Museum",
-      "loot": "Palisade Steelworks"
+      "loot": "Ortiz: Reficere"
     },
     {
       "mission": "Jefferson Plaza",
-      "loot": "Walker, Harris & Co"
+      "loot": "Marksman Rifle"
     },
     {
       "mission": "Air & Space Museum",
-      "loot": "Hana-U Corporation"
+      "loot": "Zwiadowka Sp. z o.o"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Shotguns"
+      "item": "Pistols"
     },
     {
       "type": "Gear",
       "item": "Backpacks"
     }
   ],
-  "last_updated": "2026-08-29 10:24",
-  "last_checked": "2026-08-30 07:18 UTC",
-  "parsed_at": "2026-08-30T07:18:32.168203+00:00",
-  "status": "pending",
-  "fetched_at": "2026-08-30T07:18:32.168203+00:00",
+  "last_updated": "2026-08-30 10:26",
+  "last_checked": "2026-08-30 12:46 UTC",
+  "parsed_at": "2026-08-30T12:46:25.070999+00:00",
+  "status": "ok",
+  "fetched_at": "2026-08-30T12:46:25.070999+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot."
+  "snapshot_note": "Current dated loot snapshot is available.",
+  "vendor_highlights": [
+    {
+      "vendor": "Countdown",
+      "item": "Backbone",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "The Campus",
+      "item": "Spot-on",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "The Castle",
+      "item": "Forge",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "DZ East",
+      "item": "Claws Out",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "White House",
+      "item": "Grown Great - M1928",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Clan",
+      "item": "Cuélebre – Military M870",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "The Darkness - SOCOM Mk20 SSR",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "The Grudge - CMMG Banshee",
+      "note": "Named weapon"
+    }
+  ],
+  "vendor_highlights_status": "ok",
+  "vendor_highlights_checked": "2026-08-30 12:46 UTC",
+  "vendor_highlights_date": "2026-08-26",
+  "vendor_highlights_note": "Current dated vendor highlights are available."
 }
