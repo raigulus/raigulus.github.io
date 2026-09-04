@@ -30,6 +30,10 @@ DIVISION2_STATUS_API_URL = (
     "42e81559-1fbc-42cd-bd12-e42460f9aaeb"
 )
 UBISOFT_PUBLIC_APP_ID = "5c5d3b21-e1fc-4460-9213-87b4cd440d44"
+DISCORD_BOT_TOKEN = os.environ.get("DISCORD_BOT_TOKEN", "").strip()
+DISCORD_LOOT_CHANNEL_ID = "1528506012900917268"
+DISCORD_LOOT_ROLE_MENTION = "<@&1532384877557846057>"
+DISCORD_LOOT_EMBED_COLOR = 15895592
 
 
 def utc_now():
@@ -665,6 +669,80 @@ def find_indexnow_key(site_dir):
     return ""
 
 
+def read_discord_state(site_dir):
+    path = site_dir / "assets" / "data" / "discord_loot_state.json"
+    if path.exists():
+        try:
+            return json.loads(path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            pass
+    return {}
+
+
+def write_discord_state(site_dir, state):
+    path = site_dir / "assets" / "data" / "discord_loot_state.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(state) + "\n", encoding="utf-8")
+
+
+def post_loot_today_discord(site_dir, loot_data):
+    if not DISCORD_BOT_TOKEN:
+        print("Discord post skipped: DISCORD_BOT_TOKEN not set")
+        return False
+    today = utc_now().strftime("%Y-%m-%d")
+    state = read_discord_state(site_dir)
+    if state.get("last_posted") == today:
+        print(f"Discord loot post already sent for {today}, skipping.")
+        return False
+    data_date = str(loot_data.get("date", ""))
+    status = str(loot_data.get("status", ""))
+    if data_date != today or status != "ok":
+        print(f"Discord post skipped: data not ready (date={data_date}, status={status})")
+        return False
+    missions = "\n".join(
+        f"- **{m['mission']}** - {m['loot']}" for m in loot_data.get("missions", [])
+    )
+    caches = "\n".join(
+        f"- **{c['type']}** - {c['item']}" for c in loot_data.get("vendor_caches", [])
+    )
+    payload = {
+        "content": f"{DISCORD_LOOT_ROLE_MENTION} Today's verified Division 2 loot snapshot is live.",
+        "allowed_mentions": {"parse": ["roles"]},
+        "embeds": [
+            {
+                "title": "The Division 2 - Loot Today",
+                "description": f"Fresh daily snapshot for **{today}**.",
+                "color": DISCORD_LOOT_EMBED_COLOR,
+                "fields": [
+                    {"name": "Targeted loot", "value": missions or "-", "inline": False},
+                    {"name": "Cache snapshot", "value": caches or "-", "inline": False},
+                ],
+                "footer": {"text": f"Raigulus Loot Today // {today}"},
+            }
+        ],
+    }
+    req = urllib.request.Request(
+        f"https://discord.com/api/v10/channels/{DISCORD_LOOT_CHANNEL_ID}/messages",
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Authorization": f"Bot {DISCORD_BOT_TOKEN}",
+            "Content-Type": "application/json",
+            "User-Agent": USER_AGENT,
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            result = json.loads(resp.read().decode("utf-8"))
+            print(f"Discord loot post OK - message id {result.get('id')}")
+            write_discord_state(site_dir, {"last_posted": today})
+            return True
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")[:500]
+        print(f"Discord loot post FAILED: HTTP {exc.code}: {body}")
+        return False
+
+
 def submit_indexnow(site_dir, extra_urls=None):
     key = find_indexnow_key(site_dir)
     if not key:
@@ -716,6 +794,11 @@ def main():
         default=[],
         help="Additional same-host URL to submit alongside the standard guide hubs.",
     )
+    parser.add_argument(
+        "--post-discord",
+        action="store_true",
+        help="Post today's loot snapshot to the Discord loot-today channel.",
+    )
     args = parser.parse_args()
 
     input_path, site_dir = repo_paths()
@@ -754,6 +837,8 @@ def main():
             print(f"Updated {updated_pages} guide hub live blocks")
         if data.get("status") == "error":
             exit_code = 1
+        if args.post_discord and data:
+            post_loot_today_discord(site_dir, data)
 
     status_existing = read_existing_status(site_dir)
     status_data, status_error = fetch_division2_status(status_existing)
