@@ -1,43 +1,89 @@
 {
-  "date": "2026-09-03",
+  "date": "2026-09-04",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Tombs",
-      "loot": "Walker, Harris & Co"
+      "loot": "Holster"
     },
     {
       "mission": "Manning National Zoo",
-      "loot": "Ortiz Exuro"
+      "loot": "Skill Mods"
     },
     {
       "mission": "Bank Headquarters",
-      "loot": "Concentrated Company"
+      "loot": "Petrov Defense Group"
     },
     {
       "mission": "American History Museum",
-      "loot": "Assault Rifle"
+      "loot": "Golan Gear Ltd"
     },
     {
       "mission": "Space Administration HQ",
-      "loot": "Uzina Getica"
+      "loot": "Grupo Sombra S.A."
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Assault Rifles"
+      "item": "Shotguns"
     },
     {
       "type": "Gear",
-      "item": "Chest Pieces"
+      "item": "Masks"
     }
   ],
-  "last_updated": "2026-09-03 10:05",
-  "last_checked": "2026-09-04 05:00 UTC",
-  "parsed_at": "2026-09-04T05:00:57.962306+00:00",
-  "status": "pending",
-  "fetched_at": "2026-09-04T05:00:57.962306+00:00",
+  "last_updated": "2026-09-04 10:06",
+  "last_checked": "2026-09-04 09:30 UTC",
+  "parsed_at": "2026-09-04T09:30:28.258636+00:00",
+  "status": "ok",
+  "fetched_at": "2026-09-04T09:30:28.258636+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot."
+  "snapshot_note": "Current dated loot snapshot is available.",
+  "vendor_highlights": [
+    {
+      "vendor": "Countdown",
+      "item": "Backbone",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "The Campus",
+      "item": "Spot-on",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "The Castle",
+      "item": "Forge",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "DZ East",
+      "item": "Claws Out",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "White House",
+      "item": "Grown Great - M1928",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Clan",
+      "item": "Cuélebre – Military M870",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "The Darkness - SOCOM Mk20 SSR",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "The Grudge - CMMG Banshee",
+      "note": "Named weapon"
+    }
+  ],
+  "vendor_highlights_status": "ok",
+  "vendor_highlights_checked": "2026-09-04 09:30 UTC",
+  "vendor_highlights_date": "2026-08-26",
+  "vendor_highlights_note": "Current dated vendor highlights are available."
 }
