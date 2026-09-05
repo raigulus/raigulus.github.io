@@ -279,6 +279,7 @@ def render_page(record: dict, records: list[dict]) -> str:
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/styles.css">
   <script src="/assets/search.js" defer></script>
+  <script src="/assets/site.js" defer></script>
   <script src="/assets/video-player.js" defer></script>
   <script src="/assets/live-loot.js" defer></script>
   <script type="text/javascript">

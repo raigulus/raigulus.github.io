@@ -99,6 +99,7 @@ def head(title, description, canonical, schema_type="Article"):
   <link rel="stylesheet" href="/assets/lore.css">
   <link rel="stylesheet" href="/assets/lore-timeline.css">
   <link rel="stylesheet" href="/assets/lore-directory.css">
+  <script src="/assets/site.js" defer></script>
   <script type="application/ld+json">{structured}</script>
 </head>'''
 

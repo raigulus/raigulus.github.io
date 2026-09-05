@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
 *.bak
+.env
+.env.*
+*-key.json
+credentials.json
