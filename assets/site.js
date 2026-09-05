@@ -13,4 +13,31 @@ document.addEventListener("DOMContentLoaded", function () {
       a.setAttribute("rel", rel.join(" "));
     } catch (e) {}
   }
+
+  // Discord widget facade: the widget pulls ~190 KiB of unoptimized avatars
+  // from Discord's CDN. Don't download any of it until the visitor asks for it.
+  var widgets = document.querySelectorAll('iframe[src*="discord.com/widget"]');
+  for (var j = 0; j < widgets.length; j++) {
+    (function (frame) {
+      var src = frame.getAttribute("src");
+      if (!src) return;
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "discord-facade-button";
+      btn.textContent = "Load Discord widget";
+      btn.setAttribute("aria-label", "Load the Raigulus Discord server widget");
+      var w = frame.getAttribute("width") || "350";
+      var h = frame.getAttribute("height") || "500";
+      btn.style.maxWidth = w + "px";
+      btn.style.minHeight = Math.min(parseInt(h, 10) || 500, 240) + "px";
+      frame.removeAttribute("src");
+      frame.style.display = "none";
+      btn.addEventListener("click", function () {
+        frame.setAttribute("src", src);
+        frame.style.display = "";
+        btn.remove();
+      });
+      frame.parentNode.insertBefore(btn, frame);
+    })(widgets[j]);
+  }
 });
