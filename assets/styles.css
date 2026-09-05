@@ -120,7 +120,7 @@ body{
 .archive-copy{position:relative;z-index:2;max-width:960px;padding:82px 44px 0}
 .archive-eyebrow{
   margin:0;
-  color:var(--archive-orange);
+  color:var(--archive-orange-deep);
   font:700 13px/1.3 var(--archive-mono);
   letter-spacing:.12em;
   text-transform:uppercase
@@ -152,12 +152,12 @@ body{
   min-width:245px;
   padding:18px 22px;
   color:#fff8eb;
-  background:var(--archive-orange);
+  background:var(--archive-orange-deep);
   clip-path:polygon(0 0,calc(100% - 15px) 0,100% 15px,100% 100%,0 100%);
   font-weight:700;
   transition:transform .18s ease,background .18s ease
 }
-.archive-primary:hover,.archive-primary:focus-visible{background:var(--archive-orange-deep);transform:translateY(-2px)}
+.archive-primary:hover,.archive-primary:focus-visible{filter:brightness(.92);transform:translateY(-2px)}
 .archive-secondary{
   padding:8px 0 5px;
   border-bottom:1px solid var(--archive-ink);
@@ -203,11 +203,11 @@ body{
   background:transparent;
   font:19px/1.2 var(--archive-display)
 }
-.archive-search input::placeholder{color:#716d64}
+.archive-search input::placeholder{color:#5d5850}
 .archive-search-count{
   align-self:center;
   padding:0 14px;
-  color:#716d64;
+  color:#5d5850;
   font:10px/1.2 var(--archive-mono);
   letter-spacing:.08em;
   text-transform:uppercase;
@@ -217,11 +217,11 @@ body{
   border:0;
   border-left:1px solid rgba(41,39,34,.45);
   color:var(--archive-paper-bright);
-  background:var(--archive-orange);
+  background:var(--archive-orange-deep);
   cursor:pointer;
   font-size:30px
 }
-.archive-search button:hover,.archive-search button:focus-visible{background:var(--archive-orange-deep)}
+.archive-search button:hover,.archive-search button:focus-visible{filter:brightness(.92)}
 .registration-mark{
   position:absolute;
   z-index:3;
@@ -313,9 +313,9 @@ body{
 }
 .collection-tabs>a:first-child{border-color:var(--archive-orange)}
 .collection-tabs>a:hover,.collection-tabs>a:focus-visible{transform:translateY(-7px);background-color:var(--archive-paper-bright)}
-.collection-code{color:var(--archive-orange);font:12px/1.2 var(--archive-mono)}
+.collection-code{color:var(--archive-orange-deep);font:12px/1.2 var(--archive-mono)}
 .collection-tabs strong{display:block;font:500 clamp(20px,2vw,28px)/1 var(--archive-display)}
-.collection-tabs small{display:block;margin-top:7px;color:#6e7868;font:9px/1.2 var(--archive-mono);letter-spacing:.1em;text-transform:uppercase}
+.collection-tabs small{display:block;margin-top:7px;color:#565f52;font:9px/1.2 var(--archive-mono);letter-spacing:.1em;text-transform:uppercase}
 .collection-tabs b{color:var(--archive-sage);font-size:21px}
 .section{max-width:1512px;padding:52px 42px}
 .section>h2,.content>h2{
@@ -338,7 +338,7 @@ body{
 }
 .playlist-card:hover{background:var(--archive-paper-bright);border-color:var(--archive-orange)}
 .playlist-card h2,.playlist-card h2 a{color:var(--archive-ink);font-family:var(--archive-display);font-size:18px;font-weight:500}
-.playlist-card p:last-child{color:#6f6a60}
+.playlist-card p:last-child{color:#5d5850}
 .grid{grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
 .video-card{
   color:var(--archive-ink);
@@ -352,8 +352,13 @@ body{
 .video-card:hover{transform:translateY(-5px);background:var(--archive-paper-bright)}
 .video-card h2,.video-card h2 a{color:var(--archive-ink);font-family:var(--archive-display);font-size:18px;font-weight:500}
 .video-card .card-body>p:not(.eyebrow):not(.meta){color:#625e56}
-.video-card .meta{color:#777168;font-family:var(--archive-mono)}
+.video-card .meta{color:#5d5850;font-family:var(--archive-mono)}
 .video-card .eyebrow{border-radius:0;font-family:var(--archive-mono);letter-spacing:.08em}
+.video-card .eyebrow{color:#9a3d00}
+.video-card[data-c=invaded] .eyebrow{color:#9c2424}
+.video-card[data-c=legendary] .eyebrow{color:#5f33c4}
+.video-card[data-c=manhunt] .eyebrow{color:#1d55b8}
+.video-card[data-c=special] .eyebrow{color:#075e54}
 main>.content{
   max-width:1120px;
   margin:32px auto 64px;
@@ -364,7 +369,7 @@ main>.content{
   box-shadow:0 22px 60px rgba(0,0,0,.32)
 }
 main>.content h1{font-family:var(--archive-display);font-weight:500}
-main>.content>p,main>.content .breadcrumbs{color:#68645b}
+main>.content>p,main>.content .breadcrumbs{color:#625e56}
 main>.content .breadcrumbs a{color:var(--archive-orange-deep)}
 main>.content .facts,main>.content .link-list,main>.content .faq-list,main>.content .build-card,main>.content ol{
   color:var(--archive-ink);
@@ -376,7 +381,7 @@ main>.content .facts th,main>.content .facts td{border-color:rgba(65,61,53,.2)}
 main>.content .facts th,main>.content .content>p,main>.content .link-list{color:#625e56}
 main>.content .facts td,main>.content .link-list a,main>.content .faq-list dt{color:var(--archive-ink)}
 .site-footer{border-color:rgba(232,224,207,.15);color:#888276}
-.site-footer a{color:var(--archive-orange)}
+.site-footer a{color:#e88a55}
 :focus-visible{outline:2px solid var(--archive-orange);outline-offset:3px}
 
 /* Future Assassin's Creed pages: add class="theme-assassins-creed" to body. */
