@@ -6,7 +6,55 @@
     <atom:link href="https://raigulus.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>The latest Raigulus Division 2 walkthroughs, Incursion and raid clears, PvP clips, build tests, manhunts, boss guides, and gameplay.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 25 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Paradise Lost Flawless Squad Clear | Division 2</title>
+      <link>https://raigulus.github.io/division-2/videos/flawless-paradise-lost-incursion-squad-clear/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/flawless-paradise-lost-incursion-squad-clear/</guid>
+      <pubDate>Thu, 03 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Flawless Paradise Lost squad clear with callouts through Wright, sprinkler phase and Lovebirds.</description>
+      <category>side activity</category>
+    </item>
+    <item>
+      <title>Broken Rain Matchmaking Pt.2 | Division 2</title>
+      <link>https://raigulus.github.io/division-2/videos/broken-rain-matchmaking-part-2-done-right/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/broken-rain-matchmaking-part-2-done-right/</guid>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Matchmaking done right: short queue, talking squad, full Broken Rain clear.</description>
+      <category>side activity</category>
+    </item>
+    <item>
+      <title>Solo T10 Prototype Gear Farm | Division 2</title>
+      <link>https://raigulus.github.io/division-2/videos/easiest-solo-t10-prototype-gear-farm/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/easiest-solo-t10-prototype-gear-farm/</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Easy solo Tier 10 Escalation farm for Prototype Gear at Jefferson Plaza.</description>
+      <category>escalation run</category>
+    </item>
+    <item>
+      <title>18-Minute Iron Horse Raid Boss | Division 2</title>
+      <link>https://raigulus.github.io/division-2/videos/iron-horse-raid-boss-18-minutes-shorts/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/iron-horse-raid-boss-18-minutes-shorts/</guid>
+      <pubDate>Sun, 23 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Final seconds of an 18:49 Iron Horse raid speedrun.</description>
+      <category>side activity</category>
+    </item>
+    <item>
+      <title>Could He Find Me? | Division 2 #shorts</title>
+      <link>https://raigulus.github.io/division-2/videos/could-he-find-me-division-2-shorts/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/could-he-find-me-division-2-shorts/</guid>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Short hunter highlight: could he find me in The Division 2.</description>
+      <category>side activity</category>
+    </item>
+    <item>
+      <title>Missed the EMP! Broken Rain Fail | Division 2</title>
+      <link>https://raigulus.github.io/division-2/videos/missed-the-emp-broken-rain-shorts/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/missed-the-emp-broken-rain-shorts/</guid>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Missed EMP moment from the Broken Rain Iris encounter.</description>
+      <category>side activity</category>
+    </item>
     <item>
       <title>IRON WILL Breaks Division 2 PvP — 800K Headshot Proof</title>
       <link>https://raigulus.github.io/division-2/videos/iron-will-breaks-division-2-pvp-800k-headshot-proof/</link>
@@ -382,6 +430,14 @@
       <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
       <description>The Division 2 Coney Island Amusement Park Tier 10 Escalation run with full gameplay, enemy waves, objectives, and loot checks.</description>
       <category>escalation run</category>
+    </item>
+    <item>
+      <title>This Build Turns Retaliation Into EASY Mode… No Joke (Division 2)</title>
+      <link>https://raigulus.github.io/division-2/videos/this-build-turns-retaliation-into-easy-mode-division-2/</link>
+      <guid isPermaLink="true">https://raigulus.github.io/division-2/videos/this-build-turns-retaliation-into-easy-mode-division-2/</guid>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 GMT</pubDate>
+      <description>A powerful Division 2 build that dominates Retaliation this season. Build breakdown, gear choices, and strategy for solo Retaliation on Heroic difficulty.</description>
+      <category>build/showcase</category>
     </item>
   </channel>
 </rss>
