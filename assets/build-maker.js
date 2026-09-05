@@ -695,6 +695,12 @@
     return lines.join("\n");
   }
 
+  function trackShare(kind) {
+    try {
+      if (typeof gtag === "function") gtag("event", "build_share", { share_type: kind });
+    } catch (e) {}
+  }
+
   function copyToClipboard(text) {
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(function () { flash("Copied!"); });
@@ -736,8 +742,8 @@
       return;
     }
     if (e.target.closest("#bm-modal-close")) { $("bm-modal").hidden = true; return; }
-    if (e.target.id === "bm-copy-link") { copyToClipboard(location.href.split("#")[0] + "#" + encodeState()); return; }
-    if (e.target.id === "bm-copy-text") { copyToClipboard(copyText()); return; }
+    if (e.target.id === "bm-copy-link") { copyToClipboard(location.href.split("#")[0] + "#" + encodeState()); trackShare("copy_link"); return; }
+    if (e.target.id === "bm-copy-text") { copyToClipboard(copyText()); trackShare("copy_text"); return; }
     if (e.target.id === "bm-reset") {
       state = { mask: null, chest: null, backpack: null, gloves: null, holster: null, knees: null,
                 primary: null, secondary: null, skills: [null, null], cfg: {} };
