@@ -553,4 +553,11 @@ body.theme-assassins-creed .archive-notes{
 .feedback{margin:2rem 0;padding:1rem 1.25rem;border:1px solid rgba(255,255,255,.14);border-radius:12px}
 .feedback button{cursor:pointer;margin:0 .5rem 0 0;padding:.45rem .9rem;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:transparent;color:inherit;font:inherit}
 .feedback button:disabled{opacity:.55;cursor:default}
+.bm-slot-clear{flex-shrink:0;padding:6px 12px;border:1px solid rgba(255,255,255,.25);border-radius:6px;background:transparent;color:rgba(255,255,255,.75);font-weight:700;cursor:pointer}
+.bm-slot-clear:hover{border-color:#d93535;color:#ff7b7b}
+#bm-gear-slots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+#bm-weapon-slots,#bm-skill-slots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#bm-gear-slots .bm-slot,#bm-weapon-slots .bm-slot,#bm-skill-slots .bm-slot{margin-bottom:0}
+@media(max-width:1000px){#bm-gear-slots{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){#bm-gear-slots,#bm-weapon-slots,#bm-skill-slots{grid-template-columns:1fr}}
 .discord-facade-button{display:flex;align-items:center;justify-content:center;width:100%;padding:1rem 1.25rem;border-radius:12px;border:1px solid rgba(255,255,255,.2);background:transparent;color:inherit;font:inherit;cursor:pointer}
