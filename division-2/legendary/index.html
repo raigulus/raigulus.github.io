@@ -141,6 +141,31 @@
 </article></div>
         <h2>YouTube Playlist</h2>
         <p>All legendary missions are also available as a playlist on YouTube: <a href="https://www.youtube.com/playlist?list=PLG6L-oRdfdL-PfMedrdiph_6dvRzmjW_q">@raigulus Legendary Missions</a></p>
+        <div class="feedback" data-feedback>
+          <p><strong>Was this guide helpful?</strong> <button type="button" data-feedback-yes>👍 Yes</button> <button type="button" data-feedback-no>👎 No</button></p>
+          <p class="meta">Discuss this guide with other players on <a href="https://discord.com/invite/fuyq8QHe">Discord</a>.</p>
+        </div>
+        <script>
+          (function() {
+            var box = document.querySelector("[data-feedback]");
+            if (!box) return;
+            function done(msg) {
+              box.querySelectorAll("button").forEach(function(b) { b.disabled = true; });
+              var p = box.querySelector("p");
+              if (p) p.innerHTML = "<strong>" + msg + "</strong>";
+            }
+            function send(v) {
+              try {
+                if (typeof gtag === "function") gtag("event", "guide_feedback", { feedback: v, page_path: window.location.pathname });
+              } catch (e) {}
+              done("Thanks for the feedback!");
+            }
+            var y = box.querySelector("[data-feedback-yes]");
+            var n = box.querySelector("[data-feedback-no]");
+            if (y) y.addEventListener("click", function() { send("yes"); });
+            if (n) n.addEventListener("click", function() { send("no"); });
+          })();
+        </script>
       </div>
     </section>
   </main>

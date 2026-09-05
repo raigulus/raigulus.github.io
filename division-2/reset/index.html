@@ -143,6 +143,31 @@
 <dt>When does the Division 2 incursion key chest reset?</dt><dd>The incursion key chest resets every Monday at 08:00 UTC, at the daily reset time.</dd>
 <dt>When does Cassie Mendoza open?</dt><dd>Cassie Mendoza opens on Wednesdays once her location becomes available via the Snitch, one day after the Tuesday weekly vendor reset.</dd>
 <dt>What time is The Division 2 reset in Turkey?</dt><dd>Turkey (TRT) stays fixed at UTC+3 all year, so the 08:00 UTC reset is always 11:00 in Turkey - no summer/winter shift.</dd></dl>
+        <div class="feedback" data-feedback>
+          <p><strong>Was this guide helpful?</strong> <button type="button" data-feedback-yes>👍 Yes</button> <button type="button" data-feedback-no>👎 No</button></p>
+          <p class="meta">Discuss this guide with other players on <a href="https://discord.com/invite/fuyq8QHe">Discord</a>.</p>
+        </div>
+        <script>
+          (function() {
+            var box = document.querySelector("[data-feedback]");
+            if (!box) return;
+            function done(msg) {
+              box.querySelectorAll("button").forEach(function(b) { b.disabled = true; });
+              var p = box.querySelector("p");
+              if (p) p.innerHTML = "<strong>" + msg + "</strong>";
+            }
+            function send(v) {
+              try {
+                if (typeof gtag === "function") gtag("event", "guide_feedback", { feedback: v, page_path: window.location.pathname });
+              } catch (e) {}
+              done("Thanks for the feedback!");
+            }
+            var y = box.querySelector("[data-feedback-yes]");
+            var n = box.querySelector("[data-feedback-no]");
+            if (y) y.addEventListener("click", function() { send("yes"); });
+            if (n) n.addEventListener("click", function() { send("no"); });
+          })();
+        </script>
       </div>
     </section>
   </main>

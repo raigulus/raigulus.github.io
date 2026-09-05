@@ -544,3 +544,6 @@ body.theme-assassins-creed .archive-notes{
 .bm-unassigned{color:#ffd479}
 .bm-talents li{margin-bottom:7px}
 .bm-talent-desc{display:block;font-size:12px;line-height:1.45;color:rgba(255,255,255,.55)}
+.feedback{margin:2rem 0;padding:1rem 1.25rem;border:1px solid rgba(255,255,255,.14);border-radius:12px}
+.feedback button{cursor:pointer;margin:0 .5rem 0 0;padding:.45rem .9rem;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:transparent;color:inherit;font:inherit}
+.feedback button:disabled{opacity:.55;cursor:default}

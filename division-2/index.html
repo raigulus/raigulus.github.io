@@ -1492,6 +1492,31 @@
         <dl class="faq-list"><dt>What is the Raigulus Division 2 hub?</dt><dd>It is a searchable archive of Raigulus Division 2 walkthroughs, manhunts, boss guides, loot hubs, PvP clips, and build tests.</dd>
 <dt>How are videos organized?</dt><dd>Videos are grouped by mission, difficulty, seasonal objective, PvP/archive status, loot relevance, and guide type.</dd>
 <dt>Is this site a full wiki?</dt><dd>No. It is a video-first guide archive that avoids unverified claims and links each page back to the original YouTube video.</dd></dl>
+        <div class="feedback" data-feedback>
+          <p><strong>Was this guide helpful?</strong> <button type="button" data-feedback-yes>👍 Yes</button> <button type="button" data-feedback-no>👎 No</button></p>
+          <p class="meta">Discuss this guide with other players on <a href="https://discord.com/invite/fuyq8QHe">Discord</a>.</p>
+        </div>
+        <script>
+          (function() {
+            var box = document.querySelector("[data-feedback]");
+            if (!box) return;
+            function done(msg) {
+              box.querySelectorAll("button").forEach(function(b) { b.disabled = true; });
+              var p = box.querySelector("p");
+              if (p) p.innerHTML = "<strong>" + msg + "</strong>";
+            }
+            function send(v) {
+              try {
+                if (typeof gtag === "function") gtag("event", "guide_feedback", { feedback: v, page_path: window.location.pathname });
+              } catch (e) {}
+              done("Thanks for the feedback!");
+            }
+            var y = box.querySelector("[data-feedback-yes]");
+            var n = box.querySelector("[data-feedback-no]");
+            if (y) y.addEventListener("click", function() { send("yes"); });
+            if (n) n.addEventListener("click", function() { send("no"); });
+          })();
+        </script>
       </div>
     </section>
   </main>

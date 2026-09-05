@@ -450,6 +450,31 @@
         <dl class="faq-list"><dt>What mission pages are included?</dt><dd>This hub groups Raigulus Division 2 mission, invaded, heroic, and legendary walkthrough pages that are ready for search.</dd>
 <dt>Are all mission pages no commentary?</dt><dd>Most mission walkthrough pages are no commentary when the video is labeled that way. Commentary, speedrun, or archive clips are labeled separately.</dd>
 <dt>Do these pages claim all loot or collectibles?</dt><dd>No. The pages avoid all loot, all SHD caches, and guaranteed drop claims unless a video explicitly proves them.</dd></dl>
+        <div class="feedback" data-feedback>
+          <p><strong>Was this guide helpful?</strong> <button type="button" data-feedback-yes>👍 Yes</button> <button type="button" data-feedback-no>👎 No</button></p>
+          <p class="meta">Discuss this guide with other players on <a href="https://discord.com/invite/fuyq8QHe">Discord</a>.</p>
+        </div>
+        <script>
+          (function() {
+            var box = document.querySelector("[data-feedback]");
+            if (!box) return;
+            function done(msg) {
+              box.querySelectorAll("button").forEach(function(b) { b.disabled = true; });
+              var p = box.querySelector("p");
+              if (p) p.innerHTML = "<strong>" + msg + "</strong>";
+            }
+            function send(v) {
+              try {
+                if (typeof gtag === "function") gtag("event", "guide_feedback", { feedback: v, page_path: window.location.pathname });
+              } catch (e) {}
+              done("Thanks for the feedback!");
+            }
+            var y = box.querySelector("[data-feedback-yes]");
+            var n = box.querySelector("[data-feedback-no]");
+            if (y) y.addEventListener("click", function() { send("yes"); });
+            if (n) n.addEventListener("click", function() { send("no"); });
+          })();
+        </script>
       </div>
     </section>
   </main>

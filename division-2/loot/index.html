@@ -314,6 +314,31 @@
 <h2>Is this a full loot map?</h2><p>No. This is a search-friendly loot and farming hub that points players toward current snapshots and Raigulus videos. It does not copy a third-party loot map.</p>
 <h2>What are good Division 2 farming videos to start with?</h2><p>The National Bond Armory XP farm, Tier 10 Escalation matchmaking run, Tipping Scales build tests, and Toxic Dark Zone experiments are the main Raigulus loot and farm references.</p>
 <h2>When does Division 2 loot reset?</h2><p>Every day at 08:00 UTC (11:00 TRT). Weekly vendors reset on Tuesdays - see the <a href="/division-2/reset/">Division 2 reset times and countdowns</a>.</p>
+        <div class="feedback" data-feedback>
+          <p><strong>Was this guide helpful?</strong> <button type="button" data-feedback-yes>👍 Yes</button> <button type="button" data-feedback-no>👎 No</button></p>
+          <p class="meta">Discuss this guide with other players on <a href="https://discord.com/invite/fuyq8QHe">Discord</a>.</p>
+        </div>
+        <script>
+          (function() {
+            var box = document.querySelector("[data-feedback]");
+            if (!box) return;
+            function done(msg) {
+              box.querySelectorAll("button").forEach(function(b) { b.disabled = true; });
+              var p = box.querySelector("p");
+              if (p) p.innerHTML = "<strong>" + msg + "</strong>";
+            }
+            function send(v) {
+              try {
+                if (typeof gtag === "function") gtag("event", "guide_feedback", { feedback: v, page_path: window.location.pathname });
+              } catch (e) {}
+              done("Thanks for the feedback!");
+            }
+            var y = box.querySelector("[data-feedback-yes]");
+            var n = box.querySelector("[data-feedback-no]");
+            if (y) y.addEventListener("click", function() { send("yes"); });
+            if (n) n.addEventListener("click", function() { send("no"); });
+          })();
+        </script>
       </div>
     </section>
   </main>

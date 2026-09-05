@@ -212,6 +212,31 @@
 <dt>How often is this Division 2 server status page updated?</dt><dd>The automated check runs hourly. If the check fails, the page is marked stale instead of pretending the servers are operational.</dd>
 <dt>What is Delta-03 in The Division 2?</dt><dd>Delta-03 is commonly associated with connection, authentication, or service availability problems. Check your connection, Ubisoft Connect, and the official server status source.</dd>
 <dt>Is Raigulus an official Ubisoft server status page?</dt><dd>No. This is an unofficial fan-made tracker. Ubisoft, The Division, and related marks belong to Ubisoft; the official source remains the Ubisoft service/help page linked here.</dd></dl>
+        <div class="feedback" data-feedback>
+          <p><strong>Was this guide helpful?</strong> <button type="button" data-feedback-yes>👍 Yes</button> <button type="button" data-feedback-no>👎 No</button></p>
+          <p class="meta">Discuss this guide with other players on <a href="https://discord.com/invite/fuyq8QHe">Discord</a>.</p>
+        </div>
+        <script>
+          (function() {
+            var box = document.querySelector("[data-feedback]");
+            if (!box) return;
+            function done(msg) {
+              box.querySelectorAll("button").forEach(function(b) { b.disabled = true; });
+              var p = box.querySelector("p");
+              if (p) p.innerHTML = "<strong>" + msg + "</strong>";
+            }
+            function send(v) {
+              try {
+                if (typeof gtag === "function") gtag("event", "guide_feedback", { feedback: v, page_path: window.location.pathname });
+              } catch (e) {}
+              done("Thanks for the feedback!");
+            }
+            var y = box.querySelector("[data-feedback-yes]");
+            var n = box.querySelector("[data-feedback-no]");
+            if (y) y.addEventListener("click", function() { send("yes"); });
+            if (n) n.addEventListener("click", function() { send("no"); });
+          })();
+        </script>
       </div>
     </section>
   </main>

@@ -302,6 +302,31 @@
 <h2>What is Tier 10 Escalation?</h2><p>Tier 10 is treated here as the high-pressure Escalation target for matchmaking videos, build tests, damage checks, and random group clears.</p>
 <h2>Where is the Escalation Requisition Vendor?</h2><p>Use the in-game Escalation vendor and the current automated daily snapshot to confirm cache or loot context. This hub explains the cache types and keeps Raigulus Escalation videos grouped in one place.</p>
 <h2>When does Escalation loot reset?</h2><p>Target loot can change daily at 08:00 UTC; mission rotation and vendor caches follow the Tuesday weekly reset. See <a href="/division-2/reset/">live reset countdowns</a>.</p>
+        <div class="feedback" data-feedback>
+          <p><strong>Was this guide helpful?</strong> <button type="button" data-feedback-yes>👍 Yes</button> <button type="button" data-feedback-no>👎 No</button></p>
+          <p class="meta">Discuss this guide with other players on <a href="https://discord.com/invite/fuyq8QHe">Discord</a>.</p>
+        </div>
+        <script>
+          (function() {
+            var box = document.querySelector("[data-feedback]");
+            if (!box) return;
+            function done(msg) {
+              box.querySelectorAll("button").forEach(function(b) { b.disabled = true; });
+              var p = box.querySelector("p");
+              if (p) p.innerHTML = "<strong>" + msg + "</strong>";
+            }
+            function send(v) {
+              try {
+                if (typeof gtag === "function") gtag("event", "guide_feedback", { feedback: v, page_path: window.location.pathname });
+              } catch (e) {}
+              done("Thanks for the feedback!");
+            }
+            var y = box.querySelector("[data-feedback-yes]");
+            var n = box.querySelector("[data-feedback-no]");
+            if (y) y.addEventListener("click", function() { send("yes"); });
+            if (n) n.addEventListener("click", function() { send("no"); });
+          })();
+        </script>
       </div>
     </section>
   </main>
