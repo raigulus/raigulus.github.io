@@ -189,6 +189,25 @@
     }
   };
   function cap(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : ""; }
+  function initials(name) {
+    return String(name || "?").split(/[\s\-\/:]+/).filter(Boolean).slice(0, 2)
+      .map(function (w) { return w.charAt(0).toUpperCase(); }).join("") || "?";
+  }
+  function hueOf(name) {
+    var h = 0, s = String(name || "");
+    for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) % 360;
+    return h;
+  }
+  function tileFor(i) {
+    var t = null;
+    if (picker.mode === "slot") {
+      if (picker.kind === "gear") t = gearBrand(i) || i.name;
+      else if (picker.kind === "weapon") t = i.family || i.name;
+      else if (picker.kind === "skill") t = i.skill || i.name;
+    }
+    if (!t) return "";
+    return '<span class="bm-mono" style="background:hsl(' + hueOf(t) + ',42%,30%)" aria-hidden="true">' + esc(initials(t)) + "</span>";
+  }
 
   /* ---------- weapon svg ---------- */
 
@@ -453,6 +472,26 @@
           }).join("") + "</div>"
         : '<p class="bm-empty">Pick cores, attributes and mods to see totals.</p>');
 
+    /* combat estimates (primary weapon, max rolls) */
+    var prim = state.primary;
+    if (prim && prim.base_damage) {
+      var totMap = {};
+      totals.forEach(function (t) { totMap[t.stat] = t.v; });
+      var wdPct = totMap["weapon-damage"] || 0;
+      var baseDmg = parseFloat(prim.base_damage) || 0;
+      var perBullet = baseDmg * (1 + wdPct / 100);
+      var chc = totMap["critical-hit-chance"] || 0, chd = totMap["critical-hit-damage"] || 0;
+      var expMult = 1 + (chc / 100) * (chd / 100);
+      var rpm = parseFloat(prim.base_rpm) || 0;
+      var estRows = [["Damage per bullet <span class='bm-note'>incl. weapon damage</span>", Math.round(perBullet).toLocaleString("en-US")]];
+      if (chc > 0 && chd > 0) estRows.push(["Crit-expected per bullet", Math.round(perBullet * expMult).toLocaleString("en-US")]);
+      if (rpm > 0) estRows.push(["Approx. DPS", Math.round(perBullet * expMult * rpm / 60).toLocaleString("en-US")]);
+      if (totMap["protection-from-elites"]) estRows.push(["Protection from Elites", "+" + (Math.round(totMap["protection-from-elites"] * 10) / 10) + "%"]);
+      html += "<h3>Combat Estimates <span class='bm-note'>primary, max rolls</span></h3><div class='bm-totals'>" + estRows.map(function (r) {
+        return "<div class='bm-stat-row'><span>" + r[0] + "</span><b>" + r[1] + "</b></div>";
+      }).join("") + "</div>";
+    }
+
     /* talents */
     var talents = [];
     GEAR_SLOTS.forEach(function (s) {
@@ -606,7 +645,7 @@
       if (sub && i.name && sub.toLowerCase() === String(i.name).toLowerCase()) sub = "";
       var label = picker.mode === "slot" ? itemLabel(i) : (i.name || prettyId(i.id));
       return '<li><button type="button" class="bm-item" data-name="' + esc(i.name || i.id) + '">' +
-        '<span class="bm-item-wrap"><span class="bm-item-name">' + esc(label) + "</span>" +
+        tileFor(i) + '<span class="bm-item-wrap"><span class="bm-item-name">' + esc(label) + "</span>" +
         (sub ? '<span class="bm-item-sub">' + esc(sub) + "</span>" : "") + desc + "</span></button></li>";
     }).join("");
     $("bm-modal-list").innerHTML = html || '<li class="bm-empty">No items match.</li>';
