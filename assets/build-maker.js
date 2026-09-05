@@ -158,20 +158,29 @@
     return { text: id, tip: "" };
   }
 
+  // Slot types can carry exclusions like "type:gear-minor|!headshot-damage-gear-minor".
+  // The picker must hide those attribute ids (e.g. the Investor vest).
+  function excludedIds(suffix) {
+    return String(suffix || "").split("|").filter(function (p) { return p.charAt(0) === "!"; })
+      .map(function (p) { return p.slice(1); });
+  }
+
   var KIND_SOURCE = {
     core: function () {
       return DATA.attributes.filter(function (a) { return a.compatibility.indexOf("gear-core") !== -1; })
-        .map(function (a) { return { id: a.id, name: statName(a.stat_id) + " " + fmtVal(parseVal(a.range_max)), sub: cap(a.category), description: "Roll range: " + fmtRange(a) }; });
+        .map(function (a) { return { id: a.id, name: statName(a.stat_id) + " " + fmtVal(parseVal(a.range_max)), sub: cap(a.category), category: a.category, description: "Roll range: " + fmtRange(a) }; });
     },
-    minor: function () {
-      return DATA.attributes.filter(function (a) { return a.compatibility.indexOf("gear-minor") !== -1; })
-        .map(function (a) { return { id: a.id, name: statName(a.stat_id) + " " + fmtVal(parseVal(a.range_max)), sub: cap(a.category), description: "Roll range: " + fmtRange(a) }; });
+    minor: function (suffix) {
+      var exMin = excludedIds(suffix);
+      return DATA.attributes.filter(function (a) { return a.compatibility.indexOf("gear-minor") !== -1 && exMin.indexOf(a.id) === -1; })
+        .map(function (a) { return { id: a.id, name: statName(a.stat_id) + " " + fmtVal(parseVal(a.range_max)), sub: cap(a.category), category: a.category, description: "Roll range: " + fmtRange(a) }; });
     },
-    wminor: function () {
-      return DATA.attributes.filter(function (a) { return a.compatibility.indexOf("weapon-minor") !== -1; })
-        .map(function (a) { return { id: a.id, name: statName(a.stat_id) + " " + fmtVal(parseVal(a.range_max)), sub: cap(a.category), description: "Roll range: " + fmtRange(a) }; });
+    wminor: function (suffix) {
+      var exWMin = excludedIds(suffix);
+      return DATA.attributes.filter(function (a) { return a.compatibility.indexOf("weapon-minor") !== -1 && exWMin.indexOf(a.id) === -1; })
+        .map(function (a) { return { id: a.id, name: statName(a.stat_id) + " " + fmtVal(parseVal(a.range_max)), sub: cap(a.category), category: a.category, description: "Roll range: " + fmtRange(a) }; });
     },
-    gmod: function () { return DATA.gearMods.map(function (m) { return { id: m.id, name: statName(m.stat_id) + " +" + m.range_max, sub: cap(m.category) }; }); },
+    gmod: function () { return DATA.gearMods.map(function (m) { return { id: m.id, name: statName(m.stat_id) + " +" + m.range_max, sub: cap(m.category), category: m.category }; }); },
     gtalent: function (suffix) { return DATA.gearTalents.filter(function (t) { return t.compatibility === suffix; }); },
     wtalent: function (suffix) { return DATA.weaponTalents.filter(function (t) { return t.compatibility.split("|").indexOf(suffix) !== -1; }); },
     wmod: function (suffix) {
@@ -571,7 +580,7 @@
         items = items.filter(function (i) { return i.brand_set === b || i.gear_set === b; });
       } else if (picker.filter.indexOf("family:") === 0) {
         var f = picker.filter.slice(7);
-        items = items.filter(function (i) { return i.family === f; });
+        items = items.filter(function (i) { return i._cat === f || i.family === f; });
       }
     } else if (picker.filter.indexOf("cat:") === 0) {
       var c = picker.filter.slice(4);
