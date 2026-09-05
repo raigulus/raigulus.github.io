@@ -15,11 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Discord widget facade: the widget pulls ~190 KiB of unoptimized avatars
-  // from Discord's CDN. Don't download any of it until the visitor asks for it.
-  var widgets = document.querySelectorAll('iframe[src*="discord.com/widget"]');
+  // from Discord's CDN. The iframe carries data-src only (never src), so the
+  // browser preload scanner can't fetch it early - nothing downloads until click.
+  var widgets = document.querySelectorAll('iframe[data-src*="discord.com/widget"]');
   for (var j = 0; j < widgets.length; j++) {
     (function (frame) {
-      var src = frame.getAttribute("src");
+      var src = frame.getAttribute("data-src");
       if (!src) return;
       var btn = document.createElement("button");
       btn.type = "button";
