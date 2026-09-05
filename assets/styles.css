@@ -512,8 +512,8 @@ body.theme-assassins-creed .archive-notes{
 .bm-modal-head h3{margin:0;font-size:16px}
 #bm-modal-close{background:none;border:0;color:#fff;font-size:24px;cursor:pointer;line-height:1}
 #bm-modal-search{margin:12px 16px 0;padding:9px 12px;border:1px solid rgba(255,255,255,.2);border-radius:8px;background:#0e1013;color:#fff;font-size:14px}
-.bm-modal-filters{display:flex;flex-wrap:wrap;gap:6px;padding:10px 16px;max-height:96px;overflow-y:auto}
-.bm-chip{padding:5px 10px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:none;color:rgba(255,255,255,.8);font-size:12px;cursor:pointer}
+.bm-modal-filters{display:flex;flex-wrap:nowrap;gap:6px;padding:10px 16px;overflow-x:auto}
+.bm-chip{flex:0 0 auto;padding:5px 10px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:none;color:rgba(255,255,255,.8);font-size:12px;cursor:pointer}
 .bm-chip.active{background:#f55a00;border-color:#f55a00;color:#fff}
 .bm-modal-list{list-style:none;margin:0;padding:0 16px 16px;overflow-y:auto}
 .bm-modal-list li{margin-bottom:4px}
@@ -521,6 +521,7 @@ body.theme-assassins-creed .archive-notes{
 .bm-item:hover{background:rgba(245,90,0,.25)}
 .bm-item-name{font-weight:600;font-size:13.5px}
 .bm-item-sub{font-size:12px;color:rgba(255,255,255,.5)}
+.bm-item-sub::before{content:"·";margin:0 7px 0 1px;opacity:.6}
 .bm-changelog-group{margin-bottom:14px}
 .bm-changelog-group h3{margin:0 0 4px;font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:rgba(255,255,255,.7)}
 .bm-chg{margin:2px 0;font-size:13px;line-height:1.5}

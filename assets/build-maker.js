@@ -591,6 +591,7 @@
               (i.stat_id ? DATA.stats[i.stat_id] + " (max " + i.range_max + ")" : "") || "";
       }
       var desc = i.description ? '<span class="bm-item-desc">' + esc(i.description) + "</span>" : "";
+      if (sub && i.name && sub.toLowerCase() === String(i.name).toLowerCase()) sub = "";
       var label = picker.mode === "slot" ? itemLabel(i) : (i.name || prettyId(i.id));
       return '<li><button type="button" class="bm-item" data-name="' + esc(i.name || i.id) + '">' +
         '<span class="bm-item-wrap"><span class="bm-item-name">' + esc(label) + "</span>" +
