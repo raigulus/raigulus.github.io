@@ -34,15 +34,15 @@
     }
   ],
   "last_updated": "2026-09-05 10:31",
-  "last_checked": "2026-09-05 16:54 UTC",
-  "parsed_at": "2026-09-05T16:54:54.688022+00:00",
+  "last_checked": "2026-09-05 18:08 UTC",
+  "parsed_at": "2026-09-05T18:08:48.362845+00:00",
   "status": "ok",
-  "fetched_at": "2026-09-05T16:54:54.688022+00:00",
+  "fetched_at": "2026-09-05T18:08:48.362845+00:00",
   "next_expected_update": "Around 08:00 UTC",
   "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-09-05 16:54 UTC",
+  "vendor_highlights_checked": "2026-09-05 18:08 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
