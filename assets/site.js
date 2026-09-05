@@ -31,14 +31,38 @@ document.addEventListener("DOMContentLoaded", function () {
       var h = frame.getAttribute("height") || "500";
       btn.style.maxWidth = w + "px";
       btn.style.minHeight = Math.min(parseInt(h, 10) || 500, 240) + "px";
-      frame.removeAttribute("src");
       frame.style.display = "none";
       btn.addEventListener("click", function () {
         frame.setAttribute("src", src);
+        frame.removeAttribute("data-src");
         frame.style.display = "";
         btn.remove();
       });
       frame.parentNode.insertBefore(btn, frame);
     })(widgets[j]);
+  }
+
+  // YouTube thumbnail fallback chain: maxres -> hq -> mq -> default.
+  // Headless bots (PageSpeed included) sometimes get 403s from i.ytimg.com,
+  // and old videos may lack maxres thumbs. Step down instead of showing broken art.
+  var thumbOrder = ["maxresdefault", "hqdefault", "mqdefault", "default"];
+  function thumbFallback(img) {
+    if (img.getAttribute("data-thumb-fallback") === "done") return;
+    var src = img.getAttribute("src") || "";
+    for (var i = 0; i < thumbOrder.length - 1; i++) {
+      if (src.indexOf("/" + thumbOrder[i] + ".") !== -1) {
+        img.setAttribute("src", src.replace("/" + thumbOrder[i] + ".", "/" + thumbOrder[i + 1] + "."));
+        if (i + 1 === thumbOrder.length - 1) img.setAttribute("data-thumb-fallback", "done");
+        return;
+      }
+    }
+    img.setAttribute("data-thumb-fallback", "done");
+  }
+  var thumbs = document.querySelectorAll('img[src*="i.ytimg.com/vi/"]');
+  for (var k = 0; k < thumbs.length; k++) {
+    (function (img) {
+      img.addEventListener("error", function () { thumbFallback(img); });
+      if (img.complete && img.naturalWidth === 0 && img.getAttribute("src")) thumbFallback(img);
+    })(thumbs[k]);
   }
 });
