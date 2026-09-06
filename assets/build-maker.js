@@ -234,7 +234,7 @@
     chest: '<rect x="8" y="4" width="8" height="7" rx="2"/><rect x="30" y="4" width="8" height="7" rx="2"/><rect x="15" y="2" width="16" height="14" rx="2"/><rect x="20" y="0" width="6" height="4" rx="1" class="acc"/><rect x="17" y="8" width="12" height="2" class="acc"/>',
     backpack: '<rect x="14" y="2" width="15" height="14" rx="5"/><rect x="29" y="7" width="5" height="9" rx="1"/><rect x="19" y="0" width="5" height="3" rx="1" class="acc"/><rect x="30" y="4" width="3" height="4" rx="1" class="acc"/><rect x="16" y="9" width="11" height="2" class="acc"/>',
     gloves: '<rect x="18" y="1" width="3" height="7" rx="1"/><rect x="22" y="0" width="3" height="8" rx="1"/><rect x="26" y="1" width="3" height="7" rx="1"/><rect x="30" y="5" width="5" height="3" rx="1"/><rect x="17" y="7" width="13" height="6" rx="2"/><rect x="17" y="13" width="13" height="3" class="acc"/>',
-    holster: '<rect x="17" y="1" width="12" height="8" rx="1"/><rect x="19" y="9" width="8" height="6"/><rect x="19" y="3" width="8" height="3" class="acc"/>',
+    holster: '<rect x="6" y="1" width="34" height="3" rx="1"/><rect x="20" y="3" width="4" height="5" class="acc"/><rect x="27" y="5" width="5" height="5" rx="1"/><rect x="17" y="7" width="10" height="9" rx="2"/><rect x="15" y="11" width="14" height="2" class="acc"/>',
     knees: '<rect x="10" y="3" width="11" height="11" rx="4"/><rect x="25" y="3" width="11" height="11" rx="4"/><rect x="10" y="1" width="11" height="3" rx="1" class="acc"/><rect x="25" y="1" width="11" height="3" rx="1" class="acc"/>'
   };
   function gearSvg(slot, rar) {
