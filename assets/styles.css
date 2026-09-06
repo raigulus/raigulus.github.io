@@ -486,7 +486,8 @@ body.theme-assassins-creed .archive-notes{
 @media(max-width:860px){.bm-layout{grid-template-columns:1fr}}
 .bm-slots h2,.bm-summary h2{margin-top:0}
 .bm-slot{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;margin-bottom:8px;border:1px solid rgba(255,255,255,.14);border-radius:8px;background:rgba(255,255,255,.04)}
-.bm-slot-info{display:flex;flex-direction:column;min-width:0}
+.bm-slot-info{display:flex;flex-direction:column;flex:1;min-width:0}
+.bm-slot-actions{display:flex;gap:6px;flex-shrink:0;margin-left:auto;align-items:center}
 .bm-slot-label{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.55)}
 .bm-slot-name{font-weight:700;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .bm-slot-sub{font-size:12px;color:rgba(255,255,255,.5)}

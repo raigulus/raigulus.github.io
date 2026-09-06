@@ -273,8 +273,8 @@
       '<div class="bm-slot-info"><span class="bm-slot-label">' + label + '</span>' +
       '<span class="bm-slot-name">' + esc(name) + "</span>" +
       (sub ? '<span class="bm-slot-sub">' + esc(sub) + "</span>" : "") + "</div>" +
-      '<button type="button" class="bm-slot-change" data-slot="' + key + '">Change</button>' +
-      (name !== "Empty" ? '<button type="button" class="bm-slot-clear" data-clear="' + key + '">Clear</button>' : "") + "</div>";
+      '<span class="bm-slot-actions"><button type="button" class="bm-slot-change" data-slot="' + key + '">Change</button>' +
+      (name !== "Empty" ? '<button type="button" class="bm-slot-clear" data-clear="' + key + '">Clear</button>' : "") + "</span></div>";
   }
 
   var CFG_PLACEHOLDER = {
@@ -310,8 +310,8 @@
       '<span class="bm-slot-name">' + (item ? esc(itemLabel(item)) : "Empty") + "</span>" +
       (item && gearBrand(item) ? '<span class="bm-slot-sub">' + esc(gearBrand(item)) + "</span>" : "") +
       "</div>" +
-      '<button type="button" class="bm-slot-change" data-slot="' + slotKey + '">Change</button>' +
-      (item ? '<button type="button" class="bm-slot-clear" data-clear="' + slotKey + '">Clear</button>' : "");
+      '<span class="bm-slot-actions"><button type="button" class="bm-slot-change" data-slot="' + slotKey + '">Change</button>' +
+      (item ? '<button type="button" class="bm-slot-clear" data-clear="' + slotKey + '">Clear</button>' : "") + "</span>";
     if (item) {
       for (var c = 1; c <= 3; c++) html += cfgRow(slotKey, item, "core_" + c, c === 1 ? "Core" : "Core " + c, "core");
       if (item.talent_slot && item.talent_slot !== "N/A") {
@@ -331,8 +331,8 @@
       '<div class="bm-slot-info"><span class="bm-slot-label">' + label + "</span>" +
       '<span class="bm-slot-name">' + (w ? esc(itemLabel(w)) : "Empty") + "</span>" +
       (w ? '<span class="bm-slot-sub">' + esc(w.family) + "</span>" : "") + "</div>" +
-      '<button type="button" class="bm-slot-change" data-slot="' + slotKey + '">Change</button>' +
-      (w ? '<button type="button" class="bm-slot-clear" data-clear="' + slotKey + '">Clear</button>' : "");
+      '<span class="bm-slot-actions"><button type="button" class="bm-slot-change" data-slot="' + slotKey + '">Change</button>' +
+      (w ? '<button type="button" class="bm-slot-clear" data-clear="' + slotKey + '">Clear</button>' : "") + "</span>";
     if (w) {
       var stats = [];
       if (w.base_damage) stats.push("<b>DMG</b> " + Math.round(parseFloat(w.base_damage)).toLocaleString("en-US"));
