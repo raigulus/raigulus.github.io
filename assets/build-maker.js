@@ -198,6 +198,26 @@
     for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) % 360;
     return h;
   }
+  /* Rarity edge + attribute pips + talent shield for slot cards. Colors are
+     plain rarity colors, all artwork is original. */
+  function pipRow(slotKey, item, isWeapon) {
+    var fields = ["core_1", "core_2", "core_3", "minor_1", "minor_2", "minor_3"];
+    var dots = fields.map(function (f) {
+      var raw = item[f];
+      if (!raw || raw === "N/A") return "";
+      var id = state.cfg[slotKey + ":" + f];
+      var a = id && findAttr(id);
+      var cat = a ? a.category : null;
+      var cls = cat === "offensive" ? "pip-off" : cat === "defensive" ? "pip-def" : cat === "skill" ? "pip-skl" : "pip-na";
+      return '<span class="bm-pip ' + cls + '" title="' + esc(a ? statName(a.stat_id) : "Unselected") + '"></span>';
+    }).join("");
+    var t = null;
+    try { t = effValue(slotKey, item, "talent_slot"); } catch (e) { t = null; }
+    var shield = t ? '<span class="bm-talent-wrap" title="' + esc(String(t)) + '"><svg class="bm-talent-ico" viewBox="0 0 16 20" aria-hidden="true"><path d="M8 0l7 3v6c0 5-3.5 8-7 11C4.5 17 1 14 1 9V3z" fill="currentColor"/></svg></span>' : "";
+    if (!dots && !shield) return "";
+    return '<span class="bm-pips">' + dots + shield + "</span>";
+  }
+  function rarClass(it) { return it ? (it.is_exotic === "TRUE" ? " rar-exotic" : " rar-high") : ""; }
   function tileFor(i) {
     var t = null;
     if (picker.mode === "slot") {
@@ -306,12 +326,12 @@
   }
 
   function gearCard(slotKey, label, item) {
-    var html = '<div class="bm-slot" data-slot="' + slotKey + '">' +
+    var html = '<div class="bm-slot' + rarClass(item) + '" data-slot="' + slotKey + '">' +
       (item ? gearSvg(slotKey, item.is_exotic === "TRUE" ? "exotic" : "high") : "") + '<div class="bm-slot-info">' +
       '<span class="bm-slot-label">' + label + "</span>" +
       '<span class="bm-slot-name">' + (item ? esc(itemLabel(item)) : "Empty") + "</span>" +
       (item && gearBrand(item) ? '<span class="bm-slot-sub">' + esc(gearBrand(item)) + "</span>" : "") +
-      "</div>" +
+      (item ? pipRow(slotKey, item, false) : "") + "</div>" +
       '<span class="bm-slot-actions"><button type="button" class="bm-slot-change" data-slot="' + slotKey + '">Change</button>' +
       (item ? '<button type="button" class="bm-slot-clear" data-clear="' + slotKey + '">Clear</button>' : "") + "</span>";
     if (item) {
@@ -328,11 +348,12 @@
 
   function weaponCard(slotKey, label, w) {
     var cat = w ? w._cat : null;
-    var html = '<div class="bm-slot" data-slot="' + slotKey + '">' +
+    var html = '<div class="bm-slot' + rarClass(w) + '" data-slot="' + slotKey + '">' +
       (w ? gunSvg(cat) : "") +
       '<div class="bm-slot-info"><span class="bm-slot-label">' + label + "</span>" +
       '<span class="bm-slot-name">' + (w ? esc(itemLabel(w)) : "Empty") + "</span>" +
-      (w ? '<span class="bm-slot-sub">' + esc(w.family) + "</span>" : "") + "</div>" +
+      (w ? '<span class="bm-slot-sub">' + esc(w.family) + "</span>" : "") +
+      (w ? pipRow(slotKey, w, true) : "") + "</div>" +
       '<span class="bm-slot-actions"><button type="button" class="bm-slot-change" data-slot="' + slotKey + '">Change</button>' +
       (w ? '<button type="button" class="bm-slot-clear" data-clear="' + slotKey + '">Clear</button>' : "") + "</span>";
     if (w) {
