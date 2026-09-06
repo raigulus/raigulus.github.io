@@ -230,12 +230,12 @@
   /* Original geometric silhouettes for gear slots - same two-tone language as
      the weapon art above. Drawn from scratch, no game assets used. */
   var GEAR_ART = {
-    mask: '<rect x="12" y="1" width="22" height="14" rx="5"/><rect x="16" y="6" width="6" height="4" rx="2" class="acc"/><rect x="24" y="6" width="6" height="4" rx="2" class="acc"/>',
-    chest: '<rect x="13" y="1" width="20" height="14" rx="2"/><rect x="20" y="1" width="6" height="14" class="acc"/><rect x="15" y="6" width="16" height="3"/>',
-    backpack: '<rect x="14" y="2" width="18" height="12" rx="4"/><rect x="20" y="0" width="6" height="4" class="acc"/><rect x="16" y="7" width="14" height="3"/>',
-    gloves: '<rect x="14" y="4" width="8" height="10" rx="2"/><rect x="24" y="4" width="8" height="10" rx="2"/><rect x="16" y="1" width="4" height="4" class="acc"/><rect x="26" y="1" width="4" height="4" class="acc"/>',
+    mask: '<rect x="13" y="0" width="20" height="16" rx="7"/><rect x="16" y="4" width="14" height="5" rx="2.5" class="acc"/><rect x="21" y="11" width="4" height="2" rx="1" class="acc"/>',
+    chest: '<rect x="8" y="4" width="8" height="7" rx="2"/><rect x="30" y="4" width="8" height="7" rx="2"/><rect x="15" y="2" width="16" height="14" rx="2"/><rect x="20" y="0" width="6" height="4" rx="1" class="acc"/><rect x="17" y="8" width="12" height="2" class="acc"/>',
+    backpack: '<rect x="14" y="2" width="15" height="14" rx="5"/><rect x="29" y="7" width="5" height="9" rx="1"/><rect x="19" y="0" width="5" height="3" rx="1" class="acc"/><rect x="30" y="4" width="3" height="4" rx="1" class="acc"/><rect x="16" y="9" width="11" height="2" class="acc"/>',
+    gloves: '<rect x="18" y="1" width="3" height="7" rx="1"/><rect x="22" y="0" width="3" height="8" rx="1"/><rect x="26" y="1" width="3" height="7" rx="1"/><rect x="30" y="5" width="5" height="3" rx="1"/><rect x="17" y="7" width="13" height="6" rx="2"/><rect x="17" y="13" width="13" height="3" class="acc"/>',
     holster: '<rect x="17" y="1" width="12" height="8" rx="1"/><rect x="19" y="9" width="8" height="6"/><rect x="19" y="3" width="8" height="3" class="acc"/>',
-    knees: '<rect x="10" y="3" width="11" height="10" rx="4"/><rect x="25" y="3" width="11" height="10" rx="4"/><rect x="12" y="6" width="7" height="3" class="acc"/><rect x="27" y="6" width="7" height="3" class="acc"/>'
+    knees: '<rect x="10" y="3" width="11" height="11" rx="4"/><rect x="25" y="3" width="11" height="11" rx="4"/><rect x="10" y="1" width="11" height="3" rx="1" class="acc"/><rect x="25" y="1" width="11" height="3" rx="1" class="acc"/>'
   };
   function gearSvg(slot, rar) {
     var art = GEAR_ART[slot] || GEAR_ART.chest;
