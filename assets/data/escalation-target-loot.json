@@ -1,48 +1,48 @@
 {
-  "date": "2026-09-05",
+  "date": "2026-09-06",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Tombs",
-      "loot": "Electrique"
+      "loot": "Gila Guard"
     },
     {
       "mission": "Manning National Zoo",
-      "loot": "Gear Mods"
+      "loot": "Electrique"
     },
     {
       "mission": "Bank Headquarters",
-      "loot": "Lengmo"
+      "loot": "Wyvern Wear"
     },
     {
       "mission": "American History Museum",
-      "loot": "China Light Industries"
+      "loot": "Concentrated Company"
     },
     {
       "mission": "Space Administration HQ",
-      "loot": "Rifle"
+      "loot": "Measured Assembly"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "MMRs"
+      "item": "Rifles"
     },
     {
       "type": "Gear",
-      "item": "Holsters"
+      "item": "Backpacks"
     }
   ],
-  "last_updated": "2026-09-05 10:31",
-  "last_checked": "2026-09-06 05:47 UTC",
-  "parsed_at": "2026-09-06T05:47:23.298059+00:00",
-  "status": "pending",
-  "fetched_at": "2026-09-06T05:47:23.298059+00:00",
+  "last_updated": "2026-09-06 10:01",
+  "last_checked": "2026-09-06 09:37 UTC",
+  "parsed_at": "2026-09-06T09:37:39.461751+00:00",
+  "status": "ok",
+  "fetched_at": "2026-09-06T09:37:39.461751+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-09-06 05:47 UTC",
+  "vendor_highlights_checked": "2026-09-06 09:37 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
