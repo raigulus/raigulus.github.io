@@ -230,18 +230,20 @@
   /* Original geometric silhouettes for gear slots - same two-tone language as
      the weapon art above. Drawn from scratch, no game assets used. */
   var GEAR_ART = {
-    mask: '<rect x="14" y="3" width="18" height="10" rx="4"/><rect x="18" y="6" width="4" height="2" class="acc"/><rect x="24" y="6" width="4" height="2" class="acc"/>',
-    chest: '<rect x="14" y="1" width="18" height="14" rx="2"/><rect x="21" y="1" width="4" height="14" class="acc"/><rect x="16" y="6" width="14" height="2"/>',
-    backpack: '<rect x="15" y="2" width="16" height="12" rx="3"/><rect x="21" y="0" width="4" height="3" class="acc"/><rect x="17" y="7" width="12" height="2"/>',
-    gloves: '<rect x="16" y="4" width="7" height="9" rx="2"/><rect x="24" y="4" width="7" height="9" rx="2"/><rect x="18" y="1" width="3" height="4" class="acc"/><rect x="26" y="1" width="3" height="4" class="acc"/>',
-    holster: '<rect x="18" y="2" width="10" height="7" rx="1"/><rect x="20" y="9" width="6" height="6"/><rect x="20" y="4" width="6" height="2" class="acc"/>',
-    knees: '<rect x="12" y="4" width="9" height="9" rx="3"/><rect x="25" y="4" width="9" height="9" rx="3"/><rect x="14" y="6" width="5" height="2" class="acc"/><rect x="27" y="6" width="5" height="2" class="acc"/>'
+    mask: '<rect x="12" y="4" width="22" height="9" rx="4"/><rect x="17" y="7" width="5" height="3" class="acc"/><rect x="24" y="7" width="5" height="3" class="acc"/>',
+    chest: '<rect x="13" y="1" width="20" height="14" rx="2"/><rect x="20" y="1" width="6" height="14" class="acc"/><rect x="15" y="6" width="16" height="3"/>',
+    backpack: '<rect x="14" y="2" width="18" height="12" rx="4"/><rect x="20" y="0" width="6" height="4" class="acc"/><rect x="16" y="7" width="14" height="3"/>',
+    gloves: '<rect x="14" y="4" width="8" height="10" rx="2"/><rect x="24" y="4" width="8" height="10" rx="2"/><rect x="16" y="1" width="4" height="4" class="acc"/><rect x="26" y="1" width="4" height="4" class="acc"/>',
+    holster: '<rect x="17" y="1" width="12" height="8" rx="1"/><rect x="19" y="9" width="8" height="6"/><rect x="19" y="3" width="8" height="3" class="acc"/>',
+    knees: '<rect x="10" y="3" width="11" height="10" rx="4"/><rect x="25" y="3" width="11" height="10" rx="4"/><rect x="12" y="6" width="7" height="3" class="acc"/><rect x="27" y="6" width="7" height="3" class="acc"/>'
   };
-  function gearSvg(slot) {
+  function gearSvg(slot, rar) {
     var art = GEAR_ART[slot] || GEAR_ART.chest;
-    return '<svg class="bm-gsvg" viewBox="0 0 46 16" aria-hidden="true" focusable="false">' +
+    var accent = rar === "exotic" ? "#d93535" : "#f55a00";
+    var tint = rar === "exotic" ? "rar-exotic" : "rar-high";
+    return '<span class="bm-gear-art ' + tint + '"><svg class="bm-gsvg" viewBox="0 0 46 16" aria-hidden="true" focusable="false">' +
       '<g fill="#cfd6df">' + art.replace(/class="acc"/g, "") + "</g>" +
-      '<g fill="#f55a00">' + art.replace(/<rect(?![^>]*class="acc")[^>]*\/>/g, "").replace(/class="acc"/g, "") + "</g></svg>";
+      '<g fill="' + accent + '">' + art.replace(/<rect(?![^>]*class="acc")[^>]*\/>/g, "").replace(/class="acc"/g, "") + "</g></svg></span>";
   }
 
   /* ---------- render: slots ---------- */
@@ -305,7 +307,7 @@
 
   function gearCard(slotKey, label, item) {
     var html = '<div class="bm-slot" data-slot="' + slotKey + '">' +
-      (item ? gearSvg(slotKey) : "") + '<div class="bm-slot-info">' +
+      (item ? gearSvg(slotKey, item.is_exotic === "TRUE" ? "exotic" : "high") : "") + '<div class="bm-slot-info">' +
       '<span class="bm-slot-label">' + label + "</span>" +
       '<span class="bm-slot-name">' + (item ? esc(itemLabel(item)) : "Empty") + "</span>" +
       (item && gearBrand(item) ? '<span class="bm-slot-sub">' + esc(gearBrand(item)) + "</span>" : "") +
