@@ -230,7 +230,7 @@
   /* Original geometric silhouettes for gear slots - same two-tone language as
      the weapon art above. Drawn from scratch, no game assets used. */
   var GEAR_ART = {
-    mask: '<rect x="8" y="3" width="30" height="10" rx="5"/><rect x="14" y="6" width="7" height="4" rx="2" class="acc"/><rect x="25" y="6" width="7" height="4" rx="2" class="acc"/>',
+    mask: '<rect x="12" y="1" width="22" height="14" rx="5"/><rect x="16" y="6" width="6" height="4" rx="2" class="acc"/><rect x="24" y="6" width="6" height="4" rx="2" class="acc"/>',
     chest: '<rect x="13" y="1" width="20" height="14" rx="2"/><rect x="20" y="1" width="6" height="14" class="acc"/><rect x="15" y="6" width="16" height="3"/>',
     backpack: '<rect x="14" y="2" width="18" height="12" rx="4"/><rect x="20" y="0" width="6" height="4" class="acc"/><rect x="16" y="7" width="14" height="3"/>',
     gloves: '<rect x="14" y="4" width="8" height="10" rx="2"/><rect x="24" y="4" width="8" height="10" rx="2"/><rect x="16" y="1" width="4" height="4" class="acc"/><rect x="26" y="1" width="4" height="4" class="acc"/>',
