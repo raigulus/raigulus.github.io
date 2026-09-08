@@ -1,48 +1,48 @@
 {
-  "date": "2026-09-07",
+  "date": "2026-09-08",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
-      "mission": "The Tombs",
-      "loot": "Royal Works"
+      "mission": "The Pentagon",
+      "loot": "Cavalier"
     },
     {
-      "mission": "Manning National Zoo",
-      "loot": "Negotiators Dilemma"
+      "mission": "DARPA Research Labs",
+      "loot": "Alps Summit Armaments"
     },
     {
-      "mission": "Bank Headquarters",
-      "loot": "Aces & Eights"
+      "mission": "District Union Arena",
+      "loot": "Wyvern Wear"
     },
     {
-      "mission": "American History Museum",
+      "mission": "Roosevelt Island",
       "loot": "Walker, Harris & Co"
     },
     {
       "mission": "Space Administration HQ",
-      "loot": "Grupo Sombra S.A."
+      "loot": "Empress International"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Shotguns"
+      "item": "SMGs"
     },
     {
       "type": "Gear",
-      "item": "Kneepads"
+      "item": "Backpacks"
     }
   ],
-  "last_updated": "2026-09-07 10:01",
-  "last_checked": "2026-09-08 10:02 UTC",
-  "parsed_at": "2026-09-08T10:02:29.551094+00:00",
-  "status": "stale",
-  "fetched_at": "2026-09-08T10:02:29.551094+00:00",
+  "last_updated": "2026-09-08 12:48",
+  "last_checked": "2026-09-08 12:49 UTC",
+  "parsed_at": "2026-09-08T12:49:23.057266+00:00",
+  "status": "ok",
+  "fetched_at": "2026-09-08T12:49:23.057266+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Checked after the expected daily reset window, but the source still returned an older snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-09-08 10:02 UTC",
+  "vendor_highlights_checked": "2026-09-08 12:49 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
