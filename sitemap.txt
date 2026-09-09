@@ -10,6 +10,10 @@ https://raigulus.github.io/division-2/server-status/
 https://raigulus.github.io/division-2/escalation/
 https://raigulus.github.io/division-2/prototype-gear/
 https://raigulus.github.io/division-2/reset/
+https://raigulus.github.io/division-2/exotics/
+https://raigulus.github.io/division-2/exotics/fafnir/
+https://raigulus.github.io/division-2/exotics/iron-will/
+https://raigulus.github.io/division-2/exotics/loaded-for-bear/
 https://raigulus.github.io/division-2/dark-zone-surge/
 https://raigulus.github.io/division-2/legendary/
 https://raigulus.github.io/division-2/manhunts/
