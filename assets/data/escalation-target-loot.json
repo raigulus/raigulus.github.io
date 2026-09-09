@@ -1,48 +1,48 @@
 {
-  "date": "2026-09-08",
+  "date": "2026-09-09",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Pentagon",
-      "loot": "Cavalier"
+      "loot": "Hard Wired"
     },
     {
       "mission": "DARPA Research Labs",
-      "loot": "Alps Summit Armaments"
+      "loot": "Gloves"
     },
     {
       "mission": "District Union Arena",
-      "loot": "Wyvern Wear"
+      "loot": "True Patriot"
     },
     {
       "mission": "Roosevelt Island",
-      "loot": "Walker, Harris & Co"
+      "loot": "Sokolov Concern"
     },
     {
       "mission": "Space Administration HQ",
-      "loot": "Empress International"
+      "loot": "Holster"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "SMGs"
+      "item": "Pistols"
     },
     {
       "type": "Gear",
-      "item": "Backpacks"
+      "item": "Gloves"
     }
   ],
-  "last_updated": "2026-09-08 12:48",
-  "last_checked": "2026-09-09 05:07 UTC",
-  "parsed_at": "2026-09-09T05:07:13.016326+00:00",
-  "status": "pending",
-  "fetched_at": "2026-09-09T05:07:13.016326+00:00",
+  "last_updated": "2026-09-09 10:15",
+  "last_checked": "2026-09-09 09:35 UTC",
+  "parsed_at": "2026-09-09T09:35:27.263065+00:00",
+  "status": "ok",
+  "fetched_at": "2026-09-09T09:35:27.263065+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-09-09 05:07 UTC",
+  "vendor_highlights_checked": "2026-09-09 09:35 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
