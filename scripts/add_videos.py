@@ -229,7 +229,7 @@ def render_page(record: dict, records: list[dict]) -> str:
         '"sameAs":["https://www.youtube.com/@raigulus","https://www.instagram.com/raigulus/","https://www.facebook.com/raigulus/"]}}'
     ) % (
         esc(record["title"]).replace("'", "\\u0027"), esc(record["_summary"]).replace("'", "\\u0027"),
-        vid, record["published_date"], vid, vid,
+        vid, record["published_date"] + "T00:00:00+00:00", vid, vid,
         ",".join('"%s"' % esc(k).replace("'", "\\u0027") for k in keywords),
     )
     breadcrumb_ld = (
