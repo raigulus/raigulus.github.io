@@ -1,0 +1,51 @@
+name: Update Maintenance Notices
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 * * * *"
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: update-maintenance-notices
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Poll Steam News for maintenance notices
+        run: python3 scripts/update-maintenance-notices.py
+
+      - name: Commit changes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git add assets/data/division-2-maintenance.json division-2/server-status/index.html
+          if git diff --cached --quiet; then
+            echo "No maintenance notice changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          suffix="$(date -u +%s%N | sha256sum | cut -c1-8)"
+          git commit -m "site update $suffix"
+          for attempt in 1 2 3; do
+            if git push; then
+              gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds"
+              exit 0
+            fi
+            if [ "$attempt" = 3 ]; then
+              echo "Push was rejected after ${attempt} attempts."
+              exit 1
+            fi
+            echo "Push raced with another main update; rebasing before retry ${attempt}."
+            git fetch origin main
+            git rebase origin/main
+          done
