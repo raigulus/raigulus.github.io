@@ -489,8 +489,8 @@ body.theme-assassins-creed .archive-notes{
 .bm-slot-info{display:flex;flex-direction:column;flex:1;min-width:0}
 .bm-slot-actions{display:flex;gap:6px;flex-shrink:0;margin-left:auto;align-items:center}
 .bm-slot-label{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.55)}
-.bm-slot-name{font-weight:700;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.bm-slot-sub{font-size:12px;color:rgba(255,255,255,.5)}
+.bm-slot-name{font-weight:700;font-size:14px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bm-slot-sub{font-size:12px;color:rgba(255,255,255,.5);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
 .bm-slot-change{flex-shrink:0;padding:6px 12px;border:0;border-radius:6px;background:#f55a00;color:#fff;font-weight:700;cursor:pointer}
 .bm-slot-change:hover{background:#ff6f1a}
 .bm-summary h3{margin:14px 0 6px;font-size:15px;text-transform:uppercase;letter-spacing:.05em}
