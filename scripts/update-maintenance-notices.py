@@ -103,7 +103,16 @@ def main():
     gid = notice.get("gid") if notice else None
 
     prev = {}
-    if JSON_PATH.exists():
+    if not JSON_PATH.exists():
+        JSON_PATH.write_text(json.dumps({
+            "appid": APPID,
+            "gid": None,
+            "title": None,
+            "date": None,
+            "url": None,
+            "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+        }, indent=2) + "\n", encoding="utf-8")
+    else:
         try:
             prev = json.loads(JSON_PATH.read_text(encoding="utf-8"))
         except Exception:
