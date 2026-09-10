@@ -23,6 +23,8 @@ https://raigulus.github.io/division-2/patches/the-pact/
 https://raigulus.github.io/division-2/patches/mutiny/
 https://raigulus.github.io/division-2/patches/y7-events/
 https://raigulus.github.io/division-2/patches/burden-of-truth/
+https://raigulus.github.io/division-2/patches/shades-of-red/
+https://raigulus.github.io/division-2/patches/first-rogue/
 https://raigulus.github.io/division-2/dark-zone-surge/
 https://raigulus.github.io/division-2/legendary/
 https://raigulus.github.io/division-2/manhunts/
