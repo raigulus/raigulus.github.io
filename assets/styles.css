@@ -485,9 +485,11 @@ body.theme-assassins-creed .archive-notes{
 .bm-layout{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:18px 0}
 @media(max-width:860px){.bm-layout{grid-template-columns:1fr}}
 .bm-slots h2,.bm-summary h2{margin-top:0}
-.bm-slot{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;margin-bottom:8px;border:1px solid rgba(255,255,255,.14);border-radius:8px;background:rgba(255,255,255,.04)}
+.bm-summary{position:sticky;top:70px;align-self:start}
+@media(max-width:860px){.bm-summary{position:static}}
+.bm-slot{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 10px;margin-bottom:8px;border:1px solid rgba(255,255,255,.14);border-radius:8px;background:rgba(255,255,255,.04)}
 .bm-slot-info{display:flex;flex-direction:column;flex:1;min-width:0}
-.bm-slot-actions{display:flex;gap:6px;flex-shrink:0;align-items:center;width:100%;justify-content:flex-end;margin:8px 0 0}
+.bm-slot-actions{display:flex;gap:6px;flex-shrink:0;align-items:center;width:100%;justify-content:flex-end;margin:6px 0 0}
 .bm-slot-label{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.55)}
 .bm-slot-name{font-weight:700;font-size:14px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .bm-slot-sub{font-size:12px;color:rgba(255,255,255,.5);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
@@ -533,7 +535,7 @@ body.theme-assassins-creed .archive-notes{
 .bm-disclaimer{margin-top:14px;padding:10px 12px;border:1px solid rgba(255,255,255,.14);border-radius:8px;background:rgba(255,255,255,.03);font-size:12.5px;color:rgba(255,255,255,.6)}
 /* build maker v2: config rows, weapon visuals, totals */
 .bm-slot{flex-wrap:wrap}
-.bm-cfg,.bm-fixed{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;padding:5px 9px;margin-top:6px;border-radius:6px;font-size:12px;text-align:left}
+.bm-cfg,.bm-fixed{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;padding:4px 8px;margin-top:4px;border-radius:6px;font-size:12px;text-align:left}
 .bm-cfg{border:1px dashed rgba(255,255,255,.22);background:none;color:#fff;cursor:pointer}
 .bm-cfg:hover{border-color:#f55a00;background:rgba(245,90,0,.12)}
 .bm-fixed{border:1px solid rgba(255,255,255,.09);color:rgba(255,255,255,.85)}
@@ -567,7 +569,7 @@ body.theme-assassins-creed .archive-notes{
 #bm-gear-slots .bm-slot,#bm-weapon-slots .bm-slot,#bm-skill-slots .bm-slot{margin-bottom:0}
 .bm-slot.rar-high{border-left:4px solid #f55a00}
 .bm-slot.rar-exotic{border-left:4px solid #d93535}
-.bm-pips{display:flex;align-items:center;gap:4px;margin-top:6px}
+.bm-pips{display:flex;align-items:center;gap:4px;margin-top:4px}
 .bm-pip{width:12px;height:12px;border-radius:3px;border:1px solid rgba(255,255,255,.3)}
 .bm-pip.pip-off{background:#d93535;border-color:#d93535}
 .bm-pip.pip-def{background:#2577e0;border-color:#2577e0}
