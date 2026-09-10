@@ -529,6 +529,8 @@
       if (chc > 0 && chd > 0) estRows.push(["Crit-expected per bullet", Math.round(perBullet * expMult).toLocaleString("en-US")]);
       if (rpm > 0) estRows.push(["Approx. DPS", Math.round(perBullet * expMult * rpm / 60).toLocaleString("en-US")]);
       if (totMap["protection-from-elites"]) estRows.push(["Protection from Elites", "+" + (Math.round(totMap["protection-from-elites"] * 10) / 10) + "%"]);
+      var armorPool = totMap["armor"] || 0, hpPool = totMap["health"] || 0;
+      if (armorPool > 0 || hpPool > 0) estRows.push(["Approx. Toughness <span class='bm-note'>armor + health</span>", Math.round(armorPool + hpPool).toLocaleString("en-US")]);
       html += "<h3>Combat Estimates <span class='bm-note'>primary, max rolls</span></h3><div class='bm-totals'>" + estRows.map(function (r) {
         return "<div class='bm-stat-row'><span>" + r[0] + "</span><b>" + r[1] + "</b></div>";
       }).join("") + "</div>";
@@ -795,6 +797,52 @@
     } catch (e) {}
   }
 
+  function saveShot() {
+    try {
+      var lines = [["DIVISION 2 BUILD — Raigulus", "head"]];
+      var gearNames = GEAR_SLOTS.map(function (s) { return state[s.key] ? itemLabel(state[s.key]) : null; }).filter(Boolean);
+      if (gearNames.length) { lines.push(["GEAR", "sec"]); gearNames.forEach(function (n) { lines.push([n, "row"]); }); }
+      ["primary", "secondary"].forEach(function (k) {
+        if (state[k]) lines.push([(k === "primary" ? "Primary: " : "Secondary: ") + itemLabel(state[k]), "row"]);
+      });
+      var tot = collectStats().slice(0, 8);
+      if (tot.length) {
+        lines.push(["TOTALS (MAX ROLLS)", "sec"]);
+        tot.forEach(function (t) { lines.push([t.label + "  " + fmtVal(t), "row"]); });
+      }
+      var W = 760, rowH = 30, y = 88;
+      var H = y + lines.length * rowH + 36;
+      var cv = document.createElement("canvas");
+      cv.width = W; cv.height = H;
+      var g = cv.getContext("2d");
+      g.fillStyle = "#14161a"; g.fillRect(0, 0, W, H);
+      g.fillStyle = "#f55a00"; g.fillRect(0, 0, W, 8);
+      g.fillStyle = "#ffffff"; g.font = "700 22px Inter,system-ui,sans-serif";
+      g.fillText("DIVISION 2 BUILD", 28, 48);
+      g.fillStyle = "#8a97a8"; g.font = "13px Inter,system-ui,sans-serif";
+      g.fillText("raigulus.github.io/division-2/build-maker/  ·  " + new Date().toISOString().slice(0, 10), 28, 70);
+      lines.shift();
+      lines.forEach(function (ln) {
+        if (ln[1] === "sec") {
+          g.fillStyle = "#f55a00"; g.font = "700 14px Inter,system-ui,sans-serif";
+          g.fillText(ln[0], 28, y + 21);
+        } else {
+          g.fillStyle = "#cfd6df"; g.font = "14px Inter,system-ui,sans-serif";
+          g.fillText(String(ln[0]).slice(0, 72), 28, y + 21);
+        }
+        y += rowH;
+      });
+      function done(url) {
+        var a = document.createElement("a");
+        a.href = url; a.download = "division2-build.png";
+        document.body.appendChild(a); a.click();
+        setTimeout(function () { document.body.removeChild(a); }, 500);
+      }
+      if (cv.toBlob) cv.toBlob(function (b) { if (b) done(URL.createObjectURL(b)); }, "image/png");
+      else done(cv.toDataURL("image/png"));
+    } catch (e) {}
+  }
+
   function copyToClipboard(text) {
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(function () { flash("Copied!"); });
@@ -840,6 +888,7 @@
     if (e.target.closest("#bm-modal-close")) { $("bm-modal").hidden = true; return; }
     if (e.target.id === "bm-copy-link") { copyToClipboard(location.href.split("#")[0] + "#" + encodeState()); trackShare("copy_link"); return; }
     if (e.target.id === "bm-copy-text") { copyToClipboard(copyText()); trackShare("copy_text"); return; }
+    if (e.target.id === "bm-screenshot") { saveShot(); trackShare("screenshot"); return; }
     if (e.target.id === "bm-reset") {
       state = { mask: null, chest: null, backpack: null, gloves: null, holster: null, knees: null,
                 primary: null, secondary: null, skills: [null, null], cfg: {} };
