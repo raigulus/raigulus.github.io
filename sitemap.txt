@@ -3,7 +3,6 @@ https://raigulus.github.io/about/
 https://raigulus.github.io/discord/
 https://raigulus.github.io/division-2/
 https://raigulus.github.io/division-2/agent-briefing/
-https://raigulus.github.io/division-2/missions/
 https://raigulus.github.io/division-2/builds/
 https://raigulus.github.io/division-2/loot/
 https://raigulus.github.io/division-2/server-status/
@@ -27,7 +26,6 @@ https://raigulus.github.io/division-2/patches/burden-of-truth/
 https://raigulus.github.io/division-2/dark-zone-surge/
 https://raigulus.github.io/division-2/legendary/
 https://raigulus.github.io/division-2/manhunts/
-https://raigulus.github.io/division-2/bosses/
 https://raigulus.github.io/division-2/incursions-raids/
 https://raigulus.github.io/division-2/broken-rain-incursion/
 https://raigulus.github.io/division-2/build-maker/
