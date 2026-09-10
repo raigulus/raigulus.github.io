@@ -11,7 +11,7 @@
   var DATA = null;
   var state = {
     mask: null, chest: null, backpack: null, gloves: null, holster: null, knees: null,
-    primary: null, secondary: null, skills: [null, null],
+    primary: null, secondary: null, skills: [null, null], watch: false,
     cfg: {}   /* "chest:core_1" -> attrId | "backpack:talent_slot" -> talentName | "primary:muzzle" -> modName */
   };
   var picker = { mode: "slot", slot: null, kind: null, filter: "all", search: "" };
@@ -30,6 +30,14 @@
   ];
   var ATTACH_FIELDS = ["optics", "magazine", "muzzle", "underbarrel"];
   var CORE_KIND = { "armor-gear-core": "Armor", "weapon-damage-gear-core": "Weapon Damage", "skill-tier-gear-core": "Skill Tier" };
+  /* SHD Watch level 1000 bonuses (post-Vanguard values, all percent). */
+  var SHD1000 = {
+    "weapon-damage": 10, "headshot-damage": 20,
+    "critical-hit-chance": 10, "critical-hit-damage": 20,
+    "skill-damage": 10, "repair-skills": 10, "skill-duration": 20, "skill-haste": 10,
+    "health": 10, "total-armor": 10, "explosive-resistance": 10, "hazard-protection": 10,
+    "accuracy": 10, "stability": 10, "reload-speed": 10, "ammo-capacity": 20
+  };
 
   function $(id) { return document.getElementById(id); }
   function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
@@ -467,6 +475,9 @@
     activeSetBonuses().forEach(function (sb) {
       parseBonus(sb.bonus).forEach(function (p) { if (p.type === "stat") add(p.stat, p.value); });
     });
+    if (state.watch) {
+      Object.keys(SHD1000).forEach(function (sid) { add(sid, SHD1000[sid] + "%"); });
+    }
     return Object.keys(acc).map(function (sid) {
       return { stat: sid, label: DATA.stats[sid] || sid, u: acc[sid].u, v: acc[sid].v };
     }).sort(function (a, b) { return b.v - a.v; });
@@ -505,9 +516,11 @@
     if (unassigned) coreSpans += ' <span class="bm-unassigned">Unassigned cores: ' + unassigned + "</span>";
     html += "<h3>Cores</h3><p class='bm-cores'>" + coreSpans + "</p>";
 
+    /* shd watch toggle */
+    html += "<label class='bm-watch'><input type='checkbox' id='bm-watch1000'" + (state.watch ? " checked" : "") + "> SHD Watch 1000 <span class='bm-note'>post-Vanguard values</span></label>";
     /* estimated totals */
     var totals = collectStats();
-    html += "<h3>Estimated Totals <span class='bm-note'>max rolls incl. set bonuses</span></h3>" +
+    html += "<h3>Estimated Totals <span class='bm-note'>max rolls incl. set bonuses" + (state.watch ? " + SHD 1000" : "") + "</span></h3>" +
       (totals.length
         ? "<div class='bm-totals'>" + totals.map(function (t) {
             return "<div class='bm-stat-row'><span>" + esc(t.label) + "</span><b>" + fmtVal(t) + "</b></div>";
@@ -719,7 +732,8 @@
       b: state.backpack && state.backpack.name, g: state.gloves && state.gloves.name,
       h: state.holster && state.holster.name, k: state.knees && state.knees.name,
       w1: state.primary && state.primary.name, w2: state.secondary && state.secondary.name,
-      s1: state.skills[0] && state.skills[0].name, s2: state.skills[1] && state.skills[1].name
+      s1: state.skills[0] && state.skills[0].name, s2: state.skills[1] && state.skills[1].name,
+      w: state.watch ? 1 : undefined
     };
     var keys = Object.keys(state.cfg);
     if (keys.length) { s.cf = {}; keys.sort().forEach(function (k) { s.cf[k] = state.cfg[k]; }); }
@@ -750,6 +764,7 @@
     state.primary = findByName(allWeapons, s.w1);
     state.secondary = findByName(allWeapons, s.w2);
     state.skills = [findByName(DATA.skills, s.s1), findByName(DATA.skills, s.s2)];
+    state.watch = !!s.w;
     state.cfg = {};
     if (s.cf && typeof s.cf === "object") {
       var slots = { mask: state.mask, chest: state.chest, backpack: state.backpack, gloves: state.gloves, holster: state.holster, knees: state.knees, primary: state.primary, secondary: state.secondary };
@@ -889,9 +904,10 @@
     if (e.target.id === "bm-copy-link") { copyToClipboard(location.href.split("#")[0] + "#" + encodeState()); trackShare("copy_link"); return; }
     if (e.target.id === "bm-copy-text") { copyToClipboard(copyText()); trackShare("copy_text"); return; }
     if (e.target.id === "bm-screenshot") { saveShot(); trackShare("screenshot"); return; }
+    if (e.target.id === "bm-watch1000") { state.watch = e.target.checked; renderSummary(); updateHash(); return; }
     if (e.target.id === "bm-reset") {
       state = { mask: null, chest: null, backpack: null, gloves: null, holster: null, knees: null,
-                primary: null, secondary: null, skills: [null, null], cfg: {} };
+                primary: null, secondary: null, skills: [null, null], watch: false, cfg: {} };
       renderSlots(); renderSummary();
       try { history.replaceState(null, "", location.pathname); } catch (err) { /* noop */ }
       return;

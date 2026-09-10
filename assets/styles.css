@@ -577,5 +577,7 @@ body.theme-assassins-creed .archive-notes{
 .bm-pip.pip-na{background:transparent}
 .bm-talent-wrap{display:inline-flex;margin-left:4px;color:#ffd479}
 .bm-talent-ico{width:15px;height:19px}
+.bm-watch{display:flex;align-items:center;gap:8px;margin:12px 0 4px;font-weight:700;font-size:13.5px;cursor:pointer}
+.bm-watch input{width:16px;height:16px;accent-color:#f55a00;cursor:pointer}
 @media(max-width:640px){#bm-gear-slots,#bm-weapon-slots,#bm-skill-slots{grid-template-columns:1fr}}
 .discord-facade-button{display:flex;align-items:center;justify-content:center;width:100%;padding:1rem 1.25rem;border-radius:12px;border:1px solid rgba(255,255,255,.2);background:transparent;color:inherit;font:inherit;cursor:pointer}
