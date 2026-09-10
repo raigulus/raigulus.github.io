@@ -1,48 +1,48 @@
 {
-  "date": "2026-09-09",
+  "date": "2026-09-10",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Pentagon",
-      "loot": "Hard Wired"
-    },
-    {
-      "mission": "DARPA Research Labs",
-      "loot": "Gloves"
-    },
-    {
-      "mission": "District Union Arena",
-      "loot": "True Patriot"
-    },
-    {
-      "mission": "Roosevelt Island",
       "loot": "Sokolov Concern"
     },
     {
+      "mission": "DARPA Research Labs",
+      "loot": "Empress International"
+    },
+    {
+      "mission": "District Union Arena",
+      "loot": "Ceska Vyroba S.R.O."
+    },
+    {
+      "mission": "Roosevelt Island",
+      "loot": "Hunters Fury"
+    },
+    {
       "mission": "Space Administration HQ",
-      "loot": "Holster"
+      "loot": "Pistol"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Pistols"
+      "item": "Shotguns"
     },
     {
       "type": "Gear",
-      "item": "Gloves"
+      "item": "Chest Pieces"
     }
   ],
-  "last_updated": "2026-09-09 10:15",
-  "last_checked": "2026-09-10 05:09 UTC",
-  "parsed_at": "2026-09-10T05:09:24.641965+00:00",
-  "status": "pending",
-  "fetched_at": "2026-09-10T05:09:24.641965+00:00",
+  "last_updated": "2026-09-10 10:13",
+  "last_checked": "2026-09-10 09:35 UTC",
+  "parsed_at": "2026-09-10T09:35:02.300083+00:00",
+  "status": "ok",
+  "fetched_at": "2026-09-10T09:35:02.300083+00:00",
   "next_expected_update": "Around 08:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-09-10 05:09 UTC",
+  "vendor_highlights_checked": "2026-09-10 09:35 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
