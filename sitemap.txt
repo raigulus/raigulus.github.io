@@ -418,3 +418,4 @@ https://raigulus.github.io/division-2/exotics/shocker-punch/
 https://raigulus.github.io/division-2/exotics/centurions-scabbard/
 https://raigulus.github.io/division-2/exotics/nimble/
 https://raigulus.github.io/division-2/patches/puppeteers/
+https://raigulus.github.io/division-2/patches/broken-wings/
