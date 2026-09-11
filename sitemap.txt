@@ -421,3 +421,4 @@ https://raigulus.github.io/division-2/patches/puppeteers/
 https://raigulus.github.io/division-2/patches/broken-wings/
 https://raigulus.github.io/division-2/patches/reign-of-fire/
 https://raigulus.github.io/division-2/patches/price-of-power/
+https://raigulus.github.io/division-2/patches/hidden-alliance/
