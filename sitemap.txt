@@ -426,3 +426,4 @@ https://raigulus.github.io/division-2/patches/end-of-watch/
 https://raigulus.github.io/division-2/patches/concealed-agenda/
 https://raigulus.github.io/division-2/patches/keeners-legacy/
 https://raigulus.github.io/division-2/patches/shadow-tide/
+https://raigulus.github.io/division-2/patches/warlords-of-new-york/
