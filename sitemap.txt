@@ -428,3 +428,4 @@ https://raigulus.github.io/division-2/patches/keeners-legacy/
 https://raigulus.github.io/division-2/patches/shadow-tide/
 https://raigulus.github.io/division-2/patches/warlords-of-new-york/
 https://raigulus.github.io/division-2/patches/dark-hours/
+https://raigulus.github.io/division-2/patches/episode-1/
