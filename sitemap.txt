@@ -430,3 +430,4 @@ https://raigulus.github.io/division-2/patches/warlords-of-new-york/
 https://raigulus.github.io/division-2/patches/dark-hours/
 https://raigulus.github.io/division-2/patches/episode-1/
 https://raigulus.github.io/division-2/patches/episode-2/
+https://raigulus.github.io/division-2/patches/episode-3/
