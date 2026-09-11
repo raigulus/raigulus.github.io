@@ -7,8 +7,8 @@ on:
     - cron: "37 * * * *"
     # Redundant post-reset checks: scheduled Actions can occasionally be
     # delayed, so give the daily loot snapshot several immediate chances.
-    - cron: "1,2,3 8 * * *"
-    - cron: "17,32,47 8 * * *"
+    - cron: "1,2,3 7 * * *"
+    - cron: "17,32,47 7 * * *"
 
 permissions:
   contents: write
