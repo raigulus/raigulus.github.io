@@ -62,3 +62,23 @@ jobs:
             git fetch origin main
             git rebase origin/main
           done
+
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Keep schedule alive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          echo "keepalive $(date -u +%Y-%m-%dT%H:%M:%SZ)" > .keepalive
+          git add .keepalive
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+          git commit -m "keepalive $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
