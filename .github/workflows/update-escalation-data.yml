@@ -60,7 +60,9 @@ jobs:
             fi
             echo "Push raced with another main update; rebasing before retry ${attempt}."
             git fetch origin main
+            git stash
             git rebase origin/main
+            git stash pop || true
           done
 
   keepalive:
