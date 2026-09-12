@@ -180,7 +180,7 @@
 </article>
           <article class="video-card" data-c="special">
   <div class="card-body">
-    <p class="eyebrow">Server Status</p>
+    <p class="eyebrow">Server Status <span class="status-dot" data-server-dot title="Checking server status…"></span></p>
     <h2><a href="/division-2/server-status/">Server Status, Maintenance &amp; Delta-03</a></h2>
     <p>Unofficial Division 2 server status tracker, maintenance checks, Delta-03 context, and official source links.</p>
     <p class="meta"><a href="/division-2/server-status/">Open hub</a></p>
@@ -1761,5 +1761,35 @@
     <p>Raigulus archives The Division 2 no commentary walkthroughs, mission and build guides, plus Conflict PvP, Dark Zone, Regulus, and gameplay clips.</p>
     <p><a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="https://www.instagram.com/raigulus/">Instagram @raigulus</a> <span>/</span> <a href="https://www.facebook.com/raigulus/">Facebook</a> <span>/</span> <a href="/discord/">Discord</a></p>
   </footer>
+  <script>
+    (function() {
+      var dots = document.querySelectorAll("[data-server-dot]");
+      if (!dots.length) return;
+      function paint(status, checked) {
+        var s = String(status || "unknown").toLowerCase();
+        var cls = "is-bad", label = "Servers not clean";
+        if (s === "operational") { cls = "is-ok"; label = "Servers operational"; }
+        else if (s === "maintenance" || s === "stale" || s === "pending") { cls = "is-warn"; label = "Status uncertain"; }
+        for (var i = 0; i < dots.length; i++) {
+          dots[i].classList.add(cls);
+          dots[i].setAttribute("title", label + (checked ? " · checked " + checked : ""));
+        }
+      }
+      fetch("/assets/data/division-2-status.json", { cache: "no-store" })
+        .then(function(r) { if (!r.ok) throw new Error("status fetch failed"); return r.json(); })
+        .then(function(d) {
+          var status = String(d.status || "unknown").toLowerCase();
+          if (status === "operational" && d.platforms) {
+            var keys = ["pc", "playstation", "xbox"], k;
+            for (k = 0; k < keys.length; k++) {
+              var p = String(d.platforms[keys[k]] || "operational").toLowerCase();
+              if (p !== "operational") { status = "problems"; break; }
+            }
+          }
+          paint(status, d.last_checked);
+        })
+        .catch(function() { paint("unknown", ""); });
+    })();
+  </script>
 </body>
 </html>
