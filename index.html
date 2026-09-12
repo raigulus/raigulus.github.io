@@ -204,13 +204,15 @@
 
   <main>
     <section class="home-hero">
-      <p class="home-badge">Archive online <span>·</span> Y8S3</p>
+      <p class="home-badge">Archive online <span>·</span> <span data-dynamic="version">Y8S3</span></p>
       <h1>Run it clean.</h1>
       <p class="home-hero-desc">The Division 2 mission routes, legendary clears, build tests, PvP archives, and lore — captured without the noise.</p>
       <div class="home-hero-actions">
         <a class="btn-primary" href="/division-2/">Browse archive</a>
         <a class="btn-secondary" href="/division-2/legendary/">Latest guides</a>
       </div>
+      <p class="home-badge" data-dynamic="loot-status" style="margin-bottom:4px"></p>
+      <p class="home-badge" data-dynamic="loot-next" style="margin-bottom:0"></p>
       <form class="home-search" data-guide-search action="/" method="get" role="search">
         <label class="sr-only" for="home-search">Search the Raigulus archive</label>
         <input id="home-search" name="q" data-guide-search-input type="search" placeholder="Search the Raigulus archive" autocomplete="off">
@@ -228,7 +230,7 @@
 
     <section class="home-latest" id="latest">
       <div class="section-header">
-        <span class="section-label">Field reports / 03</span>
+        <span class="section-label">Field reports / <span data-dynamic="guide-count">03</span></span>
         <a class="section-link" href="/division-2/">View all ↗</a>
       </div>
       <h2 class="section-title">Latest guides</h2>
@@ -272,7 +274,8 @@
     <section class="home-pillars">
       <span class="section-label">Archive pillars</span>
       <h2 class="section-title">Choose your operation.</h2>
-      <p class="home-hero-desc" style="margin-bottom:32px">Four direct routes into the archive. No endless index, no autoplay, no filler.</p>
+      <p class="home-hero-desc" style="margin-bottom:8px">Four direct routes into the archive. No endless index, no autoplay, no filler.</p>
+      <p class="home-badge" style="margin-bottom:32px"><span data-dynamic="total-guides">437</span> guides · <span data-dynamic="exotics-count">74</span> exotics · <span data-dynamic="version">Y8S3</span></p>
       <div class="pillars-grid">
         <a class="pillar-card" href="https://www.youtube.com/playlist?list=PLG6L-oRdfdL_EOFTVpqbdnv1vhvO16qVh">
           <div class="pillar-card-icon">▶</div>
@@ -329,7 +332,7 @@
             </div>
             <div class="tool-card-arrow">↗</div>
           </div>
-          <p>Archive of patch notes, balance changes, bug fixes, and gameplay updates for Y8S3.</p>
+          <p>Archive of patch notes, balance changes, bug fixes, and gameplay updates for <span data-dynamic="version">Y8S3</span>.</p>
         </a>
       </div>
     </section>
@@ -356,12 +359,32 @@
   </footer>
   <script>
     (function(){
-      var dot=document.getElementById("home-status-dot");
-      if(!dot)return;
-      fetch("/assets/data/division-2-status.json?v="+Date.now(),{cache:"no-store"})
+      fetch("/assets/data/landing-data.json?v="+Date.now(),{cache:"no-store"})
         .then(function(r){return r.json()})
         .then(function(d){
-          if(d.status!=="operational"){dot.classList.add("down")}
+          var dot=document.getElementById("home-status-dot");
+          if(dot&&!d.server.operational){dot.classList.add("down")}
+
+          var versions=document.querySelectorAll('[data-dynamic="version"]');
+          for(var i=0;i<versions.length;i++){versions[i].textContent=d.latest_patch.version||"Y8S3"}
+
+          var guideCount=document.querySelector('[data-dynamic="guide-count"]');
+          if(guideCount){guideCount.textContent=String(d.stats.patches).padStart(2,"0")}
+
+          var exoticsCount=document.querySelector('[data-dynamic="exotics-count"]');
+          if(exoticsCount){exoticsCount.textContent=String(d.stats.exotics)}
+
+          var totalGuides=document.querySelector('[data-dynamic="total-guides"]');
+          if(totalGuides){totalGuides.textContent=String(d.stats.total_guides)}
+
+          var lootStatus=document.querySelector('[data-dynamic="loot-status"]');
+          if(lootStatus&&d.loot.active){
+            lootStatus.textContent="Loot today: "+d.loot.mission_count+" missions · "+d.loot.vendor_count+" vendor";
+            lootStatus.style.color="rgba(34,197,94,.8)"
+          }
+
+          var lootNext=document.querySelector('[data-dynamic="loot-next"]');
+          if(lootNext&&d.loot.active){lootNext.textContent="Next reset: "+d.loot.next_update}
         })
         .catch(function(){});
     })();
