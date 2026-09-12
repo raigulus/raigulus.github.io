@@ -1,48 +1,48 @@
 {
-  "date": "2026-09-11",
+  "date": "2026-09-12",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Pentagon",
-      "loot": "Alps Summit Armaments"
+      "loot": "Douglas & Harding"
     },
     {
       "mission": "DARPA Research Labs",
-      "loot": "Measured Assembly"
+      "loot": "Urban Lookout"
     },
     {
       "mission": "District Union Arena",
-      "loot": "Ortiz Exuro"
+      "loot": "Murakami Industries"
     },
     {
       "mission": "Roosevelt Island",
-      "loot": "LMG"
+      "loot": "Ortiz: Reficere"
     },
     {
       "mission": "Space Administration HQ",
-      "loot": "Refactor"
+      "loot": "Aegis"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "MMRs"
+      "item": "Shotguns"
     },
     {
       "type": "Gear",
-      "item": "Gloves"
+      "item": "Kneepads"
     }
   ],
-  "last_updated": "2026-09-11 10:03",
-  "last_checked": "2026-09-12 06:25 UTC",
-  "parsed_at": "2026-09-12T06:25:09.123608+00:00",
-  "status": "pending",
-  "fetched_at": "2026-09-12T06:25:09.123608+00:00",
+  "last_updated": "2026-09-12 10:21",
+  "last_checked": "2026-09-12 10:29 UTC",
+  "parsed_at": "2026-09-12T10:29:39.610496+00:00",
+  "status": "ok",
+  "fetched_at": "2026-09-12T10:29:39.610496+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-09-12 06:25 UTC",
+  "vendor_highlights_checked": "2026-09-12 10:29 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
