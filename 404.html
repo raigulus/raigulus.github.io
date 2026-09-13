@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Not Found | Raigulus</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Browse our Division 2 guides, builds, and loot tracker.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://raigulus.github.io/404.html">
+  <meta property="og:title" content="Page Not Found | Raigulus">
+  <meta property="og:description" content="The page you're looking for doesn't exist. Browse our Division 2 guides, builds, and loot tracker.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://raigulus.github.io/404.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <style>
+    .error-page{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:40px 24px;text-align:center}
+    .error-code{font-family:'Barlow Condensed',Inter,system-ui,sans-serif;font-size:clamp(120px,20vw,200px);font-weight:700;line-height:.85;letter-spacing:-.04em;color:rgba(245,90,0,.15);margin:0}
+    .error-title{font-family:'Barlow Condensed',Inter,system-ui,sans-serif;font-size:clamp(28px,4vw,40px);font-weight:700;color:#edf0f4;margin:16px 0 8px}
+    .error-desc{font-size:15px;color:rgba(237,240,244,.45);max-width:420px;line-height:1.5;margin:0 0 32px}
+    .error-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:40px}
+    .error-btn{display:inline-flex;align-items:center;gap:6px;padding:12px 24px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:4px;transition:opacity .15s;text-decoration:none;border:none;cursor:pointer}
+    .error-btn-primary{background:#f55a00;color:#0b0d11}
+    .error-btn-primary:hover{opacity:.88}
+    .error-btn-secondary{border:1px solid rgba(237,240,244,.15);color:#edf0f4;background:transparent}
+    .error-btn-secondary:hover{border-color:rgba(237,240,244,.35);background:rgba(237,240,244,.04)}
+    .error-search{position:relative;max-width:400px;width:100%;margin-bottom:40px}
+    .error-search input{width:100%;padding:14px 18px;background:rgba(237,240,244,.04);border:1px solid rgba(237,240,244,.1);border-radius:4px;color:#edf0f4;font-size:13px;font-family:Inter,system-ui,sans-serif;outline:none;transition:border-color .15s}
+    .error-search input::placeholder{color:rgba(237,240,244,.3)}
+    .error-search input:focus{border-color:rgba(245,90,0,.4)}
+    .error-links{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+    .error-links a{padding:6px 12px;border:1px solid rgba(237,240,244,.08);border-radius:4px;font-size:11px;font-weight:500;color:rgba(237,240,244,.4);text-decoration:none;transition:border-color .15s,color .15s}
+    .error-links a:hover{border-color:rgba(245,90,0,.3);color:#edf0f4}
+    .error-footer{position:fixed;bottom:0;left:0;right:0;padding:20px;text-align:center;font-size:11px;color:rgba(237,240,244,.2)}
+    .error-footer a{color:rgba(237,240,244,.3);text-decoration:none}
+    .error-footer a:hover{color:#edf0f4}
+    @media(max-width:768px){
+      .error-actions{flex-direction:column;width:100%}
+      .error-btn{width:100%;justify-content:center}
+    }
+  </style>
+  <script>
+    document.addEventListener("click", function(event) {
+      var link = event.target.closest("a[href]");
+      if (!link || typeof gtag !== "function") return;
+      var url;
+      try { url = new URL(link.href, window.location.href); } catch (error) { return; }
+      if (url.origin === window.location.origin) return;
+      var host = url.hostname.replace(/^www\./, "");
+      var label = (link.getAttribute("aria-label") || link.textContent || "").trim().slice(0, 120);
+      var eventName = "outbound_click";
+      if (host === "youtube.com" || host === "youtu.be") eventName = "youtube_click";
+      if (host === "discord.com" || host === "discord.gg") eventName = "discord_click";
+      gtag("event", eventName, { link_url: url.href, link_domain: host, link_text: label, page_path: window.location.pathname, event_category: "engagement" });
+    }, true);
+  </script>
+</head>
+<body>
+  <main class="error-page">
+    <p class="error-code">404</p>
+    <h1 class="error-title">Agent disconnected.</h1>
+    <p class="error-desc">The route you're looking for has gone dark. It may have been moved, or the intel was wrong.</p>
+    <div class="error-actions">
+      <a class="error-btn error-btn-primary" href="/">Back to base</a>
+      <a class="error-btn error-btn-secondary" href="/division-2/">Browse archive</a>
+    </div>
+    <form class="error-search" data-guide-search action="/" method="get" role="search">
+      <label class="sr-only" for="error-search">Search the Raigulus archive</label>
+      <input id="error-search" name="q" data-guide-search-input type="search" placeholder="Search the archive..." autocomplete="off">
+    </form>
+    <div class="error-links">
+      <a href="/division-2/missions/">Missions</a>
+      <a href="/division-2/builds/">Builds</a>
+      <a href="/division-2/legendary/">Legendary</a>
+      <a href="/division-2/exotics/">Exotics</a>
+      <a href="/division-2/patches/">Patches</a>
+      <a href="/division-2/pvp/">PvP</a>
+      <a href="/division-2/server-status/">Server Status</a>
+      <a href="/lore/">Lore</a>
+    </div>
+  </main>
+  <div class="error-footer">
+    <a href="/">Raigulus</a> · Unofficial Division 2 fan archive
+  </div>
+  <script src="/assets/search.js" defer></script>
+</body>
+</html>
