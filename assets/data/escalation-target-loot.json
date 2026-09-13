@@ -1,89 +1,43 @@
 {
-  "date": "2026-09-12",
+  "date": "2026-09-13",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Pentagon",
-      "loot": "Douglas & Harding"
+      "loot": "Alps Summit Armaments"
     },
     {
       "mission": "DARPA Research Labs",
-      "loot": "Urban Lookout"
+      "loot": "Aces & Eights"
     },
     {
       "mission": "District Union Arena",
-      "loot": "Murakami Industries"
+      "loot": "Cavalier"
     },
     {
       "mission": "Roosevelt Island",
-      "loot": "Ortiz: Reficere"
+      "loot": "5.11 Tactical"
     },
     {
       "mission": "Space Administration HQ",
-      "loot": "Aegis"
+      "loot": "Belstone Armory"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Shotguns"
+      "item": "Rifles"
     },
     {
       "type": "Gear",
-      "item": "Kneepads"
+      "item": "Masks"
     }
   ],
-  "last_updated": "2026-09-12 10:21",
-  "last_checked": "2026-09-13 06:43 UTC",
-  "parsed_at": "2026-09-13T06:43:30.522019+00:00",
-  "status": "pending",
-  "fetched_at": "2026-09-13T06:43:30.522019+00:00",
+  "last_updated": "2026-09-13 10:07",
+  "last_checked": "2026-09-13 10:34 UTC",
+  "parsed_at": "2026-09-13T10:34:10.712281+00:00",
+  "status": "ok",
+  "fetched_at": "2026-09-13T10:34:10.712281+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
-  "vendor_highlights": [
-    {
-      "vendor": "DZ South",
-      "item": "Liquid Engineer",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "DZ West",
-      "item": "Rock n' Roll - ACS-12",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "The Campus",
-      "item": "Rusty - Classic RPK-74",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "White House",
-      "item": "Swap Chain - MP7",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "Clan",
-      "item": "Like Glue - Super 90",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "The Theater",
-      "item": "Stage Left - M1A CQB",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "The Castle",
-      "item": "Cricket - GR9",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "DZ East",
-      "item": "Good Times - Black Market M60 E6",
-      "note": "Named weapon"
-    }
-  ],
-  "vendor_highlights_status": "ok",
-  "vendor_highlights_checked": "2026-09-13 06:43 UTC",
-  "vendor_highlights_date": "2026-09-13",
-  "vendor_highlights_note": "Current dated vendor highlights are available."
+  "snapshot_note": "Current dated loot snapshot is available."
 }
