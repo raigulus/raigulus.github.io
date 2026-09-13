@@ -34,10 +34,56 @@
     }
   ],
   "last_updated": "2026-09-13 10:07",
-  "last_checked": "2026-09-13 10:34 UTC",
-  "parsed_at": "2026-09-13T10:34:10.712281+00:00",
+  "last_checked": "2026-09-13 10:54 UTC",
+  "parsed_at": "2026-09-13T10:54:14.681758+00:00",
   "status": "ok",
-  "fetched_at": "2026-09-13T10:34:10.712281+00:00",
+  "fetched_at": "2026-09-13T10:54:14.681758+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Current dated loot snapshot is available."
+  "snapshot_note": "Current dated loot snapshot is available.",
+  "vendor_highlights": [
+    {
+      "vendor": "DZ South",
+      "item": "Liquid Engineer",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "DZ West",
+      "item": "Rock n' Roll - ACS-12",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "The Campus",
+      "item": "Rusty - Classic RPK-74",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "White House",
+      "item": "Swap Chain - MP7",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Clan",
+      "item": "Like Glue - Super 90",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "The Theater",
+      "item": "Stage Left - M1A CQB",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "The Castle",
+      "item": "Cricket - GR9",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "DZ East",
+      "item": "Good Times - Black Market M60 E6",
+      "note": "Named weapon"
+    }
+  ],
+  "vendor_highlights_status": "ok",
+  "vendor_highlights_checked": "2026-09-13 10:54 UTC",
+  "vendor_highlights_date": "2026-09-13",
+  "vendor_highlights_note": "Current dated vendor highlights are available."
 }
