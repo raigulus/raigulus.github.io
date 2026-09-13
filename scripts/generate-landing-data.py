@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "assets" / "data"
 OUT = DATA / "landing-data.json"
 DISCORD_BOT_TOKEN = os.environ.get("DISCORD_BOT_TOKEN", "").strip()
-DISCORD_GUILD_ID = "1316558291746351114"
+DISCORD_LOOT_CHANNEL_ID = "1528506012900917268"
 
 
 def count_sitemap_urls() -> int:
@@ -124,15 +124,24 @@ def server_status() -> dict:
 
 
 def discord_member_count() -> int:
-    if not DISCORD_BOT_TOKEN or not DISCORD_GUILD_ID:
+    if not DISCORD_BOT_TOKEN or not DISCORD_LOOT_CHANNEL_ID:
         return 0
     try:
         req = urllib.request.Request(
-            f"https://discord.com/api/v10/guilds/{DISCORD_GUILD_ID}?with_counts=true",
+            f"https://discord.com/api/v10/channels/{DISCORD_LOOT_CHANNEL_ID}",
             headers={"Authorization": f"Bot {DISCORD_BOT_TOKEN}", "User-Agent": "RaigulusBot/1.0"},
         )
         with urllib.request.urlopen(req, timeout=10) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
+            ch = json.loads(resp.read().decode("utf-8"))
+            guild_id = ch.get("guild_id")
+        if not guild_id:
+            return 0
+        req2 = urllib.request.Request(
+            f"https://discord.com/api/v10/guilds/{guild_id}?with_counts=true",
+            headers={"Authorization": f"Bot {DISCORD_BOT_TOKEN}", "User-Agent": "RaigulusBot/1.0"},
+        )
+        with urllib.request.urlopen(req2, timeout=10) as resp2:
+            data = json.loads(resp2.read().decode("utf-8"))
             return data.get("approximate_member_count", 0)
     except Exception:
         return 0
