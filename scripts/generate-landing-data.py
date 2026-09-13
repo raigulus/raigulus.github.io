@@ -14,13 +14,17 @@ Scans the repo to produce a single JSON blob the front-end fetches:
 from __future__ import annotations
 
 import json
+import os
 import re
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "assets" / "data"
 OUT = DATA / "landing-data.json"
+DISCORD_BOT_TOKEN = os.environ.get("DISCORD_BOT_TOKEN", "").strip()
+DISCORD_GUILD_ID = "1316558291746351114"
 
 
 def count_sitemap_urls() -> int:
@@ -119,6 +123,31 @@ def server_status() -> dict:
     }
 
 
+def discord_member_count() -> int:
+    if not DISCORD_BOT_TOKEN or not DISCORD_GUILD_ID:
+        return 0
+    try:
+        req = urllib.request.Request(
+            f"https://discord.com/api/v10/guilds/{DISCORD_GUILD_ID}?with_counts=true",
+            headers={"Authorization": f"Bot {DISCORD_BOT_TOKEN}", "User-Agent": "RaigulusBot/1.0"},
+        )
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            return data.get("approximate_member_count", 0)
+    except Exception:
+        return 0
+
+
+def next_reset_utc() -> str:
+    now = datetime.now(timezone.utc)
+    reset_hour = 7
+    if now.hour >= reset_hour:
+        from datetime import timedelta
+        next_day = now + timedelta(days=1)
+        return next_day.strftime("%Y-%m-%dT07:00:00Z")
+    return now.strftime(f"%Y-%m-%dT{reset_hour:02d}:00:00Z")
+
+
 def main() -> None:
     now = datetime.now(timezone.utc)
 
@@ -132,6 +161,8 @@ def main() -> None:
         "latest_patch": latest_patch(),
         "loot": loot_summary(),
         "server": server_status(),
+        "discord_members": discord_member_count(),
+        "next_reset_utc": next_reset_utc(),
     }
 
     OUT.write_text(

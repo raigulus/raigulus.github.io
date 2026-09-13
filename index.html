@@ -342,6 +342,7 @@
         <div class="discord-text">
           <p>Raigulus Discord</p>
           <p>Find the squad for your next clear. Choose your platform and region, share runs, and request videos.</p>
+          <p class="home-badge" data-dynamic="discord-members" style="margin-top:8px"></p>
         </div>
         <a class="discord-btn" href="https://discord.gg/xj8jnS3Gkh">Join the server ↗</a>
       </div>
@@ -384,7 +385,25 @@
           }
 
           var lootNext=document.querySelector('[data-dynamic="loot-next"]');
-          if(lootNext&&d.loot.active){lootNext.textContent="Next reset: "+d.loot.next_update}
+          if(lootNext&&d.loot.active){
+            var resetTime=new Date(d.next_reset_utc).getTime();
+            function updateCountdown(){
+              var now=Date.now();
+              var diff=resetTime-now;
+              if(diff<=0){lootNext.textContent="Reset now!";return}
+              var h=Math.floor(diff/3600000);
+              var m=Math.floor((diff%3600000)/60000);
+              var s=Math.floor((diff%60000)/1000);
+              lootNext.textContent="Next reset in "+h+"h "+m+"m "+s+"s";
+            }
+            updateCountdown();
+            setInterval(updateCountdown,1000);
+          }
+
+          var discordMembers=document.querySelector('[data-dynamic="discord-members"]');
+          if(discordMembers&&d.discord_members>0){
+            discordMembers.textContent=d.discord_members.toLocaleString()+" members online"
+          }
         })
         .catch(function(){});
     })();
