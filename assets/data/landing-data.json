@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-15T10:16:49Z",
+  "generated_at": "2026-09-15T10:23:15Z",
   "stats": {
     "total_guides": 437,
     "exotics": 74,
     "patches": 30
   },
   "latest_patch": {
-    "slug": "rise-up",
-    "title": "Division 2 Rise Up Update Guide: Y8S1 Patch Summary [2026] | Raigulus",
+    "slug": "y8s1-mid-season",
+    "title": "Division 2 Y8S1 Mid-Season Patch Guide (2.26) [2026] | Raigulus",
     "version": "Y8S1"
   },
   "latest_videos": [
@@ -40,12 +40,17 @@
     }
   ],
   "loot": {
-    "active": false
+    "active": true,
+    "date": "2026-09-15",
+    "rotation": "Weekly Escalation Rotation",
+    "mission_count": 5,
+    "vendor_count": 2,
+    "next_update": "Around 07:00 UTC"
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-09-15 07:37 UTC"
+    "last_checked": "2026-09-15 10:23 UTC"
   },
-  "discord_members": 0,
+  "discord_members": 41,
   "next_reset_utc": "2026-09-16T07:00:00Z"
 }

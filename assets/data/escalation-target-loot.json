@@ -1,89 +1,43 @@
 {
-  "date": "2026-09-14",
+  "date": "2026-09-15",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
-      "mission": "The Pentagon",
-      "loot": "Concentrated Company"
-    },
-    {
-      "mission": "DARPA Research Labs",
-      "loot": "Shiny Monkey Gear"
-    },
-    {
-      "mission": "District Union Arena",
-      "loot": "Holster"
+      "mission": "Wall Street",
+      "loot": "Providence Defense"
     },
     {
       "mission": "Roosevelt Island",
-      "loot": "Refactor"
+      "loot": "SMG"
     },
     {
-      "mission": "Space Administration HQ",
-      "loot": "Zwiadowka Sp. z o.o"
+      "mission": "DCD Headquarters",
+      "loot": "Walker, Harris & Co"
+    },
+    {
+      "mission": "Air & Space Museum",
+      "loot": "Shotgun"
+    },
+    {
+      "mission": "District Union Arena",
+      "loot": "Ortiz: Reficere"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "LMGs"
+      "item": "MMRs"
     },
     {
       "type": "Gear",
-      "item": "Chest Pieces"
+      "item": "Backpacks"
     }
   ],
-  "last_updated": "2026-09-14 10:01",
-  "last_checked": "2026-09-15 07:36 UTC",
-  "parsed_at": "2026-09-15T07:36:57.307707+00:00",
-  "status": "stale",
-  "fetched_at": "2026-09-15T07:36:57.307707+00:00",
+  "last_updated": "2026-09-15 10:02",
+  "last_checked": "2026-09-15 10:23 UTC",
+  "parsed_at": "2026-09-15T10:23:13.436545+00:00",
+  "status": "ok",
+  "fetched_at": "2026-09-15T10:23:13.436545+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Checked after the expected daily reset window, but the source still returned an older snapshot.",
-  "vendor_highlights": [
-    {
-      "vendor": "DZ South",
-      "item": "Liquid Engineer",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Pristine Example",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Hunter-Killer",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Countdown",
-      "item": "Pristine Example",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "DZ West",
-      "item": "Rock n' Roll - ACS-12",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "The Campus",
-      "item": "Rusty - Classic RPK-74",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "White House",
-      "item": "Swap Chain - MP7",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "Clan",
-      "item": "Like Glue - Super 90",
-      "note": "Named weapon"
-    }
-  ],
-  "vendor_highlights_status": "ok",
-  "vendor_highlights_checked": "2026-09-15 07:36 UTC",
-  "vendor_highlights_date": "2026-09-14",
-  "vendor_highlights_note": "Current dated vendor highlights are available."
+  "snapshot_note": "Current dated loot snapshot is available."
 }
