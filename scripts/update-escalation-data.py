@@ -723,12 +723,24 @@ def post_latest_videos_discord(site_dir):
         return False
     state = read_videos_state(site_dir)
     posted_urls = set(state.get("posted_urls", []))
-    new_videos = [v for v in videos if v.get("url", "") not in posted_urls]
-    if not new_videos:
-        print("Discord videos post skipped: no new videos")
+    now = utc_now()
+    cutoff = now.timestamp() - (48 * 3600)
+    recent_videos = []
+    for v in videos:
+        pub_date = v.get("published_date", "")
+        if not pub_date:
+            continue
+        try:
+            pub_ts = datetime.strptime(pub_date, "%Y-%m-%d").replace(tzinfo=timezone.utc).timestamp()
+        except ValueError:
+            continue
+        if pub_ts >= cutoff and v.get("url", "") not in posted_urls:
+            recent_videos.append(v)
+    if not recent_videos:
+        print("Discord videos post skipped: no new videos in last 48h")
         return False
-    new_videos.sort(key=lambda v: v.get("published_date", ""), reverse=True)
-    video = new_videos[0]
+    recent_videos.sort(key=lambda v: v.get("published_date", ""), reverse=True)
+    video = recent_videos[0]
     yt_url = video.get("youtube_url", "")
     yt_id = ""
     if "watch?v=" in yt_url:
