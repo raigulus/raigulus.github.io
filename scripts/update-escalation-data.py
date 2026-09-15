@@ -34,6 +34,8 @@ DISCORD_BOT_TOKEN = os.environ.get("DISCORD_BOT_TOKEN", "").strip()
 DISCORD_LOOT_CHANNEL_ID = "1528506012900917268"
 DISCORD_LOOT_ROLE_MENTION = "<@&1532384877557846057>"
 DISCORD_LOOT_EMBED_COLOR = 15895592
+DISCORD_VIDEOS_CHANNEL_ID = "1528506023642398782"
+DISCORD_VIDEOS_EMBED_COLOR = 16711680
 
 
 def utc_now():
@@ -685,6 +687,96 @@ def write_discord_state(site_dir, state):
     path.write_text(json.dumps(state) + "\n", encoding="utf-8")
 
 
+def read_videos_state(site_dir):
+    path = site_dir / "assets" / "data" / "discord_videos_state.json"
+    if path.exists():
+        try:
+            return json.loads(path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            pass
+    return {"posted_urls": []}
+
+
+def write_videos_state(site_dir, state):
+    path = site_dir / "assets" / "data" / "discord_videos_state.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(state, indent=2) + "\n", encoding="utf-8")
+
+
+def load_videos(site_dir):
+    path = site_dir / "assets" / "data" / "videos.json"
+    if path.exists():
+        try:
+            return json.loads(path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            pass
+    return []
+
+
+def post_latest_videos_discord(site_dir):
+    if not DISCORD_BOT_TOKEN:
+        print("Discord videos post skipped: DISCORD_BOT_TOKEN not set")
+        return False
+    videos = load_videos(site_dir)
+    if not videos:
+        print("Discord videos post skipped: no videos found")
+        return False
+    state = read_videos_state(site_dir)
+    posted_urls = set(state.get("posted_urls", []))
+    new_videos = [v for v in videos if v.get("url", "") not in posted_urls]
+    if not new_videos:
+        print("Discord videos post skipped: no new videos")
+        return False
+    new_videos.sort(key=lambda v: v.get("published_date", ""), reverse=True)
+    video = new_videos[0]
+    yt_url = video.get("youtube_url", "")
+    yt_id = ""
+    if "watch?v=" in yt_url:
+        yt_id = yt_url.split("watch?v=")[1].split("&")[0]
+    elif "youtu.be/" in yt_url:
+        yt_id = yt_url.split("youtu.be/")[1].split("?")[0]
+    thumbnail = f"https://i.ytimg.com/vi/{yt_id}/hqdefault.jpg" if yt_id else ""
+    payload = {
+        "content": f"New video uploaded! Check it out:",
+        "embeds": [
+            {
+                "title": video.get("title", "New Division 2 Video"),
+                "url": video.get("url", ""),
+                "description": video.get("summary", ""),
+                "color": DISCORD_VIDEOS_EMBED_COLOR,
+                "thumbnail": {"url": thumbnail} if thumbnail else {},
+                "fields": [
+                    {"name": "Published", "value": video.get("published_date", "Unknown"), "inline": True},
+                    {"name": "Category", "value": video.get("cluster", "General"), "inline": True},
+                ],
+                "footer": {"text": "Raigulus Division 2 Archive"},
+            }
+        ],
+    }
+    req = urllib.request.Request(
+        f"https://discord.com/api/v10/channels/{DISCORD_VIDEOS_CHANNEL_ID}/messages",
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Authorization": f"Bot {DISCORD_BOT_TOKEN}",
+            "Content-Type": "application/json",
+            "User-Agent": USER_AGENT,
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            result = json.loads(resp.read().decode("utf-8"))
+            print(f"Discord videos post OK - message id {result.get('id')}")
+            posted_urls.add(video.get("url", ""))
+            state["posted_urls"] = list(posted_urls)[-100:]
+            write_videos_state(site_dir, state)
+            return True
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")[:500]
+        print(f"Discord videos post FAILED: HTTP {exc.code}: {body}")
+        return False
+
+
 def post_loot_today_discord(site_dir, loot_data):
     if not DISCORD_BOT_TOKEN:
         print("Discord post skipped: DISCORD_BOT_TOKEN not set")
@@ -799,6 +891,11 @@ def main():
         action="store_true",
         help="Post today's loot snapshot to the Discord loot-today channel.",
     )
+    parser.add_argument(
+        "--post-latest-videos",
+        action="store_true",
+        help="Post new videos to the Discord latest-videos channel.",
+    )
     args = parser.parse_args()
 
     input_path, site_dir = repo_paths()
@@ -839,6 +936,8 @@ def main():
             exit_code = 1
         if args.post_discord and data:
             post_loot_today_discord(site_dir, data)
+        if args.post_latest_videos:
+            post_latest_videos_discord(site_dir)
 
     status_existing = read_existing_status(site_dir)
     status_data, status_error = fetch_division2_status(status_existing)
