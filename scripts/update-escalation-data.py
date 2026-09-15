@@ -36,6 +36,10 @@ DISCORD_LOOT_ROLE_MENTION = "<@&1532384877557846057>"
 DISCORD_LOOT_EMBED_COLOR = 15895592
 DISCORD_VIDEOS_CHANNEL_ID = "1528506023642398782"
 DISCORD_VIDEOS_EMBED_COLOR = 16711680
+DISCORD_STATUS_CHANNEL_ID = os.environ.get("DISCORD_STATUS_CHANNEL_ID", "").strip()
+DISCORD_STATUS_OK_COLOR = 3066993
+DISCORD_STATUS_WARN_COLOR = 15105570
+DISCORD_STATUS_BAD_COLOR = 15158332
 
 
 def utc_now():
@@ -687,6 +691,22 @@ def write_discord_state(site_dir, state):
     path.write_text(json.dumps(state) + "\n", encoding="utf-8")
 
 
+def read_discord_status_state(site_dir):
+    path = site_dir / "assets" / "data" / "discord_status_state.json"
+    if path.exists():
+        try:
+            return json.loads(path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            pass
+    return {}
+
+
+def write_discord_status_state(site_dir, state):
+    path = site_dir / "assets" / "data" / "discord_status_state.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(state) + "\n", encoding="utf-8")
+
+
 def read_videos_state(site_dir):
     path = site_dir / "assets" / "data" / "discord_videos_state.json"
     if path.exists():
@@ -847,6 +867,78 @@ def post_loot_today_discord(site_dir, loot_data):
         return False
 
 
+def post_server_status_discord(site_dir, status_data):
+    if not DISCORD_BOT_TOKEN:
+        print("Discord status post skipped: DISCORD_BOT_TOKEN not set")
+        return False
+    if not DISCORD_STATUS_CHANNEL_ID:
+        print("Discord status post skipped: DISCORD_STATUS_CHANNEL_ID not set")
+        return False
+    status = str(status_data.get("status") or "unknown").lower()
+    checked = str(status_data.get("last_checked") or "")
+    state = read_discord_status_state(site_dir)
+    if state.get("last_status") == status and state.get("last_checked") == checked and state.get("message_id"):
+        print(f"Discord status already current ({status} @ {checked}), skipping.")
+        return False
+    labels = {
+        "operational": ("Operational", DISCORD_STATUS_OK_COLOR),
+        "maintenance": ("Maintenance", DISCORD_STATUS_WARN_COLOR),
+        "problems": ("Problems", DISCORD_STATUS_BAD_COLOR),
+        "outage": ("Outage", DISCORD_STATUS_BAD_COLOR),
+        "stale": ("Stale", DISCORD_STATUS_WARN_COLOR),
+        "pending": ("Pending", DISCORD_STATUS_WARN_COLOR),
+        "unknown": ("Unknown", DISCORD_STATUS_BAD_COLOR),
+    }
+    label, color = labels.get(status, ("Unknown", DISCORD_STATUS_BAD_COLOR))
+    platforms = status_data.get("platforms") if isinstance(status_data.get("platforms"), dict) else {}
+    plat_lines = []
+    for key, name in (("pc", "PC"), ("playstation", "PlayStation"), ("xbox", "Xbox")):
+        p = str(platforms.get(key, status)).lower()
+        mark = "🟢" if p == "operational" else ("🟡" if p in ("maintenance", "stale", "pending") else "🔴")
+        plat_lines.append(f"{mark} {name}")
+    payload = {
+        "embeds": [
+            {
+                "title": f"{'🟢' if status == 'operational' else ('🟡' if status in ('maintenance', 'stale', 'pending') else '🔴')} Division 2 Server Status: {label}",
+                "description": f"{status_data.get('message') or label}\n[Live tracker]({BASE_URL}/division-2/server-status/)",
+                "color": color,
+                "fields": [
+                    {"name": "Platforms", "value": "\n".join(plat_lines) or "-", "inline": False},
+                ],
+                "footer": {"text": f"Raigulus Server Status // {checked or 'unverified'}"},
+            }
+        ],
+    }
+    message_id = state.get("message_id")
+    if message_id:
+        url = f"https://discord.com/api/v10/channels/{DISCORD_STATUS_CHANNEL_ID}/messages/{message_id}"
+        method = "PATCH"
+    else:
+        url = f"https://discord.com/api/v10/channels/{DISCORD_STATUS_CHANNEL_ID}/messages"
+        method = "POST"
+    req = urllib.request.Request(
+        url,
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Authorization": f"Bot {DISCORD_BOT_TOKEN}",
+            "Content-Type": "application/json",
+            "User-Agent": USER_AGENT,
+        },
+        method=method,
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            result = json.loads(resp.read().decode("utf-8"))
+            new_id = result.get("id") or message_id
+            print(f"Discord status {method} OK - message id {new_id}")
+            write_discord_status_state(site_dir, {"message_id": new_id, "last_status": status, "last_checked": checked})
+            return True
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")[:500]
+        print(f"Discord status post FAILED: HTTP {exc.code}: {body}")
+        return False
+
+
 def submit_indexnow(site_dir, extra_urls=None):
     key = find_indexnow_key(site_dir)
     if not key:
@@ -908,6 +1000,11 @@ def main():
         action="store_true",
         help="Post new videos to the Discord latest-videos channel.",
     )
+    parser.add_argument(
+        "--post-status",
+        action="store_true",
+        help="Post/update the Division 2 server status embed in Discord.",
+    )
     args = parser.parse_args()
 
     input_path, site_dir = repo_paths()
@@ -965,6 +1062,8 @@ def main():
     print(f"Wrote {site_dir / 'assets' / 'data' / 'division-2-status.json'}")
     if update_status_page(site_dir, status_data):
         print("Updated Division 2 server status live block")
+    if args.post_status and status_data:
+        post_server_status_discord(site_dir, status_data)
 
     update_sitemap(site_dir)
     if args.submit_indexnow:
