@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T10:44:36Z",
+  "generated_at": "2026-09-15T10:51:56Z",
   "stats": {
     "total_guides": 437,
     "exotics": 74,
@@ -11,6 +11,15 @@
     "version": "Y8S1"
   },
   "latest_videos": [
+    {
+      "title": "I Solo Cleared District Union Arena Tier 10 Escalation & Rogue Agents | Division 2",
+      "url": "https://raigulus.github.io/division-2/videos/solo-cleared-dua-tier-10-escalation-rogue-agents/",
+      "youtube_url": "https://www.youtube.com/watch?v=1azg0lsQNHs",
+      "thumbnail": "https://i.ytimg.com/vi/1azg0lsQNHs/hqdefault.jpg",
+      "published_date": "2026-09-15",
+      "cluster": "escalation",
+      "summary": "Solo DUA Tier 10 Escalation clear with Rogue Agents. Full run from start to finish."
+    },
     {
       "title": "The Division 2 Y8S3 Scout 3 Walkthrough | All Objectives",
       "url": "https://raigulus.github.io/division-2/videos/y8s3-scout-3-walkthrough-all-objectives/",
@@ -28,15 +37,6 @@
       "published_date": "2026-09-07",
       "cluster": "manhunt",
       "summary": "Y8S3 Scout 2 walkthrough covering all three Red Horizon objectives including the Downtown East reset trick."
-    },
-    {
-      "title": "FLAWLESS Broken Rain Zero-Death Clear | Division 2",
-      "url": "https://raigulus.github.io/division-2/videos/flawless-broken-rain-zero-death-squad-clear/",
-      "youtube_url": "https://www.youtube.com/watch?v=cIaX5vKBC4M",
-      "thumbnail": "https://i.ytimg.com/vi/cIaX5vKBC4M/hqdefault.jpg",
-      "published_date": "2026-09-06",
-      "cluster": "side activity",
-      "summary": "Zero-death flawless Broken Rain squad clear from Lester to Marguerite."
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-09-15 10:44 UTC"
+    "last_checked": "2026-09-15 10:51 UTC"
   },
   "discord_members": 41,
   "next_reset_utc": "2026-09-16T07:00:00Z"
