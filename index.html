@@ -234,7 +234,7 @@
         <a class="section-link" href="/division-2/">View all ↗</a>
       </div>
       <h2 class="section-title">Latest guides</h2>
-      <div class="latest-grid">
+      <div class="latest-grid" id="latest-videos-grid">
         <a class="latest-card" href="/division-2/videos/y8s3-scout-3-walkthrough-all-objectives/">
           <div class="latest-card-img">
             <img src="https://i.ytimg.com/vi/wTB3eXfYGko/hqdefault.jpg" alt="Y8S3 Scout 3 — All Objectives" loading="lazy">
@@ -403,6 +403,29 @@
           var discordMembers=document.querySelector('[data-dynamic="discord-members"]');
           if(discordMembers&&d.discord_members>0){
             discordMembers.textContent=d.discord_members.toLocaleString()+" members online"
+          }
+
+          if(d.latest_videos&&d.latest_videos.length>0){
+            var grid=document.getElementById("latest-videos-grid");
+            if(grid){
+              var months=["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+              var cards=d.latest_videos.map(function(v){
+                var dt=new Date(v.published_date+"T00:00:00Z");
+                var dateStr=dt.getUTCDate()+" "+months[dt.getUTCMonth()]+" "+dt.getUTCFullYear();
+                var tag=v.cluster?v.cluster.charAt(0).toUpperCase()+v.cluster.slice(1):"Guide";
+                return '<a class="latest-card" href="'+v.url+'">'
+                  +'<div class="latest-card-img">'
+                  +'<img src="'+v.thumbnail+'" alt="'+v.title+'" loading="lazy">'
+                  +'<span class="latest-card-tag">'+tag+'</span>'
+                  +'</div>'
+                  +'<div class="latest-card-body">'
+                  +'<p class="latest-card-date">'+dateStr+'</p>'
+                  +'<h3 class="latest-card-title">'+v.title+'</h3>'
+                  +'<p class="latest-card-desc">'+v.summary+'</p>'
+                  +'</div></a>';
+              });
+              grid.innerHTML=cards.join("");
+            }
           }
         })
         .catch(function(){});

@@ -147,6 +147,33 @@ def discord_member_count() -> int:
         return 0
 
 
+def latest_videos(count: int = 3) -> list[dict]:
+    videos_file = DATA / "videos.json"
+    if not videos_file.exists():
+        return []
+    videos = json.loads(videos_file.read_text(encoding="utf-8"))
+    sorted_vids = sorted(videos, key=lambda v: v.get("published_date", ""), reverse=True)
+    result = []
+    for v in sorted_vids[:count]:
+        yt_url = v.get("youtube_url", "")
+        yt_id = ""
+        if "watch?v=" in yt_url:
+            yt_id = yt_url.split("watch?v=")[1].split("&")[0]
+        elif "youtu.be/" in yt_url:
+            yt_id = yt_url.split("youtu.be/")[1].split("?")[0]
+
+        result.append({
+            "title": v.get("title", ""),
+            "url": v.get("url", ""),
+            "youtube_url": yt_url,
+            "thumbnail": f"https://i.ytimg.com/vi/{yt_id}/hqdefault.jpg" if yt_id else "",
+            "published_date": v.get("published_date", ""),
+            "cluster": v.get("cluster", ""),
+            "summary": v.get("summary", ""),
+        })
+    return result
+
+
 def next_reset_utc() -> str:
     now = datetime.now(timezone.utc)
     reset_hour = 7
@@ -168,6 +195,7 @@ def main() -> None:
             "patches": count_patches(),
         },
         "latest_patch": latest_patch(),
+        "latest_videos": latest_videos(3),
         "loot": loot_summary(),
         "server": server_status(),
         "discord_members": discord_member_count(),
