@@ -1,26 +1,26 @@
 {
-  "date": "2026-09-15",
+  "date": "2026-09-16",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Wall Street",
-      "loot": "Providence Defense"
+      "loot": "Body Armor"
     },
     {
       "mission": "Roosevelt Island",
-      "loot": "SMG"
+      "loot": "Tipping Scales"
     },
     {
       "mission": "DCD Headquarters",
-      "loot": "Walker, Harris & Co"
+      "loot": "5.11 Tactical"
     },
     {
       "mission": "Air & Space Museum",
-      "loot": "Shotgun"
+      "loot": "Grupo Sombra S.A."
     },
     {
       "mission": "District Union Arena",
-      "loot": "Ortiz: Reficere"
+      "loot": "Tip of the Spear"
     }
   ],
   "vendor_caches": [
@@ -33,11 +33,57 @@
       "item": "Backpacks"
     }
   ],
-  "last_updated": "2026-09-15 10:02",
-  "last_checked": "2026-09-16 06:38 UTC",
-  "parsed_at": "2026-09-16T06:38:57.892726+00:00",
-  "status": "pending",
-  "fetched_at": "2026-09-16T06:38:57.892726+00:00",
+  "last_updated": "2026-09-16 10:01",
+  "last_checked": "2026-09-16 10:56 UTC",
+  "parsed_at": "2026-09-16T10:56:10.682215+00:00",
+  "status": "ok",
+  "fetched_at": "2026-09-16T10:56:10.682215+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot."
+  "snapshot_note": "Current dated loot snapshot is available.",
+  "vendor_highlights": [
+    {
+      "vendor": "DZ South",
+      "item": "Liquid Engineer",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Pristine Example",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Cassie",
+      "item": "Hunter-Killer",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "Pristine Example",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "DZ West",
+      "item": "Rock n' Roll - ACS-12",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "The Campus",
+      "item": "Rusty - Classic RPK-74",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "White House",
+      "item": "Swap Chain - MP7",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Clan",
+      "item": "Like Glue - Super 90",
+      "note": "Named weapon"
+    }
+  ],
+  "vendor_highlights_status": "ok",
+  "vendor_highlights_checked": "2026-09-16 10:56 UTC",
+  "vendor_highlights_date": "2026-09-14",
+  "vendor_highlights_note": "Current dated vendor highlights are available."
 }
