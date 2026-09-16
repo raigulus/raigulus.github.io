@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T12:50:23Z",
+  "generated_at": "2026-09-16T16:43:28Z",
   "stats": {
     "total_guides": 438,
     "exotics": 74,
@@ -49,8 +49,8 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-09-16 12:50 UTC"
+    "last_checked": "2026-09-16 16:43 UTC"
   },
-  "discord_members": 41,
+  "discord_members": 42,
   "next_reset_utc": "2026-09-17T07:00:00Z"
 }
