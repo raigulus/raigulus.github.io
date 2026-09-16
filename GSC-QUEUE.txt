@@ -1,5 +1,4 @@
-# GSC submit kuyrugu — 11 gonderildi (2026-09-1x), kota doldu. KALAN 8 asagida.
-# Gonderilenler: parti1 (10) + vanguard. dark-hours kota nedeniyle kaldi.
+# GSC submit kuyrugu — TAMAMLANDI (19/19 gonderildi).
 
 ## GONDERILDI (11 URL — vanguard dahil)
 https://raigulus.github.io/division-2/patches/warlords-of-new-york/

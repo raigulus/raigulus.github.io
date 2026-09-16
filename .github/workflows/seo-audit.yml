@@ -1,0 +1,101 @@
+# SEO Audit & Report Workflow
+# Runs weekly site audit, keyword tracking, and generates reports
+
+name: SEO Audit & Reports
+
+on:
+  schedule:
+    # Her Pazartesi 09:00 UTC'de çalışır
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Action to run'
+        required: true
+        default: 'full'
+        type: choice
+        options:
+          - full
+          - audit-only
+          - keywords-only
+          - competitors-only
+          - backlinks-only
+
+env:
+  PYTHON_VERSION: '3.10'
+
+jobs:
+  seo-audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          # No external deps needed for now
+      
+      - name: Run Site Audit
+        if: ${{ github.event.inputs.action == 'full' || github.event.inputs.action == 'audit-only' || github.event_name == 'schedule' }}
+        run: |
+          echo "🔍 Running site audit..."
+          python scripts/seo/site_audit.py --full --output seo-reports/audit-latest.md
+        continue-on-error: true
+      
+      - name: Track Keywords
+        if: ${{ github.event.inputs.action == 'full' || github.event.inputs.action == 'keywords-only' || github.event_name == 'schedule' }}
+        run: |
+          echo "📊 Tracking keywords..."
+          python scripts/seo/keyword_tracker.py track --days 7
+          python scripts/seo/keyword_tracker.py report
+        continue-on-error: true
+      
+      - name: Run Competitor Analysis
+        if: ${{ github.event.inputs.action == 'full' || github.event.inputs.action == 'competitors-only' || github.event_name == 'schedule' }}
+        run: |
+          echo "🏢 Running competitor analysis..."
+          python scripts/seo/competitor_analysis.py compare
+          python scripts/seo/competitor_analysis.py report
+        continue-on-error: true
+      
+      - name: Verify Backlinks
+        if: ${{ github.event.inputs.action == 'full' || github.event.inputs.action == 'backlinks-only' || github.event_name == 'schedule' }}
+        run: |
+          echo "🔗 Verifying backlinks..."
+          python scripts/seo/backlink_monitor.py verify
+          python scripts/seo/backlink_monitor.py report
+        continue-on-error: true
+      
+      - name: Generate GSC Analytics Report
+        if: ${{ github.event.inputs.action == 'full' || github.event_name == 'schedule' }}
+        run: |
+          echo "📈 Generating GSC report..."
+          python scripts/seo/gsc_tool.py analytics --days 7
+          python scripts/seo/gsc_tool.py report
+        continue-on-error: true
+      
+      - name: Upload Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-reports-${{ github.run_number }}
+          path: seo-reports/*.md
+          retention-days: 30
+      
+      - name: Commit reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add seo-reports/ || true
+          git add assets/data/*.json || true
+          git diff --staged --quiet || git commit -m "chore: update SEO reports [skip ci]"
+          git push || echo "Nothing to push"
+        continue-on-error: true

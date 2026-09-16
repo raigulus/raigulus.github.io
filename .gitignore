@@ -5,3 +5,6 @@ __pycache__/
 .env.*
 *-key.json
 credentials.json
+
+# Agent notes - local only
+agents/
