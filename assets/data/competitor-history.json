@@ -1,0 +1,68 @@
+{
+  "snapshots": [
+    {
+      "date": "2026-09-17T02:08:56.838762",
+      "results": [
+        {
+          "domain": "raigulus.github.io",
+          "fetched": "2026-09-17T02:08:54.702361",
+          "status": "success",
+          "title": "Raigulus — The Division 2 Guides &amp; PvP Archive",
+          "description": "Clean, no-commentary Division 2 mission guides, legendary clears, builds, raids, PvP clips, and lore.",
+          "has_schema": true,
+          "has_canonical": true,
+          "link_count": 38,
+          "word_count": 794,
+          "is_ours": true
+        },
+        {
+          "domain": "division2hub.com",
+          "fetched": "2026-09-17T02:08:54.847005",
+          "status": "error",
+          "error": "<urlopen error [Errno -2] Name or service not known>",
+          "category": "community"
+        },
+        {
+          "domain": "thedivision.fandom.com",
+          "fetched": "2026-09-17T02:08:55.013146",
+          "status": "error",
+          "error": "HTTP Error 403: Forbidden",
+          "category": "wiki"
+        },
+        {
+          "domain": "reddit.com/r/thedivision",
+          "fetched": "2026-09-17T02:08:55.325098",
+          "status": "error",
+          "error": "HTTP Error 403: Blocked",
+          "category": "community"
+        },
+        {
+          "domain": "youtube.com/@Ubisoft",
+          "fetched": "2026-09-17T02:08:55.978829",
+          "status": "success",
+          "title": "Ubisoft - YouTube",
+          "description": "The official Ubisoft YouTube channel.",
+          "has_schema": true,
+          "has_canonical": true,
+          "link_count": 37,
+          "word_count": 7340,
+          "category": "official"
+        },
+        {
+          "domain": "gamespot.com/games/the-division-2",
+          "fetched": "2026-09-17T02:08:56.302456",
+          "status": "error",
+          "error": "HTTP Error 403: Forbidden",
+          "category": "media"
+        },
+        {
+          "domain": "ign.com/games/the-division-2",
+          "fetched": "2026-09-17T02:08:56.837758",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found",
+          "category": "media"
+        }
+      ]
+    }
+  ]
+}
