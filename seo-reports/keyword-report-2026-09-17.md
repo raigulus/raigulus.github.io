@@ -1,40 +1,40 @@
 # Raigulus Keyword Sıralama Raporu
 
-**Tarih:** 2026-09-17 02:16
-**Toplam Snapshot:** 2
+**Tarih:** 2026-09-17 02:20
+**Toplam Snapshot:** 3
 **Son Güncelleme:** 2026-09-17
 
 ## Güncel Sıralamalar
 
 | Anahtar Kelime | Pozisyon | Tıklama | Gösterim | CTR% | Değişim |
 |----------------|----------|---------|----------|------|---------|
-| division 2 targeted loot | 13.0 | 10 | 164 | 3.5% | ↑ 25.9 |
-| division 2 dark hours raid | 34.9 | 3 | 71 | 4.5% | ↓ 10.5 |
-| division 2 iron horse raid | 28.9 | 5 | 112 | 2.2% | ↓ 12.9 |
-| division 2 gear sets 2026 | 42.0 | 0 | 159 | 1.5% | ↓ 11.6 |
-| division 2 best builds | 14.6 | 9 | 114 | 7.7% | ↑ 0.4 |
-| division 2 exotic weapons | 4.9 | 4 | 134 | 4.5% | ↑ 23.9 |
-| division 2 exotic armor | 21.9 | 0 | 111 | 6.4% | ↑ 4.5 |
-| division 2 patch notes | 2.9 | 0 | 185 | 9.8% | ↑ 3.4 |
-| division 2 title update 19 | 20.8 | 3 | 110 | 6.0% | ↓ 1.2 |
-| division 2 season 2026 | 8.4 | 7 | 139 | 4.4% | ↓ 4.0 |
-| division 2 summit guide | 35.4 | 0 | 85 | 8.7% | ↓ 22.3 |
-| division 2 countdown guide | 6.9 | 0 | 145 | 6.8% | ↑ 12.1 |
-| division 2 conflict guide | 49.1 | 3 | 75 | 0.5% | ↓ 23.6 |
-| division 2 dz guide | 25.7 | 5 | 79 | 2.6% | ↓ 8.9 |
-| division 2 builds 2026 | 5.2 | 4 | 157 | 7.7% | ↑ 3.7 |
-| division 2 raid guide | 3.9 | 4 | 184 | 1.5% | ↑ 10.3 |
-| division 2 loot tracker | 42.9 | 5 | 112 | 0.7% | ↓ 27.3 |
-| division 2 global events | 42.0 | 10 | 123 | 5.2% | ↓ 29.6 |
-| division 2 new york DLC | 38.5 | 8 | 141 | 2.7% | ↓ 10.5 |
-| the division 2 wiki | 29.1 | 3 | 30 | 8.4% | ↑ 0.0 |
+| division 2 targeted loot | 13.0 | 5 | 55 | 0.5% | ↑ 0.0 |
+| division 2 dark hours raid | 22.7 | 3 | 16 | 2.0% | ↑ 12.3 |
+| division 2 iron horse raid | 41.1 | 9 | 80 | 0.3% | ↓ 12.2 |
+| division 2 gear sets 2026 | 21.1 | 3 | 59 | 7.2% | ↑ 20.9 |
+| division 2 best builds | 34.7 | 5 | 94 | 6.1% | ↓ 20.1 |
+| division 2 exotic weapons | 37.1 | 7 | 95 | 8.0% | ↓ 32.2 |
+| division 2 exotic armor | 30.0 | 1 | 11 | 0.6% | ↓ 8.2 |
+| division 2 patch notes | 16.4 | 5 | 109 | 9.4% | ↓ 13.5 |
+| division 2 title update 19 | 11.0 | 10 | 89 | 5.8% | ↑ 9.8 |
+| division 2 season 2026 | 23.3 | 0 | 57 | 7.1% | ↓ 14.9 |
+| division 2 summit guide | 46.5 | 2 | 148 | 3.3% | ↓ 11.1 |
+| division 2 countdown guide | 24.1 | 8 | 90 | 0.1% | ↓ 17.2 |
+| division 2 conflict guide | 43.6 | 8 | 145 | 4.2% | ↑ 5.5 |
+| division 2 dz guide | 4.8 | 4 | 45 | 6.6% | ↑ 20.9 |
+| division 2 builds 2026 | 15.8 | 3 | 49 | 2.1% | ↓ 10.6 |
+| division 2 raid guide | 2.4 | 5 | 44 | 1.9% | ↑ 1.5 |
+| division 2 loot tracker | 7.2 | 3 | 33 | 4.6% | ↑ 35.7 |
+| division 2 global events | 43.1 | 5 | 23 | 2.3% | ↓ 1.1 |
+| division 2 new york DLC | 8.2 | 2 | 30 | 0.7% | ↑ 30.3 |
+| the division 2 wiki | 21.3 | 1 | 128 | 7.9% | ↑ 7.8 |
 
 ## Sıralama Dağılımı
 
 | Sıralama | Sayı | Oran |
 |----------|------|------|
 | Top 3 | 1 | %5.0 |
-| Top 10 | 6 | %30.0 |
+| Top 10 | 4 | %20.0 |
 | Top 20 | 8 | %40.0 |
 | Top 50 | 20 | %100.0 |
 
@@ -42,11 +42,11 @@
 
 ### İyileştirme Gereken Kelimeler (Pozisyon > 10, Gösterim > 10)
 
-- **division 2 targeted loot**: Pozisyon 13.0, 164 gösterim
-- **division 2 gear sets 2026**: Pozisyon 42.0, 159 gösterim
-- **division 2 new york DLC**: Pozisyon 38.5, 141 gösterim
-- **division 2 global events**: Pozisyon 42.0, 123 gösterim
-- **division 2 best builds**: Pozisyon 14.6, 114 gösterim
+- **division 2 summit guide**: Pozisyon 46.5, 148 gösterim
+- **division 2 conflict guide**: Pozisyon 43.6, 145 gösterim
+- **the division 2 wiki**: Pozisyon 21.3, 128 gösterim
+- **division 2 patch notes**: Pozisyon 16.4, 109 gösterim
+- **division 2 exotic weapons**: Pozisyon 37.1, 95 gösterim
 
 
 ---
