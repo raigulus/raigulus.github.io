@@ -1,0 +1,47 @@
+{
+  "competitors": [
+    {
+      "domain": "division2hub.com",
+      "name": "Division 2 Hub",
+      "category": "community",
+      "added": "2026-09-16",
+      "tags": ["community", "guides", "builds"]
+    },
+    {
+      "domain": "thedivision.fandom.com",
+      "name": "The Division Wiki",
+      "category": "wiki",
+      "added": "2026-09-16",
+      "tags": ["wiki", "database", "items"]
+    },
+    {
+      "domain": "reddit.com/r/thedivision",
+      "name": "r/thedivision",
+      "category": "community",
+      "added": "2026-09-16",
+      "tags": ["community", "discussion", "news"]
+    },
+    {
+      "domain": "youtube.com/@Ubisoft",
+      "name": "Ubisoft Official",
+      "category": "official",
+      "added": "2026-09-16",
+      "tags": ["official", "videos", "trailers"]
+    },
+    {
+      "domain": "gamespot.com/games/the-division-2",
+      "name": "GameSpot",
+      "category": "media",
+      "added": "2026-09-16",
+      "tags": ["reviews", "news", "guides"]
+    },
+    {
+      "domain": "ign.com/games/the-division-2",
+      "name": "IGN",
+      "category": "media",
+      "added": "2026-09-16",
+      "tags": ["reviews", "news", "wikis"]
+    }
+  ],
+  "created": "2026-09-16T00:00:00"
+}

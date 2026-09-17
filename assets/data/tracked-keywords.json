@@ -1,0 +1,36 @@
+{
+  "keywords": [
+    {"keyword": "division 2 targeted loot", "group": "loot", "added": "2026-09-16"},
+    {"keyword": "division 2 dark hours raid", "group": "raids", "added": "2026-09-16"},
+    {"keyword": "division 2 iron horse raid", "group": "raids", "added": "2026-09-16"},
+    {"keyword": "division 2 gear sets 2026", "group": "gear", "added": "2026-09-16"},
+    {"keyword": "division 2 best builds", "group": "gear", "added": "2026-09-16"},
+    {"keyword": "division 2 exotic weapons", "group": "exotics", "added": "2026-09-16"},
+    {"keyword": "division 2 exotic armor", "group": "exotics", "added": "2026-09-16"},
+    {"keyword": "division 2 patch notes", "group": "news", "added": "2026-09-16"},
+    {"keyword": "division 2 title update 19", "group": "news", "added": "2026-09-16"},
+    {"keyword": "division 2 season 2026", "group": "news", "added": "2026-09-16"},
+    {"keyword": "division 2 summit guide", "group": "guides", "added": "2026-09-16"},
+    {"keyword": "division 2 countdown guide", "group": "guides", "added": "2026-09-16"},
+    {"keyword": "division 2 conflict guide", "group": "guides", "added": "2026-09-16"},
+    {"keyword": "division 2 dz guide", "group": "guides", "added": "2026-09-16"},
+    {"keyword": "division 2 builds 2026", "group": "gear", "added": "2026-09-16"},
+    {"keyword": "division 2 raid guide", "group": "raids", "added": "2026-09-16"},
+    {"keyword": "division 2 loot tracker", "group": "loot", "added": "2026-09-16"},
+    {"keyword": "division 2 global events", "group": "events", "added": "2026-09-16"},
+    {"keyword": "division 2 new york DLC", "group": "dlc", "added": "2026-09-16"},
+    {"keyword": "the division 2 wiki", "group": "general", "added": "2026-09-16"}
+  ],
+  "groups": {
+    "loot": {"description": "Targeted loot and farming guides"},
+    "raids": {"description": "Dark Hours and Iron Horse raids"},
+    "gear": {"description": "Builds, gear sets, and loadouts"},
+    "exotics": {"description": "Exotic weapons and armor"},
+    "news": {"description": "Patch notes and updates"},
+    "guides": {"description": "Game mode guides"},
+    "events": {"description": "Global events and seasons"},
+    "dlc": {"description": "DLC content"},
+    "general": {"description": "General Division 2 content"}
+  },
+  "created": "2026-09-16T00:00:00"
+}

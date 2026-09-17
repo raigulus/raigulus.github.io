@@ -23,6 +23,7 @@ on:
 
 env:
   PYTHON_VERSION: '3.10'
+  PYTHONIOENCODING: 'utf-8'
 
 jobs:
   seo-audit:
@@ -42,19 +43,26 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          # No external deps needed for now
       
       - name: Run Site Audit
         if: ${{ github.event.inputs.action == 'full' || github.event.inputs.action == 'audit-only' || github.event_name == 'schedule' }}
+        env:
+          GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
+          GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
+          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
         run: |
-          echo "🔍 Running site audit..."
+          echo "Running site audit..."
           python scripts/seo/site_audit.py --full --output seo-reports/audit-latest.md
         continue-on-error: true
       
       - name: Track Keywords
         if: ${{ github.event.inputs.action == 'full' || github.event.inputs.action == 'keywords-only' || github.event_name == 'schedule' }}
+        env:
+          GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
+          GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
+          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
         run: |
-          echo "📊 Tracking keywords..."
+          echo "Tracking keywords..."
           python scripts/seo/keyword_tracker.py track --days 7
           python scripts/seo/keyword_tracker.py report
         continue-on-error: true
@@ -62,7 +70,7 @@ jobs:
       - name: Run Competitor Analysis
         if: ${{ github.event.inputs.action == 'full' || github.event.inputs.action == 'competitors-only' || github.event_name == 'schedule' }}
         run: |
-          echo "🏢 Running competitor analysis..."
+          echo "Running competitor analysis..."
           python scripts/seo/competitor_analysis.py compare
           python scripts/seo/competitor_analysis.py report
         continue-on-error: true
@@ -70,15 +78,19 @@ jobs:
       - name: Verify Backlinks
         if: ${{ github.event.inputs.action == 'full' || github.event.inputs.action == 'backlinks-only' || github.event_name == 'schedule' }}
         run: |
-          echo "🔗 Verifying backlinks..."
+          echo "Verifying backlinks..."
           python scripts/seo/backlink_monitor.py verify
           python scripts/seo/backlink_monitor.py report
         continue-on-error: true
       
       - name: Generate GSC Analytics Report
         if: ${{ github.event.inputs.action == 'full' || github.event_name == 'schedule' }}
+        env:
+          GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
+          GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
+          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
         run: |
-          echo "📈 Generating GSC report..."
+          echo "Generating GSC report..."
           python scripts/seo/gsc_tool.py analytics --days 7
           python scripts/seo/gsc_tool.py report
         continue-on-error: true
