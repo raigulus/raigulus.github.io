@@ -1,6 +1,6 @@
 # Raigulus Rakip Analiz Raporu
 
-**Tarih:** 2026-09-17 02:08
+**Tarih:** 2026-09-17 02:16
 **Analyze Edilen Site:** 7
 
 ## Genel Karşılaştırma

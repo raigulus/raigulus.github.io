@@ -144,6 +144,151 @@
           "position": 29.077597910593376
         }
       ]
+    },
+    {
+      "date": "2026-09-17T02:16:22.749613",
+      "results": [
+        {
+          "keyword": "division 2 targeted loot",
+          "clicks": 10,
+          "impressions": 164,
+          "ctr": 0.03490035665932306,
+          "position": 12.990724536474943
+        },
+        {
+          "keyword": "division 2 dark hours raid",
+          "clicks": 3,
+          "impressions": 71,
+          "ctr": 0.04503917107976614,
+          "position": 34.91259389225239
+        },
+        {
+          "keyword": "division 2 iron horse raid",
+          "clicks": 5,
+          "impressions": 112,
+          "ctr": 0.021692082238013347,
+          "position": 28.85866332799329
+        },
+        {
+          "keyword": "division 2 gear sets 2026",
+          "clicks": 0,
+          "impressions": 159,
+          "ctr": 0.014940451842576098,
+          "position": 42.00438138663692
+        },
+        {
+          "keyword": "division 2 best builds",
+          "clicks": 9,
+          "impressions": 114,
+          "ctr": 0.0766887216859464,
+          "position": 14.634670879795456
+        },
+        {
+          "keyword": "division 2 exotic weapons",
+          "clicks": 4,
+          "impressions": 134,
+          "ctr": 0.045174867181480706,
+          "position": 4.935214494079071
+        },
+        {
+          "keyword": "division 2 exotic armor",
+          "clicks": 0,
+          "impressions": 111,
+          "ctr": 0.0639110973112185,
+          "position": 21.854735186521978
+        },
+        {
+          "keyword": "division 2 patch notes",
+          "clicks": 0,
+          "impressions": 185,
+          "ctr": 0.09774883066624523,
+          "position": 2.9441373431290456
+        },
+        {
+          "keyword": "division 2 title update 19",
+          "clicks": 3,
+          "impressions": 110,
+          "ctr": 0.06009156947705072,
+          "position": 20.797411639525574
+        },
+        {
+          "keyword": "division 2 season 2026",
+          "clicks": 7,
+          "impressions": 139,
+          "ctr": 0.044310184239039666,
+          "position": 8.367778400896967
+        },
+        {
+          "keyword": "division 2 summit guide",
+          "clicks": 0,
+          "impressions": 85,
+          "ctr": 0.08725185238490135,
+          "position": 35.376621809307544
+        },
+        {
+          "keyword": "division 2 countdown guide",
+          "clicks": 0,
+          "impressions": 145,
+          "ctr": 0.06792173732796818,
+          "position": 6.896501776366493
+        },
+        {
+          "keyword": "division 2 conflict guide",
+          "clicks": 3,
+          "impressions": 75,
+          "ctr": 0.004799975584188832,
+          "position": 49.1029951177921
+        },
+        {
+          "keyword": "division 2 dz guide",
+          "clicks": 5,
+          "impressions": 79,
+          "ctr": 0.0263223751692004,
+          "position": 25.67591512621345
+        },
+        {
+          "keyword": "division 2 builds 2026",
+          "clicks": 4,
+          "impressions": 157,
+          "ctr": 0.07679509822328176,
+          "position": 5.164531499369877
+        },
+        {
+          "keyword": "division 2 raid guide",
+          "clicks": 4,
+          "impressions": 184,
+          "ctr": 0.015086634687183154,
+          "position": 3.9480735113745062
+        },
+        {
+          "keyword": "division 2 loot tracker",
+          "clicks": 5,
+          "impressions": 112,
+          "ctr": 0.006960529494936297,
+          "position": 42.93233527173429
+        },
+        {
+          "keyword": "division 2 global events",
+          "clicks": 10,
+          "impressions": 123,
+          "ctr": 0.052487013203441506,
+          "position": 41.96208095930652
+        },
+        {
+          "keyword": "division 2 new york DLC",
+          "clicks": 8,
+          "impressions": 141,
+          "ctr": 0.027340851455774084,
+          "position": 38.487334245342225
+        },
+        {
+          "keyword": "the division 2 wiki",
+          "clicks": 3,
+          "impressions": 30,
+          "ctr": 0.08367075348273323,
+          "position": 29.071391259872403
+        }
+      ]
     }
   ]
 }
