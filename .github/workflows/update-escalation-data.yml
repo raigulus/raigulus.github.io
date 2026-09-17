@@ -3,10 +3,10 @@ name: Update Guide Data
 on:
   workflow_dispatch:
   schedule:
-    - cron: "7 * * * *"
-    - cron: "37 * * * *"
-    - cron: "23 7 * * *"
-    - cron: "43 7 * * *"
+    - cron: "7 10-23 * * *"
+    - cron: "37 10-23 * * *"
+    - cron: "23 10 * * *"
+    - cron: "43 10 * * *"
 
 permissions:
   contents: write
