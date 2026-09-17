@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-17T10:45:35Z",
+  "generated_at": "2026-09-17T15:31:24Z",
   "stats": {
-    "total_guides": 438,
+    "total_guides": 441,
     "exotics": 74,
     "patches": 30
   },
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-09-17 10:45 UTC"
+    "last_checked": "2026-09-17 15:31 UTC"
   },
   "discord_members": 43,
   "next_reset_utc": "2026-09-18T07:00:00Z"
