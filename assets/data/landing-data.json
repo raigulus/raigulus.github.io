@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-18T01:26:35Z",
+  "generated_at": "2026-09-18T02:01:33Z",
   "stats": {
-    "total_guides": 441,
+    "total_guides": 442,
     "exotics": 74,
     "patches": 30
   },
@@ -11,6 +11,15 @@
     "version": "Y8S1"
   },
   "latest_videos": [
+    {
+      "title": "BLK Clan Skirmish | Insane Regulus Shots",
+      "url": "https://raigulus.github.io/division-2/videos/blk-clan-insane-regulus-shots-conflict-skirmish/",
+      "youtube_url": "https://www.youtube.com/watch?v=L-NRGS962cE",
+      "thumbnail": "https://i.ytimg.com/vi/L-NRGS962cE/hqdefault.jpg",
+      "published_date": "2026-09-18",
+      "cluster": "pvp/archive clip",
+      "summary": "4-stack vs BLK clan Conflict Skirmish, insane Regulus headshots and clean teamplay with no commentary."
+    },
     {
       "title": "I Solo Cleared District Union Arena Tier 10 Escalation & Rogue Agents | Division 2",
       "url": "https://raigulus.github.io/division-2/videos/solo-cleared-dua-tier-10-escalation-rogue-agents/",
@@ -28,15 +37,6 @@
       "published_date": "2026-09-08",
       "cluster": "manhunt",
       "summary": "Y8S3 Scout 3 walkthrough covering all three Red Horizon objectives."
-    },
-    {
-      "title": "The Division 2 Y8S3 Scout 2 Walkthrough | All Objectives",
-      "url": "https://raigulus.github.io/division-2/videos/y8s3-scout-2-walkthrough-all-objectives/",
-      "youtube_url": "https://www.youtube.com/watch?v=o5WlQAsopeo",
-      "thumbnail": "https://i.ytimg.com/vi/o5WlQAsopeo/hqdefault.jpg",
-      "published_date": "2026-09-07",
-      "cluster": "manhunt",
-      "summary": "Y8S3 Scout 2 walkthrough covering all three Red Horizon objectives including the Downtown East reset trick."
     }
   ],
   "loot": {
@@ -44,7 +44,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-09-18 01:26 UTC"
+    "last_checked": "2026-09-18 02:01 UTC"
   },
   "discord_members": 43,
   "next_reset_utc": "2026-09-18T07:00:00Z"
