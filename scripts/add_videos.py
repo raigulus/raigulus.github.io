@@ -135,31 +135,31 @@ def related_cards(record: dict, records: list[dict], exclude_self=True) -> str:
     cluster = record["cluster"]
     pool = [
         r for r in records
-        if r["cluster"] == cluster and (not exclude_self or r["url"] != record["url"])
+        if r.get("cluster") == cluster and (not exclude_self or r.get("url") != record.get("url"))
     ]
     if len(pool) < 3:
-        extra = [r for r in records if r["url"] not in {p["url"] for p in pool}]
+        extra = [r for r in records if r.get("url") not in {p.get("url") for p in pool}]
         pool += extra[: 3 - len(pool)]
-    pool = sorted(pool, key=lambda r: r["published_date"], reverse=True)[:3]
+    pool = sorted(pool, key=lambda r: r.get("published_date", ""), reverse=True)[:3]
     cards = []
     for rel in pool:
-        vid = rel["youtube_url"].split("v=")[-1]
-        short = rel["mission"].split(" Y8S")[0].split(" Week")[0][:28]
+        vid = rel.get("youtube_url", "").split("v=")[-1]
+        short = rel.get("mission", "?").split(" Y8S")[0].split(" Week")[0][:28]
         search_blob = " ".join([
-            rel["title"], rel.get("summary", ""), rel["mission"], rel["cluster"],
+            rel.get("title", ""), rel.get("summary", ""), rel.get("mission", ""), rel.get("cluster", ""),
             rel.get("difficulty", ""), rel.get("target", ""), *rel.get("tags", []),
         ])
         search_blob = esc(search_blob.replace("'", "&#x27;"))
         cards.append(f'''<article class="video-card" data-c="special" data-search-card data-search="{search_blob}">
-  <a class="thumb" href="{rel['url']}">
+  <a class="thumb" href="{rel.get('url', '#')}">
     <span class="thumb-ph">{esc(short)}</span>
-    <img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="{esc(rel['title'])} thumbnail" loading="lazy">
+    <img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="{esc(rel.get('title', ''))} thumbnail" loading="lazy">
   </a>
   <div class="card-body">
-    <p class="eyebrow">{esc(rel['cluster'])}</p>
-    <h2><a href="{rel['url']}">{esc(rel['title'])}</a></h2>
+    <p class="eyebrow">{esc(rel.get('cluster', ''))}</p>
+    <h2><a href="{rel.get('url', '#')}">{esc(rel.get('title', ''))}</a></h2>
     <p>{esc(rel.get('summary', ''))}</p>
-    <p class="meta"><time datetime="{rel['published_date']}">{rel['published_date']}</time> <span>/</span> {esc(rel['mission'])}</p>
+    <p class="meta"><time datetime="{rel.get('published_date', '')}">{rel.get('published_date', '')}</time> <span>/</span> {esc(rel.get('mission', ''))}</p>
   </div>
 </article>''')
     return "<div class=\"grid\">" + "\n".join(cards) + "</div>"
@@ -168,12 +168,12 @@ def related_cards(record: dict, records: list[dict], exclude_self=True) -> str:
 def other_versions(record: dict, records: list[dict]) -> str:
     same = [
         r for r in records
-        if r["mission"] == record["mission"] and r["url"] != record["url"]
+        if r.get("mission") == record.get("mission") and r.get("url") != record.get("url")
     ]
     if not same:
         return ""
     items = "\n".join(
-        f'<li><a href="{r["url"]}">{esc(r["title"])}</a></li>' for r in same
+        f'<li><a href="{r.get("url", "#")}">{esc(r.get("title", ""))}</a></li>' for r in same
     )
     return f'        <h2>Other Versions of This Mission</h2>\n        <ul class="link-list">{items}</ul>\n'
 
@@ -485,7 +485,7 @@ def update_hub_page(records_new: list[dict], all_records: list[dict]) -> None:
     content, _ = update_itemlists(content, records_new)
 
     # 3. Guide count.
-    total = sum(1 for r in all_records if r["game"] == "division-2")
+    total = sum(1 for r in all_records if r.get("game", "division-2") == "division-2")
     content = re.sub(r">\d+ guides<", f">{total} guides<", content)
 
     path.write_text(content, encoding="utf-8")
