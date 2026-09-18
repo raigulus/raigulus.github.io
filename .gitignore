@@ -5,6 +5,7 @@ __pycache__/
 .env.*
 *-key.json
 credentials.json
+GSC-QUEUE.txt
 
 # Agent notes - local only
 agents/
