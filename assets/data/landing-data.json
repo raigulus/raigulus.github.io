@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T22:25:16Z",
+  "generated_at": "2026-09-19T22:44:03Z",
   "stats": {
     "total_guides": 448,
     "exotics": 74,
@@ -17,7 +17,7 @@
       "youtube_url": "https://www.youtube.com/watch?v=GElZJji0mb8",
       "thumbnail": "https://i.ytimg.com/vi/GElZJji0mb8/hqdefault.jpg",
       "published_date": "2026-09-19",
-      "cluster": "side activity",
+      "cluster": "pvp/archive clip",
       "summary": "Iron Will just broke PvP in The Division 2 — and I don't think Massive meant for it to go this far.  In this Division 2 Red Horizon breakdown, I dig into the ne"
     },
     {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-09-19 22:25 UTC"
+    "last_checked": "2026-09-19 22:44 UTC"
   },
   "discord_members": 45,
   "next_reset_utc": "2026-09-20T07:00:00Z"
