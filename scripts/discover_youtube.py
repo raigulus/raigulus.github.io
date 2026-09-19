@@ -28,14 +28,27 @@ STOPWORDS = {
 }
 
 
-def classify(title):
+PVP_KEYWORDS = ("conflict", "pvp", "skirmish", "dark zone", "rogue", "clan war", "1v1")
+ESCALATION_KEYWORDS = ("escalation", "tier 10", "summit", "countdown", "legendary", "walkthrough", "solo cleared", "speedrun")
+
+
+def classify(title, description=""):
     t = title.lower()
     if "scout" in t or "manhunt" in t:
         return ("manhunt", "manhunt")
-    if any(k in t for k in ("conflict", "pvp", "skirmish", "dark zone", "rogue", "clan war", "1v1")):
+    if any(k in t for k in PVP_KEYWORDS):
         return ("pvp/archive clip", "pvp")
-    if any(k in t for k in ("escalation", "tier 10", "summit", "countdown", "legendary", "walkthrough", "solo cleared", "speedrun")):
+    if any(k in t for k in ESCALATION_KEYWORDS):
         return ("escalation run", "escalation")
+    # Fallback only: description must never override a title match above.
+    d = (description or "").lower()
+    if d:
+        if "scout" in d or "manhunt" in d:
+            return ("manhunt", "manhunt")
+        if any(k in d for k in PVP_KEYWORDS):
+            return ("pvp/archive clip", "pvp")
+        if any(k in d for k in ESCALATION_KEYWORDS):
+            return ("escalation run", "escalation")
     return ("side activity", "side")
 
 
@@ -136,7 +149,7 @@ def main():
         if not meta:
             continue
         title = meta.get("title") or item["title"]
-        cluster, playlist = classify(title)
+        cluster, playlist = classify(title, meta.get("description") or item["description"] or "")
         upload = str(meta.get("upload_date") or "")
         published = f"{upload[:4]}-{upload[4:6]}-{upload[6:]}" if len(upload) == 8 else item["published"]
         desc = (meta.get("description") or item["description"] or "").strip().replace("\n", " ")[:160]
