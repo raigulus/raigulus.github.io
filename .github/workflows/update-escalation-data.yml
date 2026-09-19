@@ -2,6 +2,11 @@ name: Update Guide Data
 
 on:
   workflow_dispatch:
+    inputs:
+      backfill_hours:
+        description: "Video backlog window in hours (default 48)"
+        required: false
+        default: ""
   schedule:
     - cron: "7 10-23 * * *"
     - cron: "37 10-23 * * *"
@@ -29,6 +34,7 @@ jobs:
           DIVISION2_VENDOR_SNAPSHOT_URL: ${{ secrets.DIVISION2_VENDOR_SNAPSHOT_URL }}
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           DISCORD_STATUS_CHANNEL_ID: ${{ secrets.DISCORD_STATUS_CHANNEL_ID }}
+          VIDEOS_LOOKBACK_HOURS: ${{ inputs.backfill_hours }}
         run: python3 scripts/update-escalation-data.py --submit-indexnow --post-discord --post-latest-videos --post-status
 
       - name: Synchronize generated site metadata

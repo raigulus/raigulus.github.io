@@ -745,7 +745,11 @@ def post_latest_videos_discord(site_dir):
     state = read_videos_state(site_dir)
     posted_urls = set(state.get("posted_urls", []))
     now = utc_now()
-    cutoff = now.timestamp() - (48 * 3600)
+    try:
+        lookback_hours = int(os.environ.get("VIDEOS_LOOKBACK_HOURS") or 48)
+    except ValueError:
+        lookback_hours = 48
+    cutoff = now.timestamp() - (lookback_hours * 3600)
     recent_videos = []
     for v in videos:
         pub_date = v.get("published_date", "")
@@ -762,7 +766,7 @@ def post_latest_videos_discord(site_dir):
         return False
     recent_videos.sort(key=lambda v: v.get("published_date", ""))
     posted = 0
-    for video in recent_videos[:5]:
+    for video in recent_videos[:10]:
         yt_url = video.get("youtube_url", "")
         yt_id = ""
         if "watch?v=" in yt_url:
@@ -809,7 +813,7 @@ def post_latest_videos_discord(site_dir):
             body = exc.read().decode("utf-8", errors="replace")[:500]
             print(f"Discord videos post FAILED: HTTP {exc.code}: {body}")
         time.sleep(2)
-    print(f"Discord videos posted {posted}/{len(recent_videos[:5])} this run")
+    print(f"Discord videos posted {posted}/{len(recent_videos[:10])} this run")
     return posted > 0
 
 
