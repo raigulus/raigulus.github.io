@@ -34,56 +34,10 @@
     }
   ],
   "last_updated": "2026-09-18 10:01",
-  "last_checked": "2026-09-19 05:05 UTC",
-  "parsed_at": "2026-09-19T05:05:08.559002+00:00",
+  "last_checked": "2026-09-19 06:05 UTC",
+  "parsed_at": "2026-09-19T06:05:08.540042+00:00",
   "status": "pending",
-  "fetched_at": "2026-09-19T05:05:08.559002+00:00",
+  "fetched_at": "2026-09-19T06:05:08.540042+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
-  "vendor_highlights": [
-    {
-      "vendor": "DZ South",
-      "item": "Liquid Engineer",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Pristine Example",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Hunter-Killer",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Countdown",
-      "item": "Pristine Example",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "DZ West",
-      "item": "Rock n' Roll - ACS-12",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "The Campus",
-      "item": "Rusty - Classic RPK-74",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "White House",
-      "item": "Swap Chain - MP7",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "Clan",
-      "item": "Like Glue - Super 90",
-      "note": "Named weapon"
-    }
-  ],
-  "vendor_highlights_status": "ok",
-  "vendor_highlights_checked": "2026-09-19 05:05 UTC",
-  "vendor_highlights_date": "2026-09-14",
-  "vendor_highlights_note": "Current dated vendor highlights are available."
+  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot."
 }
