@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-19T14:05:09Z",
+  "generated_at": "2026-09-19T14:51:04Z",
   "stats": {
-    "total_guides": 442,
+    "total_guides": 448,
     "exotics": 74,
     "patches": 30
   },
@@ -12,6 +12,15 @@
   },
   "latest_videos": [
     {
+      "title": "Iron Will: Aim Optional - The Division 2 Talks",
+      "url": "https://raigulus.github.io/division-2/videos/iron-will-aim-optional-the-division-2-talks/",
+      "youtube_url": "https://www.youtube.com/watch?v=GElZJji0mb8",
+      "thumbnail": "https://i.ytimg.com/vi/GElZJji0mb8/hqdefault.jpg",
+      "published_date": "2026-09-19",
+      "cluster": "side activity",
+      "summary": "Iron Will just broke PvP in The Division 2 — and I don't think Massive meant for it to go this far.  In this Division 2 Red Horizon breakdown, I dig into the ne"
+    },
+    {
       "title": "BLK Clan Skirmish | Insane Regulus Shots",
       "url": "https://raigulus.github.io/division-2/videos/blk-clan-insane-regulus-shots-conflict-skirmish/",
       "youtube_url": "https://www.youtube.com/watch?v=L-NRGS962cE",
@@ -21,22 +30,13 @@
       "summary": "4-stack vs BLK clan Conflict Skirmish, insane Regulus headshots and clean teamplay with no commentary."
     },
     {
-      "title": "I Solo Cleared District Union Arena Tier 10 Escalation & Rogue Agents | Division 2",
-      "url": "https://raigulus.github.io/division-2/videos/solo-cleared-dua-tier-10-escalation-rogue-agents/",
-      "youtube_url": "https://www.youtube.com/watch?v=1azg0lsQNHs",
-      "thumbnail": "https://i.ytimg.com/vi/1azg0lsQNHs/hqdefault.jpg",
-      "published_date": "2026-09-15",
-      "cluster": "escalation",
-      "summary": "Solo DUA Tier 10 Escalation clear with Rogue Agents. Full run from start to finish."
-    },
-    {
-      "title": "The Division 2 Y8S3 Scout 3 Walkthrough | All Objectives",
-      "url": "https://raigulus.github.io/division-2/videos/y8s3-scout-3-walkthrough-all-objectives/",
-      "youtube_url": "https://www.youtube.com/watch?v=wTB3eXfYGko",
-      "thumbnail": "https://i.ytimg.com/vi/wTB3eXfYGko/hqdefault.jpg",
-      "published_date": "2026-09-08",
-      "cluster": "manhunt",
-      "summary": "Y8S3 Scout 3 walkthrough covering all three Red Horizon objectives."
+      "title": "How to Unlock and Beat Graziano in The Division 2 Red",
+      "url": "https://raigulus.github.io/division-2/videos/how-to-unlock-and-beat-graziano-in-the-division-2/",
+      "youtube_url": "https://www.youtube.com/watch?v=38yAVqHrddQ",
+      "thumbnail": "https://i.ytimg.com/vi/38yAVqHrddQ/hqdefault.jpg",
+      "published_date": "2026-09-16",
+      "cluster": "side activity",
+      "summary": "Today's Loot: https://raigulus.github.io/division-2/loot/ Reset Countdown: https://raigulus.github.io/division-2/reset/ Server Status: https://raigulus.github.i"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-09-19 14:05 UTC"
+    "last_checked": "2026-09-19 14:51 UTC"
   },
   "discord_members": 44,
   "next_reset_utc": "2026-09-20T07:00:00Z"
