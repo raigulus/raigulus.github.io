@@ -5,6 +5,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -759,17 +760,18 @@ def post_latest_videos_discord(site_dir):
     if not recent_videos:
         print("Discord videos post skipped: no new videos in last 48h")
         return False
-    recent_videos.sort(key=lambda v: v.get("published_date", ""), reverse=True)
-    video = recent_videos[0]
-    yt_url = video.get("youtube_url", "")
-    yt_id = ""
-    if "watch?v=" in yt_url:
-        yt_id = yt_url.split("watch?v=")[1].split("&")[0]
-    elif "youtu.be/" in yt_url:
-        yt_id = yt_url.split("youtu.be/")[1].split("?")[0]
-    thumbnail = f"https://i.ytimg.com/vi/{yt_id}/hqdefault.jpg" if yt_id else ""
-    payload = {
-        "content": f"New video uploaded! Check it out:",
+    recent_videos.sort(key=lambda v: v.get("published_date", ""))
+    posted = 0
+    for video in recent_videos[:5]:
+        yt_url = video.get("youtube_url", "")
+        yt_id = ""
+        if "watch?v=" in yt_url:
+            yt_id = yt_url.split("watch?v=")[1].split("&")[0]
+        elif "youtu.be/" in yt_url:
+            yt_id = yt_url.split("youtu.be/")[1].split("?")[0]
+        thumbnail = f"https://i.ytimg.com/vi/{yt_id}/hqdefault.jpg" if yt_id else ""
+        payload = {
+            "content": f"New video uploaded! Check it out:",
         "embeds": [
             {
                 "title": video.get("title", "New Division 2 Video"),
@@ -785,28 +787,30 @@ def post_latest_videos_discord(site_dir):
             }
         ],
     }
-    req = urllib.request.Request(
-        f"https://discord.com/api/v10/channels/{DISCORD_VIDEOS_CHANNEL_ID}/messages",
-        data=json.dumps(payload).encode("utf-8"),
-        headers={
-            "Authorization": f"Bot {DISCORD_BOT_TOKEN}",
-            "Content-Type": "application/json",
-            "User-Agent": USER_AGENT,
-        },
-        method="POST",
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=20) as resp:
-            result = json.loads(resp.read().decode("utf-8"))
-            print(f"Discord videos post OK - message id {result.get('id')}")
-            posted_urls.add(video.get("url", ""))
-            state["posted_urls"] = list(posted_urls)[-100:]
-            write_videos_state(site_dir, state)
-            return True
-    except urllib.error.HTTPError as exc:
-        body = exc.read().decode("utf-8", errors="replace")[:500]
-        print(f"Discord videos post FAILED: HTTP {exc.code}: {body}")
-        return False
+        req = urllib.request.Request(
+            f"https://discord.com/api/v10/channels/{DISCORD_VIDEOS_CHANNEL_ID}/messages",
+            data=json.dumps(payload).encode("utf-8"),
+            headers={
+                "Authorization": f"Bot {DISCORD_BOT_TOKEN}",
+                "Content-Type": "application/json",
+                "User-Agent": USER_AGENT,
+            },
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                result = json.loads(resp.read().decode("utf-8"))
+                print(f"Discord videos post OK - {video.get('title', '')[:60]} - message id {result.get('id')}")
+                posted_urls.add(video.get("url", ""))
+                state["posted_urls"] = list(posted_urls)[-100:]
+                write_videos_state(site_dir, state)
+                posted += 1
+        except urllib.error.HTTPError as exc:
+            body = exc.read().decode("utf-8", errors="replace")[:500]
+            print(f"Discord videos post FAILED: HTTP {exc.code}: {body}")
+        time.sleep(2)
+    print(f"Discord videos posted {posted}/{len(recent_videos[:5])} this run")
+    return posted > 0
 
 
 def post_loot_today_discord(site_dir, loot_data):
