@@ -1,5 +1,13 @@
 # Agent Communication Protocol
 
+## Session Start — Zorunlu İlk Adım
+Burada açılan HER ajan, işe başlamadan önce:
+1. `agents/` klasöründeki TÜM `.md` dosyalarını okur (README → SITE-NOTES → ilgili alan docs)
+2. Başkalarının yarım bıraktığı iş varsa önce onu devralır
+3. Yaptığı HER işi bitince `agents/SITE-NOTES.md`'e tarihli not düşer (append, asla overwrite yok)
+
+Okumadan işe başlayan, kör uçar. Not düşmeyen, yok hükmündedir.
+
 ## Structural Changes — Always Coordinate First
 
 Before making any structural changes to the site (closing pages, merging hubs, redirecting sections, adding/removing major nav links), **communicate with the other agent first**.
