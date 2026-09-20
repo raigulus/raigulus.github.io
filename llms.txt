@@ -26,6 +26,7 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [Diablo 4 Helltide Schedule](https://raigulus.github.io/diablo-4/helltide-schedule/): Hourly Helltide spawns, Aberrant Cinder farming, and Tortured Gift chests.
 - [Diablo 4 World Boss Timer](https://raigulus.github.io/diablo-4/world-boss-timer/): 3.5-hour spawn cycle, 15-minute kill window, and legendary loot.
 - [Destiny 2 Lost Sector Exotics](https://raigulus.github.io/destiny-2/lost-sector-exotics/): Legend vs Master drop rates, solo rules, and champion mods.
+- [Destiny 2 Lost Sector Exotics](https://raigulus.github.io/destiny-2/lost-sector-exotics/): Legend vs Master drop rates, solo rules, and champion mods.
 - [RSS Feed](https://raigulus.github.io/feed.xml): Machine-readable feed for blog directories and feed readers.
 
 ## YouTube Playlists
