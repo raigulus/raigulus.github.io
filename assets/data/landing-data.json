@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-20T23:05:13Z",
+  "generated_at": "2026-09-20T23:29:17Z",
   "stats": {
-    "total_guides": 448,
+    "total_guides": 450,
     "exotics": 77,
     "patches": 30
   },
@@ -12,6 +12,24 @@
   },
   "latest_videos": [
     {
+      "title": "Paradise Lost Towers Cleared with Oxidizer [2026]",
+      "url": "https://raigulus.github.io/division-2/videos/paradise-lost-towers-cleared-with-oxidizer/",
+      "youtube_url": "https://www.youtube.com/watch?v=QShVs71DX8s",
+      "thumbnail": "https://i.ytimg.com/vi/QShVs71DX8s/hqdefault.jpg",
+      "published_date": "2026-09-20",
+      "cluster": "side activity",
+      "summary": "Paradise Lost towers cleared with the Oxidizer in The Division 2: no-commentary pure gameplay run with full clear."
+    },
+    {
+      "title": "Broken Rain Marguerite Steel One-Phase Method [2026]",
+      "url": "https://raigulus.github.io/division-2/videos/broken-rain-marguerite-steel-one-phase-method/",
+      "youtube_url": "https://www.youtube.com/watch?v=W9CjwjbGawg",
+      "thumbnail": "https://i.ytimg.com/vi/W9CjwjbGawg/hqdefault.jpg",
+      "published_date": "2026-09-20",
+      "cluster": "side activity",
+      "summary": "Marguerite Steel one-phase method for the Broken Rain final boss: Striker and Tipping Scales DPS with EMP support skip the multi-cycle fight."
+    },
+    {
       "title": "Iron Will: Aim Optional - The Division 2 Talks",
       "url": "https://raigulus.github.io/division-2/videos/iron-will-aim-optional-the-division-2-talks/",
       "youtube_url": "https://www.youtube.com/watch?v=GElZJji0mb8",
@@ -19,24 +37,6 @@
       "published_date": "2026-09-19",
       "cluster": "pvp/archive clip",
       "summary": "Iron Will just broke PvP in The Division 2 — and I don't think Massive meant for it to go this far.  In this Division 2 Red Horizon breakdown, I dig into the ne"
-    },
-    {
-      "title": "BLK Clan Skirmish | Insane Regulus Shots",
-      "url": "https://raigulus.github.io/division-2/videos/blk-clan-insane-regulus-shots-conflict-skirmish/",
-      "youtube_url": "https://www.youtube.com/watch?v=L-NRGS962cE",
-      "thumbnail": "https://i.ytimg.com/vi/L-NRGS962cE/hqdefault.jpg",
-      "published_date": "2026-09-18",
-      "cluster": "pvp/archive clip",
-      "summary": "4-stack vs BLK clan Conflict Skirmish, insane Regulus headshots and clean teamplay with no commentary."
-    },
-    {
-      "title": "How to Unlock and Beat Graziano in The Division 2 Red",
-      "url": "https://raigulus.github.io/division-2/videos/how-to-unlock-and-beat-graziano-in-the-division-2/",
-      "youtube_url": "https://www.youtube.com/watch?v=38yAVqHrddQ",
-      "thumbnail": "https://i.ytimg.com/vi/38yAVqHrddQ/hqdefault.jpg",
-      "published_date": "2026-09-16",
-      "cluster": "side activity",
-      "summary": "Today's Loot: https://raigulus.github.io/division-2/loot/ Reset Countdown: https://raigulus.github.io/division-2/reset/ Server Status: https://raigulus.github.i"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-09-20 23:05 UTC"
+    "last_checked": "2026-09-20 23:29 UTC"
   },
   "discord_members": 46,
   "next_reset_utc": "2026-09-21T07:00:00Z"
