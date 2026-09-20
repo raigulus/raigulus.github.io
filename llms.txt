@@ -23,6 +23,9 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [Boss Guides](https://raigulus.github.io/division-2/bosses/): Boss encounters and secret boss triggers.
 - [Incursions and Raids](https://raigulus.github.io/division-2/incursions-raids/): Broken Rain Day One full clear, exact boss chapters, Incursion mechanics, and Iron Horse raid archives.
 - [PvP & Conflict Archive](https://raigulus.github.io/division-2/pvp/): Conflict PvP matches, Regulus clips, creator fights, and nostalgia archive videos.
+- [Diablo 4 Helltide Schedule](https://raigulus.github.io/diablo-4/helltide-schedule/): Hourly Helltide spawns, Aberrant Cinder farming, and Tortured Gift chests.
+- [Diablo 4 World Boss Timer](https://raigulus.github.io/diablo-4/world-boss-timer/): 3.5-hour spawn cycle, 15-minute kill window, and legendary loot.
+- [Destiny 2 Lost Sector Exotics](https://raigulus.github.io/destiny-2/lost-sector-exotics/): Legend vs Master drop rates, solo rules, and champion mods.
 - [RSS Feed](https://raigulus.github.io/feed.xml): Machine-readable feed for blog directories and feed readers.
 
 ## YouTube Playlists
