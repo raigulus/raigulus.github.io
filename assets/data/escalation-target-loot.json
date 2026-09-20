@@ -1,89 +1,43 @@
 {
-  "date": "2026-09-19",
+  "date": "2026-09-20",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Wall Street",
-      "loot": "Golan Gear Ltd"
+      "loot": "Foundry Bulwark"
     },
     {
       "mission": "Roosevelt Island",
-      "loot": "Alps Summit Armaments"
+      "loot": "Aces & Eights"
     },
     {
       "mission": "DCD Headquarters",
-      "loot": "Body Armor"
-    },
-    {
-      "mission": "Air & Space Museum",
       "loot": "Gloves"
     },
     {
+      "mission": "Air & Space Museum",
+      "loot": "Strikers Battlegear"
+    },
+    {
       "mission": "District Union Arena",
-      "loot": "Unit Alloys"
+      "loot": "Providence Defense"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "SMGs"
+      "item": "Shotguns"
     },
     {
       "type": "Gear",
       "item": "Chest Pieces"
     }
   ],
-  "last_updated": "2026-09-19 10:04",
-  "last_checked": "2026-09-20 07:05 UTC",
-  "parsed_at": "2026-09-20T07:05:11.679995+00:00",
-  "status": "pending",
-  "fetched_at": "2026-09-20T07:05:11.679995+00:00",
+  "last_updated": "2026-09-20 10:01",
+  "last_checked": "2026-09-20 08:05 UTC",
+  "parsed_at": "2026-09-20T08:05:09.336669+00:00",
+  "status": "ok",
+  "fetched_at": "2026-09-20T08:05:09.336669+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
-  "vendor_highlights": [
-    {
-      "vendor": "DZ South",
-      "item": "Liquid Engineer",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Pristine Example",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Hunter-Killer",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Countdown",
-      "item": "Pristine Example",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "DZ West",
-      "item": "Rock n' Roll - ACS-12",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "The Campus",
-      "item": "Rusty - Classic RPK-74",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "White House",
-      "item": "Swap Chain - MP7",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "Clan",
-      "item": "Like Glue - Super 90",
-      "note": "Named weapon"
-    }
-  ],
-  "vendor_highlights_status": "ok",
-  "vendor_highlights_checked": "2026-09-20 07:05 UTC",
-  "vendor_highlights_date": "2026-09-14",
-  "vendor_highlights_note": "Current dated vendor highlights are available."
+  "snapshot_note": "Current dated loot snapshot is available."
 }
