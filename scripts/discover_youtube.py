@@ -159,7 +159,11 @@ def main():
     for item in fresh:
         meta = fetch_meta(item["video_id"])
         if not meta:
-            continue
+            # yt-dlp is bot-gated from datacenter IPs; fall back to RSS fields
+            # so discovery never silently drops uploads.
+            print(f"yt-dlp unavailable for {item['video_id']}; falling back to RSS fields")
+            meta = {"title": item["title"], "duration": 0, "chapters": [],
+                    "tags": [], "description": item["description"], "upload_date": ""}
         title = meta.get("title") or item["title"]
         cluster, playlist = classify(title, meta.get("description") or item["description"] or "")
         upload = str(meta.get("upload_date") or "")
