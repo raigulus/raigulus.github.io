@@ -12,6 +12,7 @@ import re
 import subprocess
 import sys
 import tempfile
+import time
 import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -84,10 +85,21 @@ def slugify(title, video_id):
     return s or video_id
 
 
-def fetch_rss():
+def fetch_rss(max_attempts=3):
     req = urllib.request.Request(RSS_URL, headers={"User-Agent": "RaigulusDiscover/1.0"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        xml_text = r.read().decode("utf-8")
+    last_error = None
+    for attempt in range(1, max_attempts + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                xml_text = r.read().decode("utf-8")
+            break
+        except Exception as err:  # YouTube feeds 404 intermittently from datacenter IPs
+            last_error = err
+            print(f"RSS attempt {attempt}/{max_attempts} failed: {err}")
+            time.sleep(10 * attempt)
+    else:
+        print(f"RSS unavailable after {max_attempts} attempts ({last_error}); skipping run.")
+        return []
     # Strip namespaces (YouTube varies prefixes) for robust parsing.
     xml_text = re.sub(r'\sxmlns(:\w+)?="[^"]*"', "", xml_text)
     xml_text = re.sub(r"<(/?)(\w+):", r"<\1", xml_text)
