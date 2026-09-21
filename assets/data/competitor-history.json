@@ -255,6 +255,70 @@
           "category": "media"
         }
       ]
+    },
+    {
+      "date": "2026-09-21T15:27:15.843836",
+      "results": [
+        {
+          "domain": "raigulus.github.io",
+          "fetched": "2026-09-21T15:27:13.820805",
+          "status": "success",
+          "title": "Raigulus — The Division 2 Guides &amp; PvP Archive",
+          "description": "Clean, no-commentary Division 2 mission guides, legendary clears, builds, raids, PvP clips, and lore.",
+          "has_schema": true,
+          "has_canonical": true,
+          "link_count": 38,
+          "word_count": 864,
+          "is_ours": true
+        },
+        {
+          "domain": "division2hub.com",
+          "fetched": "2026-09-21T15:27:13.879473",
+          "status": "error",
+          "error": "<urlopen error [Errno -2] Name or service not known>",
+          "category": "community"
+        },
+        {
+          "domain": "thedivision.fandom.com",
+          "fetched": "2026-09-21T15:27:14.015068",
+          "status": "error",
+          "error": "HTTP Error 403: Forbidden",
+          "category": "wiki"
+        },
+        {
+          "domain": "reddit.com/r/thedivision",
+          "fetched": "2026-09-21T15:27:14.209301",
+          "status": "error",
+          "error": "HTTP Error 403: Blocked",
+          "category": "community"
+        },
+        {
+          "domain": "youtube.com/@Ubisoft",
+          "fetched": "2026-09-21T15:27:15.035657",
+          "status": "success",
+          "title": "Ubisoft - YouTube",
+          "description": "The official Ubisoft YouTube channel.",
+          "has_schema": true,
+          "has_canonical": true,
+          "link_count": 37,
+          "word_count": 7466,
+          "category": "official"
+        },
+        {
+          "domain": "gamespot.com/games/the-division-2",
+          "fetched": "2026-09-21T15:27:15.417836",
+          "status": "error",
+          "error": "HTTP Error 403: Forbidden",
+          "category": "media"
+        },
+        {
+          "domain": "ign.com/games/the-division-2",
+          "fetched": "2026-09-21T15:27:15.842618",
+          "status": "error",
+          "error": "HTTP Error 404: Not Found",
+          "category": "media"
+        }
+      ]
     }
   ]
 }
