@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-21T21:05:11Z",
+  "generated_at": "2026-09-21T21:08:51Z",
   "stats": {
-    "total_guides": 450,
+    "total_guides": 451,
     "exotics": 77,
     "patches": 30
   },
@@ -11,6 +11,15 @@
     "version": "Y8S1"
   },
   "latest_videos": [
+    {
+      "title": "Air & Space Museum Tier 10 in 10:33 | Randoms Run [2026]",
+      "url": "https://raigulus.github.io/division-2/videos/air-space-museum-tier-10-1033-fast-run-randoms/",
+      "youtube_url": "https://www.youtube.com/watch?v=YmgA61X9ZO0",
+      "thumbnail": "https://i.ytimg.com/vi/YmgA61X9ZO0/hqdefault.jpg",
+      "published_date": "2026-09-21",
+      "cluster": "escalation run",
+      "summary": "Tier 10 Escalation Air & Space Museum cleared in 10:33 with random matchmaking and no dedicated healer: aggressive pacing and target priority."
+    },
     {
       "title": "Paradise Lost Towers Cleared with Oxidizer [2026]",
       "url": "https://raigulus.github.io/division-2/videos/paradise-lost-towers-cleared-with-oxidizer/",
@@ -28,15 +37,6 @@
       "published_date": "2026-09-20",
       "cluster": "side activity",
       "summary": "Marguerite Steel one-phase method for the Broken Rain final boss: Striker and Tipping Scales DPS with EMP support skip the multi-cycle fight."
-    },
-    {
-      "title": "Iron Will: Aim Optional - The Division 2 Talks",
-      "url": "https://raigulus.github.io/division-2/videos/iron-will-aim-optional-the-division-2-talks/",
-      "youtube_url": "https://www.youtube.com/watch?v=GElZJji0mb8",
-      "thumbnail": "https://i.ytimg.com/vi/GElZJji0mb8/hqdefault.jpg",
-      "published_date": "2026-09-19",
-      "cluster": "pvp/archive clip",
-      "summary": "Iron Will just broke PvP in The Division 2 — and I don't think Massive meant for it to go this far.  In this Division 2 Red Horizon breakdown, I dig into the ne"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-09-21 21:05 UTC"
+    "last_checked": "2026-09-21 21:08 UTC"
   },
   "discord_members": 47,
   "next_reset_utc": "2026-09-22T07:00:00Z"
