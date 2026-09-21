@@ -84,10 +84,10 @@ def head(title, description, canonical, schema_type="Article"):
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{esc(title)} | Raigulus Division Lore</title>
+  <title>{esc(title)} | Raigulus Lore</title>
   <meta name="description" content="{esc(description)}">
   <link rel="canonical" href="{esc(canonical)}">
-  <meta property="og:title" content="{esc(title)} | Raigulus Division Lore">
+  <meta property="og:title" content="{esc(title)} | Raigulus Lore">
   <meta property="og:description" content="{esc(description)}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="{esc(canonical)}">
