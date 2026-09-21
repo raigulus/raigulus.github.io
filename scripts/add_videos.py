@@ -332,8 +332,10 @@ def render_page(record: dict, records: list[dict]) -> str:
     <nav>
       <a href="/division-2/">Division 2</a>
       <a href="/division-2/builds/">Builds</a>
+      <a href="/division-2/build-maker/">Build Maker</a>
       <a href="/division-2/loot/">Loot</a>
       <a href="/division-2/server-status/">Server Status</a>
+      <a href="/division-2/patches/">Patches</a>
       <a href="/division-2/missions/">Missions</a>
       <a href="/division-2/escalation/">Escalation</a>
       <a href="/division-2/dark-zone-surge/">Dark Zone</a>
