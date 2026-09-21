@@ -120,17 +120,30 @@ def fetch_rss(max_attempts=3):
 
 
 def fetch_meta(video_id):
-    out = subprocess.run(
-        ["yt-dlp", "--no-warnings", "--skip-download", "--dump-json",
-         f"https://www.youtube.com/watch?v={video_id}"],
-        capture_output=True, text=True, timeout=120)
-    if out.returncode != 0:
-        print(f"yt-dlp failed for {video_id}: {out.stderr[:200]}")
-        return None
-    try:
-        return json.loads(out.stdout)
-    except json.JSONDecodeError:
-        return None
+    url = f"https://www.youtube.com/watch?v={video_id}"
+    commands = [
+        ["yt-dlp", "--no-warnings", "--skip-download", "--dump-json", url],
+        # Fallback for machines where the console script is blocked or missing
+        # (e.g. Windows Smart App Control blocks the unsigned yt-dlp.exe,
+        # while the signed python.exe may still run the module).
+        [sys.executable, "-m", "yt_dlp", "--no-warnings", "--skip-download",
+         "--dump-json", url],
+    ]
+    for cmd in commands:
+        try:
+            out = subprocess.run(
+                cmd, capture_output=True, text=True, timeout=120)
+        except (OSError, subprocess.SubprocessError) as err:
+            print(f"yt-dlp launch failed for {video_id} ({cmd[0]}): {err}")
+            continue
+        if out.returncode != 0:
+            print(f"yt-dlp failed for {video_id}: {out.stderr[:200]}")
+            continue
+        try:
+            return json.loads(out.stdout)
+        except json.JSONDecodeError:
+            continue
+    return None
 
 
 def main():
