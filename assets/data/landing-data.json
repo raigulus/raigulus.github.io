@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-23T02:05:12Z",
+  "generated_at": "2026-09-23T03:05:12Z",
   "stats": {
     "total_guides": 452,
     "exotics": 77,
     "patches": 30
   },
   "latest_patch": {
-    "slug": "rise-up",
-    "title": "Division 2 Rise Up: Y8S1 Summary [2026]",
+    "slug": "y8s1-mid-season",
+    "title": "Division 2 Y8S1 Mid-Season Patch Guide (2.26) [2026]",
     "version": "Y8S1"
   },
   "latest_videos": [
@@ -44,7 +44,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-09-23 02:05 UTC"
+    "last_checked": "2026-09-23 03:05 UTC"
   },
   "discord_members": 48,
   "next_reset_utc": "2026-09-23T07:00:00Z"
