@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-23T14:57:49Z",
+  "generated_at": "2026-09-23T14:56:37Z",
   "stats": {
     "total_guides": 453,
     "exotics": 77,
     "patches": 30
   },
   "latest_patch": {
-    "slug": "rise-up",
-    "title": "Division 2 Rise Up: Y8S1 Summary [2026]",
-    "version": "Y8S1"
+    "slug": "red-horizon",
+    "title": "Division 2 Red Horizon (Y8S3) Update Guide [2026]",
+    "version": "Y8S3"
   },
   "latest_videos": [
     {
@@ -49,8 +49,8 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-09-23 14:57 UTC"
+    "last_checked": "2026-09-23 14:05 UTC"
   },
-  "discord_members": 48,
+  "discord_members": 0,
   "next_reset_utc": "2026-09-24T07:00:00Z"
 }
