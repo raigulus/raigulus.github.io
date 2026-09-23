@@ -403,6 +403,31 @@ def render_page(record: dict, records: list[dict]) -> str:
         <ul class="pill-list">{pills}</ul>
         <h2>Related Guides</h2>
         {related_cards(record, records)}
+        <div class="feedback" data-feedback>
+          <p><strong>Was this guide helpful?</strong> <button type="button" data-feedback-yes>👍 Yes</button> <button type="button" data-feedback-no>👎 No</button></p>
+          <p class="meta">Discuss this guide with other players on <a href="https://discord.gg/xj8jnS3Gkh">Discord</a> or <a href="/feedback/">send feedback</a>.</p>
+        </div>
+        <script>
+          (function() {{
+            var box = document.querySelector("[data-feedback]");
+            if (!box) return;
+            function done(msg) {{
+              box.querySelectorAll("button").forEach(function(b) {{ b.disabled = true; }});
+              var p = box.querySelector("p");
+              if (p) p.innerHTML = "<strong>" + msg + "</strong>";
+            }}
+            function send(v) {{
+              try {{
+                if (typeof gtag === "function") gtag("event", "guide_feedback", {{ feedback: v, page_path: window.location.pathname }});
+              }} catch (e) {{}}
+              done("Thanks for the feedback!");
+            }}
+            var y = box.querySelector("[data-feedback-yes]");
+            var n = box.querySelector("[data-feedback-no]");
+            if (y) y.addEventListener("click", function() {{ send("yes"); }});
+            if (n) n.addEventListener("click", function() {{ send("no"); }});
+          }})();
+        </script>
       </div>
     </section>
   </main>
