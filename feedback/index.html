@@ -104,12 +104,15 @@
         <h1>Send Feedback &amp; Request Videos</h1>
         <p>Request a Division 2 video, report a guide error, or suggest a build. For back-and-forth discussion, <a href="/discord/">Discord</a> is faster. Unofficial fan archive by Raigulus.</p>
 
-        <!-- SITE OWNER: replace YOUR-EMAIL-HERE with your address, submit once to activate FormSubmit, then it just works. -->
+        <!-- SITE OWNER: get a free key at https://web3forms.com (1 min), replace YOUR-ACCESS-KEY below, submit once to test. -->
+        <p id="fb-sent" hidden style="padding:14px 18px;border:1px solid rgba(245,90,0,.4);border-radius:4px;background:rgba(245,90,0,.08)">Thanks! Your feedback was sent.</p>
         <h2>Feedback Form</h2>
-        <form class="fb-form" action="https://formsubmit.co/YOUR-EMAIL-HERE" method="POST">
-          <input type="hidden" name="_subject" value="Raigulus site feedback">
-          <input type="hidden" name="_template" value="table">
-          <input type="text" name="_honey" style="display:none">
+        <form class="fb-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="14ab9b68-2f2f-4e36-8a0c-2c01289f0ac5">
+          <input type="hidden" name="subject" value="Raigulus site feedback">
+          <input type="hidden" name="from_name" value="Raigulus feedback form">
+          <input type="hidden" name="redirect" value="https://raigulus.github.io/feedback/?sent=1">
+          <input type="checkbox" name="botcheck" style="display:none">
           <p>
             <label for="fb-type">What is this about?</label><br>
             <select id="fb-type" name="type" required>
@@ -139,6 +142,16 @@
             <button type="submit">Send feedback</button>
           </p>
         </form>
+        <script>
+          (function() {
+            try {
+              if (new URLSearchParams(window.location.search).get("sent") === "1") {
+                var box = document.getElementById("fb-sent");
+                if (box) box.hidden = false;
+              }
+            } catch (e) {}
+          })();
+        </script>
 
         <h2>Faster: Discord</h2>
         <p>Video requests, co-op groups, and lore discussion happen daily on <a href="/discord/">Discord</a>. If your message needs a conversation, start there.</p>
