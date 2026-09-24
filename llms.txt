@@ -16,6 +16,7 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [The Division 2 Builds and Build Tests](https://raigulus.github.io/division-2/builds/): Video-backed Bluescreen, Tipping Scales, Whiplash, Regulus, Rage Harvest, Toxic DZ, and Tier 10 tests.
 - [Loot Today and Targeted Loot Guide](https://raigulus.github.io/division-2/loot/): Division 2 loot today, targeted loot, loot map context, and farming videos.
 - [Server Status and Maintenance Tracker](https://raigulus.github.io/division-2/server-status/): Unofficial Division 2 server status, maintenance, Delta-03, official source links, and Raigulus guides.
+- [Cassie Mendoza Location & Schedule](https://raigulus.github.io/division-2/cassie-mendoza/): Weekly secret vendor, Wednesday Snitch schedule, and live opening countdown.
 - [Escalation Loot Today and Tier 10 Guides](https://raigulus.github.io/division-2/escalation/): Current Escalation loot snapshot, vendor caches, and Raigulus Escalation videos.
 - [Prototype Gear and Escalation Vendor Guide](https://raigulus.github.io/division-2/prototype-gear/): Prototype Gear Cache, Escalation vendor, and gear cache planning notes.
 - [Dark Zone Surge and Toxic DZ Guides](https://raigulus.github.io/division-2/dark-zone-surge/): Dark Zone Surge, Toxic DZ, DZ farming, PvP clips, and Regulus 1v1 archives.

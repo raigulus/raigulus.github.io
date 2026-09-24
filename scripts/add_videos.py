@@ -257,6 +257,7 @@ def render_page(record: dict, records: list[dict]) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d11">
   <title>{esc(record['title'])}</title>
   <meta name="description" content="{esc(record['_summary'])}">
   <meta name="blogarama-site-verification" content="blogarama-e6104966-f8b0-49ea-803a-101ddc0264b6">
