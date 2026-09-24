@@ -1,48 +1,48 @@
 {
-  "date": "2026-09-23",
+  "date": "2026-09-24",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Art Museum",
-      "loot": "Badger Tuff"
+      "loot": "Tipping Scales"
     },
     {
       "mission": "Manning National Zoo",
-      "loot": "Habsburg Guard"
+      "loot": "Shiny Monkey Gear"
     },
     {
       "mission": "Camp White Oak",
-      "loot": "Alps Summit Armaments"
+      "loot": "Imminence Armaments"
     },
     {
       "mission": "The Pentagon",
-      "loot": "Future Initiative"
+      "loot": "Core Strength"
     },
     {
       "mission": "DARPA Research Labs",
-      "loot": "Mask"
+      "loot": "Breaking Point"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Shotguns"
+      "item": "LMGs"
     },
     {
       "type": "Gear",
-      "item": "Holsters"
+      "item": "Masks"
     }
   ],
-  "last_updated": "2026-09-23 10:02",
-  "last_checked": "2026-09-24 12:05 UTC",
-  "parsed_at": "2026-09-24T12:05:12.757915+00:00",
-  "status": "stale",
-  "fetched_at": "2026-09-24T12:05:12.757915+00:00",
+  "last_updated": "2026-09-24 14:30",
+  "last_checked": "2026-09-24 13:05 UTC",
+  "parsed_at": "2026-09-24T13:05:08.916279+00:00",
+  "status": "ok",
+  "fetched_at": "2026-09-24T13:05:08.916279+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Checked after the expected daily reset window, but the source still returned an older snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-09-24 12:05 UTC",
+  "vendor_highlights_checked": "2026-09-24 13:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
