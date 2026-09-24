@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T23:05:09Z",
+  "generated_at": "2026-09-24T00:05:12Z",
   "stats": {
     "total_guides": 454,
     "exotics": 77,
@@ -40,16 +40,11 @@
     }
   ],
   "loot": {
-    "active": true,
-    "date": "2026-09-23",
-    "rotation": "Weekly Escalation Rotation",
-    "mission_count": 5,
-    "vendor_count": 2,
-    "next_update": "Around 07:00 UTC"
+    "active": false
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-09-23 23:05 UTC"
+    "last_checked": "2026-09-24 00:05 UTC"
   },
   "discord_members": 48,
   "next_reset_utc": "2026-09-24T07:00:00Z"
