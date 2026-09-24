@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-24T19:05:13Z",
+  "generated_at": "2026-09-24T19:29:19Z",
   "stats": {
-    "total_guides": 455,
+    "total_guides": 456,
     "exotics": 77,
     "patches": 30
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "Don't Miss The Red Moon Rising Event! | Vertigo Exotic",
+      "url": "https://raigulus.github.io/division-2/videos/don-t-miss-the-red-moon-rising-event-vertigo-exoti/",
+      "youtube_url": "https://www.youtube.com/watch?v=oMHzJ1ag5XY",
+      "thumbnail": "https://i.ytimg.com/vi/oMHzJ1ag5XY/hqdefault.jpg",
+      "published_date": "2026-09-24",
+      "cluster": "pvp/archive clip",
+      "summary": "NEW Vertigo Exotic + Red Moon Rising Dark Zone Event is LIVE in The Division 2 Year 8 Season 3.1!  Here's what changes, how to farm it, and the 2 blueprints you"
+    },
     {
       "title": "The Division 2: Red Horizon Scout 5 Manhunt Guide (No",
       "url": "https://raigulus.github.io/division-2/videos/the-division-2-red-horizon-scout-5-manhunt-guide-n/",
@@ -28,15 +37,6 @@
       "published_date": "2026-09-21",
       "cluster": "escalation run",
       "summary": "Tier 10 Escalation Air & Space Museum cleared in 10:33 with random matchmaking and no dedicated healer: aggressive pacing and target priority."
-    },
-    {
-      "title": "Paradise Lost Towers Cleared with Oxidizer [2026]",
-      "url": "https://raigulus.github.io/division-2/videos/paradise-lost-towers-cleared-with-oxidizer/",
-      "youtube_url": "https://www.youtube.com/watch?v=QShVs71DX8s",
-      "thumbnail": "https://i.ytimg.com/vi/QShVs71DX8s/hqdefault.jpg",
-      "published_date": "2026-09-20",
-      "cluster": "side activity",
-      "summary": "Paradise Lost towers cleared with the Oxidizer in The Division 2: no-commentary pure gameplay run with full clear."
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-09-24 19:05 UTC"
+    "last_checked": "2026-09-24 19:29 UTC"
   },
   "discord_members": 49,
   "next_reset_utc": "2026-09-25T07:00:00Z"
