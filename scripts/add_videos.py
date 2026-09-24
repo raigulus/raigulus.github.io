@@ -431,6 +431,27 @@ def render_page(record: dict, records: list[dict]) -> str:
         </script>
       </div>
     </section>
+    <section class="section">
+      <div class="content">
+        <h2>Comments</h2>
+        <script src="https://giscus.app/client.js"
+                data-repo="raigulus/raigulus.github.io"
+                data-repo-id="R_kgDOS0xxMw"
+                data-category="General"
+                data-category-id="DIC_kwDOS0xxM84DGN2n"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="bottom"
+                data-theme="dark"
+                data-lang="en"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+      </div>
+    </section>
   </main>
   <footer class="site-footer">
     <p>Raigulus archives The Division 2 no commentary walkthroughs, mission and build guides, plus Conflict PvP, Dark Zone, Regulus, and gameplay clips.</p>
