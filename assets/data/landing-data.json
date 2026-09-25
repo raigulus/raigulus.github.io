@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-25T00:05:11Z",
+  "generated_at": "2026-09-25T01:05:11Z",
   "stats": {
-    "total_guides": 456,
+    "total_guides": 458,
     "exotics": 77,
-    "patches": 30
+    "patches": 31
   },
   "latest_patch": {
     "slug": "red-horizon",
@@ -44,7 +44,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-09-25 00:05 UTC"
+    "last_checked": "2026-09-25 01:05 UTC"
   },
   "discord_members": 49,
   "next_reset_utc": "2026-09-25T07:00:00Z"
