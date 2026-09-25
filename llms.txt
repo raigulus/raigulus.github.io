@@ -24,6 +24,8 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [Manhunt Walkthroughs](https://raigulus.github.io/division-2/manhunts/): Manhunt routes and target guides.
 - [Boss Guides](https://raigulus.github.io/division-2/bosses/): Boss encounters and secret boss triggers.
 - [Incursions and Raids](https://raigulus.github.io/division-2/incursions-raids/): Broken Rain Day One full clear, exact boss chapters, Incursion mechanics, and Iron Horse raid archives.
+- [Y8S3.1 Red Moon Rising](https://raigulus.github.io/division-2/patches/y8s3-1-red-moon-rising/): PvE Dark Zone event, Vertigo and Sarru exotics, and Rage Harvest return.
+- [Echoes of Central Park DLC](https://raigulus.github.io/division-2/echoes-of-central-park/): November 3 release, flashback story, and Upper West Side map.
 - [PvP & Conflict Archive](https://raigulus.github.io/division-2/pvp/): Conflict PvP matches, Regulus clips, creator fights, and nostalgia archive videos.
 - [Diablo 4 Helltide Schedule](https://raigulus.github.io/diablo-4/helltide-schedule/): Hourly Helltide spawns, Aberrant Cinder farming, and Tortured Gift chests.
 - [Diablo 4 World Boss Timer](https://raigulus.github.io/diablo-4/world-boss-timer/): 3.5-hour spawn cycle, 15-minute kill window, and legendary loot.

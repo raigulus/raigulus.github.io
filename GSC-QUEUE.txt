@@ -1,25 +1,23 @@
-# GSC submit kuyrugu — 19.09.2026 kontrol: 15/19 indexed, 4 bekliyor.
-
-## GONDERILDI + INDEXED (15 URL — vanguard dahil)
-https://raigulus.github.io/division-2/patches/warlords-of-new-york/
-https://raigulus.github.io/division-2/patches/shadow-tide/
-https://raigulus.github.io/division-2/patches/keeners-legacy/
-https://raigulus.github.io/division-2/patches/concealed-agenda/
-https://raigulus.github.io/division-2/patches/end-of-watch/
-https://raigulus.github.io/division-2/patches/hidden-alliance/
-https://raigulus.github.io/division-2/patches/price-of-power/
-https://raigulus.github.io/division-2/patches/reign-of-fire/
-https://raigulus.github.io/division-2/patches/broken-wings/
-https://raigulus.github.io/division-2/patches/puppeteers/
-
-## SONRADAN INDEXED (4 URL — 19.09.2026 GSC dogrulamali)
-https://raigulus.github.io/division-2/patches/title-update-4/
-https://raigulus.github.io/division-2/patches/title-update-9/
-https://raigulus.github.io/division-2/patches/title-update-6-1/
-https://raigulus.github.io/division-2/patches/season-reruns/
-
-## KALAN (4 URL — 19.09.2026 GSC durumu)
-https://raigulus.github.io/division-2/patches/dark-hours/ (Crawled - currently not indexed, son crawl 15.09)
-https://raigulus.github.io/division-2/patches/episode-1/ (URL is unknown to Google)
-https://raigulus.github.io/division-2/patches/episode-2/ (URL is unknown to Google)
-https://raigulus.github.io/division-2/patches/episode-3/ (URL is unknown to Google)
+# GSC basim kuyrugu - 24.09.2026 dogrulamali, hepsi unknown/crawled-not-indexed
+# 1. GUN (10 adet - once push sart! y8s3-1 ve echoes henuz localde)
+https://raigulus.github.io/division-2/patches/y8s3-1-red-moon-rising/
+https://raigulus.github.io/division-2/echoes-of-central-park/
+https://raigulus.github.io/division-2/cassie-mendoza/
+https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/
+https://raigulus.github.io/division-2/exotics/agitator/
+https://raigulus.github.io/division-2/exotics/caduceus/
+https://raigulus.github.io/division-2/videos/broken-rain-marguerite-steel-one-phase-method/
+https://raigulus.github.io/division-2/videos/paradise-lost-towers-cleared-with-oxidizer/
+https://raigulus.github.io/division-2/videos/air-space-museum-tier-10-1033-fast-run-randoms/
+https://raigulus.github.io/division-2/patches/dark-hours/
+# 2. GUN (10 adet)
+https://raigulus.github.io/division-2/patches/episode-1/
+https://raigulus.github.io/division-2/patches/episode-2/
+https://raigulus.github.io/division-2/patches/episode-3/
+https://raigulus.github.io/diablo-4/helltide-schedule/
+https://raigulus.github.io/diablo-4/world-boss-timer/
+https://raigulus.github.io/destiny-2/lost-sector-exotics/
+https://raigulus.github.io/destiny-2/
+https://raigulus.github.io/diablo-4/
+https://raigulus.github.io/guides/
+https://raigulus.github.io/feedback/
