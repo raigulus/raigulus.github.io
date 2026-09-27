@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-27T18:05:14Z",
+  "generated_at": "2026-09-27T19:05:15Z",
   "stats": {
-    "total_guides": 458,
+    "total_guides": 459,
     "exotics": 77,
     "patches": 31
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "Is Vertigo Top Tier? | Tier 10 DARPA Escalation Run",
+      "url": "https://raigulus.github.io/division-2/videos/is-vertigo-top-tier-tier-10-darpa-escalation-run/",
+      "youtube_url": "https://www.youtube.com/watch?v=ekHjwNG_Nek",
+      "thumbnail": "https://i.ytimg.com/vi/ekHjwNG_Nek/hqdefault.jpg",
+      "published_date": "2026-09-27",
+      "cluster": "escalation run",
+      "summary": "I farmed the NEW Vertigo exotic in Red Moon Rising, tested its Startling talent in Escalation, then ran a full Tier 10 DARPA Research Labs Escalation with rando"
+    },
     {
       "title": "Don't Miss The Red Moon Rising Event! | Vertigo Exotic",
       "url": "https://raigulus.github.io/division-2/videos/don-t-miss-the-red-moon-rising-event-vertigo-exoti/",
@@ -28,15 +37,6 @@
       "published_date": "2026-09-23",
       "cluster": "manhunt",
       "summary": "Knock out your Red Horizon Scout 5 objectives quickly by following this clean, interruption-free pathing guide.  This Division 2 mission run focuses on the spec"
-    },
-    {
-      "title": "Air & Space Museum Tier 10 in 10:33 | Randoms Run [2026]",
-      "url": "https://raigulus.github.io/division-2/videos/air-space-museum-tier-10-1033-fast-run-randoms/",
-      "youtube_url": "https://www.youtube.com/watch?v=YmgA61X9ZO0",
-      "thumbnail": "https://i.ytimg.com/vi/YmgA61X9ZO0/hqdefault.jpg",
-      "published_date": "2026-09-21",
-      "cluster": "escalation run",
-      "summary": "Tier 10 Escalation Air & Space Museum cleared in 10:33 with random matchmaking and no dedicated healer: aggressive pacing and target priority."
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-09-27 18:05 UTC"
+    "last_checked": "2026-09-27 19:05 UTC"
   },
   "discord_members": 49,
   "next_reset_utc": "2026-09-28T07:00:00Z"
