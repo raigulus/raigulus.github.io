@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-28T23:05:14Z",
+  "generated_at": "2026-09-28T23:29:08Z",
   "stats": {
-    "total_guides": 459,
+    "total_guides": 460,
     "exotics": 77,
     "patches": 31
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "Is This The Most Broken Sniper Build? | Pentagon Tier 10 Run",
+      "url": "https://raigulus.github.io/division-2/videos/is-this-the-most-broken-sniper-build-pentagon-tier/",
+      "youtube_url": "https://www.youtube.com/watch?v=dtNy18blIRE",
+      "thumbnail": "https://i.ytimg.com/vi/dtNy18blIRE/hqdefault.jpg",
+      "published_date": "2026-09-28",
+      "cluster": "escalation run",
+      "summary": "Tier 10 Pentagon Escalation cleared with an Aces & Eights sniper build. No commentary, pure gameplay.  I ran 4-piece Aces & Eights with Prima Donna, Melon Balle"
+    },
     {
       "title": "Is Vertigo Top Tier? | Tier 10 DARPA Escalation Run",
       "url": "https://raigulus.github.io/division-2/videos/is-vertigo-top-tier-tier-10-darpa-escalation-run/",
@@ -28,15 +37,6 @@
       "published_date": "2026-09-24",
       "cluster": "pvp/archive clip",
       "summary": "NEW Vertigo Exotic + Red Moon Rising Dark Zone Event is LIVE in The Division 2 Year 8 Season 3.1!  Here's what changes, how to farm it, and the 2 blueprints you"
-    },
-    {
-      "title": "The Division 2: Red Horizon Scout 5 Manhunt Guide (No",
-      "url": "https://raigulus.github.io/division-2/videos/the-division-2-red-horizon-scout-5-manhunt-guide-n/",
-      "youtube_url": "https://www.youtube.com/watch?v=tstNTkRsjqU",
-      "thumbnail": "https://i.ytimg.com/vi/tstNTkRsjqU/hqdefault.jpg",
-      "published_date": "2026-09-23",
-      "cluster": "manhunt",
-      "summary": "Knock out your Red Horizon Scout 5 objectives quickly by following this clean, interruption-free pathing guide.  This Division 2 mission run focuses on the spec"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-09-28 23:05 UTC"
+    "last_checked": "2026-09-28 23:29 UTC"
   },
   "discord_members": 49,
   "next_reset_utc": "2026-09-29T07:00:00Z"
