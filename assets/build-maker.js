@@ -9,6 +9,29 @@
   "use strict";
 
   var DATA = null;
+  var IMG = {};
+  var HIGH_END_ART = {
+    mask: "img/exotics/vile.png",
+    chest: "img/exotics/provocator.png",
+    backpack: "img/exotics/acosta-s-go-bag.png",
+    gloves: "img/exotics/bloody-knuckles.png",
+    holster: "img/exotics/dodge-city-gunslinger-s-holster.png",
+    knees: "img/exotics/sawyer-s-kneepads.png"
+  };
+  function photoFor(name, cls) {
+    var src = name && IMG[name];
+    if (!src) return "";
+    return '<img class="' + cls + '" src="/assets/' + src + '" alt="" loading="lazy" aria-hidden="true">';
+  }
+  function gearArtFor(slotKey, item) {
+    if (!item) return gearSvg(slotKey, "empty");
+    var photo = photoFor(item.name, "bm-gimg");
+    if (photo) return '<span class="bm-gear-art">' + photo + "</span>";
+    if (item.is_exotic === "TRUE") return gearSvg(slotKey, "exotic");
+    var generic = HIGH_END_ART[slotKey];
+    if (generic) return '<span class="bm-gear-art"><img class="bm-gimg" src="/assets/' + generic + '" alt="" loading="lazy" aria-hidden="true"></span>';
+    return gearSvg(slotKey, "high");
+  }
   var state = {
     mask: null, chest: null, backpack: null, gloves: null, holster: null, knees: null,
     primary: null, secondary: null, skills: [null, null], watch: false,
@@ -335,7 +358,7 @@
 
   function gearCard(slotKey, label, item) {
     var html = '<div class="bm-slot' + rarClass(item) + '" data-slot="' + slotKey + '">' +
-      (item ? gearSvg(slotKey, item.is_exotic === "TRUE" ? "exotic" : "high") : gearSvg(slotKey, "empty")) + '<div class="bm-slot-info">' +
+      gearArtFor(slotKey, item) + '<div class="bm-slot-info">' +
       '<span class="bm-slot-label">' + label + "</span>" +
       '<span class="bm-slot-name">' + (item ? esc(itemLabel(item)) : "Empty") + "</span>" +
       (item && gearBrand(item) ? '<span class="bm-slot-sub">' + esc(gearBrand(item)) + "</span>" : "") +
@@ -702,7 +725,7 @@
       if (sub && i.name && sub.toLowerCase() === String(i.name).toLowerCase()) sub = "";
       var label = picker.mode === "slot" ? itemLabel(i) : (i.name || prettyId(i.id));
       return '<li><button type="button" class="bm-item" data-name="' + esc(i.name || i.id) + '">' +
-        tileFor(i) + '<span class="bm-item-wrap"><span class="bm-item-name">' + esc(label) + "</span>" +
+        (photoFor(i.name, "bm-pick-thumb") || tileFor(i)) + '<span class="bm-item-wrap"><span class="bm-item-name">' + esc(label) + "</span>" +
         (sub ? '<span class="bm-item-sub">' + esc(sub) + "</span>" : "") + desc + "</span></button></li>";
     }).join("");
     $("bm-modal-list").innerHTML = html || '<li class="bm-empty">No items match.</li>';
@@ -925,10 +948,13 @@
 
   /* ---------- init ---------- */
 
-  fetch("/assets/data/build-maker.json")
-    .then(function (r) { return r.json(); })
-    .then(function (data) {
-      DATA = data;
+  Promise.all([
+    fetch("/assets/data/build-maker.json").then(function (r) { return r.json(); }),
+    fetch("/assets/data/item-images.json").then(function (r) { return r.json(); }).catch(function () { return {}; })
+  ]).then(function (parts) {
+    var data = parts[0];
+    IMG = parts[1] || {};
+    DATA = data;
       var gen = (data.meta.generated || "").slice(0, 10);
       var c = data.meta.counts || {};
       var total = (c.masks || 0) + (c.chests || 0) + (c.backpacks || 0) + (c.gloves || 0) + (c.holsters || 0) + (c.knees || 0);
