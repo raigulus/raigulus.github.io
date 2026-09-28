@@ -54,3 +54,24 @@ AI models sometimes generate Chinese/Japanese/Korean (CJK) characters unintentio
 **If CJK characters are found:** Replace with English equivalents before committing.
 
 See `agents/content-checklist.md` for the full pre-push checklist.
+
+## STRUCTURE (repo kökü)
+- `division-2/` (349 dosya), `lore/` (183), `content/` (169), `assets/` (100) — içerik gövdesi
+- `scripts/` (17 py) — pipeline; `.github/workflows/` (7) — otomasyon
+- `sitemap.xml` + `sitemap.txt` + `llms.txt` + `feed.xml` — her yeni sayfada HEPSİ güncellenir
+- `GSC-QUEUE.txt` — index kuyruğu, commitlenmez
+
+## PIPELINE (scripts/, repo köküne göre çalışır)
+- `build_lore.py` (34KB) — lore regen; `add_videos.py` (31KB) — video sayfaları
+- `discover_youtube.py` — RSS retry+backoff, hepsi patlarsa sessiz exit 0 (datacenter 404'leri normal)
+- `update-escalation-data.py` (43KB, en büyük) — escalation verisi
+- `validate_lore.py` + `test_validate_lore.py` — repo'daki TEK test altyapısı
+- Şablon değişince `build_lore.py` + `add_videos.py` BİRLİKTE güncellenir (nav birleştirmede yapıldı)
+
+## WORKFLOWS
+update-videos, refresh-build-maker-data, update-escalation-data, update-maintenance-notices, validate-lore, seo-audit, weekly-digest.
+Actions schedule uyuyakalabiliyor → fallback: manuel `gh workflow run` (SITE-NOTES 12 Eyl).
+
+## GSC
+- Basma işi kullanıcıda: URL Inspection → Request Indexing (günde ~10 kota). Ajan: izleme + kuyruk bakımı.
+- Deploy sonrası Pages ~15+ dk gecikebilir — içerik önce `origin/main`'de doğrulanır.

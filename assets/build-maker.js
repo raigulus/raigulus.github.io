@@ -263,16 +263,20 @@
   /* ---------- weapon svg ---------- */
 
   var GUN_ART = {
-    "assault-rifle": '<rect x="0" y="7" width="7" height="3"/><rect x="7" y="5" width="20" height="6"/><rect x="10" y="3" width="5" height="2" class="acc"/><rect x="12" y="11" width="4" height="4" class="acc"/><rect x="27" y="6" width="14" height="2.5"/><rect x="41" y="5.5" width="3" height="3.5"/>',
-    smg: '<rect x="0" y="7" width="4" height="3"/><rect x="4" y="5" width="16" height="6"/><rect x="9" y="11" width="4" height="5" class="acc"/><rect x="20" y="6" width="9" height="2.5"/><rect x="6" y="3" width="4" height="2" class="acc"/>',
-    lmg: '<rect x="0" y="7" width="6" height="3"/><rect x="6" y="5" width="24" height="6"/><rect x="14" y="11" width="7" height="4" class="acc"/><rect x="30" y="6" width="15" height="2.5"/><rect x="39" y="8.5" width="1" height="6"/><rect x="42" y="8.5" width="1" height="6"/>',
-    shotgun: '<rect x="0" y="7" width="7" height="3"/><rect x="7" y="5" width="18" height="5"/><rect x="14" y="10" width="8" height="2.5" class="acc"/><rect x="25" y="6" width="17" height="2.5"/>',
-    rifle: '<rect x="0" y="6" width="8" height="4"/><rect x="8" y="5" width="22" height="5"/><rect x="16" y="10" width="4" height="4" class="acc"/><rect x="30" y="6" width="14" height="2"/>',
-    mmr: '<rect x="0" y="7" width="7" height="3"/><rect x="7" y="6" width="22" height="4"/><rect x="12" y="2" width="10" height="2.5" class="acc"/><rect x="14" y="4.5" width="1.5" height="1.5"/><rect x="19" y="4.5" width="1.5" height="1.5"/><rect x="18" y="10" width="4" height="3"/><rect x="29" y="6.5" width="16" height="2"/>',
-    pistol: '<rect x="6" y="5" width="16" height="4"/><rect x="8" y="9" width="5" height="6" class="acc"/><rect x="13" y="9" width="4" height="1.5"/><rect x="22" y="5.5" width="2" height="3"/>'
+    "assault-rifle": '<rect x="0" y="6" width="6" height="3.5" rx="1"/><rect x="6" y="5" width="18" height="5" rx="1"/><rect x="9" y="3" width="4" height="2" class="acc"/><rect x="24" y="6" width="16" height="2.5"/><rect x="40" y="5.5" width="3" height="3.5" rx="1"/><rect x="12" y="10" width="3.5" height="4" class="acc"/><rect x="18" y="10" width="3" height="3.5"/>',
+    smg: '<rect x="0" y="7" width="4" height="3" rx="1"/><rect x="4" y="5" width="15" height="5.5" rx="1"/><rect x="6" y="3.5" width="5" height="1.5" class="acc"/><rect x="19" y="6" width="8" height="2.5"/><rect x="27" y="6.5" width="2" height="2"/><rect x="9" y="10.5" width="3.5" height="4.5" class="acc"/><rect x="14" y="10.5" width="2.5" height="3"/>',
+    lmg: '<rect x="0" y="7" width="5" height="3" rx="1"/><rect x="5" y="5" width="22" height="5.5" rx="1"/><rect x="14" y="3" width="6" height="2" class="acc"/><rect x="27" y="6" width="13" height="2.5"/><rect x="12" y="10.5" width="6" height="4" rx="1" class="acc"/><rect x="36" y="8.5" width="1.2" height="5.5"/><rect x="39" y="8.5" width="1.2" height="5.5"/>',
+    shotgun: '<rect x="0" y="6.5" width="6" height="3" rx="1"/><rect x="6" y="5.5" width="16" height="4.5" rx="1"/><rect x="14" y="10" width="7" height="2.5" class="acc"/><rect x="22" y="6.5" width="18" height="2"/><rect x="40" y="5.5" width="1.5" height="2"/>',
+    rifle: '<rect x="0" y="6" width="7" height="3.5" rx="1"/><rect x="7" y="5" width="20" height="5" rx="1"/><rect x="11" y="2.5" width="7" height="2.5" class="acc"/><rect x="27" y="6" width="14" height="2"/><rect x="41" y="5.5" width="2.5" height="3"/><rect x="15" y="10" width="3.5" height="4" class="acc"/><rect x="24" y="4" width="3" height="1.5"/>',
+    mmr: '<rect x="0" y="6.5" width="6" height="3" rx="1"/><rect x="6" y="5.5" width="20" height="4.5" rx="1"/><rect x="10" y="2.5" width="8" height="2.5" class="acc"/><rect x="12" y="5" width="1.5" height="1"/><rect x="16" y="5" width="1.5" height="1"/><rect x="17" y="10" width="3.5" height="4" class="acc"/><rect x="26" y="6.5" width="15" height="2"/><rect x="41" y="6" width="4" height="3" rx="1"/>',
+    pistol: '<rect x="5" y="4.5" width="17" height="4" rx="1"/><rect x="7" y="3" width="2.5" height="1.5"/><rect x="8" y="8.5" width="5" height="6.5" rx="1" class="acc"/><rect x="13" y="8.5" width="5" height="1.5"/><rect x="22" y="5.5" width="2.5" height="2.5"/>'
   };
-  function gunSvg(cat) {
+  function gunSvg(cat, ghost) {
     var art = GUN_ART[cat] || GUN_ART["assault-rifle"];
+    if (ghost) {
+      return '<svg class="bm-wsvg" viewBox="0 0 46 16" aria-hidden="true" focusable="false">' +
+        '<g fill="#767d87">' + art.replace(/class="acc"/g, "") + "</g></svg>";
+    }
     return '<svg class="bm-wsvg" viewBox="0 0 46 16" aria-hidden="true" focusable="false">' +
       '<g fill="#cfd6df">' + art.replace(/class="acc"/g, "") + "</g>" +
       '<g fill="#f55a00">' + art.replace(/<rect(?![^>]*class="acc")[^>]*\/>/g, "").replace(/class="acc"/g, "") + "</g></svg>";
@@ -281,17 +285,21 @@
   /* Original geometric silhouettes for gear slots - same two-tone language as
      the weapon art above. Drawn from scratch, no game assets used. */
   var GEAR_ART = {
-    mask: '<rect x="0" y="6" width="46" height="3" rx="1"/><rect x="10" y="2" width="26" height="12" rx="6"/><rect x="14" y="5" width="18" height="6" rx="3" class="acc"/><rect x="22" y="7" width="2" height="4" class="acc"/>',
-    chest: '<rect x="6" y="4" width="9" height="6" rx="2"/><rect x="31" y="4" width="9" height="6" rx="2"/><rect x="14" y="2" width="18" height="14" rx="2"/><rect x="20" y="0" width="6" height="4" rx="1" class="acc"/><rect x="17" y="8" width="12" height="2" class="acc"/>',
-    backpack: '<rect x="13" y="3" width="16" height="13" rx="5"/><rect x="29" y="7" width="6" height="7" rx="1"/><rect x="16" y="9" width="10" height="5" rx="1"/><rect x="15" y="0" width="12" height="4" rx="2" class="acc"/><rect x="16" y="9" width="10" height="2" class="acc"/>',
-    gloves: '<rect x="15" y="1" width="3" height="7" rx="1"/><rect x="19" y="1" width="3" height="7" rx="1"/><rect x="23" y="1" width="3" height="7" rx="1"/><rect x="27" y="1" width="3" height="7" rx="1"/><rect x="15" y="7" width="15" height="4" rx="1"/><rect x="15" y="11" width="15" height="5" rx="1"/><rect x="15" y="7" width="15" height="2" class="acc"/><rect x="30" y="6" width="5" height="3" rx="1" class="acc"/>',
-    holster: '<rect x="4" y="1" width="38" height="3" rx="1"/><rect x="16" y="7" width="12" height="9" rx="2"/><rect x="19" y="14" width="6" height="2" rx="1"/><rect x="20" y="3" width="4" height="5" class="acc"/><rect x="16" y="10" width="12" height="2" class="acc"/>',
-    knees: '<rect x="9" y="4" width="12" height="11" rx="4"/><rect x="25" y="4" width="12" height="11" rx="4"/><rect x="9" y="2" width="12" height="2.5" rx="1" class="acc"/><rect x="25" y="2" width="12" height="2.5" rx="1" class="acc"/>'
+    mask: '<rect x="6" y="6.5" width="7" height="2" rx="1"/><rect x="33" y="6.5" width="7" height="2" rx="1"/><rect x="13" y="2" width="20" height="12" rx="6"/><rect x="16" y="5" width="6" height="6" rx="3" class="acc"/><rect x="24" y="5" width="6" height="6" rx="3" class="acc"/><rect x="20" y="11" width="6" height="3.5" rx="1"/>',
+    chest: '<rect x="12" y="1" width="6" height="4" rx="1"/><rect x="28" y="1" width="6" height="4" rx="1"/><rect x="14" y="3" width="18" height="11" rx="2"/><rect x="19" y="1" width="8" height="3" rx="1" class="acc"/><rect x="16" y="8" width="4" height="5" rx="1"/><rect x="21" y="8" width="4" height="5" rx="1"/><rect x="26" y="8" width="4" height="5" rx="1"/><rect x="16" y="8" width="14" height="1.5" class="acc"/>',
+    backpack: '<rect x="16" y="1" width="11" height="4" rx="2" class="acc"/><rect x="14" y="3" width="15" height="11" rx="5"/><rect x="29" y="7" width="5" height="6" rx="1"/><rect x="17" y="8" width="9" height="5" rx="2"/><rect x="14" y="6" width="15" height="1.2" class="acc"/>',
+    gloves: '<rect x="15" y="1" width="3" height="6" rx="1.5"/><rect x="19" y="1" width="3" height="6" rx="1.5"/><rect x="23" y="1" width="3" height="6" rx="1.5"/><rect x="27" y="1" width="3" height="6" rx="1.5"/><rect x="15" y="6" width="15" height="5" rx="1"/><rect x="30" y="5" width="5" height="3" rx="1.5" class="acc"/><rect x="14" y="10" width="16" height="5" rx="2"/><rect x="14" y="10" width="16" height="1.5" class="acc"/>',
+    holster: '<rect x="4" y="2" width="38" height="3" rx="1"/><rect x="21" y="0" width="4" height="6" rx="1" class="acc"/><rect x="17" y="6" width="12" height="9" rx="2"/><rect x="17" y="9" width="12" height="2" class="acc"/><rect x="20" y="13" width="6" height="2" rx="1"/>',
+    knees: '<rect x="10" y="1" width="11" height="2.5" rx="1" class="acc"/><rect x="25" y="1" width="11" height="2.5" rx="1" class="acc"/><rect x="10" y="3" width="11" height="11" rx="5"/><rect x="25" y="3" width="11" height="11" rx="5"/><rect x="13" y="7" width="5" height="4" rx="2"/><rect x="28" y="7" width="5" height="4" rx="2"/>'
   };
   function gearSvg(slot, rar) {
     var art = GEAR_ART[slot] || GEAR_ART.chest;
-    var accent = rar === "exotic" ? "#d93535" : (rar === "empty" ? "#8a97a8" : "#f55a00");
-    var tint = rar === "exotic" ? "rar-exotic" : (rar === "empty" ? "" : "rar-high");
+    if (rar === "empty") {
+      return '<span class="bm-gear-art"><svg class="bm-gsvg" viewBox="0 0 46 16" aria-hidden="true" focusable="false">' +
+        '<g fill="#767d87">' + art.replace(/class="acc"/g, "") + "</g></svg></span>";
+    }
+    var accent = rar === "exotic" ? "#d93535" : "#f55a00";
+    var tint = rar === "exotic" ? "rar-exotic" : "rar-high";
     return '<span class="bm-gear-art ' + tint + '"><svg class="bm-gsvg" viewBox="0 0 46 16" aria-hidden="true" focusable="false">' +
       '<g fill="#cfd6df">' + art.replace(/class="acc"/g, "") + "</g>" +
       '<g fill="' + accent + '">' + art.replace(/<rect(?![^>]*class="acc")[^>]*\/>/g, "").replace(/class="acc"/g, "") + "</g></svg></span>";
@@ -360,7 +368,7 @@
     var html = '<div class="bm-slot' + rarClass(item) + '" data-slot="' + slotKey + '">' +
       gearArtFor(slotKey, item) + '<div class="bm-slot-info">' +
       '<span class="bm-slot-label">' + label + "</span>" +
-      '<span class="bm-slot-name">' + (item ? esc(itemLabel(item)) : "Empty") + "</span>" +
+      '<span class="bm-slot-name' + (item ? "" : " bm-cta") + '">' + (item ? esc(itemLabel(item)) : "Choose your gear") + "</span>" +
       (item && gearBrand(item) ? '<span class="bm-slot-sub">' + esc(gearBrand(item)) + "</span>" : "") +
       (item ? pipRow(slotKey, item, false) : "") + "</div>" +
       '<span class="bm-slot-actions"><button type="button" class="bm-slot-change" data-slot="' + slotKey + '">Change</button>' +
@@ -380,9 +388,9 @@
   function weaponCard(slotKey, label, w) {
     var cat = w ? w._cat : (slotKey === "secondary" ? "smg" : "assault-rifle");
     var html = '<div class="bm-slot' + rarClass(w) + '" data-slot="' + slotKey + '">' +
-      gunSvg(cat) +
+      gunSvg(cat, !w) +
       '<div class="bm-slot-info"><span class="bm-slot-label">' + label + "</span>" +
-      '<span class="bm-slot-name">' + (w ? esc(itemLabel(w)) : "Empty") + "</span>" +
+      '<span class="bm-slot-name' + (w ? "" : " bm-cta") + '">' + (w ? esc(itemLabel(w)) : "Choose your weapon") + "</span>" +
       (w ? '<span class="bm-slot-sub">' + esc(w.family) + "</span>" : "") +
       (w ? pipRow(slotKey, w, true) : "") + "</div>" +
       '<span class="bm-slot-actions"><button type="button" class="bm-slot-change" data-slot="' + slotKey + '">Change</button>' +
