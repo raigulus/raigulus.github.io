@@ -2,167 +2,187 @@
   "rows": [
     {
       "keys": [
-        "division 2 targeted loot today",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 10,
-      "impressions": 115,
-      "ctr": 0.08695652173913043,
-      "position": 6.026086956521739
-    },
-    {
-      "keys": [
-        "division 2 loot map today",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 9,
-      "impressions": 14,
-      "ctr": 0.6428571428571429,
-      "position": 2.428571428571429
-    },
-    {
-      "keys": [
-        "division 2 prototype gear today",
-        "https://raigulus.github.io/division-2/prototype-gear/"
-      ],
-      "clicks": 6,
-      "impressions": 23,
-      "ctr": 0.2608695652173913,
-      "position": 1.7826086956521738
-    },
-    {
-      "keys": [
-        "the division 2 targeted loot today",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 6,
-      "impressions": 112,
-      "ctr": 0.05357142857142857,
-      "position": 6.151785714285714
-    },
-    {
-      "keys": [
-        "division 2 loot allocation today",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 5,
-      "impressions": 39,
-      "ctr": 0.1282051282051282,
-      "position": 5
-    },
-    {
-      "keys": [
-        "the division 2 prototype gear today",
-        "https://raigulus.github.io/division-2/prototype-gear/"
-      ],
-      "clicks": 3,
-      "impressions": 5,
-      "ctr": 0.6,
-      "position": 1
-    },
-    {
-      "keys": [
-        "division 2 loot pool today",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 2,
-      "impressions": 6,
-      "ctr": 0.3333333333333333,
-      "position": 1
-    },
-    {
-      "keys": [
-        "division 2 loot today",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 2,
-      "impressions": 24,
-      "ctr": 0.08333333333333333,
-      "position": 3.5416666666666665
-    },
-    {
-      "keys": [
-        "raigulus",
-        "https://raigulus.github.io/"
-      ],
-      "clicks": 2,
-      "impressions": 9,
-      "ctr": 0.2222222222222222,
-      "position": 3.111111111111111
-    },
-    {
-      "keys": [
-        "target loot division 2 today",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 2,
-      "impressions": 21,
-      "ctr": 0.09523809523809523,
-      "position": 5.095238095238095
-    },
-    {
-      "keys": [
-        "the division 2 loot allocation today",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 2,
-      "impressions": 13,
-      "ctr": 0.15384615384615385,
-      "position": 5.3076923076923075
-    },
-    {
-      "keys": [
-        "başka site",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 1,
-      "impressions": 1,
-      "ctr": 1,
-      "position": 2
-    },
-    {
-      "keys": [
-        "div 2 vendor reset",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 1,
-      "impressions": 1,
-      "ctr": 1,
-      "position": 7
-    },
-    {
-      "keys": [
         "division 2 daily reset",
         "https://raigulus.github.io/division-2/reset/"
       ],
-      "clicks": 1,
-      "impressions": 12,
-      "ctr": 0.08333333333333333,
-      "position": 3.25
+      "clicks": 6,
+      "impressions": 9,
+      "ctr": 0.6666666666666666,
+      "position": 1.1111111111111112
     },
     {
       "keys": [
-        "division 2 reset time",
-        "https://raigulus.github.io/division-2/reset/"
+        "division 2 targeted loot today",
+        "https://raigulus.github.io/division-2/loot/"
       ],
-      "clicks": 1,
-      "impressions": 17,
-      "ctr": 0.058823529411764705,
-      "position": 4.8235294117647065
+      "clicks": 6,
+      "impressions": 87,
+      "ctr": 0.06896551724137931,
+      "position": 5.35632183908046
     },
     {
       "keys": [
         "division 2 today's targeted loot",
         "https://raigulus.github.io/division-2/loot/"
       ],
-      "clicks": 1,
-      "impressions": 7,
-      "ctr": 0.14285714285714285,
-      "position": 3.142857142857143
+      "clicks": 5,
+      "impressions": 15,
+      "ctr": 0.3333333333333333,
+      "position": 4.6
     },
     {
       "keys": [
-        "division 2 weekly reset time",
+        "the division 2 targeted loot today",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 5,
+      "impressions": 62,
+      "ctr": 0.08064516129032258,
+      "position": 5.919354838709677
+    },
+    {
+      "keys": [
+        "division 2 build maker",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 4,
+      "impressions": 94,
+      "ctr": 0.0425531914893617,
+      "position": 6.26595744680851
+    },
+    {
+      "keys": [
+        "targeted loot division 2 today",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 3,
+      "impressions": 27,
+      "ctr": 0.1111111111111111,
+      "position": 5.37037037037037
+    },
+    {
+      "keys": [
+        "the division 2 build planner",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 3,
+      "impressions": 20,
+      "ctr": 0.15,
+      "position": 7.9
+    },
+    {
+      "keys": [
+        "the division 2 incursion reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 3,
+      "impressions": 8,
+      "ctr": 0.375,
+      "position": 3
+    },
+    {
+      "keys": [
+        "when do incursions reset division 2",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 3,
+      "impressions": 13,
+      "ctr": 0.23076923076923078,
+      "position": 4.076923076923077
+    },
+    {
+      "keys": [
+        "division 2 daily reset time",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 2,
+      "impressions": 14,
+      "ctr": 0.14285714285714285,
+      "position": 3.5
+    },
+    {
+      "keys": [
+        "division 2 incursion reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 2,
+      "impressions": 15,
+      "ctr": 0.13333333333333333,
+      "position": 5.133333333333334
+    },
+    {
+      "keys": [
+        "division 2 loot map today",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 2,
+      "impressions": 4,
+      "ctr": 0.5,
+      "position": 3.75
+    },
+    {
+      "keys": [
+        "steel & sons acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 2,
+      "impressions": 17,
+      "ctr": 0.11764705882352941,
+      "position": 5.235294117647059
+    },
+    {
+      "keys": [
+        "build maker division 2",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 1,
+      "impressions": 5,
+      "ctr": 0.2,
+      "position": 5.2
+    },
+    {
+      "keys": [
+        "destiny 2 lost sector rotation",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 1,
+      "impressions": 17,
+      "ctr": 0.058823529411764705,
+      "position": 8.058823529411764
+    },
+    {
+      "keys": [
+        "division 2 build planner",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 1,
+      "impressions": 91,
+      "ctr": 0.01098901098901099,
+      "position": 7.362637362637362
+    },
+    {
+      "keys": [
+        "division 2 caduceus how to get",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 4
+    },
+    {
+      "keys": [
+        "division 2 how to get steel and sons",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 0.3333333333333333,
+      "position": 5
+    },
+    {
+      "keys": [
+        "division 2 reset",
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 1,
@@ -172,18 +192,28 @@
     },
     {
       "keys": [
-        "targeted loot division 2 today",
-        "https://raigulus.github.io/division-2/loot/"
+        "division 2 reset time",
+        "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 1,
-      "impressions": 31,
-      "ctr": 0.03225806451612903,
-      "position": 7.032258064516129
+      "impressions": 9,
+      "ctr": 0.1111111111111111,
+      "position": 3.5555555555555554
     },
     {
       "keys": [
-        "the division 2 incursion reset",
-        "https://raigulus.github.io/division-2/reset/"
+        "division 2 server status",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 1,
+      "impressions": 12,
+      "ctr": 0.08333333333333333,
+      "position": 12.916666666666666
+    },
+    {
+      "keys": [
+        "division 2 steel & sons",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 1,
       "impressions": 2,
@@ -192,13 +222,103 @@
     },
     {
       "keys": [
-        "the division 2 loot map",
+        "division 2 steel and sons acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 1,
+      "impressions": 60,
+      "ctr": 0.016666666666666666,
+      "position": 5.466666666666667
+    },
+    {
+      "keys": [
+        "division 2 targeted loot map today",
         "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 1,
+      "impressions": 4,
+      "ctr": 0.25,
+      "position": 7
+    },
+    {
+      "keys": [
+        "division 2 timers",
+        "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 1,
       "impressions": 6,
       "ctr": 0.16666666666666666,
-      "position": 6.5
+      "position": 2.666666666666667
+    },
+    {
+      "keys": [
+        "division 2 weekly reset time",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 1,
+      "impressions": 8,
+      "ctr": 0.125,
+      "position": 4.5
+    },
+    {
+      "keys": [
+        "target loot division 2 today",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 1,
+      "impressions": 9,
+      "ctr": 0.1111111111111111,
+      "position": 3.3333333333333335
+    },
+    {
+      "keys": [
+        "the division 2 build maker",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 1,
+      "impressions": 19,
+      "ctr": 0.05263157894736842,
+      "position": 7.052631578947368
+    },
+    {
+      "keys": [
+        "the division 2 daily reset time",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 1,
+      "impressions": 5,
+      "ctr": 0.2,
+      "position": 2.8
+    },
+    {
+      "keys": [
+        "the division 2 daily targeted loot",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 3
+    },
+    {
+      "keys": [
+        "the division 2 server status today",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 1,
+      "impressions": 8,
+      "ctr": 0.125,
+      "position": 9.5
+    },
+    {
+      "keys": [
+        "the division 2 steel and sons acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 1,
+      "impressions": 20,
+      "ctr": 0.05,
+      "position": 5.45
     },
     {
       "keys": [
@@ -206,33 +326,13 @@
         "https://raigulus.github.io/division-2/loot/"
       ],
       "clicks": 1,
-      "impressions": 9,
-      "ctr": 0.1111111111111111,
-      "position": 4.888888888888889
+      "impressions": 5,
+      "ctr": 0.2,
+      "position": 5.6
     },
     {
       "keys": [
-        "actum est",
-        "https://raigulus.github.io/division-2/patches/broken-wings/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 10
-    },
-    {
-      "keys": [
-        "build maker division 2",
-        "https://raigulus.github.io/division-2/build-maker/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 8
-    },
-    {
-      "keys": [
-        "daily reset division 2",
+        "a que hora",
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
@@ -242,13 +342,203 @@
     },
     {
       "keys": [
-        "daily targeted loot division 2",
-        "https://raigulus.github.io/division-2/loot/"
+        "acr division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4.5
+    },
+    {
+      "keys": [
+        "agitator division 2",
+        "https://raigulus.github.io/division-2/exotics/agitator/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "agitator exotic division 2",
+        "https://raigulus.github.io/division-2/exotics/agitator/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "at what time",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "australian time",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "caduceus division 2",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 5
+    },
+    {
+      "keys": [
+        "can you check again",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "cassie mendoza location today",
+        "https://raigulus.github.io/division-2/cassie-mendoza/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "coyote's mask",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "d2 lost sector rotation",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 10.666666666666666
+    },
+    {
+      "keys": [
+        "d2 lost sector today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 25
+    },
+    {
+      "keys": [
+        "d2 lost sectors today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 28
+    },
+    {
+      "keys": [
+        "destiny 2 daily rotation",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5.333333333333333
+    },
+    {
+      "keys": [
+        "destiny 2 legend lost sector today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 22
+    },
+    {
+      "keys": [
+        "destiny 2 legendary lost sector today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 21
+    },
+    {
+      "keys": [
+        "destiny 2 legendary lost sectors today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 21
+    },
+    {
+      "keys": [
+        "destiny 2 lost sectors io",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 15
+    },
+    {
+      "keys": [
+        "destiny 2 lost sectors rotation",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 21
+    },
+    {
+      "keys": [
+        "destiny 2 lost sectors today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 26
+    },
+    {
+      "keys": [
+        "destiny 2 weekly reset tracker",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
     },
     {
       "keys": [
@@ -262,13 +552,43 @@
     },
     {
       "keys": [
-        "div 2 server status",
-        "https://raigulus.github.io/division-2/server-status/"
+        "destiny lost sector rotation",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 20
+      "position": 7
+    },
+    {
+      "keys": [
+        "div 2 build maker",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 6.25
+    },
+    {
+      "keys": [
+        "div 2 steel and sons",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 5.166666666666667
+    },
+    {
+      "keys": [
+        "div 2 steel and sons acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 4
     },
     {
       "keys": [
@@ -276,39 +596,39 @@
         "https://raigulus.github.io/division-2/loot/"
       ],
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 11,
       "ctr": 0,
-      "position": 7
+      "position": 5.7272727272727275
     },
     {
       "keys": [
-        "division 2 build creator",
+        "div 2 weekly reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "division 2 build builder",
         "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
       "position": 6
     },
     {
       "keys": [
-        "division 2 build maker",
+        "division 2 build calculator",
         "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 0,
-      "impressions": 45,
+      "impressions": 1,
       "ctr": 0,
-      "position": 8.911111111111111
-    },
-    {
-      "keys": [
-        "division 2 build planner",
-        "https://raigulus.github.io/division-2/build-maker/"
-      ],
-      "clicks": 0,
-      "impressions": 57,
-      "ctr": 0,
-      "position": 9.31578947368421
+      "position": 5
     },
     {
       "keys": [
@@ -316,9 +636,9 @@
         "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 6,
       "ctr": 0,
-      "position": 10
+      "position": 7
     },
     {
       "keys": [
@@ -326,39 +646,9 @@
         "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 30.666666666666668
-    },
-    {
-      "keys": [
-        "division 2 builder tool",
-        "https://raigulus.github.io/division-2/build-maker/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 46
-    },
-    {
-      "keys": [
-        "division 2 builds tool",
-        "https://raigulus.github.io/division-2/build-maker/"
-      ],
-      "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 50.5
-    },
-    {
-      "keys": [
-        "division 2 daily reset time",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 14,
-      "ctr": 0,
-      "position": 7.428571428571429
+      "position": 5
     },
     {
       "keys": [
@@ -366,9 +656,9 @@
         "https://raigulus.github.io/division-2/loot/"
       ],
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 2,
       "ctr": 0,
-      "position": 5.166666666666667
+      "position": 6.5
     },
     {
       "keys": [
@@ -382,23 +672,13 @@
     },
     {
       "keys": [
-        "division 2 escalation targeted loot tomorrow",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 9
-    },
-    {
-      "keys": [
         "division 2 escalation tracker",
-        "https://raigulus.github.io/division-2/loot/"
+        "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 1,
       "ctr": 0,
-      "position": 4.8
+      "position": 11
     },
     {
       "keys": [
@@ -412,48 +692,18 @@
     },
     {
       "keys": [
-        "division 2 incursion key reset",
-        "https://raigulus.github.io/division-2/reset/"
+        "division 2 how to get caduceus",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
       ],
       "clicks": 0,
-      "impressions": 7,
+      "impressions": 1,
       "ctr": 0,
-      "position": 5.285714285714286
+      "position": 2
     },
     {
       "keys": [
-        "division 2 incursion reset",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 5
-    },
-    {
-      "keys": [
-        "division 2 incursion reset day",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 10,
-      "ctr": 0,
-      "position": 6.9
-    },
-    {
-      "keys": [
-        "division 2 incursion reset time",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 11,
-      "ctr": 0,
-      "position": 5
-    },
-    {
-      "keys": [
-        "division 2 lfg discord",
-        "https://raigulus.github.io/discord/"
+        "division 2 how to get steel and sons acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
       "impressions": 1,
@@ -462,33 +712,83 @@
     },
     {
       "keys": [
-        "division 2 loadout builder",
-        "https://raigulus.github.io/division-2/build-maker/"
+        "division 2 incursion key reset",
+        "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 3,
       "ctr": 0,
-      "position": 9
+      "position": 3.3333333333333335
     },
     {
       "keys": [
-        "division 2 loot map",
-        "https://raigulus.github.io/division-2/loot/"
+        "division 2 incursion reset day",
+        "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 5,
       "ctr": 0,
-      "position": 4
+      "position": 3.8
     },
     {
       "keys": [
-        "division 2 loot rotation",
-        "https://raigulus.github.io/division-2/loot/"
+        "division 2 incursion reset time",
+        "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
       "impressions": 7,
       "ctr": 0,
-      "position": 3.4285714285714284
+      "position": 4.142857142857142
+    },
+    {
+      "keys": [
+        "division 2 jackal location",
+        "https://raigulus.github.io/division-2/manhunts/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 15.5
+    },
+    {
+      "keys": [
+        "division 2 legendary missions",
+        "https://raigulus.github.io/division-2/legendary/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "division 2 loot allocation today",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 5.571428571428571
+    },
+    {
+      "keys": [
+        "division 2 loot today",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 2.8666666666666667
+    },
+    {
+      "keys": [
+        "division 2 loot today",
+        "https://raigulus.github.io/division2/loot/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
     },
     {
       "keys": [
@@ -496,9 +796,29 @@
         "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4.5
+    },
+    {
+      "keys": [
+        "division 2 prototype gear dark zone",
+        "https://raigulus.github.io/division-2/prototype-gear/"
+      ],
+      "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 6
+      "position": 8
+    },
+    {
+      "keys": [
+        "division 2 prototype gear today",
+        "https://raigulus.github.io/division-2/prototype-gear/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 2.75
     },
     {
       "keys": [
@@ -508,17 +828,17 @@
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 6
+      "position": 10
     },
     {
       "keys": [
-        "division 2 pvp build 2026",
-        "https://raigulus.github.io/division-2/build-maker/"
+        "division 2 prototype today",
+        "https://raigulus.github.io/division-2/prototype-gear/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 5
+      "position": 1
     },
     {
       "keys": [
@@ -528,7 +848,7 @@
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 6
+      "position": 1
     },
     {
       "keys": [
@@ -538,7 +858,7 @@
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 5
+      "position": 4
     },
     {
       "keys": [
@@ -546,29 +866,9 @@
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 3.5
-    },
-    {
-      "keys": [
-        "division 2 server status",
-        "https://raigulus.github.io/discord/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 4
-    },
-    {
-      "keys": [
-        "division 2 server status",
-        "https://raigulus.github.io/division-2/server-status/"
-      ],
-      "clicks": 0,
       "impressions": 5,
       "ctr": 0,
-      "position": 15.2
+      "position": 3.4
     },
     {
       "keys": [
@@ -576,19 +876,69 @@
         "https://raigulus.github.io/division-2/server-status/"
       ],
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 10,
       "ctr": 0,
-      "position": 11
+      "position": 9.8
     },
     {
       "keys": [
-        "division 2 service status",
+        "division 2 serverstatus",
         "https://raigulus.github.io/division-2/server-status/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 11
+      "position": 8
+    },
+    {
+      "keys": [
+        "division 2 steel & sons acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3.5
+    },
+    {
+      "keys": [
+        "division 2 steel and sons",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 5.346153846153846
+    },
+    {
+      "keys": [
+        "division 2 steel and sons acr build",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 5.333333333333333
+    },
+    {
+      "keys": [
+        "division 2 steel and sons acr how to get",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "division 2 steel and sons build",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
     },
     {
       "keys": [
@@ -596,23 +946,83 @@
         "https://raigulus.github.io/division-2/loot/"
       ],
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 2,
       "ctr": 0,
-      "position": 5.8
+      "position": 8
     },
     {
       "keys": [
-        "division 2 targeted loot map today",
-        "https://raigulus.github.io/division-2/loot/"
+        "division 2 vertigo build",
+        "https://raigulus.github.io/division-2/patches/y8s3-1-red-moon-rising/"
       ],
       "clicks": 0,
       "impressions": 3,
       "ctr": 0,
-      "position": 6.333333333333333
+      "position": 6
     },
     {
       "keys": [
-        "division 2 timers",
+        "division 2 walkthrough",
+        "https://raigulus.github.io/division-2/missions/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 24
+    },
+    {
+      "keys": [
+        "division 2 weekly reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 1.2142857142857142
+    },
+    {
+      "keys": [
+        "division 2 when does incursion reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5.5
+    },
+    {
+      "keys": [
+        "division 2 when does targeted loot reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "division 2 when is weekly reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "division build maker",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "end date",
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
@@ -622,37 +1032,77 @@
     },
     {
       "keys": [
-        "division 2 walkthrough",
-        "https://raigulus.github.io/division-2/missions/"
+        "escalation requisition vendor",
+        "https://raigulus.github.io/division-2/prototype-gear/"
       ],
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 1,
       "ctr": 0,
-      "position": 25.666666666666668
+      "position": 9
     },
     {
       "keys": [
-        "division 2 when does incursion reset",
+        "how to get caduceus division 2",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "how to get steel and sons acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "how to get steel and sons acr division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 4.714285714285714
+    },
+    {
+      "keys": [
+        "how to get the agitator division 2",
+        "https://raigulus.github.io/division-2/exotics/agitator/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "how to get the steel and sons acr division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "keys": [
+        "how to reset division 2",
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 1,
       "ctr": 0,
-      "position": 6.75
+      "position": 11
     },
     {
       "keys": [
-        "division 2 when is weekly reset",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 6,
-      "ctr": 0,
-      "position": 4.666666666666666
-    },
-    {
-      "keys": [
-        "doesn’t look right",
+        "hoy",
         "https://raigulus.github.io/division-2/loot/"
       ],
       "clicks": 0,
@@ -662,23 +1112,93 @@
     },
     {
       "keys": [
-        "escalation requisition vendor",
-        "https://raigulus.github.io/division-2/prototype-gear/"
-      ],
-      "clicks": 0,
-      "impressions": 7,
-      "ctr": 0,
-      "position": 7.857142857142857
-    },
-    {
-      "keys": [
         "incursion reset division 2",
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 5.25
+    },
+    {
+      "keys": [
+        "ja",
+        "https://raigulus.github.io/division-2/cassie-mendoza/"
+      ],
+      "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 9
+      "position": 4
+    },
+    {
+      "keys": [
+        "legend lost sector today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 26
+    },
+    {
+      "keys": [
+        "lost sector report",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 29
+    },
+    {
+      "keys": [
+        "lost sector rotation",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 8.5
+    },
+    {
+      "keys": [
+        "lost sector rotation destiny 2",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9.333333333333334
+    },
+    {
+      "keys": [
+        "lost sector today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "keys": [
+        "lost sectors today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "master lost sector today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 19
     },
     {
       "keys": [
@@ -686,9 +1206,19 @@
         "https://raigulus.github.io/division-2/prototype-gear/"
       ],
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 1,
       "ctr": 0,
-      "position": 5.5
+      "position": 5
+    },
+    {
+      "keys": [
+        "raigulus",
+        "https://raigulus.github.io/"
+      ],
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 3.5555555555555554
     },
     {
       "keys": [
@@ -696,9 +1226,9 @@
         "https://raigulus.github.io/about/"
       ],
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 12,
       "ctr": 0,
-      "position": 4.5
+      "position": 3.25
     },
     {
       "keys": [
@@ -708,62 +1238,62 @@
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 67
+      "position": 37
     },
     {
       "keys": [
         "raigulus",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 72.5
+    },
+    {
+      "keys": [
+        "raigulus",
+        "https://raigulus.github.io/division-2/manhunts/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 30
+    },
+    {
+      "keys": [
+        "raigulus",
+        "https://raigulus.github.io/division-2/patches/broken-wings/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 99
+    },
+    {
+      "keys": [
+        "raigulus",
+        "https://raigulus.github.io/division-2/patches/concealed-agenda/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "keys": [
+        "raigulus",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "raigulus division 2",
         "https://raigulus.github.io/division-2/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 7
-    },
-    {
-      "keys": [
-        "raigulus",
-        "https://raigulus.github.io/division-2/patches/keeners-legacy/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 81
-    },
-    {
-      "keys": [
-        "raigulus",
-        "https://raigulus.github.io/division-2/patches/warlords-of-new-york/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 54
-    },
-    {
-      "keys": [
-        "raigulus",
-        "https://raigulus.github.io/division-2/server-status/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 97
-    },
-    {
-      "keys": [
-        "raigulus division 2",
-        "https://raigulus.github.io/about/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 16
-    },
-    {
-      "keys": [
-        "raigulus division 2",
-        "https://raigulus.github.io/discord/"
       ],
       "clicks": 0,
       "impressions": 1,
@@ -773,316 +1303,16 @@
     {
       "keys": [
         "raigulus division 2",
-        "https://raigulus.github.io/division-2/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 52
-    },
-    {
-      "keys": [
-        "raigulus division 2",
         "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 59.5
-    },
-    {
-      "keys": [
-        "raigulus division 2",
-        "https://raigulus.github.io/division-2/legendary/"
-      ],
-      "clicks": 0,
       "impressions": 1,
-      "ctr": 0,
-      "position": 12
-    },
-    {
-      "keys": [
-        "raigulus division 2",
-        "https://raigulus.github.io/division-2/manhunts/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 46
-    },
-    {
-      "keys": [
-        "raigulus division 2",
-        "https://raigulus.github.io/division-2/missions/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 66
-    },
-    {
-      "keys": [
-        "raigulus division 2",
-        "https://raigulus.github.io/division-2/patches/puppeteers/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 77
-    },
-    {
-      "keys": [
-        "raigulus division 2",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 36
-    },
-    {
-      "keys": [
-        "raigulus gaming",
-        "https://raigulus.github.io/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 37
-    },
-    {
-      "keys": [
-        "raigulus gaming",
-        "https://raigulus.github.io/about/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1
-    },
-    {
-      "keys": [
-        "raigulus gaming",
-        "https://raigulus.github.io/discord/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 12
-    },
-    {
-      "keys": [
-        "raigulus mission walkthrough",
-        "https://raigulus.github.io/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 5
-    },
-    {
-      "keys": [
-        "raigulus mission walkthrough",
-        "https://raigulus.github.io/about/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 8
-    },
-    {
-      "keys": [
-        "raigulus mission walkthrough",
-        "https://raigulus.github.io/division-2/manhunts/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 18
-    },
-    {
-      "keys": [
-        "server status division 2",
-        "https://raigulus.github.io/division-2/server-status/"
-      ],
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 9.666666666666666
-    },
-    {
-      "keys": [
-        "servidores the division 2 status",
-        "https://raigulus.github.io/division-2/server-status/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 9
-    },
-    {
-      "keys": [
-        "si",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1
-    },
-    {
-      "keys": [
-        "the division 2 build maker",
-        "https://raigulus.github.io/division-2/build-maker/"
-      ],
-      "clicks": 0,
-      "impressions": 12,
-      "ctr": 0,
-      "position": 8.416666666666668
-    },
-    {
-      "keys": [
-        "the division 2 build planner",
-        "https://raigulus.github.io/division-2/build-maker/"
-      ],
-      "clicks": 0,
-      "impressions": 7,
-      "ctr": 0,
-      "position": 8.857142857142858
-    },
-    {
-      "keys": [
-        "the division 2 build tool",
-        "https://raigulus.github.io/division-2/build-maker/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
       "ctr": 0,
       "position": 47
     },
     {
       "keys": [
-        "the division 2 builder tool",
-        "https://raigulus.github.io/division-2/build-maker/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 41
-    },
-    {
-      "keys": [
-        "the division 2 builds tool",
-        "https://raigulus.github.io/division-2/build-maker/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 49
-    },
-    {
-      "keys": [
-        "the division 2 daily reset",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 5
-    },
-    {
-      "keys": [
-        "the division 2 daily reset time",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 4,
-      "ctr": 0,
-      "position": 7
-    },
-    {
-      "keys": [
-        "the division 2 daily targeted loot",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 11
-    },
-    {
-      "keys": [
-        "the division 2 mission list",
-        "https://raigulus.github.io/division-2/missions/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 40
-    },
-    {
-      "keys": [
-        "the division 2 raigulus",
-        "https://raigulus.github.io/about/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 29
-    },
-    {
-      "keys": [
-        "the division 2 raigulus",
-        "https://raigulus.github.io/discord/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 43
-    },
-    {
-      "keys": [
-        "the division 2 raigulus",
-        "https://raigulus.github.io/division-2/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 63
-    },
-    {
-      "keys": [
-        "the division 2 raigulus",
-        "https://raigulus.github.io/division-2/build-maker/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 73
-    },
-    {
-      "keys": [
-        "the division 2 raigulus",
-        "https://raigulus.github.io/division-2/legendary/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 48
-    },
-    {
-      "keys": [
-        "the division 2 raigulus",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 12
-    },
-    {
-      "keys": [
-        "the division 2 raigulus",
+        "raigulus division 2",
         "https://raigulus.github.io/division-2/manhunts/"
       ],
       "clicks": 0,
@@ -1092,13 +1322,363 @@
     },
     {
       "keys": [
-        "the division 2 raigulus",
-        "https://raigulus.github.io/division-2/missions/"
+        "raigulus gaming",
+        "https://raigulus.github.io/about/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 69
+      "position": 2
+    },
+    {
+      "keys": [
+        "raigulus gaming",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 72.5
+    },
+    {
+      "keys": [
+        "raigulus gaming",
+        "https://raigulus.github.io/division-2/patches/concealed-agenda/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "keys": [
+        "raigulus mission walkthrough",
+        "https://raigulus.github.io/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "raigulus mission walkthrough",
+        "https://raigulus.github.io/about/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 22.5
+    },
+    {
+      "keys": [
+        "raigulus mission walkthrough",
+        "https://raigulus.github.io/division-2/legendary/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "raigulus mission walkthrough",
+        "https://raigulus.github.io/division-2/manhunts/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "keys": [
+        "server status division 2",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "servidores the division 2 status",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "status server the division 2",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 17
+    },
+    {
+      "keys": [
+        "steel & sons",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "steel & sons acr division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 5.615384615384615
+    },
+    {
+      "keys": [
+        "steel & sons division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "steel and sons",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "steel and sons acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 6.181818181818182
+    },
+    {
+      "keys": [
+        "steel and sons acr blueprint",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "steel and sons acr build",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "steel and sons acr division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 79,
+      "ctr": 0,
+      "position": 5.962025316455696
+    },
+    {
+      "keys": [
+        "steel and sons acr division 2 drop rate",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "steel and sons build",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "steel and sons division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 6.133333333333334
+    },
+    {
+      "keys": [
+        "steel and sons exotic",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "steel sons acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "steels and sons acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "the division 2 agitator",
+        "https://raigulus.github.io/division-2/exotics/agitator/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "the division 2 build creator",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "the division 2 caduceus how to get",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "the division 2 how to get caduceus",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "the division 2 loot allocation today",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 4.166666666666666
+    },
+    {
+      "keys": [
+        "the division 2 planner",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 4.666666666666666
+    },
+    {
+      "keys": [
+        "the division 2 prototype gear today",
+        "https://raigulus.github.io/division-2/prototype-gear/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "the division 2 raigulus",
+        "https://raigulus.github.io/about/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "keys": [
+        "the division 2 raigulus",
+        "https://raigulus.github.io/discord/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 42
+    },
+    {
+      "keys": [
+        "the division 2 raigulus",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 51.5
+    },
+    {
+      "keys": [
+        "the division 2 raigulus",
+        "https://raigulus.github.io/division-2/legendary/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "the division 2 raigulus",
+        "https://raigulus.github.io/division-2/manhunts/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 59
     },
     {
       "keys": [
@@ -1108,17 +1688,17 @@
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 58
+      "position": 66
     },
     {
       "keys": [
-        "the division 2 raigulus",
+        "the division 2 reset",
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 18
+      "position": 5
     },
     {
       "keys": [
@@ -1126,9 +1706,29 @@
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 8,
       "ctr": 0,
-      "position": 4.666666666666666
+      "position": 3.375
+    },
+    {
+      "keys": [
+        "the division 2 server down",
+        "https://raigulus.github.io/diablo-4/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "the division 2 server down",
+        "https://raigulus.github.io/feedback/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
     },
     {
       "keys": [
@@ -1136,19 +1736,9 @@
         "https://raigulus.github.io/division-2/server-status/"
       ],
       "clicks": 0,
-      "impressions": 9,
+      "impressions": 11,
       "ctr": 0,
-      "position": 15.88888888888889
-    },
-    {
-      "keys": [
-        "the division 2 server status today",
-        "https://raigulus.github.io/division-2/server-status/"
-      ],
-      "clicks": 0,
-      "impressions": 8,
-      "ctr": 0,
-      "position": 8.25
+      "position": 9.909090909090908
     },
     {
       "keys": [
@@ -1166,24 +1756,114 @@
         "https://raigulus.github.io/division-2/server-status/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 3,
       "ctr": 0,
-      "position": 11
+      "position": 7.333333333333333
     },
     {
       "keys": [
-        "the division 2 targeted loot",
-        "https://raigulus.github.io/division-2/loot/"
+        "the division 2 status server",
+        "https://raigulus.github.io/division-2/server-status/"
       ],
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 4,
       "ctr": 0,
-      "position": 9
+      "position": 9.75
+    },
+    {
+      "keys": [
+        "the division 2 steel & sons acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "the division 2 steel and son",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "the division 2 steel and sons",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 5.333333333333333
     },
     {
       "keys": [
         "the division 2 weekly reset",
         "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 4.625
+    },
+    {
+      "keys": [
+        "today",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "today in destiny lost sector",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 23
+    },
+    {
+      "keys": [
+        "truthset",
+        "https://raigulus.github.io/division-2/echoes-of-central-park/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 34
+    },
+    {
+      "keys": [
+        "tuesday what time",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "weekly reset division 2",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "what is it today",
+        "https://raigulus.github.io/division-2/loot/"
       ],
       "clicks": 0,
       "impressions": 1,
@@ -1196,83 +1876,13 @@
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 5,
       "ctr": 0,
-      "position": 4.666666666666666
+      "position": 1.6
     },
     {
       "keys": [
-        "what time is daily reset division 2",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 5.5
-    },
-    {
-      "keys": [
-        "what time is division 2 daily reset",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 6.333333333333333
-    },
-    {
-      "keys": [
-        "when do lost sectors reset destiny 2",
-        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 4
-    },
-    {
-      "keys": [
-        "when does division 2 reset",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 7
-    },
-    {
-      "keys": [
-        "when does incursion reset division 2",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 6
-    },
-    {
-      "keys": [
-        "when does the incursion reset division 2",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 6
-    },
-    {
-      "keys": [
-        "when is the reset",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1
-    },
-    {
-      "keys": [
-        "when is weekly reset division 2",
+        "what time does it reset",
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
@@ -1282,8 +1892,208 @@
     },
     {
       "keys": [
-        "where can i get it?",
-        "https://raigulus.github.io/division-2/loot/"
+        "what time is daily reset division 2",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "what time is division 2 daily reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "what time is reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "when do lost sectors reset",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 4.666666666666666
+    },
+    {
+      "keys": [
+        "when do lost sectors reset destiny 2",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3.75
+    },
+    {
+      "keys": [
+        "when does division 2 reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "when does division 2 reset",
+        "https://raigulus.github.io/division-cd/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "when does division 2 weekly reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 3.6666666666666665
+    },
+    {
+      "keys": [
+        "when does incursion reset division 2",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 4.428571428571429
+    },
+    {
+      "keys": [
+        "when does it change",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "when does it end",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "when does it reset?",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "when does the incursion reset division 2",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 4.375
+    },
+    {
+      "keys": [
+        "when is division 2 weekly reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 2.25
+    },
+    {
+      "keys": [
+        "when is the division 2 weekly reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 2.333333333333333
+    },
+    {
+      "keys": [
+        "when is the reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "when is weekly reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2.5
+    },
+    {
+      "keys": [
+        "when is weekly reset division 2",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 2.666666666666667
+    },
+    {
+      "keys": [
+        "yes",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "yes",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "ディビジョン2 インカージョン リセット",
+        "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
       "impressions": 1,
