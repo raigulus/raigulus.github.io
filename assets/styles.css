@@ -589,7 +589,9 @@ dashed empty slots read as drop zones, filled rarities keep their accents. */
 .bm-slot:not(.rar-high):not(.rar-exotic){border-style:dashed;border-color:rgba(255,255,255,.18);background:rgba(255,255,255,.02)}
 .bm-slot:not(.rar-high):not(.rar-exotic) .bm-slot-name{color:rgba(255,255,255,.45);font-weight:600}
 /* Ghost slot art: dimmed silhouettes mark empty gear and weapon slots. */
-.bm-slot:not(.rar-high):not(.rar-exotic) .bm-gear-art,.bm-slot:not(.rar-high):not(.rar-exotic) .bm-wsvg{opacity:.32;filter:saturate(.3)}
+.bm-slot:not(.rar-high):not(.rar-exotic) .bm-gear-art,.bm-slot:not(.rar-high):not(.rar-exotic) .bm-wsvg{opacity:.5;filter:saturate(.55)}
+.bm-slot:not(.rar-high):not(.rar-exotic) .bm-gsvg{width:78px}
+.bm-slot:not(.rar-high):not(.rar-exotic) .bm-wsvg{width:84px}
 /* Real item photos: sized like the SVG silhouettes they replace. */
 .bm-gimg{width:60px;height:auto;display:block;border-radius:6px}
 .bm-pick-thumb{width:40px;height:40px;flex:0 0 auto;object-fit:contain;border-radius:6px;background:rgba(255,255,255,.04)}
