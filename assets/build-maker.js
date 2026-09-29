@@ -24,7 +24,7 @@
     return '<img class="' + cls + '" src="/assets/' + src + '" alt="" loading="lazy" aria-hidden="true">';
   }
   function gearArtFor(slotKey, item) {
-    if (!item) return gearSvg(slotKey, "empty");
+    if (!item) return ghostImg(slotKey, "bm-gsvg bm-ghost");
     var photo = photoFor(item.name, "bm-gimg");
     if (photo) return '<span class="bm-gear-art">' + photo + "</span>";
     if (item.is_exotic === "TRUE") return gearSvg(slotKey, "exotic");
@@ -260,6 +260,19 @@
     return '<span class="bm-mono" style="background:hsl(' + hueOf(t) + ',42%,30%)" aria-hidden="true">' + esc(initials(t)) + "</span>";
   }
 
+  /* Empty-slot ghost art: user-supplied PNG silhouettes, one per slot.
+     Filenames must match GHOST_IMG values exactly. */
+  var GHOST_IMG = {
+    mask: "empty-mask.png", chest: "empty-vest.png", backpack: "empty-backpack.png",
+    gloves: "empty-gloves.png", holster: "empty-holster.png", knees: "empty-kneepads.png",
+    primary: "empty-rifle.png", secondary: "empty-pistol.png"
+  };
+  function ghostImg(key, cls) {
+    var f = GHOST_IMG[key];
+    if (!f) return "";
+    return '<img class="' + cls + '" src="/assets/img/build-maker/' + f + '" alt="" loading="lazy" aria-hidden="true" draggable="false">';
+  };
+
   /* ---------- weapon svg ---------- */
 
   var GUN_ART = {
@@ -388,7 +401,7 @@
   function weaponCard(slotKey, label, w) {
     var cat = w ? w._cat : (slotKey === "secondary" ? "smg" : "assault-rifle");
     var html = '<div class="bm-slot' + rarClass(w) + '" data-slot="' + slotKey + '">' +
-      gunSvg(cat, !w) +
+      (w ? gunSvg(cat) : ghostImg(slotKey, "bm-wsvg bm-ghost")) +
       '<div class="bm-slot-info"><span class="bm-slot-label">' + label + "</span>" +
       '<span class="bm-slot-name' + (w ? "" : " bm-cta") + '">' + (w ? esc(itemLabel(w)) : "Choose your weapon") + "</span>" +
       (w ? '<span class="bm-slot-sub">' + esc(w.family) + "</span>" : "") +
