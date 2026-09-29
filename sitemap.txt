@@ -450,6 +450,8 @@ https://raigulus.github.io/guides/
 https://raigulus.github.io/division-2/exotics/agitator/
 https://raigulus.github.io/division-2/exotics/caduceus/
 https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/
+https://raigulus.github.io/division-2/exotics/vertigo/
+https://raigulus.github.io/division-2/exotics/sarru/
 https://raigulus.github.io/division-2/this-week/2026-09-22/
 https://raigulus.github.io/feedback/
 https://raigulus.github.io/division-2/cassie-mendoza/
@@ -457,3 +459,4 @@ https://raigulus.github.io/division-2/patches/y8s3-1-red-moon-rising/
 https://raigulus.github.io/division-2/echoes-of-central-park/
 https://raigulus.github.io/search/
 https://raigulus.github.io/division-2/this-week/2026-09-29/
+https://raigulus.github.io/division-2/videos/solo-cleared-dua-tier-10-escalation-rogue-agents/

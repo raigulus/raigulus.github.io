@@ -24,7 +24,7 @@
   <script src="/assets/search.js" defer></script>
   <script src="/assets/site.js" defer></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Division 2 Echoes of Central Park DLC Guide","description":"Plain-language guide to the Echoes of Central Park DLC: November 3 release, flashback story, Upper West Side map and new gear.","url":"https://raigulus.github.io/division-2/echoes-of-central-park/","isPartOf":{"@type":"WebSite","name":"Raigulus","url":"https://raigulus.github.io"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","url":"https://raigulus.github.io/division-2/echoes-of-central-park/","mainEntity":[{"@type":"Question","name":"When does Echoes of Central Park release?","acceptedAnswer":{"@type":"Answer","text":"Echoes of Central Park releases on November 3. Below level 40 agents get a boost so they can start the DLC immediately."}},{"@type":"Question","name":"Can you play Echoes of Central Park solo?","acceptedAnswer":{"@type":"Answer","text":"Yes. The DLC supports solo and co-op play, with three companion characters assisting the solo route."}},{"@type":"Question","name":"Where is Echoes of Central Park set?","acceptedAnswer":{"@type":"Answer","text":"The Upper West Side and Central Park in New York, in a summer setting after Warlords of New York, with a map larger than Battle for Brooklyn."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","url":"https://raigulus.github.io/division-2/echoes-of-central-park/","mainEntity":[{"@type":"Question","name":"When does Echoes of Central Park release?","acceptedAnswer":{"@type":"Answer","text":"Echoes of Central Park releases on November 3. Below level 40 agents get a boost so they can start the DLC immediately."}},{"@type":"Question","name":"Can you play Echoes of Central Park solo?","acceptedAnswer":{"@type":"Answer","text":"Yes. The DLC supports solo and co-op play, with three companion characters assisting the solo route."}},{"@type":"Question","name":"Where is Echoes of Central Park set?","acceptedAnswer":{"@type":"Answer","text":"The Upper West Side and Central Park in New York, in a summer setting after Warlords of New York, with a map larger than Battle for Brooklyn."}},{"@type":"Question","name":"What should I do before Echoes of Central Park releases?","acceptedAnswer":{"@type":"Answer","text":"Clear the Red Moon Rising reward pools, lock in a tested build, and stock up through targeted loot. New mission walkthroughs land in the mission archive after release."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://raigulus.github.io/"},{"@type":"ListItem","position":2,"name":"The Division 2","item":"https://raigulus.github.io/division-2/"},{"@type":"ListItem","position":3,"name":"Echoes of Central Park","item":"https://raigulus.github.io/division-2/echoes-of-central-park/"}]}</script>
 </head>
 <body>
@@ -57,10 +57,29 @@
         <p class="eyebrow">The Division 2 / DLC</p>
         <h1>Division 2 Echoes of Central Park DLC Guide</h1>
         <p>Echoes of Central Park arrives November 3 as the darkest Division 2 DLC yet: a flashback story through Central Park and the Upper West Side, a new virus variant, an apex threat, companions, and new skills and gear. Our plain-language overview below — full texts live on <a href="https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates">Ubisoft's news hub</a>.</p>
-        <p class="meta">Last updated: <time datetime="2026-09-24">September 24, 2026</time> · Covers announcement</p>
+        <p class="meta">Last updated: <time datetime="2026-09-29">September 29, 2026</time> · Covers announcement</p>
         <p class="meta">Unofficial fan summary. Game content belongs to Ubisoft; full texts linked above.</p>
         <h2>Release Date</h2>
         <p>Echoes of Central Park releases on November 3. Agents below level 40 get a boost so they can start the DLC immediately, fully equipped for the challenge.</p>
+        <div class="status-card" style="background: var(--color-surface, #13181e); border: 1px solid var(--color-border, #22292f); border-radius: 12px; padding: 24px; margin-bottom: 32px;">
+          <div id="echoes-countdown" style="font-family: 'Barlow Condensed', sans-serif; font-size: 3rem; font-weight: 700; color: var(--color-accent, #f55a00); text-align: center;">Loading...</div>
+          <p style="text-align: center; margin-top: 8px;">Until November 3 releases (day counter)</p>
+        </div>
+        <script>
+          (function() {
+            function pad(n) { return (n < 10 ? "0" : "") + n; }
+            function tick() {
+              var el = document.getElementById("echoes-countdown");
+              if (!el) return;
+              var ms = Date.UTC(2026, 10, 3) - Date.now();
+              if (ms <= 0) { el.textContent = "OUT NOW"; return; }
+              var s = Math.floor(ms / 1000);
+              el.textContent = Math.floor(s / 86400) + "d " + pad(Math.floor(s % 86400 / 3600)) + ":" + pad(Math.floor(s % 3600 / 60)) + ":" + pad(s % 60);
+            }
+            tick();
+            setInterval(tick, 1000);
+          })();
+        </script>
         <h2>Flashback Story</h2>
         <p>A first for The Division 2: the story plays as a flashback, with a narrator guiding you through her version of events. Paranoia grips a society facing an unknown sinister threat, and fear feeds on itself until rumors become truth. Set in the summer after Warlords of New York, the hunt follows a distress signal from deep inside the park.</p>
         <h2>Map: Upper West Side &amp; Central Park</h2>
@@ -74,10 +93,13 @@
         </table>
         <h2>Solo or Co-op</h2>
         <p>You can play Echoes of Central Park solo or in co-op. Below-level-40 agents receive a boost to jump straight in. Mission walkthroughs will land in the <a href="/division-2/missions/">mission archive</a> after release.</p>
+        <h2>How to Prepare</h2>
+        <p>Finish the Red Moon Rising reward pools before they rotate, lock in a tested build from the <a href="/division-2/builds/">build guides</a> or the <a href="/division-2/build-maker/">build planner</a>, and stock up through <a href="/division-2/loot/">today's targeted loot</a>. Walkthroughs for the new missions land in the <a href="/division-2/missions/">mission archive</a> after release.</p>
         <h2>FAQ</h2>
         <dl class="faq-list"><dt>When does Echoes of Central Park release?</dt><dd>Echoes of Central Park releases on November 3. Below level 40 agents get a boost so they can start the DLC immediately.</dd>
 <dt>Can you play Echoes of Central Park solo?</dt><dd>Yes. The DLC supports solo and co-op play, with three companion characters assisting the solo route.</dd>
-<dt>Where is Echoes of Central Park set?</dt><dd>The Upper West Side and Central Park in New York, in a summer setting after Warlords of New York, with a map larger than Battle for Brooklyn.</dd></dl>
+<dt>Where is Echoes of Central Park set?</dt><dd>The Upper West Side and Central Park in New York, in a summer setting after Warlords of New York, with a map larger than Battle for Brooklyn.</dd>
+<dt>What should I do before Echoes of Central Park releases?</dt><dd>Clear the Red Moon Rising reward pools, lock in a tested build, and stock up through targeted loot. New mission walkthroughs land in the mission archive after release.</dd></dl>
         <div class="feedback" data-feedback>
           <p><strong>Was this guide helpful?</strong> <button type="button" data-feedback-yes>👍 Yes</button> <button type="button" data-feedback-no>👎 No</button></p>
           <p class="meta">Discuss this guide with other players on <a href="https://discord.gg/xj8jnS3Gkh">Discord</a> or <a href="/feedback/">send feedback</a>.</p>

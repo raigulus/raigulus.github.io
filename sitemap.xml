@@ -4,13 +4,13 @@
   <url><loc>https://raigulus.github.io/about/</loc><lastmod>2026-08-12</lastmod></url>
   <url><loc>https://raigulus.github.io/guides/games-like-destiny-2-2026/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/discord/</loc><lastmod>2026-08-23</lastmod></url>
-  <url><loc>https://raigulus.github.io/division-2/</loc><lastmod>2026-08-23</lastmod></url>
+  <url><loc>https://raigulus.github.io/division-2/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://raigulus.github.io/division-2/agent-briefing/</loc><lastmod>2026-08-19</lastmod></url>
 
   <url><loc>https://raigulus.github.io/division-2/builds/</loc><lastmod>2026-08-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/loot/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/server-status/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://raigulus.github.io/division-2/reset/</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://raigulus.github.io/division-2/reset/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/exotics/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/exotics/fafnir/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://raigulus.github.io/division-2/exotics/iron-will/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -50,8 +50,8 @@
   <url><loc>https://raigulus.github.io/division-2/prototype-gear/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/dark-zone-surge/</loc><lastmod>2026-08-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/legendary/</loc><lastmod>2026-08-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://raigulus.github.io/division-2/manhunts/</loc><lastmod>2026-08-23</lastmod></url>
-  <url><loc>https://raigulus.github.io/division-2/missions/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://raigulus.github.io/division-2/manhunts/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://raigulus.github.io/division-2/missions/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <url><loc>https://raigulus.github.io/division-2/incursions-raids/</loc><lastmod>2026-08-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/broken-rain-incursion/</loc><lastmod>2026-08-19</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -380,8 +380,9 @@
   <url><loc>https://raigulus.github.io/division-2/exotics/chameleon/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://raigulus.github.io/division-2/exotics/the-bighorn/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://raigulus.github.io/division-2/exotics/strega/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://raigulus.github.io/division-2/exotics/agitator/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://raigulus.github.io/division-2/exotics/caduceus/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://raigulus.github.io/division-2/exotics/vertigo/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://raigulus.github.io/division-2/videos/solo-cleared-dua-tier-10-escalation-rogue-agents/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://raigulus.github.io/division-2/exotics/sarru/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://raigulus.github.io/division-2/exotics/ouroboros/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://raigulus.github.io/division-2/exotics/underboss/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://raigulus.github.io/division-2/exotics/lady-death/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -399,7 +400,6 @@
   <url><loc>https://raigulus.github.io/division-2/exotics/merciless/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://raigulus.github.io/division-2/exotics/vindicator/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://raigulus.github.io/division-2/exotics/doctor-home/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://raigulus.github.io/division-2/exotics/scorpio/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://raigulus.github.io/division-2/exotics/sweet-dreams/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://raigulus.github.io/division-2/exotics/sheriff/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -455,9 +455,9 @@
   <url><loc>https://raigulus.github.io/diablo-4/</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/guides/</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/feedback/</loc><lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://raigulus.github.io/division-2/cassie-mendoza/</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://raigulus.github.io/division-2/cassie-mendoza/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/patches/y8s3-1-red-moon-rising/</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://raigulus.github.io/division-2/echoes-of-central-park/</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://raigulus.github.io/division-2/echoes-of-central-park/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/exotics/agitator/</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://raigulus.github.io/division-2/exotics/caduceus/</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
