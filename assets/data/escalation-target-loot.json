@@ -1,48 +1,48 @@
 {
-  "date": "2026-09-29",
+  "date": "2026-09-30",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Art Museum",
-      "loot": "Lengmo"
+      "loot": "Imminence Armaments"
     },
     {
       "mission": "Capitol Building",
-      "loot": "Electrique"
+      "loot": "Measured Assembly"
     },
     {
       "mission": "Jefferson Plaza",
-      "loot": "Heartbreaker"
+      "loot": "Hana-U Corporation"
     },
     {
       "mission": "Lincoln Memorial",
-      "loot": "Mask"
+      "loot": "Electrique"
     },
     {
       "mission": "Federal Emergency Bunker",
-      "loot": "Uzina Getica"
+      "loot": "Holster"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Rifles"
+      "item": "Shotguns"
     },
     {
       "type": "Gear",
-      "item": "Backpacks"
+      "item": "Masks"
     }
   ],
-  "last_updated": "2026-09-29 10:02",
-  "last_checked": "2026-09-30 07:05 UTC",
-  "parsed_at": "2026-09-30T07:05:09.460271+00:00",
-  "status": "pending",
-  "fetched_at": "2026-09-30T07:05:09.460271+00:00",
+  "last_updated": "2026-09-30 10:01",
+  "last_checked": "2026-09-30 08:05 UTC",
+  "parsed_at": "2026-09-30T08:05:45.833009+00:00",
+  "status": "ok",
+  "fetched_at": "2026-09-30T08:05:45.833009+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-09-30 07:05 UTC",
+  "vendor_highlights_checked": "2026-09-30 08:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
