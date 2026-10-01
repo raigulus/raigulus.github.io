@@ -21,7 +21,7 @@
   function photoFor(name, cls) {
     var src = name && IMG[name];
     if (!src) return "";
-    return '<img class="' + cls + '" src="/assets/' + src + '" alt="" loading="lazy" aria-hidden="true">';
+    return '<img class="' + cls + '" src="/assets/' + src + '" alt="" loading="lazy" aria-hidden="true" onerror="this.remove()">';
   }
   function gearArtFor(slotKey, item) {
     if (!item) return ghostImg(slotKey, "bm-gsvg bm-ghost");
@@ -29,7 +29,7 @@
     if (photo) return '<span class="bm-gear-art">' + photo + "</span>";
     if (item.is_exotic === "TRUE") return gearSvg(slotKey, "exotic");
     var generic = HIGH_END_ART[slotKey];
-    if (generic) return '<span class="bm-gear-art"><img class="bm-gimg" src="/assets/' + generic + '" alt="" loading="lazy" aria-hidden="true"></span>';
+    if (generic) return '<span class="bm-gear-art"><img class="bm-gimg" src="/assets/' + generic + '" alt="" loading="lazy" aria-hidden="true" onerror="this.remove()"></span>';
     return gearSvg(slotKey, "high");
   }
   var state = {
@@ -270,7 +270,7 @@
   function ghostImg(key, cls) {
     var f = GHOST_IMG[key];
     if (!f) return "";
-    return '<img class="' + cls + '" src="/assets/img/build-maker/' + f + '" alt="" loading="lazy" aria-hidden="true" draggable="false">';
+    return '<img class="' + cls + '" src="/assets/img/build-maker/' + f + '" alt="" loading="lazy" aria-hidden="true" draggable="false" onerror="this.remove()">';
   };
 
   /* ---------- weapon svg ---------- */
