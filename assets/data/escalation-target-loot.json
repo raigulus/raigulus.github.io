@@ -1,48 +1,48 @@
 {
-  "date": "2026-10-01",
+  "date": "2026-10-02",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Art Museum",
-      "loot": "Rigger"
+      "loot": "Unit Alloys"
     },
     {
       "mission": "Capitol Building",
-      "loot": "Brazos de Arcabuz"
+      "loot": "Tipping Scales"
     },
     {
       "mission": "Jefferson Plaza",
-      "loot": "Legatus S.p.A."
+      "loot": "Concentrated Company"
     },
     {
       "mission": "Lincoln Memorial",
-      "loot": "Gear Mods"
+      "loot": "Skill Mods"
     },
     {
       "mission": "Federal Emergency Bunker",
-      "loot": "Shotgun"
+      "loot": "Core Strength"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Rifles"
+      "item": "SMGs"
     },
     {
       "type": "Gear",
-      "item": "Chest Pieces"
+      "item": "Kneepads"
     }
   ],
-  "last_updated": "2026-10-01 13:46",
-  "last_checked": "2026-10-02 07:05 UTC",
-  "parsed_at": "2026-10-02T07:05:09.884925+00:00",
-  "status": "pending",
-  "fetched_at": "2026-10-02T07:05:09.884925+00:00",
+  "last_updated": "2026-10-02 10:01",
+  "last_checked": "2026-10-02 08:05 UTC",
+  "parsed_at": "2026-10-02T08:05:10.299896+00:00",
+  "status": "ok",
+  "fetched_at": "2026-10-02T08:05:10.299896+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-10-02 07:05 UTC",
+  "vendor_highlights_checked": "2026-10-02 08:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
