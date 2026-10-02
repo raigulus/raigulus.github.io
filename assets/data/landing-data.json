@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-02T06:05:14Z",
+  "generated_at": "2026-10-02T07:05:17Z",
   "stats": {
-    "total_guides": 462,
+    "total_guides": 463,
     "exotics": 79,
     "patches": 31
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "Sarru Backpack Deep Dive | Division 2 Escalation Tier 10",
+      "url": "https://raigulus.github.io/division-2/videos/sarru-backpack-deep-dive-division-2-escalation-tie/",
+      "youtube_url": "https://www.youtube.com/watch?v=4Kzp9_nAbU8",
+      "thumbnail": "https://i.ytimg.com/vi/4Kzp9_nAbU8/hqdefault.jpg",
+      "published_date": "2026-10-02",
+      "cluster": "escalation run",
+      "summary": "Saru Exotic Backpack Worth It? I tested the Decoy King talent in The Division 2 Red Moon Rising update. Saru gives 5% to 25% damage based on the moon cycle and"
+    },
     {
       "title": "Is This The Most Broken Sniper Build? | Pentagon Tier 10 Run",
       "url": "https://raigulus.github.io/division-2/videos/is-this-the-most-broken-sniper-build-pentagon-tier/",
@@ -28,15 +37,6 @@
       "published_date": "2026-09-27",
       "cluster": "escalation run",
       "summary": "I farmed the NEW Vertigo exotic in Red Moon Rising, tested its Startling talent in Escalation, then ran a full Tier 10 DARPA Research Labs Escalation with rando"
-    },
-    {
-      "title": "Don't Miss The Red Moon Rising Event! | Vertigo Exotic",
-      "url": "https://raigulus.github.io/division-2/videos/don-t-miss-the-red-moon-rising-event-vertigo-exoti/",
-      "youtube_url": "https://www.youtube.com/watch?v=oMHzJ1ag5XY",
-      "thumbnail": "https://i.ytimg.com/vi/oMHzJ1ag5XY/hqdefault.jpg",
-      "published_date": "2026-09-24",
-      "cluster": "pvp/archive clip",
-      "summary": "NEW Vertigo Exotic + Red Moon Rising Dark Zone Event is LIVE in The Division 2 Year 8 Season 3.1!  Here's what changes, how to farm it, and the 2 blueprints you"
     }
   ],
   "loot": {
@@ -44,8 +44,8 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-10-02 06:05 UTC"
+    "last_checked": "2026-10-02 07:05 UTC"
   },
   "discord_members": 54,
-  "next_reset_utc": "2026-10-02T07:00:00Z"
+  "next_reset_utc": "2026-10-03T07:00:00Z"
 }
