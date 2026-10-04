@@ -20,13 +20,13 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       if (count) count.textContent = visible + " guide" + (visible === 1 ? "" : "s");
     }
-    input.addEventListener("input", applyFilter);
     var lastSentSearch = initial.trim().toLowerCase();
     if (lastSentSearch.length >= 3 && typeof gtag === "function") {
       gtag("event", "site_search", { search_term: lastSentSearch });
     }
     var searchTimer = null;
     input.addEventListener("input", function () {
+      applyFilter();
       if (searchTimer) clearTimeout(searchTimer);
       searchTimer = setTimeout(function () {
         var q = input.value.trim().toLowerCase();
@@ -35,6 +35,17 @@ document.addEventListener("DOMContentLoaded", function () {
           gtag("event", "site_search", { search_term: q });
         }
       }, 1500);
+    });
+    input.addEventListener("keydown", function (event) {
+      if (event.key !== "Enter") return;
+      event.preventDefault();
+      if (searchTimer) clearTimeout(searchTimer);
+      applyFilter();
+      var query = input.value.trim().toLowerCase();
+      if (query.length >= 3 && query !== lastSentSearch && typeof gtag === "function") {
+        lastSentSearch = query;
+        gtag("event", "site_search", { search_term: query });
+      }
     });
     applyFilter();
   });
