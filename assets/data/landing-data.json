@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-04T15:25:50Z",
+  "generated_at": "2026-10-04T15:29:26Z",
   "stats": {
-    "total_guides": 464,
+    "total_guides": 465,
     "exotics": 79,
     "patches": 31
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "Flawless Solo Run: Jefferson Plaza Escalation Tier 10",
+      "url": "https://raigulus.github.io/division-2/videos/flawless-solo-run-jefferson-plaza-escalation-tier/",
+      "youtube_url": "https://www.youtube.com/watch?v=83CYbmmZsDE",
+      "thumbnail": "https://i.ytimg.com/vi/83CYbmmZsDE/hqdefault.jpg",
+      "published_date": "2026-10-04",
+      "cluster": "escalation run",
+      "summary": "Solo Tier 10 Escalation on Jefferson Plaza in The Division 2: 13:21, flawless, no weapon swaps. Full Prima Donna + Iron Will + Aces & Eights build, 88 kills at"
+    },
     {
       "title": "The Division 2: Red Horizon Scout 6 Manhunt Guide (No",
       "url": "https://raigulus.github.io/division-2/videos/the-division-2-red-horizon-scout-6-manhunt-guide-n/",
@@ -28,15 +37,6 @@
       "published_date": "2026-10-02",
       "cluster": "escalation run",
       "summary": "Saru Exotic Backpack Worth It? I tested the Decoy King talent in The Division 2 Red Moon Rising update. Saru gives 5% to 25% damage based on the moon cycle and"
-    },
-    {
-      "title": "Is This The Most Broken Sniper Build? | Pentagon Tier 10 Run",
-      "url": "https://raigulus.github.io/division-2/videos/is-this-the-most-broken-sniper-build-pentagon-tier/",
-      "youtube_url": "https://www.youtube.com/watch?v=dtNy18blIRE",
-      "thumbnail": "https://i.ytimg.com/vi/dtNy18blIRE/hqdefault.jpg",
-      "published_date": "2026-09-28",
-      "cluster": "escalation run",
-      "summary": "Tier 10 Pentagon Escalation cleared with an Aces & Eights sniper build. No commentary, pure gameplay.  I ran 4-piece Aces & Eights with Prima Donna, Melon Balle"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-10-04 15:25 UTC"
+    "last_checked": "2026-10-04 15:29 UTC"
   },
   "discord_members": 56,
   "next_reset_utc": "2026-10-05T07:00:00Z"
