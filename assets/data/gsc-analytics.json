@@ -2,113 +2,173 @@
   "rows": [
     {
       "keys": [
-        "division 2 daily reset",
-        "https://raigulus.github.io/division-2/reset/"
+        "division 2 steel and sons acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 8,
+      "impressions": 646,
+      "ctr": 0.01238390092879257,
+      "position": 5.693498452012384
+    },
+    {
+      "keys": [
+        "how to get caduceus division 2",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 8,
+      "impressions": 37,
+      "ctr": 0.21621621621621623,
+      "position": 2.72972972972973
+    },
+    {
+      "keys": [
+        "steel and sons acr division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 6,
-      "impressions": 9,
-      "ctr": 0.6666666666666666,
-      "position": 1.1111111111111112
-    },
-    {
-      "keys": [
-        "division 2 targeted loot today",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 6,
-      "impressions": 87,
-      "ctr": 0.06896551724137931,
-      "position": 5.35632183908046
-    },
-    {
-      "keys": [
-        "division 2 today's targeted loot",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 5,
-      "impressions": 15,
-      "ctr": 0.3333333333333333,
-      "position": 4.6
-    },
-    {
-      "keys": [
-        "the division 2 targeted loot today",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 5,
-      "impressions": 62,
-      "ctr": 0.08064516129032258,
-      "position": 5.919354838709677
+      "impressions": 994,
+      "ctr": 0.006036217303822937,
+      "position": 5.996981891348089
     },
     {
       "keys": [
         "division 2 build maker",
         "https://raigulus.github.io/division-2/build-maker/"
       ],
+      "clicks": 5,
+      "impressions": 169,
+      "ctr": 0.029585798816568046,
+      "position": 5.011834319526627
+    },
+    {
+      "keys": [
+        "division 2 vertigo",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
       "clicks": 4,
-      "impressions": 94,
-      "ctr": 0.0425531914893617,
-      "position": 6.26595744680851
+      "impressions": 115,
+      "ctr": 0.034782608695652174,
+      "position": 4.5826086956521745
     },
     {
       "keys": [
-        "targeted loot division 2 today",
-        "https://raigulus.github.io/division-2/loot/"
+        "diablo 4 world boss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
       ],
       "clicks": 3,
-      "impressions": 27,
-      "ctr": 0.1111111111111111,
-      "position": 5.37037037037037
+      "impressions": 5369,
+      "ctr": 0.0005587632706276774,
+      "position": 7.815421866269324
     },
     {
       "keys": [
-        "the division 2 build planner",
-        "https://raigulus.github.io/division-2/build-maker/"
+        "division 2 caduceus how to get",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
       ],
       "clicks": 3,
-      "impressions": 20,
-      "ctr": 0.15,
-      "position": 7.9
-    },
-    {
-      "keys": [
-        "the division 2 incursion reset",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 3,
-      "impressions": 8,
-      "ctr": 0.375,
-      "position": 3
-    },
-    {
-      "keys": [
-        "when do incursions reset division 2",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 3,
-      "impressions": 13,
-      "ctr": 0.23076923076923078,
+      "impressions": 52,
+      "ctr": 0.057692307692307696,
       "position": 4.076923076923077
     },
     {
       "keys": [
-        "division 2 daily reset time",
-        "https://raigulus.github.io/division-2/reset/"
+        "division 2 how to get caduceus",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
       ],
-      "clicks": 2,
-      "impressions": 14,
-      "ctr": 0.14285714285714285,
-      "position": 3.5
+      "clicks": 3,
+      "impressions": 17,
+      "ctr": 0.17647058823529413,
+      "position": 2.0588235294117645
     },
     {
       "keys": [
-        "division 2 incursion reset",
+        "division 2 loot rotation",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 3,
+      "impressions": 7,
+      "ctr": 0.42857142857142855,
+      "position": 1.8571428571428572
+    },
+    {
+      "keys": [
+        "division 2 server status",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 3,
+      "impressions": 55,
+      "ctr": 0.05454545454545454,
+      "position": 10.381818181818181
+    },
+    {
+      "keys": [
+        "the division 2 build maker",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 3,
+      "impressions": 39,
+      "ctr": 0.07692307692307693,
+      "position": 4.948717948717949
+    },
+    {
+      "keys": [
+        "the division 2 caduceus how to get",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 3,
+      "impressions": 15,
+      "ctr": 0.2,
+      "position": 3.4
+    },
+    {
+      "keys": [
+        "the division 2 steel and sons acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 3,
+      "impressions": 255,
+      "ctr": 0.011764705882352941,
+      "position": 5.423529411764706
+    },
+    {
+      "keys": [
+        "vertigo the division 2",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 3,
+      "impressions": 28,
+      "ctr": 0.10714285714285714,
+      "position": 4
+    },
+    {
+      "keys": [
+        "d2 lost sector rotation",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 2,
+      "impressions": 6,
+      "ctr": 0.3333333333333333,
+      "position": 5.166666666666667
+    },
+    {
+      "keys": [
+        "diablo 4 boss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 2,
+      "impressions": 571,
+      "ctr": 0.0035026269702276708,
+      "position": 8.043782837127846
+    },
+    {
+      "keys": [
+        "division 2 daily reset",
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 2,
-      "impressions": 15,
-      "ctr": 0.13333333333333333,
-      "position": 5.133333333333334
+      "impressions": 4,
+      "ctr": 0.5,
+      "position": 1
     },
     {
       "keys": [
@@ -116,9 +176,59 @@
         "https://raigulus.github.io/division-2/loot/"
       ],
       "clicks": 2,
-      "impressions": 4,
-      "ctr": 0.5,
-      "position": 3.75
+      "impressions": 5,
+      "ctr": 0.4,
+      "position": 4.2
+    },
+    {
+      "keys": [
+        "division 2 loot today",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 2,
+      "impressions": 8,
+      "ctr": 0.25,
+      "position": 1.875
+    },
+    {
+      "keys": [
+        "division 2 reset time",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 2,
+      "impressions": 11,
+      "ctr": 0.18181818181818182,
+      "position": 3
+    },
+    {
+      "keys": [
+        "division 2 server reset today",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 2,
+      "impressions": 10,
+      "ctr": 0.2,
+      "position": 2.8
+    },
+    {
+      "keys": [
+        "division 2 steel & sons",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 2,
+      "impressions": 40,
+      "ctr": 0.05,
+      "position": 5.325
+    },
+    {
+      "keys": [
+        "division 2 targeted loot map today",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 2,
+      "impressions": 3,
+      "ctr": 0.6666666666666666,
+      "position": 4.333333333333334
     },
     {
       "keys": [
@@ -126,9 +236,99 @@
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 2,
-      "impressions": 17,
-      "ctr": 0.11764705882352941,
-      "position": 5.235294117647059
+      "impressions": 127,
+      "ctr": 0.015748031496062992,
+      "position": 5.283464566929134
+    },
+    {
+      "keys": [
+        "steel & sons acr division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 2,
+      "impressions": 144,
+      "ctr": 0.013888888888888888,
+      "position": 5.444444444444445
+    },
+    {
+      "keys": [
+        "steel and sons division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 2,
+      "impressions": 152,
+      "ctr": 0.013157894736842105,
+      "position": 6.131578947368421
+    },
+    {
+      "keys": [
+        "the division 2 targeted loot map today",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 2,
+      "impressions": 6,
+      "ctr": 0.3333333333333333,
+      "position": 6
+    },
+    {
+      "keys": [
+        "the division 2 targeted loot today",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 2,
+      "impressions": 30,
+      "ctr": 0.06666666666666667,
+      "position": 6.333333333333333
+    },
+    {
+      "keys": [
+        "the division 2 vertigo",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 2,
+      "impressions": 51,
+      "ctr": 0.0392156862745098,
+      "position": 4.431372549019608
+    },
+    {
+      "keys": [
+        "vertigo division 2",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 2,
+      "impressions": 72,
+      "ctr": 0.027777777777777776,
+      "position": 3.5833333333333335
+    },
+    {
+      "keys": [
+        "world boss timer diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 2,
+      "impressions": 1512,
+      "ctr": 0.0013227513227513227,
+      "position": 8.553571428571429
+    },
+    {
+      "keys": [
+        "agitator division 2",
+        "https://raigulus.github.io/division-2/exotics/agitator/"
+      ],
+      "clicks": 1,
+      "impressions": 54,
+      "ctr": 0.018518518518518517,
+      "position": 5.388888888888889
+    },
+    {
+      "keys": [
+        "agitator exotic division 2",
+        "https://raigulus.github.io/division-2/exotics/agitator/"
+      ],
+      "clicks": 1,
+      "impressions": 7,
+      "ctr": 0.14285714285714285,
+      "position": 3.857142857142857
     },
     {
       "keys": [
@@ -136,9 +336,59 @@
         "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 1,
+      "impressions": 8,
+      "ctr": 0.125,
+      "position": 4.625
+    },
+    {
+      "keys": [
+        "caduceus division 2",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 1,
+      "impressions": 8,
+      "ctr": 0.125,
+      "position": 3.75
+    },
+    {
+      "keys": [
+        "d4 world boss spawn times",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 1,
       "impressions": 5,
       "ctr": 0.2,
-      "position": 5.2
+      "position": 10
+    },
+    {
+      "keys": [
+        "d4 world boss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 1,
+      "impressions": 1738,
+      "ctr": 0.0005753739930955121,
+      "position": 9.239930955120828
+    },
+    {
+      "keys": [
+        "daily lost sector destiny 2",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 1,
+      "impressions": 9,
+      "ctr": 0.1111111111111111,
+      "position": 6.333333333333333
+    },
+    {
+      "keys": [
+        "destiny 2 lost sector exotics today",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
+      ],
+      "clicks": 1,
+      "impressions": 18,
+      "ctr": 0.05555555555555555,
+      "position": 6.555555555555555
     },
     {
       "keys": [
@@ -146,9 +396,69 @@
         "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
       ],
       "clicks": 1,
-      "impressions": 17,
-      "ctr": 0.058823529411764705,
-      "position": 8.058823529411764
+      "impressions": 33,
+      "ctr": 0.030303030303030304,
+      "position": 6.363636363636363
+    },
+    {
+      "keys": [
+        "destiny 2 weekly reset tracker",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 1,
+      "impressions": 23,
+      "ctr": 0.043478260869565216,
+      "position": 8.130434782608695
+    },
+    {
+      "keys": [
+        "destiny lost sector rotation",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 1,
+      "impressions": 5,
+      "ctr": 0.2,
+      "position": 5.4
+    },
+    {
+      "keys": [
+        "diablo 4 timers",
+        "https://raigulus.github.io/diablo-4/"
+      ],
+      "clicks": 1,
+      "impressions": 6,
+      "ctr": 0.16666666666666666,
+      "position": 8.166666666666668
+    },
+    {
+      "keys": [
+        "div 2 build maker",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 1,
+      "impressions": 18,
+      "ctr": 0.05555555555555555,
+      "position": 4.833333333333334
+    },
+    {
+      "keys": [
+        "div 2 steel and sons",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 1,
+      "impressions": 28,
+      "ctr": 0.03571428571428571,
+      "position": 4.535714285714286
+    },
+    {
+      "keys": [
+        "division 2 build generator",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 1,
+      "impressions": 13,
+      "ctr": 0.07692307692307693,
+      "position": 5.230769230769231
     },
     {
       "keys": [
@@ -156,14 +466,184 @@
         "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 1,
-      "impressions": 91,
-      "ctr": 0.01098901098901099,
-      "position": 7.362637362637362
+      "impressions": 114,
+      "ctr": 0.008771929824561403,
+      "position": 5.728070175438597
     },
     {
       "keys": [
-        "division 2 caduceus how to get",
-        "https://raigulus.github.io/division-2/exotics/caduceus/"
+        "division 2 daily reset time",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 1,
+      "impressions": 8,
+      "ctr": 0.125,
+      "position": 2.375
+    },
+    {
+      "keys": [
+        "division 2 escalation targeted loot today",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 5
+    },
+    {
+      "keys": [
+        "division 2 how to get steel and sons",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 1,
+      "impressions": 45,
+      "ctr": 0.022222222222222223,
+      "position": 6.7555555555555555
+    },
+    {
+      "keys": [
+        "division 2 incursion reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 1,
+      "impressions": 4,
+      "ctr": 0.25,
+      "position": 2.5
+    },
+    {
+      "keys": [
+        "division 2 loot allocation today",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 1,
+      "impressions": 22,
+      "ctr": 0.045454545454545456,
+      "position": 3.8636363636363638
+    },
+    {
+      "keys": [
+        "division 2 loot map",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 0.3333333333333333,
+      "position": 5.666666666666667
+    },
+    {
+      "keys": [
+        "division 2 sarru backpack",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 1,
+      "impressions": 20,
+      "ctr": 0.05,
+      "position": 6.5
+    },
+    {
+      "keys": [
+        "division 2 set builder",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 2
+    },
+    {
+      "keys": [
+        "division 2 snitch location this week",
+        "https://raigulus.github.io/division-2/cassie-mendoza/"
+      ],
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 1
+    },
+    {
+      "keys": [
+        "division 2 steel & sons acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 1,
+      "impressions": 96,
+      "ctr": 0.010416666666666666,
+      "position": 4.229166666666666
+    },
+    {
+      "keys": [
+        "division 2 steel and sons",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 1,
+      "impressions": 196,
+      "ctr": 0.00510204081632653,
+      "position": 6.474489795918367
+    },
+    {
+      "keys": [
+        "division 2 steel and sons acr how to get",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 1,
+      "impressions": 44,
+      "ctr": 0.022727272727272728,
+      "position": 4.954545454545455
+    },
+    {
+      "keys": [
+        "division 2 targeted loot today",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 1,
+      "impressions": 34,
+      "ctr": 0.029411764705882353,
+      "position": 6.029411764705882
+    },
+    {
+      "keys": [
+        "division 2 today's targeted loot",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 0.3333333333333333,
+      "position": 1
+    },
+    {
+      "keys": [
+        "division 2 weekly reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 1,
+      "impressions": 45,
+      "ctr": 0.022222222222222223,
+      "position": 3.6222222222222222
+    },
+    {
+      "keys": [
+        "division 2 weekly vendor reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 1,
+      "impressions": 2,
+      "ctr": 0.5,
+      "position": 7.5
+    },
+    {
+      "keys": [
+        "division 2 when does incursion reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 1,
+      "impressions": 2,
+      "ctr": 0.5,
+      "position": 1
+    },
+    {
+      "keys": [
+        "division2 build tool",
+        "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 1,
       "impressions": 1,
@@ -172,93 +652,103 @@
     },
     {
       "keys": [
-        "division 2 how to get steel and sons",
-        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+        "easiest lost sector",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
       ],
       "clicks": 1,
-      "impressions": 3,
-      "ctr": 0.3333333333333333,
-      "position": 5
+      "impressions": 1,
+      "ctr": 1,
+      "position": 2
     },
     {
       "keys": [
-        "division 2 reset",
-        "https://raigulus.github.io/division-2/reset/"
+        "helltide timer",
+        "https://raigulus.github.io/diablo-4/event-timer/"
       ],
       "clicks": 1,
-      "impressions": 6,
-      "ctr": 0.16666666666666666,
-      "position": 5.166666666666667
+      "impressions": 10,
+      "ctr": 0.1,
+      "position": 7.6
     },
     {
       "keys": [
-        "division 2 reset time",
-        "https://raigulus.github.io/division-2/reset/"
+        "lost sector rotation",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
       ],
       "clicks": 1,
-      "impressions": 9,
-      "ctr": 0.1111111111111111,
-      "position": 3.5555555555555554
+      "impressions": 11,
+      "ctr": 0.09090909090909091,
+      "position": 6.7272727272727275
     },
     {
       "keys": [
-        "division 2 server status",
-        "https://raigulus.github.io/division-2/server-status/"
+        "lost sectors destiny 2 today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
       ],
       "clicks": 1,
-      "impressions": 12,
-      "ctr": 0.08333333333333333,
-      "position": 12.916666666666666
+      "impressions": 23,
+      "ctr": 0.043478260869565216,
+      "position": 7.391304347826087
     },
     {
       "keys": [
-        "division 2 steel & sons",
-        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+        "master lost sector today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
       ],
       "clicks": 1,
-      "impressions": 2,
-      "ctr": 0.5,
-      "position": 2.5
+      "impressions": 28,
+      "ctr": 0.03571428571428571,
+      "position": 6.857142857142857
     },
     {
       "keys": [
-        "division 2 steel and sons acr",
-        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
-      ],
-      "clicks": 1,
-      "impressions": 60,
-      "ctr": 0.016666666666666666,
-      "position": 5.466666666666667
-    },
-    {
-      "keys": [
-        "division 2 targeted loot map today",
-        "https://raigulus.github.io/division-2/loot/"
+        "raigulus",
+        "https://raigulus.github.io/destiny-2/"
       ],
       "clicks": 1,
       "impressions": 4,
       "ctr": 0.25,
-      "position": 7
+      "position": 13.5
     },
     {
       "keys": [
-        "division 2 timers",
-        "https://raigulus.github.io/division-2/reset/"
+        "sarru division 2",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
       ],
       "clicks": 1,
-      "impressions": 6,
-      "ctr": 0.16666666666666666,
-      "position": 2.666666666666667
+      "impressions": 36,
+      "ctr": 0.027777777777777776,
+      "position": 4.333333333333334
     },
     {
       "keys": [
-        "division 2 weekly reset time",
-        "https://raigulus.github.io/division-2/reset/"
+        "steel & sons division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 1,
-      "impressions": 8,
-      "ctr": 0.125,
-      "position": 4.5
+      "impressions": 29,
+      "ctr": 0.034482758620689655,
+      "position": 5.586206896551724
+    },
+    {
+      "keys": [
+        "steel and sons acr blueprint",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 1,
+      "impressions": 17,
+      "ctr": 0.058823529411764705,
+      "position": 7.176470588235294
+    },
+    {
+      "keys": [
+        "steel and sons build",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 1,
+      "impressions": 26,
+      "ctr": 0.038461538461538464,
+      "position": 6.3076923076923075
     },
     {
       "keys": [
@@ -266,34 +756,34 @@
         "https://raigulus.github.io/division-2/loot/"
       ],
       "clicks": 1,
-      "impressions": 9,
-      "ctr": 0.1111111111111111,
-      "position": 3.3333333333333335
+      "impressions": 15,
+      "ctr": 0.06666666666666667,
+      "position": 8.333333333333332
     },
     {
       "keys": [
-        "the division 2 build maker",
+        "the division 2 build builder",
         "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 1,
-      "impressions": 19,
-      "ctr": 0.05263157894736842,
-      "position": 7.052631578947368
+      "impressions": 1,
+      "ctr": 1,
+      "position": 6
     },
     {
       "keys": [
-        "the division 2 daily reset time",
-        "https://raigulus.github.io/division-2/reset/"
+        "the division 2 build planner",
+        "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 1,
-      "impressions": 5,
-      "ctr": 0.2,
-      "position": 2.8
+      "impressions": 25,
+      "ctr": 0.04,
+      "position": 8.2
     },
     {
       "keys": [
-        "the division 2 daily targeted loot",
-        "https://raigulus.github.io/division-2/loot/"
+        "the division 2 build tool",
+        "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 1,
       "impressions": 1,
@@ -302,38 +792,88 @@
     },
     {
       "keys": [
-        "the division 2 server status today",
-        "https://raigulus.github.io/division-2/server-status/"
+        "the division 2 builder tool",
+        "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 1,
-      "impressions": 8,
-      "ctr": 0.125,
-      "position": 9.5
+      "impressions": 1,
+      "ctr": 1,
+      "position": 6
     },
     {
       "keys": [
-        "the division 2 steel and sons acr",
-        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
-      ],
-      "clicks": 1,
-      "impressions": 20,
-      "ctr": 0.05,
-      "position": 5.45
-    },
-    {
-      "keys": [
-        "the division 2 targeted loot map today",
-        "https://raigulus.github.io/division-2/loot/"
+        "the division 2 reset time",
+        "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 1,
       "impressions": 5,
       "ctr": 0.2,
-      "position": 5.6
+      "position": 1.8
     },
     {
       "keys": [
-        "a que hora",
+        "the division 2 sarru",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 1,
+      "impressions": 26,
+      "ctr": 0.038461538461538464,
+      "position": 4.038461538461538
+    },
+    {
+      "keys": [
+        "the division 2 steel and sons",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 1,
+      "impressions": 52,
+      "ctr": 0.019230769230769232,
+      "position": 6.4423076923076925
+    },
+    {
+      "keys": [
+        "the division 2 weekly reset",
         "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 1,
+      "impressions": 10,
+      "ctr": 0.1,
+      "position": 2.3
+    },
+    {
+      "keys": [
+        "todays master lost sector",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 1,
+      "impressions": 6,
+      "ctr": 0.16666666666666666,
+      "position": 6.833333333333333
+    },
+    {
+      "keys": [
+        "when does the incursion reset division 2",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 1,
+      "impressions": 4,
+      "ctr": 0.25,
+      "position": 5
+    },
+    {
+      "keys": [
+        "world boss time diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 1,
+      "impressions": 8,
+      "ctr": 0.125,
+      "position": 8
+    },
+    {
+      "keys": [
+        "2026",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
       ],
       "clicks": 0,
       "impressions": 1,
@@ -346,54 +886,34 @@
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 8,
       "ctr": 0,
-      "position": 4.5
+      "position": 5.5
     },
     {
       "keys": [
-        "agitator division 2",
+        "acr steel",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "agitator the division 2",
         "https://raigulus.github.io/division-2/exotics/agitator/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 10,
       "ctr": 0,
-      "position": 4
+      "position": 4.7
     },
     {
       "keys": [
-        "agitator exotic division 2",
-        "https://raigulus.github.io/division-2/exotics/agitator/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 4
-    },
-    {
-      "keys": [
-        "at what time",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1
-    },
-    {
-      "keys": [
-        "australian time",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1
-    },
-    {
-      "keys": [
-        "caduceus division 2",
-        "https://raigulus.github.io/division-2/exotics/caduceus/"
+        "and today?",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
       ],
       "clicks": 0,
       "impressions": 1,
@@ -402,13 +922,113 @@
     },
     {
       "keys": [
-        "can you check again",
-        "https://raigulus.github.io/division-2/loot/"
+        "best way to farm",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 7
+      "position": 10
+    },
+    {
+      "keys": [
+        "boss diablo 4 timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 7.6
+    },
+    {
+      "keys": [
+        "boss timer d4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 9.75
+    },
+    {
+      "keys": [
+        "boss timer diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 73,
+      "ctr": 0,
+      "position": 8.575342465753424
+    },
+    {
+      "keys": [
+        "build division 2",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "build planner",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "caduceus",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "caduceus division 2 how to get",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 2.6363636363636367
+    },
+    {
+      "keys": [
+        "caduceus exotic division 2",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "cassie mendoza",
+        "https://raigulus.github.io/division-2/cassie-mendoza/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "cassie mendoza division 2 location today",
+        "https://raigulus.github.io/division-2/cassie-mendoza/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
     },
     {
       "keys": [
@@ -416,9 +1036,29 @@
         "https://raigulus.github.io/division-2/cassie-mendoza/"
       ],
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 4,
       "ctr": 0,
       "position": 10
+    },
+    {
+      "keys": [
+        "change targeted loot division 2",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6.333333333333333
+    },
+    {
+      "keys": [
+        "check",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
     },
     {
       "keys": [
@@ -432,13 +1072,13 @@
     },
     {
       "keys": [
-        "d2 lost sector rotation",
+        "current lost sector destiny 2",
         "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
       ],
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 5,
       "ctr": 0,
-      "position": 10.666666666666666
+      "position": 6
     },
     {
       "keys": [
@@ -446,9 +1086,9 @@
         "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 17,
       "ctr": 0,
-      "position": 25
+      "position": 8.647058823529413
     },
     {
       "keys": [
@@ -456,84 +1096,264 @@
         "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
       ],
       "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 28
-    },
-    {
-      "keys": [
-        "destiny 2 daily rotation",
-        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
-      ],
-      "clicks": 0,
       "impressions": 3,
       "ctr": 0,
-      "position": 5.333333333333333
+      "position": 3.6666666666666665
     },
     {
       "keys": [
-        "destiny 2 legend lost sector today",
+        "d2 master lost sector today",
         "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5.5
+    },
+    {
+      "keys": [
+        "d4 boss spawn timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 9.785714285714286
+    },
+    {
+      "keys": [
+        "d4 boss time",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 9.666666666666666
+    },
+    {
+      "keys": [
+        "d4 boss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 104,
+      "ctr": 0,
+      "position": 9.884615384615385
+    },
+    {
+      "keys": [
+        "d4 event timer",
+        "https://raigulus.github.io/diablo-4/event-timer/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 22
+      "position": 10
     },
     {
       "keys": [
-        "destiny 2 legendary lost sector today",
-        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+        "d4 helltide timer",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 8.666666666666668
+    },
+    {
+      "keys": [
+        "d4 next world boss",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 7.857142857142857
+    },
+    {
+      "keys": [
+        "d4 s15 world boss timer",
+        "https://raigulus.github.io/diablo-4/event-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "keys": [
+        "d4 s15 world boss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 31,
+      "ctr": 0,
+      "position": 8.032258064516128
+    },
+    {
+      "keys": [
+        "d4 spawn timers",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 21
+      "position": 11
     },
     {
       "keys": [
-        "destiny 2 legendary lost sectors today",
-        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+        "d4 timer world boss",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 6,
       "ctr": 0,
-      "position": 21
+      "position": 10
     },
     {
       "keys": [
-        "destiny 2 lost sectors io",
-        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+        "d4 timers world boss",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "d4 wb timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 8.75
+    },
+    {
+      "keys": [
+        "d4 weltboss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
       "ctr": 0,
       "position": 15
     },
     {
       "keys": [
-        "destiny 2 lost sectors rotation",
-        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+        "d4 world boss countdown",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 21
+      "position": 7.5
     },
     {
       "keys": [
-        "destiny 2 lost sectors today",
-        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+        "d4 world boss schedule",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 15,
       "ctr": 0,
-      "position": 26
+      "position": 10.133333333333333
     },
     {
       "keys": [
-        "destiny 2 weekly reset tracker",
+        "d4 world boss spawn time",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 9.75
+    },
+    {
+      "keys": [
+        "d4 world boss spawn timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "d4 world boss time",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "d4 world boss timer eu",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 8.4
+    },
+    {
+      "keys": [
+        "d4 world boss timers",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 9.76923076923077
+    },
+    {
+      "keys": [
+        "d4 world boss times",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 10.5
+    },
+    {
+      "keys": [
+        "d4 world bosses timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9.333333333333334
+    },
+    {
+      "keys": [
+        "d4 worldboss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 31,
+      "ctr": 0,
+      "position": 9.709677419354838
+    },
+    {
+      "keys": [
+        "daily lost sector",
         "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "keys": [
+        "daily lost sector destiny 2",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
       ],
       "clicks": 0,
       "impressions": 1,
@@ -542,7 +1362,47 @@
     },
     {
       "keys": [
-        "destiny 2 weekly rotation",
+        "destiny 2",
+        "https://raigulus.github.io/destiny-2/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "destiny 2 daily lost sector",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "destiny 2 daily lost sector",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6.333333333333333
+    },
+    {
+      "keys": [
+        "destiny 2 daily lost sector rotation",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3.5
+    },
+    {
+      "keys": [
+        "destiny 2 daily rotation",
         "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
       ],
       "clicks": 0,
@@ -552,8 +1412,358 @@
     },
     {
       "keys": [
-        "destiny lost sector rotation",
+        "destiny 2 distortion rotation timer",
+        "https://raigulus.github.io/destiny-2/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 21
+    },
+    {
+      "keys": [
+        "destiny 2 exotic engram drop rate",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "destiny 2 legend lost sector today",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "destiny 2 legend lost sector today",
         "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "destiny 2 lost sector",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "destiny 2 lost sector exotics",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 5.333333333333333
+    },
+    {
+      "keys": [
+        "destiny 2 lost sector rotation",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "destiny 2 lost sector today",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "destiny 2 lost sector today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 46,
+      "ctr": 0,
+      "position": 7.260869565217392
+    },
+    {
+      "keys": [
+        "destiny 2 lost sectors today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "destiny 2 master lost sector exotic drop rate",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 2.5
+    },
+    {
+      "keys": [
+        "destiny 2 master lost sector today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 7.777777777777778
+    },
+    {
+      "keys": [
+        "destiny 2 master lost sectors today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "destiny 2 today's lost sector",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "destiny lost sector rotation",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 10.333333333333334
+    },
+    {
+      "keys": [
+        "destiny lost sector today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "diablo 4 boss spawn",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 7.733333333333333
+    },
+    {
+      "keys": [
+        "diablo 4 boss spawn time",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 7.529411764705882
+    },
+    {
+      "keys": [
+        "diablo 4 boss time",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 41,
+      "ctr": 0,
+      "position": 7.390243902439025
+    },
+    {
+      "keys": [
+        "diablo 4 boss timer",
+        "https://raigulus.github.io/diablo-4/event-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 32
+    },
+    {
+      "keys": [
+        "diablo 4 boss timers",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 8.666666666666668
+    },
+    {
+      "keys": [
+        "diablo 4 boss times",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8.5
+    },
+    {
+      "keys": [
+        "diablo 4 bosses timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 8.153846153846153
+    },
+    {
+      "keys": [
+        "diablo 4 bosstimer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 9.714285714285714
+    },
+    {
+      "keys": [
+        "diablo 4 countdown",
+        "https://raigulus.github.io/diablo-4/event-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "diablo 4 event timer",
+        "https://raigulus.github.io/diablo-4/event-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 31,
+      "ctr": 0,
+      "position": 6.483870967741935
+    },
+    {
+      "keys": [
+        "diablo 4 event timers",
+        "https://raigulus.github.io/diablo-4/event-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "diablo 4 helltide",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "diablo 4 helltide timer",
+        "https://raigulus.github.io/diablo-4/event-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 6.3
+    },
+    {
+      "keys": [
+        "diablo 4 helltide timer",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
+      ],
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 7.4
+    },
+    {
+      "keys": [
+        "diablo 4 helltide tracker",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "diablo 4 next helltide",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
+      ],
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 6.181818181818182
+    },
+    {
+      "keys": [
+        "diablo 4 next world boss",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 155,
+      "ctr": 0,
+      "position": 7.987096774193549
+    },
+    {
+      "keys": [
+        "diablo 4 next world boss spawn",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 6.928571428571429
+    },
+    {
+      "keys": [
+        "diablo 4 next world boss time",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 8.882352941176471
+    },
+    {
+      "keys": [
+        "diablo 4 obols farm",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
       ],
       "clicks": 0,
       "impressions": 1,
@@ -562,23 +1772,713 @@
     },
     {
       "keys": [
-        "div 2 build maker",
-        "https://raigulus.github.io/division-2/build-maker/"
+        "diablo 4 season 15 weltboss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
       ],
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 9,
       "ctr": 0,
-      "position": 6.25
+      "position": 10.222222222222221
     },
     {
       "keys": [
-        "div 2 steel and sons",
-        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+        "diablo 4 season 15 world boss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 64,
+      "ctr": 0,
+      "position": 9.609375
+    },
+    {
+      "keys": [
+        "diablo 4 spawn timers",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 9.2
+    },
+    {
+      "keys": [
+        "diablo 4 timer",
+        "https://raigulus.github.io/diablo-4/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "diablo 4 timer",
+        "https://raigulus.github.io/diablo-4/event-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 9.578947368421053
+    },
+    {
+      "keys": [
+        "diablo 4 timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 9.444444444444445
+    },
+    {
+      "keys": [
+        "diablo 4 timer world boss",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 89,
+      "ctr": 0,
+      "position": 7.112359550561798
+    },
+    {
+      "keys": [
+        "diablo 4 timers",
+        "https://raigulus.github.io/diablo-4/event-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "diablo 4 timers",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "diablo 4 timers",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 9.117647058823529
+    },
+    {
+      "keys": [
+        "diablo 4 timers world boss",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 8.033333333333333
+    },
+    {
+      "keys": [
+        "diablo 4 wb timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 7.470588235294118
+    },
+    {
+      "keys": [
+        "diablo 4 weltboss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 43,
+      "ctr": 0,
+      "position": 10.209302325581396
+    },
+    {
+      "keys": [
+        "diablo 4 when is next world boss",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
       ],
       "clicks": 0,
       "impressions": 6,
       "ctr": 0,
-      "position": 5.166666666666667
+      "position": 8
+    },
+    {
+      "keys": [
+        "diablo 4 when is the next world boss",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 8.9
+    },
+    {
+      "keys": [
+        "diablo 4 world boss",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "diablo 4 world boss countdown",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 7.928571428571429
+    },
+    {
+      "keys": [
+        "diablo 4 world boss counter",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10.5
+    },
+    {
+      "keys": [
+        "diablo 4 world boss drops",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "diablo 4 world boss event timer",
+        "https://raigulus.github.io/diablo-4/event-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "diablo 4 world boss event timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "diablo 4 world boss loot",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "diablo 4 world boss schedule",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 8.571428571428571
+    },
+    {
+      "keys": [
+        "diablo 4 world boss spawn",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9.5
+    },
+    {
+      "keys": [
+        "diablo 4 world boss spawn time",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 9.5
+    },
+    {
+      "keys": [
+        "diablo 4 world boss spawn timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 9.26923076923077
+    },
+    {
+      "keys": [
+        "diablo 4 world boss spawn times",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 8.818181818181818
+    },
+    {
+      "keys": [
+        "diablo 4 world boss time",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 35,
+      "ctr": 0,
+      "position": 9.4
+    },
+    {
+      "keys": [
+        "diablo 4 world boss timer diablo 4 boss loot tables",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "keys": [
+        "diablo 4 world boss timer eu",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 8.714285714285715
+    },
+    {
+      "keys": [
+        "diablo 4 world boss timer europe",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "diablo 4 world boss timer live",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 28,
+      "ctr": 0,
+      "position": 7.607142857142857
+    },
+    {
+      "keys": [
+        "diablo 4 world boss timers",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 8.304347826086957
+    },
+    {
+      "keys": [
+        "diablo 4 world boss times",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 9.705882352941176
+    },
+    {
+      "keys": [
+        "diablo 4 world boss tracker",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 8.76923076923077
+    },
+    {
+      "keys": [
+        "diablo 4 world bosses timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 7.533333333333333
+    },
+    {
+      "keys": [
+        "diablo 4 world event timer",
+        "https://raigulus.github.io/diablo-4/event-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "diablo 4 world event timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "diablo 4 world event tracker",
+        "https://raigulus.github.io/diablo-4/event-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "diablo 4 world.boss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 8.166666666666668
+    },
+    {
+      "keys": [
+        "diablo 4 worldboss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 74,
+      "ctr": 0,
+      "position": 7.472972972972973
+    },
+    {
+      "keys": [
+        "diablo 4 мировые боссы таймер",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "diablo 5 world boss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "diablo boss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 111,
+      "ctr": 0,
+      "position": 8.657657657657658
+    },
+    {
+      "keys": [
+        "diablo iv boss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 8.363636363636363
+    },
+    {
+      "keys": [
+        "diablo iv next world boss",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 8.083333333333332
+    },
+    {
+      "keys": [
+        "diablo iv timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "diablo iv world boss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 188,
+      "ctr": 0,
+      "position": 8.537234042553191
+    },
+    {
+      "keys": [
+        "diablo iv world boss tracker",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "keys": [
+        "diablo next world boss",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 7.333333333333333
+    },
+    {
+      "keys": [
+        "diablo server status",
+        "https://raigulus.github.io/diablo-4/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "diablo timer",
+        "https://raigulus.github.io/diablo-4/event-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 6.833333333333333
+    },
+    {
+      "keys": [
+        "diablo timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 7.222222222222222
+    },
+    {
+      "keys": [
+        "diablo timer world boss",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "keys": [
+        "diablo weltboss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "diablo world boss schedule",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 7.666666666666667
+    },
+    {
+      "keys": [
+        "diablo world boss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 362,
+      "ctr": 0,
+      "position": 7.472375690607735
+    },
+    {
+      "keys": [
+        "diablo world boss times",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 8.666666666666668
+    },
+    {
+      "keys": [
+        "diablo4 boss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 46,
+      "ctr": 0,
+      "position": 7.173913043478261
+    },
+    {
+      "keys": [
+        "diablo4 timer",
+        "https://raigulus.github.io/diablo-4/event-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 4.857142857142858
+    },
+    {
+      "keys": [
+        "diablo4 timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 7.214285714285714
+    },
+    {
+      "keys": [
+        "diablo4 world boss time",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 48,
+      "ctr": 0,
+      "position": 7.1875
+    },
+    {
+      "keys": [
+        "diablo4 world boss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 99,
+      "ctr": 0,
+      "position": 7.505050505050505
+    },
+    {
+      "keys": [
+        "diablo4 world boss tracker",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "district mall inferno walkthrough",
+        "https://raigulus.github.io/division-2/missions/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 5.25
+    },
+    {
+      "keys": [
+        "div 2 agitator",
+        "https://raigulus.github.io/division-2/exotics/agitator/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "div 2 build planner",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "div 2 build tool",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "div 2 builder",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "div 2 sarru",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 2.75
+    },
+    {
+      "keys": [
+        "div 2 server status",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
     },
     {
       "keys": [
@@ -586,73 +2486,13 @@
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 44,
       "ctr": 0,
-      "position": 4
+      "position": 5.0227272727272725
     },
     {
       "keys": [
         "div 2 targeted loot today",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 0,
-      "impressions": 11,
-      "ctr": 0,
-      "position": 5.7272727272727275
-    },
-    {
-      "keys": [
-        "div 2 weekly reset",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 1
-    },
-    {
-      "keys": [
-        "division 2 build builder",
-        "https://raigulus.github.io/division-2/build-maker/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 6
-    },
-    {
-      "keys": [
-        "division 2 build calculator",
-        "https://raigulus.github.io/division-2/build-maker/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 5
-    },
-    {
-      "keys": [
-        "division 2 build simulator",
-        "https://raigulus.github.io/division-2/build-maker/"
-      ],
-      "clicks": 0,
-      "impressions": 6,
-      "ctr": 0,
-      "position": 7
-    },
-    {
-      "keys": [
-        "division 2 build tool",
-        "https://raigulus.github.io/division-2/build-maker/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 5
-    },
-    {
-      "keys": [
-        "division 2 daily targeted loot map",
         "https://raigulus.github.io/division-2/loot/"
       ],
       "clicks": 0,
@@ -662,48 +2502,58 @@
     },
     {
       "keys": [
-        "division 2 escalation daily loot",
-        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+        "div 2 vertigo",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 5,
       "ctr": 0,
-      "position": 9
+      "position": 2.8
     },
     {
       "keys": [
-        "division 2 escalation tracker",
-        "https://raigulus.github.io/division-2/reset/"
+        "div2 server status",
+        "https://raigulus.github.io/division-2/server-status/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 3,
       "ctr": 0,
-      "position": 11
+      "position": 9.666666666666666
     },
     {
       "keys": [
-        "division 2 g phillips protocol",
-        "https://raigulus.github.io/division-2/missions/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 32
-    },
-    {
-      "keys": [
-        "division 2 how to get caduceus",
-        "https://raigulus.github.io/division-2/exotics/caduceus/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 2
-    },
-    {
-      "keys": [
-        "division 2 how to get steel and sons acr",
+        "division 2 acr",
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "division 2 agitator",
+        "https://raigulus.github.io/division-2/exotics/agitator/"
+      ],
+      "clicks": 0,
+      "impressions": 41,
+      "ctr": 0,
+      "position": 5.682926829268292
+    },
+    {
+      "keys": [
+        "division 2 agitator exotic",
+        "https://raigulus.github.io/division-2/exotics/agitator/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "division 2 broken wings",
+        "https://raigulus.github.io/division-2/patches/broken-wings/"
       ],
       "clicks": 0,
       "impressions": 1,
@@ -712,13 +2562,203 @@
     },
     {
       "keys": [
-        "division 2 incursion key reset",
-        "https://raigulus.github.io/division-2/reset/"
+        "division 2 build builder",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 5.5
+    },
+    {
+      "keys": [
+        "division 2 build calculator",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 41,
+      "ctr": 0,
+      "position": 6.902439024390244
+    },
+    {
+      "keys": [
+        "division 2 build creator",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 5.4
+    },
+    {
+      "keys": [
+        "division 2 build simulator",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 5.833333333333333
+    },
+    {
+      "keys": [
+        "division 2 build tool",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 5.916666666666667
+    },
+    {
+      "keys": [
+        "division 2 builder",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 5.3
+    },
+    {
+      "keys": [
+        "division 2 builder tool",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 6.454545454545454
+    },
+    {
+      "keys": [
+        "division 2 caduceus",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 5.857142857142857
+    },
+    {
+      "keys": [
+        "division 2 cassie mendoza",
+        "https://raigulus.github.io/division-2/cassie-mendoza/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "division 2 daily targeted loot map",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "division 2 district mall inferno walkthrough",
+        "https://raigulus.github.io/division-2/missions/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 10.25
+    },
+    {
+      "keys": [
+        "division 2 escalation debuffs",
+        "https://raigulus.github.io/division-2/escalation/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "division 2 escalation tracker",
+        "https://raigulus.github.io/division-2/escalation/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4.75
+    },
+    {
+      "keys": [
+        "division 2 exotic acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 6.8
+    },
+    {
+      "keys": [
+        "division 2 gear builder",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 5.8
+    },
+    {
+      "keys": [
+        "division 2 how to change targeted loot",
+        "https://raigulus.github.io/division-2/loot/"
       ],
       "clicks": 0,
       "impressions": 3,
       "ctr": 0,
-      "position": 3.3333333333333335
+      "position": 5.666666666666667
+    },
+    {
+      "keys": [
+        "division 2 how to get agitator",
+        "https://raigulus.github.io/division-2/exotics/agitator/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2.5
+    },
+    {
+      "keys": [
+        "division 2 how to get steel and sons acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "division 2 how to get vertigo",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 2.75
+    },
+    {
+      "keys": [
+        "division 2 incursion key reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 3
     },
     {
       "keys": [
@@ -726,9 +2766,9 @@
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 2,
       "ctr": 0,
-      "position": 3.8
+      "position": 2
     },
     {
       "keys": [
@@ -736,59 +2776,39 @@
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
-      "impressions": 7,
+      "impressions": 10,
       "ctr": 0,
-      "position": 4.142857142857142
+      "position": 3.4
     },
     {
       "keys": [
-        "division 2 jackal location",
-        "https://raigulus.github.io/division-2/manhunts/"
+        "division 2 loadout builder",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 6.9
+    },
+    {
+      "keys": [
+        "division 2 loot pool today",
+        "https://raigulus.github.io/division-2/loot/"
       ],
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 15.5
+      "position": 3.5
     },
     {
       "keys": [
-        "division 2 legendary missions",
-        "https://raigulus.github.io/division-2/legendary/"
+        "division 2 network status",
+        "https://raigulus.github.io/division-2/server-status/"
       ],
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 10
-    },
-    {
-      "keys": [
-        "division 2 loot allocation today",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 0,
-      "impressions": 14,
-      "ctr": 0,
-      "position": 5.571428571428571
-    },
-    {
-      "keys": [
-        "division 2 loot today",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 0,
-      "impressions": 15,
-      "ctr": 0,
-      "position": 2.8666666666666667
-    },
-    {
-      "keys": [
-        "division 2 loot today",
-        "https://raigulus.github.io/division2/loot/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1
+      "position": 8
     },
     {
       "keys": [
@@ -796,49 +2816,69 @@
         "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 6,
       "ctr": 0,
-      "position": 4.5
+      "position": 6
     },
     {
       "keys": [
-        "division 2 prototype gear dark zone",
-        "https://raigulus.github.io/division-2/prototype-gear/"
+        "division 2 pve dark zone build",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 8
+      "position": 6
     },
     {
       "keys": [
-        "division 2 prototype gear today",
-        "https://raigulus.github.io/division-2/prototype-gear/"
-      ],
-      "clicks": 0,
-      "impressions": 8,
-      "ctr": 0,
-      "position": 2.75
-    },
-    {
-      "keys": [
-        "division 2 prototype loot today",
-        "https://raigulus.github.io/division-2/prototype-gear/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 10
-    },
-    {
-      "keys": [
-        "division 2 prototype today",
-        "https://raigulus.github.io/division-2/prototype-gear/"
+        "division 2 pve dark zone build",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 1
+      "position": 4
+    },
+    {
+      "keys": [
+        "division 2 reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "division 2 sarru",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 0,
+      "impressions": 54,
+      "ctr": 0,
+      "position": 3.462962962962963
+    },
+    {
+      "keys": [
+        "division 2 sarru build",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 6.111111111111111
+    },
+    {
+      "keys": [
+        "division 2 saru",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4.25
     },
     {
       "keys": [
@@ -856,19 +2896,19 @@
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 4,
       "ctr": 0,
-      "position": 4
+      "position": 5
     },
     {
       "keys": [
-        "division 2 server reset today",
-        "https://raigulus.github.io/division-2/reset/"
+        "division 2 server status now",
+        "https://raigulus.github.io/division-2/server-status/"
       ],
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 2,
       "ctr": 0,
-      "position": 3.4
+      "position": 10
     },
     {
       "keys": [
@@ -876,9 +2916,19 @@
         "https://raigulus.github.io/division-2/server-status/"
       ],
       "clicks": 0,
-      "impressions": 10,
+      "impressions": 8,
       "ctr": 0,
-      "position": 9.8
+      "position": 9.625
+    },
+    {
+      "keys": [
+        "division 2 servers",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
     },
     {
       "keys": [
@@ -888,27 +2938,67 @@
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "division 2 service status",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
       "position": 8
     },
     {
       "keys": [
-        "division 2 steel & sons acr",
-        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+        "division 2 solo builds",
+        "https://raigulus.github.io/destiny-2/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 38
+    },
+    {
+      "keys": [
+        "division 2 status",
+        "https://raigulus.github.io/division-2/server-status/"
       ],
       "clicks": 0,
       "impressions": 4,
       "ctr": 0,
-      "position": 3.5
+      "position": 6.75
     },
     {
       "keys": [
-        "division 2 steel and sons",
+        "division 2 status server",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "division 2 steel and son",
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
-      "impressions": 26,
+      "impressions": 19,
       "ctr": 0,
-      "position": 5.346153846153846
+      "position": 5.2105263157894735
+    },
+    {
+      "keys": [
+        "division 2 steel and sons acr blueprint",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 9.25
     },
     {
       "keys": [
@@ -916,19 +3006,9 @@
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 81,
       "ctr": 0,
-      "position": 5.333333333333333
-    },
-    {
-      "keys": [
-        "division 2 steel and sons acr how to get",
-        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
-      ],
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 6
+      "position": 4.864197530864198
     },
     {
       "keys": [
@@ -936,9 +3016,19 @@
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 23,
       "ctr": 0,
-      "position": 10
+      "position": 8.434782608695652
+    },
+    {
+      "keys": [
+        "division 2 steel and sons exotic",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 7.681818181818182
     },
     {
       "keys": [
@@ -948,7 +3038,47 @@
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 8
+      "position": 6
+    },
+    {
+      "keys": [
+        "division 2 timers",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "division 2 vanguard",
+        "https://raigulus.github.io/division-2/patches/vanguard/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "division 2 vendor reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "division 2 vertigo build",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 0,
+      "impressions": 33,
+      "ctr": 0,
+      "position": 7.848484848484849
     },
     {
       "keys": [
@@ -962,33 +3092,53 @@
     },
     {
       "keys": [
-        "division 2 walkthrough",
-        "https://raigulus.github.io/division-2/missions/"
+        "division 2 vertigo drop rate",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 5.142857142857143
+    },
+    {
+      "keys": [
+        "division 2 vertigo exotic",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "division 2 vertigo lmg",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 6.5
+    },
+    {
+      "keys": [
+        "division 2 weekly reset time",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "division 2 weekly vendors",
+        "https://raigulus.github.io/division-2/cassie-mendoza/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 24
-    },
-    {
-      "keys": [
-        "division 2 weekly reset",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 14,
-      "ctr": 0,
-      "position": 1.2142857142857142
-    },
-    {
-      "keys": [
-        "division 2 when does incursion reset",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 5.5
+      "position": 10
     },
     {
       "keys": [
@@ -996,14 +3146,34 @@
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 1,
       "ctr": 0,
-      "position": 5
+      "position": 10
     },
     {
       "keys": [
         "division 2 when is weekly reset",
         "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 1.6666666666666665
+    },
+    {
+      "keys": [
+        "division build maker",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "division builder",
+        "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 0,
       "impressions": 1,
@@ -1012,7 +3182,47 @@
     },
     {
       "keys": [
-        "division build maker",
+        "division server status",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "division status",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 17.666666666666668
+    },
+    {
+      "keys": [
+        "division2 server status",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 10.5
+    },
+    {
+      "keys": [
+        "division2 vertigo",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "divison 2 builder",
         "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 0,
@@ -1022,8 +3232,18 @@
     },
     {
       "keys": [
-        "end date",
-        "https://raigulus.github.io/division-2/reset/"
+        "divison 2 server status",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "donde es eso",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
       ],
       "clicks": 0,
       "impressions": 1,
@@ -1032,18 +3252,8 @@
     },
     {
       "keys": [
-        "escalation requisition vendor",
-        "https://raigulus.github.io/division-2/prototype-gear/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 9
-    },
-    {
-      "keys": [
-        "how to get caduceus division 2",
-        "https://raigulus.github.io/division-2/exotics/caduceus/"
+        "e quando termina?",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
       ],
       "clicks": 0,
       "impressions": 1,
@@ -1052,28 +3262,18 @@
     },
     {
       "keys": [
-        "how to get steel and sons acr",
-        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+        "escalation requisition vendor",
+        "https://raigulus.github.io/division-2/prototype-gear/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 4,
       "ctr": 0,
-      "position": 6
+      "position": 8.25
     },
     {
       "keys": [
-        "how to get steel and sons acr division 2",
-        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
-      ],
-      "clicks": 0,
-      "impressions": 7,
-      "ctr": 0,
-      "position": 4.714285714285714
-    },
-    {
-      "keys": [
-        "how to get the agitator division 2",
-        "https://raigulus.github.io/division-2/exotics/agitator/"
+        "est",
+        "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
       "impressions": 1,
@@ -1082,28 +3282,338 @@
     },
     {
       "keys": [
-        "how to get the steel and sons acr division 2",
-        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 7.5
-    },
-    {
-      "keys": [
-        "how to reset division 2",
-        "https://raigulus.github.io/division-2/reset/"
+        "exotic drops",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 11
+      "position": 6
     },
     {
       "keys": [
-        "hoy",
+        "exotic engram farm destiny 2",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "exotic lost sector today",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9.666666666666666
+    },
+    {
+      "keys": [
+        "farming solo",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "featured lost sector today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "helltide timer",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
+      ],
+      "clicks": 0,
+      "impressions": 126,
+      "ctr": 0,
+      "position": 8.031746031746032
+    },
+    {
+      "keys": [
+        "helltide timer d4",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
+      ],
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 8.6875
+    },
+    {
+      "keys": [
+        "helltide timer diablo 4",
+        "https://raigulus.github.io/diablo-4/event-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "helltide timer diablo 4",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 8.4
+    },
+    {
+      "keys": [
+        "helltide tracker",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 42
+    },
+    {
+      "keys": [
+        "helltide world boss timer",
+        "https://raigulus.github.io/diablo-4/event-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 5.6
+    },
+    {
+      "keys": [
+        "helltide world boss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 8.428571428571429
+    },
+    {
+      "keys": [
+        "helltides",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "helltides world boss",
+        "https://raigulus.github.io/diablo-4/event-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "heures d'apparition des world boss diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 18.428571428571427
+    },
+    {
+      "keys": [
+        "how do world bosses work in diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "how often do helltides spawn diablo 4",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
+      ],
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 7.166666666666667
+    },
+    {
+      "keys": [
+        "how often world boss diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "how to change targeted loot division 2",
         "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "how to farm?",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "how to get agitator division 2",
+        "https://raigulus.github.io/division-2/exotics/agitator/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "how to get caduceus",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "how to get steel and sons",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "how to get steel and sons acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 6.142857142857143
+    },
+    {
+      "keys": [
+        "how to get steel and sons acr division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 167,
+      "ctr": 0,
+      "position": 5.826347305389222
+    },
+    {
+      "keys": [
+        "how to get steel and sons division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 7.947368421052632
+    },
+    {
+      "keys": [
+        "how to get the agitator division 2",
+        "https://raigulus.github.io/division-2/exotics/agitator/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "how to get the caduceus division 2",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 4.1
+    },
+    {
+      "keys": [
+        "how to get the caduceus in division 2",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "how to get the steel and sons acr division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 38,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "how to get vertigo division 2",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "i sverige",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "in 2026",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "in english",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
       ],
       "clicks": 0,
       "impressions": 1,
@@ -1116,9 +3626,59 @@
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 1,
       "ctr": 0,
-      "position": 5.25
+      "position": 1
+    },
+    {
+      "keys": [
+        "is it good?",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "is the agitator good division 2",
+        "https://raigulus.github.io/division-2/exotics/agitator/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "is this up to date",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "isso foi ontem",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "ja",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
     },
     {
       "keys": [
@@ -1132,13 +3692,83 @@
     },
     {
       "keys": [
-        "legend lost sector today",
+        "just answer",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "legend lost sector rotation",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10.5
+    },
+    {
+      "keys": [
+        "legend lost sector rotation",
         "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
       ],
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 26
+      "position": 4
+    },
+    {
+      "keys": [
+        "legend lost sector today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "loot",
+        "https://raigulus.github.io/search/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 48
+    },
+    {
+      "keys": [
+        "lost sector destiny 2",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 3.6666666666666665
+    },
+    {
+      "keys": [
+        "lost sector destiny 2 today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 8.25
+    },
+    {
+      "keys": [
+        "lost sector drops today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
     },
     {
       "keys": [
@@ -1148,17 +3778,17 @@
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 29
+      "position": 10
     },
     {
       "keys": [
         "lost sector rotation",
-        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
       ],
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 7,
       "ctr": 0,
-      "position": 8.5
+      "position": 8.714285714285715
     },
     {
       "keys": [
@@ -1166,9 +3796,9 @@
         "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
       ],
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 11,
       "ctr": 0,
-      "position": 9.333333333333334
+      "position": 5.090909090909091
     },
     {
       "keys": [
@@ -1176,9 +3806,19 @@
         "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 43,
       "ctr": 0,
-      "position": 20
+      "position": 6.046511627906977
+    },
+    {
+      "keys": [
+        "lost sector today destiny 2",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 5
     },
     {
       "keys": [
@@ -1186,19 +3826,209 @@
         "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 7.416666666666667
+    },
+    {
+      "keys": [
+        "lost sectors today destiny 2",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
       "ctr": 0,
       "position": 7
     },
     {
       "keys": [
-        "master lost sector today",
-        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+        "manhunt",
+        "https://raigulus.github.io/division-2/manhunts/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 19
+      "position": 1
+    },
+    {
+      "keys": [
+        "master lost sector exotic drop rate",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "master lost sectors destiny 2 today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6.5
+    },
+    {
+      "keys": [
+        "moon backpack",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "more",
+        "https://raigulus.github.io/destiny-2/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "new exotic rifle division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "next d4 world boss",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "next diablo 4 world boss",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 9.066666666666666
+    },
+    {
+      "keys": [
+        "next diablo world boss",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10.5
+    },
+    {
+      "keys": [
+        "next helltide",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
+      ],
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 7.071428571428571
+    },
+    {
+      "keys": [
+        "next helltide diablo 4",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
+      ],
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 6.357142857142857
+    },
+    {
+      "keys": [
+        "next world boss",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "next world boss d4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8.5
+    },
+    {
+      "keys": [
+        "next world boss diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 123,
+      "ctr": 0,
+      "position": 8.715447154471544
+    },
+    {
+      "keys": [
+        "next world boss spawn diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 8.9
+    },
+    {
+      "keys": [
+        "on phobe",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "one shot",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "oo",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "patriota",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
     },
     {
       "keys": [
@@ -1208,7 +4038,7 @@
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 5
+      "position": 6
     },
     {
       "keys": [
@@ -1216,9 +4046,9 @@
         "https://raigulus.github.io/"
       ],
       "clicks": 0,
-      "impressions": 9,
+      "impressions": 6,
       "ctr": 0,
-      "position": 3.5555555555555554
+      "position": 3.8333333333333335
     },
     {
       "keys": [
@@ -1226,19 +4056,49 @@
         "https://raigulus.github.io/about/"
       ],
       "clicks": 0,
-      "impressions": 12,
+      "impressions": 5,
       "ctr": 0,
-      "position": 3.25
+      "position": 3.4
     },
     {
       "keys": [
         "raigulus",
-        "https://raigulus.github.io/discord/"
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 37
+      "position": 85
+    },
+    {
+      "keys": [
+        "raigulus",
+        "https://raigulus.github.io/diablo-4/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "keys": [
+        "raigulus",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "keys": [
+        "raigulus",
+        "https://raigulus.github.io/division-2/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1
     },
     {
       "keys": [
@@ -1246,29 +4106,9 @@
         "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 0,
-      "impressions": 4,
-      "ctr": 0,
-      "position": 72.5
-    },
-    {
-      "keys": [
-        "raigulus",
-        "https://raigulus.github.io/division-2/manhunts/"
-      ],
-      "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 30
-    },
-    {
-      "keys": [
-        "raigulus",
-        "https://raigulus.github.io/division-2/patches/broken-wings/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 99
+      "position": 1
     },
     {
       "keys": [
@@ -1276,9 +4116,19 @@
         "https://raigulus.github.io/division-2/patches/concealed-agenda/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
       "position": 80
+    },
+    {
+      "keys": [
+        "raigulus",
+        "https://raigulus.github.io/division-2/patches/keeners-legacy/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87
     },
     {
       "keys": [
@@ -1288,92 +4138,82 @@
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 2
+      "position": 1
     },
     {
       "keys": [
-        "raigulus division 2",
-        "https://raigulus.github.io/division-2/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 42
-    },
-    {
-      "keys": [
-        "raigulus division 2",
-        "https://raigulus.github.io/division-2/build-maker/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 47
-    },
-    {
-      "keys": [
-        "raigulus division 2",
-        "https://raigulus.github.io/division-2/manhunts/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 53
-    },
-    {
-      "keys": [
-        "raigulus gaming",
-        "https://raigulus.github.io/about/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 2
-    },
-    {
-      "keys": [
-        "raigulus gaming",
-        "https://raigulus.github.io/division-2/build-maker/"
-      ],
-      "clicks": 0,
-      "impressions": 4,
-      "ctr": 0,
-      "position": 72.5
-    },
-    {
-      "keys": [
-        "raigulus gaming",
-        "https://raigulus.github.io/division-2/patches/concealed-agenda/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 84
-    },
-    {
-      "keys": [
-        "raigulus mission walkthrough",
-        "https://raigulus.github.io/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 5
-    },
-    {
-      "keys": [
-        "raigulus mission walkthrough",
-        "https://raigulus.github.io/about/"
+        "raigulus",
+        "https://raigulus.github.io/division-2/server-status/"
       ],
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 22.5
+      "position": 60
     },
     {
       "keys": [
-        "raigulus mission walkthrough",
+        "raigulus",
+        "https://raigulus.github.io/feedback/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "raigulus",
+        "https://raigulus.github.io/guides/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 32
+    },
+    {
+      "keys": [
+        "raigulus division 2",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "keys": [
+        "raigulus division 2",
         "https://raigulus.github.io/division-2/legendary/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 13
+    },
+    {
+      "keys": [
+        "raigulus division 2",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 23
+    },
+    {
+      "keys": [
+        "raigulus gaming",
+        "https://raigulus.github.io/about/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "raigulus gaming",
+        "https://raigulus.github.io/guides/"
       ],
       "clicks": 0,
       "impressions": 1,
@@ -1383,12 +4223,132 @@
     {
       "keys": [
         "raigulus mission walkthrough",
-        "https://raigulus.github.io/division-2/manhunts/"
+        "https://raigulus.github.io/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 65
+      "position": 4
+    },
+    {
+      "keys": [
+        "raigulus mission walkthrough",
+        "https://raigulus.github.io/division-2/legendary/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10.5
+    },
+    {
+      "keys": [
+        "rat queen division 2",
+        "https://raigulus.github.io/division-2/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 21
+    },
+    {
+      "keys": [
+        "reset timer",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "rifle",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "sarru",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "sarru backpack division 2",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 5.473684210526316
+    },
+    {
+      "keys": [
+        "sarru build division 2",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "sarru exotic",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5.333333333333333
+    },
+    {
+      "keys": [
+        "sarru exotic backpack",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "sarru exotic division 2",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "sarru the division 2",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 2.8
+    },
+    {
+      "keys": [
+        "semana del 28 de septiembre",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
     },
     {
       "keys": [
@@ -1396,9 +4356,19 @@
         "https://raigulus.github.io/division-2/server-status/"
       ],
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 1,
       "ctr": 0,
-      "position": 12
+      "position": 11
+    },
+    {
+      "keys": [
+        "server the division 2 status",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
     },
     {
       "keys": [
@@ -1406,9 +4376,69 @@
         "https://raigulus.github.io/division-2/server-status/"
       ],
       "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "show me today’s",
+        "https://raigulus.github.io/division-2/escalation/"
+      ],
+      "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 10
+      "position": 6
+    },
+    {
+      "keys": [
+        "si",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "si",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "si grazie",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "solo",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "solo",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
     },
     {
       "keys": [
@@ -1418,7 +4448,7 @@
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 17
+      "position": 8
     },
     {
       "keys": [
@@ -1426,93 +4456,53 @@
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 4,
       "ctr": 0,
-      "position": 6
+      "position": 5.25
     },
     {
       "keys": [
-        "steel & sons acr division 2",
-        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
-      ],
-      "clicks": 0,
-      "impressions": 13,
-      "ctr": 0,
-      "position": 5.615384615384615
-    },
-    {
-      "keys": [
-        "steel & sons division 2",
+        "steel & sons acr build",
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 4
+      "position": 4.5
     },
     {
       "keys": [
-        "steel and sons",
+        "steel & sons acr exotic rifle",
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 9,
       "ctr": 0,
-      "position": 8
+      "position": 5.888888888888889
     },
     {
       "keys": [
-        "steel and sons acr",
+        "steel & sons acr the division 2",
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
-      "impressions": 11,
+      "impressions": 5,
       "ctr": 0,
-      "position": 6.181818181818182
+      "position": 3.8
     },
     {
       "keys": [
-        "steel and sons acr blueprint",
+        "steel & sons the division 2",
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 5,
       "ctr": 0,
-      "position": 8
+      "position": 4.8
     },
     {
       "keys": [
-        "steel and sons acr build",
-        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 4
-    },
-    {
-      "keys": [
-        "steel and sons acr division 2",
-        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
-      ],
-      "clicks": 0,
-      "impressions": 79,
-      "ctr": 0,
-      "position": 5.962025316455696
-    },
-    {
-      "keys": [
-        "steel and sons acr division 2 drop rate",
-        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 10
-    },
-    {
-      "keys": [
-        "steel and sons build",
+        "steel and son",
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
@@ -1522,7 +4512,107 @@
     },
     {
       "keys": [
-        "steel and sons division 2",
+        "steel and son acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 4.153846153846153
+    },
+    {
+      "keys": [
+        "steel and son acr division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 35,
+      "ctr": 0,
+      "position": 4.8
+    },
+    {
+      "keys": [
+        "steel and son division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 37,
+      "ctr": 0,
+      "position": 5.324324324324325
+    },
+    {
+      "keys": [
+        "steel and sons",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 9.25
+    },
+    {
+      "keys": [
+        "steel and sons acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 289,
+      "ctr": 0,
+      "position": 5.301038062283737
+    },
+    {
+      "keys": [
+        "steel and sons acr build",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 52,
+      "ctr": 0,
+      "position": 5.634615384615385
+    },
+    {
+      "keys": [
+        "steel and sons acr div 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 5.833333333333333
+    },
+    {
+      "keys": [
+        "steel and sons acr division 2 build",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 4.8
+    },
+    {
+      "keys": [
+        "steel and sons acr division 2 drop rate",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 10.545454545454545
+    },
+    {
+      "keys": [
+        "steel and sons acr division 2 how to get",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 6.315789473684211
+    },
+    {
+      "keys": [
+        "steel and sons acr division 2 talent",
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
@@ -1532,13 +4622,113 @@
     },
     {
       "keys": [
-        "steel and sons exotic",
+        "steel and sons acr skin",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "keys": [
+        "steel and sons acr talent",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 6.625
+    },
+    {
+      "keys": [
+        "steel and sons ar",
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 7
+      "position": 6
+    },
+    {
+      "keys": [
+        "steel and sons blueprint",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "steel and sons build division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 41,
+      "ctr": 0,
+      "position": 7.682926829268292
+    },
+    {
+      "keys": [
+        "steel and sons div 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5.5
+    },
+    {
+      "keys": [
+        "steel and sons exotic",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 4.4
+    },
+    {
+      "keys": [
+        "steel and sons rifle",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 6.888888888888889
+    },
+    {
+      "keys": [
+        "steel and sons the division 2",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 6.6
+    },
+    {
+      "keys": [
+        "steel and suns acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 4.2
+    },
+    {
+      "keys": [
+        "steel sons",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
     },
     {
       "keys": [
@@ -1546,9 +4736,19 @@
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
+      "impressions": 41,
+      "ctr": 0,
+      "position": 5.341463414634147
+    },
+    {
+      "keys": [
+        "steels and sons",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 5
+      "position": 1
     },
     {
       "keys": [
@@ -1556,14 +4756,34 @@
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 32,
       "ctr": 0,
-      "position": 7
+      "position": 6.46875
     },
     {
       "keys": [
-        "the division 2 agitator",
-        "https://raigulus.github.io/division-2/exotics/agitator/"
+        "strikers",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "targeted loot division 2 today",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 5.875
+    },
+    {
+      "keys": [
+        "tem algum site",
+        "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
       "impressions": 1,
@@ -1572,18 +4792,178 @@
     },
     {
       "keys": [
-        "the division 2 build creator",
+        "the bagpack",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "the division 2 acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "the division 2 acr exotic",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5.333333333333333
+    },
+    {
+      "keys": [
+        "the division 2 agitator",
+        "https://raigulus.github.io/division-2/exotics/agitator/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 5.5
+    },
+    {
+      "keys": [
+        "the division 2 build calculator",
         "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 3,
       "ctr": 0,
       "position": 6
     },
     {
       "keys": [
-        "the division 2 caduceus how to get",
+        "the division 2 build creator",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 5.125
+    },
+    {
+      "keys": [
+        "the division 2 build simulator",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "the division 2 build website",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "the division 2 builder",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 36
+    },
+    {
+      "keys": [
+        "the division 2 builds tool",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "the division 2 caduceus",
         "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "the division 2 caduceus build",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "the division 2 cassie mendoza location today",
+        "https://raigulus.github.io/division-2/cassie-mendoza/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "the division 2 change targeted loot",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "the division 2 daily reset time",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "the division 2 echoes of central park map",
+        "https://raigulus.github.io/division-2/echoes-of-central-park/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 30
+    },
+    {
+      "keys": [
+        "the division 2 gear builder",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "the division 2 how to change targeted loot",
+        "https://raigulus.github.io/division-2/loot/"
       ],
       "clicks": 0,
       "impressions": 3,
@@ -1596,9 +4976,19 @@
         "https://raigulus.github.io/division-2/exotics/caduceus/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 5,
       "ctr": 0,
-      "position": 4
+      "position": 2.4
+    },
+    {
+      "keys": [
+        "the division 2 incursion reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1
     },
     {
       "keys": [
@@ -1608,27 +4998,17 @@
       "clicks": 0,
       "impressions": 6,
       "ctr": 0,
-      "position": 4.166666666666666
+      "position": 2.333333333333333
     },
     {
       "keys": [
-        "the division 2 planner",
-        "https://raigulus.github.io/division-2/build-maker/"
-      ],
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 4.666666666666666
-    },
-    {
-      "keys": [
-        "the division 2 prototype gear today",
-        "https://raigulus.github.io/division-2/prototype-gear/"
+        "the division 2 loot map",
+        "https://raigulus.github.io/division-2/loot/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 3
+      "position": 7
     },
     {
       "keys": [
@@ -1636,19 +5016,19 @@
         "https://raigulus.github.io/about/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 20
+      "position": 71.5
     },
     {
       "keys": [
         "the division 2 raigulus",
-        "https://raigulus.github.io/discord/"
+        "https://raigulus.github.io/diablo-4/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 42
+      "position": 37
     },
     {
       "keys": [
@@ -1656,9 +5036,9 @@
         "https://raigulus.github.io/division-2/build-maker/"
       ],
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 1,
       "ctr": 0,
-      "position": 51.5
+      "position": 47
     },
     {
       "keys": [
@@ -1668,47 +5048,27 @@
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 11
+      "position": 17
     },
     {
       "keys": [
         "the division 2 raigulus",
-        "https://raigulus.github.io/division-2/manhunts/"
+        "https://raigulus.github.io/division-2/server-status/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 59
+      "position": 61
     },
     {
       "keys": [
-        "the division 2 raigulus",
-        "https://raigulus.github.io/division-2/patches/broken-wings/"
+        "the division 2 sarru build",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 9,
       "ctr": 0,
-      "position": 66
-    },
-    {
-      "keys": [
-        "the division 2 reset",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 5
-    },
-    {
-      "keys": [
-        "the division 2 reset time",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 8,
-      "ctr": 0,
-      "position": 3.375
+      "position": 7.888888888888889
     },
     {
       "keys": [
@@ -1732,13 +5092,53 @@
     },
     {
       "keys": [
+        "the division 2 server reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
         "the division 2 server status",
         "https://raigulus.github.io/division-2/server-status/"
       ],
       "clicks": 0,
-      "impressions": 11,
+      "impressions": 54,
       "ctr": 0,
-      "position": 9.909090909090908
+      "position": 9.574074074074074
+    },
+    {
+      "keys": [
+        "the division 2 server status france",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 14
+    },
+    {
+      "keys": [
+        "the division 2 server status today",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "the division 2 servers",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
     },
     {
       "keys": [
@@ -1746,9 +5146,9 @@
         "https://raigulus.github.io/division-2/server-status/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 8,
       "ctr": 0,
-      "position": 16
+      "position": 9.875
     },
     {
       "keys": [
@@ -1756,9 +5156,19 @@
         "https://raigulus.github.io/division-2/server-status/"
       ],
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 1,
       "ctr": 0,
-      "position": 7.333333333333333
+      "position": 7
+    },
+    {
+      "keys": [
+        "the division 2 status",
+        "https://raigulus.github.io/division-2/server-status/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
     },
     {
       "keys": [
@@ -1766,9 +5176,19 @@
         "https://raigulus.github.io/division-2/server-status/"
       ],
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 1,
       "ctr": 0,
-      "position": 9.75
+      "position": 8
+    },
+    {
+      "keys": [
+        "the division 2 steel & sons",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 5.8
     },
     {
       "keys": [
@@ -1776,9 +5196,9 @@
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 20,
       "ctr": 0,
-      "position": 1
+      "position": 5.75
     },
     {
       "keys": [
@@ -1786,39 +5206,109 @@
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 16,
       "ctr": 0,
-      "position": 4
+      "position": 6.5
     },
     {
       "keys": [
-        "the division 2 steel and sons",
+        "the division 2 steel and sons acr how to get",
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 11,
       "ctr": 0,
-      "position": 5.333333333333333
+      "position": 6.181818181818182
     },
     {
       "keys": [
-        "the division 2 weekly reset",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 8,
-      "ctr": 0,
-      "position": 4.625
-    },
-    {
-      "keys": [
-        "today",
+        "the division 2 vendors",
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "the division 2 vertigo build",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "keys": [
+        "the division 2 weekly vendor reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "the division caduceus",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "they need to fix it",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "timer boss diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 7.6
+    },
+    {
+      "keys": [
+        "timer diablo 4",
+        "https://raigulus.github.io/diablo-4/event-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
       "position": 6
+    },
+    {
+      "keys": [
+        "timer diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "timer world boss diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 7.434782608695652
     },
     {
       "keys": [
@@ -1828,7 +5318,37 @@
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 23
+      "position": 9
+    },
+    {
+      "keys": [
+        "today lost sector",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6.25
+    },
+    {
+      "keys": [
+        "today's lost sector",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "todays lost sector",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6
     },
     {
       "keys": [
@@ -1842,7 +5362,7 @@
     },
     {
       "keys": [
-        "tuesday what time",
+        "uk",
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
@@ -1852,11 +5372,161 @@
     },
     {
       "keys": [
+        "unkillable tank",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "vertigo",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "vertigo blueprint division 2",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "vertigo build division 2",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 10.142857142857142
+    },
+    {
+      "keys": [
+        "vertigo exotic",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 14
+    },
+    {
+      "keys": [
+        "vertigo exotic division 2",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4.5
+    },
+    {
+      "keys": [
+        "vertigo lmg",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 5.8
+    },
+    {
+      "keys": [
+        "vertigo lmg division 2",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 6.555555555555555
+    },
+    {
+      "keys": [
+        "was aktuell",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "weekly lost sector destiny 2",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
         "weekly reset division 2",
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "weekly vendor reset division 2",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "weltboss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "weltboss timer diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 10.5
+    },
+    {
+      "keys": [
+        "what drops",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "what exotic",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
       "ctr": 0,
       "position": 1
     },
@@ -1872,21 +5542,61 @@
     },
     {
       "keys": [
+        "what is the best of the best",
+        "https://raigulus.github.io/division-2/build-maker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "what is the master lost sector today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 7.333333333333333
+    },
+    {
+      "keys": [
+        "what is the talent",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
         "what time does division 2 reset",
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 3,
       "ctr": 0,
-      "position": 1.6
+      "position": 3.3333333333333335
     },
     {
       "keys": [
-        "what time does it reset",
+        "what time in germany",
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
       "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "what time is daily reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
       "ctr": 0,
       "position": 2
     },
@@ -1896,7 +5606,7 @@
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
       "position": 1
     },
@@ -1906,19 +5616,29 @@
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 6,
       "ctr": 0,
-      "position": 4
+      "position": 3.1666666666666665
     },
     {
       "keys": [
-        "what time is reset",
-        "https://raigulus.github.io/division-2/reset/"
+        "when do helltides start diablo 4",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 2
+      "position": 6
+    },
+    {
+      "keys": [
+        "when do incursions reset division 2",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 3.7333333333333334
     },
     {
       "keys": [
@@ -1928,7 +5648,7 @@
       "clicks": 0,
       "impressions": 3,
       "ctr": 0,
-      "position": 4.666666666666666
+      "position": 4
     },
     {
       "keys": [
@@ -1936,53 +5656,13 @@
         "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
       ],
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 11,
       "ctr": 0,
-      "position": 3.75
+      "position": 3
     },
     {
       "keys": [
-        "when does division 2 reset",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 5
-    },
-    {
-      "keys": [
-        "when does division 2 reset",
-        "https://raigulus.github.io/division-cd/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1
-    },
-    {
-      "keys": [
-        "when does division 2 weekly reset",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 3.6666666666666665
-    },
-    {
-      "keys": [
-        "when does incursion reset division 2",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 7,
-      "ctr": 0,
-      "position": 4.428571428571429
-    },
-    {
-      "keys": [
-        "when does it change",
+        "when do weekly rush points reset",
         "https://raigulus.github.io/division-2/reset/"
       ],
       "clicks": 0,
@@ -1992,8 +5672,238 @@
     },
     {
       "keys": [
-        "when does it end",
+        "when does d2 weekly reset",
         "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "when does division 2 reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3.25
+    },
+    {
+      "keys": [
+        "when does incursion reset division 2",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "when does it refresh",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3.5
+    },
+    {
+      "keys": [
+        "when does it reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "when does it reset?",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 3.3333333333333335
+    },
+    {
+      "keys": [
+        "when does paradise lost reset division 2",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "when does the world boss spawn diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "when is division 2 weekly reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 2.3
+    },
+    {
+      "keys": [
+        "when is next world boss diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 38,
+      "ctr": 0,
+      "position": 8.605263157894736
+    },
+    {
+      "keys": [
+        "when is the division 2 weekly reset",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "when is the next diablo 4 world boss",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 8.529411764705882
+    },
+    {
+      "keys": [
+        "when is the next helltide",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6.25
+    },
+    {
+      "keys": [
+        "when is the next helltide diablo 4",
+        "https://raigulus.github.io/diablo-4/helltide-schedule/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 6.166666666666667
+    },
+    {
+      "keys": [
+        "when is the next world boss",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9.333333333333334
+    },
+    {
+      "keys": [
+        "when is the next world boss diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 9.181818181818182
+    },
+    {
+      "keys": [
+        "when is the next world boss in diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 79,
+      "ctr": 0,
+      "position": 9.075949367088608
+    },
+    {
+      "keys": [
+        "when is the next world boss spawn in diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 9.055555555555555
+    },
+    {
+      "keys": [
+        "when is weekly reset division 2",
+        "https://raigulus.github.io/division-2/reset/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 3.8
+    },
+    {
+      "keys": [
+        "when is world boss diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 9.5
+    },
+    {
+      "keys": [
+        "when will it be in rotation",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "where is cassie mendoza division 2 today",
+        "https://raigulus.github.io/division-2/cassie-mendoza/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "where is the master lost sector today",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 7.75
+    },
+    {
+      "keys": [
+        "where to get caduceus division 2",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
       ],
       "clicks": 0,
       "impressions": 1,
@@ -2002,77 +5912,307 @@
     },
     {
       "keys": [
-        "when does it reset?",
-        "https://raigulus.github.io/division-2/reset/"
+        "world boss countdown diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 8.428571428571429
+    },
+    {
+      "keys": [
+        "world boss counter diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "world boss d4 timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 50,
+      "ctr": 0,
+      "position": 9.7
+    },
+    {
+      "keys": [
+        "world boss diablo 4 time",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 7.75
+    },
+    {
+      "keys": [
+        "world boss diablo 4 timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 238,
+      "ctr": 0,
+      "position": 7.831932773109243
+    },
+    {
+      "keys": [
+        "world boss diablo 4 tracker",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 1
+      "position": 38
     },
     {
       "keys": [
-        "when does the incursion reset division 2",
-        "https://raigulus.github.io/division-2/reset/"
+        "world boss event",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
       ],
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 1,
       "ctr": 0,
-      "position": 4.375
+      "position": 10
     },
     {
       "keys": [
-        "when is division 2 weekly reset",
-        "https://raigulus.github.io/division-2/reset/"
+        "world boss schedule diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
       ],
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 21,
       "ctr": 0,
-      "position": 2.25
+      "position": 8.619047619047619
     },
     {
       "keys": [
-        "when is the division 2 weekly reset",
-        "https://raigulus.github.io/division-2/reset/"
+        "world boss spawn",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
       ],
       "clicks": 0,
-      "impressions": 9,
+      "impressions": 1,
       "ctr": 0,
-      "position": 2.333333333333333
+      "position": 10
     },
     {
       "keys": [
-        "when is the reset",
-        "https://raigulus.github.io/division-2/reset/"
+        "world boss spawn timer diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
       ],
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 13,
       "ctr": 0,
-      "position": 1
+      "position": 8.615384615384615
     },
     {
       "keys": [
-        "when is weekly reset",
-        "https://raigulus.github.io/division-2/reset/"
+        "world boss spawn times diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
       ],
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 19,
       "ctr": 0,
-      "position": 2.5
+      "position": 8.157894736842106
     },
     {
       "keys": [
-        "when is weekly reset division 2",
-        "https://raigulus.github.io/division-2/reset/"
+        "world boss time",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 9.25
+    },
+    {
+      "keys": [
+        "world boss timer",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 9.5
+    },
+    {
+      "keys": [
+        "world boss timer d4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 162,
+      "ctr": 0,
+      "position": 8.944444444444445
+    },
+    {
+      "keys": [
+        "world boss timer diablo iv",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 7.166666666666667
+    },
+    {
+      "keys": [
+        "world boss timers diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 8.1
+    },
+    {
+      "keys": [
+        "world boss times",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
       ],
       "clicks": 0,
       "impressions": 3,
       "ctr": 0,
-      "position": 2.666666666666667
+      "position": 10.333333333333334
+    },
+    {
+      "keys": [
+        "world boss times diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 9.25
+    },
+    {
+      "keys": [
+        "world boss tracker diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 31
+    },
+    {
+      "keys": [
+        "worldboss timer d4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 9.55
+    },
+    {
+      "keys": [
+        "worldboss timer diablo 4",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 8
     },
     {
       "keys": [
         "yes",
+        "https://raigulus.github.io/destiny-2/lost-sector-exotics/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3.5
+    },
+    {
+      "keys": [
+        "yes",
+        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "yes",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "давай",
+        "https://raigulus.github.io/division-2/loot/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "ความสามารถอะไร",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "はい",
+        "https://raigulus.github.io/division-2/exotics/sarru/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "スチール&サンズ acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 14
+    },
+    {
+      "keys": [
+        "スチール＆サンズ acr",
+        "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 16
+    },
+    {
+      "keys": [
+        "ディビジョン2 ヴァーティゴ",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 44
+    },
+    {
+      "keys": [
+        "斯蒂爾子嗣acr",
         "https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/"
       ],
       "clicks": 0,
@@ -2082,23 +6222,43 @@
     },
     {
       "keys": [
-        "yes",
-        "https://raigulus.github.io/division-2/reset/"
+        "時間",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 4
+      "position": 6
     },
     {
       "keys": [
-        "ディビジョン2 インカージョン リセット",
-        "https://raigulus.github.io/division-2/reset/"
+        "詳細",
+        "https://raigulus.github.io/division-2/exotics/vertigo/"
       ],
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 1
+    },
+    {
+      "keys": [
+        "디비전2 카두세우스",
+        "https://raigulus.github.io/division-2/exotics/caduceus/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "모르나?",
+        "https://raigulus.github.io/diablo-4/world-boss-timer/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
     }
   ],
   "responseAggregationType": "byPage"

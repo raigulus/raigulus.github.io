@@ -1,14 +1,14 @@
 # Raigulus SEO Denetim Raporu
 
-**Tarih:** 2026-09-28 17:08
+**Tarih:** 2026-10-05 17:33
 
 ## Özet
 
 | Kategori | Sayı |
 |----------|------|
 | Kırık Link | 7 |
-| Meta Tag Sorunu | 76 |
-| Schema Olan Sayfa | 457 |
+| Meta Tag Sorunu | 75 |
+| Schema Olan Sayfa | 465 |
 | Schema Olmayan Sayfa | 18 |
 
 ## Kırık Linkler
@@ -83,7 +83,7 @@
 - `division-2/videos/dark-zone-event-too-good-division-2-shorts/index.html`: No og:description tag found
 - `division-2/videos/they-thought-i-was-hacking-division-2-shorts/index.html`: No og:description tag found
 
-### Description Too Long (12 adet)
+### Description Too Long (9 adet)
 
 - `lore/locations/fort-detrick-extremis-malis/index.html`: Description is 165 chars (max 160)
 - `lore/events/hunted-albuquerque-operation/index.html`: Description is 162 chars (max 160)
@@ -92,22 +92,21 @@
 - `lore/people/wyvern-extremis-malis/index.html`: Description is 162 chars (max 160)
 - `lore/works/the-division-new-york-collapse/index.html`: Description is 162 chars (max 160)
 - `lore/works/the-division-compromised/index.html`: Description is 161 chars (max 160)
-- `division-2/videos/iron-will-aim-optional-the-division-2-talks/index.html`: Description is 165 chars (max 160)
-- `division-2/videos/how-to-unlock-and-beat-graziano-in-the-division-2/index.html`: Description is 165 chars (max 160)
-- `division-2/videos/they-brought-a-full-skill-build-we-brought-regulus/index.html`: Description is 165 chars (max 160)
+- `division-2/videos/flawless-solo-run-jefferson-plaza-escalation-tier/index.html`: Description is 163 chars (max 160)
+- `division-2/this-week/2026-09-29/index.html`: Description is 185 chars (max 160)
 
-### Title Too Long (17 adet)
+### Title Too Long (19 adet)
 
 - `lore/reading-order/index.html`: Title is 61 chars (max 60)
 - `lore/collectibles/td1-phone-recordings-keener-s-confession/index.html`: Title is 62 chars (max 60)
 - `lore/works/index.html`: Title is 61 chars (max 60)
 - `lore/works/the-division-extremis-malis/index.html`: Title is 62 chars (max 60)
 - `lore/works/the-division-new-york-collapse/index.html`: Title is 65 chars (max 60)
+- `division-2/index.html`: Title is 64 chars (max 60)
 - `division-2/patches/index.html`: Title is 64 chars (max 60)
 - `division-2/videos/nice-chicken-dance-division-2-shorts/index.html`: Title is 82 chars (max 60)
 - `division-2/videos/tipping-scales-whiplash-lmg-shorts/index.html`: Title is 64 chars (max 60)
 - `division-2/videos/toxic-dz-changed-division-2-shorts/index.html`: Title is 62 chars (max 60)
-- `division-2/videos/solo-tier-10-rogue-agents-lincoln-memorial-shorts/index.html`: Title is 77 chars (max 60)
 
 
 ## Schema Markup
