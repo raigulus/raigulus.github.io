@@ -33,16 +33,16 @@
       "item": "Masks"
     }
   ],
-  "last_updated": "2026-10-05 10:01",
-  "last_checked": "2026-10-05 11:05 UTC",
-  "parsed_at": "2026-10-05T11:05:09.853169+00:00",
+  "last_updated": "2026-10-05 13:30",
+  "last_checked": "2026-10-05 12:05 UTC",
+  "parsed_at": "2026-10-05T12:05:10.161844+00:00",
   "status": "ok",
-  "fetched_at": "2026-10-05T11:05:09.853169+00:00",
+  "fetched_at": "2026-10-05T12:05:10.161844+00:00",
   "next_expected_update": "Around 07:00 UTC",
   "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-10-05 11:05 UTC",
+  "vendor_highlights_checked": "2026-10-05 12:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
