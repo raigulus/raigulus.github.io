@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-07T10:05:12Z",
+  "generated_at": "2026-10-07T10:21:59Z",
   "stats": {
-    "total_guides": 466,
+    "total_guides": 467,
     "exotics": 79,
     "patches": 31
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "Escalation Tier 10 (Solo): Capitol Building – Prima",
+      "url": "https://raigulus.github.io/division-2/videos/escalation-tier-10-solo-capitol-building-prima-don/",
+      "youtube_url": "https://www.youtube.com/watch?v=4cYwkzsqwRk",
+      "thumbnail": "https://i.ytimg.com/vi/4cYwkzsqwRk/hqdefault.jpg",
+      "published_date": "2026-10-07",
+      "cluster": "escalation run",
+      "summary": "Solo Tier 10 Escalation on Capitol Building in The Division 2: flawless, never downed. Full Prima Donna + Iron Will + Aces & Eights build, cleared in 23:51.  No"
+    },
     {
       "title": "Flawless Solo Run: Jefferson Plaza Escalation Tier 10",
       "url": "https://raigulus.github.io/division-2/videos/flawless-solo-run-jefferson-plaza-escalation-tier/",
@@ -28,15 +37,6 @@
       "published_date": "2026-10-04",
       "cluster": "manhunt",
       "summary": "Knock out your Red Horizon Scout 6 objectives quickly by following this clean, interruption-free pathing guide.  This Division 2 mission run focuses on the spec"
-    },
-    {
-      "title": "Sarru Backpack Deep Dive | Division 2 Escalation Tier 10",
-      "url": "https://raigulus.github.io/division-2/videos/sarru-backpack-deep-dive-division-2-escalation-tie/",
-      "youtube_url": "https://www.youtube.com/watch?v=4Kzp9_nAbU8",
-      "thumbnail": "https://i.ytimg.com/vi/4Kzp9_nAbU8/hqdefault.jpg",
-      "published_date": "2026-10-02",
-      "cluster": "escalation run",
-      "summary": "Saru Exotic Backpack Worth It? I tested the Decoy King talent in The Division 2 Red Moon Rising update. Saru gives 5% to 25% damage based on the moon cycle and"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-10-07 10:05 UTC"
+    "last_checked": "2026-10-07 10:21 UTC"
   },
   "discord_members": 55,
   "next_reset_utc": "2026-10-08T07:00:00Z"
