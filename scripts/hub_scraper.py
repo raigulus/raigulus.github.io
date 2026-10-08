@@ -365,9 +365,16 @@ def build_hub_entry(
     with_location = sum(1 for c in comms if c.get("location"))
 
     cat_label = category.replace("-", " ").title()
+    titles = [c.get("title", "").strip() for c in comms if c.get("title", "").strip()]
+    if len(titles) > 3:
+        listed = ", ".join(titles[:3]) + f", and {len(titles) - 3} more"
+    elif titles:
+        listed = ", ".join(titles)
+    else:
+        listed = "the full set"
     summary = (
         f"A collection of {total} {cat_label.lower()} from The Division universe, "
-        f"scraped from the Fandom wiki hub page. "
+        f"including {listed}. "
         f"{with_transcript} entries include full audio transcripts; "
         f"{with_location} have known map locations."
     )

@@ -84,6 +84,7 @@ def head(title, description, canonical, schema_type="Article"):
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d11">
   <title>{esc(title)} | Raigulus Lore</title>
   <meta name="description" content="{esc(description)}">
   <link rel="canonical" href="{esc(canonical)}">
@@ -262,6 +263,27 @@ def render_entry(entry, entries_by_id, sources_by_id):
       <ol class="source-list">{''.join(sources)}</ol>
     </section>
     <aside class="review-note"><strong>Editorial status:</strong> {esc(verification.get('notes', ''))}</aside>
+    <section class="section">
+      <div class="content">
+        <h2>Comments</h2>
+        <script src="https://giscus.app/client.js"
+                data-repo="raigulus/raigulus.github.io"
+                data-repo-id="R_kgDOS0xxMw"
+                data-category="General"
+                data-category-id="DIC_kwDOS0xxM84DGN2n"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="bottom"
+                data-theme="dark"
+                data-lang="en"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+      </div>
+    </section>
   </article>
 </main>
 {footer()}
@@ -343,6 +365,27 @@ def render_index(entries):
     <div class="guide-search" data-guide-search><input type="search" data-guide-search-input placeholder="Search the lore archive" aria-label="Search the lore archive"><span data-guide-search-count></span></div>
     {''.join(group_blocks)}
   </section>
+<section class="section">
+  <div class="content">
+    <h2>Comments</h2>
+    <script src="https://giscus.app/client.js"
+            data-repo="raigulus/raigulus.github.io"
+            data-repo-id="R_kgDOS0xxMw"
+            data-category="General"
+            data-category-id="DIC_kwDOS0xxM84DGN2n"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="dark"
+            data-lang="en"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+</section>
 </main>
 <script src="/assets/search.js" defer></script>
 {footer()}
@@ -366,6 +409,27 @@ def render_section_index(section, entries):
   <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/lore/">Lore</a> / <span>{esc(label)}</span></nav>
   <section class="lore-index-hero category-hero"><p class="eyebrow">Lore category</p><h1>{esc(title)}</h1><p>{esc(description)}</p><div class="archive-stats"><span><strong>{len(entries)}</strong>structured {record_word}</span></div></section>
   <section class="lore-index-section"><div class="guide-search" data-guide-search><input type="search" data-guide-search-input placeholder="Search {esc(label.lower())}" aria-label="Search {esc(label.lower())}"><span data-guide-search-count></span></div><div class="lore-grid">{cards}</div></section>
+<section class="section">
+  <div class="content">
+    <h2>Comments</h2>
+    <script src="https://giscus.app/client.js"
+            data-repo="raigulus/raigulus.github.io"
+            data-repo-id="R_kgDOS0xxMw"
+            data-category="General"
+            data-category-id="DIC_kwDOS0xxM84DGN2n"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="dark"
+            data-lang="en"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+</section>
 </main>
 <script src="/assets/search.js" defer></script>
 {footer()}
@@ -397,6 +461,27 @@ def render_editorial_page(page):
     <header class="lore-hero"><p class="eyebrow">{esc(page['eyebrow'])}</p><h1>{esc(page['title'])}</h1><p class="lede">{esc(page['description'])}</p>{action}</header>
     {''.join(sections)}
   </article>
+<section class="section">
+  <div class="content">
+    <h2>Comments</h2>
+    <script src="https://giscus.app/client.js"
+            data-repo="raigulus/raigulus.github.io"
+            data-repo-id="R_kgDOS0xxMw"
+            data-category="General"
+            data-category-id="DIC_kwDOS0xxM84DGN2n"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="dark"
+            data-lang="en"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+</section>
 </main>
 {footer()}
 </body>
@@ -449,6 +534,27 @@ def render_coverage(entries, inventories):
     <section class="lore-section"><h2>Structured record status</h2><div class="table-scroll"><table class="comparison-table compact-table"><thead><tr><th>Status</th><th>Records</th></tr></thead><tbody>{record_rows}</tbody></table></div></section>
     {''.join(inventory_blocks)}
   </article>
+<section class="section">
+  <div class="content">
+    <h2>Comments</h2>
+    <script src="https://giscus.app/client.js"
+            data-repo="raigulus/raigulus.github.io"
+            data-repo-id="R_kgDOS0xxMw"
+            data-category="General"
+            data-category-id="DIC_kwDOS0xxM84DGN2n"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="dark"
+            data-lang="en"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+</section>
 </main>
 {footer()}
 </body>
@@ -486,6 +592,27 @@ def render_review_queue(entries, inventories):
     <section class="lore-section"><h2>Records awaiting approval</h2><ul class="review-queue">{entry_items or '<li>No records currently await review.</li>'}</ul></section>
     <section class="lore-section"><h2>Coverage still being inventoried</h2><ul class="review-queue">{inventory_items or '<li>All inventories are reconciled.</li>'}</ul></section>
   </article>
+<section class="section">
+  <div class="content">
+    <h2>Comments</h2>
+    <script src="https://giscus.app/client.js"
+            data-repo="raigulus/raigulus.github.io"
+            data-repo-id="R_kgDOS0xxMw"
+            data-category="General"
+            data-category-id="DIC_kwDOS0xxM84DGN2n"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="dark"
+            data-lang="en"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+</section>
 </main>
 {footer()}
 </body>
@@ -527,6 +654,27 @@ def render_timeline(entries, sources_by_id):
     <header class="lore-hero"><p class="eyebrow">The Division 2 story chronology</p><h1>{esc(title)}</h1><p class="lede">Use this source-led Division 2 lore timeline for the Washington campaign, Year One Episodes, Warlords of New York and connected official transmedia. Exact dates are shown only when a source establishes them. Relative sequence is labelled rather than converted into invented calendar dates; same-position, sequence-only records may overlap or be grouped without asserting a fixed internal order.</p></header>
     <section class="lore-section"><ol class="lore-timeline">{''.join(items) or empty}</ol></section>
   </article>
+<section class="section">
+  <div class="content">
+    <h2>Comments</h2>
+    <script src="https://giscus.app/client.js"
+            data-repo="raigulus/raigulus.github.io"
+            data-repo-id="R_kgDOS0xxMw"
+            data-category="General"
+            data-category-id="DIC_kwDOS0xxM84DGN2n"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="dark"
+            data-lang="en"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+</section>
 </main>
 {footer()}
 </body>
@@ -572,6 +720,27 @@ def render_reading_order(reading_order, entries_by_id, sources_by_id):
     <section class="lore-section"><p>{esc(reading_order['intro'])}</p></section>
     {''.join(groups)}
   </article>
+<section class="section">
+  <div class="content">
+    <h2>Comments</h2>
+    <script src="https://giscus.app/client.js"
+            data-repo="raigulus/raigulus.github.io"
+            data-repo-id="R_kgDOS0xxMw"
+            data-category="General"
+            data-category-id="DIC_kwDOS0xxM84DGN2n"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="dark"
+            data-lang="en"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+</section>
 </main>
 {footer()}
 </body>
@@ -601,6 +770,27 @@ def render_sources(sources):
     <header class="lore-hero"><p class="eyebrow">Provenance</p><h1>Lore Source Registry</h1><p class="lede">Every source used by a published lore claim is registered here with its authority and scope.</p></header>
     <section class="lore-section"><div class="table-scroll"><table class="comparison-table"><thead><tr><th>Source</th><th>Publisher</th><th>Type</th><th>Scope</th><th>Accessed</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div></section>
   </article>
+<section class="section">
+  <div class="content">
+    <h2>Comments</h2>
+    <script src="https://giscus.app/client.js"
+            data-repo="raigulus/raigulus.github.io"
+            data-repo-id="R_kgDOS0xxMw"
+            data-category="General"
+            data-category-id="DIC_kwDOS0xxM84DGN2n"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="dark"
+            data-lang="en"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+</section>
 </main>
 {footer()}
 </body>
