@@ -53,7 +53,7 @@ HUB_LINKS = {
     ],
     "manhunt": [
         ("/division-2/manhunts/", "Manhunt weekly hub"),
-        ("/division-2/bosses/", "Boss guides hub"),
+        ("/division-2/patches/#bosses", "Boss guides hub"),
     ],
     "pvp/archive clip": [
         ("/division-2/pvp/", "Conflict PvP hub"),
@@ -341,7 +341,7 @@ def render_page(record: dict, records: list[dict]) -> str:
       <a href="/division-2/escalation/">Escalation</a>
       <a href="/division-2/dark-zone-surge/">Dark Zone</a>
       <a href="/division-2/manhunts/">Manhunts</a>
-      <a href="/division-2/bosses/">Bosses</a>
+      <a href="/division-2/patches/#bosses">Bosses</a>
       <a href="/division-2/incursions-raids/">Incursions &amp; Raids</a>
       <a href="/division-2/pvp/">PvP</a>
       <a href="/lore/">Lore</a>
