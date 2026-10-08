@@ -471,6 +471,8 @@ LD_RE = re.compile(r'(<script type="application/ld\+json">)(.*?)(</script>)', re
 
 def update_itemlists(content: str, new_records: list[dict]) -> tuple[str, int]:
     """Insert new records at position 1 of every ItemList JSON-LD block."""
+    if not new_records:
+        return content, 0
     inserted = 0
 
     def repl(match):
@@ -498,6 +500,43 @@ def update_itemlists(content: str, new_records: list[dict]) -> tuple[str, int]:
     return LD_RE.sub(repl, content), inserted
 
 
+def hub_card(rec: dict) -> str:
+    """Render one hub video card. Accepts internal records (with _summary) and public videos.json rows.
+
+    Public rows in videos.json may lack optional fields (mission, tags), so every
+    non-essential field falls back to a safe default instead of raising KeyError.
+    """
+    summary = rec.get("_summary") or rec.get("summary") or ""
+    mission = rec.get("mission") or ""
+    cluster = rec.get("cluster") or ""
+    title = rec.get("title") or ""
+    url = rec["url"].replace(BASE_URL, "")
+    vid = rec["youtube_url"].split("v=")[-1]
+    short = mission.split(" Y8S")[0].split(" Week")[0][:28]
+    tags = rec.get("tags") or []
+    search_blob = esc(" ".join([
+        title, summary, mission, cluster,
+        rec.get("difficulty") or "", rec.get("target") or "", *tags,
+    ])).replace("'", "&#x27;")
+    meta = rec.get("published_date") or ""
+    meta_bits = f'<time datetime="{meta}">{meta}</time>'
+    if mission:
+        meta_bits += f" <span>/</span> {esc(mission)}"
+    return f'''<article class="video-card" data-c="special" data-search-card data-search="{search_blob}">
+  <a class="thumb" href="{url}">
+    <span class="thumb-ph">{esc(short)}</span>
+    <img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="{esc(title)} thumbnail" loading="lazy">
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">{esc(cluster)}</p>
+    <h2><a href="{url}">{esc(title)}</a></h2>
+    <p>{esc(summary)}</p>
+    <p class="meta">{meta_bits}</p>
+  </div>
+</article>
+'''
+
+
 def update_hub_page(records_new: list[dict], all_records: list[dict]) -> None:
     path = ROOT / "division-2" / "index.html"
     content = path.read_text(encoding="utf-8")
@@ -507,27 +546,26 @@ def update_hub_page(records_new: list[dict], all_records: list[dict]) -> None:
     idx = content.find(anchor)
     if idx == -1:
         raise SystemExit("hub card anchor not found")
-    cards = []
-    for rec in records_new:
-        vid = rec["youtube_url"].split("v=")[-1]
-        short = rec["mission"].split(" Y8S")[0].split(" Week")[0][:28]
-        search_blob = esc(" ".join([
-            rec["title"], rec["_summary"], rec["mission"], rec["cluster"],
-            rec.get("difficulty", ""), rec.get("target", ""), *rec["tags"],
-        ])).replace("'", "&#x27;")
-        cards.append(f'''<article class="video-card" data-c="special" data-search-card data-search="{search_blob}">
-  <a class="thumb" href="{rec['url']}">
-    <span class="thumb-ph">{esc(short)}</span>
-    <img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="{esc(rec['title'])} thumbnail" loading="lazy">
-  </a>
-  <div class="card-body">
-    <p class="eyebrow">{esc(rec['cluster'])}</p>
-    <h2><a href="{rec['url']}">{esc(rec['title'])}</a></h2>
-    <p>{esc(rec['_summary'])}</p>
-    <p class="meta"><time datetime="{rec['published_date']}">{rec['published_date']}</time> <span>/</span> {esc(rec['mission'])}</p>
-  </div>
-</article>
-''')
+
+    linked = {
+        raw.replace(BASE_URL, "").rstrip("/") + "/"
+        for raw in re.findall(r'href="([^"]*?/division-2/videos/[^"#]*)"', content)
+    }
+    missing = []
+    for rec in all_records:
+        url = rec["url"].replace(BASE_URL, "")
+        if url in linked:
+            continue
+        page = ROOT / "division-2" / "videos" / url.rstrip("/").split("/")[-1] / "index.html"
+        if not page.exists() or "This page has moved" in page.read_text(encoding="utf-8"):
+            continue
+        missing.append(rec)
+    missing.sort(key=lambda r: r["published_date"], reverse=True)
+
+    cards = [hub_card(rec) for rec in reversed(records_new)]
+    cards += [hub_card(rec) for rec in missing]
+    if missing:
+        print(f"HUB backfill: {len(missing)} video card(s) added")
     content = content[:idx] + "<div class=\"grid\">" + "".join(cards) + content[idx + len("<div class=\"grid\">"):]
 
     # 2. JSON-LD ItemLists.
