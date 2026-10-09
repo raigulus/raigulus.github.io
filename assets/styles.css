@@ -25,46 +25,38 @@ body{
 }
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .site-header{
-  position:relative;
-  top:auto;
-  z-index:50;
-  height:80px;
-  max-width:1600px;
+  position:static;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height:auto;
+  max-width:1200px;
   margin:0 auto;
-  padding:0 42px;
-  background:rgba(23,24,22,.95);
-  border-bottom:1px solid rgba(232,224,207,.14);
-  backdrop-filter:blur(14px)
+  padding:28px 24px 0;
+  background:transparent;
+  border-bottom:none;
+  backdrop-filter:none
 }
 .brand{
   color:var(--archive-paper-bright);
   font-size:23px;
   letter-spacing:.24em
 }
-.site-header nav{gap:4px;overflow-x:auto;scrollbar-width:none}
+.site-header nav{display:flex;align-items:center;gap:28px;overflow-x:auto;scrollbar-width:none}
 .site-header nav::-webkit-scrollbar{display:none}
 .site-header nav a{
-  flex:0 0 auto;
-  position:relative;
-  padding:29px 10px 27px;
+  flex:none;
+  padding:0;
   border-radius:0;
-  color:#d9d0be;
-  font-size:11px;
+  font-size:12px;
+  font-weight:500;
+  letter-spacing:.04em;
+  color:rgba(237,240,244,.5);
   transition:color .18s
 }
-.site-header nav a:hover{color:var(--archive-paper-bright);background:transparent}
-.site-header nav a::after{
-  content:"";
-  position:absolute;
-  height:2px;
-  left:10px;
-  right:100%;
-  bottom:18px;
-  background:var(--archive-orange);
-  transition:right .18s ease
-}
-.site-header nav a:hover::after,.site-header nav a:focus-visible::after{right:10px}
-.site-header nav a:last-child{color:var(--archive-orange)}
+.site-header nav a:hover{color:#edf0f4;background:transparent}
+.site-header nav a::after{display:none}
+.site-header nav a:last-child{color:rgba(237,240,244,.5)}
 .archive-hero{
   display:grid;
   grid-template-columns:minmax(0,1fr) 315px;
@@ -428,8 +420,6 @@ body.theme-assassins-creed .archive-notes{
   .site-header{height:auto;min-height:72px;align-items:center;flex-direction:row;padding:18px 22px 10px}
   .site-header nav{width:auto;max-width:70vw}
   .site-header nav a:not(:last-child){display:block}
-  .site-header nav a{padding:12px 8px 16px}
-  .site-header nav a::after{bottom:7px}
   .archive-hero{grid-template-columns:1fr}
   .archive-paper{min-height:650px}
   .archive-notes{display:grid;grid-template-columns:1fr;gap:0}
@@ -437,7 +427,7 @@ body.theme-assassins-creed .archive-notes{
 }
 @media(max-width:620px){
   .brand{font-size:19px}
-  .site-header{align-items:flex-start;flex-direction:column}
+  .site-header{align-items:flex-start;flex-direction:column;gap:16px;padding:20px 16px 0}
   .site-header nav{width:100%;max-width:none}
   .archive-hero{margin:14px 10px 0}
   .archive-paper{min-height:630px;padding:30px 20px 38px;clip-path:polygon(0 0,calc(100% - 24px) 0,100% 24px,100% 100%,0 100%)}
