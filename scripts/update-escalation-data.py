@@ -23,6 +23,11 @@ DAILY_SNAPSHOT_GRACE_MINUTES = 20
 VENDOR_REFRESH_INTERVAL_HOURS = 12
 DIVISION2_STATUS_SOURCE_LABEL = "Official Ubisoft service status"
 DIVISION2_STATUS_SOURCE_URL = "https://ubistatic-a.akamaihd.net/0115/tctd2/status.html"
+# Targeted-loot data is pulled from the community feed behind
+# ESCALATION_PRIMARY_SOURCE_URL. The feed owner asked for a visible on-page
+# credit, so it is rendered into every page that displays the snapshot.
+LOOT_DATA_SOURCE_URL = "https://prototrack.gg"
+LOOT_DATA_SOURCE_LABEL = "ProtoTrack.gg"
 DIVISION2_STATUS_API_URL = (
     "https://public-ubiservices.ubi.com/v1/applications/gameStatuses?"
     "applicationIds=6c6b8cd7-d901-4cd5-8279-07ba92088f06,"
@@ -525,6 +530,7 @@ def render_live_html(data, marker, heading, intro, mission_heading, cache_headin
           <tr><th>Expected update window</th><td>{esc(data.get('next_expected_update') or 'Around 07:00 UTC')}</td></tr>
           {note_row}
           <tr><th>Snapshot</th><td>Automated daily loot check</td></tr>
+          <tr><th>Loot data source</th><td><a href="{esc(LOOT_DATA_SOURCE_URL)}" rel="nofollow noopener">{esc(LOOT_DATA_SOURCE_LABEL)}</a></td></tr>
         </table>
         <h2>{esc(mission_heading)}</h2>
         <table class="facts">{mission_rows}</table>
