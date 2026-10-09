@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-09T16:05:14Z",
+  "generated_at": "2026-10-09T16:58:07Z",
   "stats": {
-    "total_guides": 467,
+    "total_guides": 468,
     "exotics": 79,
     "patches": 31
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "\"I shot him first bro\" 😂 Division 2 Conflict",
+      "url": "https://raigulus.github.io/division-2/videos/i-shot-him-first-bro-division-2-conflict/",
+      "youtube_url": "https://www.youtube.com/watch?v=c-Ch0ap4Cos",
+      "thumbnail": "https://i.ytimg.com/vi/c-Ch0ap4Cos/hqdefault.jpg",
+      "published_date": "2026-10-09",
+      "cluster": "pvp/archive clip",
+      "summary": "He said \"Rai, I shot him first bro\" while I was already laughing... then I blew the smoke off my Regulus and finished the job. Boom boom, I don't think so. 💨  T"
+    },
     {
       "title": "Escalation Tier 10 (Solo): Capitol Building – Prima",
       "url": "https://raigulus.github.io/division-2/videos/escalation-tier-10-solo-capitol-building-prima-don/",
@@ -28,15 +37,6 @@
       "published_date": "2026-10-04",
       "cluster": "escalation run",
       "summary": "Solo Tier 10 Escalation on Jefferson Plaza in The Division 2: 13:21, flawless, no weapon swaps. Full Prima Donna + Iron Will + Aces & Eights build, 88 kills at"
-    },
-    {
-      "title": "The Division 2: Red Horizon Scout 6 Manhunt Guide (No",
-      "url": "https://raigulus.github.io/division-2/videos/the-division-2-red-horizon-scout-6-manhunt-guide-n/",
-      "youtube_url": "https://www.youtube.com/watch?v=zvFw1sir-Vs",
-      "thumbnail": "https://i.ytimg.com/vi/zvFw1sir-Vs/hqdefault.jpg",
-      "published_date": "2026-10-04",
-      "cluster": "manhunt",
-      "summary": "Knock out your Red Horizon Scout 6 objectives quickly by following this clean, interruption-free pathing guide.  This Division 2 mission run focuses on the spec"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-10-09 16:05 UTC"
+    "last_checked": "2026-10-09 16:58 UTC"
   },
   "discord_members": 54,
   "next_reset_utc": "2026-10-10T07:00:00Z"
