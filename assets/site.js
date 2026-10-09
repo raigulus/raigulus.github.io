@@ -76,12 +76,19 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var n = 0; n < navs.length; n++) {
     (function (nav) {
       if (nav.scrollWidth <= nav.clientWidth + 1) return;
-      var EDGE = 90;
+var EDGE = 90;
       var RAMP = 300;
       // RAMP exceeds EDGE, so speed is capped at MAX * (EDGE / RAMP) - MAX itself is
-// never reached. Raise MAX to raise the actual top speed.
+      // never reached. Raise MAX to raise the actual top speed.
       var MAX = 240;
+      // Once scrolling starts it must survive the pointer leaving the EDGE band. Without
+      // this, hand tremor or a nudge toward a link zeroes `next`, kills dir and the nav
+      // freezes mid-slide. GRACE is the coasting window; hold carries the peak speed so
+      // the decay is smooth instead of stuttering with every pixel of pointer movement.
+      var GRACE = 350;
       var dir = 0;
+      var hold = 0;
+      var coast = 0;
       var lastX = 0;
       var lastT = 0;
       var raf = null;
@@ -89,29 +96,53 @@ document.addEventListener("DOMContentLoaded", function () {
       function tick(now) {
         raf = null;
         if (!dir) { lastT = 0; return; }
-        var dt = lastT ? Math.min((now - lastT) / 1000, 0.05) : 0.016;
+        var elapsed = lastT ? now - lastT : 16;
+        var dt = Math.min(elapsed / 1000, 0.05);
         lastT = now;
         var r = nav.getBoundingClientRect();
         var fromEdge = dir > 0 ? r.right - lastX : lastX - r.left;
         var speed = MAX * Math.min(1, Math.max(0, (EDGE - fromEdge) / RAMP));
-        if (speed <= 1) { dir = 0; lastT = 0; return; }
+        if (speed > hold) hold = speed;
+        var coasting = speed <= 1;
+        if (coasting) {
+          // The budget must accumulate across frames: elapsed is a single-frame delta,
+          // so testing GRACE against it directly never expires and the slide creeps
+          // toward zero forever instead of stopping.
+          coast += elapsed;
+          if (coast >= GRACE || hold <= 1) { dir = 0; lastT = 0; hold = 0; coast = 0; return; }
+          speed = hold * (1 - coast / GRACE);
+        } else {
+          coast = 0;
+        }
         var before = nav.scrollLeft;
         nav.scrollLeft += dir * speed * dt;
-        if (nav.scrollLeft !== before) raf = requestAnimationFrame(tick);
-        else { dir = 0; lastT = 0; }
+        // While coasting the remaining step shrinks below a pixel and scrollLeft stops
+        // reporting a change, which would abort the slide early, so only the endpoint test
+        // is allowed to end a non-coasting run.
+        if (coasting || nav.scrollLeft !== before) raf = requestAnimationFrame(tick);
+        else { dir = 0; lastT = 0; hold = 0; }
       }
 
+      // next === 0 means the pointer left the EDGE band. Clearing dir there killed the
+      // slide on the first pixel of tremor, so an in-progress run is left alive for
+      // tick() to coast down; only a real reversal or a fresh engagement resets it.
       nav.addEventListener("mousemove", function (e) {
         lastX = e.clientX;
         var r = nav.getBoundingClientRect();
         var next = r.right - lastX < EDGE ? 1 : (lastX - r.left < EDGE ? -1 : 0);
-        if (next === dir) return;
-        dir = next;
-        lastT = 0;
-        if (dir && !raf) raf = requestAnimationFrame(tick);
+        if (next) {
+          if (next !== dir) {
+            dir = next;
+            lastT = 0;
+            hold = 0;
+          }
+          if (!raf) raf = requestAnimationFrame(tick);
+        } else if (!dir) {
+          lastT = 0;
+        }
       });
 
-      nav.addEventListener("mouseleave", function () { dir = 0; lastT = 0; });
+      nav.addEventListener("mouseleave", function () { dir = 0; lastT = 0; hold = 0; });
     })(navs[n]);
   }
 });
