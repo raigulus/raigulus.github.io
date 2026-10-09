@@ -78,7 +78,9 @@ document.addEventListener("DOMContentLoaded", function () {
       if (nav.scrollWidth <= nav.clientWidth + 1) return;
       var EDGE = 90;
       var RAMP = 300;
-      var MAX = 180;
+      // RAMP exceeds EDGE, so speed is capped at MAX * (EDGE / RAMP) - MAX itself is
+// never reached. Raise MAX to raise the actual top speed.
+      var MAX = 240;
       var dir = 0;
       var lastX = 0;
       var lastT = 0;
