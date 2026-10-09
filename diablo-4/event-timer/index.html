@@ -99,31 +99,40 @@
 
         <h2>Active Events</h2>
         <div class="grid">
-          <article class="video-card" data-c="special">
+          <article class="video-card" data-c="special" data-timer="helltide"
+                   data-cycle="60" data-duration="55"
+                   data-active-label="ACTIVE NOW" data-warn-label="Ends in"
+                   data-idle-label="Starts in" data-info-idle="Spawns every hour, lasts 55 minutes">
             <div class="card-body">
               <p class="eyebrow">Helltide</p>
-              <h2 id="helltide-status">Loading...</h2>
-              <div id="helltide-countdown" style="font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 700; color: #ff6b35; margin: 16px 0;">--:--:--</div>
-              <p id="helltide-info">Spawns every hour, lasts 55 minutes</p>
-              <p class="meta"><span id="helltide-next">Next: Loading...</span></p>
+              <h2 data-timer-field="status">Loading...</h2>
+              <div data-timer-field="countdown" style="font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 700; color: #ff6b35; margin: 16px 0;">--:--:--</div>
+              <p data-timer-field="info">Spawns every hour, lasts 55 minutes</p>
+              <p class="meta"><span data-timer-field="next">Next: Loading...</span></p>
             </div>
           </article>
-          <article class="video-card" data-c="special">
+          <article class="video-card" data-c="special" data-timer="world-boss"
+                   data-cycle="210" data-duration="15" data-warn-before="30"
+                   data-active-label="SPAWNED" data-warn-label="Kill within"
+                   data-idle-label="Spawns in" data-info-idle="Spawns every 3.5 hours, lasts 15 minutes">
             <div class="card-body">
               <p class="eyebrow">World Boss</p>
-              <h2 id="world-boss-status">Loading...</h2>
-              <div id="world-boss-countdown" style="font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 700; color: #ff355e; margin: 16px 0;">--:--:--</div>
-              <p id="world-boss-info">Spawns every 3.5 hours, lasts 15 minutes</p>
-              <p class="meta"><span id="world-boss-next">Next: Loading...</span></p>
+              <h2 data-timer-field="status">Loading...</h2>
+              <div data-timer-field="countdown" style="font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 700; color: #ff355e; margin: 16px 0;">--:--:--</div>
+              <p data-timer-field="info">Spawns every 3.5 hours, lasts 15 minutes</p>
+              <p class="meta"><span data-timer-field="next">Next: Loading...</span></p>
             </div>
           </article>
-          <article class="video-card" data-c="special">
+          <article class="video-card" data-c="special" data-timer="legion"
+                   data-cycle="25" data-duration="4"
+                   data-active-label="ACTIVE NOW" data-warn-label="Ends in"
+                   data-idle-label="Starts in" data-info-idle="Spawns every 25 minutes, lasts 4 minutes">
             <div class="card-body">
               <p class="eyebrow">Legion Event</p>
-              <h2 id="legion-status">Loading...</h2>
-              <div id="legion-countdown" style="font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 700; color: #35ff6b; margin: 16px 0;">--:--:--</div>
-              <p id="legion-info">Spawns every 25 minutes, lasts 4 minutes</p>
-              <p class="meta"><span id="legion-next">Next: Loading...</span></p>
+              <h2 data-timer-field="status">Loading...</h2>
+              <div data-timer-field="countdown" style="font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 700; color: #35ff6b; margin: 16px 0;">--:--:--</div>
+              <p data-timer-field="info">Spawns every 25 minutes, lasts 4 minutes</p>
+              <p class="meta"><span data-timer-field="next">Next: Loading...</span></p>
             </div>
           </article>
         </div>
@@ -253,69 +262,7 @@
     <p><a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="https://www.instagram.com/raigulus/">Instagram @raigulus</a> <span>/</span> <a href="https://www.facebook.com/raigulus/">Facebook</a> <span>/</span> <a href="/discord/">Discord</a> <span>/</span> <a href="/feedback/">Feedback</a></p>
   </footer>
   <script>
-    // Diablo 4 Event Timer - Client-side calculation
-    (function() {
-      // Diablo 4 event cycles (deterministic from epoch)
-      var HELLTIDE_CYCLE_MS = 60 * 60 * 1000; // 1 hour
-      var HELLTIDE_DURATION_MS = 55 * 60 * 1000; // 55 minutes
-      var WORLD_BOSS_CYCLE_MS = 3.5 * 60 * 60 * 1000; // 3.5 hours
-      var WORLD_BOSS_DURATION_MS = 15 * 60 * 1000; // 15 minutes
-      var LEGION_CYCLE_MS = 25 * 60 * 1000; // 25 minutes
-      var LEGION_DURATION_MS = 4 * 60 * 1000; // 4 minutes
-
-      // Fixed epoch for deterministic calculations (Diablo 4 launch)
-      var EPOCH = new Date(Date.UTC(2023, 5, 6, 17, 0, 0)); // June 6, 2023 17:00 UTC
-
-      function formatTime(ms) {
-        if (ms <= 0) return "NOW";
-        var hours = Math.floor(ms / (1000 * 60 * 60));
-        var minutes = Math.floor((ms % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((ms % (1000 * 60)) / 1000);
-        return hours + ":" + (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
-      }
-
-      function getNextEvent(cycleMs, durationMs) {
-        var now = new Date();
-        var elapsed = now.getTime() - EPOCH.getTime();
-        var cyclePosition = elapsed % cycleMs;
-        var nextStart = now.getTime() + (cycleMs - cyclePosition);
-        var nextEnd = nextStart + durationMs;
-        return {
-          nextStart: new Date(nextStart),
-          nextEnd: new Date(nextEnd),
-          isActive: cyclePosition < durationMs,
-          timeUntilStart: cycleMs - cyclePosition,
-          timeUntilEnd: durationMs - cyclePosition
-        };
-      }
-
-      function updateTimers() {
-        // Helltide
-        var helltide = getNextEvent(HELLTIDE_CYCLE_MS, HELLTIDE_DURATION_MS);
-        document.getElementById("helltide-status").textContent = helltide.isActive ? "ACTIVE NOW" : "Inactive";
-        document.getElementById("helltide-countdown").textContent = helltide.isActive ? formatTime(helltide.timeUntilEnd) : formatTime(helltide.timeUntilStart);
-        document.getElementById("helltide-info").textContent = helltide.isActive ? "Ends in " + formatTime(helltide.timeUntilEnd) : "Starts in " + formatTime(helltide.timeUntilStart);
-        document.getElementById("helltide-next").textContent = "Next: " + helltide.nextStart.toISOString().split("T")[1].substring(0, 5) + " UTC";
-
-        // World Boss
-        var worldBoss = getNextEvent(WORLD_BOSS_CYCLE_MS, WORLD_BOSS_DURATION_MS);
-        document.getElementById("world-boss-status").textContent = worldBoss.isActive ? "SPAWNED" : "Inactive";
-        document.getElementById("world-boss-countdown").textContent = worldBoss.isActive ? formatTime(worldBoss.timeUntilEnd) : formatTime(worldBoss.timeUntilStart);
-        document.getElementById("world-boss-info").textContent = worldBoss.isActive ? "Kill within " + formatTime(worldBoss.timeUntilEnd) : "Spawns in " + formatTime(worldBoss.timeUntilStart);
-        document.getElementById("world-boss-next").textContent = "Next: " + worldBoss.nextStart.toISOString().split("T")[1].substring(0, 5) + " UTC";
-
-        // Legion Event
-        var legion = getNextEvent(LEGION_CYCLE_MS, LEGION_DURATION_MS);
-        document.getElementById("legion-status").textContent = legion.isActive ? "ACTIVE NOW" : "Inactive";
-        document.getElementById("legion-countdown").textContent = legion.isActive ? formatTime(legion.timeUntilEnd) : formatTime(legion.timeUntilStart);
-        document.getElementById("legion-info").textContent = legion.isActive ? "Ends in " + formatTime(legion.timeUntilEnd) : "Starts in " + formatTime(legion.timeUntilStart);
-        document.getElementById("legion-next").textContent = "Next: " + legion.nextStart.toISOString().split("T")[1].substring(0, 5) + " UTC";
-      }
-
-      // Update immediately and then every second
-      updateTimers();
-      setInterval(updateTimers, 1000);
-    })();
   </script>
+  <script src="/assets/d4-timer.js"></script>
 </body>
 </html>
