@@ -65,4 +65,45 @@ document.addEventListener("DOMContentLoaded", function () {
       if (img.complete && img.naturalWidth === 0 && img.getAttribute("src")) thumbFallback(img);
     })(thumbs[k]);
   }
+
+  // The header nav scrolls horizontally but its scrollbar is hidden, so links past
+  // the viewport edge have no visible affordance. Resting the pointer near either end
+  // ramps a slow auto-scroll instead. Speed eases in across RAMP px so a passing
+  // cursor never jerks the nav, and it stops dead once the end is reached.
+  var navs = document.querySelectorAll(".site-header nav");
+  for (var n = 0; n < navs.length; n++) {
+    (function (nav) {
+      if (nav.scrollWidth <= nav.clientWidth + 1) return;
+      var EDGE = 90;
+      var RAMP = 260;
+      var MAX = 14;
+      var dir = 0;
+      var lastX = 0;
+      var raf = null;
+
+      function tick() {
+        raf = null;
+        if (!dir) return;
+        var r = nav.getBoundingClientRect();
+        var fromEdge = dir > 0 ? r.right - lastX : lastX - r.left;
+        var speed = MAX * Math.min(1, Math.max(0, (EDGE - fromEdge) / RAMP));
+        if (speed <= 0.1) { dir = 0; return; }
+        var before = nav.scrollLeft;
+        nav.scrollLeft += dir * speed;
+        if (nav.scrollLeft !== before) raf = requestAnimationFrame(tick);
+        else dir = 0;
+      }
+
+      nav.addEventListener("mousemove", function (e) {
+        lastX = e.clientX;
+        var r = nav.getBoundingClientRect();
+        var next = r.right - lastX < EDGE ? 1 : (lastX - r.left < EDGE ? -1 : 0);
+        if (next === dir) return;
+        dir = next;
+        if (dir && !raf) raf = requestAnimationFrame(tick);
+      });
+
+      nav.addEventListener("mouseleave", function () { dir = 0; });
+    })(navs[n]);
+  }
 });
