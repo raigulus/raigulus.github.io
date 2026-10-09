@@ -519,6 +519,7 @@ def render_live_html(data, marker, heading, intro, mission_heading, cache_headin
     return f"""<!-- {marker}-live-start -->
         <section class="live-loot-hub" data-live-loot-hub data-live-loot-checked="{esc(last_updated)}">
         <h2>{esc(heading)}</h2>
+        <p><strong>Loot data source:</strong> <a href="{esc(LOOT_DATA_SOURCE_URL)}" rel="nofollow noopener">{esc(LOOT_DATA_SOURCE_LABEL)}</a></p>
         <p>{esc(intro)}</p>
         <table class="facts">
           <tr><th>Date</th><td>{esc(date_label)}</td></tr>
@@ -530,7 +531,6 @@ def render_live_html(data, marker, heading, intro, mission_heading, cache_headin
           <tr><th>Expected update window</th><td>{esc(data.get('next_expected_update') or 'Around 07:00 UTC')}</td></tr>
           {note_row}
           <tr><th>Snapshot</th><td>Automated daily loot check</td></tr>
-          <tr><th>Loot data source</th><td><a href="{esc(LOOT_DATA_SOURCE_URL)}" rel="nofollow noopener">{esc(LOOT_DATA_SOURCE_LABEL)}</a></td></tr>
         </table>
         <h2>{esc(mission_heading)}</h2>
         <table class="facts">{mission_rows}</table>
@@ -854,6 +854,7 @@ def post_loot_today_discord(site_dir, loot_data):
                 "fields": [
                     {"name": "Targeted loot", "value": missions or "-", "inline": False},
                     {"name": "Cache snapshot", "value": caches or "-", "inline": False},
+                    {"name": "Data source", "value": f"[{LOOT_DATA_SOURCE_LABEL}]({LOOT_DATA_SOURCE_URL})", "inline": True},
                 ],
                 "footer": {"text": f"Raigulus Loot Today // {today}"},
             }
