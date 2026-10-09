@@ -77,21 +77,26 @@ document.addEventListener("DOMContentLoaded", function () {
     (function (nav) {
       if (nav.scrollWidth <= nav.clientWidth + 1) return;
 var EDGE = 90;
-      var RAMP = 300;
-      // RAMP exceeds EDGE, so speed is capped at MAX * (EDGE / RAMP) - MAX itself is
-      // never reached. Raise MAX to raise the actual top speed.
-      var MAX = 240;
-      // Once scrolling starts it must survive the pointer leaving the EDGE band. Without
-      // this, hand tremor or a nudge toward a link zeroes `next`, kills dir and the nav
-      // freezes mid-slide. GRACE is the coasting window; hold carries the peak speed so
-      // the decay is smooth instead of stuttering with every pixel of pointer movement.
-      var GRACE = 350;
+      // RAMP is the ease-in distance: speed climbs from 0 at EDGE px away to MAX at the
+      // edge itself. Setting RAMP = EDGE makes MAX a real, reachable top speed.
+      var RAMP = 90;
+      var MAX = 210;
+      // The slide must survive the pointer leaving the EDGE band and run all the way to
+      // the end, otherwise a hand tremor or a nudge toward a link kills it after ~12px.
+      // On release the speed decays from hold to hold * FLOOR over GRACE ms, then holds
+      // that floor until the end is reached, the pointer re-enters a band, or the
+      // pointer leaves the nav. FLOOR is a ratio of the peak, not an absolute px/s, so
+      // retuning MAX keeps the shape of the glide.
+      var GRACE = 600;
+      var FLOOR = 0.45;
       var dir = 0;
       var hold = 0;
       var coast = 0;
       var lastX = 0;
       var lastT = 0;
       var raf = null;
+
+      function stop() { dir = 0; lastT = 0; hold = 0; coast = 0; }
 
       function tick(now) {
         raf = null;
@@ -100,27 +105,25 @@ var EDGE = 90;
         var dt = Math.min(elapsed / 1000, 0.05);
         lastT = now;
         var r = nav.getBoundingClientRect();
+        var span = nav.scrollWidth - nav.clientWidth;
+        if ((dir > 0 && nav.scrollLeft >= span - 0.5) || (dir < 0 && nav.scrollLeft <= 0.5)) { stop(); return; }
         var fromEdge = dir > 0 ? r.right - lastX : lastX - r.left;
         var speed = MAX * Math.min(1, Math.max(0, (EDGE - fromEdge) / RAMP));
+        // hold must be sampled before the decay branch. Testing it first aborts the very
+        // first frame, because hold is still 0 when mousemove starts the slide and hold is
+        // only ever raised here - the run dies before it can move a pixel.
         if (speed > hold) hold = speed;
-        var coasting = speed <= 1;
-        if (coasting) {
-          // The budget must accumulate across frames: elapsed is a single-frame delta,
-          // so testing GRACE against it directly never expires and the slide creeps
-          // toward zero forever instead of stopping.
+        if (hold <= 1) { stop(); return; }
+        if (speed <= 1) {
+          // The decay budget has to accumulate across frames. elapsed is a single-frame
+          // delta, so comparing GRACE against it directly never expires.
           coast += elapsed;
-          if (coast >= GRACE || hold <= 1) { dir = 0; lastT = 0; hold = 0; coast = 0; return; }
-          speed = hold * (1 - coast / GRACE);
+          speed = coast < GRACE ? hold * (1 - (1 - FLOOR) * coast / GRACE) : hold * FLOOR;
         } else {
           coast = 0;
         }
-        var before = nav.scrollLeft;
         nav.scrollLeft += dir * speed * dt;
-        // While coasting the remaining step shrinks below a pixel and scrollLeft stops
-        // reporting a change, which would abort the slide early, so only the endpoint test
-        // is allowed to end a non-coasting run.
-        if (coasting || nav.scrollLeft !== before) raf = requestAnimationFrame(tick);
-        else { dir = 0; lastT = 0; hold = 0; }
+raf = requestAnimationFrame(tick);
       }
 
       // next === 0 means the pointer left the EDGE band. Clearing dir there killed the
