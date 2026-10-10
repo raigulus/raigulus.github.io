@@ -148,4 +148,26 @@ raf = requestAnimationFrame(tick);
       nav.addEventListener("mouseleave", function () { dir = 0; lastT = 0; hold = 0; });
     })(navs[n]);
   }
+
+  // Kaydirma ipucu: nav yatay kaydirilabilir oldugunda, icerigin devam ettigi
+  // kenarda yumusak solukluk gosterir. Sabit bir maske degil - kaydirma
+  // durumuna gore (end / start / both) degisir ve kaydirilacak icerik yoksa
+  // hic gorunmez. tick() scrollLeft'i programatik yaziyor; `scroll` olayi
+  // bunu da tetikler, ayri bir cagriya gerek yok.
+  function navHint(nav) {
+    var max = nav.scrollWidth - nav.clientWidth;
+    if (max <= 2) { nav.removeAttribute("data-hint"); return; }
+    var atStart = nav.scrollLeft <= 2;
+    var atEnd = nav.scrollLeft >= max - 2;
+    nav.setAttribute("data-hint", atStart ? "end" : (atEnd ? "start" : "both"));
+  }
+  for (var h = 0; h < navs.length; h++) {
+    (function (nav) {
+      navHint(nav);
+      nav.addEventListener("scroll", function () { navHint(nav); }, { passive: true });
+    })(navs[h]);
+  }
+  window.addEventListener("resize", function () {
+    for (var h = 0; h < navs.length; h++) navHint(navs[h]);
+  });
 });

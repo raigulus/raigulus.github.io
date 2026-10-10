@@ -46,6 +46,12 @@ body{
 }
 .site-header nav{display:flex;align-items:center;gap:28px;overflow-x:auto;scrollbar-width:none}
 .site-header nav::-webkit-scrollbar{display:none}
+/* Yatay kaydirma ipucu: sadece icerik devam eden kenarda soluklasir.
+   data-hint JS tarafindan scroll konumuna gore (end/start/both)
+   guncellenir; kaydirilacak icerik yoksa ozellik tamamen kalkar. */
+.site-header nav[data-hint]{-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 34px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 34px),transparent)}
+.site-header nav[data-hint="start"]{-webkit-mask-image:linear-gradient(to right,transparent,#000 34px);mask-image:linear-gradient(to right,transparent,#000 34px)}
+.site-header nav[data-hint="both"]{-webkit-mask-image:linear-gradient(to right,transparent,#000 34px,#000 calc(100% - 34px),transparent);mask-image:linear-gradient(to right,transparent,#000 34px,#000 calc(100% - 34px),transparent)}
 .site-header nav a{
   flex:none;
   position:relative;
