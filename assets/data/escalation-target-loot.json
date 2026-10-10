@@ -1,48 +1,48 @@
 {
-  "date": "2026-10-09",
+  "date": "2026-10-10",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Pathway Park",
-      "loot": "Walker, Harris & Co"
+      "loot": "China Light Industries"
     },
     {
       "mission": "Camp White Oak",
-      "loot": "Hana-U Corporation"
+      "loot": "Refactor"
     },
     {
       "mission": "Grand Washington Hotel",
-      "loot": "Grupo Sombra S.A."
-    },
-    {
-      "mission": "Jefferson Trade Center",
       "loot": "Petrov Defense Group"
     },
     {
+      "mission": "Jefferson Trade Center",
+      "loot": "Tip of the Spear"
+    },
+    {
       "mission": "Federal Emergency Bunker",
-      "loot": "Heartbreaker"
+      "loot": "Edelweiss GPz"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "MMRs"
+      "item": "Assault Rifles"
     },
     {
       "type": "Gear",
-      "item": "Chest Pieces"
+      "item": "Gloves"
     }
   ],
-  "last_updated": "2026-10-09 10:01",
-  "last_checked": "2026-10-10 07:05 UTC",
-  "parsed_at": "2026-10-10T07:05:08.918036+00:00",
-  "status": "pending",
-  "fetched_at": "2026-10-10T07:05:08.918036+00:00",
+  "last_updated": "2026-10-10 10:01",
+  "last_checked": "2026-10-10 08:05 UTC",
+  "parsed_at": "2026-10-10T08:05:08.972751+00:00",
+  "status": "ok",
+  "fetched_at": "2026-10-10T08:05:08.972751+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-10-10 07:05 UTC",
+  "vendor_highlights_checked": "2026-10-10 08:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
