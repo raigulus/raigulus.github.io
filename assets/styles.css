@@ -46,6 +46,7 @@ body{
 .site-header nav::-webkit-scrollbar{display:none}
 .site-header nav a{
   flex:none;
+  position:relative;
   padding:0;
   border-radius:0;
   font-size:12px;
@@ -55,7 +56,7 @@ body{
   transition:color .18s
 }
 .site-header nav a:hover{color:#edf0f4;background:transparent}
-.site-header nav a::after{display:none}
+.site-header nav a::after{content:"";position:absolute;left:0;right:0;top:50%;height:40px;transform:translateY(-50%)}
 .site-header nav a:last-child{color:rgba(237,240,244,.5)}
 .archive-hero{
   display:grid;
