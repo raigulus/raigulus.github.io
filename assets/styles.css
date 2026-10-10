@@ -63,6 +63,14 @@ body{
    instead of padding so the text box - and therefore the layout - is untouched.
    Card titles and their "Open guide" sibling share one href, so where two hit
    areas do meet they lead to the same place. */
+.lore-intent-copy a{position:relative}
+.lore-intent-copy a::after{content:"";position:absolute;left:0;right:0;top:50%;height:32px;transform:translateY(-50%)}
+.inline-hit{position:relative}
+.inline-hit::after{content:"";position:absolute;left:0;right:0;top:50%;height:32px;transform:translateY(-50%)}
+.live-loot-hub p a,
+.live-loot-hub td a{position:relative}
+.live-loot-hub p a::after,
+.live-loot-hub td a::after{content:"";position:absolute;left:0;right:0;top:50%;height:32px;transform:translateY(-50%)}
 .card-body h2 a,
 .card-body h3 a,
 .meta a,
