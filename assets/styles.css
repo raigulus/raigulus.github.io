@@ -470,7 +470,12 @@ body.theme-assassins-creed .archive-notes{
 @media(max-width:620px){
   .brand{font-size:19px}
   .site-header{align-items:flex-start;flex-direction:column;gap:16px;padding:20px 16px 0}
-  .site-header nav{width:100%;max-width:none}
+  .site-header nav{width:100%;max-width:none;padding-block:11px;margin-block:-11px}
+    /* overflow-x:auto, spec geregi overflow-y'yi de auto yapar; nav kutusu 19px
+       oldugu icin a::after'in 40px hit-area'si dikey olarak kirpiliyordu
+       (?l??len ger?ek tap yuksekligi 20px, WCAG 2.5.8 min 24px).
+       11px dikey padding kutuya 41px -> 40px alan sigar; negatif margin
+       header yuksekligini degistirmeden boslugu geri aliyor. */
   .archive-hero{margin:14px 10px 0}
   .archive-paper{min-height:630px;padding:30px 20px 38px;clip-path:polygon(0 0,calc(100% - 24px) 0,100% 24px,100% 100%,0 100%)}
   .archive-paper::before{inset:20px 12px}

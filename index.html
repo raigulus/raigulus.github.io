@@ -123,7 +123,9 @@
     .latest-card:hover{border-color:rgba(245,90,0,.25)}
     .latest-card-img{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#13181e}
     .latest-card-img::before{content:"";position:absolute;top:0;right:0;left:0;height:64px;background:linear-gradient(rgba(11,13,17,.62),rgba(11,13,17,0));pointer-events:none;z-index:1}
-    .latest-card-img img{width:100%;height:100%;object-fit:cover}
+    .latest-card-img img{display:block;width:100%;height:100%;object-fit:cover}
+    /* img varsayilan display:inline -> taban bo?lu?u ~6px ekliyor, aspect-ratio
+       kutusu overflow:hidden ile onu kesiyordu (192px kutu / 198px icerik). */
     .latest-card-tag{position:absolute;top:12px;left:12px;z-index:2;padding:4px 8px;background:rgba(11,13,17,.7);backdrop-filter:blur(8px);border-radius:3px;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#ff8a3d}
     .latest-card-body{padding:16px 18px 20px}
     .latest-card-date{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#7d8794;margin-bottom:8px}

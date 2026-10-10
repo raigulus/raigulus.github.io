@@ -20,7 +20,7 @@
     .error-page{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:40px 24px;text-align:center}
     .error-code{font-family:'Barlow Condensed',Inter,system-ui,sans-serif;font-size:clamp(120px,20vw,200px);font-weight:700;line-height:.85;letter-spacing:-.04em;color:rgba(245,90,0,.15);margin:0}
     .error-title{font-family:'Barlow Condensed',Inter,system-ui,sans-serif;font-size:clamp(28px,4vw,40px);font-weight:700;color:#edf0f4;margin:16px 0 8px}
-    .error-desc{font-size:15px;color:rgba(237,240,244,.45);max-width:420px;line-height:1.5;margin:0 0 32px}
+    .error-desc{font-size:15px;color:rgba(237,240,244,.52);max-width:420px;line-height:1.5;margin:0 0 32px}
     .error-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:40px}
     .error-btn{display:inline-flex;align-items:center;gap:6px;padding:12px 24px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:4px;transition:opacity .15s;text-decoration:none;border:none;cursor:pointer}
     .error-btn-primary{background:#f55a00;color:#0b0d11}
@@ -33,10 +33,11 @@
     .error-search input::placeholder{color:rgba(237,240,244,.3)}
     .error-search input:focus{border-color:rgba(245,90,0,.4)}
     .error-links{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
-    .error-links a{padding:6px 12px;border:1px solid rgba(237,240,244,.08);border-radius:4px;font-size:11px;font-weight:500;color:rgba(237,240,244,.4);text-decoration:none;transition:border-color .15s,color .15s}
+    .error-links a{padding:6px 12px;border:1px solid rgba(237,240,244,.08);border-radius:4px;font-size:11px;font-weight:500;color:rgba(237,240,244,.55);text-decoration:none;transition:border-color .15s,color .15s}
     .error-links a:hover{border-color:rgba(245,90,0,.3);color:#edf0f4}
-    .error-footer{position:fixed;bottom:0;left:0;right:0;padding:20px;text-align:center;font-size:11px;color:rgba(237,240,244,.2)}
-    .error-footer a{color:rgba(237,240,244,.3);text-decoration:none}
+    .error-footer{position:fixed;bottom:0;left:0;right:0;padding:20px;text-align:center;font-size:11px;color:rgba(237,240,244,.5)}
+    .error-footer a{color:rgba(237,240,244,.55);text-decoration:none;position:relative;display:inline-block}
+    .error-footer a::after{content:"";position:absolute;left:0;right:0;top:50%;height:32px;transform:translateY(-50%)}
     .error-footer a:hover{color:#edf0f4}
     @media(max-width:768px){
       .error-actions{flex-direction:column;width:100%}
@@ -61,7 +62,7 @@
 </head>
 <body>
   <main class="error-page">
-    <p class="error-code">404</p>
+    <p class="error-code" aria-hidden="true">404</p>
     <h1 class="error-title">Agent disconnected.</h1>
     <p class="error-desc">The route you're looking for has gone dark. It may have been moved, or the intel was wrong.</p>
     <div class="error-actions">
