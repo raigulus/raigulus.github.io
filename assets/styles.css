@@ -57,6 +57,28 @@ body{
 }
 .site-header nav a:hover{color:#edf0f4;background:transparent}
 .site-header nav a::after{content:"";position:absolute;left:0;right:0;top:50%;height:40px;transform:translateY(-50%)}
+
+/* Touch targets: card titles, meta links, breadcrumbs and footer links render
+   at 15-21px tall, under the 24px minimum. The hit area grows via a pseudo-element
+   instead of padding so the text box - and therefore the layout - is untouched.
+   Card titles and their "Open guide" sibling share one href, so where two hit
+   areas do meet they lead to the same place. */
+.card-body h2 a,
+.card-body h3 a,
+.meta a,
+.facts a,
+.breadcrumbs a,
+.site-footer a,
+.section-link,
+.home-hero-desc a{position:relative}
+.card-body h2 a::after,
+.card-body h3 a::after,
+.meta a::after,
+.facts a::after,
+.breadcrumbs a::after,
+.site-footer a::after,
+.section-link::after,
+.home-hero-desc a::after{content:"";position:absolute;left:0;right:0;top:50%;height:32px;transform:translateY(-50%)}
 .site-header nav a:last-child{color:rgba(237,240,244,.5)}
 .archive-hero{
   display:grid;
