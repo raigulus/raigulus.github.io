@@ -89,7 +89,7 @@
        heading. Re-assert .section-title after it so homepage headings match the rest. */
     .content>h2.section-title{font-family:'Barlow Condensed',Inter,system-ui,sans-serif}
     .home-hero{max-width:1200px;margin:0 auto;padding:72px 24px 0}
-    .home-badge{display:inline-block;font-size:11px;font-weight:500;letter-spacing:.06em;color:rgba(237,240,244,.35);margin-bottom:20px}
+    .home-badge{display:inline-block;font-size:11px;font-weight:500;letter-spacing:.06em;color:rgba(237,240,244,.52);margin-bottom:20px}
     .home-badge span{color:#ffa06b}
     .home-hero h1{font-family:'Barlow Condensed',Inter,system-ui,sans-serif;font-size:clamp(56px,8vw,110px);font-weight:700;line-height:.9;letter-spacing:-.03em;text-transform:uppercase;margin:0 0 24px;color:#edf0f4}
     .home-hero-desc{max-width:600px;font-size:16px;line-height:1.5;color:#8b95a1;margin:0 0 36px}
@@ -102,6 +102,9 @@
     .home-search input{width:100%;padding:14px 18px;background:rgba(237,240,244,.04);border:1px solid rgba(237,240,244,.1);border-radius:4px;color:#edf0f4;font-size:13px;font-family:inherit;outline:none;transition:border-color .15s}
     .home-search input::placeholder{color:#8b95a1}
     .home-search input:focus{border-color:rgba(245,90,0,.4)}
+    /* Inline <style> loads after styles.css, so the shared :focus-visible rule
+       there is shadowed for this input. Repeat the ring locally. */
+    .home-search input:focus-visible{outline:2px solid var(--archive-orange,#c95725);outline-offset:2px}
 
     /* QUICK LINKS */
     .home-quick{display:flex;flex-wrap:wrap;gap:10px;max-width:1200px;margin:0 auto;padding:28px 24px 0}

@@ -408,6 +408,15 @@ main>.content .facts td,main>.content .link-list a,main>.content .faq-list dt{co
 .site-footer{border-color:rgba(232,224,207,.15);color:#888276}
 .site-footer a{color:#e88a55}
 :focus-visible{outline:2px solid var(--archive-orange);outline-offset:3px}
+/* Only #c95725 clears 3:1 against both the dark page background (#171816 -> 4.13)
+   and the light archive card (#e8e0cf -> 3.28). Lighter oranges fall to 1.5 on
+   light cards, so the ring colour cannot simply be brighter. Inputs are added
+   here because only :focus rules covered them, which keyboard users skip. */
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible{outline:2px solid var(--archive-orange);outline-offset:2px;border-radius:4px}
 
 /* Future Assassin's Creed pages: add class="theme-assassins-creed" to body. */
 body.theme-assassins-creed{
@@ -498,6 +507,10 @@ body.theme-assassins-creed .archive-notes{
 .video-facade-button img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9;transition:transform .25s ease,opacity .25s ease}
 .video-facade-button:hover img,.video-facade-button:focus-visible img{transform:scale(1.02);opacity:.72}
 .video-facade-button:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
+/* The thumb link sits inside .video-card (overflow:hidden), so a +3px ring is
+   clipped on the top and right edges. Draw it inset instead, matching
+   .video-facade-button:focus-visible above. */
+a.thumb:focus-visible{outline:2px solid var(--archive-orange,#c95725);outline-offset:-3px}
 .video-facade-play{position:absolute;left:50%;top:50%;width:76px;height:52px;transform:translate(-50%,-50%);border-radius:13px;background:rgba(245,90,0,.94);box-shadow:0 10px 28px rgba(0,0,0,.45)}
 .video-facade-play::after{content:"";position:absolute;left:31px;top:14px;border-width:12px 0 12px 20px;border-style:solid;border-color:transparent transparent transparent #fff}
 .video-facade-label{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);padding:6px 10px;border-radius:4px;background:rgba(0,0,0,.72);font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
@@ -622,6 +635,7 @@ dashed empty slots read as drop zones, filled rarities keep their accents. */
 /* Site search page: same input language as the homepage hero search. */
 .home-search{position:relative;max-width:640px;width:100%}
 .home-search input{width:100%;padding:14px 18px;background:rgba(237,240,244,.04);border:1px solid rgba(237,240,244,.1);border-radius:4px;color:#edf0f4;font-size:13px;font-family:inherit;outline:none;transition:border-color .15s}
+.home-search input:focus-visible:focus-visible{outline:2px solid var(--archive-orange,#c95725);outline-offset:2px}
 .home-search input::placeholder{color:#8b95a1}
 .home-search input:focus{border-color:rgba(245,90,0,.4)}
 
