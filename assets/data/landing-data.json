@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-10T20:05:13Z",
+  "generated_at": "2026-10-10T20:18:26Z",
   "stats": {
-    "total_guides": 468,
+    "total_guides": 469,
     "exotics": 79,
     "patches": 31
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "One Regulus headshot wiped a whole squad 💥 Division 2",
+      "url": "https://raigulus.github.io/division-2/videos/one-regulus-headshot-wiped-a-whole-squad-division/",
+      "youtube_url": "https://www.youtube.com/watch?v=AFGvmaifVlE",
+      "thumbnail": "https://i.ytimg.com/vi/AFGvmaifVlE/hqdefault.jpg",
+      "published_date": "2026-10-10",
+      "cluster": "manhunt",
+      "summary": "Went rogue in the Dark Zone with the squad, and the SHD agents came for us. One Regulus headshot dropped an agent, he exploded, and the blast took out the rest"
+    },
     {
       "title": "\"I shot him first bro\" 😂 Division 2 Conflict",
       "url": "https://raigulus.github.io/division-2/videos/i-shot-him-first-bro-division-2-conflict/",
@@ -28,15 +37,6 @@
       "published_date": "2026-10-07",
       "cluster": "escalation run",
       "summary": "Solo Tier 10 Escalation on Capitol Building in The Division 2: flawless, never downed. Full Prima Donna + Iron Will + Aces & Eights build, cleared in 23:51.  No"
-    },
-    {
-      "title": "Flawless Solo Run: Jefferson Plaza Escalation Tier 10",
-      "url": "https://raigulus.github.io/division-2/videos/flawless-solo-run-jefferson-plaza-escalation-tier/",
-      "youtube_url": "https://www.youtube.com/watch?v=83CYbmmZsDE",
-      "thumbnail": "https://i.ytimg.com/vi/83CYbmmZsDE/hqdefault.jpg",
-      "published_date": "2026-10-04",
-      "cluster": "escalation run",
-      "summary": "Solo Tier 10 Escalation on Jefferson Plaza in The Division 2: 13:21, flawless, no weapon swaps. Full Prima Donna + Iron Will + Aces & Eights build, 88 kills at"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-10-10 20:05 UTC"
+    "last_checked": "2026-10-10 20:18 UTC"
   },
   "discord_members": 56,
   "next_reset_utc": "2026-10-11T07:00:00Z"
