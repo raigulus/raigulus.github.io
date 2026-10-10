@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """div2hub/game-data CSV'lerini indirip build-maker.json'a cevirir.
 
-Kaynak: https://github.com/div2hub/game-data (topluluk veri merkezi)
-Cikti: assets/data/build-maker.json (site reposunda)
+Source: https://github.com/div2hub/game-data (community data hub)
+Output: assets/data/build-maker.json (in the site repo)
 
-Patch sonrasi yeniden calistir: python3 scripts/build-maker-data.py
+Re-run after a patch: python3 scripts/build-maker-data.py
 """
 import csv
 import io
@@ -78,19 +78,19 @@ def main():
         },
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    # Veri degismedi mi kontrol et (meta.generated haric) -> idempotent
+    # Check whether the data changed (excluding meta.generated) -> idempotent
     if OUT.exists():
         old = json.loads(OUT.read_text(encoding="utf-8"))
         old.pop("meta", None)
         new = dict(out)
         new.pop("meta", None)
         if old == new:
-            print("Veri degismedi — dosya guncellenmedi (idempotent).")
+            print("Data unchanged - file not updated (idempotent).")
             return
-    # Eski surumu yedekle (changelog diff'i icin)
+    # Back up the previous version (for the changelog diff)
     if OUT.exists():
         PREV.write_bytes(OUT.read_bytes())
-        print(f"Eski surum yedeklendi: {PREV.name}")
+        print(f"Previous version backed up: {PREV.name}")
     OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"\nYazildi: {OUT} ({OUT.stat().st_size / 1024:.0f} KB)")
 

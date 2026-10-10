@@ -2,13 +2,13 @@
 """
 Raigulus SEO Tool - Backlink Monitor
 ==========================================
-Backlink takibi ve analizi:
-- Backlink kazanma/kayıp takibi
-- Anchor text analizi
-- Doman otoritesi karşılaştırması
-- Backlink raporu oluşturma
+Backlink tracking and analysis:
+- Track gained/lost backlinks
+- Anchor text analysis
+- Domain authority comparison
+- Generate backlink report
 
-Kullanım:
+Usage:
     python backlink_monitor.py add "example.com"
     python backlink_monitor.py scan
     python backlink_monitor.py report
@@ -189,7 +189,7 @@ def generate_report():
     data = load_backlinks()
     history = load_backlink_history()
     
-    report = f"""# Raigulus Backlink Raporu
+    report = f"""# Raigulus Backlink Report
 
 **Tarih:** {datetime.now().strftime("%Y-%m-%d %H:%M")}
 **Toplam Backlink:** {len(data['backlinks'])}
@@ -204,7 +204,7 @@ def generate_report():
         status = bl.get("status", "unknown")
         status_count[status] = status_count.get(status, 0) + 1
     
-    report += "| Durum | Sayı |\n|-------|------|\n"
+    report += "| Status | Count |\n|-------|------|\n"
     for status, count in status_count.items():
         report += f"| {status} | {count} |\n"
     
@@ -218,7 +218,7 @@ def generate_report():
         anchor = bl.get("anchor", "-")[:25]
         report += f"| {source} | {target} | {anchor} | {status} |\n"
     
-    report += "\n## Anchor Text Analizi\n\n"
+    report += "\n## Anchor Text Analysis\n\n"
     
     # Anchor text analysis
     anchors = {}
@@ -228,27 +228,27 @@ def generate_report():
             anchors[anchor] = anchors.get(anchor, 0) + 1
     
     if anchors:
-        report += "| Anchor | Sayı |\n|--------|------|\n"
+        report += "| Anchor | Count |\n|--------|------|\n"
         for anchor, count in sorted(anchors.items(), key=lambda x: x[1], reverse=True)[:10]:
             report += f"| {anchor[:40]} | {count} |\n"
     else:
-        report += "Anchor text bilgisi yok.\n"
+        report += "No anchor text data.\n"
     
-    report += "\n## Öneriler\n\n"
+    report += "\n## Recommendations\n\n"
     
     # Generate recommendations
     active_count = status_count.get("active", 0)
     broken_count = status_count.get("broken", 0) + status_count.get("error", 0)
     
     if broken_count > 0:
-        report += f"- **{broken_count} kırık backlink** bulundu. Bu linkleri düzeltmeyi veya kaldırmayı düşünün.\n"
+        report += f"- **{broken_count} broken backlinks** found. Consider fixing or removing these links.\n"
     
     if active_count < 5:
-        report += "- **Backlink sayınız az.** Daha fazla backlink kazanmak için içerik pazarlama stratejileri uygulayın.\n"
+        report += "- **Low backlink count.** Apply content marketing strategies to earn more backlinks.\n"
     
     report += """
 ---
-*Rapor otomatik oluşturuldu.*
+*Report generated automatically.*
 """
     
     # Save report

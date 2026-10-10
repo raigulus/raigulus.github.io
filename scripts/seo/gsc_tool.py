@@ -2,12 +2,12 @@
 """
 Raigulus SEO Tool - GSC Submit + Analytics
 ==========================================
-Google Search Console API entegrasyonu ile:
-- URL gönderimi (IndexNow + GSC)
-- GSC analitik veri çekme
-- Haftalık rapor oluşturma
+Google Search Console API integration:
+- URL submission (IndexNow + GSC)
+- Pull GSC analytics data
+- Weekly report generation
 
-Kullanım:
+Usage:
     python gsc_tool.py submit --url https://raigulus.github.io/path/
     python gsc_tool.py analytics --days 7
     python gsc_tool.py report --output weekly-report.md
@@ -241,24 +241,24 @@ def generate_report(analytics_data, output_file=None):
     avg_ctr = (total_clicks / total_impressions * 100) if total_impressions > 0 else 0
     
     # Generate report
-    report = f"""# Raigulus GSC Haftalık Rapor
+    report = f"""# Raigulus GSC Weekly Report
 
 **Tarih:** {datetime.now().strftime("%Y-%m-%d")}
 **Property:** {GSC_PROPERTY}
-**Dönem:** Son 7 gün
+**Period:** Last 7 days
 
 ## Genel Durum
 
-| Metrik | Değer |
+| Metric | Value |
 |--------|-------|
-| Toplam Tıklama | {total_clicks} |
-| Toplam Gösterim | {total_impressions} |
+| Total Clicks | {total_clicks} |
+| Total Impressions | {total_impressions} |
 | Ortalama CTR | %{avg_ctr:.2f} |
-| Benzersiz Sorgu | {len(query_stats)} |
+| Unique Queries | {len(query_stats)} |
 
-## En Çok Tıklanan Sorgular
+## Top Queries By Clicks
 
-| Sorgu | Tıklama | Gösterim | CTR% | Ort. Pozisyon |
+| Query | Clicks | Impressions | CTR% | Avg. Position |
 |-------|---------|----------|------|---------------|
 """
     
@@ -268,9 +268,9 @@ def generate_report(analytics_data, output_file=None):
         report += f"| {query[:50]} | {stats['clicks']} | {stats['impressions']} | {ctr:.1f} | {avg_pos:.1f} |\n"
     
     report += """
-## En Çok Tıklanan Sayfalar
+## Top Pages By Clicks
 
-| Sayfa | Tıklama | Gösterim |
+| Page | Clicks | Impressions |
 |-------|---------|----------|
 """
     
@@ -279,22 +279,22 @@ def generate_report(analytics_data, output_file=None):
         report += f"| {page_display[:50]} | {stats['clicks']} | {stats['impressions']} |\n"
     
     report += """
-## Öneriler
+## Recommendations
 
 """
     
     # Generate recommendations
     low_ctr_queries = [(q, s) for q, s in top_queries if s["impressions"] > 10 and (s["clicks"] / s["impressions"] * 100) < 2]
     if low_ctr_queries:
-        report += "### Düşük CTR'li Sorgular (İyileştirme Gereken)\n\n"
+        report += "### Low CTR Queries (Needs Improvement)\n\n"
         for query, stats in low_ctr_queries[:5]:
             ctr = (stats["clicks"] / stats["impressions"] * 100)
-            report += f"- **{query}**: %{ctr:.1f} CTR ({stats['impressions']} gösterim)\n"
+            report += f"- **{query}**: %{ctr:.1f} CTR ({stats['impressions']} impressions)\n"
         report += "\n"
     
     report += """
 ---
-*Rapor otomatik oluşturuldu.*
+*Report generated automatically.*
 """
     
     # Save report

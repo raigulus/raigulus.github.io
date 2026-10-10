@@ -1,11 +1,11 @@
-# Raigulus Backlink Raporu
+# Raigulus Backlink Report
 
 **Tarih:** 2026-09-21 15:27
 **Toplam Backlink:** 0
 
 ## Genel Durum
 
-| Durum | Sayı |
+| Status | Count |
 |-------|------|
 
 ## Backlink Listesi
@@ -13,13 +13,13 @@
 | Kaynak | Hedef | Anchor | Durum |
 |--------|-------|--------|------|
 
-## Anchor Text Analizi
+## Anchor Text Analysis
 
-Anchor text bilgisi yok.
+No anchor text data.
 
-## Öneriler
+## Recommendations
 
-- **Backlink sayınız az.** Daha fazla backlink kazanmak için içerik pazarlama stratejileri uygulayın.
+- **Low backlink count.** Apply content marketing strategies to earn more backlinks.
 
 ---
-*Rapor otomatik oluşturuldu.*
+*Report generated automatically.*

@@ -1,12 +1,12 @@
-# Raigulus Keyword Sıralama Raporu
+# Raigulus Keyword Ranking Report
 
 **Tarih:** 2026-10-05 17:33
 **Toplam Snapshot:** 7
-**Son Güncelleme:** 2026-10-05
+**Last Update:** 2026-10-05
 
-## Güncel Sıralamalar
+## Current Rankings
 
-| Anahtar Kelime | Pozisyon | Tıklama | Gösterim | CTR% | Değişim |
+| Keyword | Position | Clicks | Impressions | CTR% | Change |
 |----------------|----------|---------|----------|------|---------|
 | division 2 targeted loot | 0.0 | 0 | 0 | 0.0% | → 0 |
 | division 2 dark hours raid | 0.0 | 0 | 0 | 0.0% | → 0 |
@@ -29,11 +29,11 @@
 | division 2 new york DLC | 0.0 | 0 | 0 | 0.0% | → 0 |
 | the division 2 wiki | 0.0 | 0 | 0 | 0.0% | → 0 |
 
-## Sıralama Dağılımı
+## Ranking Distribution
 
 
-## Öneriler
+## Recommendations
 
 
 ---
-*Rapor otomatik oluşturuldu.*
+*Report generated automatically.*

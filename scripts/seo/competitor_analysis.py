@@ -2,13 +2,13 @@
 """
 Raigulus SEO Tool - Competitor Analysis
 ==========================================
-Rakip sitelerin SEO performansını analiz etme:
-- Sıralama karşılaştırması
-- İçerik analizi
-- Backlink karşılaştırması
-- Teknik SEO karşılaştırması
+Competitor SEO performance analysis:
+- Ranking comparison
+- Content analysis
+- Backlink comparison
+- Technical SEO comparison
 
-Kullanım:
+Usage:
     python competitor_analysis.py add "division2hub.com"
     python competitor_analysis.py compare
     python competitor_analysis.py report
@@ -216,14 +216,14 @@ def generate_report():
     latest = history["snapshots"][-1]
     results = latest["results"]
     
-    report = f"""# Raigulus Rakip Analiz Raporu
+    report = f"""# Raigulus Competitor Analysis Report
 
 **Tarih:** {datetime.now().strftime("%Y-%m-%d %H:%M")}
 **Analyze Edilen Site:** {len(results)}
 
-## Genel Karşılaştırma
+## Overall Comparison
 
-| Site | Başlık | Schema | Canonical | Link | Kelime |
+| Site | Title | Schema | Canonical | Links | Words |
 |------|--------|--------|-----------|------|--------|
 """
     
@@ -248,36 +248,36 @@ def generate_report():
         report += f"| {prefix}{r['domain']}{suffix} | {title} | {schema} | {canonical} | {links} | {words} |\n"
     
     report += """
-## Detaylı Analiz
+## Detailed Analysis
 
 """
     
     if our_site and our_site.get("status") == "success":
         report += "### Bizim Sitemiz (raigulus.github.io)\n\n"
-        report += f"- **Başlık:** {our_site.get('title', '-')}\n"
-        report += f"- **Açıklama:** {our_site.get('description', '-')[:150]}\n"
-        report += f"- **Schema:** {'✓ Var' if our_site.get('has_schema') else '✗ Yok'}\n"
-        report += f"- **Canonical:** {'✓ Var' if our_site.get('has_canonical') else '✗ Yok'}\n"
-        report += f"- **Link Sayısı:** {our_site.get('link_count', 0)}\n"
-        report += f"- **Kelime Sayısı:** {our_site.get('word_count', 0)}\n\n"
+        report += f"- **Title:** {our_site.get('title', '-')}\n"
+        report += f"- **Description:** {our_site.get('description', '-')[:150]}\n"
+        report += f"- **Schema:** {'✓ Yes' if our_site.get('has_schema') else '✗ No'}\n"
+        report += f"- **Canonical:** {'✓ Yes' if our_site.get('has_canonical') else '✗ No'}\n"
+        report += f"- **Link Count:** {our_site.get('link_count', 0)}\n"
+        report += f"- **Word Count:** {our_site.get('word_count', 0)}\n\n"
     
     report += "### Rakip Siteler\n\n"
     
     for comp in sorted(competitors, key=lambda x: x.get("word_count", 0), reverse=True):
         if comp.get("status") != "success":
             report += f"#### {comp['domain']}\n\n"
-            report += f"- **Durum:** Hata — {comp.get('error', 'Bilinmiyor')}\n\n"
+            report += f"- **Status:** Error — {comp.get('error', 'Unknown')}\n\n"
             continue
         
         report += f"#### {comp['domain']}\n\n"
-        report += f"- **Başlık:** {comp.get('title', '-')}\n"
-        report += f"- **Schema:** {'✓ Var' if comp.get('has_schema') else '✗ Yok'}\n"
-        report += f"- **Canonical:** {'✓ Var' if comp.get('has_canonical') else '✗ Yok'}\n"
-        report += f"- **Link Sayısı:** {comp.get('link_count', 0)}\n"
-        report += f"- **Kelime Sayısı:** {comp.get('word_count', 0)}\n\n"
+        report += f"- **Title:** {comp.get('title', '-')}\n"
+        report += f"- **Schema:** {'✓ Yes' if comp.get('has_schema') else '✗ No'}\n"
+        report += f"- **Canonical:** {'✓ Yes' if comp.get('has_canonical') else '✗ No'}\n"
+        report += f"- **Link Count:** {comp.get('link_count', 0)}\n"
+        report += f"- **Word Count:** {comp.get('word_count', 0)}\n\n"
     
     report += """
-## Öneriler
+## Recommendations
 
 """
     
@@ -287,17 +287,17 @@ def generate_report():
         avg_comp_words = sum(c.get("word_count", 0) for c in competitors) / len(competitors) if competitors else 0
         
         if our_words < avg_comp_words * 0.5:
-            report += "- **İçerik Miktarı:** Rakiplerinizden önemli ölçüde az içeriğiniz var. Daha kapsamlı rehberler yazmayı düşünün.\n"
+            report += "- **Content Volume:** You have significantly less content than your competitors. Consider writing more comprehensive guides.\n"
         
         if not our_site.get("has_schema"):
-            report += "- **Schema Markup:** Structured data ekleyerek zengin sonuçlar kazanabilirsiniz.\n"
+            report += "- **Schema Markup:** You can gain rich results by adding structured data.\n"
         
         if not our_site.get("has_canonical"):
-            report += "- **Canonical Tag:** Duplicate content sorunlarını önlemek için canonical tag ekleyin.\n"
+            report += "- **Canonical Tag:** Add a canonical tag to prevent duplicate content issues.\n"
     
     report += """
 ---
-*Rapor otomatik oluşturuldu.*
+*Report generated automatically.*
 """
     
     # Save report

@@ -1,17 +1,17 @@
-# Raigulus SEO Denetim Raporu
+# Raigulus SEO Audit Report
 
 **Tarih:** 2026-10-05 17:33
 
-## Özet
+## Summary
 
-| Kategori | Sayı |
+| Category | Count |
 |----------|------|
-| Kırık Link | 7 |
+| Broken Link | 7 |
 | Meta Tag Sorunu | 75 |
-| Schema Olan Sayfa | 465 |
-| Schema Olmayan Sayfa | 18 |
+| Pages With Schema | 465 |
+| Pages Without Schema | 18 |
 
-## Kırık Linkler
+## Broken Links
 
 - `index.html` → https://fonts.googleapis.com
 - `index.html` → https://fonts.gstatic.com
@@ -21,9 +21,9 @@
 - `destiny-2/index.html` → https://fonts.googleapis.com
 - `destiny-2/index.html` → https://fonts.gstatic.com
 
-## Meta Tag Sorunları
+## Meta Tag Issues
 
-### Description Too Short (12 adet)
+### Description Too Short (12 total)
 
 - `404.html`: Description is 12 chars (min 70)
 - `division-2/patches/keeners-legacy/index.html`: Description is 17 chars (min 70)
@@ -36,11 +36,11 @@
 - `division-2/exotics/sawyers-kneepads/index.html`: Description is 23 chars (min 70)
 - `division-2/exotics/dodge-city-gunslingers-holster/index.html`: Description is 38 chars (min 70)
 
-### Missing Title (1 adet)
+### Missing Title (1 total)
 
 - `googleedd4f0e0a030e72d.html`: No <title> tag found
 
-### Missing Description (11 adet)
+### Missing Description (11 total)
 
 - `googleedd4f0e0a030e72d.html`: No meta description found
 - `division-2/videos/nice-chicken-dance-division-2-shorts/index.html`: No meta description found
@@ -53,11 +53,11 @@
 - `division-2/videos/dark-zone-event-too-good-division-2-shorts/index.html`: No meta description found
 - `division-2/videos/they-thought-i-was-hacking-division-2-shorts/index.html`: No meta description found
 
-### Missing Canonical (1 adet)
+### Missing Canonical (1 total)
 
 - `googleedd4f0e0a030e72d.html`: No canonical tag found
 
-### Missing Og Title (11 adet)
+### Missing Og Title (11 total)
 
 - `googleedd4f0e0a030e72d.html`: No og:title tag found
 - `division-2/videos/nice-chicken-dance-division-2-shorts/index.html`: No og:title tag found
@@ -70,7 +70,7 @@
 - `division-2/videos/dark-zone-event-too-good-division-2-shorts/index.html`: No og:title tag found
 - `division-2/videos/they-thought-i-was-hacking-division-2-shorts/index.html`: No og:title tag found
 
-### Missing Og Description (11 adet)
+### Missing Og Description (11 total)
 
 - `googleedd4f0e0a030e72d.html`: No og:description tag found
 - `division-2/videos/nice-chicken-dance-division-2-shorts/index.html`: No og:description tag found
@@ -83,7 +83,7 @@
 - `division-2/videos/dark-zone-event-too-good-division-2-shorts/index.html`: No og:description tag found
 - `division-2/videos/they-thought-i-was-hacking-division-2-shorts/index.html`: No og:description tag found
 
-### Description Too Long (9 adet)
+### Description Too Long (9 total)
 
 - `lore/locations/fort-detrick-extremis-malis/index.html`: Description is 165 chars (max 160)
 - `lore/events/hunted-albuquerque-operation/index.html`: Description is 162 chars (max 160)
@@ -95,7 +95,7 @@
 - `division-2/videos/flawless-solo-run-jefferson-plaza-escalation-tier/index.html`: Description is 163 chars (max 160)
 - `division-2/this-week/2026-09-29/index.html`: Description is 185 chars (max 160)
 
-### Title Too Long (19 adet)
+### Title Too Long (19 total)
 
 - `lore/reading-order/index.html`: Title is 61 chars (max 60)
 - `lore/collectibles/td1-phone-recordings-keener-s-confession/index.html`: Title is 62 chars (max 60)
@@ -111,7 +111,7 @@
 
 ## Schema Markup
 
-| Sayfa | Schema | Türler |
+| Page | Schema | Types |
 |-------|--------|--------|
 | `index.html` | ✓ | ProfilePage, WebSite, ItemList |
 | `404.html` | ✗ | - |
@@ -135,4 +135,4 @@
 | `lore/missions/the-tombs/index.html` | ✓ | Article |
 
 ---
-*Rapor otomatik oluşturuldu.*
+*Report generated automatically.*

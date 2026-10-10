@@ -1,9 +1,9 @@
 /* Division 2 Build Maker — Raigulus
- * Veri: /assets/data/build-maker.json (div2hub/game-data)
- * Paylasim: URL hash (base64url JSON) + Discord metni
+ * Data: /assets/data/build-maker.json (div2hub/game-data)
+ * Sharing: URL hash (base64url JSON) + Discord text
  *
- * v2: Core / nitelik / mod / talent secimi, tahmini stat toplamlari,
- *     silah SVG siluetleri ve taban istatistikleri.
+ * v2: core / attribute / mod / talent selection, estimated stat totals,
+ *     weapon SVG silhouettes and base stats.
  */
 (function () {
   "use strict";
@@ -69,9 +69,9 @@
 
   function statName(statOrAttrId) {
     if (!DATA || !statOrAttrId) return statOrAttrId || "";
-    /* once dogrudan stat_id sozlugu */
+    /* direct stat_id lookup first */
     if (DATA.stats[statOrAttrId]) return DATA.stats[statOrAttrId];
-    /* degilse attribute id -> stat_id */
+    /* otherwise attribute id -> stat_id */
     var a = DATA.attributes.find(function (x) { return x.id === statOrAttrId; });
     if (!a) return statOrAttrId;
     return DATA.stats[a.stat_id] || a.stat_id;

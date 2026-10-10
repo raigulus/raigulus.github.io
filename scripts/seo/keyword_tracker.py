@@ -2,13 +2,13 @@
 """
 Raigulus SEO Tool - Keyword Tracker
 ==========================================
-Anahtar kelime sıralama takibi:
-- GSC'den sıralama verisi çekme
-- Sıralama değişimlerini izleme
-- Haftalık karşılaştırma raporu
-- Kelime grupları oluşturma
+Keyword rank tracking:
+- Pull ranking data from GSC
+- Track ranking changes
+- Weekly comparison report
+- Build keyword groups
 
-Kullanım:
+Usage:
     python keyword_tracker.py add "the division 2 targeted loot"
     python keyword_tracker.py track --days 7
     python keyword_tracker.py report
@@ -310,15 +310,15 @@ def generate_report():
     latest = history["snapshots"][-1]
     previous = history["snapshots"][-2] if len(history["snapshots"]) > 1 else None
     
-    report = f"""# Raigulus Keyword Sıralama Raporu
+    report = f"""# Raigulus Keyword Ranking Report
 
 **Tarih:** {datetime.now().strftime("%Y-%m-%d %H:%M")}
 **Toplam Snapshot:** {len(history["snapshots"])}
-**Son Güncelleme:** {latest['date'][:10]}
+**Last Update:** {latest['date'][:10]}
 
-## Güncel Sıralamalar
+## Current Rankings
 
-| Anahtar Kelime | Pozisyon | Tıklama | Gösterim | CTR% | Değişim |
+| Keyword | Position | Clicks | Impressions | CTR% | Change |
 |----------------|----------|---------|----------|------|---------|
 """
     
@@ -341,7 +341,7 @@ def generate_report():
         report += f"| {result['keyword'][:40]} | {result['position']:.1f} | {result['clicks']} | {result['impressions']} | {ctr:.1f}% | {change} |\n"
     
     report += """
-## Sıralama Dağılımı
+## Ranking Distribution
 
 """
     
@@ -353,7 +353,7 @@ def generate_report():
         top_20 = sum(1 for p in positions if p <= 20)
         top_50 = sum(1 for p in positions if p <= 50)
         
-        report += f"""| Sıralama | Sayı | Oran |
+        report += f"""| Position | Count | Share |
 |----------|------|------|
 | Top 3 | {top_3} | %{top_3/len(positions)*100:.1f} |
 | Top 10 | {top_10} | %{top_10/len(positions)*100:.1f} |
@@ -362,21 +362,21 @@ def generate_report():
 """
     
     report += """
-## Öneriler
+## Recommendations
 
 """
     
     # Find keywords needing improvement
     low_position = [r for r in latest["results"] if r["position"] > 10 and r["impressions"] > 10]
     if low_position:
-        report += "### İyileştirme Gereken Kelimeler (Pozisyon > 10, Gösterim > 10)\n\n"
+        report += "### Keywords Needing Improvement (Position > 10, Impressions > 10)\n\n"
         for r in sorted(low_position, key=lambda x: x["impressions"], reverse=True)[:5]:
-            report += f"- **{r['keyword']}**: Pozisyon {r['position']:.1f}, {r['impressions']} gösterim\n"
+            report += f"- **{r['keyword']}**: Position {r['position']:.1f}, {r['impressions']} impressions\n"
         report += "\n"
     
     report += """
 ---
-*Rapor otomatik oluşturuldu.*
+*Report generated automatically.*
 """
     
     # Save report
@@ -397,12 +397,12 @@ def compare_weeks(weeks=4):
         print("Need at least 2 snapshots for comparison.")
         return
     
-    report = f"""# Raigulus Keyword Karşılaştırma Raporu
+    report = f"""# Raigulus Keyword Comparison Report
 
 **Tarih:** {datetime.now().strftime("%Y-%m-%d %H:%M")}
-**Karşılaştırma:** Son {weeks} hafta
+**Comparison:** Last {weeks} weeks
 
-## Haftalık Değişim Tablosu
+## Weekly Change Table
 
 """
     
@@ -419,7 +419,7 @@ def compare_weeks(weeks=4):
     for i, snap in enumerate(snapshots):
         date = snap["date"][:10]
         report += f" {date} |"
-    report += " Değişim |\\n"
+    report += " Change |\\n"
     
     report += "|----------------|"
     for _ in snapshots:
@@ -455,7 +455,7 @@ def compare_weeks(weeks=4):
     
     report += """
 ---
-*Rapor otomatik oluşturuldu.*
+*Report generated automatically.*
 """
     
     # Save report

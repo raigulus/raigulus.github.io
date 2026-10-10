@@ -1,21 +1,21 @@
-# Raigulus GSC Haftalık Rapor
+# Raigulus GSC Weekly Report
 
 **Tarih:** 2026-10-05
 **Property:** https://raigulus.github.io/
-**Dönem:** Son 7 gün
+**Period:** Last 7 days
 
 ## Genel Durum
 
-| Metrik | Değer |
+| Metric | Value |
 |--------|-------|
-| Toplam Tıklama | 148 |
-| Toplam Gösterim | 19607 |
+| Total Clicks | 148 |
+| Total Impressions | 19607 |
 | Ortalama CTR | %0.75 |
-| Benzersiz Sorgu | 573 |
+| Unique Queries | 573 |
 
-## En Çok Tıklanan Sorgular
+## Top Queries By Clicks
 
-| Sorgu | Tıklama | Gösterim | CTR% | Ort. Pozisyon |
+| Query | Clicks | Impressions | CTR% | Avg. Position |
 |-------|---------|----------|------|---------------|
 | division 2 steel and sons acr | 8 | 646 | 1.2 | 5.7 |
 | how to get caduceus division 2 | 8 | 37 | 21.6 | 2.7 |
@@ -38,9 +38,9 @@
 | division 2 loot today | 2 | 8 | 25.0 | 1.9 |
 | division 2 reset time | 2 | 11 | 18.2 | 3.0 |
 
-## En Çok Tıklanan Sayfalar
+## Top Pages By Clicks
 
-| Sayfa | Tıklama | Gösterim |
+| Page | Clicks | Impressions |
 |-------|---------|----------|
 | /division-2/exotics/steel-and-sons-acr/ | 34 | 4130 |
 | /division-2/loot/ | 19 | 185 |
@@ -63,16 +63,16 @@
 | /division-2/patches/broken-wings/ | 0 | 1 |
 | /division-2/escalation/ | 0 | 6 |
 
-## Öneriler
+## Recommendations
 
-### Düşük CTR'li Sorgular (İyileştirme Gereken)
+### Low CTR Queries (Needs Improvement)
 
-- **division 2 steel and sons acr**: %1.2 CTR (646 gösterim)
-- **steel and sons acr division 2**: %0.6 CTR (994 gösterim)
-- **diablo 4 world boss timer**: %0.1 CTR (5369 gösterim)
-- **the division 2 steel and sons acr**: %1.2 CTR (255 gösterim)
-- **diablo 4 boss timer**: %0.3 CTR (572 gösterim)
+- **division 2 steel and sons acr**: %1.2 CTR (646 impressions)
+- **steel and sons acr division 2**: %0.6 CTR (994 impressions)
+- **diablo 4 world boss timer**: %0.1 CTR (5369 impressions)
+- **the division 2 steel and sons acr**: %1.2 CTR (255 impressions)
+- **diablo 4 boss timer**: %0.3 CTR (572 impressions)
 
 
 ---
-*Rapor otomatik oluşturuldu.*
+*Report generated automatically.*

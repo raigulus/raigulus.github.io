@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""build-maker.json eski/yeni karsilastirmasi -> patch changelog.
+"""Compare old/new build-maker.json -> patch changelog.
 
-Cikti: assets/data/build-maker-changelog.json
+Output: assets/data/build-maker-changelog.json
 Kullanim: python3 scripts/build-maker-changelog.py
-(genelde build-maker-data.py'den sonra calistirilir)
+(normally run after build-maker-data.py)
 """
 import json
 from datetime import datetime, timezone
@@ -23,7 +23,7 @@ LIST_GROUPS = [("brands", "Brand Set"), ("gearSets", "Gear Set"),
                ("gearTalents", "Gear Talent"), ("weaponTalents", "Weapon Talent"),
                ("skills", "Skill")]
 
-# Degisim kontrol edilecek alanlar (weapon: istatistikler, gear: core/talent)
+# Fields checked for changes (weapon: stats, gear: core/talent)
 WEAPON_FIELDS = ["base_damage", "base_rpm", "base_mag_size", "base_reload_time",
                  "optimal_range", "hsd", "talent_slot"]
 GEAR_FIELDS = ["core_1", "core_2", "core_3", "minor_1", "minor_2", "minor_3", "talent_slot"]
@@ -46,7 +46,7 @@ def diff_items(old: dict, new: dict, fields: list) -> dict:
 
 def main():
     if not CUR.exists() or not PREV.exists():
-        print("HATA: build-maker.json veya build-maker-prev.json yok.")
+        print("ERROR: build-maker.json or build-maker-prev.json missing.")
         return
     cur = json.loads(CUR.read_text(encoding="utf-8"))
     prev = json.loads(PREV.read_text(encoding="utf-8"))
@@ -86,7 +86,7 @@ def main():
     }
     OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"Changelog yazildi: {OUT}")
-    print(f"Eklendi: {total_added} | Kaldirildi: {total_removed} | Degisti: {total_changed}")
+    print(f"Added: {total_added} | Removed: {total_removed} | Changed: {total_changed}")
 
 
 if __name__ == "__main__":

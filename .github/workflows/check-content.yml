@@ -1,0 +1,59 @@
+name: Content Language & Privacy Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Fails on Turkish text, local filesystem paths, real email addresses,
+      # country/region markers and secret-looking tokens in tracked files.
+      # See the allowlist inside the script for legitimate exceptions
+      # (build-maker game data, captured GSC query strings).
+      - name: Language & privacy guard
+        run: python scripts/check_lang_privacy.py
+
+      # AI output sometimes contains CJK characters in English content; they look
+      # plausible in context and pass the language guard.
+      # Excluded on purpose:
+      #   AGENTS.md                      - quotes CJK as examples of what to look for
+      #   assets/data/gsc-analytics.json - captured GSC query strings (ja/ko/zh users)
+      - name: CJK character check
+        run: |
+          hits=$(grep -rlP '[\x{4e00}-\x{9fff}\x{3040}-\x{30ff}\x{ac00}-\x{d7af}]' \
+               --include='*.html' --include='*.md' --include='*.json' \
+               --exclude-dir=.git \
+               --exclude='AGENTS.md' \
+               --exclude='gsc-analytics.json' . || true)
+          if [ -n "$hits" ]; then
+            echo "::error::CJK characters found in English content:"
+            echo "$hits"
+            exit 1
+          fi
+          echo "No CJK characters found."
+
+      - name: Encoding guard (UTF-8, no BOM)
+        run: |
+          bad=0
+          while IFS= read -r f; do
+            if [ "$(head -c 3 "$f" | xxd -p)" = "efbbbf" ]; then
+              echo "::error::$f has a UTF-8 BOM"
+              bad=1
+            fi
+          done < <(git ls-files '*.html' '*.css' '*.js' '*.json' '*.md' '*.py')
+          exit $bad

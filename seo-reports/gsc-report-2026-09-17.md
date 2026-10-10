@@ -1,21 +1,21 @@
-# Raigulus GSC Haftalık Rapor
+# Raigulus GSC Weekly Report
 
 **Tarih:** 2026-09-17
 **Property:** https://raigulus.github.io/
-**Dönem:** Son 7 gün
+**Period:** Last 7 days
 
 ## Genel Durum
 
-| Metrik | Değer |
+| Metric | Value |
 |--------|-------|
-| Toplam Tıklama | 66 |
-| Toplam Gösterim | 809 |
+| Total Clicks | 66 |
+| Total Impressions | 809 |
 | Ortalama CTR | %8.16 |
-| Benzersiz Sorgu | 88 |
+| Unique Queries | 88 |
 
-## En Çok Tıklanan Sorgular
+## Top Queries By Clicks
 
-| Sorgu | Tıklama | Gösterim | CTR% | Ort. Pozisyon |
+| Query | Clicks | Impressions | CTR% | Avg. Position |
 |-------|---------|----------|------|---------------|
 | division 2 loot map today | 11 | 17 | 64.7 | 2.9 |
 | division 2 prototype gear today | 10 | 20 | 50.0 | 2.2 |
@@ -38,9 +38,9 @@
 | when do incursions reset division 2 | 1 | 1 | 100.0 | 3.0 |
 | capitol building mission division 2 | 0 | 1 | 0.0 | 22.0 |
 
-## En Çok Tıklanan Sayfalar
+## Top Pages By Clicks
 
-| Sayfa | Tıklama | Gösterim |
+| Page | Clicks | Impressions |
 |-------|---------|----------|
 | /division-2/loot/ | 48 | 500 |
 | /division-2/prototype-gear/ | 14 | 49 |
@@ -54,8 +54,8 @@
 | /division-2/ | 0 | 2 |
 | /division-2/manhunts/ | 0 | 3 |
 
-## Öneriler
+## Recommendations
 
 
 ---
-*Rapor otomatik oluşturuldu.*
+*Report generated automatically.*

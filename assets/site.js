@@ -149,11 +149,11 @@ raf = requestAnimationFrame(tick);
     })(navs[n]);
   }
 
-  // Kaydirma ipucu: nav yatay kaydirilabilir oldugunda, icerigin devam ettigi
-  // kenarda yumusak solukluk gosterir. Sabit bir maske degil - kaydirma
-  // durumuna gore (end / start / both) degisir ve kaydirilacak icerik yoksa
-  // hic gorunmez. tick() scrollLeft'i programatik yaziyor; `scroll` olayi
-  // bunu da tetikler, ayri bir cagriya gerek yok.
+  // Scroll hint: when the nav is horizontally scrollable, the edge that still has
+  // content fades out. Not a fixed mask - it follows the scroll position
+  // (end / start / both) and disappears entirely when there is nothing to scroll.
+  // tick() writes scrollLeft programmatically; the `scroll` event fires for that
+  // too, so no extra call is needed.
   function navHint(nav) {
     var max = nav.scrollWidth - nav.clientWidth;
     if (max <= 2) { nav.removeAttribute("data-hint"); return; }

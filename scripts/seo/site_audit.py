@@ -3,13 +3,13 @@
 Raigulus SEO Tool - Site Audit
 ==========================================
 Site SEO denetimi:
-- Kırık linkler
-- Meta tag kontrolü
+- Broken links
+- Meta tag check
 - Schema markup
-- Başlık uzunlukları
-- Meta description kontrolü
+- Title lengths
+- Meta description check
 
-Kullanım:
+Usage:
     python site_audit.py --full
     python site_audit.py --check-links
     python site_audit.py --check-meta
@@ -193,20 +193,20 @@ def check_schema(html_files):
 
 def generate_audit_report(broken_links, meta_issues, schema_results):
     """Generate audit report."""
-    report = f"""# Raigulus SEO Denetim Raporu
+    report = f"""# Raigulus SEO Audit Report
 
 **Tarih:** {datetime.now().strftime("%Y-%m-%d %H:%M")}
 
-## Özet
+## Summary
 
-| Kategori | Sayı |
+| Category | Count |
 |----------|------|
-| Kırık Link | {len(broken_links)} |
+| Broken Link | {len(broken_links)} |
 | Meta Tag Sorunu | {len(meta_issues)} |
-| Schema Olan Sayfa | {sum(1 for s in schema_results if s['has_schema'])} |
-| Schema Olmayan Sayfa | {sum(1 for s in schema_results if not s['has_schema'])} |
+| Pages With Schema | {sum(1 for s in schema_results if s['has_schema'])} |
+| Pages Without Schema | {sum(1 for s in schema_results if not s['has_schema'])} |
 
-## Kırık Linkler
+## Broken Links
 
 """
     
@@ -214,10 +214,10 @@ def generate_audit_report(broken_links, meta_issues, schema_results):
         for item in broken_links[:20]:
             report += f"- `{item['file']}` → {item['link']}\n"
     else:
-        report += "✓ Kırık link bulunamadı\n"
+        report += "✓ No broken links found\n"
     
     report += """
-## Meta Tag Sorunları
+## Meta Tag Issues
 
 """
     
@@ -231,17 +231,17 @@ def generate_audit_report(broken_links, meta_issues, schema_results):
             issue_groups[issue_type].append(issue)
         
         for issue_type, issues in issue_groups.items():
-            report += f"### {issue_type.replace('_', ' ').title()} ({len(issues)} adet)\n\n"
+            report += f"### {issue_type.replace('_', ' ').title()} ({len(issues)} total)\n\n"
             for issue in issues[:10]:
                 report += f"- `{issue['file']}`: {issue['detail']}\n"
             report += "\n"
     else:
-        report += "✓ Meta tag sorunu bulunamadı\n"
+        report += "✓ No meta tag issues found\n"
     
     report += """
 ## Schema Markup
 
-| Sayfa | Schema | Türler |
+| Page | Schema | Types |
 |-------|--------|--------|
 """
     
@@ -252,7 +252,7 @@ def generate_audit_report(broken_links, meta_issues, schema_results):
     
     report += """
 ---
-*Rapor otomatik oluşturuldu.*
+*Report generated automatically.*
 """
     
     return report

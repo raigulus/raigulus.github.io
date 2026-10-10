@@ -46,9 +46,9 @@ body{
 }
 .site-header nav{display:flex;align-items:center;gap:28px;overflow-x:auto;scrollbar-width:none}
 .site-header nav::-webkit-scrollbar{display:none}
-/* Yatay kaydirma ipucu: sadece icerik devam eden kenarda soluklasir.
-   data-hint JS tarafindan scroll konumuna gore (end/start/both)
-   guncellenir; kaydirilacak icerik yoksa ozellik tamamen kalkar. */
+/* Horizontal scroll hint: only the edge that still has content fades.
+   data-hint is maintained by JS from the scroll position (end/start/both);
+   when there is nothing left to scroll the property is dropped entirely. */
 .site-header nav[data-hint]{-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 34px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 34px),transparent)}
 .site-header nav[data-hint="start"]{-webkit-mask-image:linear-gradient(to right,transparent,#000 34px);mask-image:linear-gradient(to right,transparent,#000 34px)}
 .site-header nav[data-hint="both"]{-webkit-mask-image:linear-gradient(to right,transparent,#000 34px,#000 calc(100% - 34px),transparent);mask-image:linear-gradient(to right,transparent,#000 34px,#000 calc(100% - 34px),transparent)}
@@ -477,11 +477,10 @@ body.theme-assassins-creed .archive-notes{
   .brand{font-size:19px}
   .site-header{align-items:flex-start;flex-direction:column;gap:16px;padding:20px 16px 0}
   .site-header nav{width:100%;max-width:none;padding-block:11px;margin-block:-11px}
-    /* overflow-x:auto, spec geregi overflow-y'yi de auto yapar; nav kutusu 19px
-       oldugu icin a::after'in 40px hit-area'si dikey olarak kirpiliyordu
-       (?l??len ger?ek tap yuksekligi 20px, WCAG 2.5.8 min 24px).
-       11px dikey padding kutuya 41px -> 40px alan sigar; negatif margin
-       header yuksekligini degistirmeden boslugu geri aliyor. */
+    /* overflow-x:auto also computes overflow-y to auto, so the nav box clipped
+       the 40px a::after hit area vertically (measured tap height 20px, WCAG 2.5.8
+       minimum 24px). 11px vertical padding grows the box to 41px; the negative
+       margin restores the space so the header height is unchanged. */
   .archive-hero{margin:14px 10px 0}
   .archive-paper{min-height:630px;padding:30px 20px 38px;clip-path:polygon(0 0,calc(100% - 24px) 0,100% 24px,100% 100%,0 100%)}
   .archive-paper::before{inset:20px 12px}

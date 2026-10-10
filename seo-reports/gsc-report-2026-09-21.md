@@ -1,21 +1,21 @@
-# Raigulus GSC Haftalık Rapor
+# Raigulus GSC Weekly Report
 
 **Tarih:** 2026-09-21
 **Property:** https://raigulus.github.io/
-**Dönem:** Son 7 gün
+**Period:** Last 7 days
 
 ## Genel Durum
 
-| Metrik | Değer |
+| Metric | Value |
 |--------|-------|
-| Toplam Tıklama | 59 |
-| Toplam Gösterim | 842 |
+| Total Clicks | 59 |
+| Total Impressions | 842 |
 | Ortalama CTR | %7.01 |
-| Benzersiz Sorgu | 101 |
+| Unique Queries | 101 |
 
-## En Çok Tıklanan Sorgular
+## Top Queries By Clicks
 
-| Sorgu | Tıklama | Gösterim | CTR% | Ort. Pozisyon |
+| Query | Clicks | Impressions | CTR% | Avg. Position |
 |-------|---------|----------|------|---------------|
 | division 2 targeted loot today | 10 | 115 | 8.7 | 6.0 |
 | division 2 loot map today | 9 | 14 | 64.3 | 2.4 |
@@ -38,9 +38,9 @@
 | the division 2 incursion reset | 1 | 2 | 50.0 | 2.5 |
 | the division 2 loot map | 1 | 6 | 16.7 | 6.5 |
 
-## En Çok Tıklanan Sayfalar
+## Top Pages By Clicks
 
-| Sayfa | Tıklama | Gösterim |
+| Page | Clicks | Impressions |
 |-------|---------|----------|
 | /division-2/loot/ | 43 | 446 |
 | /division-2/prototype-gear/ | 9 | 39 |
@@ -60,8 +60,8 @@
 | /division-2/manhunts/ | 0 | 3 |
 | /division-2/patches/puppeteers/ | 0 | 1 |
 
-## Öneriler
+## Recommendations
 
 
 ---
-*Rapor otomatik oluşturuldu.*
+*Report generated automatically.*

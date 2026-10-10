@@ -1,21 +1,21 @@
-# Raigulus GSC Haftalık Rapor
+# Raigulus GSC Weekly Report
 
 **Tarih:** 2026-09-28
 **Property:** https://raigulus.github.io/
-**Dönem:** Son 7 gün
+**Period:** Last 7 days
 
 ## Genel Durum
 
-| Metrik | Değer |
+| Metric | Value |
 |--------|-------|
-| Toplam Tıklama | 66 |
-| Toplam Gösterim | 1271 |
+| Total Clicks | 66 |
+| Total Impressions | 1271 |
 | Ortalama CTR | %5.19 |
-| Benzersiz Sorgu | 187 |
+| Unique Queries | 187 |
 
-## En Çok Tıklanan Sorgular
+## Top Queries By Clicks
 
-| Sorgu | Tıklama | Gösterim | CTR% | Ort. Pozisyon |
+| Query | Clicks | Impressions | CTR% | Avg. Position |
 |-------|---------|----------|------|---------------|
 | division 2 daily reset | 6 | 9 | 66.7 | 1.1 |
 | division 2 targeted loot today | 6 | 87 | 6.9 | 5.4 |
@@ -38,9 +38,9 @@
 | division 2 reset | 1 | 6 | 16.7 | 5.2 |
 | division 2 reset time | 1 | 9 | 11.1 | 3.6 |
 
-## En Çok Tıklanan Sayfalar
+## Top Pages By Clicks
 
-| Sayfa | Tıklama | Gösterim |
+| Page | Clicks | Impressions |
 |-------|---------|----------|
 | /division-2/loot/ | 25 | 267 |
 | /division-2/reset/ | 21 | 228 |
@@ -63,12 +63,12 @@
 | /division-2/patches/broken-wings/ | 0 | 2 |
 | /division-2/patches/concealed-agenda/ | 0 | 2 |
 
-## Öneriler
+## Recommendations
 
-### Düşük CTR'li Sorgular (İyileştirme Gereken)
+### Low CTR Queries (Needs Improvement)
 
-- **division 2 build planner**: %1.1 CTR (91 gösterim)
+- **division 2 build planner**: %1.1 CTR (91 impressions)
 
 
 ---
-*Rapor otomatik oluşturuldu.*
+*Report generated automatically.*
