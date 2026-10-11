@@ -85,8 +85,9 @@
       <a href="/about/">About</a>
       <a href="/discord/">Discord</a>
       <a href="https://www.youtube.com/@raigulus">YouTube</a>
-    </nav>
-  </header>
+</nav>
+    <button type="button" class="header-search-btn" data-search-open aria-label="Search the Raigulus archive" aria-haspopup="dialog"><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="9" cy="9" r="6"></circle><path d="M13.5 13.5 18 18"></path></svg><span class="header-search-btn-text">Search</span></button>
+  </header> 
   <main>
     <section class="section">
       <div class="content">
@@ -158,5 +159,18 @@
     <p>Raigulus archives The Division 2 no commentary walkthroughs, mission and build guides, plus Conflict PvP, Dark Zone, Regulus, and gameplay clips.</p>
     <p><a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="https://www.instagram.com/raigulus/">Instagram @raigulus</a> <span>/</span> <a href="https://www.facebook.com/raigulus/">Facebook</a> <span>/</span> <a href="/discord/">Discord</a> <span>/</span> <a href="/feedback/">Feedback</a></p>
   </footer>
+
+
+<div class="site-search-overlay" id="site-search-overlay" role="dialog" aria-modal="true" aria-label="Search the Raigulus archive" hidden>
+  <div class="site-search-panel">
+    <div class="site-search-head">
+      <input id="site-search-overlay-input" type="search" placeholder="Search guides, timers, lore, videos..." aria-label="Search query" autocomplete="off">
+      <button type="button" class="site-search-close" data-search-close aria-label="Close search">&times;</button>
+    </div>
+    <p class="meta" id="site-search-overlay-status"></p>
+    <div id="site-search-overlay-results" class="site-search-results"></div>
+    <p class="meta site-search-footnote">Press <kbd>/</kbd> to open, <kbd>Esc</kbd> to close.</p>
+  </div>
+</div>
 </body>
 </html>

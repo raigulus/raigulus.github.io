@@ -43,8 +43,9 @@
     <a href="/about/">About</a>
     <a href="/discord/">Discord</a>
     <a href="https://www.youtube.com/@raigulus">YouTube</a>
-  </nav>
-</header>
+</nav>
+    <button type="button" class="header-search-btn" data-search-open aria-label="Search the Raigulus archive" aria-haspopup="dialog"><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="9" cy="9" r="6"></circle><path d="M13.5 13.5 18 18"></path></svg><span class="header-search-btn-text">Search</span></button>
+  </header> 
 <main class="lore-shell">
   <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/lore/">Lore</a> / <span>Organizations</span></nav>
   <section class="lore-index-hero category-hero"><p class="eyebrow">Lore category</p><h1>The Division 2 Organizations &amp; Lore</h1><p>Source-linked organizations for The Division 2 lore and story research, with wider Division-universe context where the record requires it.</p><div class="archive-stats"><span><strong>2</strong>structured records</span></div></section>
@@ -71,5 +72,18 @@
   <p>Unofficial, source-led research into The Division universe and its real-world influences.</p>
     <p><a href="/lore/">Lore Archive</a> <span>/</span> <a href="/lore/methodology/">Methodology</a> <span>/</span> <a href="/lore/corrections/">Corrections</a> <span>/</span> <a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="/feedback/">Feedback</a></p>
 </footer>
+
+
+<div class="site-search-overlay" id="site-search-overlay" role="dialog" aria-modal="true" aria-label="Search the Raigulus archive" hidden>
+  <div class="site-search-panel">
+    <div class="site-search-head">
+      <input id="site-search-overlay-input" type="search" placeholder="Search guides, timers, lore, videos..." aria-label="Search query" autocomplete="off">
+      <button type="button" class="site-search-close" data-search-close aria-label="Close search">&times;</button>
+    </div>
+    <p class="meta" id="site-search-overlay-status"></p>
+    <div id="site-search-overlay-results" class="site-search-results"></div>
+    <p class="meta site-search-footnote">Press <kbd>/</kbd> to open, <kbd>Esc</kbd> to close.</p>
+  </div>
+</div>
 </body>
 </html>

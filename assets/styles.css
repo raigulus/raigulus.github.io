@@ -671,3 +671,30 @@ dashed empty slots read as drop zones, filled rarities keep their accents. */
 .home-search input:focus{border-color:rgba(245,90,0,.4)}
 
 .content>p a::after{content:"";position:absolute;left:0;right:0;top:50%;height:32px;transform:translateY(-50%)}
+
+/* ===== Site-wide search overlay =====
+   Trigger lives in the header on every page; the ~1.6 MB index is only
+   fetched once the dialog opens (see ensureIndex in site.js). The dialog is
+   position:fixed and the page is locked with overflow:hidden while open, so
+   opening it cannot shift anything and cannot add layout shift. */
+.header-search-btn{flex:none;display:inline-flex;align-items:center;gap:7px;padding:6px 12px;margin-left:12px;border:1px solid rgba(255,255,255,.2);border-radius:8px;background:transparent;color:inherit;font:inherit;font-size:12px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.header-search-btn:hover{border-color:rgba(255,255,255,.42);background:rgba(255,255,255,.06)}
+.header-search-btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+.site-search-overlay{position:fixed;inset:0;z-index:200;display:flex;align-items:flex-start;justify-content:center;padding:10vh 16px 24px;background:rgba(8,9,11,.82);backdrop-filter:blur(3px)}
+.site-search-overlay[hidden]{display:none}
+body.has-search-open{overflow:hidden}
+.site-search-panel{width:100%;max-width:640px;max-height:80vh;overflow-y:auto;padding:18px;border:1px solid var(--border2);border-radius:12px;background:var(--surface);box-shadow:0 18px 50px rgba(0,0,0,.45)}
+.site-search-head{display:flex;align-items:center;gap:10px}
+#site-search-overlay-input{flex:1;min-width:0;padding:11px 13px;border:1px solid var(--border2);border-radius:8px;background:var(--surface2);color:var(--text);font:inherit;font-size:15px}
+#site-search-overlay-input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.site-search-close{flex:none;width:32px;height:32px;border:1px solid var(--border2);border-radius:8px;background:transparent;color:var(--text-sub);font-size:20px;line-height:1;cursor:pointer}
+.site-search-close:hover{border-color:var(--border2);color:var(--text)}
+.site-search-results{display:grid;gap:6px;margin-top:10px}
+.site-search-hit{display:block;padding:10px 12px;border:1px solid var(--border);border-radius:8px;background:var(--surface2);text-decoration:none;color:inherit}
+.site-search-hit:hover{border-color:var(--accent);background:rgba(232,138,85,.1)}
+.site-search-hit-eyebrow{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.site-search-hit strong{display:block;margin-top:2px;font-family:var(--display);font-size:17px;font-weight:500}
+.site-search-empty{margin:10px 2px;color:var(--text-sub)}
+.site-search-footnote{margin:12px 2px 0;font-size:11px}
+.site-search-footnote kbd{padding:1px 5px;border:1px solid var(--border2);border-radius:4px;font-family:var(--archive-mono);font-size:10px}
+@media(max-width:640px){.header-search-btn-text{display:none}.header-search-btn{padding:6px 9px;margin-left:8px}.site-search-overlay{padding:6vh 10px 16px}}

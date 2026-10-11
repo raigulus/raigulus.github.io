@@ -208,3 +208,121 @@ raf = requestAnimationFrame(tick);
     for (var h = 0; h < navs.length; h++) navHint(navs[h]);
   });
 });
+
+// Site-wide search overlay. The index is ~1.6 MB, so it is fetched the first
+// time the dialog is opened, never on page load - same approach the /search/
+// page uses. "/" and Ctrl/Cmd+K open it, Escape closes and returns focus to
+// the trigger so keyboard users keep their place.
+(function () {
+  var dialog = document.getElementById("site-search-overlay");
+  if (!dialog) return;
+  var openBtn = document.querySelector("[data-search-open]");
+  var input = dialog.querySelector("#site-search-overlay-input");
+  var results = dialog.querySelector("#site-search-overlay-results");
+  var status = dialog.querySelector("#site-search-overlay-status");
+  var closeBtn = dialog.querySelector("[data-search-close]");
+  var indexRequest = null;
+  var pages = null;
+  var lastFocus = null;
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+  function sectionName(s) {
+    var map = {
+      "division-2": "Division 2", "destiny-2": "Destiny 2", "diablo-4": "Diablo 4",
+      guides: "Guides", lore: "Lore", home: "Raigulus"
+    };
+    if (map[s]) return map[s];
+    return String(s || "").replace(/-/g, " ").replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+  }
+  function ensureIndex() {
+    if (pages) return Promise.resolve(pages);
+    if (indexRequest) return indexRequest;
+    status.textContent = "Loading the index...";
+    indexRequest = fetch("/assets/data/search-index.json", { cache: "no-cache" })
+      .then(function (r) {
+        if (!r.ok) throw new Error("index missing");
+        return r.json();
+      })
+      .then(function (data) {
+        pages = data.pages || [];
+        indexRequest = null;
+        return pages;
+      })
+      .catch(function () {
+        indexRequest = null;
+        status.textContent = "Search index failed to load.";
+        return [];
+      });
+    return indexRequest;
+  }
+  function scorePage(p, terms) {
+    var title = (p.t || "").toLowerCase();
+    var rest = ((p.d || "") + " " + (p.b || "") + " " + (p.u || "") + " " + (p.s || "")).toLowerCase();
+    var sc = 0;
+    for (var i = 0; i < terms.length; i++) {
+      var inTitle = title.indexOf(terms[i]) !== -1;
+      if (!inTitle && rest.indexOf(terms[i]) === -1) return -1;
+      sc += inTitle ? 2 : 1;
+    }
+    return sc;
+  }
+  function render() {
+    var q = input.value.trim();
+    if (!pages) { results.innerHTML = ""; return; }
+    var terms = q.toLowerCase().split(/\s+/).filter(function (t) { return t.length > 0; });
+    if (!terms.length) {
+      results.innerHTML = "";
+      status.textContent = "Type to search " + pages.length + " pages.";
+      return;
+    }
+    var hits = [];
+    for (var i = 0; i < pages.length; i++) {
+      var sc = scorePage(pages[i], terms);
+      if (sc >= 0) hits.push({ p: pages[i], sc: sc });
+    }
+    hits.sort(function (a, b) { return b.sc - a.sc; });
+    hits = hits.slice(0, 8);
+    status.textContent = hits.length + (hits.length === 1 ? " result" : " results") + ' for "' + q + '"';
+    results.innerHTML = hits.map(function (h) {
+      return '<a class="site-search-hit" href="' + esc(h.p.u) + '">' +
+        '<span class="site-search-hit-eyebrow">' + esc(sectionName(h.p.s)) + "</span>" +
+        "<strong>" + esc(h.p.t) + "</strong></a>";
+    }).join("") || '<p class="site-search-empty">No matches. Try fewer words.</p>';
+  }
+  function open() {
+    lastFocus = document.activeElement;
+    dialog.hidden = false;
+    document.body.classList.add("has-search-open");
+    input.value = "";
+    results.innerHTML = "";
+    ensureIndex().then(function () { render(); });
+    input.focus();
+  }
+  function close() {
+    dialog.hidden = true;
+    document.body.classList.remove("has-search-open");
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  if (openBtn) openBtn.addEventListener("click", open);
+  if (closeBtn) closeBtn.addEventListener("click", close);
+  dialog.addEventListener("click", function (e) {
+    if (e.target === dialog || e.target.closest("[data-search-close]")) close();
+  });
+  input.addEventListener("input", function () {
+    // ensureIndex() resolves with the page list, so render() always runs after
+    // the index is in memory. Chaining off the old return value raced: a second
+    // keystroke saw the in-flight request and rendered against null pages.
+    ensureIndex().then(function () { render(); });
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !dialog.hidden) { close(); return; }
+    if (dialog.hidden && (e.key === "/" || ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k"))) {
+      var t = e.target;
+      if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;
+      e.preventDefault();
+      open();
+    }
+  });
+})();

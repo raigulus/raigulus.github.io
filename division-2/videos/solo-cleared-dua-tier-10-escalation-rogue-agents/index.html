@@ -93,14 +93,15 @@
       <a href="/about/">About</a>
       <a href="/discord/">Discord</a>
       <a href="https://www.youtube.com/@raigulus">YouTube</a>
-    </nav>
+</nav>
+    <button type="button" class="header-search-btn" data-search-open aria-label="Search the Raigulus archive" aria-haspopup="dialog"><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="9" cy="9" r="6"></circle><path d="M13.5 13.5 18 18"></path></svg><span class="header-search-btn-text">Search</span></button>
+  </header>
     <div class="header-right">
       <button class="search-toggle" aria-label="Search" id="search-toggle">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
       </button>
       <a class="header-discord" href="https://discord.gg/xj8jnS3Gkh">Discord</a>
-    </div>
-  </header>
+    </div> 
   <div class="search-modal" id="search-modal">
     <div class="search-box">
       <input type="text" id="search-input" placeholder="Search guides..." autocomplete="off">
@@ -170,5 +171,18 @@
       <a href="/feedback/">Feedback</a>
     </div>
   </footer>
+
+
+<div class="site-search-overlay" id="site-search-overlay" role="dialog" aria-modal="true" aria-label="Search the Raigulus archive" hidden>
+  <div class="site-search-panel">
+    <div class="site-search-head">
+      <input id="site-search-overlay-input" type="search" placeholder="Search guides, timers, lore, videos..." aria-label="Search query" autocomplete="off">
+      <button type="button" class="site-search-close" data-search-close aria-label="Close search">&times;</button>
+    </div>
+    <p class="meta" id="site-search-overlay-status"></p>
+    <div id="site-search-overlay-results" class="site-search-results"></div>
+    <p class="meta site-search-footnote">Press <kbd>/</kbd> to open, <kbd>Esc</kbd> to close.</p>
+  </div>
+</div>
 </body>
 </html>
