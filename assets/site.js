@@ -305,6 +305,29 @@ raf = requestAnimationFrame(tick);
     document.body.classList.remove("has-search-open");
     if (lastFocus && lastFocus.focus) lastFocus.focus();
   }
+  // aria-modal: Tab must stay inside. Hit links render after the index resolves, so never cache this list.
+  var FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])';
+  function focusableItems() {
+    return Array.prototype.filter.call(dialog.querySelectorAll(FOCUSABLE), function (el) {
+      return el.offsetWidth > 0 || el.offsetHeight > 0 || el === document.activeElement;
+    });
+  }
+  function trapTab(e) {
+    var items = focusableItems();
+    if (items.length === 0) { e.preventDefault(); return; }
+    var first = items[0];
+    var last = items[items.length - 1];
+    var active = document.activeElement;
+    if (e.shiftKey) {
+      if (active === first || !dialog.contains(active)) {
+        e.preventDefault();
+        last.focus();
+      }
+    } else if (active === last || !dialog.contains(active)) {
+      e.preventDefault();
+      first.focus();
+    }
+  }
   if (openBtn) openBtn.addEventListener("click", open);
   if (closeBtn) closeBtn.addEventListener("click", close);
   dialog.addEventListener("click", function (e) {
@@ -318,6 +341,7 @@ raf = requestAnimationFrame(tick);
   });
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && !dialog.hidden) { close(); return; }
+    if (!dialog.hidden && e.key === "Tab") { trapTab(e); return; }
     if (dialog.hidden && (e.key === "/" || ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k"))) {
       var t = e.target;
       if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;

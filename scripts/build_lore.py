@@ -127,7 +127,22 @@ def header():
     <a href="/discord/">Discord</a>
     <a href="https://www.youtube.com/@raigulus">YouTube</a>
   </nav>
+    <button type="button" class="header-search-btn" data-search-open aria-label="Search the Raigulus archive" aria-haspopup="dialog"><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="9" cy="9" r="6"></circle><path d="M13.5 13.5 18 18"></path></svg><span class="header-search-btn-text">Search</span></button>
 </header>'''
+
+
+def search_overlay():
+    return '''<div class="site-search-overlay" id="site-search-overlay" role="dialog" aria-modal="true" aria-label="Search the Raigulus archive" hidden>
+  <div class="site-search-panel">
+    <div class="site-search-head">
+      <input id="site-search-overlay-input" type="search" placeholder="Search guides, timers, lore, videos..." aria-label="Search query" autocomplete="off">
+      <button type="button" class="site-search-close" data-search-close aria-label="Close search">&times;</button>
+    </div>
+    <p class="meta" id="site-search-overlay-status"></p>
+    <div id="site-search-overlay-results" class="site-search-results"></div>
+    <p class="meta site-search-footnote">Press <kbd>/</kbd> to open, <kbd>Esc</kbd> to close.</p>
+  </div>
+</div>'''
 
 
 def footer():
@@ -272,6 +287,7 @@ def render_entry(entry, entries_by_id, sources_by_id):
   </article>
 </main>
 {footer()}
+{search_overlay()}
 </body>
 </html>
 '''
@@ -359,6 +375,7 @@ def render_index(entries):
 </main>
 <script src="/assets/search.js" defer></script>
 {footer()}
+{search_overlay()}
 </body>
 </html>
 '''
@@ -388,6 +405,7 @@ def render_section_index(section, entries):
 </main>
 <script src="/assets/search.js" defer></script>
 {footer()}
+{search_overlay()}
 </body>
 </html>
 '''
@@ -424,6 +442,7 @@ def render_editorial_page(page):
 </section>
 </main>
 {footer()}
+{search_overlay()}
 </body>
 </html>
 '''
@@ -482,6 +501,7 @@ def render_coverage(entries, inventories):
 </section>
 </main>
 {footer()}
+{search_overlay()}
 </body>
 </html>
 '''
@@ -525,6 +545,7 @@ def render_review_queue(entries, inventories):
 </section>
 </main>
 {footer()}
+{search_overlay()}
 </body>
 </html>
 '''
@@ -572,6 +593,7 @@ def render_timeline(entries, sources_by_id):
 </section>
 </main>
 {footer()}
+{search_overlay()}
 </body>
 </html>
 '''
@@ -623,6 +645,7 @@ def render_reading_order(reading_order, entries_by_id, sources_by_id):
 </section>
 </main>
 {footer()}
+{search_overlay()}
 </body>
 </html>
 '''
@@ -658,6 +681,7 @@ def render_sources(sources):
 </section>
 </main>
 {footer()}
+{search_overlay()}
 </body>
 </html>
 '''
