@@ -58,7 +58,7 @@ body{
 .brand{
   color:var(--archive-paper-bright);
   font-size:23px;
-  letter-spacing:.24em
+  letter-spacing:.18em
 }
 .site-header nav{display:flex;align-items:center;gap:28px;overflow-x:auto;scrollbar-width:none}
 .site-header nav::-webkit-scrollbar{display:none}
