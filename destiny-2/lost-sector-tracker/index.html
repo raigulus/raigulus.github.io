@@ -62,7 +62,7 @@
     }, true);
   </script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Destiny 2 Lost Sector Tracker","description":"Unofficial Destiny 2 Lost Sector tracker with daily reset countdown, Legend & Master Lost Sector rotation, exotic armor drops, and champion modifiers.","url":"https://raigulus.github.io/destiny-2/lost-sector-tracker/","isPartOf":{"@type":"WebSite","name":"Raigulus","url":"https://raigulus.github.io","sameAs":["https://www.youtube.com/@raigulus","https://www.instagram.com/raigulus/","https://www.facebook.com/raigulus/"]},"about":{"@type":"VideoGame","name":"Destiny 2"}}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","url":"https://raigulus.github.io/destiny-2/lost-sector-tracker/","mainEntity":[{"@type":"Question","name":"What time is the Destiny 2 daily reset?","acceptedAnswer":{"@type":"Answer","text":"The Destiny 2 daily reset happens every day at 10:00 AM Pacific Time (PT), which is 17:00 UTC. Lost Sector rotations change at this time."}},{"@type":"Question","name":"How often do Lost Sectors rotate in Destiny 2?","acceptedAnswer":{"@type":"Answer","text":"Lost Sectors rotate daily at the daily reset. Each destination (EDZ, Cosmodrome, Moon, Europa, Throne World) has its own rotation cycle."}},{"@type":"Question","name":"What is the difference between Legend and Master Lost Sectors?","acceptedAnswer":{"@type":"Answer","text":"Legend Lost Sectors are easier with fewer champions and shields. Master Lost Sectors are harder with more champions and shields but offer better exotic drop rates. Both drop exotic engrams when completed solo."}},{"@type":"Question","name":"Do I need to unlock Lost Sectors first?","acceptedAnswer":{"@type":"Answer","text":"Yes, you must first discover and complete the Lost Sector on any character before it can appear in the daily Legend/Master rotation."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","url":"https://raigulus.github.io/destiny-2/lost-sector-tracker/","mainEntity":[{"@type":"Question","name":"What time is the Destiny 2 daily reset?","acceptedAnswer":{"@type":"Answer","text":"The Destiny 2 daily reset happens every day at 10:00 AM Pacific Time (PT). Lost Sector rotations change at this time."}},{"@type":"Question","name":"How often do Lost Sectors rotate in Destiny 2?","acceptedAnswer":{"@type":"Answer","text":"Lost Sectors rotate daily at the daily reset. Each destination (EDZ, Cosmodrome, Moon, Europa, Throne World) has its own rotation cycle."}},{"@type":"Question","name":"What is the difference between Legend and Master Lost Sectors?","acceptedAnswer":{"@type":"Answer","text":"Legend Lost Sectors are easier with fewer champions and shields. Master Lost Sectors are harder with more champions and shields but offer better exotic drop rates. Both drop exotic engrams when completed solo."}},{"@type":"Question","name":"Do I need to unlock Lost Sectors first?","acceptedAnswer":{"@type":"Answer","text":"Yes, you must first discover and complete the Lost Sector on any character before it can appear in the daily Legend/Master rotation."}}]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://raigulus.github.io/"},{"@type":"ListItem","position":2,"name":"Destiny 2","item":"https://raigulus.github.io/destiny-2/"},{"@type":"ListItem","position":3,"name":"Lost Sector Tracker","item":"https://raigulus.github.io/destiny-2/lost-sector-tracker/"}]}</script>
   <script src="/assets/site.js" defer></script>
 </head>
@@ -95,7 +95,7 @@
         <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/destiny-2/">Destiny 2</a> / <span>Lost Sector Tracker</span></nav>
         <p class="eyebrow">Destiny 2 / Lost Sector Tracker</p>
         <h1>Destiny 2 Lost Sector Tracker Today</h1>
-        <p>Unofficial fan-made tracker. Lost Sector rotations reset daily at 10:00 AM Pacific Time (17:00 UTC). Check the current Legend and Master Lost Sectors, exotic armor drops, and champion modifiers.</p>
+        <p>Unofficial fan-made tracker. Lost Sector rotations reset daily at 10:00 AM Pacific Time. Check the current Legend and Master Lost Sectors, exotic armor drops, and champion modifiers.</p>
 
         <h2>Next Daily Reset</h2>
         <div class="status-card" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px; margin-bottom: 32px;">
@@ -162,9 +162,9 @@
 
         <h2>Reset Times</h2>
         <table class="facts">
-          <tr><th>Daily Reset</th><td>10:00 AM PT / 17:00 UTC</td></tr>
-          <tr><th>Weekly Reset</th><td>Tuesday 10:00 AM PT / 17:00 UTC</td></tr>
-          <tr><th>Xur Arrival</th><td>Friday 10:00 AM PT / 17:00 UTC</td></tr>
+          <tr><th>Daily Reset</th><td>10:00 AM Pacific</td></tr>
+          <tr><th>Weekly Reset</th><td>Tuesday 10:00 AM Pacific</td></tr>
+          <tr><th>Xur Arrival</th><td>Friday 10:00 AM Pacific</td></tr>
         </table>
 
         <h2>Tips for Lost Sectors</h2>
@@ -198,7 +198,7 @@
         <h2>FAQ</h2>
         <dl class="faq-list">
           <dt>What time is the Destiny 2 daily reset?</dt>
-          <dd>The Destiny 2 daily reset happens every day at 10:00 AM Pacific Time (PT), which is 17:00 UTC. Lost Sector rotations change at this time.</dd>
+          <dd>The Destiny 2 daily reset happens every day at 10:00 AM Pacific Time (PT). Lost Sector rotations change at this time.</dd>
           <dt>How often do Lost Sectors rotate in Destiny 2?</dt>
           <dd>Lost Sectors rotate daily at the daily reset. Each destination (EDZ, Cosmodrome, Moon, Europa, Throne World) has its own rotation cycle.</dd>
           <dt>What is the difference between Legend and Master Lost Sectors?</dt>
@@ -263,8 +263,7 @@
   <script>
     // Destiny 2 Lost Sector Tracker - Client-side calculation
     (function() {
-      // Destiny 2 daily reset: 10:00 AM PT / 17:00 UTC
-      var RESET_HOUR_UTC = 17;
+      // Destiny 2 daily reset: 10:00 AM Pacific local (17:00 UTC in PDT, 18:00 UTC in PST)
       var RESET_MINUTE_UTC = 0;
 
       // Lost Sector rotations per destination (simplified - in reality Bungie rotates these)
@@ -313,19 +312,38 @@
         "The Quietest Void": "Overload, Unstoppable / Void shields"
       };
 
-      function getNextReset() {
-        var now = new Date();
-        var utcHours = now.getUTCHours();
-        var utcMinutes = now.getUTCMinutes();
-        var utcSeconds = now.getUTCSeconds();
+      function ptClockParts(date) {
+  var parts = {};
+  new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Los_Angeles", hour12: false,
+    hour: "2-digit", minute: "2-digit", second: "2-digit"
+  }).formatToParts(date).forEach(function (p) { parts[p.type] = p.value; });
+  return { h: parseInt(parts.hour, 10) % 24, m: parseInt(parts.minute, 10), s: parseInt(parts.second, 10) };
+}
 
-        // Calculate ms until next reset
-        var msUntilReset = ((RESET_HOUR_UTC - utcHours - 1) * 60 + (60 - utcMinutes - 1)) * 60 * 1000 + (60 - utcSeconds) * 1000;
-        if (msUntilReset < 0) msUntilReset += 24 * 60 * 60 * 1000;
+// The reset is 10:00 AM Pacific *local* time. A fixed UTC hour breaks across
+// daylight saving: 17:00 UTC is 10:00 PDT but 09:00 PST, so the countdown used
+// to fire an hour early for roughly two thirds of the year. Both sides of the
+// subtraction are Pacific wall-clock, so this holds on either side of a DST change.
+function getNextReset() {
+  var now = new Date();
+  var t = ptClockParts(now);
+  var elapsed = t.h * 3600 + t.m * 60 + t.s;
+  var delta = 10 * 3600 - elapsed;
+  if (delta <= 0) delta += 24 * 3600;
+  var guess = new Date(now.getTime() + delta * 1000);
 
-        var resetTime = new Date(now.getTime() + msUntilReset);
-        return resetTime;
-      }
+  // On the two DST changeover days the wall-clock step lands on 09:00 or 11:00
+  // because 02:00 either never happens or happens twice. Nudge by the observed
+  // hour difference; a couple of passes converge and the result is exact on
+  // every day of the year.
+  for (var i = 0; i < 3; i++) {
+    var diff = 10 - ptClockParts(guess).h;
+    if (diff === 0) break;
+    guess = new Date(guess.getTime() + diff * 3600 * 1000);
+  }
+  return guess;
+}
 
       function getDaysSinceEpoch() {
         var epoch = new Date(Date.UTC(2024, 0, 1)); // Reference date
