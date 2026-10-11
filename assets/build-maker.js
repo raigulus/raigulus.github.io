@@ -969,6 +969,14 @@
 
   /* ---------- init ---------- */
 
+  // Paint the slot grid before the data lands. Slot counts come from the constant
+  // GEAR_SLOTS/WEAPON_SLOTS lists and the hardcoded 2-skill loop, not from the
+  // fetched JSON, so the final layout is knowable up front. Deferring the first
+  // render until the fetch resolved made ~2200 px of grid appear in one go, which
+  // Lighthouse charged as CLS 0.362 on mobile. state is all-null here, so this
+  // draws the ghost slots that get replaced by the real render below.
+  renderSlots();
+
   Promise.all([
     fetch("/assets/data/build-maker.json").then(function (r) { return r.json(); }),
     fetch("/assets/data/item-images.json").then(function (r) { return r.json(); }).catch(function () { return {}; })

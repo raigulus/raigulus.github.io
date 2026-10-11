@@ -266,22 +266,7 @@ def render_entry(entry, entries_by_id, sources_by_id):
     <section class="section">
       <div class="content">
         <h2>Comments</h2>
-        <script src="https://giscus.app/client.js"
-                data-repo="raigulus/raigulus.github.io"
-                data-repo-id="R_kgDOS0xxMw"
-                data-category="General"
-                data-category-id="DIC_kwDOS0xxM84DGN2n"
-                data-mapping="pathname"
-                data-strict="0"
-                data-reactions-enabled="1"
-                data-emit-metadata="0"
-                data-input-position="bottom"
-                data-theme="dark"
-                data-lang="en"
-                data-loading="lazy"
-                crossorigin="anonymous"
-                async>
-        </script>
+        <button type="button" class="giscus-facade-button" data-giscus-facade>Load comments</button>
       </div>
     </section>
   </article>
@@ -368,22 +353,7 @@ def render_index(entries):
 <section class="section">
   <div class="content">
     <h2>Comments</h2>
-    <script src="https://giscus.app/client.js"
-            data-repo="raigulus/raigulus.github.io"
-            data-repo-id="R_kgDOS0xxMw"
-            data-category="General"
-            data-category-id="DIC_kwDOS0xxM84DGN2n"
-            data-mapping="pathname"
-            data-strict="0"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="bottom"
-            data-theme="dark"
-            data-lang="en"
-            data-loading="lazy"
-            crossorigin="anonymous"
-            async>
-    </script>
+    <button type="button" class="giscus-facade-button" data-giscus-facade>Load comments</button>
   </div>
 </section>
 </main>
@@ -412,22 +382,7 @@ def render_section_index(section, entries):
 <section class="section">
   <div class="content">
     <h2>Comments</h2>
-    <script src="https://giscus.app/client.js"
-            data-repo="raigulus/raigulus.github.io"
-            data-repo-id="R_kgDOS0xxMw"
-            data-category="General"
-            data-category-id="DIC_kwDOS0xxM84DGN2n"
-            data-mapping="pathname"
-            data-strict="0"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="bottom"
-            data-theme="dark"
-            data-lang="en"
-            data-loading="lazy"
-            crossorigin="anonymous"
-            async>
-    </script>
+    <button type="button" class="giscus-facade-button" data-giscus-facade>Load comments</button>
   </div>
 </section>
 </main>
@@ -464,22 +419,7 @@ def render_editorial_page(page):
 <section class="section">
   <div class="content">
     <h2>Comments</h2>
-    <script src="https://giscus.app/client.js"
-            data-repo="raigulus/raigulus.github.io"
-            data-repo-id="R_kgDOS0xxMw"
-            data-category="General"
-            data-category-id="DIC_kwDOS0xxM84DGN2n"
-            data-mapping="pathname"
-            data-strict="0"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="bottom"
-            data-theme="dark"
-            data-lang="en"
-            data-loading="lazy"
-            crossorigin="anonymous"
-            async>
-    </script>
+    <button type="button" class="giscus-facade-button" data-giscus-facade>Load comments</button>
   </div>
 </section>
 </main>
@@ -537,22 +477,7 @@ def render_coverage(entries, inventories):
 <section class="section">
   <div class="content">
     <h2>Comments</h2>
-    <script src="https://giscus.app/client.js"
-            data-repo="raigulus/raigulus.github.io"
-            data-repo-id="R_kgDOS0xxMw"
-            data-category="General"
-            data-category-id="DIC_kwDOS0xxM84DGN2n"
-            data-mapping="pathname"
-            data-strict="0"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="bottom"
-            data-theme="dark"
-            data-lang="en"
-            data-loading="lazy"
-            crossorigin="anonymous"
-            async>
-    </script>
+    <button type="button" class="giscus-facade-button" data-giscus-facade>Load comments</button>
   </div>
 </section>
 </main>
@@ -595,22 +520,7 @@ def render_review_queue(entries, inventories):
 <section class="section">
   <div class="content">
     <h2>Comments</h2>
-    <script src="https://giscus.app/client.js"
-            data-repo="raigulus/raigulus.github.io"
-            data-repo-id="R_kgDOS0xxMw"
-            data-category="General"
-            data-category-id="DIC_kwDOS0xxM84DGN2n"
-            data-mapping="pathname"
-            data-strict="0"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="bottom"
-            data-theme="dark"
-            data-lang="en"
-            data-loading="lazy"
-            crossorigin="anonymous"
-            async>
-    </script>
+    <button type="button" class="giscus-facade-button" data-giscus-facade>Load comments</button>
   </div>
 </section>
 </main>
@@ -657,22 +567,7 @@ def render_timeline(entries, sources_by_id):
 <section class="section">
   <div class="content">
     <h2>Comments</h2>
-    <script src="https://giscus.app/client.js"
-            data-repo="raigulus/raigulus.github.io"
-            data-repo-id="R_kgDOS0xxMw"
-            data-category="General"
-            data-category-id="DIC_kwDOS0xxM84DGN2n"
-            data-mapping="pathname"
-            data-strict="0"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="bottom"
-            data-theme="dark"
-            data-lang="en"
-            data-loading="lazy"
-            crossorigin="anonymous"
-            async>
-    </script>
+    <button type="button" class="giscus-facade-button" data-giscus-facade>Load comments</button>
   </div>
 </section>
 </main>
@@ -723,22 +618,7 @@ def render_reading_order(reading_order, entries_by_id, sources_by_id):
 <section class="section">
   <div class="content">
     <h2>Comments</h2>
-    <script src="https://giscus.app/client.js"
-            data-repo="raigulus/raigulus.github.io"
-            data-repo-id="R_kgDOS0xxMw"
-            data-category="General"
-            data-category-id="DIC_kwDOS0xxM84DGN2n"
-            data-mapping="pathname"
-            data-strict="0"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="bottom"
-            data-theme="dark"
-            data-lang="en"
-            data-loading="lazy"
-            crossorigin="anonymous"
-            async>
-    </script>
+    <button type="button" class="giscus-facade-button" data-giscus-facade>Load comments</button>
   </div>
 </section>
 </main>
@@ -773,22 +653,7 @@ def render_sources(sources):
 <section class="section">
   <div class="content">
     <h2>Comments</h2>
-    <script src="https://giscus.app/client.js"
-            data-repo="raigulus/raigulus.github.io"
-            data-repo-id="R_kgDOS0xxMw"
-            data-category="General"
-            data-category-id="DIC_kwDOS0xxM84DGN2n"
-            data-mapping="pathname"
-            data-strict="0"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="bottom"
-            data-theme="dark"
-            data-lang="en"
-            data-loading="lazy"
-            crossorigin="anonymous"
-            async>
-    </script>
+    <button type="button" class="giscus-facade-button" data-giscus-facade>Load comments</button>
   </div>
 </section>
 </main>

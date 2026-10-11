@@ -42,6 +42,43 @@ document.addEventListener("DOMContentLoaded", function () {
     })(widgets[j]);
   }
 
+  // Giscus comments facade: the embed pulls ~38 KiB of JS from giscus.app plus a
+  // loading GIF, none of it needed until a visitor asks for it. The eager script
+  // tag also shifted the page after first paint - CLS 0.362 on the build maker,
+  // which put that page at 76/100 on Lighthouse mobile. The button ships as
+  // static markup so it renders without JS and stays keyboard reachable.
+  var giscusCfg = {
+    "data-repo": "raigulus/raigulus.github.io",
+    "data-repo-id": "R_kgDOS0xxMw",
+    "data-category": "General",
+    "data-category-id": "DIC_kwDOS0xxM84DGN2n",
+    "data-mapping": "pathname",
+    "data-strict": "0",
+    "data-reactions-enabled": "1",
+    "data-emit-metadata": "0",
+    "data-input-position": "bottom",
+    "data-theme": "dark",
+    "data-lang": "en",
+    "data-loading": "lazy"
+  };
+  var giscusBtns = document.querySelectorAll("button[data-giscus-facade]");
+  for (var g = 0; g < giscusBtns.length; g++) {
+    (function (btn) {
+      btn.addEventListener("click", function () {
+        var el = document.createElement("script");
+        el.src = "https://giscus.app/client.js";
+        el.async = true;
+        el.crossOrigin = "anonymous";
+        for (var key in giscusCfg) {
+          if (Object.prototype.hasOwnProperty.call(giscusCfg, key)) {
+            el.setAttribute(key, giscusCfg[key]);
+          }
+        }
+        btn.parentNode.replaceChild(el, btn);
+      });
+    })(giscusBtns[g]);
+  }
+
   // YouTube thumbnail fallback chain: maxres -> hq -> mq -> default.
   // Headless bots (PageSpeed included) sometimes get 403s from i.ytimg.com,
   // and old videos may lack maxres thumbs. Step down instead of showing broken art.

@@ -610,8 +610,10 @@ a.thumb:focus-visible{outline:2px solid var(--archive-orange,#c95725);outline-of
 .feedback button:disabled{opacity:.55;cursor:default}
 .bm-slot-clear{flex-shrink:0;padding:6px 12px;border:1px solid rgba(255,255,255,.25);border-radius:6px;background:transparent;color:rgba(255,255,255,.6);font-weight:700;cursor:pointer}
 .bm-slot-clear:hover{border-color:#d93535;color:#ff7b7b}
-#bm-gear-slots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#bm-gear-slots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;min-height:546px}
 #bm-weapon-slots,#bm-skill-slots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#bm-weapon-slots{min-height:156px}
+#bm-skill-slots{min-height:96px}
 #bm-gear-slots .bm-slot,#bm-weapon-slots .bm-slot,#bm-skill-slots .bm-slot{margin-bottom:0}
 .bm-slot.rar-high{border-left:4px solid #f55a00}
 .bm-slot.rar-exotic{border-left:4px solid #d93535}
@@ -625,8 +627,11 @@ a.thumb:focus-visible{outline:2px solid var(--archive-orange,#c95725);outline-of
 .bm-talent-ico{width:15px;height:19px}
 .bm-watch{display:flex;align-items:center;gap:8px;margin:12px 0 4px;font-weight:700;font-size:13.5px;cursor:pointer}
 .bm-watch input{width:16px;height:16px;accent-color:#f55a00;cursor:pointer}
-@media(max-width:640px){#bm-gear-slots,#bm-weapon-slots,#bm-skill-slots{grid-template-columns:1fr}}
-.discord-facade-button{display:flex;align-items:center;justify-content:center;width:100%;padding:1rem 1.25rem;border-radius:12px;border:1px solid rgba(255,255,255,.2);background:transparent;color:inherit;font:inherit;cursor:pointer}
+@media(max-width:640px){#bm-gear-slots,#bm-weapon-slots,#bm-skill-slots{grid-template-columns:1fr}#bm-gear-slots{min-height:1046px}#bm-weapon-slots{min-height:317px}#bm-skill-slots{min-height:199px}}
+.discord-facade-button,.giscus-facade-button{display:flex;align-items:center;justify-content:center;width:100%;padding:1rem 1.25rem;border-radius:12px;border:1px solid rgba(255,255,255,.2);background:transparent;color:inherit;font:inherit;cursor:pointer}
+/* Reserve the giscus footprint so the late-loaded thread does not shove the
+   page around. Lighthouse measured CLS 0.362 on the build maker without it. */
+.giscus-facade-button{min-height:180px}
 .status-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#4e5d6c;margin-left:6px;vertical-align:baseline}.status-dot.is-ok{background:#38d6c5;box-shadow:0 0 6px rgba(56,214,197,.8)}.status-dot.is-warn{background:#ff9a5f;box-shadow:0 0 6px rgba(255,154,95,.8)}.status-dot.is-bad{background:#ff7b7b;box-shadow:0 0 6px rgba(255,123,123,.8)}
 /* Build Maker visual polish: ghost slot buttons read as secondary actions,
 dashed empty slots read as drop zones, filled rarities keep their accents. */
