@@ -123,10 +123,14 @@
               }
               return sc;
             }
-            var pages = null;
+            var pages = null, loading = false;
             function render() {
               var q = input.value.trim();
-              if (!pages) { box.innerHTML = ""; count.textContent = "Loading the index..."; return; }
+              if (!pages) {
+                box.innerHTML = "";
+                count.textContent = loading ? "Loading the index..." : "Start typing to search the archive.";
+                return;
+              }
               var terms = termsOf(q);
               if (!terms.length) { box.innerHTML = ""; count.textContent = "Type above to search " + pages.length + " pages."; return; }
               var hits = [];
@@ -148,13 +152,22 @@
                 try { gtag("event", "site_search", { search_term: q.toLowerCase() }); } catch (e) {}
               }
             }
+            // The index is ~1.6 MB. Fetching it on page load charged every visit,
+            // including the ones that never typed a query. Pull it on the first
+            // interaction instead; a ?q= deep link still counts as intent to search.
+            var loadIndex = null;
+            function ensureIndex() {
+              if (pages || loadIndex) return;
+              loadIndex = fetch("/assets/data/search-index.json", { cache: "no-cache" })
+                .then(function(r) { if (!r.ok) throw new Error("index missing"); return r.json(); })
+                .then(function(data) { pages = data.pages || []; return pages; })
+                .catch(function() { count.textContent = "Search index failed to load."; loadIndex = null; });
+            }
             var params = new URLSearchParams(window.location.search);
             input.value = params.get("q") || "";
-            fetch("/assets/data/search-index.json", { cache: "no-cache" })
-              .then(function(r) { if (!r.ok) throw new Error("index missing"); return r.json(); })
-              .then(function(data) { pages = data.pages || []; render(); })
-              .catch(function() { count.textContent = "Search index failed to load."; });
-            input.addEventListener("input", render);
+            if (input.value) ensureIndex();
+            input.addEventListener("focus", ensureIndex, { once: true });
+            input.addEventListener("input", function() { ensureIndex(); render(); });
           })();
         </script>
       </div>

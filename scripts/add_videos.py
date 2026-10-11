@@ -154,7 +154,10 @@ def related_cards(record: dict, records: list[dict], exclude_self=True) -> str:
         cards.append(f'''<article class="video-card" data-c="special" data-search-card data-search="{search_blob}">
   <a class="thumb" href="{rel.get('url', '#')}">
     <span class="thumb-ph">{esc(short)}</span>
-    <img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="{esc(rel.get('title', ''))} thumbnail" loading="lazy">
+    <img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg"
+         srcset="https://i.ytimg.com/vi/{vid}/mqdefault.jpg 320w, https://i.ytimg.com/vi/{vid}/hqdefault.jpg 480w"
+         sizes="(max-width:640px) 92vw, (max-width:1100px) 46vw, 300px"
+         alt="{esc(rel.get('title', ''))} thumbnail" loading="lazy" decoding="async">
   </a>
   <div class="card-body">
     <p class="eyebrow">{esc(rel.get('cluster', ''))}</p>

@@ -3,7 +3,7 @@ name: Refresh Build Maker Data
 on:
   workflow_dispatch:
   schedule:
-    - cron: "23 6 * * 1"   # Pazartesi 06:23 UTC — haftalik veri tazeleme
+    - cron: "23 6 * * 1"   # Monday 06:23 UTC - weekly data refresh
 
 permissions:
   contents: write
