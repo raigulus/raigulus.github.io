@@ -19,6 +19,7 @@ import html
 import json
 import re
 import sys
+from urllib.parse import quote
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -353,7 +354,7 @@ def render_page(record: dict, records: list[dict]) -> str:
   <main>
     <section class="section">
       <div class="content">
-        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/division-2/">The Division 2</a> / <a href="/division-2/?q={esc(record['mission']).replace(' ', '%20')}">{esc(record['mission'])}</a> / <span>{esc(record['title'])}</span></nav>
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/division-2/">The Division 2</a> / <a href="/division-2/?q={esc(quote(record['mission'], safe=''))}">{esc(record['mission'])}</a> / <span>{esc(record['title'])}</span></nav>
         <p class="eyebrow">{esc(record['cluster'])}</p>
         <h1>{esc(record['title'])}</h1>
         <p>{esc(record['_summary'])}</p>
