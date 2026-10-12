@@ -1,48 +1,48 @@
 {
-  "date": "2026-10-11",
+  "date": "2026-10-12",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Pathway Park",
-      "loot": "Pistol"
+      "loot": "5.11 Tactical"
     },
     {
       "mission": "Camp White Oak",
-      "loot": "Tip of the Spear"
+      "loot": "Rifle"
     },
     {
       "mission": "Grand Washington Hotel",
-      "loot": "Airaldi Holdings"
+      "loot": "Body Armor"
     },
     {
       "mission": "Jefferson Trade Center",
-      "loot": "Concentrated Company"
+      "loot": "Overlord Armaments"
     },
     {
       "mission": "Federal Emergency Bunker",
-      "loot": "Hard Wired"
+      "loot": "Edelweiss GPz"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Assault Rifles"
+      "item": "Shotguns"
     },
     {
       "type": "Gear",
       "item": "Chest Pieces"
     }
   ],
-  "last_updated": "2026-10-11 10:01",
-  "last_checked": "2026-10-12 07:05 UTC",
-  "parsed_at": "2026-10-12T07:05:14.247133+00:00",
-  "status": "pending",
-  "fetched_at": "2026-10-12T07:05:14.247133+00:00",
+  "last_updated": "2026-10-12 10:01",
+  "last_checked": "2026-10-12 08:05 UTC",
+  "parsed_at": "2026-10-12T08:05:09.269422+00:00",
+  "status": "ok",
+  "fetched_at": "2026-10-12T08:05:09.269422+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-10-12 07:05 UTC",
+  "vendor_highlights_checked": "2026-10-12 08:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
