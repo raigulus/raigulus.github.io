@@ -7,22 +7,35 @@
   "title": "Andrew Ellis",
   "slug": "andrew-ellis",
   "section": "people",
-  "summary": "The former Speaker who becomes President during the crisis, is rescued from the True Sons and is later exposed as a Black Tusk collaborator.",
+  "summary": "The former Speaker referred to as President during the crisis, rescued from the True Sons and later exposed as a Black Tusk collaborator.",
   "canon_status": "game-canon",
   "connection_status": "not-applicable",
   "spoiler_level": "major",
   "claims": [
     {
       "id": "ellis-president-hostage",
-      "text": "The official story recap identifies Ellis as the former Speaker of the House and missing President held by the True Sons at Capitol Hill.",
+      "text": "The official story recap identifies Ellis as the former Speaker of the House, referred to as the missing President, and records Agents rescuing him and taking back Capitol Hill from the True Sons.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-story-so-far-2020"]
+      "source_ids": [
+        "ubisoft-story-so-far-2020"
+      ]
     },
     {
-      "id": "ellis-black-tusk",
-      "text": "Ellis was working with Black Tusk, took the broad-spectrum antiviral and was later extracted by the faction from Camp White Oak.",
+      "id": "ellis-antiviral-snatch",
+      "text": "The recap states Ellis was working with Black Tusk all along and snatched the broad-spectrum antiviral before Agents could secure it; Agents then took down Black Tusk's Tidal Basin stronghold and retrieved the antivirals.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-story-so-far-2020"]
+      "source_ids": [
+        "ubisoft-story-so-far-2020"
+      ]
+    },
+    {
+      "id": "ellis-white-oak-extraction",
+      "text": "Agents attempted to take Ellis down at the remote Camp White Oak site, but Black Tusk extracted him before they could reach him.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "ubisoft-story-so-far-2020"
+      ],
+      "notes": "Covered by the same recap; the archive holds no independent source for the extraction."
     }
   ],
   "sections": [
@@ -30,21 +43,35 @@
       "heading": "Rescue and betrayal",
       "paragraphs": [
         {
-          "text": "Ellis first appears to be a rescue objective and source of the encryption key needed to reach the antiviral. His cooperation with Black Tusk turns that recovery into a betrayal and a later pursuit at Camp White Oak.",
-          "claim_ids": ["ellis-president-hostage", "ellis-black-tusk"]
+          "text": "Ellis first appears as a rescue objective and the holder of the encryption key needed to reach the antiviral. His cooperation with Black Tusk turns that recovery into a betrayal: the Agents win the antivirals back at Tidal Basin, then find Camp White Oak already emptied.",
+          "claim_ids": [
+            "ellis-president-hostage",
+            "ellis-antiviral-snatch",
+            "ellis-white-oak-extraction"
+          ]
         }
       ]
     }
   ],
   "relations": [
-    {"target_id": "faction-true-sons", "relationship": "held-by"},
-    {"target_id": "faction-black-tusk", "relationship": "allied-with"},
-    {"target_id": "mission-camp-white-oak", "relationship": "appears-in"}
+    {
+      "target_id": "faction-true-sons",
+      "relationship": "held-by"
+    },
+    {
+      "target_id": "faction-black-tusk",
+      "relationship": "allied-with"
+    },
+    {
+      "target_id": "mission-camp-white-oak",
+      "relationship": "appears-in"
+    }
   ],
   "verification": {
-    "status": "source-reviewed",
-    "last_reviewed": "2026-07-19",
-    "human_reviewed": false,
-    "notes": "Later seasonal developments involving Ellis are outside this first campaign-and-Episode-1 record."
+    "status": "human-reviewed",
+    "last_reviewed": "2026-10-12",
+    "human_reviewed": true,
+    "notes": "Human review completed 2026-10-12. Both original claims checked against ubisoft-story-so-far-2020 and found sound. Three corrections: the recap never narrates the Speaker-to-President transition and only writes 'President Ellis (former Speaker of the House)', so the summary inference was dropped; the antiviral claim now records the Agents' Tidal Basin recovery so Ellis does not read as keeping it; and 'held by the True Sons' became the recap's own wording (rescued, Capitol Hill retaken). The antiviral snatch and the Camp White Oak extraction were split into separate claims. Remaining weakness: every claim rests on the single 2020-02-05 recap. The archive's independent Ubisoft source for the area, ubisoft-manning-white-oak-2019, covers the Manning National Zoo and Camp White Oak mission brief and does not mention Ellis, so adding it would be circular.",
+    "reviewed_by": "site owner (manual line-by-line source check)"
   }
 }
