@@ -1,31 +1,26 @@
 # Raigulus SEO Audit Report
 
-**Tarih:** 2026-10-05 17:33
+**Tarih:** 2026-10-12 18:20
 
 ## Summary
 
 | Category | Count |
 |----------|------|
-| Broken Link | 7 |
-| Meta Tag Sorunu | 75 |
-| Pages With Schema | 465 |
+| Broken Link | 1 |
+| Meta Tag Sorunu | 158 |
+| Pages With Schema | 470 |
 | Pages Without Schema | 18 |
 
 ## Broken Links
 
-- `index.html` → https://fonts.googleapis.com
-- `index.html` → https://fonts.gstatic.com
 - `index.html` → https://i.ytimg.com
-- `404.html` → https://fonts.googleapis.com
-- `404.html` → https://fonts.gstatic.com
-- `destiny-2/index.html` → https://fonts.googleapis.com
-- `destiny-2/index.html` → https://fonts.gstatic.com
 
 ## Meta Tag Issues
 
-### Description Too Short (12 total)
+### Description Too Short (13 total)
 
 - `404.html`: Description is 12 chars (min 70)
+- `lore/sources/index.html`: Description is 55 chars (min 70)
 - `division-2/patches/keeners-legacy/index.html`: Description is 17 chars (min 70)
 - `division-2/exotics/st-elmos-engine/index.html`: Description is 8 chars (min 70)
 - `division-2/exotics/birdies-quick-fix/index.html`: Description is 23 chars (min 70)
@@ -34,7 +29,6 @@
 - `division-2/exotics/acostas-go-bag/index.html`: Description is 23 chars (min 70)
 - `division-2/exotics/nurses-kneepads/index.html`: Description is 22 chars (min 70)
 - `division-2/exotics/sawyers-kneepads/index.html`: Description is 23 chars (min 70)
-- `division-2/exotics/dodge-city-gunslingers-holster/index.html`: Description is 38 chars (min 70)
 
 ### Missing Title (1 total)
 
@@ -83,30 +77,31 @@
 - `division-2/videos/dark-zone-event-too-good-division-2-shorts/index.html`: No og:description tag found
 - `division-2/videos/they-thought-i-was-hacking-division-2-shorts/index.html`: No og:description tag found
 
-### Description Too Long (9 total)
+### Description Too Long (88 total)
 
+- `lore/locations/independence-hall-extremis-malis/index.html`: Description is 175 chars (max 160)
 - `lore/locations/fort-detrick-extremis-malis/index.html`: Description is 165 chars (max 160)
 - `lore/events/hunted-albuquerque-operation/index.html`: Description is 162 chars (max 160)
-- `lore/factions/the-founders/index.html`: Description is 162 chars (max 160)
-- `lore/people/mantis-extremis-malis/index.html`: Description is 162 chars (max 160)
-- `lore/people/wyvern-extremis-malis/index.html`: Description is 162 chars (max 160)
-- `lore/works/the-division-new-york-collapse/index.html`: Description is 162 chars (max 160)
-- `lore/works/the-division-compromised/index.html`: Description is 161 chars (max 160)
-- `division-2/videos/flawless-solo-run-jefferson-plaza-escalation-tier/index.html`: Description is 163 chars (max 160)
-- `division-2/this-week/2026-09-29/index.html`: Description is 185 chars (max 160)
+- `lore/reading-order/index.html`: Description is 166 chars (max 160)
+- `lore/collectibles/td2-comms-brooklyn-history/index.html`: Description is 172 chars (max 160)
+- `lore/collectibles/td2-comms-coney-island/index.html`: Description is 188 chars (max 160)
+- `lore/collectibles/td2-comms-outcasts/index.html`: Description is 193 chars (max 160)
+- `lore/collectibles/td1-phone-recordings-growing-wild/index.html`: Description is 215 chars (max 160)
+- `lore/collectibles/td2-comms-profile-odessa-sawyer/index.html`: Description is 184 chars (max 160)
+- `lore/collectibles/td2-comms-vivian-conley/index.html`: Description is 204 chars (max 160)
 
-### Title Too Long (19 total)
+### Title Too Long (22 total)
 
 - `lore/reading-order/index.html`: Title is 61 chars (max 60)
 - `lore/collectibles/td1-phone-recordings-keener-s-confession/index.html`: Title is 62 chars (max 60)
 - `lore/works/index.html`: Title is 61 chars (max 60)
 - `lore/works/the-division-extremis-malis/index.html`: Title is 62 chars (max 60)
 - `lore/works/the-division-new-york-collapse/index.html`: Title is 65 chars (max 60)
+- `lore/timeline/index.html`: Title is 67 chars (max 60)
 - `division-2/index.html`: Title is 64 chars (max 60)
+- `division-2/dark-zone-surge/index.html`: Title is 72 chars (max 60)
 - `division-2/patches/index.html`: Title is 64 chars (max 60)
 - `division-2/videos/nice-chicken-dance-division-2-shorts/index.html`: Title is 82 chars (max 60)
-- `division-2/videos/tipping-scales-whiplash-lmg-shorts/index.html`: Title is 64 chars (max 60)
-- `division-2/videos/toxic-dz-changed-division-2-shorts/index.html`: Title is 62 chars (max 60)
 
 
 ## Schema Markup
