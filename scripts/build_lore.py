@@ -93,9 +93,8 @@ def head(title, description, canonical, schema_type="Article"):
   <meta property="og:type" content="article">
   <meta property="og:url" content="{esc(canonical)}">
   <meta name="twitter:card" content="summary">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/barlow-condensed-700-latin.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/inter-400-latin.woff2">
   <link rel="stylesheet" href="/assets/styles.css">
   <link rel="stylesheet" href="/assets/lore.css">
   <link rel="stylesheet" href="/assets/lore-timeline.css">
@@ -127,9 +126,9 @@ def header():
     <a href="/about/">About</a>
     <a href="/discord/">Discord</a>
     <a href="https://www.youtube.com/@raigulus">YouTube</a>
-  </nav>
+</nav>
     <button type="button" class="header-search-btn" data-search-open aria-label="Search the Raigulus archive" aria-haspopup="dialog"><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="9" cy="9" r="6"></circle><path d="M13.5 13.5 18 18"></path></svg><span class="header-search-btn-text">Search</span></button>
-</header>'''
+  </header>'''
 
 
 def search_overlay():
