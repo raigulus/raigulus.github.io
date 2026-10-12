@@ -225,6 +225,23 @@ raf = requestAnimationFrame(tick);
   var pages = null;
   var lastFocus = null;
 
+  // Order matters in close(): inert must be dropped before focus is restored,
+  // because the trigger button lives inside .site-header and cannot be focused
+  // while that ancestor is inert.
+  var background = Array.prototype.filter.call(
+    document.querySelectorAll(".site-header, main, .site-footer"),
+    function (el) { return el && !dialog.contains(el); }
+  );
+
+  if (status) {
+    status.setAttribute("aria-live", "polite");
+    status.setAttribute("aria-atomic", "true");
+  }
+  if (openBtn) {
+    openBtn.setAttribute("aria-expanded", "false");
+    openBtn.setAttribute("aria-controls", dialog.id);
+  }
+
   function esc(s) {
     return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
@@ -295,6 +312,8 @@ raf = requestAnimationFrame(tick);
     lastFocus = document.activeElement;
     dialog.hidden = false;
     document.body.classList.add("has-search-open");
+    background.forEach(function (el) { el.setAttribute("inert", ""); });
+    if (openBtn) openBtn.setAttribute("aria-expanded", "true");
     input.value = "";
     results.innerHTML = "";
     ensureIndex().then(function () { render(); });
@@ -303,6 +322,8 @@ raf = requestAnimationFrame(tick);
   function close() {
     dialog.hidden = true;
     document.body.classList.remove("has-search-open");
+    background.forEach(function (el) { el.removeAttribute("inert"); });
+    if (openBtn) openBtn.setAttribute("aria-expanded", "false");
     if (lastFocus && lastFocus.focus) lastFocus.focus();
   }
   // aria-modal: Tab must stay inside. Hit links render after the index resolves, so never cache this list.
