@@ -7,7 +7,7 @@
   "title": "Ike Ronson",
   "slug": "ike-ronson",
   "section": "people",
-  "summary": "A Broken Dawn Division Agent whose apparent cooperation conceals an operation directed through the Mantis codename and aimed at the novel's antiviral lead.",
+  "summary": "A Division Agent named in Ubisoft's Broken Dawn overview alongside April Kelleher and Aurelio Diaz, on a search for a new threat to civilization.",
   "canon_status": "official-transmedia",
   "connection_status": "not-applicable",
   "spoiler_level": "major",
@@ -22,16 +22,16 @@
     },
     {
       "id": "ike-mantis-operation",
-      "text": "The novel reveals that Ike is acting under a handler called Mantis while pursuing the Ann Arbor antiviral lead; the handler's organization is not named in that work.",
-      "assessment": "confirmed",
+      "text": "Ubisoft's Broken Dawn overview names Ike Ronson as a Division Agent joining April Kelleher and Aurelio Diaz, but neither reviewed source mentions a handler called Mantis or an Ann Arbor lead; this archive does not confirm them.",
+      "assessment": "unknown",
       "source_ids": [
         "penguin-broken-dawn-2019"
       ]
     },
     {
       "id": "ike-isac-status-countermeasure",
-      "text": "Broken Dawn depicts Ike using a countermeasure intended to prevent his actions from appearing as a normal Rogue Agent status in ISAC, without resolving a wider organizational identity for Mantis.",
-      "assessment": "confirmed",
+      "text": "Neither reviewed source describes an ISAC-status countermeasure or a Rogue Agent flag for Ike; the claim remains unconfirmed against the sources on record.",
+      "assessment": "unknown",
       "source_ids": [
         "penguin-broken-dawn-2019"
       ]
@@ -42,7 +42,7 @@
       "heading": "Trusted Agent, hidden operation",
       "paragraphs": [
         {
-          "text": "Ike enters the published premise as an Agent on the antiviral investigation. The novel later makes him the operational link between that team and a remote handler using the Mantis codename.",
+          "text": "Ubisoft's Broken Dawn overview places Ike on the team with April Kelleher and Aurelio Diaz. The reviewed sources do not describe a remote handler or a hidden operation, so that part is not asserted here.",
           "claim_ids": [
             "ike-broken-dawn-agent",
             "ike-mantis-operation"
@@ -54,7 +54,7 @@
       "heading": "ISAC ambiguity",
       "paragraphs": [
         {
-          "text": "The novel uses an ISAC-status countermeasure to make Ike's betrayal more complicated than a simple, visible Rogue flag. It does not, however, identify Mantis's organization or prove a connection to a different Mantis codename elsewhere in the archive.",
+          "text": "Nothing in the reviewed sources addresses an ISAC-status countermeasure. The question is left open rather than filled in.",
           "claim_ids": [
             "ike-isac-status-countermeasure",
             "ike-mantis-operation"
@@ -83,8 +83,8 @@
   ],
   "verification": {
     "status": "source-reviewed",
-    "last_reviewed": "2026-07-28",
+    "last_reviewed": "2026-10-12",
     "human_reviewed": false,
-    "notes": "Licensed-novel record. The relation to Mantis is codename-level only and does not establish the handler's identity or organization."
+    "notes": "Verified against reviewed Broken Dawn sources on 2026-10-12: the publisher catalogue entry is a marketing blurb and names only April Kelleher, Aurelio Diaz and Alex Irvine. Ubisoft's book overview names April Kelleher with Division agents Aurelio Diaz and Ike Ronson. Alani Kelso, the Mantis codename, Ann Arbor, Washington and the intelligence handoff appear in none of them, so those claims are downgraded to unknown and the dependent prose no longer asserts them. Breaking Dawn plot detail needs a readable copy or a detailed chapter summary before it can be restored."
   }
 }

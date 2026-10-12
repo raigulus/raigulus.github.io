@@ -7,7 +7,7 @@
   "title": "Aurelio Diaz",
   "slug": "aurelio-diaz",
   "section": "people",
-  "summary": "A Division Agent in Broken Dawn whose investigation joins April Kelleher's Midwest antiviral trail and the novel's Washington intelligence handoff.",
+  "summary": "A Division Agent in Broken Dawn whose investigation joins April Kelleher's Midwest antiviral trail, alongside agents Aurelio Diaz and Ike Ronson.",
   "canon_status": "official-transmedia",
   "connection_status": "not-applicable",
   "spoiler_level": "major",
@@ -23,8 +23,8 @@
     },
     {
       "id": "aurelio-ann-arbor-operation",
-      "text": "In the novel's source-specific plot, Aurelio helps protect the Ann Arbor research lead while pursuing the operation coordinated through the Mantis codename.",
-      "assessment": "confirmed",
+      "text": "Ubisoft's Broken Dawn overview names Aurelio Diaz on the team with April Kelleher and Ike Ronson, and the publisher entry has him following a trail that leads to April in the American Midwest; neither reviewed source places him at an Ann Arbor site or against a Mantis-directed operation.",
+      "assessment": "unknown",
       "source_ids": [
         "penguin-broken-dawn-2019"
       ]
@@ -43,10 +43,10 @@
       ]
     },
     {
-      "heading": "Ann Arbor operation",
+      "heading": "Diaz's assignment",
       "paragraphs": [
         {
-          "text": "The licensed novel makes Aurelio part of the source-specific effort to safeguard the research lead and counter the operation tied to Mantis. That connection does not identify Mantis's organization beyond what the novel establishes.",
+          "text": "UbiSoft's Broken Dawn overview names Aurelio Diaz on the team with April Kelleher and Ike Ronson, and the publisher entry has him following a trail that leads to April in the American Midwest. Neither reviewed source places him at a named research site or against any particular organization, so this record stops at the assignment itself.",
           "claim_ids": [
             "aurelio-ann-arbor-operation"
           ]
@@ -78,8 +78,8 @@
   ],
   "verification": {
     "status": "source-reviewed",
-    "last_reviewed": "2026-07-28",
+    "last_reviewed": "2026-10-12",
     "human_reviewed": false,
-    "notes": "Licensed-novel record. The archive publishes no dialogue or scene transcript."
+    "notes": "Verified against reviewed Broken Dawn sources on 2026-10-12: the publisher catalogue entry is a marketing blurb and names only April Kelleher, Aurelio Diaz and Alex Irvine. Ubisoft's book overview names April Kelleher with Division agents Aurelio Diaz and Ike Ronson. Alani Kelso, the Mantis codename, Ann Arbor, Washington and the intelligence handoff appear in none of them, so those claims are downgraded to unknown and the dependent prose no longer asserts them. Breaking Dawn plot detail needs a readable copy or a detailed chapter summary before it can be restored."
   }
 }

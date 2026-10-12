@@ -7,7 +7,7 @@
   "title": "April Kelleher",
   "slug": "april-kelleher",
   "section": "people",
-  "summary": "The civilian survivor at the center of Broken Dawn, whose research trail connects New York, Ann Arbor and a source-specific Washington handoff to Alani Kelso.",
+  "summary": "The civilian survivor at the center of Broken Dawn, who leaves New York for the American Midwest and investigates her husband's murder and the possibility of an antiviral.",
   "canon_status": "official-transmedia",
   "connection_status": "not-applicable",
   "spoiler_level": "major",
@@ -23,8 +23,8 @@
     },
     {
       "id": "april-research-to-washington",
-      "text": "In the novel's source-specific story, April follows a research lead from New York to Ann Arbor and delivers the resulting intelligence to Alani Kelso in Washington.",
-      "assessment": "confirmed",
+      "text": "The reviewed sources place April's search in the American Midwest and describe her investigating her husband's murder and a possible antiviral, but they do not name an Ann Arbor lead, Alani Kelso, Washington, or an intelligence handoff; this archive does not confirm those details.",
+      "assessment": "unknown",
       "source_ids": [
         "penguin-broken-dawn-2019"
       ]
@@ -43,10 +43,10 @@
       ]
     },
     {
-      "heading": "Washington handoff",
+      "heading": "The limits of her search",
       "paragraphs": [
         {
-          "text": "Broken Dawn's later source-specific sequence lets April transfer the research lead to Alani Kelso in Washington. It is a transmedia connection, not evidence that the novel's events are a playable Division 2 mission.",
+          "text": "April's published premise puts her in the American Midwest looking into her husband's murder and the possibility of an antiviral. The reviewed sources do not establish a Washington sequence or a named recipient for her findings, so no connection is asserted here.",
           "claim_ids": [
             "april-research-to-washington"
           ]
@@ -78,8 +78,8 @@
   ],
   "verification": {
     "status": "source-reviewed",
-    "last_reviewed": "2026-07-28",
+    "last_reviewed": "2026-10-12",
     "human_reviewed": false,
-    "notes": "Licensed-novel record. Plot is summarized independently and classified as major spoiler."
+    "notes": "Verified against reviewed Broken Dawn sources on 2026-10-12: the publisher catalogue entry is a marketing blurb and names only April Kelleher, Aurelio Diaz and Alex Irvine. Ubisoft's book overview names April Kelleher with Division agents Aurelio Diaz and Ike Ronson. Alani Kelso, the Mantis codename, Ann Arbor, Washington and the intelligence handoff appear in none of them, so those claims are downgraded to unknown and the dependent prose no longer asserts them. Breaking Dawn plot detail needs a readable copy or a detailed chapter summary before it can be restored."
   }
 }

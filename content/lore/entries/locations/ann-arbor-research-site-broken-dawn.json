@@ -7,7 +7,7 @@
   "title": "Ann Arbor Research Site (Broken Dawn)",
   "slug": "ann-arbor-research-site-broken-dawn",
   "section": "locations",
-  "summary": "The source-specific Ann Arbor research destination in Broken Dawn, where a possible broad-spectrum antiviral becomes the focus of the novel's Mantis-directed conflict.",
+  "summary": "A Broken Dawn research destination this archive cannot place: the reviewed sources say only that the search leads into the American Midwest.",
   "canon_status": "official-transmedia",
   "connection_status": "not-applicable",
   "spoiler_level": "major",
@@ -23,8 +23,8 @@
     },
     {
       "id": "ann-arbor-mantis-threat",
-      "text": "The licensed novel places the Ann Arbor research lead under threat from the operation coordinated through the Mantis codename.",
-      "assessment": "confirmed",
+      "text": "The reviewed sources describe a Midwest lead and a possible antiviral but do not name Ann Arbor or a Mantis-directed operation; this archive does not confirm the location or the threat.",
+      "assessment": "unknown",
       "source_ids": [
         "penguin-broken-dawn-2019"
       ]
@@ -35,7 +35,7 @@
       "heading": "Novel-only research destination",
       "paragraphs": [
         {
-          "text": "The Ann Arbor research site is a Broken Dawn location, not a confirmed playable game space. It matters because the novel's published antiviral lead becomes a target for competing groups.",
+          "text": "The reviewed sources put the research lead in the American Midwest without naming a city, so this record stays explicitly unresolved rather than asserting a specific site.",
           "claim_ids": [
             "ann-arbor-antiviral-site"
           ]
@@ -46,7 +46,7 @@
       "heading": "Contested lead",
       "paragraphs": [
         {
-          "text": "The novel's source-specific conflict puts the research site at risk from a Mantis-directed operation. That does not identify the handler's organization or convert the location into a confirmed Black Tusk facility.",
+          "text": "No reviewed source describes a Mantis-directed operation against the lead. The contested part of this record is therefore an open question, not a finding.",
           "claim_ids": [
             "ann-arbor-mantis-threat"
           ]
@@ -78,8 +78,8 @@
   ],
   "verification": {
     "status": "source-reviewed",
-    "last_reviewed": "2026-07-28",
+    "last_reviewed": "2026-10-12",
     "human_reviewed": false,
-    "notes": "Source-specific licensed-novel location. Its relationship to a real-world city does not make the fictional research operation a real-world claim."
+    "notes": "Verified against reviewed Broken Dawn sources on 2026-10-12: the publisher catalogue entry is a marketing blurb and names only April Kelleher, Aurelio Diaz and Alex Irvine. Ubisoft's book overview names April Kelleher with Division agents Aurelio Diaz and Ike Ronson. Alani Kelso, the Mantis codename, Ann Arbor, Washington and the intelligence handoff appear in none of them, so those claims are downgraded to unknown and the dependent prose no longer asserts them. Breaking Dawn plot detail needs a readable copy or a detailed chapter summary before it can be restored."
   }
 }

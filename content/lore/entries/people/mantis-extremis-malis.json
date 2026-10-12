@@ -38,8 +38,8 @@
     },
     {
       "id": "mantis-broken-dawn-handler-codename",
-      "text": "Broken Dawn also uses Mantis as the codename for a remote handler influencing Division Agent Ike Ronson; the novel does not name that handler's organization.",
-      "assessment": "confirmed",
+      "text": "Neither reviewed Broken Dawn source mentions Mantis or Ike Ronson's handler, so this archive does not confirm that the codename is used in that novel.",
+      "assessment": "unknown",
       "source_ids": [
         "penguin-broken-dawn-2019"
       ]
@@ -79,10 +79,10 @@
       ]
     },
     {
-      "heading": "Earlier codename usage",
+      "heading": "Codename reuse between works",
       "paragraphs": [
         {
-          "text": "Broken Dawn uses the Mantis codename for a remote handler attached to Ike Ronson's operation. That novel leaves the handler's organization unnamed, so the archive treats the shared codename as a source-flagged lead rather than proof of a Black Tusk identity or a single continuous character.",
+          "text": "Extremis Malis uses the Mantis codename within its own continuity. Whether Broken Dawn uses the same codename, and whether the two refer to the same individual, are not established by the reviewed sources, so this archive keeps the usages separate and the question open.",
           "claim_ids": [
             "mantis-broken-dawn-handler-codename",
             "mantis-cross-work-identity-unresolved"
@@ -127,8 +127,8 @@
   ],
   "verification": {
     "status": "source-reviewed",
-    "last_reviewed": "2026-07-28",
+    "last_reviewed": "2026-10-12",
     "human_reviewed": false,
-    "notes": "Codename-only record. The archive does not merge same-codename appearances across licensed works without an explicit identity source. Plot outcomes are marked major spoiler."
+    "notes": "Verified against reviewed Broken Dawn sources on 2026-10-12: the publisher catalogue entry is a marketing blurb and names only April Kelleher, Aurelio Diaz and Alex Irvine. Ubisoft's book overview names April Kelleher with Division agents Aurelio Diaz and Ike Ronson. Alani Kelso, the Mantis codename, Ann Arbor, Washington and the intelligence handoff appear in none of them, so those claims are downgraded to unknown and the dependent prose no longer asserts them. Breaking Dawn plot detail needs a readable copy or a detailed chapter summary before it can be restored."
   }
 }

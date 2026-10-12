@@ -7,23 +7,23 @@
   "title": "Alani Kelso",
   "slug": "alani-kelso",
   "section": "people",
-  "summary": "A Division Agent who appears in Broken Dawn's Washington sequence as the recipient of April Kelleher's source-specific antiviral intelligence.",
+  "summary": "A Division Agent named in no reviewed Broken Dawn source. The record is kept open because the archive cannot verify the character against the sources it holds.",
   "canon_status": "official-transmedia",
   "connection_status": "not-applicable",
   "spoiler_level": "major",
   "claims": [
     {
       "id": "kelso-broken-dawn-agent",
-      "text": "Broken Dawn depicts Alani Kelso as a Division Agent operating in Washington during the novel's final intelligence handoff.",
-      "assessment": "confirmed",
+      "text": "The reviewed official sources consulted for Broken Dawn - the Ubisoft book overview and the publisher's catalogue entry - do not name Alani Kelso, so this archive cannot confirm the character or the Washington sequence from them.",
+      "assessment": "unknown",
       "source_ids": [
         "penguin-broken-dawn-2019"
       ]
     },
     {
       "id": "kelso-april-intelligence-handoff",
-      "text": "April Kelleher gives Kelso the novel's resulting research intelligence, including the lead's security risk and Ike Ronson's involvement.",
-      "assessment": "confirmed",
+      "text": "Neither reviewed source describes an intelligence handoff to Alani Kelso, an Ann Arbor lead, or Ike Ronson's involvement in one; the claim is not confirmed by the sources on record.",
+      "assessment": "unknown",
       "source_ids": [
         "penguin-broken-dawn-2019"
       ]
@@ -31,10 +31,10 @@
   ],
   "sections": [
     {
-      "heading": "Washington connection",
+      "heading": "Status of this record",
       "paragraphs": [
         {
-          "text": "Kelso's Broken Dawn appearance creates a source-specific bridge from April's civilian research trail to an SHD contact in Washington. The archive labels that bridge official transmedia rather than retroactively treating it as a game mission.",
+          "text": "Alani Kelso is not named in the reviewed Broken Dawn sources. The Ubisoft book overview names April Kelleher with Division agents Aurelio Diaz and Ike Ronson, and the publisher entry stops at Diaz following a trail that leads to April in the American Midwest. This record therefore stays open rather than asserting a Washington connection.",
           "claim_ids": [
             "kelso-broken-dawn-agent",
             "kelso-april-intelligence-handoff"
@@ -63,8 +63,8 @@
   ],
   "verification": {
     "status": "source-reviewed",
-    "last_reviewed": "2026-07-28",
+    "last_reviewed": "2026-10-12",
     "human_reviewed": false,
-    "notes": "This record is limited to the licensed novel's Washington handoff; later game-story developments require separate current-canon sourcing."
+    "notes": "Verified against reviewed Broken Dawn sources on 2026-10-12: the publisher catalogue entry is a marketing blurb and names only April Kelleher, Aurelio Diaz and Alex Irvine. Ubisoft's book overview names April Kelleher with Division agents Aurelio Diaz and Ike Ronson. Alani Kelso, the Mantis codename, Ann Arbor, Washington and the intelligence handoff appear in none of them, so those claims are downgraded to unknown and the dependent prose no longer asserts them. Breaking Dawn plot detail needs a readable copy or a detailed chapter summary before it can be restored."
   }
 }
