@@ -260,7 +260,8 @@
       "scope": "franchise-lore",
       "accessed_date": "2026-07-19",
       "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/expansion/warlords-of-new-york",
-      "notes": "Official expansion premise describing Aaron Keener and the Lower Manhattan manhunt."
+      "notes": "Official expansion premise describing Aaron Keener and the Lower Manhattan manhunt. Page is undated but its description meta states the expansion was launching March 3, 2020, and the live page is periodically refreshed with news items, so treat the copy as mutable and rely on accessed_date.",
+      "published_date": "2020-03-03"
     },
     {
       "id": "ubisoft-pact-2025",

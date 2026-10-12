@@ -16,28 +16,66 @@
       "id": "keener-first-wave-rogue",
       "text": "Aaron Keener is identified as a rogue first-wave Division Agent who worked with the Last Man Battalion and other rogue Agents.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-story-so-far-2020"]
+      "source_ids": [
+        "ubisoft-story-so-far-2020"
+      ]
     },
     {
       "id": "keener-lower-manhattan",
       "text": "The Warlords of New York premise places Keener in control of Lower Manhattan after uniting New York factions under his banner.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-wony-expansion-page"]
+      "source_ids": [
+        "ubisoft-wony-expansion-page"
+      ]
     },
     {
       "id": "keener-biological-attack",
-      "text": "The expansion overview attributes a recent Lower Manhattan biological attack to Keener and says SHD believes he is planning further attacks.",
+      "text": "The expansion overview says SHD Agents are being sent to Lower Manhattan in response to a recent biological attack, that Keener orchestrated that attack, and that SHD believes he is planning further attacks.",
       "assessment": "confirmed",
-      "source_ids": ["ubisoft-wony-overview-2020"]
+      "source_ids": [
+        "ubisoft-wony-overview-2020"
+      ]
+    },
+    {
+      "id": "keener-lmb-tchernenko-amherst",
+      "text": "The Division recap says Keener manipulated the Last Man Battalion to reach the Russian virologist Vitaly Tchernenko and the equipment that Gordon Amherst used to create the Green Poison virus.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "ubisoft-story-so-far-2020"
+      ]
+    },
+    {
+      "id": "keener-dna-printer",
+      "text": "The Division recap says that at the very end of The Division, Agents discover that Keener took a DNA printer and may be working to advance Amherst's research.",
+      "assessment": "confirmed",
+      "source_ids": [
+        "ubisoft-story-so-far-2020"
+      ]
     }
   ],
   "sections": [
+    {
+      "heading": "The turn",
+      "paragraphs": [
+        {
+          "text": "Aaron Keener had been one of the first to answer the call, a first-wave Agent still holding the line when the systems began to fail. Black Friday came, supply lines collapsed, and the Agents in the Dark Zone were abandoned to the cold and the gunfire. Keener survived, but the man who walked out of that silence was no longer loyal to anyone. He manipulated the Last Man Battalion into reaching a Russian virologist, Vitaly Tchernenko, and the equipment Gordon Amherst used to build the Green Poison, and by the end of The Division he had taken a DNA printer. Months later the Rikers, the Cleaners and other rogue Agents answered to him, and Lower Manhattan was his.",
+          "claim_ids": [
+            "keener-first-wave-rogue",
+            "keener-lmb-tchernenko-amherst",
+            "keener-dna-printer",
+            "keener-lower-manhattan"
+          ]
+        }
+      ]
+    },
     {
       "heading": "From Agent to rogue",
       "paragraphs": [
         {
           "text": "Keener begins as a first-wave SHD Agent and becomes a rogue actor whose plans connect the original game to The Division 2's return to New York.",
-          "claim_ids": ["keener-first-wave-rogue"]
+          "claim_ids": [
+            "keener-first-wave-rogue"
+          ]
         }
       ]
     },
@@ -45,20 +83,30 @@
       "heading": "Warlords of New York",
       "paragraphs": [
         {
-          "text": "By the expansion's opening premise, Keener controls Lower Manhattan through rogue lieutenants and aligned factions, and SHD holds him responsible for a new biological attack.",
-          "claim_ids": ["keener-lower-manhattan", "keener-biological-attack"]
+          "text": "By the expansion's opening premise, Keener controls Lower Manhattan with other rogue Agents and aligned factions at his command, and SHD holds him responsible for the biological attack that brought its deployment to Lower Manhattan.",
+          "claim_ids": [
+            "keener-lower-manhattan",
+            "keener-biological-attack"
+          ]
         }
       ]
     }
   ],
   "relations": [
-    {"target_id": "org-strategic-homeland-division", "relationship": "former-member-of"},
-    {"target_id": "event-lower-manhattan-biological-attack", "relationship": "causes"}
+    {
+      "target_id": "org-strategic-homeland-division",
+      "relationship": "former-member-of"
+    },
+    {
+      "target_id": "event-lower-manhattan-biological-attack",
+      "relationship": "causes"
+    }
   ],
   "verification": {
-    "status": "source-reviewed",
-    "last_reviewed": "2026-07-19",
-    "human_reviewed": false,
-    "notes": "This version deliberately stops at the Warlords of New York opening premise; later seasonal status changes need a separate current-canon review."
+    "status": "human-reviewed",
+    "last_reviewed": "2026-10-12",
+    "human_reviewed": true,
+    "notes": "Human review completed 2026-10-12: all three original claims checked line by line against the Ubisoft sources and found sound. Prose corrected where it had gone beyond the sources ('rogue lieutenants'; the attack's location). Two claims added for the Last Man Battalion manipulation, Tchernenko, Amherst's equipment and the DNA printer. This version deliberately stops at the Warlords of New York opening premise; later seasonal status changes need a separate current-canon review.",
+    "reviewed_by": "site owner (manual line-by-line source check)"
   }
 }
