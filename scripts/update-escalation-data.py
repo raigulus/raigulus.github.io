@@ -61,6 +61,22 @@ def add_cache_buster(url):
     )
 
 
+# Loot feeds are plain text of a few kilobytes. Unbounded reads let a hostile or
+# broken source exhaust the CI runner, so every response is cut off before decoding.
+MAX_RESPONSE_BYTES = 2 * 1024 * 1024
+
+
+def read_limited(response, max_bytes=MAX_RESPONSE_BYTES):
+    """Reject an oversized body before decoding it.
+
+    Reads one byte past the limit so "exactly at the limit" stays valid.
+    """
+    payload = response.read(max_bytes + 1)
+    if len(payload) > max_bytes:
+        raise ValueError(f"Source response exceeded the {max_bytes} byte limit")
+    return payload
+
+
 def fetch_text(url, timeout=15):
     request = urllib.request.Request(
         add_cache_buster(url),
@@ -71,7 +87,7 @@ def fetch_text(url, timeout=15):
         },
     )
     with urllib.request.urlopen(request, timeout=timeout) as response:
-        return response.read().decode("utf-8", errors="replace")
+        return read_limited(response).decode("utf-8", errors="replace")
 
 
 def fetch_json(url, timeout=15):
@@ -85,7 +101,7 @@ def fetch_json(url, timeout=15):
         },
     )
     with urllib.request.urlopen(request, timeout=timeout) as response:
-        return json.loads(response.read().decode("utf-8", errors="replace"))
+        return json.loads(read_limited(response).decode("utf-8", errors="replace"))
 
 
 def repo_paths():
@@ -354,6 +370,61 @@ def fetch_vendor_highlights(existing, checked_at):
         }, f"{type(error).__name__}: {error}"
 
 
+# Feeds describe a handful of missions and vendor caches, never thousands. Rows
+# beyond these caps are dropped instead of rendered so a bloated payload cannot
+# flood the guide pages.
+MAX_MISSION_ROWS = 24
+MAX_VENDOR_CACHE_ROWS = 24
+MAX_VENDOR_HIGHLIGHTS = 8
+
+MISSION_FIELD_LIMITS = {"mission": 72, "loot": 112}
+VENDOR_CACHE_FIELD_LIMITS = {"type": 72, "item": 112}
+VENDOR_HIGHLIGHT_FIELD_LIMITS = {"vendor": 72, "item": 112, "note": 112}
+
+# Turns the data source into an advertising surface: URLs, contact details and
+# boost/service spam. Genuine loot names never contain these. The tag pattern
+# keeps raw markup out of committed JSON even though esc() already neutralises
+# it at render time.
+CONTAMINATION_PATTERNS = (
+    re.compile(r"https?://", re.IGNORECASE),
+    re.compile(r"\bwww\.", re.IGNORECASE),
+    re.compile(r"\.(?:com|net|org|info|xyz|gg|io|co|ru|shop|site|link|online)\b", re.IGNORECASE),
+    re.compile(r"\S+@\S+\.\S+"),
+    re.compile(r"<[a-zA-Z!/?]"),
+    re.compile(
+        r"\b(?:cheap(?:est)?|boost(?:ing|s)?|discount(?:ed|s)?|coupon|promo(?:tion)?"
+        r"|giveaway|sales?|free\s+(?:gems?|robux|cards?)|buy\s+now|order\s+now)\b",
+        re.IGNORECASE,
+    ),
+)
+
+
+def is_contaminated_value(value):
+    text = str(value or "")
+    return any(pattern.search(text) for pattern in CONTAMINATION_PATTERNS)
+
+
+def sanitize_record_list(rows, field_limits, max_rows):
+    if not isinstance(rows, list):
+        return []
+    clean_rows = []
+    for row in rows[:max_rows]:
+        if not isinstance(row, dict):
+            continue
+        clean_row = {}
+        contaminated = False
+        for field, limit in field_limits.items():
+            value = clean_vendor_text(row.get(field), limit)
+            if is_contaminated_value(value):
+                contaminated = True
+                break
+            if value:
+                clean_row[field] = value
+        if clean_row and not contaminated:
+            clean_rows.append(clean_row)
+    return clean_rows
+
+
 def sanitize_public_data(data):
     allowed_keys = {
         "date",
@@ -375,6 +446,18 @@ def sanitize_public_data(data):
         "next_expected_update",
     }
     sanitized = {key: value for key, value in data.items() if key in allowed_keys}
+    if "missions" in sanitized:
+        sanitized["missions"] = sanitize_record_list(
+            sanitized["missions"], MISSION_FIELD_LIMITS, MAX_MISSION_ROWS
+        )
+    if "vendor_caches" in sanitized:
+        sanitized["vendor_caches"] = sanitize_record_list(
+            sanitized["vendor_caches"], VENDOR_CACHE_FIELD_LIMITS, MAX_VENDOR_CACHE_ROWS
+        )
+    if "vendor_highlights" in sanitized:
+        sanitized["vendor_highlights"] = sanitize_record_list(
+            sanitized["vendor_highlights"], VENDOR_HIGHLIGHT_FIELD_LIMITS, MAX_VENDOR_HIGHLIGHTS
+        )
     data.clear()
     data.update(sanitized)
     return data
