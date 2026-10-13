@@ -927,6 +927,12 @@
     try {
       if (typeof gtag === "function") gtag("event", "build_share", { share_type: kind });
     } catch (e) {}
+    // Clarity custom tag, so the recordings can be segmented by what the
+    // visitor actually did. Sessions with no build_action tag are the ones
+    // worth watching: they opened the maker and did nothing with it.
+    try {
+      if (typeof window.clarity === "function") window.clarity("set", "build_action", kind);
+    } catch (e) {}
   }
 
   function saveShot() {
