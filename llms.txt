@@ -35,6 +35,9 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [Destiny 2 Lost Sector Exotics](https://raigulus.github.io/destiny-2/lost-sector-exotics/): Legend vs Master drop rates, solo rules, and champion mods.
 - [RSS Feed](https://raigulus.github.io/feed.xml): Machine-readable feed for blog directories and feed readers.
 
+- [Privacy Notice](https://raigulus.github.io/privacy/): What data is collected, which services are involved, and how to change your choice.
+- [Cookie Notice](https://raigulus.github.io/cookies/): Cookies and browser storage used, with per-item purposes.
+
 ## YouTube Playlists
 
 - [The Division 2 Mission Walkthroughs | No Commentary](https://www.youtube.com/playlist?list=PLG6L-oRdfdL_EOFTVpqbdnv1vhvO16qVh)
