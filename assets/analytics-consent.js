@@ -60,6 +60,10 @@
     if (choice !== "granted") {
       if (loaded) {
         window.gtag("consent", "update", { analytics_storage: "denied" });
+        // Clarity keeps writing cookies after its script is appended, so a
+        // withdrawal has to be reported to it explicitly rather than only
+        // stopping future loads.
+        if (typeof window.clarity === "function") window.clarity("consent", false);
         loaded = false;
       }
       document.documentElement.setAttribute("data-analytics", "denied");
@@ -78,6 +82,7 @@
       y = l.getElementsByTagName(r)[0];
       y.parentNode.insertBefore(t, y);
     })(window, document, "clarity", "script", CLARITY_ID);
+    if (typeof window.clarity === "function") window.clarity("consent", true);
     document.documentElement.setAttribute("data-analytics", "granted");
   }
 

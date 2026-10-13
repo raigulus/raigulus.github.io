@@ -126,11 +126,19 @@
 
         <h2>How long data is kept</h2>
         <ul>
-          <li><strong>Analytics and session recordings</strong> are held in the provider's own
-          storage for the retention period configured in the analytics account. Session recordings
-          are the shortest-lived category; exact current windows can be requested through the
-          <a href="/feedback/">contact form</a> and are reported as they are configured, not as a
-          guess.</li>
+          <li><strong>Analytics event data is deleted after 2 months.</strong> This is the
+          retention window configured in the analytics account, and it is shorter than the
+          service default of 14 months.</li>
+          <li><strong>Analytics user-level data is deleted after 2 months as well</strong>, with
+          the "reset on new activity" option enabled. That means a visitor who keeps returning
+          has their identifier window refreshed each time, so an identifier for a regularly
+          active visitor can persist longer than two months. Turning this option off would make
+          the window absolute; it is left on because it reduces the amount of data tied to a
+          single person over time.</li>
+          <li><strong>Session recordings</strong> are the shortest-lived category here. Their
+          retention window is set inside Microsoft's own service rather than in this site's
+          settings, and it is shorter than the analytics window above. Declining analytics means
+          session recording is never loaded at all.</li>
           <li><strong>Server request logs</strong> follow GitHub Pages' published retention
           policy.</li>
           <li><strong>Feedback</strong> is kept only while the message is being dealt with, and is
