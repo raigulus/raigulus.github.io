@@ -5,6 +5,15 @@
   var LOG_KEY = "raigulus-consent-log";
   var GA_ID = "G-C8XHNXWMVQ";
   var CLARITY_ID = "x5tl7t5cqi";
+  // Session recordings are only collected on the pages that actually contain a
+  // custom interface a visitor can struggle with. Guide pages are rendered text,
+  // so recording pointer movement there produces data with nothing to act on.
+  var CLARITY_PATHS = [
+    "/division-2/agent-briefing/",
+    "/division-2/build-maker/",
+    "/diablo-4/event-timer/",
+    "/diablo-4/world-boss-timer/"
+  ];
   var POLICY_VERSION = "2026-10-13";
   var loaded = false;
 
@@ -56,6 +65,11 @@
     document.head.appendChild(script);
   }
 
+  function clarityAllowed() {
+    var path = window.location.pathname;
+    return CLARITY_PATHS.some(function (prefix) { return path.indexOf(prefix) === 0; });
+  }
+
   function applyChoice(choice) {
     if (choice !== "granted") {
       if (loaded) {
@@ -74,15 +88,17 @@
     window.gtag("consent", "update", { analytics_storage: "granted" });
     window.gtag("config", GA_ID);
     appendScript("https://www.googletagmanager.com/gtag/js?id=" + GA_ID);
-    (function (c, l, a, r, i, t, y) {
-      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
-      t = l.createElement(r);
-      t.async = 1;
-      t.src = "https://www.clarity.ms/tag/" + i;
-      y = l.getElementsByTagName(r)[0];
-      y.parentNode.insertBefore(t, y);
-    })(window, document, "clarity", "script", CLARITY_ID);
-    if (typeof window.clarity === "function") window.clarity("consent", true);
+    if (clarityAllowed()) {
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", CLARITY_ID);
+      if (typeof window.clarity === "function") window.clarity("consent", true);
+    }
     document.documentElement.setAttribute("data-analytics", "granted");
   }
 
