@@ -20,7 +20,15 @@
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
   window.gtag("js", new Date());
-  window.gtag("consent", "default", { analytics_storage: "denied" });
+  // Consent mode expects four signals, not one. This site runs advertising of
+  // no kind, so the three advertising signals stay denied permanently and only
+  // analytics_storage ever changes.
+  window.gtag("consent", "default", {
+    analytics_storage: "denied",
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied"
+  });
 
   function readChoice() {
     try {
@@ -65,6 +73,17 @@
     document.head.appendChild(script);
   }
 
+function consentSignal(state) {
+    // All four consent mode signals are always sent, so the advertising ones
+    // keep telling Google "denied" instead of simply going unmentioned.
+    return {
+      analytics_storage: state,
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied"
+    };
+  }
+
   function clarityAllowed() {
     var path = window.location.pathname;
     return CLARITY_PATHS.some(function (prefix) { return path.indexOf(prefix) === 0; });
@@ -73,7 +92,7 @@
   function applyChoice(choice) {
     if (choice !== "granted") {
       if (loaded) {
-        window.gtag("consent", "update", { analytics_storage: "denied" });
+        window.gtag("consent", "update", consentSignal("denied"));
         // Clarity keeps writing cookies after its script is appended, so a
         // withdrawal has to be reported to it explicitly rather than only
         // stopping future loads.
@@ -85,7 +104,7 @@
     }
     if (loaded) return;
     loaded = true;
-    window.gtag("consent", "update", { analytics_storage: "granted" });
+    window.gtag("consent", "update", consentSignal("granted"));
     // No advertising on this site, so Analytics is told not to use the data for
     // ads personalisation or demographics. This also suppresses Google's own
     // signal enrichment, which is collected by default unless opted out.
