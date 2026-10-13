@@ -901,7 +901,7 @@ def post_latest_videos_discord(site_dir):
             yt_id = yt_url.split("watch?v=")[1].split("&")[0]
         elif "youtu.be/" in yt_url:
             yt_id = yt_url.split("youtu.be/")[1].split("?")[0]
-        thumbnail = f"https://i.ytimg.com/vi/{yt_id}/hqdefault.jpg" if yt_id else ""
+        thumbnail = f"/assets/img/yt/{yt_id}-hqdefault.jpg" if yt_id else ""
         payload = {
             "content": f"New video uploaded! Check it out:",
         "embeds": [

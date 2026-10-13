@@ -40,7 +40,7 @@ def facade(match: re.Match[str], description: str | None = None) -> str:
     alt = html.escape(alt, quote=True)
     return f'''{indent}<div class="watch video-facade" data-video-id="{video_id}" data-video-title="{title}">
           <button class="video-facade-button" type="button" aria-label="Play {title}">
-            <img src="https://i.ytimg.com/vi/{video_id}/hqdefault.jpg" alt="{alt}" width="480" height="360" decoding="async" fetchpriority="high">
+            <img src="/assets/img/yt/{video_id}-hqdefault.jpg" alt="{alt}" width="480" height="360" decoding="async" fetchpriority="high">
             <span class="video-facade-play" aria-hidden="true"></span>
             <span class="video-facade-label">Play video</span>
           </button>

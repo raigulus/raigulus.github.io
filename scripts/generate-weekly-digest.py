@@ -182,8 +182,8 @@ def main():
   <meta property="og:type" content="website">
   <meta property="og:url" content="{url}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta property="og:image" content="https://i.ytimg.com/vi/CTbj7jMF1rI/hqdefault.jpg">
-  <meta property="twitter:image" content="https://i.ytimg.com/vi/CTbj7jMF1rI/hqdefault.jpg">
+  <meta property="og:image" content="https://raigulus.github.io/assets/img/yt/CTbj7jMF1rI-hqdefault.jpg">
+  <meta property="twitter:image" content="https://raigulus.github.io/assets/img/yt/CTbj7jMF1rI-hqdefault.jpg">
   <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/barlow-condensed-700-latin.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/inter-400-latin.woff2">
   <link rel="stylesheet" href="/assets/styles.css">
@@ -263,7 +263,7 @@ def main():
   </main>
   <footer class="site-footer">
     <p>Raigulus archives The Division 2 no commentary walkthroughs, mission and build guides, plus Conflict PvP, Dark Zone, Regulus, and gameplay clips.</p>
-    <p><a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="https://www.instagram.com/raigulus/">Instagram @raigulus</a> <span>/</span> <a href="https://www.facebook.com/raigulus/">Facebook</a> <span>/</span> <a href="/discord/">Discord</a></p>
+    <p><a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="https://www.instagram.com/raigulus/">Instagram @raigulus</a> <span>/</span> <a href="https://www.facebook.com/raigulus/">Facebook</a> <span>/</span> <a href="/discord/">Discord</a> <span>/</span> <a href="/privacy/">Privacy</a> <span>/</span> <a href="/cookies/">Cookies</a> <span>/</span> <a href="#" data-consent-open>Cookie settings</a></p>
   </footer>
 <div class="site-search-overlay" id="site-search-overlay" role="dialog" aria-modal="true" aria-label="Search the Raigulus archive" hidden>
   <div class="site-search-panel">

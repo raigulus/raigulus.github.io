@@ -166,7 +166,7 @@ def latest_videos(count: int = 3) -> list[dict]:
             "title": v.get("title", ""),
             "url": v.get("url", ""),
             "youtube_url": yt_url,
-            "thumbnail": f"https://i.ytimg.com/vi/{yt_id}/hqdefault.jpg" if yt_id else "",
+            "thumbnail": f"/assets/img/yt/{yt_id}-hqdefault.jpg" if yt_id else "",
             "published_date": v.get("published_date", ""),
             "cluster": v.get("cluster", ""),
             "summary": v.get("summary", ""),

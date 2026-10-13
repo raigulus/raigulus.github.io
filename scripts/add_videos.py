@@ -154,8 +154,8 @@ def related_cards(record: dict, records: list[dict], exclude_self=True) -> str:
         cards.append(f'''<article class="video-card" data-c="special" data-search-card data-search="{search_blob}">
   <a class="thumb" href="{rel.get('url', '#')}">
     <span class="thumb-ph">{esc(short)}</span>
-    <img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg"
-         srcset="https://i.ytimg.com/vi/{vid}/mqdefault.jpg 320w, https://i.ytimg.com/vi/{vid}/hqdefault.jpg 480w"
+    <img src="/assets/img/yt/{vid}-hqdefault.jpg"
+         srcset="/assets/img/yt/{vid}-mqdefault.jpg 320w, /assets/img/yt/{vid}-hqdefault.jpg 480w"
          sizes="(max-width:640px) 92vw, (max-width:1100px) 46vw, 300px"
          alt="{esc(rel.get('title', ''))} thumbnail" loading="lazy" decoding="async">
   </a>
@@ -272,13 +272,13 @@ def render_page(record: dict, records: list[dict]) -> str:
   <meta property="og:type" content="video.other">
   <meta property="og:url" content="{slug_url}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta property="og:image" content="https://i.ytimg.com/vi/{vid}/hqdefault.jpg">
+  <meta property="og:image" content="https://raigulus.github.io/assets/img/yt/{vid}-hqdefault.jpg">
   <meta property="og:video" content="https://www.youtube.com/embed/{vid}">
   <meta property="og:video:secure_url" content="https://www.youtube.com/embed/{vid}">
   <meta property="og:video:type" content="text/html">
   <meta property="og:video:width" content="1280">
   <meta property="og:video:height" content="720">
-  <meta name="twitter:image" content="https://i.ytimg.com/vi/{vid}/hqdefault.jpg">
+  <meta name="twitter:image" content="https://raigulus.github.io/assets/img/yt/{vid}-hqdefault.jpg">
   <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/barlow-condensed-700-latin.woff2">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/inter-400-latin.woff2">
   <link rel="stylesheet" href="/assets/styles.css">
@@ -350,7 +350,7 @@ def render_page(record: dict, records: list[dict]) -> str:
         <p>{esc(record['_summary'])}</p>
         <div class="watch video-facade" data-video-id="{vid}" data-video-title="{esc(record['title'])}">
           <button class="video-facade-button" type="button" aria-label="Play {esc(record['title'])}">
-            <img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="{alt_text}" width="480" height="360" decoding="async" fetchpriority="high">
+            <img src="/assets/img/yt/{vid}-hqdefault.jpg" alt="{alt_text}" width="480" height="360" decoding="async" fetchpriority="high">
             <span class="video-facade-play" aria-hidden="true"></span>
             <span class="video-facade-label">Play video</span>
           </button>
@@ -431,7 +431,7 @@ def render_page(record: dict, records: list[dict]) -> str:
   </main>
   <footer class="site-footer">
     <p>Raigulus archives The Division 2 no commentary walkthroughs, mission and build guides, plus Conflict PvP, Dark Zone, Regulus, and gameplay clips.</p>
-    <p><a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="https://www.instagram.com/raigulus/">Instagram @raigulus</a> <span>/</span> <a href="https://www.facebook.com/raigulus/">Facebook</a> <span>/</span> <a href="/discord/">Discord</a> <span>/</span> <a href="/feedback/">Feedback</a></p>
+    <p><a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="https://www.instagram.com/raigulus/">Instagram @raigulus</a> <span>/</span> <a href="https://www.facebook.com/raigulus/">Facebook</a> <span>/</span> <a href="/discord/">Discord</a> <span>/</span> <a href="/feedback/">Feedback</a> <span>/</span> <a href="/privacy/">Privacy</a> <span>/</span> <a href="/cookies/">Cookies</a> <span>/</span> <a href="#" data-consent-open>Cookie settings</a></p>
   </footer>
 <div class="site-search-overlay" id="site-search-overlay" role="dialog" aria-modal="true" aria-label="Search the Raigulus archive" hidden>
   <div class="site-search-panel">
@@ -512,7 +512,7 @@ def hub_card(rec: dict) -> str:
     return f'''<article class="video-card" data-c="special" data-search-card data-search="{search_blob}">
   <a class="thumb" href="{url}">
     <span class="thumb-ph">{esc(short)}</span>
-    <img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="{esc(title)} thumbnail" loading="lazy">
+    <img src="/assets/img/yt/{vid}-hqdefault.jpg" alt="{esc(title)} thumbnail" loading="lazy">
   </a>
   <div class="card-body">
     <p class="eyebrow">{esc(cluster)}</p>
@@ -581,7 +581,7 @@ def update_root_page(records_new: list[dict]) -> None:
             card = f'''<div class="grid"><article class="video-card" data-c="special">
   <a class="thumb" href="{rec['url']}">
     <span class="thumb-ph">{esc(rec['mission'][:28])}</span>
-    <img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="{esc(rec['title'])} thumbnail" loading="lazy">
+    <img src="/assets/img/yt/{vid}-hqdefault.jpg" alt="{esc(rec['title'])} thumbnail" loading="lazy">
   </a>
   <div class="card-body">
     <p class="eyebrow">{esc(rec['cluster'])}</p>

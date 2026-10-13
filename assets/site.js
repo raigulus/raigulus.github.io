@@ -80,22 +80,34 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // YouTube thumbnail fallback chain: maxres -> hq -> mq -> default.
-  // Headless bots (PageSpeed included) sometimes get 403s from i.ytimg.com,
-  // and old videos may lack maxres thumbs. Step down instead of showing broken art.
+  // Thumbnails are served from our own origin, so a missing local copy steps down
+  // to a smaller size rather than showing broken art. A video added after the last
+  // thumbnail sync falls through the whole chain and finally points at the remote
+  // copy, so a fresh page is never blank.
   var thumbOrder = ["maxresdefault", "hqdefault", "mqdefault", "default"];
+  var thumbRoot = "/assets/img/yt/";
+  var thumbRemote = "https://i.ytimg.com/vi/";
+  function thumbLocalName(src) {
+    if (src.indexOf(thumbRoot) !== 0) return null;
+    var rest = src.slice(thumbRoot.length);
+    var dash = rest.lastIndexOf("-");
+    var dot = rest.lastIndexOf(".");
+    if (dash === -1 || dot === -1 || dot < dash) return null;
+    return { id: rest.slice(0, dash), size: rest.slice(dash + 1, dot) };
+  }
   function thumbFallback(img) {
     if (img.getAttribute("data-thumb-fallback") === "done") return;
-    var src = img.getAttribute("src") || "";
-    for (var i = 0; i < thumbOrder.length - 1; i++) {
-      if (src.indexOf("/" + thumbOrder[i] + ".") !== -1) {
-        img.setAttribute("src", src.replace("/" + thumbOrder[i] + ".", "/" + thumbOrder[i + 1] + "."));
-        if (i + 1 === thumbOrder.length - 1) img.setAttribute("data-thumb-fallback", "done");
-        return;
-      }
+    var parsed = thumbLocalName(img.getAttribute("src") || "");
+    if (!parsed) return;
+    var index = thumbOrder.indexOf(parsed.size);
+    if (index !== -1 && index < thumbOrder.length - 1) {
+      img.setAttribute("src", thumbRoot + parsed.id + "-" + thumbOrder[index + 1] + ".jpg");
+      return;
     }
+    img.setAttribute("src", thumbRemote + parsed.id + "/" + parsed.size + ".jpg");
     img.setAttribute("data-thumb-fallback", "done");
   }
-  var thumbs = document.querySelectorAll('img[src*="i.ytimg.com/vi/"]');
+  var thumbs = document.querySelectorAll('img[src*="/assets/img/yt/"]');
   for (var k = 0; k < thumbs.length; k++) {
     (function (img) {
       img.addEventListener("error", function () { thumbFallback(img); });

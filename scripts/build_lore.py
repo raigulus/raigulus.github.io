@@ -180,7 +180,7 @@ def analytics_block():
 def footer():
     return '''<footer class="site-footer">
   <p>Unofficial, source-led research into The Division universe and its real-world influences.</p>
-    <p><a href="/lore/">Lore Archive</a> <span>/</span> <a href="/lore/methodology/">Methodology</a> <span>/</span> <a href="/lore/corrections/">Corrections</a> <span>/</span> <a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="/feedback/">Feedback</a></p>
+    <p><a href="/lore/">Lore Archive</a> <span>/</span> <a href="/lore/methodology/">Methodology</a> <span>/</span> <a href="/lore/corrections/">Corrections</a> <span>/</span> <a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="/feedback/">Feedback</a> <span>/</span> <a href="/privacy/">Privacy</a> <span>/</span> <a href="/cookies/">Cookies</a> <span>/</span> <a href="#" data-consent-open>Cookie settings</a></p>
 </footer>'''
 
 
