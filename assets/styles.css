@@ -754,3 +754,5 @@ body.has-search-open{overflow:hidden}
 @media (prefers-reduced-motion: reduce) {
   .rg-consent { transition: none; }
 }
+
+.bm-actions-note{margin:10px 0 0;font-size:.8rem;line-height:1.5;color:var(--text-sub)}

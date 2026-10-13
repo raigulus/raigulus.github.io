@@ -38,6 +38,7 @@
     cfg: {}   /* "chest:core_1" -> attrId | "backpack:talent_slot" -> talentName | "primary:muzzle" -> modName */
   };
   var picker = { mode: "slot", slot: null, kind: null, filter: "all", search: "" };
+  var STORAGE_KEY = "raigulus-build-maker";
 
   var GEAR_SLOTS = [
     { key: "mask", label: "Mask" },
@@ -821,6 +822,72 @@
   function updateHash() {
     var h = encodeState();
     try { history.replaceState(null, "", "#" + h); } catch (e) { /* noop */ }
+    saveLocal(h);
+  }
+
+  /* ---------- saved build ---------- */
+
+  // Every mutation already funnels through updateHash, so persisting the same
+  // encoded string there covers gear, weapons, skills, cores and the SHD watch
+  // level in one place. The shared link stays the single source of truth for
+  // sharing; this only stops a build being lost when the tab is closed.
+  function saveLocal(encoded) {
+    try { localStorage.setItem(STORAGE_KEY, encoded); } catch (e) { /* private mode */ }
+  }
+  function loadLocal() {
+    try { return localStorage.getItem(STORAGE_KEY); } catch (e) { return null; }
+  }
+  function clearLocal() {
+    try { localStorage.removeItem(STORAGE_KEY); } catch (e) { /* noop */ }
+  }
+
+  /* ---------- import and export ---------- */
+
+  var STATE_KEYS = ["m", "c", "b", "g", "h", "k", "w1", "w2", "s1", "s2", "w", "cf"];
+
+  function looksLikeState(obj) {
+    if (!obj || typeof obj !== "object" || Array.isArray(obj)) return false;
+    return STATE_KEYS.some(function (key) { return Object.prototype.hasOwnProperty.call(obj, key); });
+  }
+
+  function exportJson() {
+    var payload = {
+      app: "raigulus-build-maker",
+      format: 1,
+      exported: new Date().toISOString(),
+      state: decodeState(encodeState()) || {}
+    };
+    var blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = "division2-build.json";
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () { document.body.removeChild(a); URL.revokeObjectURL(url); }, 500);
+    flash("Build JSON saved", "bm-export");
+    trackShare("export_json");
+  }
+
+  function importJson(text) {
+    var parsed;
+    try {
+      parsed = JSON.parse(text);
+    } catch (e) {
+      flash("That file is not valid JSON", "bm-import");
+      return;
+    }
+    var next = looksLikeState(parsed) ? parsed : parsed && parsed.state;
+    if (!looksLikeState(next)) {
+      flash("No build data found in that file", "bm-import");
+      return;
+    }
+    applyState(next);
+    renderSlots();
+    renderSummary();
+    updateHash();
+    flash("Build imported", "bm-import");
+    trackShare("import_json");
   }
 
   function copyText() {
@@ -914,8 +981,9 @@
       document.body.removeChild(ta);
     }
   }
-  function flash(msg) {
-    var el = $("bm-copy-link");
+  function flash(msg, id) {
+    var el = $(id || "bm-copy-link");
+    if (!el) return;
     var old = el.textContent;
     el.textContent = msg;
     setTimeout(function () { el.textContent = old; }, 1500);
@@ -948,14 +1016,27 @@
     if (e.target.id === "bm-copy-link") { copyToClipboard(location.href.split("#")[0] + "#" + encodeState()); trackShare("copy_link"); return; }
     if (e.target.id === "bm-copy-text") { copyToClipboard(copyText()); trackShare("copy_text"); return; }
     if (e.target.id === "bm-screenshot") { saveShot(); trackShare("screenshot"); return; }
+    if (e.target.id === "bm-export") { exportJson(); return; }
+    if (e.target.id === "bm-import") { $("bm-import-file").click(); return; }
     if (e.target.id === "bm-watch1000") { state.watch = e.target.checked; renderSummary(); updateHash(); return; }
     if (e.target.id === "bm-reset") {
       state = { mask: null, chest: null, backpack: null, gloves: null, holster: null, knees: null,
                 primary: null, secondary: null, skills: [null, null], watch: false, cfg: {} };
       renderSlots(); renderSummary();
+      clearLocal();
       try { history.replaceState(null, "", location.pathname); } catch (err) { /* noop */ }
       return;
     }
+  });
+
+  $("bm-import-file").addEventListener("change", function (e) {
+    var file = e.target.files && e.target.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function () { importJson(String(reader.result)); };
+    reader.onerror = function () { flash("That file could not be read", "bm-import"); };
+    reader.readAsText(file);
+    e.target.value = "";
   });
 
   $("bm-modal-search").addEventListener("input", function (e) {
@@ -992,6 +1073,7 @@
         " weapons, " + (c.brand_sets || 0) + " brand sets, " + (c.gear_sets || 0) + " gear sets \u2014 updated " + gen +
         " (source: div2hub/game-data)";
       var s = decodeState(location.hash.slice(1));
+      if (!s) s = decodeState(loadLocal() || "");
       applyState(s);
       renderSlots();
       renderSummary();

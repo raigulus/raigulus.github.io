@@ -102,8 +102,12 @@
               <button type="button" id="bm-copy-link">Copy link</button>
               <button type="button" id="bm-copy-text">Copy as text</button>
               <button type="button" id="bm-screenshot">Screenshot</button>
+              <button type="button" id="bm-export">Export JSON</button>
+              <button type="button" id="bm-import">Import JSON</button>
               <button type="button" id="bm-reset">Reset</button>
             </div>
+            <p class="bm-actions-note">Your build is kept in this browser automatically, so closing the tab will not lose it. Export JSON to move a build between browsers or keep a copy.</p>
+            <input type="file" id="bm-import-file" accept="application/json,.json" hidden>
           </div>
         </div>
         <div class="bm-modal" id="bm-modal" hidden>
