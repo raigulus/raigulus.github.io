@@ -29,20 +29,7 @@ FIRST_TUESDAY = date(2026, 9, 1)  # weekly scout cadence anchors on Tuesdays
 
 def analytics_block():
     return """\
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "x5tl7t5cqi");
-  </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8XHNXWMVQ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag("js", new Date());
-    gtag("config", "G-C8XHNXWMVQ");
-  </script>
+  <script src="/assets/analytics-consent.js" defer></script>
   <script>
     document.addEventListener("click", function(event) {
       var link = event.target.closest("a[href]");
@@ -197,10 +184,8 @@ def main():
   <meta name="twitter:card" content="summary_large_image">
   <meta property="og:image" content="https://i.ytimg.com/vi/CTbj7jMF1rI/hqdefault.jpg">
   <meta property="twitter:image" content="https://i.ytimg.com/vi/CTbj7jMF1rI/hqdefault.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/barlow-condensed-700-latin.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/inter-400-latin.woff2">
   <link rel="stylesheet" href="/assets/styles.css">
   <script src="/assets/search.js" defer></script>
   <script src="/assets/site.js" defer></script>

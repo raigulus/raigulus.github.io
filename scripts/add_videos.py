@@ -279,28 +279,14 @@ def render_page(record: dict, records: list[dict]) -> str:
   <meta property="og:video:width" content="1280">
   <meta property="og:video:height" content="720">
   <meta name="twitter:image" content="https://i.ytimg.com/vi/{vid}/hqdefault.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/barlow-condensed-700-latin.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/inter-400-latin.woff2">
   <link rel="stylesheet" href="/assets/styles.css">
   <script src="/assets/search.js" defer></script>
   <script src="/assets/site.js" defer></script>
   <script src="/assets/video-player.js" defer></script>
   <script src="/assets/live-loot.js" defer></script>
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){{
-        c[a]=c[a]||function(){{(c[a].q=c[a].q||[]).push(arguments)}};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    }})(window, document, "clarity", "script", "x5tl7t5cqi");
-  </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8XHNXWMVQ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){{dataLayer.push(arguments);}}
-    gtag("js", new Date());
-    gtag("config", "G-C8XHNXWMVQ");
-  </script>
+  <script src="/assets/analytics-consent.js" defer></script>
   <script>
     document.addEventListener("click", function(event) {{
       var link = event.target.closest("a[href]");
