@@ -86,7 +86,10 @@
     if (loaded) return;
     loaded = true;
     window.gtag("consent", "update", { analytics_storage: "granted" });
-    window.gtag("config", GA_ID);
+    // No advertising on this site, so Analytics is told not to use the data for
+    // ads personalisation or demographics. This also suppresses Google's own
+    // signal enrichment, which is collected by default unless opted out.
+    window.gtag("config", GA_ID, { allow_google_signals: false });
     appendScript("https://www.googletagmanager.com/gtag/js?id=" + GA_ID);
     if (clarityAllowed()) {
       (function (c, l, a, r, i, t, y) {
