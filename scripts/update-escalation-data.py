@@ -17,17 +17,44 @@ BASE_URL = "https://raigulus.github.io"
 HOST = "raigulus.github.io"
 USER_AGENT = "RaigulusGuideDataBot/1.0 (+https://raigulus.github.io/division-2/server-status/)"
 PRIMARY_SOURCE_URL = os.environ.get("ESCALATION_PRIMARY_SOURCE_URL", "").strip()
+
+
+def source_credit_url(source_url, fallback="https://prototrack.gg"):
+    """Return only the scheme and host of the configured feed.
+
+    Path and query are dropped on purpose: the source URL is a secret and may
+    carry a key in its query string, so only the public origin is publishable.
+    """
+    parts = urllib.parse.urlsplit(source_url or "")
+    if parts.scheme in ("http", "https") and parts.netloc:
+        netloc = parts.hostname or ""
+        if parts.port:
+            netloc = f"{netloc}:{parts.port}"
+        return urllib.parse.urlunsplit((parts.scheme, netloc, "", "", ""))
+    return fallback
+
+
+def source_credit_label(source_url, fallback="ProtoTrack.gg"):
+    host = urllib.parse.urlsplit(source_credit_url(source_url)).hostname or ""
+    if not host:
+        return fallback
+    return host[4:] if host.startswith("www.") else host
 SECONDARY_VENDOR_SNAPSHOT_URL = os.environ.get("DIVISION2_VENDOR_SNAPSHOT_URL", "").strip()
 DAILY_SNAPSHOT_RESET_HOUR_UTC = 7
 DAILY_SNAPSHOT_GRACE_MINUTES = 20
 VENDOR_REFRESH_INTERVAL_HOURS = 12
 DIVISION2_STATUS_SOURCE_LABEL = "Official Ubisoft service status"
 DIVISION2_STATUS_SOURCE_URL = "https://ubistatic-a.akamaihd.net/0115/tctd2/status.html"
-# Targeted-loot data is pulled from the community feed behind
-# ESCALATION_PRIMARY_SOURCE_URL. The feed owner asked for a visible on-page
-# credit, so it is rendered into every page that displays the snapshot.
-LOOT_DATA_SOURCE_URL = "https://prototrack.gg"
-LOOT_DATA_SOURCE_LABEL = "ProtoTrack.gg"
+# Targeted-loot data is pulled from the ProtoTrack community feed behind
+# ESCALATION_PRIMARY_SOURCE_URL. ProtoTrack asks for a visible on-page credit,
+# so it is rendered into every page that displays the snapshot.
+#
+# The credit is derived from the configured source instead of being hardcoded,
+# so it cannot silently drift away from where the data really came from. Only
+# the scheme and host are published: the full source URL stays secret because it
+# may carry credentials in its query string.
+LOOT_DATA_SOURCE_URL = source_credit_url(PRIMARY_SOURCE_URL)
+LOOT_DATA_SOURCE_LABEL = source_credit_label(PRIMARY_SOURCE_URL)
 DIVISION2_STATUS_API_URL = (
     "https://public-ubiservices.ubi.com/v1/applications/gameStatuses?"
     "applicationIds=6c6b8cd7-d901-4cd5-8279-07ba92088f06,"
