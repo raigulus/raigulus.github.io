@@ -154,6 +154,7 @@ def parse_primary_source_text(text):
         "status": "ok",
     }
     section = ""
+    seen_missions_header = False
     for raw_line in text.splitlines():
         line = raw_line.strip()
         if not line:
@@ -161,6 +162,7 @@ def parse_primary_source_text(text):
         lower = line.lower()
         if lower == "missions:":
             section = "missions"
+            seen_missions_header = True
             continue
         if lower == "vendor caches:":
             section = "vendor_caches"
@@ -182,6 +184,16 @@ def parse_primary_source_text(text):
                 data["missions"].append({"mission": key.strip(), "loot": value.strip()})
             elif section == "vendor_caches":
                 data["vendor_caches"].append({"type": key.strip(), "item": value.strip()})
+
+    # A reshaped feed would otherwise parse into an empty snapshot that still
+    # looks healthy. These checks turn a silent format change into an error that
+    # fetch_primary catches and reports while the previous snapshot stays live.
+    if not seen_missions_header:
+        raise ValueError("Source text has no 'Missions:' header; feed format changed")
+    if not data["missions"]:
+        raise ValueError("Source text contained a Missions section but no mission rows")
+    if not parse_snapshot_date(data["date"]):
+        raise ValueError(f"Source date {data['date']!r} is missing or unparseable")
     return data
 
 
@@ -1106,6 +1118,40 @@ def write_json(path, data):
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
+def detect_snapshot_anomalies(previous, current):
+    """Compare a fresh snapshot against the previous one and report suspicious
+    shifts. This only reports: the snapshot is still written, so an automated
+    run keeps going. A human reads the run log or the workflow warning badge.
+    """
+    warnings = []
+    if not previous:
+        return warnings
+
+    previous_missions = previous.get("missions") or []
+    current_missions = current.get("missions") or []
+    if len(previous_missions) >= 3 and len(current_missions) < len(previous_missions) / 2:
+        warnings.append(
+            f"Mission rows collapsed from {len(previous_missions)} to {len(current_missions)}"
+        )
+
+    previous_names = {row.get("mission") for row in previous_missions if isinstance(row, dict)}
+    current_names = {row.get("mission") for row in current_missions if isinstance(row, dict)}
+    previous_date = parse_snapshot_date(previous.get("date"))
+    current_date = parse_snapshot_date(current.get("date"))
+
+    # Escalation missions rotate as a set, so a full swap on a newer date is
+    # routine. Only a same-day total replacement is worth reporting.
+    same_day = previous_date == current_date and previous_date is not None
+    if same_day and previous_names and current_names and not (previous_names & current_names):
+        warnings.append("Every mission name changed on the same date; the feed may have been tampered with")
+
+    if previous_date and current_date and current_date < previous_date:
+        warnings.append(
+            f"Snapshot date went backwards: {previous_date.isoformat()} -> {current_date.isoformat()}"
+        )
+    return warnings
+
+
 def main():
     parser = argparse.ArgumentParser(description="Fetch public The Division 2 Escalation source data for Raigulus.")
     parser.add_argument("--submit-indexnow", action="store_true", help="Submit updated Escalation URLs to IndexNow.")
@@ -1142,6 +1188,9 @@ def main():
     else:
         existing = read_existing(input_path, site_dir)
         data, error = fetch_primary(existing)
+        for warning in detect_snapshot_anomalies(existing, data):
+            print(f"Snapshot anomaly: {warning}")
+            print(f"::warning::Escalation snapshot anomaly: {warning}")
         data["fetched_at"] = checked_at.isoformat()
         data["last_checked"] = checked_at.strftime("%Y-%m-%d %H:%M UTC")
         if not data.get("parsed_at"):
