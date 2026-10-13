@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-13T15:05:13Z",
+  "generated_at": "2026-10-13T16:05:16Z",
   "stats": {
-    "total_guides": 470,
+    "total_guides": 472,
     "exotics": 79,
     "patches": 31
   },
@@ -15,7 +15,7 @@
       "title": "Can Your Squad Clear Broken Rain? Aces & Eights + Iron",
       "url": "https://raigulus.github.io/division-2/videos/can-your-squad-clear-broken-rain-aces-eights-iron/",
       "youtube_url": "https://www.youtube.com/watch?v=Rv9Yc955E5k",
-      "thumbnail": "https://i.ytimg.com/vi/Rv9Yc955E5k/hqdefault.jpg",
+      "thumbnail": "/assets/img/yt/Rv9Yc955E5k-hqdefault.jpg",
       "published_date": "2026-10-12",
       "cluster": "escalation run",
       "summary": "Broken Rain squad clear in The Division 2 with the Aces & Eights + Iron Will + Prima Donna build. Full gameplay, no commentary, ending with a Steel & Sons ACR d"
@@ -24,7 +24,7 @@
       "title": "One Regulus headshot wiped a whole squad 💥 Division 2",
       "url": "https://raigulus.github.io/division-2/videos/one-regulus-headshot-wiped-a-whole-squad-division/",
       "youtube_url": "https://www.youtube.com/watch?v=AFGvmaifVlE",
-      "thumbnail": "https://i.ytimg.com/vi/AFGvmaifVlE/hqdefault.jpg",
+      "thumbnail": "/assets/img/yt/AFGvmaifVlE-hqdefault.jpg",
       "published_date": "2026-10-10",
       "cluster": "manhunt",
       "summary": "Went rogue in the Dark Zone with the squad, and the SHD agents came for us. One Regulus headshot dropped an agent, he exploded, and the blast took out the rest"
@@ -33,7 +33,7 @@
       "title": "\"I shot him first bro\" 😂 Division 2 Conflict",
       "url": "https://raigulus.github.io/division-2/videos/i-shot-him-first-bro-division-2-conflict/",
       "youtube_url": "https://www.youtube.com/watch?v=c-Ch0ap4Cos",
-      "thumbnail": "https://i.ytimg.com/vi/c-Ch0ap4Cos/hqdefault.jpg",
+      "thumbnail": "/assets/img/yt/c-Ch0ap4Cos-hqdefault.jpg",
       "published_date": "2026-10-09",
       "cluster": "pvp/archive clip",
       "summary": "He said \"Rai, I shot him first bro\" while I was already laughing... then I blew the smoke off my Regulus and finished the job. Boom boom, I don't think so. 💨  T"
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-10-13 15:05 UTC"
+    "last_checked": "2026-10-13 16:05 UTC"
   },
   "discord_members": 58,
   "next_reset_utc": "2026-10-14T07:00:00Z"
