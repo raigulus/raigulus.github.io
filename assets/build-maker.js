@@ -815,7 +815,8 @@
       var slots = { mask: state.mask, chest: state.chest, backpack: state.backpack, gloves: state.gloves, holster: state.holster, knees: state.knees, primary: state.primary, secondary: state.secondary };
       Object.keys(s.cf).forEach(function (k) {
         var slot = k.split(":")[0];
-        if (slots[slot]) state.cfg[k] = s.cf[k];
+        /* own-key check: slots["__proto__"] is Object.prototype, which is truthy */
+        if (Object.prototype.hasOwnProperty.call(slots, slot) && slots[slot]) state.cfg[k] = s.cf[k];
       });
     }
   }
@@ -844,6 +845,7 @@
   /* ---------- import and export ---------- */
 
   var STATE_KEYS = ["m", "c", "b", "g", "h", "k", "w1", "w2", "s1", "s2", "w", "cf"];
+  var MAX_IMPORT_BYTES = 1000000;
 
   function looksLikeState(obj) {
     if (!obj || typeof obj !== "object" || Array.isArray(obj)) return false;
@@ -870,6 +872,10 @@
   }
 
   function importJson(text) {
+    if (text.length > MAX_IMPORT_BYTES) {
+      flash("That file is too large to be a build", "bm-import");
+      return;
+    }
     var parsed;
     try {
       parsed = JSON.parse(text);
@@ -1032,6 +1038,11 @@
   $("bm-import-file").addEventListener("change", function (e) {
     var file = e.target.files && e.target.files[0];
     if (!file) return;
+    if (file.size > MAX_IMPORT_BYTES) {
+      flash("That file is too large to be a build", "bm-import");
+      e.target.value = "";
+      return;
+    }
     var reader = new FileReader();
     reader.onload = function () { importJson(String(reader.result)); };
     reader.onerror = function () { flash("That file could not be read", "bm-import"); };
