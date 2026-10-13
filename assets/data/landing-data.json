@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-13T17:33:35Z",
+  "generated_at": "2026-10-13T17:40:20Z",
   "stats": {
-    "total_guides": 473,
+    "total_guides": 474,
     "exotics": 79,
     "patches": 31
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "The Division 2: Red Horizon Scout 7 Manhunt Walkthrough",
+      "url": "https://raigulus.github.io/division-2/videos/the-division-2-red-horizon-scout-7-manhunt-walkthr/",
+      "youtube_url": "https://www.youtube.com/watch?v=wYbPJDy9cN0",
+      "thumbnail": "/assets/img/yt/wYbPJDy9cN0-hqdefault.jpg",
+      "published_date": "2026-10-13",
+      "cluster": "manhunt",
+      "summary": "The Division 2 Red Horizon (Y8S3) Scout 7 Manhunt walkthrough, no commentary. All three Scout 7 tasks in the Southwest district, start to finish.  Today's Loot:"
+    },
     {
       "title": "Can Your Squad Clear Broken Rain? Aces & Eights + Iron",
       "url": "https://raigulus.github.io/division-2/videos/can-your-squad-clear-broken-rain-aces-eights-iron/",
@@ -28,15 +37,6 @@
       "published_date": "2026-10-10",
       "cluster": "manhunt",
       "summary": "Went rogue in the Dark Zone with the squad, and the SHD agents came for us. One Regulus headshot dropped an agent, he exploded, and the blast took out the rest"
-    },
-    {
-      "title": "\"I shot him first bro\" 😂 Division 2 Conflict",
-      "url": "https://raigulus.github.io/division-2/videos/i-shot-him-first-bro-division-2-conflict/",
-      "youtube_url": "https://www.youtube.com/watch?v=c-Ch0ap4Cos",
-      "thumbnail": "/assets/img/yt/c-Ch0ap4Cos-hqdefault.jpg",
-      "published_date": "2026-10-09",
-      "cluster": "pvp/archive clip",
-      "summary": "He said \"Rai, I shot him first bro\" while I was already laughing... then I blew the smoke off my Regulus and finished the job. Boom boom, I don't think so. 💨  T"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-10-13 17:33 UTC"
+    "last_checked": "2026-10-13 17:40 UTC"
   },
   "discord_members": 58,
   "next_reset_utc": "2026-10-14T07:00:00Z"
