@@ -901,7 +901,10 @@ def post_latest_videos_discord(site_dir):
             yt_id = yt_url.split("watch?v=")[1].split("&")[0]
         elif "youtu.be/" in yt_url:
             yt_id = yt_url.split("youtu.be/")[1].split("?")[0]
-        thumbnail = f"/assets/img/yt/{yt_id}-hqdefault.jpg" if yt_id else ""
+        # Discord validates embed thumbnail URLs and rejects a relative path
+        # with URL_TYPE_INVALID_URL, which is what silently dropped every post
+        # after thumbnails moved onto our own origin.
+        thumbnail = f"{BASE_URL}/assets/img/yt/{yt_id}-hqdefault.jpg" if yt_id else ""
         payload = {
             "content": f"New video uploaded! Check it out:",
         "embeds": [

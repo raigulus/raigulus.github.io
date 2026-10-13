@@ -30,11 +30,18 @@ jobs:
       - name: Discover and add new uploads
         run: python3 scripts/discover_youtube.py
 
+      # Runs after discovery so the freshly written pages reference their
+      # thumbnails, and before the commit so the images land in the same push.
+      # A thumbnail that will not download should not cost us the video pages.
+      - name: Sync YouTube thumbnails
+        continue-on-error: true
+        run: python3 scripts/sync_youtube_thumbnails.py
+
       - name: Commit changes
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          git add assets/data/videos.json division-2/videos/ division-2/index.html index.html sitemap.txt sitemap.xml feed.xml
+          git add assets/data/videos.json assets/img/yt/ division-2/videos/ division-2/index.html index.html sitemap.txt sitemap.xml feed.xml
           if git diff --cached --quiet; then
             echo "No new videos."
             exit 0
