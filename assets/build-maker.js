@@ -639,9 +639,10 @@
     picker.search = "";
     $("bm-modal-title").textContent = title;
     $("bm-modal-search").value = "";
+    $("bm-modal").hidden = false;
+    if (!DATA) { renderPickerPending(); return; }
     renderPickerFilters();
     renderPickerList();
-    $("bm-modal").hidden = false;
   }
 
   function openCfgPicker(cfgKey) {
@@ -662,7 +663,7 @@
       gmod: "Pick Gear Mod", gtalent: "Pick Talent", wtalent: "Pick Weapon Talent",
       wmod: "Pick Attachment"
     };
-    picker.mode = "cfg";
+picker.mode = "cfg";
     picker.slot = cfgKey;
     picker.kind = kind;
     picker.suffix = suffix;
@@ -670,9 +671,18 @@
     picker.search = "";
     $("bm-modal-title").textContent = titles[kind] || "Pick";
     $("bm-modal-search").value = "";
+    $("bm-modal").hidden = false;
+    if (!DATA) { renderPickerPending(); return; }
     renderPickerFilters();
     renderPickerList();
-    $("bm-modal").hidden = false;
+  }
+
+  /* The slot grid is painted before build-maker.json lands, so a visitor can
+     reach a slot button first. Opening the modal with a pending message keeps
+     that click from being a silent no-op. */
+  function renderPickerPending() {
+    $("bm-modal-filters").innerHTML = "";
+    $("bm-modal-list").innerHTML = '<li class="bm-empty">Loading item data\u2026</li>';
   }
 
   function renderPickerFilters() {
@@ -1094,6 +1104,7 @@
       applyState(s);
       renderSlots();
       renderSummary();
+      if (!$("bm-modal").hidden) { renderPickerFilters(); renderPickerList(); }
       loadChangelog();
     })
     .catch(function (err) {
