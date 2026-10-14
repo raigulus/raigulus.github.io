@@ -20,6 +20,11 @@ on:
       - "sitemap.xml"
       - "sitemap.txt"
   workflow_dispatch:
+  schedule:
+    # The lore gate only ever ran on pull requests, and this repo takes commits
+    # directly, so the last run was 87 days old. Daily is enough to catch a
+    # broken record or a page the generator no longer reproduces.
+    - cron: "17 6 * * *"
 
 permissions:
   contents: read
