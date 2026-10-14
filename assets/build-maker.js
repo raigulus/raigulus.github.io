@@ -852,6 +852,141 @@ picker.mode = "cfg";
     try { localStorage.removeItem(STORAGE_KEY); } catch (e) { /* noop */ }
   }
 
+  /* ---------- saved build library ---------- */
+
+  var LIBRARY_KEY = "raigulus-build-library";
+  var LIBRARY_MAX = 24;
+  var compareSlots = { a: null, b: null };
+
+  function libraryRead() {
+    try {
+      var raw = JSON.parse(localStorage.getItem(LIBRARY_KEY) || "{}");
+      if (!Array.isArray(raw.builds)) return [];
+      return raw.builds.filter(function (b) {
+        return b && typeof b.id === "string" && b.state && typeof b.state === "object";
+      }).slice(0, LIBRARY_MAX);
+    } catch (e) { return []; }
+  }
+
+  function libraryWrite(builds) {
+    try {
+      localStorage.setItem(LIBRARY_KEY, JSON.stringify({ version: 1, builds: builds }));
+      return true;
+    } catch (e) { return false; }
+  }
+
+  function librarySave(name) {
+    var label = String(name || "").trim().slice(0, 60);
+    if (!label) { flash("Give the build a name first", "bm-library"); return; }
+    var builds = libraryRead();
+    if (builds.length >= LIBRARY_MAX) {
+      flash("Library is full at " + LIBRARY_MAX + " builds", "bm-library");
+      return;
+    }
+    builds.unshift({
+      id: "b" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+      name: label,
+      saved: new Date().toISOString().slice(0, 10),
+      state: decodeState(encodeState()) || {}
+    });
+    if (!libraryWrite(builds)) { flash("This browser will not store the library", "bm-library"); return; }
+    $("bm-library-name").value = "";
+    renderLibrary();
+    flash("Build saved", "bm-library");
+  }
+
+  function libraryLoad(id) {
+    var entry = libraryRead().find(function (b) { return b.id === id; });
+    if (!entry) return;
+    applyState(entry.state);
+    renderSlots();
+    renderSummary();
+    updateHash();
+    flash("Loaded " + entry.name, "bm-library");
+  }
+
+  function libraryDelete(id) {
+    var builds = libraryRead().filter(function (b) { return b.id !== id; });
+    if (!libraryWrite(builds)) return;
+    ["a", "b"].forEach(function (slot) {
+      if (compareSlots[slot] === id) compareSlots[slot] = null;
+    });
+    renderLibrary();
+  }
+
+  function librarySetCompare(slot, id) {
+    compareSlots[slot] = compareSlots[slot] === id ? null : id;
+    renderLibrary();
+  }
+
+  /* collectStats reads the live state, so a comparison applies each snapshot
+     in turn and puts the working build back afterwards. encodeState returns
+     base64url text, not an object, so it has to be decoded back first. */
+  function totalsForSnapshot(snapshot) {
+    var before = decodeState(encodeState()) || {};
+    applyState(snapshot);
+    var totals = collectStats();
+    applyState(before);
+    return totals;
+  }
+
+  function renderCompare() {
+    var box = $("bm-compare");
+    var a = libraryRead().find(function (b) { return b.id === compareSlots.a; });
+    var b = libraryRead().find(function (b) { return b.id === compareSlots.b; });
+    if (!a || !b) { box.hidden = true; return; }
+    var ta = totalsForSnapshot(a.state);
+    var tb = totalsForSnapshot(b.state);
+    var keys = {};
+    ta.forEach(function (t) { keys[t.stat] = t.label; });
+    tb.forEach(function (t) { keys[t.stat] = t.label; });
+    var rows = Object.keys(keys).map(function (stat) {
+      var va = ta.filter(function (t) { return t.stat === stat; })[0];
+      var vb = tb.filter(function (t) { return t.stat === stat; })[0];
+      var na = va ? va.v : 0;
+      var nb = vb ? vb.v : 0;
+      var delta = nb - na;
+      var cls = delta > 0 ? "bm-cmp-up" : delta < 0 ? "bm-cmp-down" : "bm-cmp-same";
+      var sign = delta > 0 ? "+" : "";
+      return { label: keys[stat], a: va ? fmtVal(va) : "-", b: vb ? fmtVal(vb) : "-",
+               delta: (delta === 0 ? "" : sign + (Math.round(delta * 10) / 10)), cls: cls };
+    }).filter(function (r) { return r.delta !== "" || r.a !== r.b; });
+    if (!rows.length) { box.hidden = true; return; }
+    $("bm-compare-label").textContent = a.name + " vs " + b.name;
+    $("bm-compare-body").innerHTML = "<table class='bm-compare-table'><thead><tr><th>Stat</th><th>" +
+      esc(a.name) + "</th><th>" + esc(b.name) + "</th><th>Change</th></tr></thead><tbody>" +
+      rows.map(function (r) {
+        return "<tr><td>" + esc(r.label) + "</td><td>" + r.a + "</td><td>" + r.b +
+          "</td><td class='" + r.cls + "'>" + esc(r.delta || "same") + "</td></tr>";
+      }).join("") + "</tbody></table>";
+    box.hidden = false;
+  }
+
+  function renderLibrary() {
+    var builds = libraryRead();
+    $("bm-library-empty").hidden = builds.length > 0;
+    $("bm-library-list").innerHTML = builds.map(function (b) {
+      var pressed = function (slot) { return compareSlots[slot] === b.id; };
+      return '<li class="bm-library-item"><div><p class="bm-library-name">' + esc(b.name) + "</p>" +
+        '<p class="bm-library-meta">saved ' + esc(b.saved) + "</p></div>" +
+        '<div class="bm-library-row">' +
+        '<button type="button" class="bm-library-btn" data-lib-load="' + b.id + '">Load</button>' +
+        '<button type="button" class="bm-library-btn" data-lib-a="' + b.id + '" aria-pressed="' + pressed("a") + '">Set A</button>' +
+        '<button type="button" class="bm-library-btn" data-lib-b="' + b.id + '" aria-pressed="' + pressed("b") + '">Set B</button>' +
+        '<button type="button" class="bm-library-btn bm-library-btn-del" data-lib-del="' + b.id + '">Delete</button>' +
+        "</div></li>";
+    }).join("");
+    renderCompare();
+  }
+
+  function toggleLibrary(force) {
+    var panel = $("bm-library-panel");
+    var open = force === undefined ? panel.hidden : force;
+    panel.hidden = !open;
+    $("bm-library").setAttribute("aria-expanded", String(open));
+    if (open) renderLibrary();
+  }
+
   /* ---------- import and export ---------- */
 
   var STATE_KEYS = ["m", "c", "b", "g", "h", "k", "w1", "w2", "s1", "s2", "w", "cf"];
@@ -1014,6 +1149,16 @@ picker.mode = "cfg";
   /* ---------- events ---------- */
 
   document.addEventListener("click", function (e) {
+    if (e.target.id === "bm-library") { toggleLibrary(); return; }
+    if (e.target.id === "bm-library-add") { librarySave($("bm-library-name").value); return; }
+    var libLoad = e.target.closest("[data-lib-load]");
+    if (libLoad) { libraryLoad(libLoad.getAttribute("data-lib-load")); return; }
+    var libA = e.target.closest("[data-lib-a]");
+    if (libA) { librarySetCompare("a", libA.getAttribute("data-lib-a")); return; }
+    var libB = e.target.closest("[data-lib-b]");
+    if (libB) { librarySetCompare("b", libB.getAttribute("data-lib-b")); return; }
+    var libDel = e.target.closest("[data-lib-del]");
+    if (libDel) { libraryDelete(libDel.getAttribute("data-lib-del")); return; }
     var change = e.target.closest(".bm-slot-change");
     if (change) { openPicker(change.getAttribute("data-slot")); return; }
     var clear = e.target.closest(".bm-slot-clear");
@@ -1069,6 +1214,12 @@ picker.mode = "cfg";
   $("bm-modal-search").addEventListener("input", function (e) {
     picker.search = e.target.value;
     renderPickerList();
+  });
+
+  $("bm-library-name").addEventListener("keydown", function (e) {
+    if (e.key !== "Enter") return;
+    e.preventDefault();
+    librarySave($("bm-library-name").value);
   });
 
   $("bm-modal").addEventListener("click", function (e) {

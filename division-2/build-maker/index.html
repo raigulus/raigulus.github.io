@@ -104,9 +104,23 @@
               <button type="button" id="bm-screenshot">Screenshot</button>
               <button type="button" id="bm-export">Export JSON</button>
               <button type="button" id="bm-import">Import JSON</button>
+              <button type="button" id="bm-library" aria-expanded="false" aria-controls="bm-library-panel">Library</button>
               <button type="button" id="bm-reset">Reset</button>
             </div>
             <p class="bm-actions-note">Your build is kept in this browser automatically, so closing the tab will not lose it. Export JSON to move a build between browsers or keep a copy.</p>
+            <div class="bm-library" id="bm-library-panel" hidden>
+              <div class="bm-library-save">
+                <label class="sr-only" for="bm-library-name">Name this build</label>
+                <input type="text" id="bm-library-name" placeholder="Name this build" maxlength="60" autocomplete="off">
+                <button type="button" id="bm-library-add">Save build</button>
+              </div>
+              <p class="bm-library-empty" id="bm-library-empty">No saved builds yet. Name the build above and save it to keep it here.</p>
+              <ul class="bm-library-list" id="bm-library-list"></ul>
+              <div class="bm-compare" id="bm-compare" hidden>
+                <h3>Compare <span class="bm-note" id="bm-compare-label"></span></h3>
+                <div id="bm-compare-body"></div>
+              </div>
+            </div>
             <input type="file" id="bm-import-file" accept="application/json,.json" hidden>
           </div>
         </div>
