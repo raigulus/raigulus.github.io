@@ -1,3 +1,48 @@
+// Accent theme. Applied as soon as this deferred script runs, so the stored
+// choice is in place before the page settles rather than snapping in later.
+(function () {
+  "use strict";
+  var KEY = "raigulus-theme";
+  var THEMES = ["", "ice", "toxic", "void"];
+  var root = document.documentElement;
+
+  function read() {
+    try { return window.localStorage.getItem(KEY) || ""; } catch (e) { return ""; }
+  }
+  function apply(name) {
+    if (name) root.setAttribute("data-theme", name);
+    else root.removeAttribute("data-theme");
+  }
+
+  apply(read());
+
+  function init() {
+    var footer = document.querySelector(".footer-right");
+    if (!footer) return;
+    var current = read();
+    var next = THEMES[(THEMES.indexOf(current) + 1) % THEMES.length];
+    var names = { "": "Division", ice: "Ice", toxic: "Toxin", void: "Void" };
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "theme-cycle";
+    btn.setAttribute("data-theme-cycle", "");
+    btn.textContent = "Theme: " + (names[current] || "Division");
+    btn.addEventListener("click", function () {
+      apply(next);
+      try { window.localStorage.setItem(KEY, next); } catch (e) {}
+      var shown = THEMES[(THEMES.indexOf(next) + 1) % THEMES.length];
+      btn.textContent = "Theme: " + (names[shown] || "Division");
+    });
+    footer.appendChild(btn);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+
 // Site-wide: open outbound links in a new tab so visitors stay on the site.
 // Same-origin links are untouched. Existing rel tokens (e.g. nofollow) are kept.
 document.addEventListener("DOMContentLoaded", function () {
