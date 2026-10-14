@@ -103,6 +103,19 @@ class TestContrast(unittest.TestCase):
         missing = sorted({n for pair in PAIRS for n in pair[:2]} - set(self.base))
         self.assertEqual(missing, [], "base :root is missing %s" % missing)
 
+    def test_no_declaration_swallows_a_following_token(self):
+        # Splicing a token name in ahead of a value leaves the neighbour holding
+        # a declaration fragment instead of a colour, which renders as no
+        # background at all. Listing token names does not catch it, so values are
+        # read rather than trusted.
+        broken = []
+        for m in re.finditer(r":root(\[[^\]]+\])?\s*\{([^}]*)\}", self.css, re.S):
+            for name, value in re.findall(r"(--[\w-]+)\s*:\s*([^;}]+)", m.group(2)):
+                residue = re.sub(r"var\(\s*--[\w-]+\s*\)", "", value.strip())
+                if "--" in residue:
+                    broken.append("%s: %s" % (name, residue[:50]))
+        self.assertEqual(broken, [], "\n".join(broken))
+
     def test_no_theme_fails_its_contrast_pairs(self):
         problems = []
         themes = [("default", {})] + sorted(self.overrides.items())
