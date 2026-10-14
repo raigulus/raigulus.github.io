@@ -28,6 +28,15 @@ jobs:
       - name: Language & privacy guard
         run: python scripts/check_lang_privacy.py
 
+      # Every theme defines its own surfaces, so a text token that is correct in
+      # the dark palette and carried unchanged into light is invisible rather
+      # than wrong-looking. That happened once already: #edf0f4 on #f7f6f3, a
+      # ratio of 1.06, with the light theme already published.
+      - name: Palette tests
+        run: |
+          python3 -m unittest scripts/test_contrast.py scripts/test_theme_contrast.py
+          python3 -m unittest scripts/test_build_maker.py
+
       # AI output sometimes contains CJK characters in English content; they look
       # plausible in context and pass the language guard.
       # Excluded on purpose:
