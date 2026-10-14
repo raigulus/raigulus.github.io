@@ -3,7 +3,7 @@
 (function () {
   "use strict";
   var KEY = "raigulus-theme";
-  var THEMES = ["", "ice", "toxic", "void"];
+  var THEMES = ["", "ice", "toxic", "void", "light"];
   var root = document.documentElement;
 
   function read() {
@@ -21,7 +21,7 @@
     if (!footer) return;
     var current = read();
     var next = THEMES[(THEMES.indexOf(current) + 1) % THEMES.length];
-    var names = { "": "Division", ice: "Ice", toxic: "Toxin", void: "Void" };
+    var names = { "": "Division", ice: "Ice", toxic: "Toxin", void: "Void", light: "Light" };
     var btn = document.createElement("button");
     btn.type = "button";
     btn.className = "theme-cycle";
