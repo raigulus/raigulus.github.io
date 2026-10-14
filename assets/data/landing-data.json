@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-14T07:05:13Z",
+  "generated_at": "2026-10-14T08:05:18Z",
   "stats": {
-    "total_guides": 474,
+    "total_guides": 475,
     "exotics": 79,
     "patches": 31
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "How to Unlock and Beat The Flensed in The Division 2 Red",
+      "url": "https://raigulus.github.io/division-2/videos/how-to-unlock-and-beat-the-flensed-in-the-division/",
+      "youtube_url": "https://www.youtube.com/watch?v=f6x3qPIBzDc",
+      "thumbnail": "/assets/img/yt/f6x3qPIBzDc-hqdefault.jpg",
+      "published_date": "2026-10-13",
+      "cluster": "manhunt",
+      "summary": "Y8S3 Red Horizon Week 8 Manhunt guide: how to unlock and beat The Flensed, the season's second High-Value Target (HVT 2) in The Division 2.  Today's Loot: https"
+    },
     {
       "title": "The Division 2: Red Horizon Scout 7 Manhunt Walkthrough",
       "url": "https://raigulus.github.io/division-2/videos/the-division-2-red-horizon-scout-7-manhunt-walkthr/",
@@ -28,23 +37,19 @@
       "published_date": "2026-10-12",
       "cluster": "escalation run",
       "summary": "Broken Rain squad clear in The Division 2 with the Aces & Eights + Iron Will + Prima Donna build. Full gameplay, no commentary, ending with a Steel & Sons ACR d"
-    },
-    {
-      "title": "One Regulus headshot wiped a whole squad 💥 Division 2",
-      "url": "https://raigulus.github.io/division-2/videos/one-regulus-headshot-wiped-a-whole-squad-division/",
-      "youtube_url": "https://www.youtube.com/watch?v=AFGvmaifVlE",
-      "thumbnail": "/assets/img/yt/AFGvmaifVlE-hqdefault.jpg",
-      "published_date": "2026-10-10",
-      "cluster": "manhunt",
-      "summary": "Went rogue in the Dark Zone with the squad, and the SHD agents came for us. One Regulus headshot dropped an agent, he exploded, and the blast took out the rest"
     }
   ],
   "loot": {
-    "active": false
+    "active": true,
+    "date": "2026-10-14",
+    "rotation": "Weekly Escalation Rotation",
+    "mission_count": 5,
+    "vendor_count": 2,
+    "next_update": "Around 07:00 UTC"
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-10-14 07:05 UTC"
+    "last_checked": "2026-10-14 08:05 UTC"
   },
   "discord_members": 58,
   "next_reset_utc": "2026-10-15T07:00:00Z"

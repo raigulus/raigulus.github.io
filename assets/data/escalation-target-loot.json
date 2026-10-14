@@ -1,48 +1,48 @@
 {
-  "date": "2026-10-13",
+  "date": "2026-10-14",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Stranded Tanker",
-      "loot": "Walker, Harris & Co"
+      "loot": "Providence Defense"
     },
     {
       "mission": "ViewPoint Museum",
-      "loot": "Body Armor"
+      "loot": "LMG"
     },
     {
       "mission": "Jefferson Trade Center",
-      "loot": "Imminence Armaments"
+      "loot": "Gear Mods"
     },
     {
       "mission": "Bank Headquarters",
-      "loot": "Hard Wired"
+      "loot": "Breaking Point"
     },
     {
       "mission": "DCD Headquarters",
-      "loot": "Strikers Battlegear"
+      "loot": "Skill Mods"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Rifles"
+      "item": "Assault Rifles"
     },
     {
       "type": "Gear",
-      "item": "Gloves"
+      "item": "Chest Pieces"
     }
   ],
-  "last_updated": "2026-10-13 10:02",
-  "last_checked": "2026-10-14 07:05 UTC",
-  "parsed_at": "2026-10-14T07:05:09.076723+00:00",
-  "status": "pending",
-  "fetched_at": "2026-10-14T07:05:09.076723+00:00",
+  "last_updated": "2026-10-14 10:01",
+  "last_checked": "2026-10-14 08:05 UTC",
+  "parsed_at": "2026-10-14T08:05:10.548092+00:00",
+  "status": "ok",
+  "fetched_at": "2026-10-14T08:05:10.548092+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-10-14 07:05 UTC",
+  "vendor_highlights_checked": "2026-10-14 08:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
