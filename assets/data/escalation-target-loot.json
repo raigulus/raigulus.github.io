@@ -1,48 +1,48 @@
 {
-  "date": "2026-10-14",
+  "date": "2026-10-15",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Stranded Tanker",
-      "loot": "Providence Defense"
+      "loot": "Negotiators Dilemma"
     },
     {
       "mission": "ViewPoint Museum",
-      "loot": "LMG"
+      "loot": "Gloves"
     },
     {
       "mission": "Jefferson Trade Center",
-      "loot": "Gear Mods"
+      "loot": "SMG"
     },
     {
       "mission": "Bank Headquarters",
-      "loot": "Breaking Point"
+      "loot": "Grupo Sombra S.A."
     },
     {
       "mission": "DCD Headquarters",
-      "loot": "Skill Mods"
+      "loot": "Shiny Monkey Gear"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Assault Rifles"
+      "item": "Shotguns"
     },
     {
       "type": "Gear",
-      "item": "Chest Pieces"
+      "item": "Gloves"
     }
   ],
-  "last_updated": "2026-10-14 20:40",
-  "last_checked": "2026-10-15 12:05 UTC",
-  "parsed_at": "2026-10-15T12:05:09.591814+00:00",
-  "status": "stale",
-  "fetched_at": "2026-10-15T12:05:09.591814+00:00",
+  "last_updated": "2026-10-15 14:24",
+  "last_checked": "2026-10-15 13:05 UTC",
+  "parsed_at": "2026-10-15T13:05:09.842157+00:00",
+  "status": "ok",
+  "fetched_at": "2026-10-15T13:05:09.842157+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Checked after the expected daily reset window, but the source still returned an older snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-10-15 12:05 UTC",
+  "vendor_highlights_checked": "2026-10-15 13:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
