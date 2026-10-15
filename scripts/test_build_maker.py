@@ -527,6 +527,73 @@ console.log(JSON.stringify({ attr: __attrs["data-theme"] || "",
         for bad in ("nope", "../../etc/passwd", "'; DROP TABLE--", " ICE "):
             self.run_theme({"raigulus-theme": bad})
 
+    CLICK_HARNESS = """
+var __store = __STORE__;
+var __attrs = {};
+var __root = { setAttribute: function (k, v) { __attrs[k] = v; },
+               removeAttribute: function (k) { delete __attrs[k]; } };
+var __footer = { children: [], appendChild: function (n) { this.children.push(n); return n; } };
+function mkButton() {
+  return { type: "", className: "", textContent: "", _attrs: {},
+           setAttribute: function (k, v) { this._attrs[k] = v; },
+           addEventListener: function (ev, fn) { if (ev === "click") this._on = fn; },
+           click: function () { if (this._on) this._on(); } };
+}
+var document = { documentElement: __root, readyState: "complete",
+  querySelector: function (s) { return s === ".footer-right" ? __footer : null; },
+  createElement: function () { return mkButton(); },
+  querySelectorAll: function () { return []; }, addEventListener: function () {} };
+var window = { location: { href: "https://raigulus.github.io/", origin: "https://raigulus.github.io" } };
+window.localStorage = { getItem: function (k) { return k in __store ? __store[k] : null; },
+                        setItem: function (k, v) { __store[k] = String(v); } };
+__JS__
+function snap() {
+  return { attr: __attrs["data-theme"] || "",
+           button: __footer.children[0] ? __footer.children[0].textContent : "",
+           stored: __store["raigulus-theme"] === undefined ? "" : __store["raigulus-theme"] };
+}
+var __steps = [snap()];
+for (var __i = 0; __i < __CLICKS__; __i++) {
+  if (__footer.children[0]) __footer.children[0].click();
+  __steps.push(snap());
+}
+console.log(JSON.stringify({ steps: __steps }));
+"""
+
+    NAMES = {"": "Division", "ice": "Ice", "toxic": "Toxin", "void": "Void", "light": "Light"}
+
+    def run_clicks(self, store, clicks):
+        self.assertNotEqual(self.BLOCK, "", "theme block not found in site.js")
+        src = (self.CLICK_HARNESS.replace("__STORE__", json.dumps(store))
+               .replace("__CLICKS__", str(clicks))
+               .replace("__JS__", self.BLOCK))
+        if not os.path.isdir(TMP):
+            os.makedirs(TMP)
+        path = os.path.join(TMP, "theme_clicks.js")
+        write(path, src)
+        proc = subprocess.run(["node", path], capture_output=True, text=True, timeout=60)
+        self.assertEqual(proc.returncode, 0, proc.stderr.strip()[-300:])
+        for line in reversed(proc.stdout.strip().split("\n")):
+            if line.startswith("{"):
+                return json.loads(line)["steps"]
+        self.fail("no result")
+
+    def test_repeated_presses_walk_every_theme(self):
+        attrs = [s["attr"] for s in self.run_clicks({}, 6)]
+        self.assertEqual(attrs, ["", "ice", "toxic", "void", "light", "", "ice"])
+
+    def test_label_names_the_theme_that_is_active(self):
+        for step in self.run_clicks({}, 5):
+            self.assertEqual(step["button"], "Theme: " + self.NAMES[step["attr"]])
+
+    def test_each_press_persists_what_it_applies(self):
+        for step in self.run_clicks({}, 5)[1:]:
+            self.assertEqual(step["stored"], step["attr"])
+
+    def test_pressing_recovers_from_an_unknown_stored_theme(self):
+        attrs = [s["attr"] for s in self.run_clicks({"raigulus-theme": "nope"}, 3)[1:]]
+        self.assertEqual(attrs, ["ice", "toxic", "void"])
+
     def test_every_theme_in_the_script_has_a_stylesheet_block(self):
         for theme in ("ice", "toxic", "void"):
             self.assertIn(":root[data-theme=%s]" % theme, CSS)

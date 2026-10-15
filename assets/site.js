@@ -19,19 +19,18 @@
   function init() {
     var footer = document.querySelector(".footer-right");
     if (!footer) return;
-    var current = read();
-    var next = THEMES[(THEMES.indexOf(current) + 1) % THEMES.length];
     var names = { "": "Division", ice: "Ice", toxic: "Toxin", void: "Void", light: "Light" };
     var btn = document.createElement("button");
     btn.type = "button";
     btn.className = "theme-cycle";
     btn.setAttribute("data-theme-cycle", "");
-    btn.textContent = "Theme: " + (names[current] || "Division");
+    btn.textContent = "Theme: " + (names[read()] || "Division");
+    // next is read on every press: computing it once freezes the button on one theme
     btn.addEventListener("click", function () {
+      var next = THEMES[(Math.max(THEMES.indexOf(read()), 0) + 1) % THEMES.length];
       apply(next);
       try { window.localStorage.setItem(KEY, next); } catch (e) {}
-      var shown = THEMES[(THEMES.indexOf(next) + 1) % THEMES.length];
-      btn.textContent = "Theme: " + (names[shown] || "Division");
+      btn.textContent = "Theme: " + (names[next] || "Division");
     });
     footer.appendChild(btn);
   }
