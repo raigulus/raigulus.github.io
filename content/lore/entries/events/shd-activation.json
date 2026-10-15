@@ -44,7 +44,7 @@
   ],
   "timeline": {
     "sequence": 20,
-    "label": "After the outbreak — SHD deploys Agents to Manhattan",
+    "label": "After the outbreak, SHD deploys Agents to Manhattan",
     "precision": "relative",
     "source_ids": ["ubisoft-story-so-far-2020"]
   },

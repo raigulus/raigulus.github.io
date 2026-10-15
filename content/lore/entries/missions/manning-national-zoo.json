@@ -14,7 +14,7 @@
   "claims": [
     {
       "id": "zoo-episode-one",
-      "text": "Ubisoft introduced Manning National Zoo as one of the two narrative missions in Episode 1: D.C. Outskirts — Expeditions.",
+      "text": "Ubisoft introduced Manning National Zoo as one of the two narrative missions in Episode 1: D.C. Outskirts (Expeditions).",
       "assessment": "confirmed",
       "source_ids": ["ubisoft-manning-white-oak-2019"]
     },
@@ -44,7 +44,7 @@
   ],
   "timeline": {
     "sequence": 42,
-    "label": "After Tidal Basin — Episode 1: Manning National Zoo",
+    "label": "After Tidal Basin, Episode 1: Manning National Zoo",
     "precision": "sequence-only",
     "source_ids": ["ubisoft-manning-white-oak-2019"]
   },

@@ -252,7 +252,7 @@ def render_entry(entry, entries_by_id, sources_by_id):
     for source_id in used_source_ids:
         source = sources_by_id[source_id]
         number = source_numbers[source_id]
-        publication = f' — {esc(source["publisher"])}'
+        publication = f'. {esc(source["publisher"])}'
         date = f' ({esc(source.get("published_date", "undated"))})'
         sources.append(
             f'<li id="source-{number}"><span class="source-number">[{number}]</span> '

@@ -13,7 +13,7 @@
         {
           "id": "play-the-division",
           "format": "Play",
-          "title": "Tom Clancy's The Division — original New York campaign",
+          "title": "Tom Clancy's The Division: original New York campaign",
           "spoiler_note": "Minor setup spoilers",
           "description": "Start with the original campaign to establish Black Friday, the breakdown of New York and the second-wave SHD response.",
           "entry_ids": ["event-green-poison-outbreak", "event-shd-activation"],
@@ -72,7 +72,7 @@
         {
           "id": "play-division-2-core",
           "format": "Play",
-          "title": "Tom Clancy's The Division 2 — base campaign and Tidal Basin",
+          "title": "Tom Clancy's The Division 2: base campaign and Tidal Basin",
           "spoiler_note": "Major campaign spoilers",
           "description": "This block covers the nationwide SHD Network crisis, the Black Tusk invasion of Washington and the Tidal Basin antiviral recovery.",
           "entry_ids": ["event-division-network-crisis", "event-black-tusk-siege", "mission-tidal-basin"],

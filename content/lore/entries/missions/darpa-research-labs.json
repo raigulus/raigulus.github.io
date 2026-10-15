@@ -44,7 +44,7 @@
   ],
   "timeline": {
     "sequence": 44,
-    "label": "During Episode 2 — DARPA Research Labs follows the Pentagon operation",
+    "label": "During Episode 2, DARPA Research Labs follows the Pentagon operation",
     "precision": "sequence-only",
     "source_ids": ["ubisoft-pentagon-darpa-2019"]
   },
