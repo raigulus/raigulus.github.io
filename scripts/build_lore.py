@@ -95,6 +95,8 @@ def head(title, description, canonical, schema_type="Article"):
   <meta name="twitter:card" content="summary">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/barlow-condensed-700-latin.woff2">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/inter-400-latin.woff2">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/assets/styles.css">
   <link rel="stylesheet" href="/assets/lore.css">
   <link rel="stylesheet" href="/assets/lore-timeline.css">
