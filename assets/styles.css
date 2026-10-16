@@ -806,3 +806,40 @@ body.has-search-open{overflow:hidden}
   --overlay-rgb:0 0 0;--veil-rgb:0 0 0;
   --status-ok-ink:#0a6b5e;--status-bad-ink:#a12222;--status-warn-ink:#8a5a06;
 --text:#16181c;--text-sub:#4a453f;--text-dim:#57514a;--text-dim-card:#6b6252;--accent:#b4551a;--accent-dim:rgba(180,85,26,.12);--mission:#b4551a;--mission-bg:rgba(180,85,26,.12);--mission-ink:#8a3f12;--mission-warn:#8a3f12;--mission-hi:#8a3f12;--invaded:#a12222;--invaded-bg:rgba(161,34,34,.12);--legendary:#5a2fb8;--legendary-bg:rgba(90,47,184,.12);--manhunt:#1a4fa8;--manhunt-bg:rgba(26,79,168,.12);--special:#06594e;--special-bg:rgba(6,89,78,.12);--eyebrow-ink:#5c554c;--muted:#4f5862;--muted-2:#4f5862;--muted-3:#4f5862;}
+
+/* --- Diablo 4 World Boss schedule + spawn alerts --------------------------- */
+/* The spawn table needs narrow, tabular columns; the stock .facts th is 180px,
+   which is sized for two-column label/value tables. */
+.wb-spawns-table th:first-child,
+.wb-spawns-table th:nth-child(2),
+.wb-spawns-table th:nth-child(3){width:auto}
+.wb-spawns-table td{font-variant-numeric:tabular-nums;white-space:nowrap}
+.wb-spawns-table thead th{color:var(--text-sub)}
+.wb-spawns-table tr.is-next td,
+.wb-spawns-table tr.is-next th{color:var(--text);background:var(--surface2)}
+.wb-spawns-table tr.is-next th{box-shadow:inset 2px 0 0 var(--special)}
+
+/* Form controls sit on the card surface, which is dark in the default theme. */
+.wb-alert-card select{
+  appearance:none;-webkit-appearance:none;
+  padding:8px 30px 8px 11px;margin:0 6px;
+  border:1px solid var(--border2);border-radius:6px;
+  background:var(--surface2);color:var(--text);font:inherit;font-size:13px;cursor:pointer;
+  background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);
+  background-position:calc(100% - 16px) 52%,calc(100% - 11px) 52%;
+  background-size:5px 5px,5px 5px;background-repeat:no-repeat
+}
+.wb-alert-card select:hover{border-color:var(--accent)}
+.wb-alert-card select:focus-visible{outline:1px solid var(--accent);border-color:var(--accent)}
+.wb-alert-card label{color:var(--text-sub)}
+.wb-alert-card input[type=checkbox]{accent-color:var(--special)}
+.wb-alert-btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:9px 16px;border-radius:var(--radius);
+  border:1px solid var(--border2);background:transparent;color:inherit;
+  font:inherit;font-size:12px;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;cursor:pointer;transition:border-color .12s,background .12s
+}
+.wb-alert-btn:hover{border-color:var(--accent)}
+.wb-alert-btn:focus-visible{outline:1px solid var(--accent)}
+.wb-alert-btn[aria-pressed=true]{border-color:var(--special);color:var(--special)}
