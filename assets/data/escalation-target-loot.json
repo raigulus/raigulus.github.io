@@ -1,26 +1,26 @@
 {
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Stranded Tanker",
-      "loot": "Negotiators Dilemma"
+      "loot": "Eclipse Protocol"
     },
     {
       "mission": "ViewPoint Museum",
-      "loot": "Gloves"
+      "loot": "Belstone Armory"
     },
     {
       "mission": "Jefferson Trade Center",
-      "loot": "SMG"
+      "loot": "Future Initiative"
     },
     {
       "mission": "Bank Headquarters",
-      "loot": "Grupo Sombra S.A."
+      "loot": "Richter & Kaiser GmbH"
     },
     {
       "mission": "DCD Headquarters",
-      "loot": "Shiny Monkey Gear"
+      "loot": "Royal Works"
     }
   ],
   "vendor_caches": [
@@ -30,19 +30,19 @@
     },
     {
       "type": "Gear",
-      "item": "Gloves"
+      "item": "Chest Pieces"
     }
   ],
-  "last_updated": "2026-10-15 14:24",
-  "last_checked": "2026-10-16 07:05 UTC",
-  "parsed_at": "2026-10-16T07:05:08.881659+00:00",
-  "status": "pending",
-  "fetched_at": "2026-10-16T07:05:08.881659+00:00",
+  "last_updated": "2026-10-16 10:01",
+  "last_checked": "2026-10-16 08:05 UTC",
+  "parsed_at": "2026-10-16T08:05:10.033204+00:00",
+  "status": "ok",
+  "fetched_at": "2026-10-16T08:05:10.033204+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-10-16 07:05 UTC",
+  "vendor_highlights_checked": "2026-10-16 08:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
