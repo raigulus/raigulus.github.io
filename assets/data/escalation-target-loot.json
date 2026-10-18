@@ -1,48 +1,48 @@
 {
-  "date": "2026-10-17",
+  "date": "2026-10-18",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Stranded Tanker",
-      "loot": "Body Armor"
-    },
-    {
-      "mission": "ViewPoint Museum",
-      "loot": "Shiny Monkey Gear"
-    },
-    {
-      "mission": "Jefferson Trade Center",
       "loot": "Kneepad"
     },
     {
+      "mission": "ViewPoint Museum",
+      "loot": "Cavalier"
+    },
+    {
+      "mission": "Jefferson Trade Center",
+      "loot": "Mask"
+    },
+    {
       "mission": "Bank Headquarters",
-      "loot": "True Patriot"
+      "loot": "Sokolov Concern"
     },
     {
       "mission": "DCD Headquarters",
-      "loot": "Concentrated Company"
+      "loot": "Holster"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Rifles"
+      "item": "Assault Rifles"
     },
     {
       "type": "Gear",
       "item": "Masks"
     }
   ],
-  "last_updated": "2026-10-17 10:01",
-  "last_checked": "2026-10-18 07:05 UTC",
-  "parsed_at": "2026-10-18T07:05:08.275410+00:00",
-  "status": "pending",
-  "fetched_at": "2026-10-18T07:05:08.275410+00:00",
+  "last_updated": "2026-10-18 10:01",
+  "last_checked": "2026-10-18 08:05 UTC",
+  "parsed_at": "2026-10-18T08:05:09.263872+00:00",
+  "status": "ok",
+  "fetched_at": "2026-10-18T08:05:09.263872+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-10-18 07:05 UTC",
+  "vendor_highlights_checked": "2026-10-18 08:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
