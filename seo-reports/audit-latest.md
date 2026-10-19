@@ -1,19 +1,19 @@
 # Raigulus SEO Audit Report
 
-**Tarih:** 2026-10-12 18:20
+**Tarih:** 2026-10-19 15:59
 
 ## Summary
 
 | Category | Count |
 |----------|------|
-| Broken Link | 1 |
-| Meta Tag Sorunu | 158 |
-| Pages With Schema | 470 |
-| Pages Without Schema | 18 |
+| Broken Link | 0 |
+| Meta Tag Sorunu | 164 |
+| Pages With Schema | 479 |
+| Pages Without Schema | 20 |
 
 ## Broken Links
 
-- `index.html` → https://i.ytimg.com
+✓ No broken links found
 
 ## Meta Tag Issues
 
@@ -77,7 +77,7 @@
 - `division-2/videos/dark-zone-event-too-good-division-2-shorts/index.html`: No og:description tag found
 - `division-2/videos/they-thought-i-was-hacking-division-2-shorts/index.html`: No og:description tag found
 
-### Description Too Long (88 total)
+### Description Too Long (93 total)
 
 - `lore/locations/independence-hall-extremis-malis/index.html`: Description is 175 chars (max 160)
 - `lore/locations/fort-detrick-extremis-malis/index.html`: Description is 165 chars (max 160)
@@ -90,7 +90,7 @@
 - `lore/collectibles/td2-comms-profile-odessa-sawyer/index.html`: Description is 184 chars (max 160)
 - `lore/collectibles/td2-comms-vivian-conley/index.html`: Description is 204 chars (max 160)
 
-### Title Too Long (22 total)
+### Title Too Long (23 total)
 
 - `lore/reading-order/index.html`: Title is 61 chars (max 60)
 - `lore/collectibles/td1-phone-recordings-keener-s-confession/index.html`: Title is 62 chars (max 60)
