@@ -34,10 +34,56 @@
     }
   ],
   "last_updated": "2026-10-21 10:00",
-  "last_checked": "2026-10-21 10:05 UTC",
-  "parsed_at": "2026-10-21T10:05:10.196555+00:00",
+  "last_checked": "2026-10-21 11:05 UTC",
+  "parsed_at": "2026-10-21T11:05:08.600016+00:00",
   "status": "ok",
-  "fetched_at": "2026-10-21T10:05:10.196555+00:00",
+  "fetched_at": "2026-10-21T11:05:08.600016+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Current dated loot snapshot is available."
+  "snapshot_note": "Current dated loot snapshot is available.",
+  "vendor_highlights": [
+    {
+      "vendor": "Countdown",
+      "item": "Benefactor",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "The Theater",
+      "item": "Grease",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "The Campus",
+      "item": "Salvo",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "DZ South",
+      "item": "Matador",
+      "note": "Named gear"
+    },
+    {
+      "vendor": "White House",
+      "item": "Lightning Rod - Custom PF45",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Clan",
+      "item": "Brain Breaker - Urban MDR",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "Commando - Paratrooper SVD",
+      "note": "Named weapon"
+    },
+    {
+      "vendor": "Countdown",
+      "item": "Baker's Dozen - Classic M1A",
+      "note": "Named weapon"
+    }
+  ],
+  "vendor_highlights_status": "ok",
+  "vendor_highlights_checked": "2026-10-21 11:05 UTC",
+  "vendor_highlights_date": "2026-10-21",
+  "vendor_highlights_note": "Current dated vendor highlights are available."
 }
