@@ -11,6 +11,8 @@
   var CLARITY_PATHS = [
     "/division-2/agent-briefing/",
     "/division-2/build-maker/",
+    "/division-2/builds/",
+    "/division-2/server-status/",
     "/diablo-4/event-timer/",
     "/diablo-4/world-boss-timer/"
   ];
