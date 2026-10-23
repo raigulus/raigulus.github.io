@@ -26,7 +26,7 @@ The site is an international English-language archive. **Never write Turkish int
 
 1. All code, comments, docs, reports and page content are English.
 2. Never write local filesystem paths (`C:\Users\...`, `/Users/<name>/`, `/home/<name>/`).
-3. Never write personal names, email addresses, phone numbers, IP addresses, or tokens.
+3. Never write personal names, email addresses, phone numbers, IP addresses, or tokens. Exception: the published official privacy contact address in `privacy/` and `terms/` is intentional and allowlisted in `scripts/check_lang_privacy.py`; never add any other email.
 4. Never write country/region identifiers (Turkish cities, `tr-TR`, `Europe/Istanbul`, `₺`, `+90`).
 5. `GSC-QUEUE.txt` is local-only and must stay out of git (`git rm --cached` if it ever gets tracked).
 

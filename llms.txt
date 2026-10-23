@@ -4,6 +4,12 @@
 
 The canonical website is https://raigulus.github.io. The YouTube handle is @raigulus.
 
+## Legal
+
+- [Privacy Notice](https://raigulus.github.io/privacy/): Data, analytics consent, feedback, retention, and rights.
+- [Cookie Notice](https://raigulus.github.io/cookies/): Cookies and storage, including analytics, YouTube, Giscus, Discord, and Web3Forms.
+- [Terms & Disclaimer](https://raigulus.github.io/terms/): Unofficial fan site, no warranty, account-action disclaimer, external links, comments, and copyright.
+
 ## Core Pages
 
 - [Home](https://raigulus.github.io/): Raigulus channel and guide overview.

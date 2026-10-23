@@ -54,6 +54,9 @@ LOCAL_PATH = re.compile(r"(?:[A-Za-z]:[\\/]Users[\\/][^\\\"'<>]{1,60}"
                         r"|OneDrive|AppData|%USERPROFILE%|%APPDATA%)")
 EMAIL = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 EMAIL_OK = re.compile(r"@?(?:example|test|localhost|domain|your|you)\.", re.I)
+# The published privacy contact is intentionally public. Every other address
+# still fails the guard, including personal and role addresses.
+EMAIL_ALLOW = {"raigulus.official@gmail.com"}
 REGION = re.compile(r"(?:\btr[-_]TR\b|\btr[-_]EDU\b|Europe/Istanbul|Asia/Istanbul"
                     r"|\bTürkiye\b|\bTurkiye\b|\bTURKIYE\b"
                     r"|\b(?:Istanbul|İstanbul|Ankara|İzmir|Izmir|Antalya|Bursa|Gaziantep|Trabzon)\b"
@@ -121,7 +124,7 @@ def main() -> int:
             if m:
                 problems.append((rel, i, "local-path", m.group(0), line.strip()[:90]))
             m = EMAIL.search(line)
-            if m and not EMAIL_OK.search(m.group(0)):
+            if m and not EMAIL_OK.search(m.group(0)) and m.group(0).lower() not in EMAIL_ALLOW:
                 problems.append((rel, i, "email", m.group(0), line.strip()[:90]))
             m = REGION.search(line)
             if m:

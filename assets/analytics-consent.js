@@ -16,21 +16,26 @@
     "/diablo-4/event-timer/",
     "/diablo-4/world-boss-timer/"
   ];
-  var POLICY_VERSION = "2026-10-13";
+  var POLICY_VERSION = "2026-10-23";
   var loaded = false;
 
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+
+  function defaultConsentSignal() {
+    return {
+      analytics_storage: "denied",
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied"
+    };
+  }
+
   window.gtag("js", new Date());
   // Consent mode expects four signals, not one. This site runs advertising of
   // no kind, so the three advertising signals stay denied permanently and only
   // analytics_storage ever changes.
-  window.gtag("consent", "default", {
-    analytics_storage: "denied",
-    ad_storage: "denied",
-    ad_user_data: "denied",
-    ad_personalization: "denied"
-  });
+  window.gtag("consent", "default", defaultConsentSignal());
 
   function readChoice() {
     try {
@@ -59,6 +64,16 @@
       window.localStorage.setItem(LOG_KEY, JSON.stringify(log.slice(-20)));
     } catch (error) {
       // A full or blocked store must not break the page.
+    }
+  }
+
+  function lastRecordedPolicy() {
+    try {
+      var log = JSON.parse(window.localStorage.getItem(LOG_KEY) || "[]");
+      if (!Array.isArray(log) || log.length === 0) return null;
+      return log[log.length - 1].policy || null;
+    } catch (error) {
+      return null;
     }
   }
 
@@ -106,6 +121,12 @@ function consentSignal(state) {
     }
     if (loaded) return;
     loaded = true;
+    // Inline outbound/guide events use the gtag stub before consent. They must
+    // not be sent if the visitor later accepts, so drop the queued dataLayer and
+    // re-seed only the required consent/config commands before loading GA.
+    window.dataLayer = [];
+    window.gtag("consent", "default", defaultConsentSignal());
+    window.gtag("js", new Date());
     window.gtag("consent", "update", consentSignal("granted"));
     // No advertising on this site, so Analytics is told not to use the data for
     // ads personalisation or demographics. This also suppresses Google's own
@@ -142,6 +163,7 @@ function consentSignal(state) {
     bar.className = "rg-consent";
     bar.setAttribute("role", "dialog");
     bar.setAttribute("aria-label", "Analytics consent");
+    bar.setAttribute("tabindex", "-1");
 
     var text = document.createElement("p");
     text.className = "rg-consent-text";
@@ -165,7 +187,7 @@ function consentSignal(state) {
       applyChoice("denied");
     });
 
-    var accept = button("Accept", true);
+    var accept = button("Accept", false);
     accept.addEventListener("click", function () {
       saveChoice("granted");
       record("granted");
@@ -178,7 +200,7 @@ function consentSignal(state) {
     bar.appendChild(actions);
     document.body.appendChild(bar);
     document.documentElement.setAttribute("data-consent-dialog", "open");
-    accept.focus();
+    bar.focus();
   }
 
   function init() {
@@ -188,10 +210,13 @@ function consentSignal(state) {
       return;
     }
     var choice = readChoice();
-    if (choice === "granted" || choice === "denied") {
+    var recordedPolicy = lastRecordedPolicy();
+    if ((choice === "granted" || choice === "denied") && recordedPolicy === POLICY_VERSION) {
       applyChoice(choice);
       return;
     }
+    // A stored choice from an older policy must not keep analytics running.
+    if (choice) applyChoice("denied");
     openDialog();
   }
 

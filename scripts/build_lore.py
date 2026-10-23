@@ -84,6 +84,7 @@ def head(title, description, canonical, schema_type="Article"):
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="theme-color" content="#0b0d11">
   <title>{esc(title)} | Raigulus Lore</title>
   <meta name="description" content="{esc(description)}">
@@ -182,7 +183,7 @@ def analytics_block():
 def footer():
     return '''<footer class="site-footer">
   <p>Unofficial, source-led research into The Division universe and its real-world influences.</p>
-    <p><a href="/lore/">Lore Archive</a> <span>/</span> <a href="/lore/methodology/">Methodology</a> <span>/</span> <a href="/lore/corrections/">Corrections</a> <span>/</span> <a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="/feedback/">Feedback</a> <span>/</span> <a href="/privacy/">Privacy</a> <span>/</span> <a href="/cookies/">Cookies</a> <span>/</span> <a href="#" data-consent-open>Cookie settings</a></p>
+    <p><a href="/lore/">Lore Archive</a> <span>/</span> <a href="/lore/methodology/">Methodology</a> <span>/</span> <a href="/lore/corrections/">Corrections</a> <span>/</span> <a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="/feedback/">Feedback</a> <span>/</span> <a href="/privacy/">Privacy</a> <span>/</span> <a href="/cookies/">Cookies</a> <span>/</span> <a href="/terms/">Terms</a> <span>/</span> <a href="#" data-consent-open>Cookie settings</a></p>
 </footer>'''
 
 

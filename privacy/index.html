@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="theme-color" content="#0b0d11">
   <title>Privacy Notice - Raigulus</title>
   <meta name="description" content="How Raigulus handles data: what analytics run, what is stored on your device, which services are involved, and how to change your choice at any time.">
@@ -40,9 +41,14 @@
         publisher and is not affiliated with, endorsed by, or sponsored by Ubisoft, Massive
         Entertainment, or Yuke's. Game names, logos, and related materials belong to their owners
         and are used here for identification and commentary.</p>
-        <p>To exercise any right described below, or to ask a question about your data, use the
-        <a href="/feedback/">contact form</a>. Requests about analytics and advertising data are
-        answered through the same form.</p>
+        <p><strong>Controller contact:</strong>
+        <a href="mailto:raigulus.official@gmail.com">raigulus.official@gmail.com</a>. This is the
+        dedicated privacy contact for access, deletion, objection, and other requests. You can also
+        use the <a href="/feedback/">contact form</a>; email is faster for formal requests. We aim
+        to respond within 30 days after verifying your identity.</p>
+        <p>Nothing in this notice limits rights you have under mandatory law. Where a postal
+        address or representative is required in your jurisdiction, contact the email above and we
+        will provide the additional details.</p>
 
         <h2>The short version</h2>
         <ul>
@@ -75,10 +81,10 @@
           <li><strong>Microsoft Clarity</strong> records a short session recording. This includes
           pointer movement, clicks, and which parts of a page are actually read. Clarity collects
           more detail than page-view analytics, which is why it is opt-in rather than automatic.
-          It is loaded on four pages only: the Agent Briefing game, the Build Maker, and the two
-          Diablo&nbsp;4 timer pages. Those are the pages with a custom interface where a visitor
-          can get stuck. Guide, lore, video and index pages never load it, so no session
-          recording exists for them.</li>
+          It is loaded on six pages only: the Agent Briefing game, the Build Maker, the Builds
+          hub, the Server Status page, and the two Diablo&nbsp;4 timer pages. Those are the pages
+          with a custom interface where a visitor can get stuck. Guide, lore, video and index pages
+          never load it, so no session recording exists for them.</li>
         </ul>
         <p>Both are used to understand which guides are useful and which pages are broken. They
         are not used for advertising and are not shared for advertising purposes. If you would
@@ -104,33 +110,60 @@
         browser.</p>
 
         <h3>Video thumbnails</h3>
-        <p>Thumbnails are stored on this site's own server and served from here. YouTube is not
-        contacted to show a thumbnail, and a short appears on YouTube only if you press play. The
-        player itself uses YouTube's privacy-enhanced domain, which is designed not to set
-        tracking cookies until you interact with it.</p>
+        <p>Thumbnails are normally stored on this site's own server and served from here. If a
+        local thumbnail is missing, the page may request a fallback image from
+        <code>i.ytimg.com</code> (Google/YouTube). A short appears on YouTube only if you press
+        play. The player itself uses YouTube's privacy-enhanced domain, which is designed not to
+        set tracking cookies until you interact with it.</p>
 
         <h3>Comment threads</h3>
         <p>Each page offers a button that loads the comment thread. Nothing is requested until you
-        press it. The thread is hosted by GitHub Discussions through Giscus, so a comment you
-        write is public and is handled under GitHub's privacy terms. Loading the thread also means
-        GitHub can see the request. No thread is loaded automatically.</p>
+        press it. The thread is served by Giscus from <code>giscus.app</code> and stored in GitHub
+        Discussions, so a comment you write is public and is handled under GitHub's privacy terms.
+        Loading the thread also means GitHub and Giscus can see the request. No thread is loaded
+        automatically.</p>
+
+        <h3>Discord widget</h3>
+        <p>On the Discord page, the server widget is not loaded until you press "Load Discord
+        widget". If you load it, Discord may see your request and set storage on its own domain.</p>
 
         <h3>The feedback form</h3>
-        <p>If you send feedback, you choose to give a name, an email address, and a message. That
-        form is delivered through Web3Forms, a third-party form relay, which passes your message to
-        the address configured for this site. The data is used only to reply to you or to act on
-        the feedback, and is not used for marketing. Please do not send anything sensitive.</p>
+        <p>If you send feedback, you choose to give a name, an email address, an optional related
+        page URL, and a message. That form is delivered through Web3Forms, a third-party form
+        relay, which passes your message to the address configured for this site. The message is
+        then delivered to our email provider, Google Gmail, and is used only to reply to you or to
+        act on the feedback. It is not used for marketing. Please do not send anything sensitive.</p>
+
+        <h2>Legal bases</h2>
+        <p>We rely on the following legal bases:</p>
+        <ul>
+          <li><strong>Consent</strong> for analytics and Clarity, and for the optional email reply
+          where consent is required. You can withdraw consent at any time.</li>
+          <li><strong>Legitimate interests</strong> in responding to voluntary feedback, keeping the
+          site secure and available, and understanding which guides are useful (analytics only
+          after consent).</li>
+          <li><strong>Legal obligation</strong> where we must retain or disclose information.</li>
+        </ul>
 
         <h2>Who receives data</h2>
         <ul>
           <li><strong>GitHub</strong> - hosting, page delivery, access logs, and the platform that
-          hosts the comment threads.</li>
-          <li><strong>Google</strong> - Analytics, only if you accepted.</li>
-          <li><strong>Microsoft</strong> - Clarity session recording, only if you accepted.</li>
-          <li><strong>Web3Forms</strong> - relaying feedback you chose to send.</li>
+          hosts the comment threads.
+          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">Privacy statement</a>.</li>
+          <li><strong>Google</strong> - Analytics (only with consent), Gmail delivery/replies, and
+          YouTube playback. <a href="https://policies.google.com/privacy">Privacy policy</a>.</li>
+          <li><strong>Microsoft</strong> - Clarity session recording, only with consent.
+          <a href="https://privacy.microsoft.com/privacystatement">Privacy statement</a>.</li>
+          <li><strong>Web3Forms</strong> - relaying feedback you chose to send.
+          <a href="https://web3forms.com/privacy">Privacy policy</a>.</li>
+          <li><strong>Discord</strong> - only if you load the Discord widget or join the server.
+          <a href="https://discord.com/privacy">Privacy policy</a>.</li>
+          <li><strong>Giscus/GitHub</strong> - comment embed and public discussions.
+          <a href="https://github.com/giscus/giscus">Giscus project</a>.</li>
         </ul>
-        <p>None of these are sold, rented, or handed to advertising networks. Analytics providers
-        act on our instructions and are not permitted to use the data for their own purposes.</p>
+        <p>We do not sell or share personal information for cross-context behavioral advertising,
+        and we do not hand it to advertising networks. Providers process it under their terms and,
+        where required, data processing agreements.</p>
 
         <h2>How long data is kept</h2>
         <ul>
@@ -143,14 +176,14 @@
           active visitor can persist longer than two months. Turning this option off would make
           the window absolute; it is left on because it reduces the amount of data tied to a
           single person over time.</li>
-          <li><strong>Session recordings</strong> are the shortest-lived category here. Their
-          retention window is set inside Microsoft's own service rather than in this site's
-          settings, and it is shorter than the analytics window above. Declining analytics means
-          session recording is never loaded at all.</li>
+          <li><strong>Clarity data:</strong> playback recordings are retained for up to 30 days;
+          a small sampled set, favorites, and heatmap data can be retained for up to 9 months in
+          Microsoft Clarity. Declining analytics means Clarity is never loaded at all.</li>
           <li><strong>Server request logs</strong> follow GitHub Pages' published retention
           policy.</li>
-          <li><strong>Feedback</strong> is kept only while the message is being dealt with, and is
-          then deleted.</li>
+          <li><strong>Feedback</strong> is kept for up to 12 months, or 30 days after the issue is
+          resolved, whichever is shorter, and is then deleted from our mailboxes. You can ask us
+          to delete it sooner.</li>
           <li><strong>Consent records on your device</strong> stay until you clear them.</li>
         </ul>
 
@@ -170,22 +203,34 @@
         is to decline again in <strong>Cookie settings</strong> and then use the provider's own
         controls: the Google Analytics controls in your browser, and the Clarity data deletion
         options under the account associated with your acceptance. The remaining data, feedback
-        messages, is directly ours and we will act on those requests through the
-        <a href="/feedback/">contact form</a>.</p>
+        messages, is directly ours. Send requests to
+        <a href="mailto:raigulus.official@gmail.com">raigulus.official@gmail.com</a> or use the
+        <a href="/feedback/">contact form</a>. We aim to respond within 30 days after verifying
+        your identity, and we will not discriminate against you for exercising your rights.</p>
+
+        <h2>California privacy rights</h2>
+        <p>We do not sell or share personal information for cross-context behavioral advertising.
+        California residents may request to know, delete, correct, or opt out where applicable.
+        Send requests to the email above. We aim to respond within 45 days, may verify your
+        identity, and will not discriminate. Authorized agents may submit requests with proof of
+        authorization.</p>
 
         <h2>Automated decision making and profiling</h2>
         <p>None. No decision with legal or similarly significant effect is made about you, and no
         advertising profile is built.</p>
 
         <h2>Children</h2>
-        <p>This is a gaming reference site and is not directed at children. We do not knowingly
-        collect personal data from anyone, and no part of it asks for identifying information
-        beyond what you voluntarily type into the feedback form.</p>
+        <p>This is a gaming reference site and is not directed at children under 13 (COPPA) or 16
+        (GDPR default). We do not knowingly collect personal data from children. If you believe a
+        child submitted data, contact us at the email above and we will delete it. Discord's
+        minimum age is 13.</p>
 
         <h2>International transfers</h2>
-        <p>The site is published through a global hosting network, and the analytics providers named
-        above operate globally. Where information is sent outside your own region, the relevant
-          safeguards apply. You can avoid all of it by declining analytics.</p>
+        <p>The site is published through a global hosting network, and the providers named above
+        operate globally, including in the United States. Where information is sent outside your
+        region, transfers are covered by the providers' applicable safeguards, such as Standard
+        Contractual Clauses or the EU&ndash;US Data Privacy Framework. Contact us at the email above
+        for details. You can avoid analytics transfers by declining analytics.</p>
 
         <h2>Changes to this notice</h2>
         <p>When this notice changes materially, the version and date below change with it. If the
@@ -193,14 +238,18 @@
         decide afresh, because your previous choice applies to the policy version it was made
         under.</p>
 
-        <p class="updated">Last updated: 13 October 2026.</p>
-        <p>See also the <a href="/cookies/">Cookie Notice</a> for the short version.</p>
+        <h2>Contact</h2>
+        <p>Privacy questions and rights requests:
+        <a href="mailto:raigulus.official@gmail.com">raigulus.official@gmail.com</a>.</p>
+        <p class="updated">Last updated: 23 October 2026.</p>
+        <p>See also the <a href="/cookies/">Cookie Notice</a> and the
+        <a href="/terms/">Terms &amp; Disclaimer</a>.</p>
       </div>
     </section>
   </main>
   <footer class="site-footer">
     <p>Unofficial, source-led research into The Division universe and its real-world influences.</p>
-    <p><a href="/lore/">Lore Archive</a> <span>/</span> <a href="/lore/methodology/">Methodology</a> <span>/</span> <a href="/lore/corrections/">Corrections</a> <span>/</span> <a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="/feedback/">Feedback</a> <span>/</span> <a href="/privacy/">Privacy</a> <span>/</span> <a href="/cookies/">Cookies</a> <span>/</span> <a href="#" data-consent-open>Cookie settings</a></p>
+    <p><a href="/lore/">Lore Archive</a> <span>/</span> <a href="/lore/methodology/">Methodology</a> <span>/</span> <a href="/lore/corrections/">Corrections</a> <span>/</span> <a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="/feedback/">Feedback</a> <span>/</span> <a href="/privacy/">Privacy</a> <span>/</span> <a href="/cookies/">Cookies</a> <span>/</span> <a href="/terms/">Terms</a> <span>/</span> <a href="#" data-consent-open>Cookie settings</a></p>
 </footer>
 </body>
 </html>
