@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-23T07:05:23Z",
+  "generated_at": "2026-10-23T08:05:13Z",
   "stats": {
-    "total_guides": 482,
+    "total_guides": 483,
     "exotics": 79,
     "patches": 32
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "Can an Assault Rifle Clear Tier 10? Eagle Bearer 13",
+      "url": "https://raigulus.github.io/division-2/videos/can-an-assault-rifle-clear-tier-10-eagle-bearer-13/",
+      "youtube_url": "https://www.youtube.com/watch?v=Zs6IAY6XJ00",
+      "thumbnail": "/assets/img/yt/Zs6IAY6XJ00-hqdefault.jpg",
+      "published_date": "2026-10-23",
+      "cluster": "escalation run",
+      "summary": "Can the Eagle Bearer handle a Tier 10 run? Watch this 13-minute clear to see how an assault rifle performs under pressure.  This session tests the viability of"
+    },
     {
       "title": "Is Prima Donna Still Broken? Aces & Eights vs Sheriff",
       "url": "https://raigulus.github.io/division-2/videos/is-prima-donna-still-broken-aces-eights-vs-sheriff/",
@@ -28,23 +37,19 @@
       "published_date": "2026-10-13",
       "cluster": "manhunt",
       "summary": "Y8S3 Red Horizon Week 8 Manhunt guide: how to unlock and beat The Flensed, the season's second High-Value Target (HVT 2) in The Division 2.  Today's Loot: https"
-    },
-    {
-      "title": "The Division 2: Red Horizon Scout 7 Manhunt Walkthrough",
-      "url": "https://raigulus.github.io/division-2/videos/the-division-2-red-horizon-scout-7-manhunt-walkthr/",
-      "youtube_url": "https://www.youtube.com/watch?v=wYbPJDy9cN0",
-      "thumbnail": "/assets/img/yt/wYbPJDy9cN0-hqdefault.jpg",
-      "published_date": "2026-10-13",
-      "cluster": "manhunt",
-      "summary": "The Division 2 Red Horizon (Y8S3) Scout 7 Manhunt walkthrough, no commentary. All three Scout 7 tasks in the Southwest district, start to finish.  Today's Loot:"
     }
   ],
   "loot": {
-    "active": false
+    "active": true,
+    "date": "2026-10-23",
+    "rotation": "Weekly Escalation Rotation",
+    "mission_count": 5,
+    "vendor_count": 2,
+    "next_update": "Around 07:00 UTC"
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-10-23 07:05 UTC"
+    "last_checked": "2026-10-23 08:05 UTC"
   },
   "discord_members": 58,
   "next_reset_utc": "2026-10-24T07:00:00Z"
