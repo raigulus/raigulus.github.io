@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com; font-src 'self'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; upgrade-insecure-requests">
   <meta name="theme-color" content="#0b0d11">
   <title>Privacy Notice - Raigulus</title>
   <meta name="description" content="How Raigulus handles data: what analytics run, what is stored on your device, which services are involved, and how to change your choice at any time.">
@@ -133,16 +133,18 @@
         page URL, and a message. That form is delivered through Web3Forms, a third-party form
         relay, which passes your message to the address configured for this site. The message is
         then delivered to our email provider, Google Gmail, and is used only to reply to you or to
-        act on the feedback. It is not used for marketing. Please do not send anything sensitive.</p>
+        act on the feedback. It is not used for marketing. The form is protected by
+        <a href="https://www.hcaptcha.com/privacy">hCaptcha</a>, which processes your IP address and
+        browser signals to distinguish humans from bots. Please do not send anything sensitive.</p>
 
         <h2>Legal bases</h2>
         <p>We rely on the following legal bases:</p>
         <ul>
           <li><strong>Consent</strong> for analytics and Clarity, and for the optional email reply
           where consent is required. You can withdraw consent at any time.</li>
-          <li><strong>Legitimate interests</strong> in responding to voluntary feedback, keeping the
-          site secure and available, and understanding which guides are useful (analytics only
-          after consent).</li>
+          <li><strong>Legitimate interests</strong> in responding to voluntary feedback, preventing
+          spam and abuse, keeping the site secure and available, and understanding which guides are
+          useful (analytics only after consent).</li>
           <li><strong>Legal obligation</strong> where we must retain or disclose information.</li>
         </ul>
 
@@ -157,6 +159,8 @@
           <a href="https://privacy.microsoft.com/privacystatement">Privacy statement</a>.</li>
           <li><strong>Web3Forms</strong> - relaying feedback you chose to send.
           <a href="https://web3forms.com/privacy">Privacy policy</a>.</li>
+          <li><strong>hCaptcha</strong> - spam protection on the feedback form.
+          <a href="https://www.hcaptcha.com/privacy">Privacy policy</a>.</li>
           <li><strong>Discord</strong> - only if you load the Discord widget or join the server.
           <a href="https://discord.com/privacy">Privacy policy</a>.</li>
           <li><strong>Giscus/GitHub</strong> - comment embed and public discussions.
@@ -185,6 +189,8 @@
           <li><strong>Feedback</strong> is kept for up to 12 months, or 30 days after the issue is
           resolved, whichever is shorter, and is then deleted from our mailboxes. You can ask us
           to delete it sooner.</li>
+          <li><strong>hCaptcha verification data</strong> is processed under hCaptcha's retention
+          policy; we do not store challenge responses.</li>
           <li><strong>Consent records on your device</strong> stay until you clear them.</li>
         </ul>
 
