@@ -602,16 +602,22 @@ def update_root_page(records_new: list[dict]) -> None:
 def update_sitemaps(records_new: list[dict]) -> None:
     txt_path = ROOT / "sitemap.txt"
     lines = txt_path.read_text(encoding="utf-8").splitlines()
-    urls = [r["url"] for r in records_new]
-    last_video = max(i for i, l in enumerate(lines) if "/division-2/videos/" in l)
-    lines[last_video + 1:last_video + 1] = urls
-    txt_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    # Skip URLs that are already listed. Re-running the pipeline used to append
+    # the same entry twice, which is invalid in a sitemap.
+    existing_txt = set(lines)
+    urls = [r["url"] for r in records_new if r["url"] not in existing_txt]
+    if urls:
+        last_video = max(i for i, l in enumerate(lines) if "/division-2/videos/" in l)
+        lines[last_video + 1:last_video + 1] = urls
+        txt_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     xml_path = ROOT / "sitemap.xml"
     content = xml_path.read_text(encoding="utf-8")
+    existing_xml = set(re.findall(r"<loc>(.*?)</loc>", content))
     entries = "".join(
         f'  <url><loc>{r["url"]}</loc><lastmod>{r["published_date"]}</lastmod></url>\n'
         for r in records_new
+        if r["url"] not in existing_xml
     )
     m = re.search(r'  <url><loc>[^<]*/division-2/videos/[^<]*</loc>', content)
     if m:

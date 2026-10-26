@@ -443,7 +443,9 @@ https://raigulus.github.io/division-2/patches/season-reruns/
 https://raigulus.github.io/division-2/this-week/2026-09-15/
 https://raigulus.github.io/diablo-4/helltide-schedule/
 https://raigulus.github.io/diablo-4/world-boss-timer/
+https://raigulus.github.io/diablo-4/event-timer/
 https://raigulus.github.io/destiny-2/lost-sector-exotics/
+https://raigulus.github.io/destiny-2/lost-sector-tracker/
 https://raigulus.github.io/destiny-2/
 https://raigulus.github.io/diablo-4/world-bosses/ashava/
 https://raigulus.github.io/diablo-4/world-bosses/avarice/
@@ -451,9 +453,7 @@ https://raigulus.github.io/diablo-4/world-bosses/wandering-death/
 https://raigulus.github.io/diablo-4/world-bosses/azmodan/
 https://raigulus.github.io/diablo-4/
 https://raigulus.github.io/guides/
-https://raigulus.github.io/division-2/exotics/agitator/
-https://raigulus.github.io/division-2/exotics/caduceus/
-https://raigulus.github.io/division-2/exotics/steel-and-sons-acr/
+https://raigulus.github.io/guides/games-like-destiny-2-2026/
 https://raigulus.github.io/division-2/exotics/vertigo/
 https://raigulus.github.io/division-2/exotics/sarru/
 https://raigulus.github.io/division-2/this-week/2026-09-22/
@@ -480,9 +480,5 @@ https://raigulus.github.io/division-2/videos/is-prima-donna-still-broken-aces-ei
 https://raigulus.github.io/division-2/videos/can-an-assault-rifle-clear-tier-10-eagle-bearer-13/
 https://raigulus.github.io/division-2/this-week/2026-10-06/
 https://raigulus.github.io/division-2/this-week/2026-10-13/
-https://raigulus.github.io/diablo-4/world-bosses/ashava/
-https://raigulus.github.io/diablo-4/world-bosses/avarice/
-https://raigulus.github.io/diablo-4/world-bosses/wandering-death/
-https://raigulus.github.io/diablo-4/world-bosses/azmodan/
 https://raigulus.github.io/division-2/this-week/2026-10-20/
 https://raigulus.github.io/terms/
