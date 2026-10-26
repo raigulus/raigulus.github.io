@@ -1,89 +1,43 @@
 {
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Liberty Island",
-      "loot": "Ortiz: Reficere"
+      "loot": "Ortiz Exuro"
     },
     {
       "mission": "Potomac Event Center",
-      "loot": "Assault Rifle"
+      "loot": "5.11 Tactical"
     },
     {
       "mission": "American History Museum",
-      "loot": "Airaldi Holdings"
+      "loot": "Gila Guard"
     },
     {
       "mission": "Jefferson Plaza",
-      "loot": "Negotiators Dilemma"
+      "loot": "Concentrated Company"
     },
     {
       "mission": "Air & Space Museum",
-      "loot": "Kneepad"
+      "loot": "Foundry Bulwark"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Shotguns"
+      "item": "LMGs"
     },
     {
       "type": "Gear",
-      "item": "Masks"
+      "item": "Holsters"
     }
   ],
-  "last_updated": "2026-10-25 09:00",
-  "last_checked": "2026-10-26 07:05 UTC",
-  "parsed_at": "2026-10-26T07:05:09.677080+00:00",
-  "status": "pending",
-  "fetched_at": "2026-10-26T07:05:09.677080+00:00",
+  "last_updated": "2026-10-26 09:01",
+  "last_checked": "2026-10-26 08:05 UTC",
+  "parsed_at": "2026-10-26T08:05:09.264540+00:00",
+  "status": "ok",
+  "fetched_at": "2026-10-26T08:05:09.264540+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
-  "vendor_highlights": [
-    {
-      "vendor": "Countdown",
-      "item": "Benefactor",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "The Theater",
-      "item": "Grease",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "The Campus",
-      "item": "Salvo",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "DZ South",
-      "item": "Matador",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Benefactor",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Hunter-Killer",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "White House",
-      "item": "Lightning Rod - Custom PF45",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "Clan",
-      "item": "Brain Breaker - Urban MDR",
-      "note": "Named weapon"
-    }
-  ],
-  "vendor_highlights_status": "ok",
-  "vendor_highlights_checked": "2026-10-26 07:05 UTC",
-  "vendor_highlights_date": "2026-10-21",
-  "vendor_highlights_note": "Current dated vendor highlights are available."
+  "snapshot_note": "Current dated loot snapshot is available."
 }

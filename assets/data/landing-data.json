@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-26T07:05:13Z",
+  "generated_at": "2026-10-26T08:05:14Z",
   "stats": {
-    "total_guides": 484,
+    "total_guides": 485,
     "exotics": 79,
     "patches": 32
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "This is why you don't mess with me in The Division 2",
+      "url": "https://raigulus.github.io/division-2/videos/this-is-why-you-don-t-mess-with-me-in-the-division/",
+      "youtube_url": "https://www.youtube.com/watch?v=7WAlqBwq4oE",
+      "thumbnail": "/assets/img/yt/7WAlqBwq4oE-hqdefault.jpg",
+      "published_date": "2026-10-26",
+      "cluster": "pvp/archive clip",
+      "summary": "Experience intense PvP action in The Division 2 Dark Zone! This short showcases raw skill and epic eliminations. Watch as agents clash in high-stakes encounters"
+    },
     {
       "title": "Can an Assault Rifle Clear Tier 10? Eagle Bearer 13",
       "url": "https://raigulus.github.io/division-2/videos/can-an-assault-rifle-clear-tier-10-eagle-bearer-13/",
@@ -28,23 +37,19 @@
       "published_date": "2026-10-17",
       "cluster": "pvp/archive clip",
       "summary": "Today's Loot: https://raigulus.github.io/division-2/loot/ Reset Countdown: https://raigulus.github.io/division-2/reset/ Server Status: https://raigulus.github.i"
-    },
-    {
-      "title": "How to Unlock and Beat The Flensed in The Division 2 Red",
-      "url": "https://raigulus.github.io/division-2/videos/how-to-unlock-and-beat-the-flensed-in-the-division/",
-      "youtube_url": "https://www.youtube.com/watch?v=f6x3qPIBzDc",
-      "thumbnail": "/assets/img/yt/f6x3qPIBzDc-hqdefault.jpg",
-      "published_date": "2026-10-13",
-      "cluster": "manhunt",
-      "summary": "Y8S3 Red Horizon Week 8 Manhunt guide: how to unlock and beat The Flensed, the season's second High-Value Target (HVT 2) in The Division 2.  Today's Loot: https"
     }
   ],
   "loot": {
-    "active": false
+    "active": true,
+    "date": "2026-10-26",
+    "rotation": "Weekly Escalation Rotation",
+    "mission_count": 5,
+    "vendor_count": 2,
+    "next_update": "Around 07:00 UTC"
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-10-26 07:05 UTC"
+    "last_checked": "2026-10-26 08:05 UTC"
   },
   "discord_members": 59,
   "next_reset_utc": "2026-10-27T07:00:00Z"
