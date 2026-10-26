@@ -1,15 +1,15 @@
 # Raigulus SEO Audit Report
 
-**Tarih:** 2026-10-19 15:59
+**Tarih:** 2026-10-26 15:36
 
 ## Summary
 
 | Category | Count |
 |----------|------|
 | Broken Link | 0 |
-| Meta Tag Sorunu | 164 |
-| Pages With Schema | 479 |
-| Pages Without Schema | 20 |
+| Meta Tag Sorunu | 165 |
+| Pages With Schema | 482 |
+| Pages Without Schema | 21 |
 
 ## Broken Links
 
@@ -90,7 +90,7 @@
 - `lore/collectibles/td2-comms-profile-odessa-sawyer/index.html`: Description is 184 chars (max 160)
 - `lore/collectibles/td2-comms-vivian-conley/index.html`: Description is 204 chars (max 160)
 
-### Title Too Long (23 total)
+### Title Too Long (24 total)
 
 - `lore/reading-order/index.html`: Title is 61 chars (max 60)
 - `lore/collectibles/td1-phone-recordings-keener-s-confession/index.html`: Title is 62 chars (max 60)
