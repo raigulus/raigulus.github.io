@@ -635,6 +635,26 @@
           }).join("") + "</div>"
         : '<p class="bm-empty">Pick cores, attributes and mods to see totals.</p>');
 
+    /* damage estimate: primary weapon at max rolls, no crits, no talents */
+    var pw = state.primary;
+    if (pw && pw.base_damage && pw.base_rpm) {
+      var smap = {};
+      totals.forEach(function (t) { smap[t.stat] = t.v; });
+      var cat = String(pw.talent_slot || "").replace("type:", "");
+      var mult = 1 + ((smap["weapon-damage"] || 0) + (smap[cat + "-damage"] || 0)) / 100;
+      var per = pw.base_damage * mult;
+      var rps = pw.base_rpm / 60;
+      var mag = Number(pw.base_mag_size) || 0;
+      var reload = Number(pw.base_reload_time) || 0;
+      var burst = per * rps;
+      var sustained = (mag > 0 && reload > 0) ? (per * mag) / (mag / rps + reload) : null;
+      var fmt = function (n) { return Math.round(n).toLocaleString("en-US"); };
+      html += "<h3>Damage Estimate <span class='bm-note'>primary weapon, max rolls, body shots only</span></h3>" +
+        "<div class='bm-stat-row' title='Base damage per bullet after weapon damage bonuses.'><span>Damage per shot</span><b>" + fmt(per) + "</b></div>" +
+        "<div class='bm-stat-row' title='Damage per second while the trigger is held, before reloading.'><span>Burst DPS</span><b>" + fmt(burst) + "</b></div>" +
+        (sustained === null ? "" : "<div class='bm-stat-row' title='Damage per second averaged over a full magazine plus one reload.'><span>Sustained DPS</span><b>" + fmt(sustained) + "</b></div>");
+    }
+
     /* combat estimates (primary weapon, max rolls) */
     var prim = state.primary;
     if (prim && prim.base_damage) {
