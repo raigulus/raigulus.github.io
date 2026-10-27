@@ -531,8 +531,13 @@
     activeSetBonuses().forEach(function (sb) {
       parseBonus(sb.bonus).forEach(function (p) { if (p.type === "stat") add(p.stat, p.value); });
     });
-    if (state.watch) {
-      Object.keys(SHD1000).forEach(function (sid) { add(sid, SHD1000[sid] + "%"); });
+    var shdLevel = state.shd == null ? (state.watch ? 1000 : 0) : state.shd;
+    if (shdLevel > 0) {
+      /* Even-spread model: each stat grows linearly to its cap at SHD 1000. */
+      var shdK = Math.min(1, shdLevel / 1000);
+      Object.keys(SHD1000).forEach(function (sid) {
+        add(sid, +(SHD1000[sid] * shdK).toFixed(1) + "%");
+      });
     }
     var spec = null;
     for (var si = 0; si < SPECS.length; si++) { if (SPECS[si].id === state.spec) { spec = SPECS[si]; break; } }
@@ -583,8 +588,11 @@
         return "<option value='" + esc(s.id) + "'" + (state.spec === s.id ? " selected" : "") + ">" + esc(s.name) + "</option>";
       }).join("") + "</select></label>";
 
-    /* shd watch toggle */
-    html += "<label class='bm-watch'><input type='checkbox' id='bm-watch1000'" + (state.watch ? " checked" : "") + "> SHD Watch 1000 <span class='bm-note'>post-Vanguard values</span></label>";
+    /* shd watch level */
+    var shdVal = state.shd == null ? (state.watch ? 1000 : 0) : state.shd;
+    html += "<label class='bm-watch bm-shd'><span>SHD Watch <b id='bm-shd-out'>" + shdVal + "</b></span>" +
+      "<input type='range' id='bm-shd' min='0' max='1000' step='50' value='" + shdVal + "' aria-label='SHD Watch level'></label>" +
+      "<p class='bm-note bm-shd-note'>0 = off. The model spreads points evenly across every stat and caps each one at its SHD 1000 value.</p>";
     /* estimated totals */
     var totals = collectStats();
     html += "<h3>Estimated Totals <span class='bm-note'>max rolls incl. set bonuses" + (state.watch ? " + SHD 1000" : "") + "</span></h3>" +
@@ -810,7 +818,7 @@ picker.mode = "cfg";
       h: state.holster && state.holster.name, k: state.knees && state.knees.name,
       w1: state.primary && state.primary.name, w2: state.secondary && state.secondary.name,
       s1: state.skills[0] && state.skills[0].name, s2: state.skills[1] && state.skills[1].name,
-      w: state.watch ? 1 : undefined, sp: (state.spec && state.spec !== "none") ? state.spec : undefined
+      w: state.watch ? 1 : undefined, shd: (state.shd != null && state.shd > 0) ? state.shd : undefined, sp: (state.spec && state.spec !== "none") ? state.spec : undefined
     };
     var keys = Object.keys(state.cfg);
     if (keys.length) { s.cf = {}; keys.sort().forEach(function (k) { s.cf[k] = state.cfg[k]; }); }
@@ -842,6 +850,7 @@ picker.mode = "cfg";
     state.secondary = findByName(allWeapons, s.w2);
     state.skills = [findByName(DATA.skills, s.s1), findByName(DATA.skills, s.s2)];
     state.watch = !!s.w;
+    state.shd = (s.shd != null) ? parseInt(s.shd, 10) : (s.w ? 1000 : 0);
     state.spec = s.sp || "none";
     state.cfg = {};
     if (s.cf && typeof s.cf === "object") {
@@ -1208,7 +1217,7 @@ picker.mode = "cfg";
     if (e.target.id === "bm-screenshot") { saveShot(); trackShare("screenshot"); return; }
     if (e.target.id === "bm-export") { exportJson(); return; }
     if (e.target.id === "bm-import") { $("bm-import-file").click(); return; }
-    if (e.target.id === "bm-watch1000") { state.watch = e.target.checked; renderSummary(); updateHash(); return; }
+    if (e.target.id === "bm-watch1000") { state.watch = e.target.checked; state.shd = state.watch ? 1000 : 0; renderSummary(); updateHash(); return; }
     if (e.target.id === "bm-reset") {
       state = { mask: null, chest: null, backpack: null, gloves: null, holster: null, knees: null,
                 primary: null, secondary: null, skills: [null, null], watch: false, cfg: {} };
@@ -1216,6 +1225,23 @@ picker.mode = "cfg";
       clearLocal();
       try { history.replaceState(null, "", location.pathname); } catch (err) { /* noop */ }
       return;
+    }
+  });
+
+  /* SHD slider: update the number while dragging, recompute only on release,
+     otherwise renderSummary() would rebuild the slider mid-drag. */
+  document.addEventListener("input", function (e) {
+    if (e.target && e.target.id === "bm-shd") {
+      var out = document.getElementById("bm-shd-out");
+      if (out) out.textContent = e.target.value;
+    }
+  });
+  document.addEventListener("change", function (e) {
+    if (e.target && e.target.id === "bm-shd") {
+      state.shd = parseInt(e.target.value, 10) || 0;
+      state.watch = state.shd >= 1000;
+      renderSummary();
+      updateHash();
     }
   });
 
