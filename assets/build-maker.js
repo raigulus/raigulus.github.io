@@ -74,6 +74,39 @@
     { id: "firewall", name: "Firewall (signature weapon only)", mods: {} }
   ];
 
+  /* Short explanations shown on hover in the totals list. */
+  var STAT_HELP = {
+    "weapon-damage": "Increases damage from all weapons. Multiplies with weapon-type damage.",
+    "critical-hit-chance": "Chance for a hit to crit. Hard cap is 60%.",
+    "critical-hit-damage": "Bonus damage on a crit, on top of the 25% base.",
+    "headshot-damage": "Bonus damage when you hit the head.",
+    "damage-to-armor": "Bonus damage against enemy armor bars.",
+    "damage-to-health": "Bonus damage against health once armor is gone.",
+    "dtoc": "Damage to targets out of cover.",
+    "armor": "Total armor from gear cores and attributes.",
+    "total-armor": "Armor including brand, set and SHD bonuses.",
+    "health": "Health pool, separate from armor.",
+    "skill-damage": "Damage dealt by skills such as turrets and drones.",
+    "skill-haste": "Reduces skill cooldowns.",
+    "skill-duration": "How long deployed skills stay active.",
+    "repair-skills": "Healing strength of repair skills.",
+    "hazard-protection": "Resistance to status effects such as burn and bleed.",
+    "reload-speed": "Faster reloads on all weapons.",
+    "accuracy": "Tighter bullet spread.",
+    "stability": "Less recoil climb.",
+    "assault-rifle-damage": "Bonus damage with assault rifles only.",
+    "lmg-damage": "Bonus damage with light machine guns only.",
+    "smg-damage": "Bonus damage with submachine guns only.",
+    "rifle-damage": "Bonus damage with rifles only.",
+    "marksman-rifle-damage": "Bonus damage with marksman rifles only.",
+    "shotgun-damage": "Bonus damage with shotguns only.",
+    "pistol-damage": "Bonus damage with sidearms only."
+  };
+
+  /* Undo history: one encoded state per mutation, newest last. */
+  var UNDO = [];
+  var LAST_HASH = "";
+
   function $(id) { return document.getElementById(id); }
   function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
 
@@ -598,7 +631,7 @@
     html += "<h3>Estimated Totals <span class='bm-note'>max rolls incl. set bonuses" + (state.watch ? " + SHD 1000" : "") + "</span></h3>" +
       (totals.length
         ? "<div class='bm-totals'>" + totals.map(function (t) {
-            return "<div class='bm-stat-row'><span>" + esc(t.label) + "</span><b>" + fmtVal(t) + "</b></div>";
+            return "<div class='bm-stat-row' title='" + esc(STAT_HELP[t.stat] || "") + "'><span>" + esc(t.label) + "</span><b>" + fmtVal(t) + "</b></div>";
           }).join("") + "</div>"
         : '<p class="bm-empty">Pick cores, attributes and mods to see totals.</p>');
 
@@ -864,6 +897,10 @@ picker.mode = "cfg";
   }
   function updateHash() {
     var h = encodeState();
+    if (h !== LAST_HASH) {
+      if (LAST_HASH) { UNDO.push(LAST_HASH); if (UNDO.length > 30) UNDO.shift(); }
+      LAST_HASH = h;
+    }
     try { history.replaceState(null, "", "#" + h); } catch (e) { /* noop */ }
     saveLocal(h);
   }
@@ -1245,6 +1282,24 @@ picker.mode = "cfg";
     }
   });
 
+  /* Keyboard: Escape closes the picker, Ctrl/Cmd+Z steps back one change. */
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      var m = $("bm-modal");
+      if (m && !m.hidden) { m.hidden = true; return; }
+    }
+    if ((e.ctrlKey || e.metaKey) && (e.key === "z" || e.key === "Z")) {
+      if (!UNDO.length) return;
+      e.preventDefault();
+      var prev = UNDO.pop();
+      applyState(decodeState(prev));
+      renderSlots();
+      renderSummary();
+      try { history.replaceState(null, "", "#" + prev); } catch (err) { /* noop */ }
+      saveLocal(prev);
+    }
+  });
+
   /* specialization uses "change": the select is re-rendered, so a click handler
      on the element itself would close the dropdown before a choice is made. */
   document.addEventListener("change", function (e) {
@@ -1312,6 +1367,7 @@ picker.mode = "cfg";
       var s = decodeState(location.hash.slice(1));
       if (!s) s = decodeState(loadLocal() || "");
       applyState(s);
+      LAST_HASH = encodeState();
       renderSlots();
       renderSummary();
       if (!$("bm-modal").hidden) { renderPickerFilters(); renderPickerList(); }
