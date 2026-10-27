@@ -861,3 +861,34 @@ body.has-search-open{overflow:hidden}
 .bm-modal-list::-webkit-scrollbar{width:10px}
 .bm-modal-list::-webkit-scrollbar-thumb{background:rgb(var(--overlay-rgb) / .16);border-radius:10px;border:2px solid #16181d}
 .bm-modal-list::-webkit-scrollbar-thumb:hover{background:rgb(var(--overlay-rgb) / .28)}
+
+/* Picker filters: vertical wrap, no horizontal scroll */
+.bm-modal-filters.bm-modal-filters{
+  display:flex;
+  flex-wrap:wrap;
+  flex:0 0 auto;
+  align-content:flex-start;
+  gap:6px;
+  padding:10px 18px 6px;
+  max-height:124px;
+  overflow-x:hidden;
+  overflow-y:auto;
+  scrollbar-width:thin;
+  border-bottom:1px solid rgb(var(--overlay-rgb) / .08);
+}
+.bm-modal-filters.bm-modal-filters button{
+  flex:0 0 auto;
+  white-space:nowrap;
+  border-radius:999px;
+  padding:5px 12px;
+  font-size:12px;
+  line-height:1.25;
+  border:1px solid rgb(var(--overlay-rgb) / .16);
+  background:rgb(var(--overlay-rgb) / .05);
+  color:var(--text-sub);
+}
+.bm-modal-filters.bm-modal-filters button:hover{
+  border-color:var(--accent);
+  color:var(--text);
+  background:rgb(var(--overlay-rgb) / .1);
+}
