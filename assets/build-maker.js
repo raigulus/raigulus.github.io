@@ -487,7 +487,8 @@
       var b = DATA.brands.find(function (x) { return x.name === brand; });
       if (!b) return;
       [1, 2, 3].forEach(function (pc) {
-        if (n >= pc && b[pc + "pc_bonus"] && b[pc + "pc_bonus"] !== "N/A") out.push({ name: brand + " " + pc + "pc", bonus: b[pc + "pc_bonus"] });
+        var key = (state.pvp && b["pvp_" + pc + "pc_bonus"]) ? "pvp_" + pc + "pc_bonus" : pc + "pc_bonus";
+        if (n >= pc && b[key] && b[key] !== "N/A") out.push({ name: brand + " " + pc + "pc" + (state.pvp ? " PvP" : ""), bonus: b[key] });
       });
     });
     Object.keys(gearSetCounts).forEach(function (gs) {
@@ -620,6 +621,9 @@
       SPECS.map(function (s) {
         return "<option value='" + esc(s.id) + "'" + (state.spec === s.id ? " selected" : "") + ">" + esc(s.name) + "</option>";
       }).join("") + "</select></label>";
+
+    /* pvp mode */
+    html += "<label class='bm-watch'><input type='checkbox' id='bm-pvp'" + (state.pvp ? " checked" : "") + "> PvP values <span class='bm-note'>Conflict and normalized Dark Zone</span></label>";
 
     /* shd watch level */
     var shdVal = state.shd == null ? (state.watch ? 1000 : 0) : state.shd;
@@ -871,7 +875,7 @@ picker.mode = "cfg";
       h: state.holster && state.holster.name, k: state.knees && state.knees.name,
       w1: state.primary && state.primary.name, w2: state.secondary && state.secondary.name,
       s1: state.skills[0] && state.skills[0].name, s2: state.skills[1] && state.skills[1].name,
-      w: state.watch ? 1 : undefined, shd: (state.shd != null && state.shd > 0) ? state.shd : undefined, sp: (state.spec && state.spec !== "none") ? state.spec : undefined
+      w: state.watch ? 1 : undefined, pv: state.pvp ? 1 : undefined, shd: (state.shd != null && state.shd > 0) ? state.shd : undefined, sp: (state.spec && state.spec !== "none") ? state.spec : undefined
     };
     var keys = Object.keys(state.cfg);
     if (keys.length) { s.cf = {}; keys.sort().forEach(function (k) { s.cf[k] = state.cfg[k]; }); }
@@ -902,7 +906,7 @@ picker.mode = "cfg";
     state.primary = findByName(allWeapons, s.w1);
     state.secondary = findByName(allWeapons, s.w2);
     state.skills = [findByName(DATA.skills, s.s1), findByName(DATA.skills, s.s2)];
-    state.watch = !!s.w;
+    state.watch = !!s.w; state.pvp = !!s.pv;
     state.shd = (s.shd != null) ? parseInt(s.shd, 10) : (s.w ? 1000 : 0);
     state.spec = s.sp || "none";
     state.cfg = {};
@@ -1274,7 +1278,8 @@ picker.mode = "cfg";
     if (e.target.id === "bm-screenshot") { saveShot(); trackShare("screenshot"); return; }
     if (e.target.id === "bm-export") { exportJson(); return; }
     if (e.target.id === "bm-import") { $("bm-import-file").click(); return; }
-    if (e.target.id === "bm-watch1000") { state.watch = e.target.checked; state.shd = state.watch ? 1000 : 0; renderSummary(); updateHash(); return; }
+    if (e.target.id === "bm-pvp") { state.pvp = e.target.checked; renderSummary(); updateHash(); return; }
+  if (e.target.id === "bm-watch1000") { state.watch = e.target.checked; state.shd = state.watch ? 1000 : 0; renderSummary(); updateHash(); return; }
     if (e.target.id === "bm-reset") {
       state = { mask: null, chest: null, backpack: null, gloves: null, holster: null, knees: null,
                 primary: null, secondary: null, skills: [null, null], watch: false, cfg: {} };
