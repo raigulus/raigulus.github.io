@@ -859,6 +859,17 @@ function renderPickerList() {
         else head.appendChild(cnt);
       }
       cnt.textContent = items.length + (items.length === 1 ? " item" : " items");
+      var clr = document.getElementById("bm-pick-clear");
+      if (!clr) {
+        clr = document.createElement("button");
+        clr.type = "button";
+        clr.id = "bm-pick-clear";
+        clr.className = "bm-pick-clear";
+        clr.textContent = "Clear";
+        var closeBtn = head.querySelector(".bm-modal-close");
+        if (closeBtn) head.insertBefore(clr, closeBtn);
+        else head.appendChild(clr);
+      }
     })();
     var html = items.map(function (i) {
       var sub = i.sub;
@@ -1309,7 +1320,16 @@ function renderPickerList() {
     if (e.target.id === "bm-screenshot") { saveShot(); trackShare("screenshot"); return; }
     if (e.target.id === "bm-export") { exportJson(); return; }
     if (e.target.id === "bm-import") { $("bm-import-file").click(); return; }
-    if (e.target.id === "bm-pvp") { state.pvp = e.target.checked; renderSummary(); updateHash(); return; }
+    if (e.target.id === "bm-pick-clear") {
+    picker.search = "";
+    picker.filter = "all";
+    var searchBox = $("bm-modal-search");
+    if (searchBox) searchBox.value = "";
+    renderPickerFilters();
+    renderPickerList();
+    return;
+  }
+  if (e.target.id === "bm-pvp") { state.pvp = e.target.checked; renderSummary(); updateHash(); return; }
   if (e.target.id === "bm-watch1000") { state.watch = e.target.checked; state.shd = state.watch ? 1000 : 0; renderSummary(); updateHash(); return; }
     if (e.target.id === "bm-reset") {
       state = { mask: null, chest: null, backpack: null, gloves: null, holster: null, knees: null,
