@@ -63,6 +63,17 @@
     "accuracy": 10, "stability": 10, "reload-speed": 10, "ammo-capacity": 20
   };
 
+  /* Specialization weapon-damage bonuses (verified 2026-10-27). */
+  var SPECS = [
+    { id: "none", name: "No specialization", mods: {} },
+    { id: "sharpshooter", name: "Sharpshooter (+15% rifle, +10% sidearm)", mods: { "rifle-damage": 15, "pistol-damage": 10 } },
+    { id: "demolitionist", name: "Demolitionist (+15% SMG, +15% LMG, +10% sidearm)", mods: { "smg-damage": 15, "lmg-damage": 15, "pistol-damage": 10 } },
+    { id: "survivalist", name: "Survivalist (+15% shotgun, +15% assault rifle, +10% sidearm)", mods: { "shotgun-damage": 15, "assault-rifle-damage": 15, "pistol-damage": 10 } },
+    { id: "gunner", name: "Gunner (+5% every weapon type)", mods: { "assault-rifle-damage": 5, "lmg-damage": 5, "smg-damage": 5, "rifle-damage": 5, "marksman-rifle-damage": 5, "shotgun-damage": 5, "pistol-damage": 5 } },
+    { id: "technician", name: "Technician (+5% every weapon type, +10% skill damage)", mods: { "assault-rifle-damage": 5, "lmg-damage": 5, "smg-damage": 5, "rifle-damage": 5, "marksman-rifle-damage": 5, "shotgun-damage": 5, "pistol-damage": 5, "skill-damage": 10 } },
+    { id: "firewall", name: "Firewall (signature weapon only)", mods: {} }
+  ];
+
   function $(id) { return document.getElementById(id); }
   function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
 
@@ -523,6 +534,11 @@
     if (state.watch) {
       Object.keys(SHD1000).forEach(function (sid) { add(sid, SHD1000[sid] + "%"); });
     }
+    var spec = null;
+    for (var si = 0; si < SPECS.length; si++) { if (SPECS[si].id === state.spec) { spec = SPECS[si]; break; } }
+    if (spec) {
+      Object.keys(spec.mods).forEach(function (sid) { add(sid, spec.mods[sid] + "%"); });
+    }
     return Object.keys(acc).map(function (sid) {
       return { stat: sid, label: DATA.stats[sid] || sid, u: acc[sid].u, v: acc[sid].v };
     }).sort(function (a, b) { return b.v - a.v; });
@@ -560,6 +576,12 @@
     var coreSpans = Object.keys(cores).map(function (k) { return "<span>" + esc(k) + ": " + cores[k] + "</span>"; }).join(" ");
     if (unassigned) coreSpans += ' <span class="bm-unassigned">Unassigned cores: ' + unassigned + "</span>";
     html += "<h3>Cores</h3><p class='bm-cores'>" + coreSpans + "</p>";
+
+    /* specialization */
+    html += "<label class='bm-spec'><span>Specialization</span><select id='bm-spec'>" +
+      SPECS.map(function (s) {
+        return "<option value='" + esc(s.id) + "'" + (state.spec === s.id ? " selected" : "") + ">" + esc(s.name) + "</option>";
+      }).join("") + "</select></label>";
 
     /* shd watch toggle */
     html += "<label class='bm-watch'><input type='checkbox' id='bm-watch1000'" + (state.watch ? " checked" : "") + "> SHD Watch 1000 <span class='bm-note'>post-Vanguard values</span></label>";
@@ -788,7 +810,7 @@ picker.mode = "cfg";
       h: state.holster && state.holster.name, k: state.knees && state.knees.name,
       w1: state.primary && state.primary.name, w2: state.secondary && state.secondary.name,
       s1: state.skills[0] && state.skills[0].name, s2: state.skills[1] && state.skills[1].name,
-      w: state.watch ? 1 : undefined
+      w: state.watch ? 1 : undefined, sp: (state.spec && state.spec !== "none") ? state.spec : undefined
     };
     var keys = Object.keys(state.cfg);
     if (keys.length) { s.cf = {}; keys.sort().forEach(function (k) { s.cf[k] = state.cfg[k]; }); }
@@ -820,6 +842,7 @@ picker.mode = "cfg";
     state.secondary = findByName(allWeapons, s.w2);
     state.skills = [findByName(DATA.skills, s.s1), findByName(DATA.skills, s.s2)];
     state.watch = !!s.w;
+    state.spec = s.sp || "none";
     state.cfg = {};
     if (s.cf && typeof s.cf === "object") {
       var slots = { mask: state.mask, chest: state.chest, backpack: state.backpack, gloves: state.gloves, holster: state.holster, knees: state.knees, primary: state.primary, secondary: state.secondary };
@@ -1193,6 +1216,16 @@ picker.mode = "cfg";
       clearLocal();
       try { history.replaceState(null, "", location.pathname); } catch (err) { /* noop */ }
       return;
+    }
+  });
+
+  /* specialization uses "change": the select is re-rendered, so a click handler
+     on the element itself would close the dropdown before a choice is made. */
+  document.addEventListener("change", function (e) {
+    if (e.target && e.target.id === "bm-spec") {
+      state.spec = e.target.value;
+      renderSummary();
+      updateHash();
     }
   });
 
