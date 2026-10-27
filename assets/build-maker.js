@@ -832,6 +832,21 @@ picker.mode = "cfg";
 
   function renderPickerList() {
     var items = pickerItems();
+    /* result count in the header */
+    (function () {
+      var head = (typeof document.querySelector === "function") ? document.querySelector(".bm-modal-head") : null;
+      if (!head) return;
+      var cnt = document.getElementById("bm-pick-count");
+      if (!cnt) {
+        cnt = document.createElement("span");
+        cnt.id = "bm-pick-count";
+        cnt.className = "bm-pick-count";
+        var h3 = head.querySelector("h3");
+        if (h3 && h3.nextSibling) head.insertBefore(cnt, h3.nextSibling);
+        else head.appendChild(cnt);
+      }
+      cnt.textContent = items.length + (items.length === 1 ? " item" : " items");
+    })();
     var html = items.map(function (i) {
       var sub = i.sub;
       if (sub == null) {
@@ -1309,6 +1324,24 @@ picker.mode = "cfg";
 
   /* Keyboard: Escape closes the picker, Ctrl/Cmd+Z steps back one change. */
   document.addEventListener("keydown", function (e) {
+    /* arrow keys walk the open picker, Enter picks the highlighted row */
+    var modalEl = $("bm-modal");
+    if (modalEl && !modalEl.hidden && (e.key === "ArrowDown" || e.key === "ArrowUp" || e.key === "Enter")) {
+      var listEl = $("bm-modal-list");
+      var rows = listEl ? Array.prototype.slice.call(listEl.querySelectorAll(".bm-item")) : [];
+      if (rows.length) {
+        var at = rows.indexOf(document.activeElement);
+        if (e.key === "Enter") {
+          if (at >= 0) { e.preventDefault(); rows[at].click(); }
+        } else {
+          e.preventDefault();
+          var nextAt = at < 0 ? 0 : (e.key === "ArrowDown" ? Math.min(rows.length - 1, at + 1) : Math.max(0, at - 1));
+          rows[nextAt].focus();
+          if (rows[nextAt].scrollIntoView) rows[nextAt].scrollIntoView({ block: "nearest" });
+        }
+        return;
+      }
+    }
     if (e.key === "Escape") {
       var m = $("bm-modal");
       if (m && !m.hidden) { m.hidden = true; return; }
