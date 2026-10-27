@@ -858,9 +858,12 @@ picker.mode = "cfg";
       var desc = i.description ? '<span class="bm-item-desc">' + esc(i.description) + "</span>" : "";
       if (sub && i.name && sub.toLowerCase() === String(i.name).toLowerCase()) sub = "";
       var label = picker.mode === "slot" ? itemLabel(i) : (i.name || prettyId(i.id));
-      return '<li><button type="button" class="bm-item" data-name="' + esc(i.name || i.id) + '">' +
+      var cur = (picker.mode === "slot" && picker.slot) ? state[picker.slot] : null;
+      var sel = !!(cur && cur.name && i.name && cur.name === i.name);
+      return '<li><button type="button" class="bm-item' + (sel ? " is-selected" : "") + '" data-name="' + esc(i.name || i.id) + '">' +
         (photoFor(i.name, "bm-pick-thumb") || tileFor(i)) + '<span class="bm-item-wrap"><span class="bm-item-name">' + esc(label) + "</span>" +
-        (sub ? '<span class="bm-item-sub">' + esc(sub) + "</span>" : "") + desc + "</span></button></li>";
+        (sub ? '<span class="bm-item-sub">' + esc(sub) + "</span>" : "") + desc + "</span>" +
+        (sel ? '<span class="bm-item-tick" aria-hidden="true">\u2713</span>' : "") + "</button></li>";
     }).join("");
     $("bm-modal-list").innerHTML = html || '<li class="bm-empty">No items match.</li>';
   }

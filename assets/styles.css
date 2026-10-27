@@ -893,3 +893,5 @@ body.has-search-open{overflow:hidden}
   background:rgb(var(--overlay-rgb) / .1);
 }
 .bm-pick-count{font-size:12px;color:var(--text-dim);font-weight:400;margin-left:8px;white-space:nowrap}
+.bm-item.is-selected{border-color:var(--accent);background:rgb(20 184 166 / .10)}
+.bm-item-tick{margin-left:auto;color:var(--accent);font-weight:700;font-size:14px;flex:0 0 auto}
