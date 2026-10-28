@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-28T00:28:05Z",
+  "generated_at": "2026-10-28T00:42:38Z",
   "stats": {
     "total_guides": 486,
     "exotics": 79,
     "patches": 32
   },
   "latest_patch": {
-    "slug": "y8s3-2-red-moon-unleashed",
-    "title": "Division 2 Y8S3.2 Red Moon Unleashed Patch Notes [2026]",
+    "slug": "red-horizon",
+    "title": "Division 2 Red Horizon (Y8S3) Update Guide [2026]",
     "version": "Y8S3"
   },
   "latest_videos": [
@@ -44,7 +44,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-10-28 00:28 UTC"
+    "last_checked": "2026-10-28 00:42 UTC"
   },
   "discord_members": 58,
   "next_reset_utc": "2026-10-28T07:00:00Z"

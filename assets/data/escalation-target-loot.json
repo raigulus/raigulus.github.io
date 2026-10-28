@@ -34,57 +34,10 @@
     }
   ],
   "last_updated": "2026-10-27 09:04",
-  "last_checked": "2026-10-28 00:28 UTC",
-  "parsed_at": "2026-10-28T00:05:09.865477+00:00",
+  "last_checked": "2026-10-28 00:42 UTC",
+  "parsed_at": "2026-10-28T00:42:35.531452+00:00",
   "status": "pending",
-  "fetched_at": "2026-10-28T00:28:00.969510+00:00",
+  "fetched_at": "2026-10-28T00:42:35.531452+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
-  "error": "HTTPError: HTTP Error 502: Bad Gateway",
-  "vendor_highlights": [
-    {
-      "vendor": "Countdown",
-      "item": "Benefactor",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "The Theater",
-      "item": "Grease",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "The Campus",
-      "item": "Salvo",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "DZ South",
-      "item": "Matador",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Benefactor",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "Cassie",
-      "item": "Hunter-Killer",
-      "note": "Named gear"
-    },
-    {
-      "vendor": "White House",
-      "item": "Lightning Rod - Custom PF45",
-      "note": "Named weapon"
-    },
-    {
-      "vendor": "Clan",
-      "item": "Brain Breaker - Urban MDR",
-      "note": "Named weapon"
-    }
-  ],
-  "vendor_highlights_status": "ok",
-  "vendor_highlights_checked": "2026-10-28 00:28 UTC",
-  "vendor_highlights_date": "2026-10-21",
-  "vendor_highlights_note": "Current dated vendor highlights are available."
+  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot."
 }
