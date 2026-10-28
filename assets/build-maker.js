@@ -387,6 +387,26 @@
     updateProgress();
   }
 
+  /* On phones the summary sits far below the slots, so a compact bar rides at the
+     bottom of the slot list with the core split. */
+  function updateMobileBar(cores, unassigned) {
+    var bar = $("bm-mbar-stats");
+    if (!bar) return;
+    var order = ["Armor", "Weapon Damage", "Skill Tier"];
+    var keys = Object.keys(cores).sort(function (a, b) {
+      var pa = order.indexOf(a), pb = order.indexOf(b);
+      if (pa < 0) pa = 99;
+      if (pb < 0) pb = 99;
+      return (pa - pb) || a.localeCompare(b);
+    });
+    var parts = keys.filter(function (k) { return cores[k] > 0; }).map(function (k) {
+      return "<span class='bm-mbar-pill'>" + esc(k) + " <b>" + cores[k] + "</b></span>";
+    });
+    if (unassigned) parts.push("<span class='bm-mbar-pill bm-mbar-warn'>Unassigned <b>" + unassigned + "</b></span>");
+    if (!parts.length) parts.push("<span class='bm-mbar-empty'>No cores picked yet</span>");
+    bar.innerHTML = parts.join("");
+  }
+
   /* How much of the build is filled in, so a half-finished plan is obvious. */
   function updateProgress() {
     var bar = $("bm-progress");
@@ -634,6 +654,7 @@
     var coreSpans = Object.keys(cores).map(function (k) { return "<span>" + esc(k) + ": " + cores[k] + "</span>"; }).join(" ");
     if (unassigned) coreSpans += ' <span class="bm-unassigned">Unassigned cores: ' + unassigned + "</span>";
     html += "<h3>Cores</h3><p class='bm-cores'>" + coreSpans + "</p>";
+    updateMobileBar(cores, unassigned);
 
     /* specialization */
     html += "<label class='bm-spec'><span>Specialization</span><select id='bm-spec'>" +
@@ -691,26 +712,21 @@
         (sustained === null ? "" : "<div class='bm-stat-row' title='Damage per second averaged over a full magazine plus one reload, at this critical hit chance.'><span>Sustained DPS</span><b>" + fmt(sustained) + "</b></div>");
     }
 
-    /* combat estimates (primary weapon, max rolls) */
+    /* defence figures the damage block does not carry; the duplicate damage
+       rows that used to live here disagreed with it, so they are gone */
     var prim = state.primary;
     if (prim && prim.base_damage) {
       var totMap = {};
       totals.forEach(function (t) { totMap[t.stat] = t.v; });
-      var wdPct = totMap["weapon-damage"] || 0;
-      var baseDmg = parseFloat(prim.base_damage) || 0;
-      var perBullet = baseDmg * (1 + wdPct / 100);
-      var chc = Math.min(60, totMap["critical-hit-chance"] || 0), chd = 25 + (totMap["critical-hit-damage"] || 0);
-      var expMult = 1 + (chc / 100) * (chd / 100);
-      var rpm = parseFloat(prim.base_rpm) || 0;
-      var estRows = [["Damage per bullet <span class='bm-note'>incl. weapon damage</span>", Math.round(perBullet).toLocaleString("en-US")]];
-      if (chc > 0 && chd > 0) estRows.push(["Crit-expected per bullet", Math.round(perBullet * expMult).toLocaleString("en-US")]);
-      if (rpm > 0) estRows.push(["Approx. DPS", Math.round(perBullet * expMult * rpm / 60).toLocaleString("en-US")]);
+      var estRows = [];
       if (totMap["protection-from-elites"]) estRows.push(["Protection from Elites", "+" + (Math.round(totMap["protection-from-elites"] * 10) / 10) + "%"]);
       var armorPool = totMap["armor"] || 0, hpPool = totMap["health"] || 0;
       if (armorPool > 0 || hpPool > 0) estRows.push(["Approx. Toughness <span class='bm-note'>armor + health</span>", Math.round(armorPool + hpPool).toLocaleString("en-US")]);
-      html += "<h3>Combat Estimates <span class='bm-note'>primary, max rolls</span></h3><div class='bm-totals'>" + estRows.map(function (r) {
-        return "<div class='bm-stat-row'><span>" + r[0] + "</span><b>" + r[1] + "</b></div>";
-      }).join("") + "</div>";
+      if (estRows.length) {
+        html += "<h3>Defense <span class='bm-note'>max rolls</span></h3><div class='bm-totals'>" + estRows.map(function (r) {
+          return "<div class='bm-stat-row'><span>" + r[0] + "</span><b>" + r[1] + "</b></div>";
+        }).join("") + "</div>";
+      }
     }
 
     /* talents */
@@ -1388,7 +1404,12 @@ function renderPickerList() {
     if (e.target.id === "bm-screenshot") { saveShot(); trackShare("screenshot"); return; }
     if (e.target.id === "bm-export") { exportJson(); return; }
     if (e.target.id === "bm-import") { $("bm-import-file").click(); return; }
-    if (e.target.id === "bm-pick-clear") {
+    if (e.target.id === "bm-mbar-summary") {
+    var panel = (typeof document.querySelector === "function") ? document.querySelector(".bm-summary") : null;
+    if (panel && panel.scrollIntoView) panel.scrollIntoView({ behavior: "smooth", block: "start" });
+    return;
+  }
+  if (e.target.id === "bm-pick-clear") {
     picker.search = "";
     picker.filter = "all";
     var searchBox = $("bm-modal-search");

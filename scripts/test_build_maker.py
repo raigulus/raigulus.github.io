@@ -739,5 +739,25 @@ class TestDataCache(Base):
         self.assertIn("Loading", res["modalList"])
 
 
+class TestSummaryShape(Base):
+    """The summary must not repeat the same damage numbers in two panels."""
+
+    def test_the_duplicate_combat_panel_is_gone(self):
+        res = drive(hash_=b64({"w1": W1}))
+        self.assertAlive(res)
+        self.assertIn("Damage Estimate", res["summary"])
+        self.assertNotIn("Combat Estimates", res["summary"])
+        self.assertNotIn("Damage per bullet", res["summary"])
+
+    def test_defense_rows_appear_only_with_values(self):
+        bare = drive(hash_=b64({"w1": W1}))
+        self.assertNotIn("Defense", bare["summary"])
+        aegis = [i["name"] for i in DATA["gear"]["mask"] if (i.get("gear_set") or "") == "Aegis"]
+        chest = [i["name"] for i in DATA["gear"]["chest"] if (i.get("gear_set") or "") == "Aegis"]
+        res = drive(hash_=b64({"w1": W1, "m": aegis[0], "c": chest[0]}))
+        self.assertIn("Defense", res["summary"])
+        self.assertIn("Approx. Toughness", res["summary"])
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

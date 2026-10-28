@@ -908,3 +908,16 @@ mark{background:rgb(20 184 166 / .30);color:inherit;border-radius:3px;padding:0 
 .bm-progress-fill{height:100%;width:0;background:var(--mission);transition:width .18s ease}
 .bm-progress-text{font-variant-numeric:tabular-nums;line-height:1.35}
 .bm-modal-hint{margin:0;padding:8px 16px 12px;font-size:11px;line-height:1.4;color:rgb(var(--overlay-rgb) / .5);border-top:1px solid rgb(var(--overlay-rgb) / .08)}
+
+/* Build Maker: mobile core bar under the slots */
+.bm-mobile-bar{display:none}
+@media(max-width:860px){
+  .bm-mobile-bar{display:flex;align-items:center;gap:8px;position:sticky;bottom:8px;margin:14px 0 4px;padding:8px 10px;border:1px solid rgb(var(--overlay-rgb) / .16);border-radius:10px;background:rgb(var(--shade-rgb) / .92);backdrop-filter:blur(8px);box-shadow:0 6px 18px rgb(var(--shade-rgb) / .35)}
+  .bm-mbar-stats{display:flex;flex:1;min-width:0;gap:6px;flex-wrap:wrap;font-size:11.5px}
+  .bm-mbar-pill{padding:3px 8px;border-radius:999px;background:rgb(var(--overlay-rgb) / .08);white-space:nowrap}
+  .bm-mbar-pill b{color:#ffb27d;margin-left:3px}
+  .bm-mbar-warn{background:rgba(232,185,58,.16)}
+  .bm-mbar-empty{color:var(--muted);padding:3px 2px}
+  #bm-mbar-summary{flex:0 0 auto;padding:6px 12px;border:1px solid rgba(245,90,0,.55);border-radius:8px;background:transparent;color:#ff8a3d;font-weight:700;font-size:12px;cursor:pointer}
+  #bm-mbar-summary:hover{background:rgba(245,90,0,.16)}
+}
