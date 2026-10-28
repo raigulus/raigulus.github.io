@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28T18:05:17Z",
+  "generated_at": "2026-10-28T19:05:16Z",
   "stats": {
-    "total_guides": 486,
+    "total_guides": 487,
     "exotics": 79,
     "patches": 32
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "Worst Assault Rifle in Division 2? Chameleon Tier 10",
+      "url": "https://raigulus.github.io/division-2/videos/worst-assault-rifle-in-division-2-chameleon-tier-1/",
+      "youtube_url": "https://www.youtube.com/watch?v=NquD47M4VwU",
+      "thumbnail": "/assets/img/yt/NquD47M4VwU-hqdefault.jpg",
+      "published_date": "2026-10-28",
+      "cluster": "escalation run",
+      "summary": "I cleared a solo Tier 10 Escalation run with the Chameleon assault rifle in 16 minutes. This Chameleon build uses level 30 expertise and Echo on everything, and"
+    },
     {
       "title": "This is why you don't mess with me in The Division 2",
       "url": "https://raigulus.github.io/division-2/videos/this-is-why-you-don-t-mess-with-me-in-the-division/",
@@ -28,15 +37,6 @@
       "published_date": "2026-10-23",
       "cluster": "escalation run",
       "summary": "Can the Eagle Bearer handle a Tier 10 run? Watch this 13-minute clear to see how an assault rifle performs under pressure.  This session tests the viability of"
-    },
-    {
-      "title": "Is Prima Donna Still Broken? Aces & Eights vs Sheriff",
-      "url": "https://raigulus.github.io/division-2/videos/is-prima-donna-still-broken-aces-eights-vs-sheriff/",
-      "youtube_url": "https://www.youtube.com/watch?v=RMehzcbXHhg",
-      "thumbnail": "/assets/img/yt/RMehzcbXHhg-hqdefault.jpg",
-      "published_date": "2026-10-17",
-      "cluster": "pvp/archive clip",
-      "summary": "Today's Loot: https://raigulus.github.io/division-2/loot/ Reset Countdown: https://raigulus.github.io/division-2/reset/ Server Status: https://raigulus.github.i"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-10-28 18:05 UTC"
+    "last_checked": "2026-10-28 19:05 UTC"
   },
   "discord_members": 58,
   "next_reset_utc": "2026-10-29T07:00:00Z"
