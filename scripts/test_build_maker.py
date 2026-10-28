@@ -599,5 +599,60 @@ console.log(JSON.stringify({ steps: __steps }));
             self.assertIn(":root[data-theme=%s]" % theme, CSS)
 
 
+class TestPvpValues(Base):
+    """Brand and gear set bonuses must switch to their PvP overrides."""
+
+    def two_pieces(self, key, value):
+        picked = {}
+        for slot, items in DATA["gear"].items():
+            if slot in picked:
+                continue
+            for item in items:
+                if (item.get(key) or "") == value:
+                    picked[slot] = item["name"]
+                    break
+        return picked
+
+    def summary(self, state, pvp):
+        body = "clickBtn('bm-pvp', true);" if pvp else ""
+        res = drive(hash_=b64(state), body=body)
+        self.assertAlive(res)
+        return res["summary"]
+
+    def test_gear_set_bonus_uses_the_pvp_value(self):
+        build = self.two_pieces("gear_set", "Aegis")
+        self.assertEqual(len(build), 6, "Aegis should fill every slot")
+        pve = self.summary({"m": build["mask"], "c": build["chest"]}, False)
+        pvp = self.summary({"m": build["mask"], "c": build["chest"]}, True)
+        self.assertIn("Health 70%", pve, "PvE 2pc Aegis should read 70%")
+        self.assertIn("Health 100%", pvp, "PvP 2pc Aegis should read 100%")
+        self.assertNotIn("Health 70%", pvp, "PvE value leaked into PvP mode")
+
+    def test_brand_bonus_uses_the_pvp_value(self):
+        build = self.two_pieces("brand_set", "Ceska Vyroba s.r.o.")
+        self.assertEqual(len(build), 6, "Ceska should fill every slot")
+        pve = self.summary({"m": build["mask"], "c": build["chest"]}, False)
+        pvp = self.summary({"m": build["mask"], "c": build["chest"]}, True)
+        self.assertIn("Shotgun Damage 24%", pve)
+        self.assertIn("Shotgun Damage 12%", pvp)
+        self.assertNotIn("Shotgun Damage 24%", pvp)
+
+    def test_every_pvp_override_keeps_the_pve_attribute(self):
+        """A PvP override may change a number, never the attribute it applies to."""
+        def stats(bonus):
+            return set(part.split(":")[1] for part in (bonus or "").split("|")
+                       if part.startswith("stat:"))
+        checked = 0
+        for node in DATA["brands"] + DATA["gearSets"]:
+            for pc in ("1", "2", "3"):
+                over = node.get("pvp_%spc_bonus" % pc)
+                if not over:
+                    continue
+                checked += 1
+                self.assertEqual(stats(node.get(pc + "pc_bonus")), stats(over),
+                                 "%s %spc swaps the attribute in PvP" % (node["name"], pc))
+        self.assertGreater(checked, 25, "PvP overrides went missing from the data")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

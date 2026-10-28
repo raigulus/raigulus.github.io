@@ -496,7 +496,8 @@
       var b = DATA.gearSets.find(function (x) { return x.name === gs; });
       if (!b) return;
       [2, 3, 4].forEach(function (pc) {
-        if (n >= pc && b[pc + "pc_bonus"] && b[pc + "pc_bonus"] !== "N/A") out.push({ name: gs + " " + pc + "pc", bonus: b[pc + "pc_bonus"] });
+        var key = (state.pvp && b["pvp_" + pc + "pc_bonus"]) ? "pvp_" + pc + "pc_bonus" : pc + "pc_bonus";
+        if (n >= pc && b[key] && b[key] !== "N/A") out.push({ name: gs + " " + pc + "pc" + (state.pvp ? " PvP" : ""), bonus: b[key] });
       });
     });
     return out;
