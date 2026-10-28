@@ -117,11 +117,11 @@ function pending(res, ms) { return new Promise(function (r) { setTimeout(functio
 // behind, which would stop node from exiting.
 function never() { return new Promise(function () {}); }
 function fetch(url) {
+  if (url.indexOf("item-images") >= 0)
+    return pending({ json: function () { return Promise.resolve({}); } }, 1);
   if (!__resolveFetch) return never();
   if (url.indexOf("build-maker.json") >= 0 && url.indexOf("changelog") < 0)
     return pending({ json: function () { return Promise.resolve(__DATA__); } }, 1);
-  if (url.indexOf("item-images") >= 0)
-    return pending({ json: function () { return Promise.resolve({}); } }, 1);
   return pending({ json: function () { return Promise.resolve({ meta: {}, sections: [] }); } }, 1);
 }
 __JS__
@@ -279,8 +279,11 @@ class TestBeforeDataLoads(Base):
 
 class TestPersistence(Base):
     def test_empty_visit_writes_nothing(self):
+        # The item data cache is written on every visit; what must stay empty is
+        # the saved build and the library.
         res = drive()
-        self.assertEqual(res["store"], {})
+        self.assertNotIn(KEY, res["store"])
+        self.assertNotIn(LIB, res["store"])
 
     def test_watch_toggle_is_stored(self):
         res = drive(body="clickBtn('bm-watch1000', true);")
@@ -705,6 +708,35 @@ class TestDamageEstimate(Base):
         self.assertGreater(weighted, rows["Damage per shot"])
         self.assertLess(weighted, crit)
         self.assertGreater(rows["Headshot crit"], head_shot)
+
+
+class TestDataCache(Base):
+    """Repeat visits should paint from the stored item data, not the network."""
+
+    CACHE = "raigulus-build-maker-data"
+
+    def test_first_visit_stores_the_data(self):
+        res = drive()
+        self.assertIn(self.CACHE, res["store"])
+        box = json.loads(res["store"][self.CACHE])
+        self.assertIn("gear", box["payload"])
+        self.assertTrue(box["t"] > 0)
+
+    def test_second_visit_paints_from_the_cache_without_the_network(self):
+        seed = {self.CACHE: json.dumps({"t": 4102444800000, "payload": DATA})}
+        res = drive(store=seed, fetch_ok=False,
+                    body="clickSlot('.bm-slot-change', 'mask', 'data-slot');", snap_at=320)
+        self.assertAlive(res)
+        self.assertTrue(res["dataArrived"], "the cached copy was ignored")
+        self.assertIn(MASK, res["modalList"])
+
+    def test_a_stale_cache_falls_back_to_the_network(self):
+        seed = {self.CACHE: json.dumps({"t": 1, "payload": DATA})}
+        res = drive(store=seed, fetch_ok=False,
+                    body="clickSlot('.bm-slot-change', 'mask', 'data-slot');", snap_at=320)
+        self.assertAlive(res)
+        self.assertFalse(res["dataArrived"], "an expired copy was used")
+        self.assertIn("Loading", res["modalList"])
 
 
 if __name__ == "__main__":

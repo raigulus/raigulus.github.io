@@ -94,6 +94,10 @@
         <p class="meta" id="bm-data-meta">Loading data...</p>
         <div class="bm-layout">
           <div class="bm-slots">
+            <div class="bm-progress" id="bm-progress" role="status" hidden>
+              <div class="bm-progress-track"><div class="bm-progress-fill" id="bm-progress-fill"></div></div>
+              <span class="bm-progress-text" id="bm-progress-text"></span>
+            </div>
             <h2>Gear</h2>
             <div id="bm-gear-slots"></div>
             <h2>Weapons</h2>
@@ -139,6 +143,7 @@
             <input type="search" id="bm-modal-search" placeholder="Search items..." aria-label="Search items">
             <div class="bm-modal-filters" id="bm-modal-filters"></div>
             <ul class="bm-modal-list" id="bm-modal-list"></ul>
+            <p class="bm-modal-hint" id="bm-modal-hint">Type to search, / jumps to the box, arrow keys move, Enter picks, Esc closes</p>
           </div>
         </div>
         <h2>Patch Changes</h2>

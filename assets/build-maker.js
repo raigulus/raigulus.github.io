@@ -384,6 +384,24 @@
       skHtml += slotCard("skill" + i, "Skill " + (i + 1), sk ? sk.name : "Empty", sk ? sk.skill : "");
     }
     $("bm-skill-slots").innerHTML = skHtml;
+    updateProgress();
+  }
+
+  /* How much of the build is filled in, so a half-finished plan is obvious. */
+  function updateProgress() {
+    var bar = $("bm-progress");
+    if (!bar) return;
+    var gear = GEAR_SLOTS.filter(function (s) { return !!state[s.key]; }).length;
+    var weapons = WEAPON_SLOTS.filter(function (s) { return !!state[s.key]; }).length;
+    var skills = state.skills.filter(function (s) { return !!s; }).length;
+    var filled = gear + weapons + skills;
+    var total = GEAR_SLOTS.length + WEAPON_SLOTS.length + 2;
+    bar.hidden = false;
+    var fill = $("bm-progress-fill");
+    if (fill) fill.style.width = Math.round((filled / total) * 100) + "%";
+    var text = $("bm-progress-text");
+    if (text) text.textContent = filled + " of " + total + " slots filled: gear " + gear + "/" + GEAR_SLOTS.length +
+      ", weapons " + weapons + "/" + WEAPON_SLOTS.length + ", skills " + skills + "/2";
   }
 
   function slotCard(key, label, name, sub) {
@@ -1402,6 +1420,15 @@ function renderPickerList() {
   document.addEventListener("keydown", function (e) {
     /* arrow keys walk the open picker, Enter picks the highlighted row */
     var modalEl = $("bm-modal");
+    if (modalEl && !modalEl.hidden && e.key === "/" && e.target !== $("bm-modal-search")) {
+      e.preventDefault();
+      /* build-maker.js loads before site.js, so this listener runs first and can
+         keep the global search shortcut from stealing the key. stopPropagation
+         alone is not enough: later listeners sit on the same document node. */
+      e.stopImmediatePropagation();
+      if ($("bm-modal-search").focus) $("bm-modal-search").focus();
+      return;
+    }
     if (modalEl && !modalEl.hidden && (e.key === "ArrowDown" || e.key === "ArrowUp" || e.key === "Enter")) {
       var listEl = $("bm-modal-list");
       var rows = listEl ? Array.prototype.slice.call(listEl.querySelectorAll(".bm-item")) : [];
@@ -1476,6 +1503,38 @@ function renderPickerList() {
 
   /* ---------- init ---------- */
 
+  var DATA_CACHE_KEY = "raigulus-build-maker-data";
+  var DATA_TTL = 6 * 60 * 60 * 1000;
+
+  /* A returning visitor should not wait for 446 KB again. The cache is only used
+     while it is fresh; after six hours the network copy wins, so a patch cannot
+     leave someone on stale item data for longer than that. */
+  function cachedBuildData() {
+    try {
+      var raw = localStorage.getItem(DATA_CACHE_KEY);
+      if (!raw) return null;
+      var box = JSON.parse(raw);
+      if (!box || !box.t || !box.payload) return null;
+      if (Date.now() - box.t > DATA_TTL) return null;
+      var payload = box.payload;
+      if (!payload.gear || !payload.weapons || !payload.meta) return null;
+      return payload;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function loadBuildData() {
+    var hit = cachedBuildData();
+    if (hit) return Promise.resolve(hit);
+    return fetch("/assets/data/build-maker.json").then(function (r) { return r.json(); }).then(function (payload) {
+      try {
+        localStorage.setItem(DATA_CACHE_KEY, JSON.stringify({ t: Date.now(), payload: payload }));
+      } catch (e) { /* private mode or quota */ }
+      return payload;
+    });
+  }
+
   // Paint the slot grid before the data lands. Slot counts come from the constant
   // GEAR_SLOTS/WEAPON_SLOTS lists and the hardcoded 2-skill loop, not from the
   // fetched JSON, so the final layout is knowable up front. Deferring the first
@@ -1485,7 +1544,7 @@ function renderPickerList() {
   renderSlots();
 
   Promise.all([
-    fetch("/assets/data/build-maker.json").then(function (r) { return r.json(); }),
+    loadBuildData(),
     fetch("/assets/data/item-images.json").then(function (r) { return r.json(); }).catch(function () { return {}; })
   ]).then(function (parts) {
     var data = parts[0];
