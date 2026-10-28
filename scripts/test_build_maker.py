@@ -13,6 +13,7 @@ import base64
 import io
 import json
 import os
+import re
 import subprocess
 import unittest
 
@@ -652,6 +653,58 @@ class TestPvpValues(Base):
                 self.assertEqual(stats(node.get(pc + "pc_bonus")), stats(over),
                                  "%s %spc swaps the attribute in PvP" % (node["name"], pc))
         self.assertGreater(checked, 25, "PvP overrides went missing from the data")
+
+
+class TestDamageEstimate(Base):
+    """Damage rows must start from the game's native crit and headshot values."""
+
+    ROW = re.compile(r"<div class='bm-stat-row'[^>]*><span>([^<]*(?:<span[^>]*>[^<]*</span>)?[^<]*)</span><b>([\d,]+)</b></div>", re.S)
+
+    def rows(self, summary):
+        out = {}
+        for label, value in self.ROW.findall(summary):
+            out[re.sub(r"<[^>]+>", "", label).strip()] = int(value.replace(",", ""))
+        return out
+
+    def weapon(self):
+        return DATA["weapons"]["assault-rifle"][0]
+
+    def test_critical_hit_starts_from_the_native_25_percent(self):
+        gun = self.weapon()
+        res = drive(hash_=b64({"w1": gun["name"]}))
+        self.assertAlive(res)
+        rows = self.rows(res["summary"])
+        per = rows["Damage per shot"]
+        crit = next(v for k, v in rows.items() if k.startswith("Critical hit"))
+        self.assertGreater(per, 0)
+        self.assertAlmostEqual(crit, per * 1.25, delta=1,
+                               msg="a bare weapon still crits for +25%")
+
+    def test_headshot_uses_the_weapon_native_bonus(self):
+        gun = self.weapon()
+        res = drive(hash_=b64({"w1": gun["name"]}))
+        rows = self.rows(res["summary"])
+        per = rows["Damage per shot"]
+        self.assertAlmostEqual(rows["Headshot %d%%" % int(float(gun["hsd"]))],
+                               per * (1 + float(gun["hsd"]) / 100), delta=1)
+
+    def test_crit_weighting_sits_between_body_and_crit(self):
+        brand = next(b for b in DATA["brands"]
+                     if "stat:critical-hit-chance" in (b.get("2pc_bonus") or ""))
+        picked = {}
+        for slot, items in DATA["gear"].items():
+            for item in items:
+                if (item.get("brand_set") or "") == brand["name"]:
+                    picked[slot] = item["name"]
+                    break
+        build = {"w1": self.weapon()["name"], "m": picked["mask"], "c": picked["chest"]}
+        rows = self.rows(drive(hash_=b64(build))["summary"])
+        weighted = next(v for k, v in rows.items() if k.startswith("Crit-weighted per shot"))
+        crit = next(v for k, v in rows.items() if k.startswith("Critical hit"))
+        head_shot = next(v for k, v in rows.items() if k.startswith("Headshot "))
+        self.assertGreater(weighted, rows["Damage per shot"])
+        self.assertLess(weighted, crit)
+        self.assertGreater(rows["Headshot crit"], head_shot)
 
 
 if __name__ == "__main__":

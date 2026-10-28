@@ -640,7 +640,9 @@
           }).join("") + "</div>"
         : '<p class="bm-empty">Pick cores, attributes and mods to see totals.</p>');
 
-    /* damage estimate: primary weapon at max rolls, no crits, no talents */
+    /* damage estimate: primary weapon at max rolls, crit-weighted, no talents.
+       The sheet's CHD figure includes a flat +25% that every player has, and
+       headshot damage starts from the weapon's own native value. */
     var pw = state.primary;
     if (pw && pw.base_damage && pw.base_rpm) {
       var smap = {};
@@ -651,13 +653,24 @@
       var rps = pw.base_rpm / 60;
       var mag = Number(pw.base_mag_size) || 0;
       var reload = Number(pw.base_reload_time) || 0;
-      var burst = per * rps;
-      var sustained = (mag > 0 && reload > 0) ? (per * mag) / (mag / rps + reload) : null;
+      var chc = Math.min(60, smap["critical-hit-chance"] || 0) / 100;
+      var chdTotal = 25 + (smap["critical-hit-damage"] || 0);
+      var critMult = 1 + chdTotal / 100;
+      var hsdTotal = (parseFloat(pw.hsd) || 0) + (smap["headshot-damage"] || 0);
+      var hsMult = 1 + hsdTotal / 100;
+      var expMult = 1 + chc * (critMult - 1);
+      var expPer = per * expMult;
+      var burst = expPer * rps;
+      var sustained = (mag > 0 && reload > 0) ? (expPer * mag) / (mag / rps + reload) : null;
       var fmt = function (n) { return Math.round(n).toLocaleString("en-US"); };
-      html += "<h3>Damage Estimate <span class='bm-note'>primary weapon, max rolls, body shots only</span></h3>" +
-        "<div class='bm-stat-row' title='Base damage per bullet after weapon damage bonuses.'><span>Damage per shot</span><b>" + fmt(per) + "</b></div>" +
-        "<div class='bm-stat-row' title='Damage per second while the trigger is held, before reloading.'><span>Burst DPS</span><b>" + fmt(burst) + "</b></div>" +
-        (sustained === null ? "" : "<div class='bm-stat-row' title='Damage per second averaged over a full magazine plus one reload.'><span>Sustained DPS</span><b>" + fmt(sustained) + "</b></div>");
+      html += "<h3>Damage Estimate <span class='bm-note'>primary weapon, max rolls, no talents</span></h3>" +
+        "<div class='bm-stat-row' title='Base damage per bullet after weapon damage bonuses, no crit.'><span>Damage per shot</span><b>" + fmt(per) + "</b></div>" +
+        "<div class='bm-stat-row' title='Damage of a shot that crits: weapon damage times (1 + critical hit damage).'><span>Critical hit <span class='bm-note'>" + Math.round(chdTotal) + "%</span></span><b>" + fmt(per * critMult) + "</b></div>" +
+        "<div class='bm-stat-row' title='Damage of a headshot: weapon damage plus the weapon native headshot bonus and gear headshot damage.'><span>Headshot <span class='bm-note'>" + Math.round(hsdTotal) + "%</span></span><b>" + fmt(per * hsMult) + "</b></div>" +
+        "<div class='bm-stat-row' title='A headshot that also crits. Both multipliers apply.'><span>Headshot crit</span><b>" + fmt(per * hsMult * critMult) + "</b></div>" +
+        "<div class='bm-stat-row' title='Average damage per bullet at this critical hit chance.'><span>Crit-weighted per shot <span class='bm-note'>" + Math.round(chc * 100) + "% CHC</span></span><b>" + fmt(expPer) + "</b></div>" +
+        "<div class='bm-stat-row' title='Damage per second while the trigger is held, before reloading, at this critical hit chance.'><span>Burst DPS</span><b>" + fmt(burst) + "</b></div>" +
+        (sustained === null ? "" : "<div class='bm-stat-row' title='Damage per second averaged over a full magazine plus one reload, at this critical hit chance.'><span>Sustained DPS</span><b>" + fmt(sustained) + "</b></div>");
     }
 
     /* combat estimates (primary weapon, max rolls) */
@@ -668,7 +681,7 @@
       var wdPct = totMap["weapon-damage"] || 0;
       var baseDmg = parseFloat(prim.base_damage) || 0;
       var perBullet = baseDmg * (1 + wdPct / 100);
-      var chc = totMap["critical-hit-chance"] || 0, chd = totMap["critical-hit-damage"] || 0;
+      var chc = Math.min(60, totMap["critical-hit-chance"] || 0), chd = 25 + (totMap["critical-hit-damage"] || 0);
       var expMult = 1 + (chc / 100) * (chd / 100);
       var rpm = parseFloat(prim.base_rpm) || 0;
       var estRows = [["Damage per bullet <span class='bm-note'>incl. weapon damage</span>", Math.round(perBullet).toLocaleString("en-US")]];
