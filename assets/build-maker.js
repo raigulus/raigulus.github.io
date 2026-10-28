@@ -871,7 +871,7 @@ function renderPickerList() {
         else head.appendChild(clr);
       }
     })();
-    var html = items.map(function (i) {
+    var itemHtml = function (i) {
       var sub = i.sub;
       if (sub == null) {
         sub = (i.brand_set && i.brand_set !== "N/A" ? i.brand_set : "") ||
@@ -888,7 +888,33 @@ function renderPickerList() {
         (photoFor(i.name, "bm-pick-thumb") || tileFor(i)) + '<span class="bm-item-wrap"><span class="bm-item-name">' + highlight(label, picker.search) + "</span>" +
         (sub ? '<span class="bm-item-sub">' + highlight(sub, picker.search) + "</span>" : "") + desc + "</span>" +
         (sel ? '<span class="bm-item-tick" aria-hidden="true">\u2713</span>' : "") + "</button></li>";
-    }).join("");
+    };
+
+    var html;
+    if (!picker.search && picker.mode === "slot") {
+      /* Group by brand only when it actually clusters items. Most gear slots
+         hold one item per brand, where headers would be pure noise. */
+      var groups = {};
+      items.forEach(function (i) {
+        var g = (i.brand_set && i.brand_set !== "N/A") ? i.brand_set
+          : (i.gear_set && i.gear_set !== "N/A") ? i.gear_set
+            : (i.family || "Other");
+        (groups[g] = groups[g] || []).push(i);
+      });
+      var keys = Object.keys(groups);
+      var density = keys.length ? items.length / keys.length : 0;
+      if (density >= 1.8) {
+        html = keys.sort().map(function (g) {
+          return '<li class="bm-pick-group" role="presentation">' + esc(g) +
+            ' <span>' + groups[g].length + "</span></li>" +
+            groups[g].map(itemHtml).join("");
+        }).join("");
+      } else {
+        html = items.map(itemHtml).join("");
+      }
+    } else {
+      html = items.map(itemHtml).join("");
+    }
     $("bm-modal-list").innerHTML = html || '<li class="bm-empty">No items match.</li>';
   }
 
