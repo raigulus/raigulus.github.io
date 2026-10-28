@@ -762,6 +762,16 @@
     if (!DATA) { renderPickerPending(); return; }
     renderPickerFilters();
     renderPickerList();
+    scrollToSelected();
+  }
+
+  /* Opening a slot should land on the piece that is already equipped, not on
+     the top of a 300 row list. */
+  function scrollToSelected() {
+    var listEl = $("bm-modal-list");
+    if (!listEl || !listEl.querySelector) return;
+    var sel = listEl.querySelector(".bm-item.is-selected");
+    if (sel && sel.scrollIntoView) sel.scrollIntoView({ block: "center" });
   }
 
   function openCfgPicker(cfgKey) {
@@ -1435,7 +1445,10 @@ function renderPickerList() {
       if (rows.length) {
         var at = rows.indexOf(document.activeElement);
         if (e.key === "Enter") {
-          if (at >= 0) { e.preventDefault(); rows[at].click(); }
+          e.preventDefault();
+          if (at >= 0) rows[at].click();
+          /* Enter inside the search box should take the top hit. */
+          else if (e.target && e.target.id === "bm-modal-search") rows[0].click();
         } else {
           e.preventDefault();
           var nextAt = at < 0 ? 0 : (e.key === "ArrowDown" ? Math.min(rows.length - 1, at + 1) : Math.max(0, at - 1));
