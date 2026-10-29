@@ -22,6 +22,14 @@ import urllib.request
 import urllib.error
 from urllib.parse import urlparse
 import re
+import sys
+
+# Windows consoles default to a legacy code page; printing a unicode status
+# symbol would crash the tool at the last step. Emit UTF-8 instead.
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "assets" / "data"
@@ -218,8 +226,8 @@ def generate_report():
     
     report = f"""# Raigulus Competitor Analysis Report
 
-**Tarih:** {datetime.now().strftime("%Y-%m-%d %H:%M")}
-**Analyze Edilen Site:** {len(results)}
+**Date:** {datetime.now().strftime("%Y-%m-%d %H:%M")}
+**Sites Analyzed:** {len(results)}
 
 ## Overall Comparison
 
@@ -253,7 +261,7 @@ def generate_report():
 """
     
     if our_site and our_site.get("status") == "success":
-        report += "### Bizim Sitemiz (raigulus.github.io)\n\n"
+        report += "### Our Site (raigulus.github.io)\n\n"
         report += f"- **Title:** {our_site.get('title', '-')}\n"
         report += f"- **Description:** {our_site.get('description', '-')[:150]}\n"
         report += f"- **Schema:** {'✓ Yes' if our_site.get('has_schema') else '✗ No'}\n"
@@ -261,12 +269,12 @@ def generate_report():
         report += f"- **Link Count:** {our_site.get('link_count', 0)}\n"
         report += f"- **Word Count:** {our_site.get('word_count', 0)}\n\n"
     
-    report += "### Rakip Siteler\n\n"
+    report += "### Competitor Sites\n\n"
     
     for comp in sorted(competitors, key=lambda x: x.get("word_count", 0), reverse=True):
         if comp.get("status") != "success":
             report += f"#### {comp['domain']}\n\n"
-            report += f"- **Status:** Error — {comp.get('error', 'Unknown')}\n\n"
+            report += f"- **Status:** Error - {comp.get('error', 'Unknown')}\n\n"
             continue
         
         report += f"#### {comp['domain']}\n\n"

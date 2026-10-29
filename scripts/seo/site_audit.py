@@ -2,7 +2,7 @@
 """
 Raigulus SEO Tool - Site Audit
 ==========================================
-Site SEO denetimi:
+Site SEO audit:
 - Broken links
 - Meta tag check
 - Schema markup
@@ -22,6 +22,14 @@ from pathlib import Path
 from urllib.parse import urljoin
 import urllib.request
 import urllib.error
+import sys
+
+# Windows consoles default to a legacy code page; printing a unicode status
+# symbol would crash the tool at the last step. Emit UTF-8 instead.
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
 
 ROOT = Path(__file__).resolve().parents[2]
 REPORTS = ROOT / "seo-reports"
@@ -195,14 +203,14 @@ def generate_audit_report(broken_links, meta_issues, schema_results):
     """Generate audit report."""
     report = f"""# Raigulus SEO Audit Report
 
-**Tarih:** {datetime.now().strftime("%Y-%m-%d %H:%M")}
+**Date:** {datetime.now().strftime("%Y-%m-%d %H:%M")}
 
 ## Summary
 
 | Category | Count |
 |----------|------|
 | Broken Link | {len(broken_links)} |
-| Meta Tag Sorunu | {len(meta_issues)} |
+| Meta Tag Issues | {len(meta_issues)} |
 | Pages With Schema | {sum(1 for s in schema_results if s['has_schema'])} |
 | Pages Without Schema | {sum(1 for s in schema_results if not s['has_schema'])} |
 
@@ -297,6 +305,7 @@ def main():
         report = generate_audit_report(broken_links, meta_issues, schema_results)
         
         if args.output:
+            Path(args.output).parent.mkdir(parents=True, exist_ok=True)
             Path(args.output).write_text(report, encoding="utf-8")
             print(f"\n✓ Report saved: {args.output}")
         else:

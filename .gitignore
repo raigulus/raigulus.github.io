@@ -7,6 +7,9 @@ __pycache__/
 credentials.json
 GSC-QUEUE.txt
 
+# Generated SEO reports: uploaded as workflow artifacts, never published
+seo-reports/
+
 # Agent notes - local only
 agents/
 .omo/

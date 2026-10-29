@@ -23,6 +23,14 @@ from pathlib import Path
 from urllib.parse import quote
 import urllib.request
 import urllib.error
+import sys
+
+# Windows consoles default to a legacy code page; printing a unicode status
+# symbol would crash the tool at the last step. Emit UTF-8 instead.
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "assets" / "data"
@@ -312,8 +320,8 @@ def generate_report():
     
     report = f"""# Raigulus Keyword Ranking Report
 
-**Tarih:** {datetime.now().strftime("%Y-%m-%d %H:%M")}
-**Toplam Snapshot:** {len(history["snapshots"])}
+**Date:** {datetime.now().strftime("%Y-%m-%d %H:%M")}
+**Total Snapshots:** {len(history["snapshots"])}
 **Last Update:** {latest['date'][:10]}
 
 ## Current Rankings
@@ -399,7 +407,7 @@ def compare_weeks(weeks=4):
     
     report = f"""# Raigulus Keyword Comparison Report
 
-**Tarih:** {datetime.now().strftime("%Y-%m-%d %H:%M")}
+**Date:** {datetime.now().strftime("%Y-%m-%d %H:%M")}
 **Comparison:** Last {weeks} weeks
 
 ## Weekly Change Table
@@ -415,7 +423,7 @@ def compare_weeks(weeks=4):
         for r in snap["results"]:
             keywords.add(r["keyword"])
     
-    report += "| Anahtar Kelime |"
+    report += "| Keyword |"
     for i, snap in enumerate(snapshots):
         date = snap["date"][:10]
         report += f" {date} |"

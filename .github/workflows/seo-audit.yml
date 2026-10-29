@@ -102,12 +102,12 @@ jobs:
           path: seo-reports/*.md
           retention-days: 30
       
-      - name: Commit reports
+      - name: Commit tracked data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add seo-reports/ || true
+          # Reports stay in the run artifact (see Upload Reports); only site data is committed.
           git add assets/data/*.json || true
-          git diff --staged --quiet || git commit -m "chore: update SEO reports [skip ci]"
+          git diff --staged --quiet || git commit -m "chore: update SEO data [skip ci]"
           git push || echo "Nothing to push"
         continue-on-error: true

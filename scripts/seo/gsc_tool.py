@@ -23,6 +23,13 @@ from urllib.parse import urlencode
 import urllib.request
 import urllib.error
 
+# Windows consoles default to a legacy code page; printing a unicode status
+# symbol would crash the tool at the last step. Emit UTF-8 instead.
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
+
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "assets" / "data"
 REPORTS = ROOT / "seo-reports"
@@ -243,17 +250,17 @@ def generate_report(analytics_data, output_file=None):
     # Generate report
     report = f"""# Raigulus GSC Weekly Report
 
-**Tarih:** {datetime.now().strftime("%Y-%m-%d")}
+**Date:** {datetime.now().strftime("%Y-%m-%d")}
 **Property:** {GSC_PROPERTY}
 **Period:** Last 7 days
 
-## Genel Durum
+## Overview
 
 | Metric | Value |
 |--------|-------|
 | Total Clicks | {total_clicks} |
 | Total Impressions | {total_impressions} |
-| Ortalama CTR | %{avg_ctr:.2f} |
+| Average CTR | %{avg_ctr:.2f} |
 | Unique Queries | {len(query_stats)} |
 
 ## Top Queries By Clicks

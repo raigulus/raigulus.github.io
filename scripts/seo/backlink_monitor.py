@@ -21,6 +21,14 @@ from datetime import datetime
 from pathlib import Path
 import urllib.request
 import urllib.error
+import sys
+
+# Windows consoles default to a legacy code page; printing a unicode status
+# symbol would crash the tool at the last step. Emit UTF-8 instead.
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "assets" / "data"
@@ -131,7 +139,7 @@ def list_backlinks():
         cat = bl.get("category", "other")
         categories[cat] = categories.get(cat, 0) + 1
     
-    print(f"\n📁 Kategoriler ({len(categories)})")
+    print(f"\n📁 Categories ({len(categories)})")
     print("-" * 40)
     for cat, count in sorted(categories.items(), key=lambda x: x[1], reverse=True):
         print(f"  • {cat}: {count}")
@@ -191,10 +199,10 @@ def generate_report():
     
     report = f"""# Raigulus Backlink Report
 
-**Tarih:** {datetime.now().strftime("%Y-%m-%d %H:%M")}
-**Toplam Backlink:** {len(data['backlinks'])}
+**Date:** {datetime.now().strftime("%Y-%m-%d %H:%M")}
+**Total Backlinks:** {len(data['backlinks'])}
 
-## Genel Durum
+## Overall Status
 
 """
     
@@ -208,8 +216,8 @@ def generate_report():
     for status, count in status_count.items():
         report += f"| {status} | {count} |\n"
     
-    report += "\n## Backlink Listesi\n\n"
-    report += "| Kaynak | Hedef | Anchor | Durum |\n|--------|-------|--------|------|\n"
+    report += "\n## Backlink List\n\n"
+    report += "| Source | Target | Anchor | Status |\n|--------|--------|--------|--------|\n"
     
     for bl in data["backlinks"]:
         status = "✓" if bl.get("status") == "active" else "✗"

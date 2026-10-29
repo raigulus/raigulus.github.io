@@ -18,6 +18,14 @@ import pathlib
 import re
 import sys
 
+# Windows consoles default to a legacy code page; printing a matched region
+# marker (a lira sign, for example) would crash the guard instead of reporting
+# the finding. Emit UTF-8 and never fail on an unencodable character.
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SKIP_DIRS = {".git", "__pycache__", "node_modules", ".venv"}
 SUFFIXES = {".html", ".css", ".js", ".json", ".md", ".txt", ".xml", ".py", ".yml", ".yaml", ".svg", ".csv"}
@@ -64,15 +72,22 @@ REGION = re.compile(r"(?:\btr[-_]TR\b|\btr[-_]EDU\b|Europe/Istanbul|Asia/Istanbu
 TOKEN = re.compile(r"(?:ghp_|gho_|github_pat_|xox[baprs]-|AKIA)[A-Za-z0-9_\-]{10,}")
 
 # --- allowlist ---------------------------------------------------------------
-# (path glob, reason) - the file is exempt from the Turkish check.
-# (path glob, regex, reason) - exempt from one specific pattern.
-ALLOW = [
+# (path glob, reason) - exempt from the Turkish check only. These files quote
+# Turkish or non-English strings on purpose, but their paths, emails and region
+# markers must still be scanned. Whole-file exemptions are deliberately not
+# supported: they hid AGENTS.md from every leak check for months.
+TURKISH_ALLOW = [
     ("scripts/check_lang_privacy.py", "contains the detection patterns themselves"),
-    ("AGENTS.md", "documents the rules and quotes CJK examples on purpose"),
-    ("assets/data/build-maker.json", "'Ekim\'s Long Stick' is a real Division 2 named weapon (M700)"),
+    ("assets/data/build-maker.json", "real Division 2 named weapon that trips the Turkish word list"),
     ("assets/data/build-maker-prev.json", "same build data, previous snapshot"),
-    ("seo-reports/gsc-report-*.md", "captured GSC query strings; 'baska site' is a real query"),
     ("assets/data/gsc-analytics.json", "captured GSC query strings in several languages, e.g. Spanish"),
+]
+
+# (path glob, kinds, reason) - skip specific leak kinds for a file that has to
+# contain the pattern text itself. Kinds: local-path, email, region, token.
+LEAK_ALLOW = [
+    ("scripts/check_lang_privacy.py", {"local-path", "region"},
+     "contains the detection patterns themselves"),
 ]
 
 
@@ -81,8 +96,15 @@ def _matches(path: str, pattern: str) -> bool:
     return fnmatch.fnmatch(path, pattern) or path.endswith("/" + pattern)
 
 
-def is_allowed(path: str) -> bool:
-    return any(_matches(path, pat) for pat, _ in ALLOW)
+def turkish_exempt(path: str) -> bool:
+    return any(_matches(path, pat) for pat, _ in TURKISH_ALLOW)
+
+
+def leak_exempt(path: str) -> set:
+    for pat, kinds, _ in LEAK_ALLOW:
+        if _matches(path, pat):
+            return kinds
+    return set()
 
 
 def main() -> int:
@@ -104,7 +126,6 @@ def main() -> int:
                  if p.is_file()
                  and not (SKIP_DIRS & set(p.parts))
                  and p.suffix.lower() in SUFFIXES]
-    files = [p for p in files if not is_allowed(str(p.relative_to(ROOT)).replace("\\", "/"))]
 
     problems = []
     for f in files:
@@ -113,22 +134,26 @@ def main() -> int:
             text = f.read_text(encoding="utf-8", errors="replace")
         except Exception:
             continue
+        exempt_turkish = turkish_exempt(rel)
+        exempt_leaks = leak_exempt(rel)
         for i, line in enumerate(text.split("\n"), 1):
             if len(line) > 4000:
                 line = line[:4000]
-            if not is_allowed(rel):
+            if not exempt_turkish:
                 m = TR_CHARS.search(line) or TR_WORDS.search(line)
                 if m:
                     problems.append((rel, i, "turkish", m.group(0), line.strip()[:90]))
-            m = LOCAL_PATH.search(line)
-            if m:
-                problems.append((rel, i, "local-path", m.group(0), line.strip()[:90]))
+            if "local-path" not in exempt_leaks:
+                m = LOCAL_PATH.search(line)
+                if m:
+                    problems.append((rel, i, "local-path", m.group(0), line.strip()[:90]))
             m = EMAIL.search(line)
             if m and not EMAIL_OK.search(m.group(0)) and m.group(0).lower() not in EMAIL_ALLOW:
                 problems.append((rel, i, "email", m.group(0), line.strip()[:90]))
-            m = REGION.search(line)
-            if m:
-                problems.append((rel, i, "region", m.group(0), line.strip()[:90]))
+            if "region" not in exempt_leaks:
+                m = REGION.search(line)
+                if m:
+                    problems.append((rel, i, "region", m.group(0), line.strip()[:90]))
             m = TOKEN.search(line)
             if m:
                 problems.append((rel, i, "token", m.group(0)[:16], line.strip()[:90]))
@@ -186,6 +211,11 @@ def _self_test() -> int:
     for s in must_pass:
         if TR_CHARS.search(s) or TR_WORDS.search(s):
             failed.append(f"FALSE POSITIVE: {s!r}")
+    # The allowlist must skip the Turkish check only, never the leak checks.
+    if turkish_exempt("AGENTS.md"):
+        failed.append("ALLOWLIST: AGENTS.md must be scanned for paths, emails and regions")
+    if not turkish_exempt("scripts/check_lang_privacy.py"):
+        failed.append("ALLOWLIST: the checker itself must stay exempt from the Turkish check")
     if failed:
         print("SELF-TEST FAILED:")
         for f in failed:
