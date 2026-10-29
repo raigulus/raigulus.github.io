@@ -16,6 +16,7 @@ Usage:
 """
 
 import argparse
+import html
 import json
 import re
 from pathlib import Path
@@ -90,18 +91,31 @@ def check_links(html_files):
     return broken_links
 
 
+def is_non_indexable(content: str) -> bool:
+    """Redirect stubs and noindex pages are not content pages; skip meta checks."""
+    if re.search(r'<meta\s+name=["\']robots["\'][^>]*noindex', content, re.IGNORECASE):
+        return True
+    if re.search(r'<meta\s+http-equiv=["\']refresh["\']', content, re.IGNORECASE):
+        return True
+    return False
+
+
 def check_meta_tags(html_files):
     """Check meta tags for SEO issues."""
     issues = []
     
     for html_file in html_files:
+        if html_file.name.startswith("google") or html_file.name == "404.html":
+            continue
         content = html_file.read_text(encoding="utf-8", errors="replace")
+        if is_non_indexable(content):
+            continue
         rel_path = str(html_file.relative_to(ROOT))
         
         # Check title
         title_match = re.search(r"<title>([^<]+)</title>", content, re.IGNORECASE)
         if title_match:
-            title = title_match.group(1).strip()
+            title = html.unescape(title_match.group(1).strip())
             if len(title) > MAX_TITLE_LENGTH:
                 issues.append({
                     "file": rel_path,
@@ -116,10 +130,13 @@ def check_meta_tags(html_files):
                 "detail": "No <title> tag found",
             })
         
-        # Check meta description
-        desc_match = re.search(r'<meta\s+name=["\']description["\']\s+content=["\']([^"\']+)["\']', content, re.IGNORECASE)
+        # Check meta description. Match the opening and closing quote separately so
+        # apostrophes inside the text ("Acosta's") do not truncate the value.
+        desc_match = re.search(r'<meta\s+name=["\']description["\']\s+content="([^"]*)"', content, re.IGNORECASE)
+        if not desc_match:
+            desc_match = re.search(r"<meta\s+name=['\"]description['\"]\s+content='([^']*)'", content, re.IGNORECASE)
         if desc_match:
-            desc = desc_match.group(1).strip()
+            desc = html.unescape(desc_match.group(1).strip())
             if len(desc) > MAX_DESCRIPTION_LENGTH:
                 issues.append({
                     "file": rel_path,
@@ -172,7 +189,11 @@ def check_schema(html_files):
     results = []
     
     for html_file in html_files:
+        if html_file.name.startswith("google") or html_file.name == "404.html":
+            continue
         content = html_file.read_text(encoding="utf-8", errors="replace")
+        if is_non_indexable(content):
+            continue
         rel_path = str(html_file.relative_to(ROOT))
         
         # Find JSON-LD

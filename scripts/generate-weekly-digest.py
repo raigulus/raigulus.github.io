@@ -147,7 +147,7 @@ def main():
             "read the full post</a>.</p>"
         )
 
-    title = f"This Week in Division 2 ({short_label}): Loot, Vendors & Reset [2026]"
+    title = f"This Week in Division 2 ({short_label}): Loot & Reset [2026]"
     desc = (
         f"What resets in The Division 2 this week ({day_label}): targeted loot rotation, "
         f"vendor caches, {SEASON_LABEL} manhunt week {week_n}, server status and maintenance notes by Raigulus."
