@@ -223,17 +223,20 @@ def render_page(record: dict, records: list[dict]) -> str:
         % (esc(q).replace("'", "\\u0027"), esc(a).replace("'", "\\u0027"))
         for q, a in faq
     )
+    duration_seconds = int(record.get("_duration_seconds") or 0)
+    duration_ld = f'"duration":"PT{duration_seconds}S",' if duration_seconds > 0 else ""
     video_ld = (
         '{"@context":"https://schema.org","@type":"VideoObject","name":"%s","description":"%s",'
-        '"thumbnailUrl":["https://i.ytimg.com/vi/%s/hqdefault.jpg"],"uploadDate":"%s",'
-        '"embedUrl":"https://www.youtube.com/embed/%s","contentUrl":"https://www.youtube.com/watch?v=%s",'
+        '"thumbnailUrl":["https://i.ytimg.com/vi/%s/hqdefault.jpg"],"uploadDate":"%s",%s'
+        '"embedUrl":"https://www.youtube.com/embed/%s",'
         '"keywords":[%s],"author":{"@type":"Person","name":"Raigulus","url":"https://raigulus.github.io",'
         '"sameAs":["https://www.youtube.com/@raigulus","https://www.instagram.com/raigulus/","https://www.facebook.com/raigulus/"]},'
+        '"creator":{"@type":"Organization","name":"Raigulus","url":"https://raigulus.github.io/"},'
         '"publisher":{"@type":"Organization","name":"Raigulus","url":"https://raigulus.github.io",'
         '"sameAs":["https://www.youtube.com/@raigulus","https://www.instagram.com/raigulus/","https://www.facebook.com/raigulus/"]}}'
     ) % (
         esc(record["title"]).replace("'", "\\u0027"), esc(record["_summary"]).replace("'", "\\u0027"),
-        vid, record["published_date"] + "T00:00:00+00:00", vid, vid,
+        vid, record["published_date"] + "T00:00:00+00:00", duration_ld, vid,
         ",".join('"%s"' % esc(k).replace("'", "\\u0027") for k in keywords),
     )
     breadcrumb_ld = (
