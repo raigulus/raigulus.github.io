@@ -430,7 +430,7 @@
           var lootStatus=document.querySelector('[data-dynamic="loot-status"]');
           if(lootStatus&&d.loot.active){
             lootStatus.textContent="Loot today: "+d.loot.mission_count+" missions · "+d.loot.vendor_count+" vendor";
-            lootStatus.style.color="rgba(34,197,94,.8)"
+            lootStatus.classList.add("is-live")
           }
 
           var lootNext=document.querySelector('[data-dynamic="loot-next"]');

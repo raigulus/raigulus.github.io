@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /scripts/
+Disallow: /AGENTS.md
 
 User-agent: OAI-SearchBot
 Allow: /

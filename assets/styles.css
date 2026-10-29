@@ -833,7 +833,7 @@ body.has-search-open{overflow:hidden}
 }
 .wb-alert-card select:hover{border-color:var(--accent)}
 .wb-alert-card select:focus-visible{outline:1px solid var(--accent);border-color:var(--accent)}
-.wb-alert-card label{color:var(--text-sub)}
+.wb-alert-card label{color:#625e56}
 .wb-alert-card input[type=checkbox]{accent-color:var(--special)}
 .wb-alert-btn{
   display:inline-flex;align-items:center;justify-content:center;
@@ -923,3 +923,28 @@ mark{background:rgb(20 184 166 / .30);color:inherit;border-radius:3px;padding:0 
 }
 
 .home-kicker{margin:0 0 10px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.72}
+
+/* Wide data tables scroll inside their own box instead of widening the page. */
+.table-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.table-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* Inner pages have a simpler footer than the home page; the theme button still
+   needs a slot there so the stored theme can be changed from any page. */
+.footer-right-fallback{margin-top:10px;display:flex;justify-content:center}
+@media(max-width:700px){
+  .wb-spawns-table{font-size:12px}
+  .wb-spawns-table th,.wb-spawns-table td{padding-left:8px;padding-right:8px}
+}
+
+/* Light-theme contrast fixes: the archive paper is light, so the dark-theme
+   accent greens and oranges fall below 4.5:1 on it. Darker equivalents keep
+   the same hue and clear AA at body sizes. */
+:root[data-theme=light] .home-badge.is-live{color:#1f6b3a}
+:root[data-theme=light] .btn-primary,
+:root[data-theme=light] .discord-btn,
+:root[data-theme=light] .rg-consent-btn-primary{color:#fff}
+:root[data-theme=light] .bm-chg-added{color:#1f6b3a}
+:root[data-theme=light] .bm-slot-change,
+:root[data-theme=light] .bm-slot:not(.rar-high):not(.rar-exotic) .bm-slot-name.bm-cta,
+:root[data-theme=light] #bm-mbar-summary{color:#a6401a}
+:root[data-theme=light] .bm-slot-change:hover{color:#8a3f12}
+.home-badge.is-live{color:rgba(34,197,94,.8)}

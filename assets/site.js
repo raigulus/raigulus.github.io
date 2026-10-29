@@ -18,7 +18,13 @@
 
   function init() {
     var footer = document.querySelector(".footer-right");
-    if (!footer) return;
+    if (!footer) {
+      var shell = document.querySelector(".site-footer");
+      if (!shell) return;
+      footer = document.createElement("div");
+      footer.className = "footer-right footer-right-fallback";
+      shell.appendChild(footer);
+    }
     var names = { "": "Division", ice: "Ice", toxic: "Toxin", void: "Void", light: "Light" };
     var btn = document.createElement("button");
     btn.type = "button";
