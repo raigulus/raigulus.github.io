@@ -37,6 +37,33 @@ jobs:
           VIDEOS_LOOKBACK_HOURS: ${{ inputs.backfill_hours }}
         run: python3 scripts/update-escalation-data.py --submit-indexnow --post-discord --post-latest-videos --post-status
 
+      # Persist Discord dedup state before any later step can fail. Without
+      # this, a metadata check failure leaves the channel state uncommitted and
+      # the next hourly run reposts the same video.
+      - name: Persist Discord state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/data/discord_videos_state.json assets/data/discord_loot_state.json assets/data/discord_status_state.json
+          if git diff --cached --quiet; then
+            echo "Discord state unchanged."
+            exit 0
+          fi
+          git commit -m "chore: persist discord state"
+          for attempt in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            if [ "$attempt" = 3 ]; then
+              echo "Discord state push rejected after ${attempt} attempts."
+              exit 1
+            fi
+            git fetch origin main
+            git stash
+            git rebase origin/main
+            git stash pop || true
+          done
+
       - name: Synchronize generated site metadata
         run: python3 scripts/sync_site_metadata.py
 
