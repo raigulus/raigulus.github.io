@@ -948,3 +948,19 @@ mark{background:rgb(20 184 166 / .30);color:inherit;border-radius:3px;padding:0 
 :root[data-theme=light] #bm-mbar-summary{color:#a6401a}
 :root[data-theme=light] .bm-slot-change:hover{color:#8a3f12}
 .home-badge.is-live{color:rgba(34,197,94,.8)}
+
+/* Compact embed of the Diablo 4 world boss timer. The embed page has no site
+   chrome; the attribution link is the only requirement for re-use. */
+.embed-page{background:var(--page-bg);color:var(--page-ink);margin:0}
+.embed-page .embed-wrap{max-width:380px;margin:0 auto;padding:14px}
+.embed-page .embed-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}
+.embed-page .embed-head h1{font-size:15px;margin:0;font-family:var(--display);letter-spacing:.04em;text-transform:uppercase}
+.embed-page .embed-head a{font-size:11px;color:var(--accent)}
+.embed-spawns th:first-child,.embed-spawns td:first-child,
+.embed-spawns th:last-child,.embed-spawns td:last-child{display:none}
+.embed-spawns tr:nth-child(n+6){display:none}
+.embed-page .facts{margin-bottom:8px}
+.embed-credit{margin:8px 0 0;text-align:center;font-size:10px;color:var(--text-dim)}
+.embed-credit a{color:var(--accent)}
+.embed-code{background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:12px;overflow-x:auto;font-size:11px}
+.embed-code code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
