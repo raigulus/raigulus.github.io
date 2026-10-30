@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-30T00:05:17Z",
+  "generated_at": "2026-10-30T11:13:12Z",
   "stats": {
-    "total_guides": 486,
+    "total_guides": 487,
     "exotics": 79,
     "patches": 32
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "Sniper vs Escalation: Is this the Most Lethal Build?",
+      "url": "https://raigulus.github.io/division-2/videos/sniper-vs-escalation-is-this-the-most-lethal-build/",
+      "youtube_url": "https://www.youtube.com/watch?v=_LbRvLCz3kc",
+      "thumbnail": "/assets/img/yt/_LbRvLCz3kc-hqdefault.jpg",
+      "published_date": "2026-10-30",
+      "cluster": "escalation run",
+      "summary": "Can a Chainkiller + Turmoil sniper build clear The Division 2 Tier 10 Escalation without Iron Will or Prima Donna? I took it into Potomac Event Center to find o"
+    },
     {
       "title": "Worst Assault Rifle in Division 2? Chameleon Tier 10",
       "url": "https://raigulus.github.io/division-2/videos/worst-assault-rifle-in-division-2-chameleon-tier-1/",
@@ -28,24 +37,20 @@
       "published_date": "2026-10-26",
       "cluster": "pvp/archive clip",
       "summary": "Experience intense PvP action in The Division 2 Dark Zone! This short showcases raw skill and epic eliminations. Watch as agents clash in high-stakes encounters"
-    },
-    {
-      "title": "Can an Assault Rifle Clear Tier 10? Eagle Bearer 13",
-      "url": "https://raigulus.github.io/division-2/videos/can-an-assault-rifle-clear-tier-10-eagle-bearer-13/",
-      "youtube_url": "https://www.youtube.com/watch?v=Zs6IAY6XJ00",
-      "thumbnail": "/assets/img/yt/Zs6IAY6XJ00-hqdefault.jpg",
-      "published_date": "2026-10-23",
-      "cluster": "escalation run",
-      "summary": "Can the Eagle Bearer handle a Tier 10 run? Watch this 13-minute clear to see how an assault rifle performs under pressure.  This session tests the viability of"
     }
   ],
   "loot": {
-    "active": false
+    "active": true,
+    "date": "2026-10-30",
+    "rotation": "Weekly Escalation Rotation",
+    "mission_count": 5,
+    "vendor_count": 2,
+    "next_update": "Around 07:00 UTC"
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-10-30 00:05 UTC"
+    "last_checked": "2026-10-30 11:13 UTC"
   },
   "discord_members": 58,
-  "next_reset_utc": "2026-10-30T07:00:00Z"
+  "next_reset_utc": "2026-10-31T07:00:00Z"
 }
