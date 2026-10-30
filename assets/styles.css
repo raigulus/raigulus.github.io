@@ -964,3 +964,9 @@ mark{background:rgb(20 184 166 / .30);color:inherit;border-radius:3px;padding:0 
 .embed-credit a{color:var(--accent)}
 .embed-code{background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:12px;overflow-x:auto;font-size:11px}
 .embed-code code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+
+/* Diablo 4 tool strip: the site nav is Division 2 heavy, so Diablo pages get a
+   small local nav that links the three timers and the hub together. */
+.d4-nav{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px}
+.d4-nav a{padding:4px 9px;border:1px solid var(--border2);border-radius:999px;font-size:11px;color:var(--text-sub)}
+.d4-nav a:hover,.d4-nav a[aria-current=page]{border-color:var(--accent);color:var(--accent)}
