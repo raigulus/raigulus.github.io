@@ -4,26 +4,24 @@
 // not published by Blizzard and changes between seasons (seasonal bosses join it), so this
 // file deliberately makes no claim about which boss appears next.
 //
-// The anchor is the current UTC day's 00:00 rather than a fixed epoch, because 210 does
-// not divide a 24h day (24 / 3.5 = 6.857) and a fixed anchor would drift 3h per day.
+// The anchor is a community-synced spawn (2026-10-30 00:00 UTC), not the current
+// UTC day. A 210-minute cycle does not divide into 24 hours, so the times shift
+// 30 minutes later each day; resetting at midnight would skip that shift.
 (function () {
   "use strict";
 
   var CYCLE_MIN = 210;
   var ROWS = 12;
+  var ANCHOR = Date.UTC(2026, 9, 30, 0, 0, 0);
   var STORAGE_KEY = "raigulus-d4-wb-alert";
-
-  function currentDayEpoch() {
-    var now = new Date();
-    return Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 0, 0, 0);
-  }
 
   function upcomingSpawns(count) {
     var cycleMs = CYCLE_MIN * 60 * 1000;
     var now = Date.now();
-    var epoch = currentDayEpoch();
-    var position = ((now - epoch) % cycleMs + cycleMs) % cycleMs;
-    var first = now + (cycleMs - position);
+    var index = Math.floor((now - ANCHOR) / cycleMs);
+    var first = ANCHOR + index * cycleMs;
+    // Keep the active spawn as the first row during its 15-minute kill window.
+    if (now - first >= 15 * 60 * 1000) first += cycleMs;
     var out = [];
     for (var i = 0; i < count; i++) out.push(new Date(first + i * cycleMs));
     return out;

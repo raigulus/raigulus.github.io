@@ -4,13 +4,13 @@
 // shared epoch. All source-of-truth values are UTC; display converts from UTC.
 //
 // Anchor note: World Boss spawns on a 210-minute (3.5h) cycle. 210 does NOT divide a
-// 24h day (24/3.5 = 6.857), so a FIXED epoch makes the cycle drift 3h per day and the
-// "next spawn" wall-clock time would be wrong for every day except the epoch's own.
-// The anchor is therefore the CURRENT UTC day's 00:00, recomputed on every tick, which
-// keeps spawns on the :00/:30 UTC grid and stable across days.
+// 24h day (24/3.5 = 6.857), so the schedule shifts 30 minutes later each day. A page
+// that needs the real World Boss grid supplies data-anchor (a community-synced UTC
+// spawn); hourly events can keep the current-day epoch.
 //
-// Verified against two independent live trackers (nexttier.pro and
-// diablo4worldbosstimer.live), which report the same grid: 07:00, 10:30, 14:00, 17:30.
+// The World Boss anchor used on this site was verified on 2026-10-30 against public
+// trackers, which all reported 00:00, 03:30, 07:00, 10:30, 14:00, 17:30, 21:00 UTC
+// and then 00:30 UTC the next day.
 //
 // Per-page configuration is declared on the page, not here:
 //   <div class="video-card" data-timer="world-boss"
@@ -25,8 +25,8 @@
 (function () {
   "use strict";
 
-  // Anchor for the current UTC day, recomputed on every tick so the cycle stays on the
-  // :00/:30 grid instead of drifting 3h per day (see note above).
+  // Used by hourly events, which reset on the UTC day. World Boss cards pass a fixed
+  // data-anchor instead, because their 3.5h cycle crosses midnight.
   function currentDayEpoch() {
     var now = new Date();
     return Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 0, 0, 0);
@@ -53,7 +53,7 @@
     var cycleMs = cfg.cycle * 60 * 1000;
     var durationMs = cfg.duration * 60 * 1000;
     var now = Date.now();
-    var epoch = currentDayEpoch();
+    var epoch = cfg.anchor || currentDayEpoch();
     var cyclePosition = ((now - epoch) % cycleMs + cycleMs) % cycleMs;
     var nextStartMs = now + (cycleMs - cyclePosition);
     return {
@@ -81,7 +81,13 @@
       warnLabel: card.getAttribute("data-warn-label") || "",
       idleLabel: card.getAttribute("data-idle-label") || "Starts in",
       infoIdle: card.getAttribute("data-info-idle") || "",
-      warnBefore: parseFloat(card.getAttribute("data-warn-before") || "0")
+      warnBefore: parseFloat(card.getAttribute("data-warn-before") || "0"),
+      anchor: (function () {
+        var value = card.getAttribute("data-anchor");
+        if (!value) return null;
+        var parsed = Date.parse(value);
+        return isNaN(parsed) ? null : parsed;
+      })()
     };
     if (!cfg.cycle || !cfg.duration) return;
 
