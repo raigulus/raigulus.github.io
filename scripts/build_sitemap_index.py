@@ -56,9 +56,8 @@ def main() -> int:
         f"{body}\n"
         "</sitemapindex>\n"
     )
-    (OUT / "index.xml").write_text(index, encoding="utf-8")
     (ROOT / "sitemap-index.xml").write_text(index, encoding="utf-8")
-    print(f"index.xml + sitemap-index.xml: {len(children)} children, total {len(all_urls)} URLs")
+    print(f"sitemap-index.xml: {len(children)} children, total {len(all_urls)} URLs")
     return 0
 
 
