@@ -40,6 +40,65 @@ def esc(value):
     return html.escape(str(value), quote=True)
 
 
+OG_IMAGE = BASE_URL + "/assets/og-default.png"
+LOGO_IMAGE = BASE_URL + "/assets/raigulus-logo.jpg"
+DEFAULT_MODIFIED = None
+
+
+COLLECTIBLE_SUMMARY_RE = re.compile(
+    r"^A collection of (\d+) (\w+) from The Division universe, including (.+?)\. "
+    r"(\d+) entries include full audio transcripts; (\d+) have known map locations\.$"
+)
+
+
+def meta_description(description, title=""):
+    """Keep lore descriptions short, contextual and keyword-bearing."""
+    match = COLLECTIBLE_SUMMARY_RE.match(description)
+    if match:
+        count, noun, _items, _audio, maps = match.groups()
+        first = _items.split(",")[0].strip()
+        if title.startswith("TD2"):
+            game = "The Division 2"
+        elif title.startswith("TD1"):
+            game = "The Division"
+        else:
+            game = "The Division universe"
+        tail = "full transcripts and known map locations" if int(maps) else "full transcripts"
+        return f"{count} {noun} from {game}: {first} and {int(count) - 1} more, with {tail}."
+    description = brand_description(description)
+    if len(description) <= 160:
+        return description
+    cut = description[:152].rsplit(" ", 1)[0].rstrip(",;:")
+    return cut + "..."
+
+
+def brand_description(description):
+    """Add the franchise keyword when a lore summary never mentions it."""
+    if "division" in description.lower():
+        return description
+    base = description.rstrip()
+    if not base.endswith((".", "!", "?")):
+        base += "."
+    extra = " Part of the Raigulus Division lore archive."
+    if len(base) + len(extra) <= 160:
+        return base + extra
+    return description
+
+
+def lore_suffix(entry, title):
+    """Pick the longest Division label that keeps the title within 60 characters."""
+    if entry["section"] == "works":
+        options = [" | Division Lore | Raigulus", " | Division Lore", " | D2 Lore"]
+    elif entry["title"].startswith("TD1"):
+        options = [" | The Division Lore | Raigulus", " | Division Lore", " | D2 Lore"]
+    else:
+        options = [" | Division 2 Lore | Raigulus", " | Division 2 Lore", " | D2 Lore"]
+    for option in options:
+        if len(title) + len(option) <= 60:
+            return option
+    return options[-1]
+
+
 def page_url(entry):
     return f"/lore/{entry['section']}/{entry['slug']}/"
 
@@ -65,16 +124,40 @@ def source_ids_for_claims(claim_ids, claim_map):
     return source_ids
 
 
-def head(title, description, canonical, schema_type="Article"):
+def head(title, description, canonical, schema_type="Article", published=None, modified=None, suffix=" | Raigulus Lore"):
+    description = meta_description(description, title)
+    modified = modified or DEFAULT_MODIFIED
+    structured_data = {
+        "@context": "https://schema.org",
+        "@type": schema_type,
+        "name": title,
+        "headline": title,
+        "description": description,
+        "url": canonical,
+        "isPartOf": {"@type": "WebSite", "name": "Raigulus", "url": BASE_URL},
+    }
+    if modified:
+        structured_data["dateModified"] = modified
+        structured_data["author"] = {
+            "@type": "Person",
+            "name": "Raigulus",
+            "url": BASE_URL + "/about/",
+        }
+    if schema_type == "Article":
+        structured_data["image"] = OG_IMAGE
+        if not published:
+            published = modified
+        elif modified and published > modified:
+            published = modified
+        if published:
+            structured_data["datePublished"] = published
+        structured_data["publisher"] = {
+            "@type": "Organization",
+            "name": "Raigulus",
+            "logo": {"@type": "ImageObject", "url": LOGO_IMAGE},
+        }
     structured = json.dumps(
-        {
-            "@context": "https://schema.org",
-            "@type": schema_type,
-            "name": title,
-            "description": description,
-            "url": canonical,
-            "isPartOf": {"@type": "WebSite", "name": "Raigulus", "url": BASE_URL},
-        },
+        structured_data,
         ensure_ascii=False,
         separators=(",", ":"),
     )
@@ -87,14 +170,18 @@ def head(title, description, canonical, schema_type="Article"):
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; upgrade-insecure-requests">
   <meta name="theme-color" content="#0b0d11">
-  <title>{esc(title)} | Raigulus Lore</title>
+  <title>{esc(title)}{suffix}</title>
   <meta name="description" content="{esc(description)}">
   <link rel="canonical" href="{esc(canonical)}">
-  <meta property="og:title" content="{esc(title)} | Raigulus Lore">
+  <meta property="og:title" content="{esc(title)}{suffix}">
   <meta property="og:description" content="{esc(description)}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="{esc(canonical)}">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="{OG_IMAGE}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{OG_IMAGE}">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/barlow-condensed-700-latin.woff2">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/inter-400-latin.woff2">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -282,7 +369,8 @@ def render_entry(entry, entries_by_id, sources_by_id):
     aliases = ""
     if entry.get("aliases"):
         aliases = f'<p class="aliases"><strong>Also known as:</strong> {esc(", ".join(entry["aliases"]))}</p>'
-    content = f'''{head(page_title, entry['summary'], canonical)}
+    label = lore_suffix(entry, page_title)
+    content = f'''{head(page_title, entry['summary'], canonical, modified=verification.get('last_reviewed'), suffix=label)}
 <body>
 {header()}
 <main class="lore-shell">
@@ -461,7 +549,7 @@ def render_editorial_page(page):
             f'{esc(page.get("action_label", "Open request"))}</a></p>'
         )
     canonical = BASE_URL + f'/lore/{page["slug"]}/'
-    return f'''{head(page['title'], page['description'], canonical)}
+    return f'''{head(page['title'], page['description'], canonical, suffix=" | Division Lore | Raigulus")}
 <body>
 {header()}
 <main class="lore-shell">
@@ -519,7 +607,7 @@ def render_coverage(entries, inventories):
   </table></div>
 </section>''')
     description = "Transparent coverage counts and acknowledged evidence gaps for the Raigulus Division Lore Archive."
-    return f'''{head('Lore Coverage', description, BASE_URL + '/lore/coverage/', 'CollectionPage')}
+    return f'''{head('Lore Coverage', description, BASE_URL + '/lore/coverage/', 'CollectionPage', suffix=' | Division 2 Lore | Raigulus')}
 <body>
 {header()}
 <main class="lore-shell">
@@ -563,7 +651,7 @@ def render_review_queue(entries, inventories):
         for _, category in blocked_categories
     )
     description = "Records and coverage areas awaiting human review or stronger evidence."
-    return f'''{head('Lore Review Queue', description, BASE_URL + '/lore/review-queue/', 'CollectionPage')}
+    return f'''{head('Lore Review Queue', description, BASE_URL + '/lore/review-queue/', 'CollectionPage', suffix=' | Division 2 Lore | Raigulus')}
 <body>
 {header()}
 <main class="lore-shell">
@@ -610,7 +698,7 @@ def render_timeline(entries, sources_by_id):
   </div>
 </li>''')
     empty = '<li class="timeline-item"><div class="timeline-copy"><p>No sourced timeline events have been added yet.</p></div></li>'
-    title = "The Division 2 Story Timeline & Lore Chronology"
+    title = "The Division 2 Story Timeline & Chronology"
     description = "Follow The Division 2 story timeline through the Washington campaign, Year One Episodes and Warlords of New York, with source-linked wider Division context."
     return f'''{head(title, description, BASE_URL + '/lore/timeline/', 'CollectionPage')}
 <body>
@@ -699,8 +787,8 @@ def render_sources(sources):
             f'<td>{esc(source["accessed_date"])}</td>'
             "</tr>"
         )
-    description = "Source registry for the Raigulus Division Lore Archive."
-    return f'''{head('Lore Source Registry', description, BASE_URL + '/lore/sources/', 'CollectionPage')}
+    description = "Source registry for the Raigulus Division Lore Archive: every publisher, source type, scope and access date behind a published lore claim."
+    return f'''{head('Lore Source Registry', description, BASE_URL + '/lore/sources/', 'CollectionPage', suffix=' | Division 2 Lore | Raigulus')}
 <body>
 {header()}
 <main class="lore-shell">
@@ -834,6 +922,13 @@ def main():
         return 1
     sources_by_id = {source["id"]: source for source in sources}
     entries_by_id = {entry["id"]: entry for entry in entries}
+    global DEFAULT_MODIFIED
+    reviewed = [
+        entry["verification"]["last_reviewed"]
+        for entry in entries
+        if entry.get("verification", {}).get("last_reviewed")
+    ]
+    DEFAULT_MODIFIED = max(reviewed) if reviewed else None
     inventories = load_inventories()
     editorial_pages = load_editorial()["pages"]
     reading_order = load_reading_order()

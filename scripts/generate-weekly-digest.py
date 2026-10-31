@@ -16,6 +16,7 @@ Usage:
 
 import html
 import json
+import re
 import sys
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -79,6 +80,202 @@ def tuesday_of(day):
 
 def fmt_day(d):
     return f"{d.strftime('%b')} {d.day}"
+
+
+WEEK_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+
+def read_page_meta(path):
+    try:
+        t = path.read_text(encoding="utf-8")
+    except Exception:
+        return "", ""
+    tm = re.search(r"<title>(.*?)</title>", t, re.S | re.I)
+    dm = re.search(r'<meta name="description" content="(.*?)">', t, re.S | re.I)
+    title = html.unescape(re.sub(r"<[^>]+>", "", tm.group(1))).strip() if tm else ""
+    desc = html.unescape(dm.group(1)).strip() if dm else ""
+    return title, desc
+
+
+def write_archive_index():
+    """Rebuild /division-2/this-week/ so every digest has a crawlable hub."""
+    base = ROOT / "division-2" / "this-week"
+    if not base.exists():
+        return 0
+    weeks = sorted(
+        (p.name for p in base.iterdir() if p.is_dir() and WEEK_RE.match(p.name)),
+        reverse=True,
+    )
+    if not weeks:
+        return 0
+
+    cards = []
+    items = []
+    for i, slug in enumerate(weeks):
+        d = datetime.strptime(slug, "%Y-%m-%d").date()
+        label = f"{d.strftime('%b')} {d.day}, {d.year}"
+        _, desc = read_page_meta(base / slug / "index.html")
+        eyebrow = "Latest week" if i == 0 else "Weekly digest"
+        path = f"/division-2/this-week/{slug}/"
+        url = f"{BASE_URL}{path}"
+        cards.append(
+            '          <article class="video-card" data-c="special">\n'
+            '  <div class="card-body">\n'
+            f'    <p class="eyebrow">{eyebrow}</p>\n'
+            f'    <h2><a href="{path}">Week of {esc(label)}</a></h2>\n'
+            f'    <p>{esc(desc)}</p>\n'
+            f'    <p class="meta"><a href="{path}">Read the digest</a></p>\n'
+            '  </div>\n'
+            '</article>\n'
+        )
+        items.append(
+            '{"@type":"ListItem","position":%d,"url":"%s","name":"Week of %s"}'
+            % (i + 1, url, esc(label))
+        )
+
+    newest = weeks[0]
+    title = "Division 2 This Week: Reset & Loot Archive | Raigulus"
+    desc = (
+        "Every weekly Division 2 reset digest: targeted loot rotation, vendor caches, "
+        "manhunt week, server status, and maintenance notes. Updated every Tuesday."
+    )
+    url = f"{BASE_URL}/division-2/this-week/"
+    count = len(weeks)
+    noun = "week" if count == 1 else "weeks"
+
+    html_doc = f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; upgrade-insecure-requests">
+  <title>{esc(title)}</title>
+  <meta name="description" content="{esc(desc)}">
+  <link rel="canonical" href="{url}">
+  <link rel="alternate" type="application/rss+xml" title="Raigulus Division 2 video feed" href="https://raigulus.github.io/feed.xml">
+  <meta property="og:title" content="{esc(title)}">
+  <meta property="og:description" content="{esc(desc)}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{url}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://raigulus.github.io/assets/img/yt/CTbj7jMF1rI-hqdefault.jpg">
+  <meta property="twitter:image" content="https://raigulus.github.io/assets/img/yt/CTbj7jMF1rI-hqdefault.jpg">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/barlow-condensed-700-latin.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/inter-400-latin.woff2">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/search.js" defer></script>
+  <script src="/assets/site.js" defer></script>
+  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"CollectionPage","name":"{esc(title)}","description":"{esc(desc)}","url":"{url}","dateModified":"{newest}","author":{{"@type":"Person","name":"Raigulus","url":"https://raigulus.github.io/about/"}},"isPartOf":{{"@type":"WebSite","name":"Raigulus","url":"https://raigulus.github.io"}}}}</script>
+  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"https://raigulus.github.io/"}},{{"@type":"ListItem","position":2,"name":"The Division 2","item":"https://raigulus.github.io/division-2/"}},{{"@type":"ListItem","position":3,"name":"This Week","item":"{url}"}}]}}</script>
+  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"ItemList","url":"{url}","itemListElement":[{",".join(items)}]}}</script>
+{analytics_block()}
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">Raigulus</a>
+    <nav>
+      <a href="/division-2/">Division 2</a>
+      <a href="/division-2/builds/">Builds</a>
+      <a href="/division-2/build-maker/">Build Maker</a>
+      <a href="/division-2/loot/">Loot</a>
+      <a href="/division-2/server-status/">Server Status</a>
+      <a href="/division-2/patches/">Patches</a>
+      <a href="/division-2/missions/">Missions</a>
+      <a href="/division-2/escalation/">Escalation</a>
+      <a href="/division-2/dark-zone-surge/">Dark Zone</a>
+      <a href="/division-2/manhunts/">Manhunts</a>
+      <a href="/division-2/patches/#bosses">Bosses</a>
+      <a href="/division-2/incursions-raids/">Incursions &amp; Raids</a>
+      <a href="/division-2/pvp/">PvP</a>
+      <a href="/lore/">Lore</a>
+      <a href="/about/">About</a>
+      <a href="/discord/">Discord</a>
+      <a href="https://www.youtube.com/@raigulus">YouTube</a>
+    </nav>
+    <button type="button" class="header-search-btn" data-search-open aria-label="Search the Raigulus archive" aria-haspopup="dialog"><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="9" cy="9" r="6"></circle><path d="M13.5 13.5 18 18"></path></svg><span class="header-search-btn-text">Search</span></button>
+  </header>
+  <main>
+    <section class="section">
+      <div class="content">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/division-2/">The Division 2</a> / <span>This Week</span></nav>
+        <p class="eyebrow">The Division 2 / This Week</p>
+        <h1>This Week in The Division 2: Weekly Reset Archive</h1>
+        <p>Every weekly Division 2 reset digest in one place: targeted loot rotation, vendor caches, the current manhunt week, server status, and maintenance notes. A new digest is generated every Tuesday and the archive keeps the previous weeks for reference.</p>
+        <p class="meta">{count} {noun} archived · Newest: <time datetime="{newest}">{datetime.strptime(newest, '%Y-%m-%d').strftime('%b')} {datetime.strptime(newest, '%Y-%m-%d').day}, {datetime.strptime(newest, '%Y-%m-%d').year}</time> · Updated every Tuesday</p>
+        <h2>Weekly digests</h2>
+        <div class="grid">
+{''.join(cards)}        </div>
+        <h2>Related Guide Hubs</h2>
+        <div class="grid">
+          <article class="video-card" data-c="special">
+  <div class="card-body">
+    <p class="eyebrow">Loot Today</p>
+    <h2><a href="/division-2/loot/">Division 2 Loot Today and Targeted Loot</a></h2>
+    <p>Today's targeted loot snapshot, updated around the daily 08:00 UTC reset.</p>
+    <p class="meta"><a href="/division-2/loot/">Open hub</a></p>
+  </div>
+</article>
+          <article class="video-card" data-c="special">
+  <div class="card-body">
+    <p class="eyebrow">Reset Times</p>
+    <h2><a href="/division-2/reset/">Division 2 Reset Times &amp; Countdowns</a></h2>
+    <p>Daily 08:00 UTC reset, weekly Tuesday vendors and live countdowns.</p>
+    <p class="meta"><a href="/division-2/reset/">Open hub</a></p>
+  </div>
+</article>
+          <article class="video-card" data-c="special">
+  <div class="card-body">
+    <p class="eyebrow">Manhunts</p>
+    <h2><a href="/division-2/manhunts/">Manhunt Walkthroughs &amp; Target Routes</a></h2>
+    <p>Weekly scout objectives and HVT walkthroughs for the current season.</p>
+    <p class="meta"><a href="/division-2/manhunts/">Open hub</a></p>
+  </div>
+</article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>Raigulus archives The Division 2 no commentary walkthroughs, mission and build guides, plus Conflict PvP, Dark Zone, Regulus, and gameplay clips.</p>
+    <p><a href="https://www.youtube.com/@raigulus">YouTube @raigulus</a> <span>/</span> <a href="https://www.instagram.com/raigulus/">Instagram @raigulus</a> <span>/</span> <a href="https://www.facebook.com/raigulus/">Facebook</a> <span>/</span> <a href="/discord/">Discord</a> <span>/</span> <a href="/privacy/">Privacy</a> <span>/</span> <a href="/cookies/">Cookies</a> <span>/</span> <a href="/terms/">Terms</a> <span>/</span> <a href="#" data-consent-open>Cookie settings</a></p>
+  </footer>
+<div class="site-search-overlay" id="site-search-overlay" role="dialog" aria-modal="true" aria-label="Search the Raigulus archive" hidden>
+  <div class="site-search-panel">
+    <div class="site-search-head">
+      <input id="site-search-overlay-input" type="search" placeholder="Search guides, timers, lore, videos..." aria-label="Search query" autocomplete="off">
+      <button type="button" class="site-search-close" data-search-close aria-label="Close search">&times;</button>
+    </div>
+    <p class="meta" id="site-search-overlay-status"></p>
+    <div id="site-search-overlay-results" class="site-search-results"></div>
+    <p class="meta site-search-footnote">Press <kbd>/</kbd> to open, <kbd>Esc</kbd> to close.</p>
+  </div>
+</div>
+</body>
+</html>
+"""
+
+    index_path = base / "index.html"
+    changed = not index_path.exists() or index_path.read_text(encoding="utf-8") != html_doc
+    if changed:
+        index_path.write_text(html_doc, encoding="utf-8")
+
+    loc = f"{BASE_URL}/division-2/this-week/"
+    txt_path = ROOT / "sitemap.txt"
+    txt = txt_path.read_text(encoding="utf-8") if txt_path.exists() else ""
+    if loc not in txt.splitlines():
+        txt_path.write_text(txt.rstrip("\n") + "\n" + loc + "\n", encoding="utf-8")
+    xml_path = ROOT / "sitemap.xml"
+    xml = xml_path.read_text(encoding="utf-8") if xml_path.exists() else ""
+    if f"<loc>{loc}</loc>" not in xml:
+        entry = f"  <url><loc>{loc}</loc><lastmod>{newest}</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>\n"
+        xml = xml.replace("</urlset>", entry + "</urlset>", 1) if "</urlset>" in xml else xml + entry
+        xml_path.write_text(xml, encoding="utf-8")
+    if changed:
+        print(f"DONE this-week archive index ({count} {noun})")
+    return 0
 
 
 def main():
@@ -150,7 +347,7 @@ def main():
     title = f"This Week in Division 2 ({short_label}): Loot & Reset [2026]"
     desc = (
         f"What resets in The Division 2 this week ({day_label}): targeted loot rotation, "
-        f"vendor caches, {SEASON_LABEL} manhunt week {week_n}, server status and maintenance notes by Raigulus."
+        f"vendor caches, {SEASON_LABEL} manhunt week {week_n}."
     )
     url = f"{BASE_URL}/division-2/this-week/{slug}/"
 
@@ -225,7 +422,7 @@ def main():
   <main>
     <section class="section">
       <div class="content">
-        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/division-2/">The Division 2</a> / <span>This Week</span></nav>
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/division-2/">The Division 2</a> / <a href="/division-2/this-week/">This Week</a></nav>
         <p class="eyebrow">The Division 2 / This Week</p>
         <h1>This Week in The Division 2: {esc(day_label)}</h1>
         <p>Loot rotation, vendor caches, {esc(SEASON_LABEL)} manhunt week {week_n}, server state and maintenance notes for the week of {esc(day_label)}. Updated automatically every Tuesday.</p>
@@ -288,6 +485,7 @@ def main():
     out_dir.mkdir(parents=True, exist_ok=True)
     page_path = out_dir / "index.html"
     if page_path.exists() and page_path.read_text(encoding="utf-8") == html_doc:
+        write_archive_index()
         print(f"No changes for week {slug}.")
         return 0
     page_path.write_text(html_doc, encoding="utf-8")
@@ -303,6 +501,7 @@ def main():
         entry = f"  <url><loc>{loc}</loc><lastmod>{slug}</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>\n"
         xml = xml.replace("</urlset>", entry + "</urlset>", 1) if "</urlset>" in xml else xml + entry
         xml_path.write_text(xml, encoding="utf-8")
+    write_archive_index()
     print(f"DONE week {slug} (manhunt week {week_n}, loot fresh: {fresh})")
     return 0
 
