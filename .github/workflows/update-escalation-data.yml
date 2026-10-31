@@ -37,8 +37,8 @@ jobs:
           VIDEOS_LOOKBACK_HOURS: ${{ inputs.backfill_hours }}
         run: python3 scripts/update-escalation-data.py --submit-indexnow --post-discord --post-latest-videos --post-status
 
-      - name: Rebuild sitemap index
-        run: python3 scripts/build_sitemap_index.py
+      - name: Rebuild sitemap
+        run: python3 scripts/build_sitemap_all.py
 
       # Persist Discord dedup state before any later step can fail. Without
       # this, a metadata check failure leaves the channel state uncommitted and
@@ -96,7 +96,7 @@ jobs:
             sitemap.xml sitemap.txt llms.txt feed.xml; do
             [ -f "$f" ] && git add "$f" || true
           done
-          git add sitemap/ sitemap-index.xml
+          git add sitemap-all.xml
           if git diff --cached --quiet; then
             echo "No guide data changes."
             gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds"
