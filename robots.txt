@@ -29,3 +29,4 @@ Allow: /
 
 Sitemap: https://raigulus.github.io/sitemap.xml
 Sitemap: https://raigulus.github.io/sitemap.txt
+Sitemap: https://raigulus.github.io/sitemap/index.xml
