@@ -441,15 +441,16 @@ raf = requestAnimationFrame(tick);
     if(!a) return;
     var s = a.nextElementSibling;
     if(s && s.classList.contains("submenu")){
-      if(s.style.display === "block"){
-        s.style.display = "none";
-      } else {
+      var willOpen = (s.style.display !== "block");
+      if(willOpen){
         s.style.display = "block";
         var r = a.getBoundingClientRect();
         s.style.top = (r.bottom + window.scrollY + 4) + "px";
         s.style.left = r.left + "px";
+      } else {
+        s.style.display = "none";
       }
-      e.preventDefault();
+      if(willOpen) e.preventDefault();
     }
   });
 })();
