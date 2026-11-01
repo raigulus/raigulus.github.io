@@ -434,14 +434,21 @@ raf = requestAnimationFrame(tick);
   });
 })();
 
-// Dropdown fix — click to open submenu
+// Dropdown fix — click to open submenu (with pixel position)
 (function(){
   document.querySelector(".site-header nav")?.addEventListener("click", function(e){
     var a = e.target.closest("a[data-game]");
     if(!a) return;
     var s = a.nextElementSibling;
     if(s && s.classList.contains("submenu")){
-      s.style.display = s.style.display === "block" ? "none" : "block";
+      if(s.style.display === "block"){
+        s.style.display = "none";
+      } else {
+        s.style.display = "block";
+        var r = a.getBoundingClientRect();
+        s.style.top = (r.bottom + window.scrollY + 4) + "px";
+        s.style.left = r.left + "px";
+      }
       e.preventDefault();
     }
   });

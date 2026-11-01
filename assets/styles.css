@@ -978,9 +978,8 @@ mark{background:rgb(20 184 166 / .30);color:inherit;border-radius:3px;padding:0 
 /* Dropdown menus for nav (adjacent sibling selector) */
 .site-header nav .submenu {
   display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
+  position: fixed;
+  z-index: 9999;
   background: var(--background);
   border: 1px solid var(--border2);
   border-radius: 6px;
