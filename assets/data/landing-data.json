@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-01T10:05:16Z",
+  "generated_at": "2026-11-01T11:05:16Z",
   "stats": {
-    "total_guides": 488,
+    "total_guides": 489,
     "exotics": 79,
     "patches": 32
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "Is This The Best Way To Use Chameleon? (Division 2 Tier",
+      "url": "https://raigulus.github.io/division-2/videos/is-this-the-best-way-to-use-chameleon-division-2-t/",
+      "youtube_url": "https://www.youtube.com/watch?v=_bqCevk9oE8",
+      "thumbnail": "/assets/img/yt/_bqCevk9oE8-hqdefault.jpg",
+      "published_date": "2026-11-01",
+      "cluster": "escalation run",
+      "summary": "Division 2 Tier 10 Duo gameplay featuring the Chameleon Exotic Assault Rifle with Visionario and Rugged Gloves! Icy joins me with a healer build to help us push"
+    },
     {
       "title": "Sniper vs Escalation: Is this the Most Lethal Build?",
       "url": "https://raigulus.github.io/division-2/videos/sniper-vs-escalation-is-this-the-most-lethal-build/",
@@ -28,15 +37,6 @@
       "published_date": "2026-10-28",
       "cluster": "escalation run",
       "summary": "I cleared a solo Tier 10 Escalation run with the Chameleon assault rifle in 16 minutes. This Chameleon build uses level 30 expertise and Echo on everything, and"
-    },
-    {
-      "title": "This is why you don't mess with me in The Division 2",
-      "url": "https://raigulus.github.io/division-2/videos/this-is-why-you-don-t-mess-with-me-in-the-division/",
-      "youtube_url": "https://www.youtube.com/watch?v=7WAlqBwq4oE",
-      "thumbnail": "/assets/img/yt/7WAlqBwq4oE-hqdefault.jpg",
-      "published_date": "2026-10-26",
-      "cluster": "pvp/archive clip",
-      "summary": "Experience intense PvP action in The Division 2 Dark Zone! This short showcases raw skill and epic eliminations. Watch as agents clash in high-stakes encounters"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-01 10:05 UTC"
+    "last_checked": "2026-11-01 11:05 UTC"
   },
   "discord_members": 58,
   "next_reset_utc": "2026-11-02T07:00:00Z"
