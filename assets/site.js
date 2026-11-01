@@ -441,16 +441,18 @@ raf = requestAnimationFrame(tick);
     if(!a) return;
     var s = a.nextElementSibling;
     if(s && s.classList.contains("submenu")){
-      var willOpen = (s.style.display !== "block");
-      if(willOpen){
+      var isOpen = s.classList.contains("is-open");
+      if(isOpen){
+        s.style.display = "none";
+        s.classList.remove("is-open");
+      } else {
         s.style.display = "block";
+        s.classList.add("is-open");
         var r = a.getBoundingClientRect();
         s.style.top = (r.bottom + window.scrollY + 4) + "px";
         s.style.left = r.left + "px";
-      } else {
-        s.style.display = "none";
       }
-      if(willOpen) e.preventDefault();
+      if(!isOpen) e.preventDefault();
     }
   });
 })();
