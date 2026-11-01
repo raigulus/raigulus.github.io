@@ -1063,3 +1063,7 @@ mark{background:rgb(20 184 166 / .30);color:inherit;border-radius:3px;padding:0 
     font-size: 13px;
   }
 }
+
+/* Dropdown positioning fix */
+.site-header nav a[data-game] { position: relative; }
+.site-header nav .submenu { z-index: 1000; }
