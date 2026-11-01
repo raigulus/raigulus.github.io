@@ -973,3 +973,93 @@ mark{background:rgb(20 184 166 / .30);color:inherit;border-radius:3px;padding:0 
 .d4-nav{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px}
 .d4-nav a{padding:4px 9px;border:1px solid var(--border2);border-radius:999px;font-size:11px;color:var(--text-sub)}
 .d4-nav a:hover,.d4-nav a[aria-current=page]{border-color:var(--accent);color:var(--accent)}
+
+
+/* Dropdown menus for nav (adjacent sibling selector) */
+.site-header nav .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  border: 1px solid var(--border2);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 8px;
+  min-width: 220px;
+  z-index: 1000;
+  white-space: nowrap;
+}
+
+/* Show submenu when parent link is hovered (adjacent sibling) */
+.site-header nav a[data-game="division-2"]:hover + .submenu[data-game="division-2"],
+.site-header nav a[data-game="diablo-4"]:hover + .submenu[data-game="diablo-4"],
+.site-header nav a[data-game="lore"]:hover + .submenu[data-game="lore"],
+.site-header nav a[data-game="site"]:hover + .submenu[data-game="site"] {
+  display: block;
+}
+
+/* Submenu links */
+.site-header nav .submenu a {
+  display: block;
+  padding: 6px 12px;
+  margin: 2px 0;
+  border-radius: 4px;
+  font-size: 14px;
+  text-transform: none;
+  color: var(--text);
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Hover states for submenu links */
+.site-header nav .submenu a:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* Game-specific widths */
+[data-game="division-2"] .site-header nav .submenu {
+  min-width: 260px;
+}
+
+[data-game="diablo-4"] .site-header nav .submenu {
+  min-width: 200px;
+}
+
+[data-game="lore"] .site-header nav .submenu {
+  min-width: 280px;
+}
+
+[data-game="site"] .site-header nav .submenu {
+  min-width: 180px;
+}
+
+/* Parent link hover */
+.site-header nav a[data-game]:hover {
+  color: var(--accent);
+}
+
+/* Mobile: hide dropdowns */
+@media (max-width: 768px) {
+  .site-header nav .submenu {
+    display: none;
+    position: static;
+    background: var(--muted);
+    box-shadow: none;
+    border: none;
+    margin: 4px 0;
+    padding: 4px;
+    min-width: auto;
+  }
+  .site-header nav a[data-game="division-2"]:hover + .submenu,
+  .site-header nav a[data-game="diablo-4"]:hover + .submenu,
+  .site-header nav a[data-game="lore"]:hover + .submenu,
+  .site-header nav a[data-game="site"]:hover + .submenu {
+    display: block;
+  }
+  .site-header nav .submenu a {
+    padding: 4px 8px;
+    font-size: 13px;
+  }
+}
