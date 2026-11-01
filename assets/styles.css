@@ -751,6 +751,9 @@ body.has-search-open{overflow:hidden}
 }
 @media (max-width: 560px) {
   .rg-consent { flex-direction: column; align-items: stretch; }
+  /* In column direction flex-basis applies to height, so "1 1 320px" would
+     stretch the paragraph to 320px tall and make the bar ~400px high. */
+  .rg-consent-text { flex: 0 0 auto; }
   .rg-consent-actions { justify-content: flex-end; }
 }
 @media (prefers-reduced-motion: reduce) {
