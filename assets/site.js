@@ -433,3 +433,16 @@ raf = requestAnimationFrame(tick);
     }
   });
 })();
+
+// Dropdown fix — click to open submenu
+(function(){
+  document.querySelector(".site-header nav")?.addEventListener("click", function(e){
+    var a = e.target.closest("a[data-game]");
+    if(!a) return;
+    var s = a.nextElementSibling;
+    if(s && s.classList.contains("submenu")){
+      s.style.display = s.style.display === "block" ? "none" : "block";
+      e.preventDefault();
+    }
+  });
+})();
