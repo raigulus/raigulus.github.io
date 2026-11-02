@@ -434,25 +434,65 @@ raf = requestAnimationFrame(tick);
   });
 })();
 
-// Dropdown fix — click to open submenu (with pixel position)
+// Dropdown — anchored absolute inside relative <a>, CSS handles top/left
 (function(){
+  var data = {
+    "division-2": [
+      {t:"Patches", h:"/division-2/patches/"},
+      {t:"Builds", h:"/division-2/builds/"},
+      {t:"Loot", h:"/division-2/loot/"},
+      {t:"Server Status", h:"/division-2/server-status/"},
+      {t:"Build Maker", h:"/division-2/build-maker/"},
+      {t:"Reset / PvP", h:"/division-2/pvp/"},
+      {t:"Incursions / Raids", h:"/division-2/incursions-raids/"},
+      {t:"Exotics / Escalation", h:"/division-2/escalation/"},
+    ],
+    "diablo-4": [
+      {t:"World Boss Timer", h:"/diablo-4/world-boss-timer/"},
+      {t:"Patch Notes (D4)", h:"/diablo-4/patch-notes/"},
+    ],
+    "lore": [
+      {t:"Collectibles", h:"/lore/collectibles/"},
+      {t:"Lore Hub", h:"/lore/"},
+    ],
+    "site": [
+      {t:"About", h:"/about/"},
+      {t:"Discord", h:"/discord/"},
+    ],
+  };
+  function build() {
+    var nav = document.querySelector(".site-header nav");
+    if (!nav) return;
+    nav.querySelectorAll('a[data-game]').forEach(function(a){
+      var k = a.getAttribute('data-game');
+      if (!k || !data[k]) return;
+      if (a.nextElementSibling && a.nextElementSibling.classList.contains('submenu')) return;
+      var d = document.createElement('div');
+      d.className = 'submenu';
+      d.setAttribute('role','menu');
+      d.innerHTML = data[k].map(function(i){ return '<a href="'+i.h+'" role="menuitem">'+i.t+'</a>'; }).join('');
+      a.insertAdjacentElement('afterend', d);
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', build); else build();
+
   document.querySelector(".site-header nav")?.addEventListener("click", function(e){
     var a = e.target.closest("a[data-game]");
-    if(!a) return;
+    if (!a) return;
     var s = a.nextElementSibling;
-    if(s && s.classList.contains("submenu")){
-      var isOpen = s.classList.contains("is-open");
-      if(isOpen){
-        s.style.display = "none";
-        s.classList.remove("is-open");
-      } else {
-        s.style.display = "block";
-        s.classList.add("is-open");
-        var r = a.getBoundingClientRect();
-        s.style.top = (r.bottom + window.scrollY + 4) + "px";
-        s.style.left = r.left + "px";
-      }
-      if(!isOpen) e.preventDefault();
+    if (!s || !s.classList.contains("submenu")) return;
+    var open = s.classList.contains("is-open");
+    // Close siblings
+    document.querySelectorAll('.submenu.is-open').forEach(function(x){ if(x!==s){ x.classList.remove('is-open'); x.classList.remove('align-right'); }});
+    if (open) {
+      s.classList.remove("is-open");
+      s.classList.remove("align-right");
+    } else {
+      s.classList.add("is-open");
+      // Minimal viewport check: if near right edge, align right
+      var r = a.getBoundingClientRect();
+      if (r.right + 260 > window.innerWidth) s.classList.add("align-right");
+      e.preventDefault();
     }
   });
 })();

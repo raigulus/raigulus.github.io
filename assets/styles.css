@@ -1045,3 +1045,35 @@ mark{background:rgb(20 184 166 / .30);color:inherit;border-radius:3px;padding:0 
 
 /* Dropdown positioning fix */
 .site-header nav a[data-game] { position: relative; }
+/* Dropdown submenu panel — anchored to trigger <a>, absolute inside relative */
+.site-header nav a[data-game] { position: relative; }
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9999;
+  min-width: 260px;
+  max-width: 320px;
+  max-height: 70vh;
+  overflow-y: auto;
+  background: var(--surface, #13181e);
+  border: 1px solid var(--border, #22292f);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.65);
+  padding: 6px 0;
+  border-radius: 6px;
+  text-align: left;
+}
+.submenu.is-open { display: block; }
+.submenu a {
+  display: block;
+  padding: 7px 16px;
+  color: var(--text, #edf0f4);
+  font-size: 0.82rem;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.submenu a:hover { background: rgba(255,255,255,0.05); color: var(--accent, #e88a55); }
+.submenu.align-right { left: auto; right: 0; }
