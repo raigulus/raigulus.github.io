@@ -1,48 +1,48 @@
 {
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "Coney Island Ballpark",
-      "loot": "Refactor"
+      "loot": "Ortiz Exuro"
     },
     {
       "mission": "Coney Island Amusement Park",
-      "loot": "Lengmo"
+      "loot": "Shotgun"
     },
     {
       "mission": "ViewPoint Museum",
-      "loot": "Petrov Defense Group"
+      "loot": "Providence Defense"
     },
     {
       "mission": "Capitol Building",
-      "loot": "Urban Lookout"
+      "loot": "Future Initiative"
     },
     {
       "mission": "Potomac Event Center",
-      "loot": "Concentrated Company"
+      "loot": "Ortiz: Reficere"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Shotguns"
+      "item": "MMRs"
     },
     {
       "type": "Gear",
-      "item": "Backpacks"
+      "item": "Chest Pieces"
     }
   ],
-  "last_updated": "2026-11-01 09:00",
-  "last_checked": "2026-11-02 07:05 UTC",
-  "parsed_at": "2026-11-02T07:05:09.242049+00:00",
-  "status": "pending",
-  "fetched_at": "2026-11-02T07:05:09.242049+00:00",
+  "last_updated": "2026-11-02 09:01",
+  "last_checked": "2026-11-02 08:05 UTC",
+  "parsed_at": "2026-11-02T08:05:17.270305+00:00",
+  "status": "ok",
+  "fetched_at": "2026-11-02T08:05:17.270305+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-11-02 07:05 UTC",
+  "vendor_highlights_checked": "2026-11-02 08:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
