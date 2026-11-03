@@ -460,6 +460,24 @@ raf = requestAnimationFrame(tick);
       {t:"Discord", h:"/discord/"},
     ],
   };
+  function positionSubmenu(a, s) {
+    if (window.innerWidth <= 768) { s.style.left = ''; s.style.top = ''; s.style.right = ''; s.style.position = ''; return; }
+    var r = a.getBoundingClientRect();
+    var w = s.offsetWidth || 260;
+    s.style.top = (r.bottom + 4) + "px";
+    if (r.right + w > window.innerWidth - 8) {
+      // align right edge of panel with right edge of trigger
+      s.style.left = "auto";
+      s.style.right = (window.innerWidth - r.right) + "px";
+    } else {
+      var left = r.left;
+      if (left + w > window.innerWidth - 8) left = window.innerWidth - w - 8;
+      if (left < 8) left = 8;
+      s.style.left = left + "px";
+      s.style.right = "auto";
+    }
+  }
+
   function build() {
     var nav = document.querySelector(".site-header nav");
     if (!nav) return;
@@ -472,27 +490,49 @@ raf = requestAnimationFrame(tick);
       d.setAttribute('role','menu');
       d.innerHTML = data[k].map(function(i){ return '<a href="'+i.h+'" role="menuitem">'+i.t+'</a>'; }).join('');
       a.insertAdjacentElement('afterend', d);
+      positionSubmenu(a, d);
+      var s = d;
+      // Position on hover/focus so the CSS hover reveal lands under the trigger.
+      function pos() { positionSubmenu(a, s); }
+      a.addEventListener('mouseenter', pos);
+      a.addEventListener('focus', pos);
+      s.addEventListener('mouseenter', pos);
     });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', build); else build();
 
-  document.querySelector(".site-header nav")?.addEventListener("click", function(e){
+  function repositionOpen() {
+    document.querySelectorAll('.submenu.is-open').forEach(function(s){
+      var a = s.previousElementSibling;
+      if (a && a.matches && a.matches('a[data-game]')) positionSubmenu(a, s);
+    });
+  }
+  window.addEventListener('scroll', repositionOpen, { passive: true });
+  window.addEventListener('resize', repositionOpen);
+
+  // Close any open dropdown when clicking outside the nav.
+  document.addEventListener('click', function(e){
+    if (e.target.closest && e.target.closest('.site-header nav')) return;
+    document.querySelectorAll('.submenu.is-open').forEach(function(s){
+      s.classList.remove('is-open');
+      s.classList.remove('align-right');
+    });
+  });
+
+  var navEl = document.querySelector(".site-header nav");
+  if (navEl) navEl.addEventListener("click", function(e){
     var a = e.target.closest("a[data-game]");
     if (!a) return;
     var s = a.nextElementSibling;
     if (!s || !s.classList.contains("submenu")) return;
     var open = s.classList.contains("is-open");
     // Close siblings
-    document.querySelectorAll('.submenu.is-open').forEach(function(x){ if(x!==s){ x.classList.remove('is-open'); x.classList.remove('align-right'); }});
+    document.querySelectorAll('.submenu.is-open').forEach(function(x){ if(x!==s){ x.classList.remove('is-open'); }});
     if (open) {
       s.classList.remove("is-open");
-      s.classList.remove("align-right");
     } else {
       s.classList.add("is-open");
-      // Viewport edge check: align right when near window right edge
-      var r = a.getBoundingClientRect();
-      if (r.right + 260 > window.innerWidth) s.classList.add("align-right");
-      else s.classList.remove("align-right");
+      positionSubmenu(a, s);
       e.preventDefault();
     }
   });

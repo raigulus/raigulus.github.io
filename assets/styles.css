@@ -1056,10 +1056,10 @@ mark{background:rgb(20 184 166 / .30);color:inherit;border-radius:3px;padding:0 
   animation: fadeSlide 0.18s ease-out;
 }
 @keyframes fadeSlide {
-  from { opacity: 0; transform: translateY(-6px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { transform: translateY(-6px); }
+  to { transform: translateY(0); }
 }
-.submenu.is-open { display: block; position: fixed; left: 0; top: 0; z-index: 9999; }
+.submenu.is-open { display: block; position: fixed; z-index: 9999; }
 /* Show on hover (desktop) */
 .site-header nav a[data-game]:hover + .submenu,
 .submenu:hover { display: block; }
