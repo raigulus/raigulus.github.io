@@ -1039,9 +1039,7 @@ mark{background:rgb(20 184 166 / .30);color:inherit;border-radius:3px;padding:0 
 .site-header nav a[data-game] { position: relative; }
 .submenu {
   display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
+  position: fixed;
   z-index: 9999;
   min-width: 260px;
   max-width: 320px;
