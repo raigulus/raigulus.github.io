@@ -1,48 +1,48 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
-      "mission": "Coney Island Ballpark",
-      "loot": "Ortiz Exuro"
+      "mission": "The Art Museum",
+      "loot": "Overlord Armaments"
     },
     {
-      "mission": "Coney Island Amusement Park",
-      "loot": "Shotgun"
-    },
-    {
-      "mission": "ViewPoint Museum",
-      "loot": "Providence Defense"
-    },
-    {
-      "mission": "Capitol Building",
-      "loot": "Future Initiative"
-    },
-    {
-      "mission": "Potomac Event Center",
+      "mission": "Manning National Zoo",
       "loot": "Ortiz: Reficere"
+    },
+    {
+      "mission": "Camp White Oak",
+      "loot": "Pistol"
+    },
+    {
+      "mission": "The Pentagon",
+      "loot": "Hard Wired"
+    },
+    {
+      "mission": "DARPA Research Labs",
+      "loot": "Cavalier"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "MMRs"
+      "item": "LMGs"
     },
     {
       "type": "Gear",
-      "item": "Chest Pieces"
+      "item": "Kneepads"
     }
   ],
-  "last_updated": "2026-11-02 09:01",
-  "last_checked": "2026-11-03 15:05 UTC",
-  "parsed_at": "2026-11-03T15:05:09.869567+00:00",
-  "status": "stale",
-  "fetched_at": "2026-11-03T15:05:09.869567+00:00",
+  "last_updated": "2026-11-03 16:33",
+  "last_checked": "2026-11-03 16:05 UTC",
+  "parsed_at": "2026-11-03T16:05:11.933003+00:00",
+  "status": "ok",
+  "fetched_at": "2026-11-03T16:05:11.933003+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Checked after the expected daily reset window, but the source still returned an older snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-11-03 15:05 UTC",
+  "vendor_highlights_checked": "2026-11-03 16:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
