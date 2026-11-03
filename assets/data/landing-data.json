@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-03T17:47:27Z",
+  "generated_at": "2026-11-03T17:55:44Z",
   "stats": {
-    "total_guides": 491,
+    "total_guides": 492,
     "exotics": 79,
     "patches": 32
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "The Best Iron Will Alternative? | Chainkiller T10 Solo Build",
+      "url": "https://raigulus.github.io/division-2/videos/the-best-iron-will-alternative-chainkiller-t10-sol/",
+      "youtube_url": "https://www.youtube.com/watch?v=ukHadYJq55g",
+      "thumbnail": "/assets/img/yt/ukHadYJq55g-hqdefault.jpg",
+      "published_date": "2026-11-03",
+      "cluster": "escalation run",
+      "summary": "The Division 2 Coney Island Amusement Park T10 Solo Clear with Chainkiller, Aces & Eights, and Prima Donna! No Iron Will needed.  Looking for an Iron Will alter"
+    },
     {
       "title": "Farming before the new DLC Division 2 (Short test stream)",
       "url": "https://raigulus.github.io/division-2/videos/farming-before-the-new-dlc-division-2-short-test-s/",
@@ -28,15 +37,6 @@
       "published_date": "2026-11-01",
       "cluster": "escalation run",
       "summary": "Division 2 Tier 10 Duo gameplay featuring the Chameleon Exotic Assault Rifle with Visionario and Rugged Gloves! Icy joins me with a healer build to help us push"
-    },
-    {
-      "title": "Sniper vs Escalation: Is this the Most Lethal Build?",
-      "url": "https://raigulus.github.io/division-2/videos/sniper-vs-escalation-is-this-the-most-lethal-build/",
-      "youtube_url": "https://www.youtube.com/watch?v=_LbRvLCz3kc",
-      "thumbnail": "/assets/img/yt/_LbRvLCz3kc-hqdefault.jpg",
-      "published_date": "2026-10-30",
-      "cluster": "escalation run",
-      "summary": "Can a Chainkiller + Turmoil sniper build clear The Division 2 Tier 10 Escalation without Iron Will or Prima Donna? I took it into Potomac Event Center to find o"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-03 17:47 UTC"
+    "last_checked": "2026-11-03 17:55 UTC"
   },
   "discord_members": 58,
   "next_reset_utc": "2026-11-04T07:00:00Z"
