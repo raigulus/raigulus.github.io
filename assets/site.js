@@ -492,17 +492,28 @@ raf = requestAnimationFrame(tick);
       a.insertAdjacentElement('afterend', d);
       positionSubmenu(a, d);
       var s = d;
-      // Position on hover/focus so the CSS hover reveal lands under the trigger.
-      function pos() { positionSubmenu(a, s); }
-      a.addEventListener('mouseenter', pos);
-      a.addEventListener('focus', pos);
-      s.addEventListener('mouseenter', pos);
+      var hoverTimer = null;
+      function showHover() {
+        clearTimeout(hoverTimer);
+        s.classList.add('is-hover');
+        positionSubmenu(a, s);
+      }
+      function hideHover() {
+        clearTimeout(hoverTimer);
+        hoverTimer = setTimeout(function () { s.classList.remove('is-hover'); }, 220);
+      }
+      a.addEventListener('mouseenter', showHover);
+      s.addEventListener('mouseenter', showHover);
+      a.addEventListener('mouseleave', hideHover);
+      s.addEventListener('mouseleave', hideHover);
+      a.addEventListener('focus', showHover);
+      a.addEventListener('blur', hideHover);
     });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', build); else build();
 
   function repositionOpen() {
-    document.querySelectorAll('.submenu.is-open').forEach(function(s){
+    document.querySelectorAll('.submenu.is-open, .submenu.is-hover').forEach(function(s){
       var a = s.previousElementSibling;
       if (a && a.matches && a.matches('a[data-game]')) positionSubmenu(a, s);
     });
@@ -513,9 +524,9 @@ raf = requestAnimationFrame(tick);
   // Close any open dropdown when clicking outside the nav.
   document.addEventListener('click', function(e){
     if (e.target.closest && e.target.closest('.site-header nav')) return;
-    document.querySelectorAll('.submenu.is-open').forEach(function(s){
+    document.querySelectorAll('.submenu.is-open, .submenu.is-hover').forEach(function(s){
       s.classList.remove('is-open');
-      s.classList.remove('align-right');
+      s.classList.remove('is-hover');
     });
   });
 
@@ -527,11 +538,13 @@ raf = requestAnimationFrame(tick);
     if (!s || !s.classList.contains("submenu")) return;
     var open = s.classList.contains("is-open");
     // Close siblings
-    document.querySelectorAll('.submenu.is-open').forEach(function(x){ if(x!==s){ x.classList.remove('is-open'); }});
+    document.querySelectorAll('.submenu.is-open, .submenu.is-hover').forEach(function(x){ if(x!==s){ x.classList.remove('is-open'); x.classList.remove('is-hover'); }});
     if (open) {
       s.classList.remove("is-open");
+      s.classList.remove("is-hover");
     } else {
       s.classList.add("is-open");
+      s.classList.remove("is-hover");
       positionSubmenu(a, s);
       e.preventDefault();
     }
