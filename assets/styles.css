@@ -1025,22 +1025,12 @@ mark{background:rgb(20 184 166 / .30);color:inherit;border-radius:3px;padding:0 
   color: var(--accent);
 }
 
-/* Mobile: hide dropdowns */
+/* Mobile: hide dropdown panels, keep parent anchors clickable */
 @media (max-width: 768px) {
-    display: none;
-    position: static;
-    background: var(--muted);
-    box-shadow: none;
-    border: none;
-    margin: 4px 0;
-    padding: 4px;
-    min-width: auto;
-  }
-    display: block;
-  }
-    padding: 4px 8px;
-    font-size: 13px;
-  }
+  .site-header nav a[data-game] { position: static; min-width: auto; }
+  .site-header nav .submenu { display: none; position: static; background: var(--muted); box-shadow: none; border: none; margin: 4px 0; padding: 4px; min-width: auto; }
+  .site-header nav .submenu.is-open { display: block; }
+  .site-header nav .submenu a { padding: 4px 8px; font-size: 13px; }
 }
 
 /* Dropdown positioning fix */
@@ -1049,9 +1039,7 @@ mark{background:rgb(20 184 166 / .30);color:inherit;border-radius:3px;padding:0 
 .site-header nav a[data-game] { position: relative; }
 .submenu {
   display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
+  position: fixed;
   z-index: 9999;
   min-width: 260px;
   max-width: 320px;
