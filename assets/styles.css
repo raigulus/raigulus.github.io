@@ -1065,6 +1065,9 @@ mark{background:rgb(20 184 166 / .30);color:inherit;border-radius:3px;padding:0 
   text-align: left;
 }
 .submenu.is-open { display: block; }
+/* Show on hover (desktop) */
+.site-header nav a[data-game]:hover + .submenu,
+.submenu:hover { display: block; }
 .submenu a {
   display: block;
   padding: 7px 16px;
