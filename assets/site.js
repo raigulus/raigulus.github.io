@@ -489,16 +489,10 @@ raf = requestAnimationFrame(tick);
       s.classList.remove("align-right");
     } else {
       s.classList.add("is-open");
-      // Fixed position: anchor relative to viewport
+      // Viewport edge check: align right when near window right edge
       var r = a.getBoundingClientRect();
-      s.style.top = r.bottom + "px";
-      s.style.left = r.left + "px";
-      if (r.right + 260 > window.innerWidth) {
-        s.classList.add("align-right");
-        s.style.left = (r.right - 320) + "px";
-      } else {
-        s.classList.remove("align-right");
-      }
+      if (r.right + 260 > window.innerWidth) s.classList.add("align-right");
+      else s.classList.remove("align-right");
       e.preventDefault();
     }
   });
