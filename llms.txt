@@ -17,6 +17,10 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [Discord Community](https://raigulus.github.io/discord/): Join the Raigulus Discord server, role selection, co-op, lore, and archive discussion.
 - [Feedback](https://raigulus.github.io/feedback/): Request videos, report guide errors, or suggest builds.
 - [Guides](https://raigulus.github.io/guides/): Game guides and comparisons across loot shooters.
+- [Division 2 Crossplay Guide](https://raigulus.github.io/guides/division-2-crossplay/): Crossplay platforms, rollout timeline, cross-progression, and clans.
+- [Division 2 Release Date](https://raigulus.github.io/guides/division-2-release-date/): Release date, platforms, editions, and system requirements.
+- [Division 2 Player Count](https://raigulus.github.io/division-2/player-count/): Steam Charts data, peak players, and trends.
+- [Destiny 2 Lost Sector Tracker](https://raigulus.github.io/destiny-2/lost-sector-tracker/): Daily rotation with live reset countdown and exotic drops.
 - [Lore Archive](https://raigulus.github.io/lore/): The Division story, timeline, reading order, and source-aware lore research.
 - [The Division 2 Hub](https://raigulus.github.io/division-2/): All optimized Division 2 guides.
 - [Mission Walkthroughs](https://raigulus.github.io/division-2/missions/): Mission, invaded, heroic, and legendary walkthroughs.
@@ -43,7 +47,6 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [Wandering Death](https://raigulus.github.io/diablo-4/world-bosses/wandering-death/): Wandering Death in Diablo 4 - World Boss rewards, cosmetics and the 15-minute kill window.
 - [Avarice, the Gold Cursed](https://raigulus.github.io/diablo-4/world-bosses/avarice/): Avarice the Gold Cursed in Diablo 4 - World Boss rewards, cosmetics, and when it spawns on the 3.5-hour cycle.
 - [Ashava, the Pestilent](https://raigulus.github.io/diablo-4/world-bosses/ashava/): Ashava World Boss in Diablo 4 - mount and trophy cosmetics, shared World Boss drops, and the 3.5-hour spawn cycle.
-- [Destiny 2 Lost Sector Exotics](https://raigulus.github.io/destiny-2/lost-sector-exotics/): Legend vs Master drop rates, solo rules, and champion mods.
 - [Destiny 2 Lost Sector Exotics](https://raigulus.github.io/destiny-2/lost-sector-exotics/): Legend vs Master drop rates, solo rules, and champion mods.
 - [RSS Feed](https://raigulus.github.io/feed.xml): Machine-readable feed for blog directories and feed readers.
 
