@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-04T15:05:17Z",
+  "generated_at": "2026-11-04T16:05:27Z",
   "stats": {
-    "total_guides": 492,
+    "total_guides": 496,
     "exotics": 79,
     "patches": 32
   },
@@ -12,31 +12,31 @@
   },
   "latest_videos": [
     {
-      "title": "The Best Iron Will Alternative? | Chainkiller T10 Solo Build",
-      "url": "https://raigulus.github.io/division-2/videos/the-best-iron-will-alternative-chainkiller-t10-sol/",
-      "youtube_url": "https://www.youtube.com/watch?v=ukHadYJq55g",
-      "thumbnail": "/assets/img/yt/ukHadYJq55g-hqdefault.jpg",
-      "published_date": "2026-11-03",
-      "cluster": "escalation run",
-      "summary": "The Division 2 Coney Island Amusement Park T10 Solo Clear with Chainkiller, Aces & Eights, and Prima Donna! No Iron Will needed.  Looking for an Iron Will alter"
-    },
-    {
-      "title": "Farming before the new DLC Division 2 (Short test stream)",
-      "url": "https://raigulus.github.io/division-2/videos/farming-before-the-new-dlc-division-2-short-test-s/",
-      "youtube_url": "https://www.youtube.com/watch?v=ycjj6NjcALs",
-      "thumbnail": "/assets/img/yt/ycjj6NjcALs-hqdefault.jpg",
-      "published_date": "2026-11-02",
+      "title": "The Division 2: Echoes of Central Park Part 1",
+      "url": "https://raigulus.github.io/division-2/videos/the-division-2-echoes-of-central-park-part-1/",
+      "youtube_url": "https://www.youtube.com/watch?v=y5kUDX_ilcM",
+      "thumbnail": "/assets/img/yt/y5kUDX_ilcM-hqdefault.jpg",
+      "published_date": "2026-11-04",
       "cluster": "side activity",
-      "summary": "This is short test stream"
+      "summary": "🔴 **THE DIVISION 2 — ECHOES OF CENTRAL PARK DLC FINALE**  Today, we're heading into Central Park to finish The Division 2: Echoes of Central Park DLC!  I'm team"
     },
     {
-      "title": "Is This The Best Way To Use Chameleon? (Division 2 Tier",
-      "url": "https://raigulus.github.io/division-2/videos/is-this-the-best-way-to-use-chameleon-division-2-t/",
-      "youtube_url": "https://www.youtube.com/watch?v=_bqCevk9oE8",
-      "thumbnail": "/assets/img/yt/_bqCevk9oE8-hqdefault.jpg",
-      "published_date": "2026-11-01",
-      "cluster": "escalation run",
-      "summary": "Division 2 Tier 10 Duo gameplay featuring the Chameleon Exotic Assault Rifle with Visionario and Rugged Gloves! Icy joins me with a healer build to help us push"
+      "title": "The Division 2: Echoes of Central Park (Hopefully",
+      "url": "https://raigulus.github.io/division-2/videos/the-division-2-echoes-of-central-park-hopefully-co/",
+      "youtube_url": "https://www.youtube.com/watch?v=5USr_ORB1mU",
+      "thumbnail": "/assets/img/yt/5USr_ORB1mU-hqdefault.jpg",
+      "published_date": "2026-11-04",
+      "cluster": "side activity",
+      "summary": "🔴 **THE DIVISION 2 — ECHOES OF CENTRAL PARK DLC FINALE**  Today, we're heading into Central Park to finish The Division 2: Echoes of Central Park DLC!  I'm team"
+    },
+    {
+      "title": "The Division 2 – HVT Carl “Eagle Eye” Higgins Mission",
+      "url": "https://raigulus.github.io/division-2/videos/the-division-2-hvt-carl-eagle-eye-higgins-mission/",
+      "youtube_url": "https://www.youtube.com/watch?v=0izL414uhOE",
+      "thumbnail": "/assets/img/yt/0izL414uhOE-hqdefault.jpg",
+      "published_date": "2026-11-04",
+      "cluster": "manhunt",
+      "summary": "Carl “Eagle Eye” Higgins is the Scout Week 11 High Value Target (HVT) in The Division 2: Red Horizon Manhunt! 🎯  In this no-commentary gameplay video, we take o"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-04 15:05 UTC"
+    "last_checked": "2026-11-04 16:05 UTC"
   },
   "discord_members": 58,
   "next_reset_utc": "2026-11-05T07:00:00Z"
