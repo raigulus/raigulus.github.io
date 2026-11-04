@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-04T21:05:14Z",
+  "generated_at": "2026-11-04T22:05:17Z",
   "stats": {
-    "total_guides": 496,
+    "total_guides": 497,
     "exotics": 79,
     "patches": 32
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "Can We Survive Central Park? The Division 2 Finale",
+      "url": "https://raigulus.github.io/division-2/videos/can-we-survive-central-park-the-division-2-finale/",
+      "youtube_url": "https://www.youtube.com/watch?v=m8JrHD8hYMc",
+      "thumbnail": "/assets/img/yt/m8JrHD8hYMc-hqdefault.jpg",
+      "published_date": "2026-11-04",
+      "cluster": "side activity",
+      "summary": "🔴 **THE DIVISION 2 — ECHOES OF CENTRAL PARK DLC FINALE**  Today, we're heading into Central Park to finish The Division 2: Echoes of Central Park DLC!  I'm team"
+    },
     {
       "title": "The Division 2: Echoes of Central Park Part 1",
       "url": "https://raigulus.github.io/division-2/videos/the-division-2-echoes-of-central-park-part-1/",
@@ -28,15 +37,6 @@
       "published_date": "2026-11-04",
       "cluster": "side activity",
       "summary": "🔴 **THE DIVISION 2 — ECHOES OF CENTRAL PARK DLC FINALE**  Today, we're heading into Central Park to finish The Division 2: Echoes of Central Park DLC!  I'm team"
-    },
-    {
-      "title": "The Division 2 – HVT Carl “Eagle Eye” Higgins Mission",
-      "url": "https://raigulus.github.io/division-2/videos/the-division-2-hvt-carl-eagle-eye-higgins-mission/",
-      "youtube_url": "https://www.youtube.com/watch?v=0izL414uhOE",
-      "thumbnail": "/assets/img/yt/0izL414uhOE-hqdefault.jpg",
-      "published_date": "2026-11-04",
-      "cluster": "manhunt",
-      "summary": "Carl “Eagle Eye” Higgins is the Scout Week 11 High Value Target (HVT) in The Division 2: Red Horizon Manhunt! 🎯  In this no-commentary gameplay video, we take o"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-04 21:05 UTC"
+    "last_checked": "2026-11-04 22:05 UTC"
   },
   "discord_members": 58,
   "next_reset_utc": "2026-11-05T07:00:00Z"
