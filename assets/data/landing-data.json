@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-05T11:05:14Z",
+  "generated_at": "2026-11-05T12:05:19Z",
   "stats": {
-    "total_guides": 497,
+    "total_guides": 498,
     "exotics": 79,
     "patches": 32
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "THE DIVISION 2: CENTRAL PARK FARMING & ACTIVITIES 🔴 LIVE",
+      "url": "https://raigulus.github.io/division-2/videos/the-division-2-central-park-farming-activities-liv/",
+      "youtube_url": "https://www.youtube.com/watch?v=UYgxIAtIjN0",
+      "thumbnail": "/assets/img/yt/UYgxIAtIjN0-hqdefault.jpg",
+      "published_date": "2026-11-05",
+      "cluster": "side activity",
+      "summary": "🔴 **THE DIVISION 2 — ECHOES OF CENTRAL PARK DLC FINALE**  Today, we're heading into Central Park to finish The Division 2: Echoes of Central Park DLC!  I'm team"
+    },
     {
       "title": "Can We Survive Central Park? The Division 2 Finale",
       "url": "https://raigulus.github.io/division-2/videos/can-we-survive-central-park-the-division-2-finale/",
@@ -28,15 +37,6 @@
       "published_date": "2026-11-04",
       "cluster": "side activity",
       "summary": "🔴 **THE DIVISION 2 — ECHOES OF CENTRAL PARK DLC FINALE**  Today, we're heading into Central Park to finish The Division 2: Echoes of Central Park DLC!  I'm team"
-    },
-    {
-      "title": "The Division 2: Echoes of Central Park (Hopefully",
-      "url": "https://raigulus.github.io/division-2/videos/the-division-2-echoes-of-central-park-hopefully-co/",
-      "youtube_url": "https://www.youtube.com/watch?v=5USr_ORB1mU",
-      "thumbnail": "/assets/img/yt/5USr_ORB1mU-hqdefault.jpg",
-      "published_date": "2026-11-04",
-      "cluster": "side activity",
-      "summary": "🔴 **THE DIVISION 2 — ECHOES OF CENTRAL PARK DLC FINALE**  Today, we're heading into Central Park to finish The Division 2: Echoes of Central Park DLC!  I'm team"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-05 11:05 UTC"
+    "last_checked": "2026-11-05 12:05 UTC"
   },
   "discord_members": 58,
   "next_reset_utc": "2026-11-06T07:00:00Z"
