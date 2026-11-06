@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-06T15:05:18Z",
+  "generated_at": "2026-11-06T16:05:17Z",
   "stats": {
-    "total_guides": 498,
+    "total_guides": 499,
     "exotics": 79,
     "patches": 32
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "Clockwork SMG Locations: Don't Miss These Guardian Cards",
+      "url": "https://raigulus.github.io/division-2/videos/clockwork-smg-locations-don-t-miss-these-guardian/",
+      "youtube_url": "https://www.youtube.com/watch?v=cV-6qmbiPSI",
+      "thumbnail": "/assets/img/yt/cV-6qmbiPSI-hqdefault.jpg",
+      "published_date": "2026-11-06",
+      "cluster": "side activity",
+      "summary": "Discover how to collect all 6 Guardian Cards in The Division 2's Central Park DLC and unlock the brand-new Named Clockwork SMG!  In this guide, I'll walk you th"
+    },
     {
       "title": "THE DIVISION 2: CENTRAL PARK FARMING & ACTIVITIES 🔴 LIVE",
       "url": "https://raigulus.github.io/division-2/videos/the-division-2-central-park-farming-activities-liv/",
@@ -28,15 +37,6 @@
       "published_date": "2026-11-04",
       "cluster": "side activity",
       "summary": "🔴 **THE DIVISION 2 — ECHOES OF CENTRAL PARK DLC FINALE**  Today, we're heading into Central Park to finish The Division 2: Echoes of Central Park DLC!  I'm team"
-    },
-    {
-      "title": "The Division 2: Echoes of Central Park Part 1",
-      "url": "https://raigulus.github.io/division-2/videos/the-division-2-echoes-of-central-park-part-1/",
-      "youtube_url": "https://www.youtube.com/watch?v=y5kUDX_ilcM",
-      "thumbnail": "/assets/img/yt/y5kUDX_ilcM-hqdefault.jpg",
-      "published_date": "2026-11-04",
-      "cluster": "side activity",
-      "summary": "🔴 **THE DIVISION 2 — ECHOES OF CENTRAL PARK DLC FINALE**  Today, we're heading into Central Park to finish The Division 2: Echoes of Central Park DLC!  I'm team"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-06 15:05 UTC"
+    "last_checked": "2026-11-06 16:05 UTC"
   },
   "discord_members": 58,
   "next_reset_utc": "2026-11-07T07:00:00Z"
