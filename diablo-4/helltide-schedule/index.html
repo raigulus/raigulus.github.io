@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
   <meta name="theme-color" content="#0b0d11">
   <title>Diablo 4 Helltide Schedule, Tracker &amp; Chests [2026] | Raigulus</title>
   <meta name="description" content="Diablo 4 Helltide schedule [2026]: hourly spawns, 55-minute duration, Aberrant Cinder farming, Tortured Gift chests, and live countdowns. Unofficial fan guide by Raigulus.">
@@ -27,32 +27,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script src="/assets/search.js" defer></script>
     <script src="/assets/analytics-consent.js" defer></script>
-  <script>
-    document.addEventListener("click", function(event) {
-      var link = event.target.closest("a[href]");
-      if (!link || typeof gtag !== "function") return;
-      var url;
-      try {
-        url = new URL(link.href, window.location.href);
-      } catch (error) {
-        return;
-      }
-      if (url.origin === window.location.origin) return;
-      var host = url.hostname.replace(/^www\./, "");
-      var label = (link.getAttribute("aria-label") || link.textContent || "").trim().slice(0, 120);
-      var eventName = "outbound_click";
-      if (host === "youtube.com" || host === "youtu.be") eventName = "youtube_click";
-      if (host === "instagram.com") eventName = "instagram_click";
-      if (host === "discord.com" || host === "discord.gg") eventName = "discord_click";
-      gtag("event", eventName, {
-        link_url: url.href,
-        link_domain: host,
-        link_text: label,
-        page_path: window.location.pathname,
-        event_category: "engagement"
-      });
-    }, true);
-  </script>
+  <script src="/assets/click-tracker.js" defer></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Diablo 4 Helltide Schedule and Chest Farming","description":"Unofficial Diablo 4 Helltide schedule guide with hourly spawn times, 55-minute duration, Aberrant Cinder farming, and Tortured Gift chest rewards. Use this Diablo 4 Helltide tracker to see when the next Helltide starts and how long it lasts.","url":"https://raigulus.github.io/diablo-4/helltide-schedule/","isPartOf":{"@type":"WebSite","name":"Raigulus","url":"https://raigulus.github.io","sameAs":["https://www.youtube.com/@raigulus","https://www.instagram.com/raigulus/","https://www.facebook.com/raigulus/"]},"about":{"@type":"Game","name":"Diablo 4"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","url":"https://raigulus.github.io/diablo-4/helltide-schedule/","mainEntity":[{"@type":"Question","name":"How often do Helltides spawn in Diablo 4?","acceptedAnswer":{"@type":"Answer","text":"Helltides spawn every hour on the hour and last for 55 minutes. After one ends, the next one begins after a 5-minute gap."}},{"@type":"Question","name":"What are Aberrant Cinders for in Diablo 4?","acceptedAnswer":{"@type":"Answer","text":"Aberrant Cinders drop from monsters killed during a Helltide. Spend them at Tortured Gift chests for targeted gear, Living Steel, and Murmuring Obols."}},{"@type":"Question","name":"What is the 5-minute Helltide gap?","acceptedAnswer":{"@type":"Answer","text":"Each hourly Helltide lasts 55 minutes, leaving a 5-minute gap before the next one starts on the hour. Use the gap to salvage, repair, and travel to the next zone."}},{"@type":"Question","name":"Where is the live Helltide timer?","acceptedAnswer":{"@type":"Answer","text":"The live Helltide countdown with the next spawn time is on the Diablo 4 event timer."}}]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://raigulus.github.io/"},{"@type":"ListItem","position":2,"name":"Diablo 4","item":"https://raigulus.github.io/diablo-4/"},{"@type":"ListItem","position":3,"name":"Helltide Schedule","item":"https://raigulus.github.io/diablo-4/helltide-schedule/"}]}</script>
@@ -149,27 +124,7 @@
           <p><strong>Was this guide helpful?</strong> <button type="button" data-feedback-yes>👍 Yes</button> <button type="button" data-feedback-no>👎 No</button></p>
           <p class="meta">Discuss this guide with other players on <a href="https://discord.gg/xj8jnS3Gkh">Discord</a> or <a href="/feedback/">send feedback</a>.</p>
         </div>
-        <script>
-          (function() {
-            var box = document.querySelector("[data-feedback]");
-            if (!box) return;
-            function done(msg) {
-              box.querySelectorAll("button").forEach(function(b) { b.disabled = true; });
-              var p = box.querySelector("p");
-              if (p) p.innerHTML = "<strong>" + msg + "</strong>";
-            }
-            function send(v) {
-              try {
-                if (typeof gtag === "function") gtag("event", "guide_feedback", { feedback: v, page_path: window.location.pathname });
-              } catch (e) {}
-              done("Thanks for the feedback!");
-            }
-            var y = box.querySelector("[data-feedback-yes]");
-            var n = box.querySelector("[data-feedback-no]");
-            if (y) y.addEventListener("click", function() { send("yes"); });
-            if (n) n.addEventListener("click", function() { send("no"); });
-          })();
-        </script>
+        <script src="/assets/feedback-handler.js" defer></script>
       </div>
     </section>
       <section class="section">

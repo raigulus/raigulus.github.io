@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
   <meta name="theme-color" content="#0b0d11">
   <title>Division 2 Season Reruns Guide: S5-S8 (2021-2022) | Raigulus</title>
   <meta name="description" content="Division 2 Season 5-8 rerun years summary: Shadow Tide, Concealed Agenda, End of Watch and Keener's Legacy returns in our own words. Unofficial fan guide by Raigulus.">
@@ -30,32 +30,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","url":"https://raigulus.github.io/division-2/patches/season-reruns/","mainEntity":[{"@type":"Question","name":"Why did The Division 2 re-run old seasons?","acceptedAnswer":{"@type":"Answer","text":"The team paused original seasons through 2021 into early 2022 while building the next era, replaying Seasons 1-4 as Seasons 5-8."}},{"@type":"Question","name":"Do rerun seasons have new rewards?","acceptedAnswer":{"@type":"Answer","text":"No. Reruns replay the original manhunts, leagues and events, so veterans chase anything they missed and newcomers meet old prime targets."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://raigulus.github.io/"},{"@type":"ListItem","position":2,"name":"The Division 2","item":"https://raigulus.github.io/division-2/"},{"@type":"ListItem","position":3,"name":"Patches","item":"https://raigulus.github.io/division-2/patches/"},{"@type":"ListItem","position":4,"name":"Season Reruns","item":"https://raigulus.github.io/division-2/patches/season-reruns/"}]}</script>
     <script src="/assets/analytics-consent.js" defer></script>
-  <script>
-    document.addEventListener("click", function(event) {
-      var link = event.target.closest("a[href]");
-      if (!link || typeof gtag !== "function") return;
-      var url;
-      try {
-        url = new URL(link.href, window.location.href);
-      } catch (error) {
-        return;
-      }
-      if (url.origin === window.location.origin) return;
-      var host = url.hostname.replace(/^www\./, "");
-      var label = (link.getAttribute("aria-label") || link.textContent || "").trim().slice(0, 120);
-      var eventName = "outbound_click";
-      if (host === "youtube.com" || host === "youtu.be") eventName = "youtube_click";
-      if (host === "instagram.com") eventName = "instagram_click";
-      if (host === "discord.com" || host === "discord.gg") eventName = "discord_click";
-      gtag("event", eventName, {
-        link_url: url.href,
-        link_domain: host,
-        link_text: label,
-        page_path: window.location.pathname,
-        event_category: "engagement"
-      });
-    }, true);
-  </script>
+  <script src="/assets/click-tracker.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -94,27 +69,7 @@
           <p><strong>Was this guide helpful?</strong> <button type="button" data-feedback-yes>👍 Yes</button> <button type="button" data-feedback-no>👎 No</button></p>
           <p class="meta">Discuss this guide with other players on <a href="https://discord.gg/xj8jnS3Gkh">Discord</a> or <a href="/feedback/">send feedback</a>.</p>
         </div>
-        <script>
-          (function() {
-            var box = document.querySelector("[data-feedback]");
-            if (!box) return;
-            function done(msg) {
-              box.querySelectorAll("button").forEach(function(b) { b.disabled = true; });
-              var p = box.querySelector("p");
-              if (p) p.innerHTML = "<strong>" + msg + "</strong>";
-            }
-            function send(v) {
-              try {
-                if (typeof gtag === "function") gtag("event", "guide_feedback", { feedback: v, page_path: window.location.pathname });
-              } catch (e) {}
-              done("Thanks for the feedback!");
-            }
-            var y = box.querySelector("[data-feedback-yes]");
-            var n = box.querySelector("[data-feedback-no]");
-            if (y) y.addEventListener("click", function() { send("yes"); });
-            if (n) n.addEventListener("click", function() { send("no"); });
-          })();
-        </script>
+        <script src="/assets/feedback-handler.js" defer></script>
       </div>
     </section>
   

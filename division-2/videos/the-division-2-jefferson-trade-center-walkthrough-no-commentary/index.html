@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
   <meta name="theme-color" content="#0b0d11">
   <title>Division 2 Jefferson Trade Center Walkthrough | Raigulus</title>
   <meta name="description" content="The Division 2 Jefferson Trade Center mission walkthrough with no commentary. Part of the Raigulus Division 2 guide archive.">
@@ -32,32 +32,7 @@
   <script src="/assets/video-player.js" defer></script>
   <script src="/assets/live-loot.js" defer></script>
     <script src="/assets/analytics-consent.js" defer></script>
-  <script>
-    document.addEventListener("click", function(event) {
-      var link = event.target.closest("a[href]");
-      if (!link || typeof gtag !== "function") return;
-      var url;
-      try {
-        url = new URL(link.href, window.location.href);
-      } catch (error) {
-        return;
-      }
-      if (url.origin === window.location.origin) return;
-      var host = url.hostname.replace(/^www\./, "");
-      var label = (link.getAttribute("aria-label") || link.textContent || "").trim().slice(0, 120);
-      var eventName = "outbound_click";
-      if (host === "youtube.com" || host === "youtu.be") eventName = "youtube_click";
-      if (host === "instagram.com") eventName = "instagram_click";
-      if (host === "discord.com" || host === "discord.gg") eventName = "discord_click";
-      gtag("event", eventName, {
-        link_url: url.href,
-        link_domain: host,
-        link_text: label,
-        page_path: window.location.pathname,
-        event_category: "engagement"
-      });
-    }, true);
-  </script>
+  <script src="/assets/click-tracker.js" defer></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"The Division 2 Jefferson Trade Center Walkthrough | No Commentary [2026]","description":"The Division 2 Jefferson Trade Center mission walkthrough with no commentary.","thumbnailUrl":["https://raigulus.github.io/assets/img/yt/vx4ZP_-SqyA-hqdefault.jpg"],"uploadDate":"2026-05-17T00:00:00+00:00","embedUrl":"https://www.youtube.com/embed/vx4ZP_-SqyA","keywords":["division 2 walkthrough","the division 2 walkthrough","division 2 no commentary","division 2 guide","division 2 jefferson trade center guide"],"author":{"@type":"Person","name":"Raigulus","url":"https://raigulus.github.io","sameAs":["https://www.youtube.com/@raigulus","https://www.instagram.com/raigulus/","https://www.facebook.com/raigulus/"]},"creator":{"@type":"Organization","name":"Raigulus","url":"https://raigulus.github.io/"},"publisher":{"@type":"Organization","name":"Raigulus","url":"https://raigulus.github.io","sameAs":["https://www.youtube.com/@raigulus","https://www.instagram.com/raigulus/","https://www.facebook.com/raigulus/"]},"duration":"PT9M55S"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://raigulus.github.io/"},{"@type":"ListItem","position":2,"name":"The Division 2","item":"https://raigulus.github.io/division-2/"},{"@type":"ListItem","position":3,"name":"The Division 2 Jefferson Trade Center Walkthrough | No Commentary [2026]","item":"https://raigulus.github.io/division-2/videos/the-division-2-jefferson-trade-center-walkthrough-no-commentary/"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","url":"https://raigulus.github.io/division-2/videos/the-division-2-jefferson-trade-center-walkthrough-no-commentary/","mainEntity":[{"@type":"Question","name":"What does this Jefferson Trade Center video cover?","acceptedAnswer":{"@type":"Answer","text":"It covers the embedded Raigulus run for Jefferson Trade Center, including route flow, objectives, combat pacing, and visible loot checks where possible."}},{"@type":"Question","name":"What difficulty or variant is shown?","acceptedAnswer":{"@type":"Answer","text":"The page labels the run as standard. Check the embedded video for the exact pacing and encounter flow."}},{"@type":"Question","name":"Is this a no commentary guide?","acceptedAnswer":{"@type":"Answer","text":"The upload is labeled as no commentary. If commentary or archive context is present, the page describes it instead of forcing it into a no-commentary format."}},{"@type":"Question","name":"Does this video guarantee loot drops or collectibles?","acceptedAnswer":{"@type":"Answer","text":"No. The page only mentions loot checks or drops when they are visible in the video, and it does not claim all caches, all collectibles, or guaranteed rewards."}},{"@type":"Question","name":"Can I use this route solo?","acceptedAnswer":{"@type":"Answer","text":"Yes, it can be used as a solo route reference, but your build and difficulty setting still matter."}}]}</script>

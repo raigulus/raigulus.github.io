@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
   <meta name="theme-color" content="#0b0d11">
   <title>Division 2 Reset Times &amp; Countdowns [2026] | Raigulus</title>
   <meta name="description" content="What time does Division 2 reset today? Daily loot 08:00 UTC, weekly vendors Tuesday - live countdowns to every reset. Unofficial fan guide by Raigulus.">
@@ -25,32 +25,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script src="/assets/search.js" defer></script>
     <script src="/assets/analytics-consent.js" defer></script>
-  <script>
-    document.addEventListener("click", function(event) {
-      var link = event.target.closest("a[href]");
-      if (!link || typeof gtag !== "function") return;
-      var url;
-      try {
-        url = new URL(link.href, window.location.href);
-      } catch (error) {
-        return;
-      }
-      if (url.origin === window.location.origin) return;
-      var host = url.hostname.replace(/^www\./, "");
-      var label = (link.getAttribute("aria-label") || link.textContent || "").trim().slice(0, 120);
-      var eventName = "outbound_click";
-      if (host === "youtube.com" || host === "youtu.be") eventName = "youtube_click";
-      if (host === "instagram.com") eventName = "instagram_click";
-      if (host === "discord.com" || host === "discord.gg") eventName = "discord_click";
-      gtag("event", eventName, {
-        link_url: url.href,
-        link_domain: host,
-        link_text: label,
-        page_path: window.location.pathname,
-        event_category: "engagement"
-      });
-    }, true);
-  </script>
+  <script src="/assets/click-tracker.js" defer></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"The Division 2 Daily and Weekly Reset Times with Live Countdowns","description":"Division 2 reset times: daily targeted loot at 08:00 UTC, weekly vendors Tuesday, incursion key chest Monday, Cassie Mendoza Wednesday.","url":"https://raigulus.github.io/division-2/reset/","isPartOf":{"@type":"WebSite","name":"Raigulus","url":"https://raigulus.github.io","sameAs":["https://www.youtube.com/@raigulus","https://www.instagram.com/raigulus/","https://www.facebook.com/raigulus/"]},"about":[{"@type":"Game","name":"Tom Clancy's The Division 2"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","url":"https://raigulus.github.io/division-2/reset/","mainEntity":[{"@type":"Question","name":"When does The Division 2 daily reset happen?","acceptedAnswer":{"@type":"Answer","text":"The daily reset happens every day at 08:00 UTC (04:00 EDT in summer). Targeted loot, daily projects and related rotations refresh at that time."}},{"@type":"Question","name":"When is The Division 2 weekly reset?","acceptedAnswer":{"@type":"Answer","text":"The weekly reset happens on Tuesdays around 08:00 UTC. Vendor stock, weekly projects, invasions and legendary rotations refresh together. Tuesday maintenance can shift the exact minute, so check the server status tracker on reset day."}},{"@type":"Question","name":"When does the Division 2 incursion key chest reset?","acceptedAnswer":{"@type":"Answer","text":"The incursion key chest resets every Monday at 08:00 UTC, at the daily reset time."}},{"@type":"Question","name":"When does Cassie Mendoza open?","acceptedAnswer":{"@type":"Answer","text":"Cassie Mendoza opens on Wednesdays once her location becomes available via the Snitch, one day after the Tuesday weekly vendor reset."}},{"@type":"Question","name":"When is the Division 2 vendor reset?","acceptedAnswer":{"@type":"Answer","text":"Vendor stock resets on Tuesdays around 08:00 UTC with the weekly reset. Cassie Mendoza opens separately on Wednesdays once the Snitch reveals her location."}},{"@type":"Question","name":"Do Division 2 vendors reset daily or weekly?","acceptedAnswer":{"@type":"Answer","text":"Weekly. Base vendor stock, weekly projects, invasions and the legendary rotation all reset on Tuesdays around 08:00 UTC. The daily 08:00 UTC reset rotates targeted loot and daily projects only - vendors do not change every day."}},{"@type":"Question","name":"What time does The Division 2 reset in my local time?","acceptedAnswer":{"@type":"Answer","text":"The daily reset is 08:00 UTC, which is 04:00 during US daylight saving time and 03:00 during US standard time. The countdown table at the top of this page converts to whatever timezone your browser is set to, so the times shown there are already local."}},{"@type":"Question","name":"When does the Division 2 incursion lockout reset?","acceptedAnswer":{"@type":"Answer","text":"Weekly and per character, separate from the daily reset. The incursion key chest refreshes on Monday at 08:00 UTC, but boss lockouts are tracked individually per character and do not reset just because you cleared an incursion early."}},{"@type":"Question","name":"Why is the Division 2 reset time reported differently on different sites?","acceptedAnswer":{"@type":"Answer","text":"Because the reset window is not always quoted in UTC. Several community trackers list the weekly reset as 3:30 AM US Eastern, which lands roughly half an hour either side of the 08:00 UTC figure depending on daylight saving time. Treat any time between 07:30 and 08:30 UTC as the same practical window, and check the server status tracker on Tuesday when maintenance shifts it further."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://raigulus.github.io/"},{"@type":"ListItem","position":2,"name":"The Division 2","item":"https://raigulus.github.io/division-2/"},{"@type":"ListItem","position":3,"name":"Reset Times","item":"https://raigulus.github.io/division-2/reset/"}]}</script>
@@ -160,27 +135,7 @@
           <p><strong>Was this guide helpful?</strong> <button type="button" data-feedback-yes>👍 Yes</button> <button type="button" data-feedback-no>👎 No</button></p>
           <p class="meta">Discuss this guide with other players on <a href="https://discord.gg/xj8jnS3Gkh">Discord</a> or <a href="/feedback/">send feedback</a>.</p>
         </div>
-        <script>
-          (function() {
-            var box = document.querySelector("[data-feedback]");
-            if (!box) return;
-            function done(msg) {
-              box.querySelectorAll("button").forEach(function(b) { b.disabled = true; });
-              var p = box.querySelector("p");
-              if (p) p.innerHTML = "<strong>" + msg + "</strong>";
-            }
-            function send(v) {
-              try {
-                if (typeof gtag === "function") gtag("event", "guide_feedback", { feedback: v, page_path: window.location.pathname });
-              } catch (e) {}
-              done("Thanks for the feedback!");
-            }
-            var y = box.querySelector("[data-feedback-yes]");
-            var n = box.querySelector("[data-feedback-no]");
-            if (y) y.addEventListener("click", function() { send("yes"); });
-            if (n) n.addEventListener("click", function() { send("no"); });
-          })();
-        </script>
+        <script src="/assets/feedback-handler.js" defer></script>
       </div>
     </section>
       <section class="section">

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
   <meta name="theme-color" content="#0b0d11">
   <title>Division 2 Rise Up: Y8S1 Summary [2026] | Raigulus</title>
   <meta name="description" content="Division 2 Rise Up (Y8S1) update summary [2026]: Escalation difficulty, Prototype rarity, Black Tusk Retaliation, Agitator and Investor exotics.">
@@ -30,32 +30,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","url":"https://raigulus.github.io/division-2/patches/rise-up/","mainEntity":[{"@type":"Question","name":"When did Rise Up launch?","acceptedAnswer":{"@type":"Answer","text":"Year 8 Season 1 launched in early April 2026 with patch 2.24, adding the Escalation difficulty and Prototype rarity."}},{"@type":"Question","name":"What is Escalation in The Division 2?","acceptedAnswer":{"@type":"Answer","text":"A permanent endgame difficulty with 10 tiers, token entry, no checkpoints and a weekly Tuesday rotation of five missions."}},{"@type":"Question","name":"Which exotics came with Rise Up?","acceptedAnswer":{"@type":"Answer","text":"The Agitator assault rifle and Investor mask on the Season Pass track, plus the Whiplash pistol from the first Master Climax clear."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://raigulus.github.io/"},{"@type":"ListItem","position":2,"name":"The Division 2","item":"https://raigulus.github.io/division-2/"},{"@type":"ListItem","position":3,"name":"Patches","item":"https://raigulus.github.io/division-2/patches/"},{"@type":"ListItem","position":4,"name":"Rise Up","item":"https://raigulus.github.io/division-2/patches/rise-up/"}]}</script>
     <script src="/assets/analytics-consent.js" defer></script>
-  <script>
-    document.addEventListener("click", function(event) {
-      var link = event.target.closest("a[href]");
-      if (!link || typeof gtag !== "function") return;
-      var url;
-      try {
-        url = new URL(link.href, window.location.href);
-      } catch (error) {
-        return;
-      }
-      if (url.origin === window.location.origin) return;
-      var host = url.hostname.replace(/^www\./, "");
-      var label = (link.getAttribute("aria-label") || link.textContent || "").trim().slice(0, 120);
-      var eventName = "outbound_click";
-      if (host === "youtube.com" || host === "youtu.be") eventName = "youtube_click";
-      if (host === "instagram.com") eventName = "instagram_click";
-      if (host === "discord.com" || host === "discord.gg") eventName = "discord_click";
-      gtag("event", eventName, {
-        link_url: url.href,
-        link_domain: host,
-        link_text: label,
-        page_path: window.location.pathname,
-        event_category: "engagement"
-      });
-    }, true);
-  </script>
+  <script src="/assets/click-tracker.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -104,27 +79,7 @@
           <p><strong>Was this guide helpful?</strong> <button type="button" data-feedback-yes>👍 Yes</button> <button type="button" data-feedback-no>👎 No</button></p>
           <p class="meta">Discuss this guide with other players on <a href="https://discord.gg/xj8jnS3Gkh">Discord</a> or <a href="/feedback/">send feedback</a>.</p>
         </div>
-        <script>
-          (function() {
-            var box = document.querySelector("[data-feedback]");
-            if (!box) return;
-            function done(msg) {
-              box.querySelectorAll("button").forEach(function(b) { b.disabled = true; });
-              var p = box.querySelector("p");
-              if (p) p.innerHTML = "<strong>" + msg + "</strong>";
-            }
-            function send(v) {
-              try {
-                if (typeof gtag === "function") gtag("event", "guide_feedback", { feedback: v, page_path: window.location.pathname });
-              } catch (e) {}
-              done("Thanks for the feedback!");
-            }
-            var y = box.querySelector("[data-feedback-yes]");
-            var n = box.querySelector("[data-feedback-no]");
-            if (y) y.addEventListener("click", function() { send("yes"); });
-            if (n) n.addEventListener("click", function() { send("no"); });
-          })();
-        </script>
+        <script src="/assets/feedback-handler.js" defer></script>
       </div>
     </section>
   

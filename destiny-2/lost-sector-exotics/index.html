@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
   <meta name="theme-color" content="#0b0d11">
   <title>Destiny 2 Lost Sector Exotic Drops &amp; D2 Lost Sector Today [2026] | Raigulus</title>
   <meta name="description" content="Destiny 2 Lost Sector exotic drops [2026]: Legend vs Master drop rates, solo requirement, champion mods, rotation schedule, and daily tracker.">
@@ -27,32 +27,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script src="/assets/search.js" defer></script>
     <script src="/assets/analytics-consent.js" defer></script>
-  <script>
-    document.addEventListener("click", function(event) {
-      var link = event.target.closest("a[href]");
-      if (!link || typeof gtag !== "function") return;
-      var url;
-      try {
-        url = new URL(link.href, window.location.href);
-      } catch (error) {
-        return;
-      }
-      if (url.origin === window.location.origin) return;
-      var host = url.hostname.replace(/^www\./, "");
-      var label = (link.getAttribute("aria-label") || link.textContent || "").trim().slice(0, 120);
-      var eventName = "outbound_click";
-      if (host === "youtube.com" || host === "youtu.be") eventName = "youtube_click";
-      if (host === "instagram.com") eventName = "instagram_click";
-      if (host === "discord.com" || host === "discord.gg") eventName = "discord_click";
-      gtag("event", eventName, {
-        link_url: url.href,
-        link_domain: host,
-        link_text: label,
-        page_path: window.location.pathname,
-        event_category: "engagement"
-      });
-    }, true);
-  </script>
+  <script src="/assets/click-tracker.js" defer></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Destiny 2 Lost Sector Exotic Drops","description":"Unofficial Destiny 2 Lost Sector exotic farming guide with Legend vs Master drop rates, solo requirement, champion modifiers, and rotation schedule.","url":"https://raigulus.github.io/destiny-2/lost-sector-exotics/","isPartOf":{"@type":"WebSite","name":"Raigulus","url":"https://raigulus.github.io","sameAs":["https://www.youtube.com/@raigulus","https://www.instagram.com/raigulus/","https://www.facebook.com/raigulus/"]},"about":{"@type":"Game","name":"Destiny 2"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","url":"https://raigulus.github.io/destiny-2/lost-sector-exotics/","mainEntity":[{"@type":"Question","name":"What is the exotic drop rate in Lost Sectors?","acceptedAnswer":{"@type":"Answer","text":"Exotic drop rates are approximately 25% on Legend and 50% on Master difficulty. Both require a solo completion for exotic engrams to drop."}},{"@type":"Question","name":"Do you have to solo Lost Sectors for exotics?","acceptedAnswer":{"@type":"Answer","text":"Yes. You must complete the Lost Sector alone for exotic engrams to drop. Fireteam matchmaking disables exotic drops."}},{"@type":"Question","name":"Legend or Master Lost Sector for exotic farming?","acceptedAnswer":{"@type":"Answer","text":"Master has better exotic drop rates but is significantly harder. Farm Legend if your clears are twice as fast, since more completions per hour beats a higher per-run rate."}},{"@type":"Question","name":"Where is today's Lost Sector rotation?","acceptedAnswer":{"@type":"Answer","text":"Today's Legend and Master Lost Sectors with live reset countdown are on the Destiny 2 Lost Sector tracker page at https://raigulus.github.io/destiny-2/lost-sector-tracker/."}}]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://raigulus.github.io/"},{"@type":"ListItem","position":2,"name":"Destiny 2","item":"https://raigulus.github.io/destiny-2/"},{"@type":"ListItem","position":3,"name":"Lost Sector Exotics","item":"https://raigulus.github.io/destiny-2/lost-sector-exotics/"}]}</script>
@@ -143,27 +118,7 @@
           <p><strong>Was this guide helpful?</strong> <button type="button" data-feedback-yes>👍 Yes</button> <button type="button" data-feedback-no>👎 No</button></p>
           <p class="meta">Discuss this guide with other players on <a href="https://discord.gg/xj8jnS3Gkh">Discord</a> or <a href="/feedback/">send feedback</a>.</p>
         </div>
-        <script>
-          (function() {
-            var box = document.querySelector("[data-feedback]");
-            if (!box) return;
-            function done(msg) {
-              box.querySelectorAll("button").forEach(function(b) { b.disabled = true; });
-              var p = box.querySelector("p");
-              if (p) p.innerHTML = "<strong>" + msg + "</strong>";
-            }
-            function send(v) {
-              try {
-                if (typeof gtag === "function") gtag("event", "guide_feedback", { feedback: v, page_path: window.location.pathname });
-              } catch (e) {}
-              done("Thanks for the feedback!");
-            }
-            var y = box.querySelector("[data-feedback-yes]");
-            var n = box.querySelector("[data-feedback-no]");
-            if (y) y.addEventListener("click", function() { send("yes"); });
-            if (n) n.addEventListener("click", function() { send("no"); });
-          })();
-        </script>
+        <script src="/assets/feedback-handler.js" defer></script>
       </div>
     </section>
       <section class="section">

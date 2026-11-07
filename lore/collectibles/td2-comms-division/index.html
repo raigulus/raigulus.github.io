@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
   <meta name="theme-color" content="#0b0d11">
   <title>TD2 Comms: Division | Division 2 Lore | Raigulus</title>
   <meta name="description" content="10 comms from The Division 2: Kelso Recruitment and 9 more, with full transcripts and known map locations. Unofficial fan guide by Raigulus.">
@@ -30,32 +30,7 @@
   <script src="/assets/site.js" defer></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"TD2 Comms: Division","headline":"TD2 Comms: Division","description":"10 comms from The Division 2: Kelso Recruitment and 9 more, with full transcripts and known map locations.","url":"https://raigulus.github.io/lore/collectibles/td2-comms-division/","isPartOf":{"@type":"WebSite","name":"Raigulus","url":"https://raigulus.github.io"},"dateModified":"2026-08-19","author":{"@type":"Person","name":"Raigulus","url":"https://raigulus.github.io/about/"},"image":"https://raigulus.github.io/assets/og-default.png","datePublished":"2026-08-19","publisher":{"@type":"Organization","name":"Raigulus","logo":{"@type":"ImageObject","url":"https://raigulus.github.io/assets/raigulus-logo.jpg"}}}</script>
   <script src="/assets/analytics-consent.js" defer></script>
-  <script>
-    document.addEventListener("click", function(event) {
-      var link = event.target.closest("a[href]");
-      if (!link || typeof gtag !== "function") return;
-      var url;
-      try {
-        url = new URL(link.href, window.location.href);
-      } catch (error) {
-        return;
-      }
-      if (url.origin === window.location.origin) return;
-      var host = url.hostname.replace(/^www\./, "");
-      var label = (link.getAttribute("aria-label") || link.textContent || "").trim().slice(0, 120);
-      var eventName = "outbound_click";
-      if (host === "youtube.com" || host === "youtu.be") eventName = "youtube_click";
-      if (host === "instagram.com") eventName = "instagram_click";
-      if (host === "discord.com" || host === "discord.gg") eventName = "discord_click";
-      gtag("event", eventName, {
-        link_url: url.href,
-        link_domain: host,
-        link_text: label,
-        page_path: window.location.pathname,
-        event_category: "engagement"
-      });
-    }, true);
-  </script>
+  <script src="/assets/click-tracker.js" defer></script>
 
 </head>
 <body>
