@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-07T20:05:19Z",
+  "generated_at": "2026-11-07T20:50:43Z",
   "stats": {
-    "total_guides": 499,
+    "total_guides": 500,
     "exotics": 79,
     "patches": 32
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "Can You Beat Master Difficulty Bobby Guzman Solo? Flawless",
+      "url": "https://raigulus.github.io/division-2/videos/can-you-beat-master-difficulty-bobby-guzman-solo-f/",
+      "youtube_url": "https://www.youtube.com/watch?v=rS7QFHoG5lg",
+      "thumbnail": "/assets/img/yt/rS7QFHoG5lg-hqdefault.jpg",
+      "published_date": "2026-11-07",
+      "cluster": "side activity",
+      "summary": "Solo Flawless Master Difficulty clear of Washington National Airport vs Bobby Guzman in The Division 2 (Y8S3): 20:04, zero deaths, no Hive.  Build used: Iron Wi"
+    },
     {
       "title": "Clockwork SMG Locations: Don't Miss These Guardian Cards",
       "url": "https://raigulus.github.io/division-2/videos/clockwork-smg-locations-don-t-miss-these-guardian/",
@@ -28,15 +37,6 @@
       "published_date": "2026-11-05",
       "cluster": "side activity",
       "summary": "🔴 **THE DIVISION 2 — ECHOES OF CENTRAL PARK DLC FINALE**  Today, we're heading into Central Park to finish The Division 2: Echoes of Central Park DLC!  I'm team"
-    },
-    {
-      "title": "Can We Survive Central Park? The Division 2 Finale",
-      "url": "https://raigulus.github.io/division-2/videos/can-we-survive-central-park-the-division-2-finale/",
-      "youtube_url": "https://www.youtube.com/watch?v=m8JrHD8hYMc",
-      "thumbnail": "/assets/img/yt/m8JrHD8hYMc-hqdefault.jpg",
-      "published_date": "2026-11-04",
-      "cluster": "side activity",
-      "summary": "🔴 **THE DIVISION 2 — ECHOES OF CENTRAL PARK DLC FINALE**  Today, we're heading into Central Park to finish The Division 2: Echoes of Central Park DLC!  I'm team"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-07 20:05 UTC"
+    "last_checked": "2026-11-07 20:50 UTC"
   },
   "discord_members": 58,
   "next_reset_utc": "2026-11-08T07:00:00Z"
