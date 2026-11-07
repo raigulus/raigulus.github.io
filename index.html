@@ -370,78 +370,7 @@
       <a href="/feedback/">Feedback</a>
     </div>
   </footer>
-  <script>
-    (function(){
-      fetch("/assets/data/landing-data.json?v="+Date.now(),{cache:"no-store"})
-        .then(function(r){return r.json()})
-        .then(function(d){
-          var dot=document.getElementById("home-status-dot");
-          if(dot&&!d.server.operational){dot.classList.add("down")}
-
-          var versions=document.querySelectorAll('[data-dynamic="version"]');
-          for(var i=0;i<versions.length;i++){versions[i].textContent=d.latest_patch.version||"Y8S3"}
-
-          var guideCount=document.querySelector('[data-dynamic="guide-count"]');
-          if(guideCount){guideCount.textContent=String(d.stats.patches).padStart(2,"0")}
-
-          var exoticsCount=document.querySelector('[data-dynamic="exotics-count"]');
-          if(exoticsCount){exoticsCount.textContent=String(d.stats.exotics)}
-
-          var totalGuides=document.querySelector('[data-dynamic="total-guides"]');
-          if(totalGuides){totalGuides.textContent=String(d.stats.total_guides)}
-
-          var lootStatus=document.querySelector('[data-dynamic="loot-status"]');
-          if(lootStatus&&d.loot.active){
-            lootStatus.textContent="Loot today: "+d.loot.mission_count+" missions · "+d.loot.vendor_count+" vendor";
-            lootStatus.classList.add("is-live")
-          }
-
-          var lootNext=document.querySelector('[data-dynamic="loot-next"]');
-          if(lootNext&&d.loot.active){
-            var resetTime=new Date(d.next_reset_utc).getTime();
-            function updateCountdown(){
-              var now=Date.now();
-              var diff=resetTime-now;
-              if(diff<=0){lootNext.textContent="Reset now!";return}
-              var h=Math.floor(diff/3600000);
-              var m=Math.floor((diff%3600000)/60000);
-              var s=Math.floor((diff%60000)/1000);
-              lootNext.textContent="Next reset in "+h+"h "+m+"m "+s+"s";
-            }
-            updateCountdown();
-            setInterval(updateCountdown,1000);
-          }
-
-          var discordMembers=document.querySelector('[data-dynamic="discord-members"]');
-          if(discordMembers&&d.discord_members>0){
-            discordMembers.textContent=d.discord_members.toLocaleString()+" members online"
-          }
-
-          if(d.latest_videos&&d.latest_videos.length>0){
-            var grid=document.getElementById("latest-videos-grid");
-            if(grid){
-              var months=["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
-              var cards=d.latest_videos.map(function(v){
-                var dt=new Date(v.published_date+"T00:00:00Z");
-                var dateStr=dt.getUTCDate()+" "+months[dt.getUTCMonth()]+" "+dt.getUTCFullYear();
-                var tag=v.cluster?v.cluster.charAt(0).toUpperCase()+v.cluster.slice(1):"Guide";
-                return '<a class="latest-card" href="'+v.url+'">'
-                  +'<div class="latest-card-img">'
-                  +'<img src="'+v.thumbnail+'" alt="'+v.title+'" loading="lazy">'
-                  +'<span class="latest-card-tag">'+tag+'</span>'
-                  +'</div>'
-                  +'<div class="latest-card-body">'
-                  +'<p class="latest-card-date">'+dateStr+'</p>'
-                  +'<h3 class="latest-card-title">'+v.title+'</h3>'
-                  +'<p class="latest-card-desc">'+v.summary+'</p>'
-                  +'</div></a>';
-              });
-              grid.innerHTML=cards.join("");
-            }
-          }
-        })
-        .catch(function(){});
-    })();
+  <script src="/assets/home-data.js" defer></script>
   </script>
 
 

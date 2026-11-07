@@ -1,0 +1,1 @@
+!function(){var meta=document.querySelector('meta[name="redirect"]');if(meta){var target=meta.getAttribute("content");target&&window.location.replace(target)}}();
