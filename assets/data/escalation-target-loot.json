@@ -1,48 +1,48 @@
 {
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Art Museum",
-      "loot": "Unit Alloys"
+      "loot": "Legatus S.p.A."
     },
     {
       "mission": "Manning National Zoo",
-      "loot": "Holster"
+      "loot": "Kneepad"
     },
     {
       "mission": "Camp White Oak",
-      "loot": "Wyvern Wear"
+      "loot": "LMG"
     },
     {
       "mission": "The Pentagon",
-      "loot": "Negotiators Dilemma"
+      "loot": "Alps Summit Armaments"
     },
     {
       "mission": "DARPA Research Labs",
-      "loot": "Douglas & Harding"
+      "loot": "Cavalier"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Rifles"
+      "item": "SMGs"
     },
     {
       "type": "Gear",
-      "item": "Kneepads"
+      "item": "Holsters"
     }
   ],
-  "last_updated": "2026-11-07 09:01",
-  "last_checked": "2026-11-08 07:05 UTC",
-  "parsed_at": "2026-11-08T07:05:09.142975+00:00",
-  "status": "pending",
-  "fetched_at": "2026-11-08T07:05:09.142975+00:00",
+  "last_updated": "2026-11-08 09:01",
+  "last_checked": "2026-11-08 08:05 UTC",
+  "parsed_at": "2026-11-08T08:05:09.668319+00:00",
+  "status": "ok",
+  "fetched_at": "2026-11-08T08:05:09.668319+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-11-08 07:05 UTC",
+  "vendor_highlights_checked": "2026-11-08 08:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
