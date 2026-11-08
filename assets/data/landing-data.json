@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-08T22:05:15Z",
+  "generated_at": "2026-11-08T23:05:17Z",
   "stats": {
-    "total_guides": 500,
+    "total_guides": 501,
     "exotics": 79,
     "patches": 32
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "I Took On Jefferson Plaza in T10... Here Is The 17:32",
+      "url": "https://raigulus.github.io/division-2/videos/i-took-on-jefferson-plaza-in-t10-here-is-the-17-32/",
+      "youtube_url": "https://www.youtube.com/watch?v=te-GndnPfs0",
+      "thumbnail": "/assets/img/yt/te-GndnPfs0-hqdefault.jpg",
+      "published_date": "2026-11-08",
+      "cluster": "escalation run",
+      "summary": "Can the Eagle Bearer handle a Tier 10 Jefferson Plaza run? In Part 2, we're putting the exotic assault rifle through another high-level challenge in The Divisio"
+    },
     {
       "title": "Can You Beat Master Difficulty Bobby Guzman Solo? Flawless",
       "url": "https://raigulus.github.io/division-2/videos/can-you-beat-master-difficulty-bobby-guzman-solo-f/",
@@ -28,15 +37,6 @@
       "published_date": "2026-11-06",
       "cluster": "side activity",
       "summary": "Discover how to collect all 6 Guardian Cards in The Division 2's Central Park DLC and unlock the brand-new Named Clockwork SMG!  In this guide, I'll walk you th"
-    },
-    {
-      "title": "THE DIVISION 2: CENTRAL PARK FARMING & ACTIVITIES 🔴 LIVE",
-      "url": "https://raigulus.github.io/division-2/videos/the-division-2-central-park-farming-activities-liv/",
-      "youtube_url": "https://www.youtube.com/watch?v=UYgxIAtIjN0",
-      "thumbnail": "/assets/img/yt/UYgxIAtIjN0-hqdefault.jpg",
-      "published_date": "2026-11-05",
-      "cluster": "side activity",
-      "summary": "🔴 **THE DIVISION 2 — ECHOES OF CENTRAL PARK DLC FINALE**  Today, we're heading into Central Park to finish The Division 2: Echoes of Central Park DLC!  I'm team"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-08 22:05 UTC"
+    "last_checked": "2026-11-08 23:05 UTC"
   },
   "discord_members": 61,
   "next_reset_utc": "2026-11-09T07:00:00Z"
