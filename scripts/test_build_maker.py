@@ -471,9 +471,67 @@ class TestThemeControl(unittest.TestCase):
     theme block is lifted out verbatim and run on its own."""
 
     SITE = read(SITE_JS)
-    START = SITE.find("// Accent theme.")
-    END = SITE.find("})();", START) + len("})();")
-    BLOCK = SITE[START:END] if START >= 0 else ""
+
+    @staticmethod
+    def _theme_block(site):
+        """Extract the theme IIFE robustly for both pretty and minified builds.
+
+        Minified site.js drops the literary marker the previous extraction
+        relied on (``// Accent theme.``). Locate the IIFE via its storage key
+        and backtrack to the opening parenthesis; then brace-match to the
+        closing brace, skipping string literals. Return the IIFE range plus
+        its leading bang and trailing semicolon/comma.
+        """
+        idx = site.find("raigulus-theme")
+        if idx < 0:
+            return ""
+        starts = [site.rfind("(function", 0, idx), site.rfind("!function", 0, idx)]
+        starts = [s for s in starts if s >= 0]
+        if not starts:
+            return ""
+        start = max(starts)
+        if start > 0 and site[start - 1] == "!" and site[start] == "(":
+            start -= 1
+        n = len(site)
+        depth = 0
+        seen_open = False
+        quote = None
+        esc = False
+        i = start
+        while i < n:
+            ch = site[i]
+            if quote is not None:
+                if esc:
+                    esc = False
+                elif ch == "\\":
+                    esc = True
+                elif ch == quote:
+                    quote = None
+                i += 1
+                continue
+            if ch in ("'", '"', "`"):
+                quote = ch
+            elif ch == "{":
+                depth += 1
+                seen_open = True
+            elif ch == "}":
+                depth -= 1
+                if seen_open and depth == 0:
+                    i += 1
+                    break
+            i += 1
+        j = i
+        while j < n and site[j] in "() \t\r\n!":
+            j += 1
+        # Only a semicolon is a statement terminator. A comma in the minified
+        # bundle is the operator joining the theme IIFE to the next statement;
+        # including it would swallow the harness's next function into a comma
+        # expression and break the click tests. Exclude it.
+        if j < n and site[j] == ";":
+            j += 1
+        return site[start:j]
+
+    BLOCK = _theme_block(SITE)
 
     HARNESS = """
 var __store = __STORE__;
@@ -604,7 +662,38 @@ console.log(JSON.stringify({ steps: __steps }));
 
 
 class TestPvpValues(Base):
-    """Brand and gear set bonuses must switch to their PvP overrides."""
+    """Brand and gear set bonuses must switch to their PvP overrides.
+
+    The production data file is regenerated from upstream div2hub, which
+    does not carry the PvP overrides. The verified overrides added on
+    2026-10-28 (commits ab479228 / 5334fd63) were wiped by the automated
+    refresh on 2026-11-02. These tests therefore inject known-good
+    overrides from the preserved previous snapshot as an in-memory
+    fixture. The assertions themselves are unchanged. The missing-overrides
+    condition in the production file is reported as a production defect.
+    """
+
+    import copy as _copy
+
+    @classmethod
+    def _pvp_fixture(cls):
+        fixture = cls._copy.deepcopy(DATA) if hasattr(cls, "_copy") else DATA
+        # Deep-copy without importing copy at module import time
+        import copy as _cp
+        fixture = _cp.deepcopy(DATA)
+        prev_path = os.path.join(ROOT, "assets", "data", "build-maker-prev.json")
+        prev = json.loads(read(prev_path))
+        prev_by_name = {}
+        for node in prev.get("brands", []) + prev.get("gearSets", []):
+            pvp_fields = {k: v for k, v in node.items() if k.startswith("pvp_")}
+            if pvp_fields:
+                prev_by_name[node["name"]] = pvp_fields
+        for collection in (fixture.get("brands", []), fixture.get("gearSets", [])):
+            for node in collection:
+                overrides = prev_by_name.get(node["name"])
+                if overrides:
+                    node.update(overrides)
+        return fixture
 
     def two_pieces(self, key, value):
         picked = {}
@@ -619,7 +708,13 @@ class TestPvpValues(Base):
 
     def summary(self, state, pvp):
         body = "clickBtn('bm-pvp', true);" if pvp else ""
-        res = drive(hash_=b64(state), body=body)
+        global DATA
+        original = DATA
+        DATA = self._pvp_fixture()
+        try:
+            res = drive(hash_=b64(state), body=body)
+        finally:
+            DATA = original
         self.assertAlive(res)
         return res["summary"]
 
@@ -647,7 +742,8 @@ class TestPvpValues(Base):
             return set(part.split(":")[1] for part in (bonus or "").split("|")
                        if part.startswith("stat:"))
         checked = 0
-        for node in DATA["brands"] + DATA["gearSets"]:
+        fixture = self._pvp_fixture()
+        for node in fixture.get("brands", []) + fixture.get("gearSets", []):
             for pc in ("1", "2", "3"):
                 over = node.get("pvp_%spc_bonus" % pc)
                 if not over:
@@ -656,6 +752,99 @@ class TestPvpValues(Base):
                 self.assertEqual(stats(node.get(pc + "pc_bonus")), stats(over),
                                  "%s %spc swaps the attribute in PvP" % (node["name"], pc))
         self.assertGreater(checked, 25, "PvP overrides went missing from the data")
+
+
+class TestPvpDataIntegrity(unittest.TestCase):
+    """Production JSON and the refresh pipeline must keep PvP overrides."""
+
+    def _load_pipeline(self):
+        import importlib.util
+        path = os.path.join(ROOT, "scripts", "build-maker-data.py")
+        spec = importlib.util.spec_from_file_location("bmdata", path)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module
+
+    def _production(self):
+        return json.loads(read(DATA_FILE))
+
+    def _pvp_count(self, data):
+        return sum(1 for n in data.get("brands", []) + data.get("gearSets", [])
+                   for pc in ("1", "2", "3") if n.get("pvp_%spc_bonus" % pc))
+
+    def test_production_json_has_all_pvp_overrides(self):
+        data = self._production()
+        self.assertGreaterEqual(self._pvp_count(data), 53,
+                                "production build-maker.json lost PvP overrides")
+
+    def test_production_aegis_pvp_value(self):
+        aegis = next(g for g in self._production()["gearSets"] if g["name"] == "Aegis")
+        self.assertEqual(aegis.get("2pc_bonus"), "stat:health:70%")
+        self.assertEqual(aegis.get("pvp_2pc_bonus"), "stat:health:100%")
+
+    def test_production_ceska_pvp_value(self):
+        ceska = next(b for b in self._production()["brands"] if b["name"] == "Ceska Vyroba s.r.o.")
+        self.assertEqual(ceska.get("2pc_bonus"), "stat:shotgun-damage:24%")
+        self.assertEqual(ceska.get("pvp_2pc_bonus"), "stat:shotgun-damage:12%")
+
+    def test_simulated_refresh_preserves_overrides(self):
+        import copy as _cp
+        module = self._load_pipeline()
+        overrides = module.load_pvp_overrides()
+        self.assertGreaterEqual(len(overrides), 20, "overrides file is empty")
+        fresh = _cp.deepcopy(self._production())
+        for collection in ("brands", "gearSets"):
+            for node in fresh.get(collection, []):
+                for key in list(node):
+                    if key.startswith("pvp_"):
+                        del node[key]
+        self.assertEqual(self._pvp_count(fresh), 0)
+        module.apply_pvp_overrides(fresh, overrides)
+        self.assertGreaterEqual(self._pvp_count(fresh), 53)
+        aegis = next(g for g in fresh["gearSets"] if g["name"] == "Aegis")
+        self.assertEqual(aegis.get("pvp_2pc_bonus"), "stat:health:100%")
+
+    def test_merge_is_idempotent(self):
+        import copy as _cp
+        module = self._load_pipeline()
+        overrides = module.load_pvp_overrides()
+        fresh = _cp.deepcopy(self._production())
+        # strip pvp first to simulate fresh upstream
+        for collection in ("brands", "gearSets"):
+            for node in fresh.get(collection, []):
+                for key in list(node):
+                    if key.startswith("pvp_"):
+                        del node[key]
+        module.apply_pvp_overrides(fresh, overrides)
+        first = _cp.deepcopy(fresh)
+        module.apply_pvp_overrides(fresh, overrides)
+        self.assertEqual(fresh, first)
+
+    def test_merge_preserves_unrelated_upstream_fields(self):
+        import copy as _cp
+        module = self._load_pipeline()
+        overrides = module.load_pvp_overrides()
+        fresh = _cp.deepcopy(self._production())
+        # simulate upstream drift in an unrelated field
+        fresh["brands"][0]["1pc_bonus"] = "stat:critical-hit-chance:99%"
+        before = _cp.deepcopy(fresh)
+        module.apply_pvp_overrides(fresh, overrides)
+        self.assertEqual(fresh["brands"][0]["1pc_bonus"], "stat:critical-hit-chance:99%")
+        # only pvp_* keys may differ between before and after
+        for collection in ("brands", "gearSets"):
+            for old_node, new_node in zip(before.get(collection, []), fresh.get(collection, [])):
+                for key, value in old_node.items():
+                    if key.startswith("pvp_"):
+                        continue
+                    self.assertEqual(new_node.get(key), value)
+
+    def test_merge_handles_unknown_names_safely(self):
+        import copy as _cp
+        module = self._load_pipeline()
+        fresh = _cp.deepcopy(self._production())
+        bogus = [{"collection": "brands", "name": "No Such Brand", "pvp_1pc_bonus": "stat:health:1%"}, {"bad": "entry"}, "not-a-dict"]
+        module.apply_pvp_overrides(fresh, bogus)
+        self.assertIsNone(next((b for b in fresh["brands"] if b["name"] == "No Such Brand"), None))
 
 
 class TestDamageEstimate(Base):

@@ -16,6 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "assets" / "data" / "build-maker.json"
 PREV = ROOT / "assets" / "data" / "build-maker-prev.json"
+OVERRIDES = ROOT / "assets" / "data" / "build-maker-pvp-overrides.json"
 BASE = "https://raw.githubusercontent.com/div2hub/game-data/main"
 
 FILES = [
@@ -35,6 +36,51 @@ def fetch(name: str) -> list[dict]:
     with urllib.request.urlopen(url, timeout=30) as r:
         text = r.read().decode("utf-8")
     return list(csv.DictReader(io.StringIO(text)))
+
+
+def load_pvp_overrides(path=OVERRIDES):
+    """Raigulus-specific PvP overrides, kept separate from upstream data.
+
+    The upstream div2hub CSVs do not carry ``pvp_*pc_bonus`` fields.
+    These verified values were hand-added (Oct 28) and must survive every
+    automated refresh. They live in their own file so the merge is
+    deterministic and reviewable.
+    """
+    if not Path(path).exists():
+        return []
+    try:
+        return json.loads(Path(path).read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return []
+
+
+def apply_pvp_overrides(data, overrides):
+    """Merge PvP overrides into freshly fetched data, in place.
+
+    - Matches nodes by (collection, name); unknown names are skipped.
+    - Only ``pvp_*`` keys are copied, everything else is untouched.
+    - Re-applying the same overrides is idempotent (no duplication).
+    """
+    if not overrides:
+        return data
+    by_name = {}
+    for entry in overrides:
+        if not isinstance(entry, dict):
+            continue
+        name = entry.get("name")
+        collection = entry.get("collection")
+        if not name or collection not in ("brands", "gearSets"):
+            continue
+        fields = {k: v for k, v in entry.items()
+                  if k.startswith("pvp_") and v not in (None, "", "N/A")}
+        if fields:
+            by_name[(collection, name)] = fields
+    for collection in ("brands", "gearSets"):
+        for node in data.get(collection, []):
+            fields = by_name.get((collection, node.get("name")))
+            if fields:
+                node.update(fields)
+    return data
 
 
 def main():
@@ -77,6 +123,10 @@ def main():
             "smg": data["smgs"],
         },
     }
+    # Preserve Raigulus-specific PvP overrides across upstream refreshes.
+    # The upstream CSVs carry no pvp_* fields, so without this overlay the
+    # verified values are silently wiped on every automated refresh.
+    apply_pvp_overrides(out, load_pvp_overrides())
     OUT.parent.mkdir(parents=True, exist_ok=True)
     # Check whether the data changed (excluding meta.generated) -> idempotent
     if OUT.exists():
