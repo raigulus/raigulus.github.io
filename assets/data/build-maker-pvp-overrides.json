@@ -1,0 +1,163 @@
+[
+  {
+    "collection": "brands",
+    "name": "5.11 Tactical",
+    "pvp_1pc_bonus": "stat:protection-from-elites:10%"
+  },
+  {
+    "collection": "brands",
+    "name": "Airaldi Holdings",
+    "pvp_1pc_bonus": "stat:marksman-rifle-damage:6%",
+    "pvp_2pc_bonus": "stat:headshot-damage:10%",
+    "pvp_3pc_bonus": "stat:damage-to-armor:6%"
+  },
+  {
+    "collection": "brands",
+    "name": "Badger Tuff",
+    "pvp_2pc_bonus": "stat:armor-on-kill:12%",
+    "pvp_3pc_bonus": "stat:total-armor:14%",
+    "pvp_1pc_bonus": "stat:shotgun-damage:10%"
+  },
+  {
+    "collection": "brands",
+    "name": "Belstone Armory",
+    "pvp_3pc_bonus": "stat:protection-from-elites:20%"
+  },
+  {
+    "collection": "brands",
+    "name": "Ceska Vyroba s.r.o.",
+    "pvp_2pc_bonus": "stat:shotgun-damage:12%"
+  },
+  {
+    "collection": "brands",
+    "name": "China Light Industries",
+    "pvp_2pc_bonus": "stat:status-effects:8%",
+    "pvp_3pc_bonus": "stat:skill-haste:20%"
+  },
+  {
+    "collection": "brands",
+    "name": "Electrique",
+    "pvp_3pc_bonus": "stat:skill-efficiency:6%"
+  },
+  {
+    "collection": "brands",
+    "name": "Fenris Group AB",
+    "pvp_2pc_bonus": "stat:magazine-size:20%"
+  },
+  {
+    "collection": "brands",
+    "name": "Gila Guard",
+    "pvp_2pc_bonus": "stat:hazard-protection:30%",
+    "pvp_1pc_bonus": "stat:total-armor:7%",
+    "pvp_3pc_bonus": "stat:armor-regeneration:1%"
+  },
+  {
+    "collection": "brands",
+    "name": "Grupo Sombra S.A.",
+    "pvp_1pc_bonus": "stat:critical-hit-damage:10%",
+    "pvp_2pc_bonus": "stat:explosive-damage:15%",
+    "pvp_3pc_bonus": "stat:headshot-damage:14%"
+  },
+  {
+    "collection": "brands",
+    "name": "Habsburg Guard",
+    "pvp_1pc_bonus": "stat:headshot-damage:6%",
+    "pvp_2pc_bonus": "stat:marksman-rifle-damage:10%",
+    "pvp_3pc_bonus": "stat:status-effects:12%"
+  },
+  {
+    "collection": "brands",
+    "name": "Imminence Armaments",
+    "pvp_2pc_bonus": "stat:pistol-damage:22%"
+  },
+  {
+    "collection": "brands",
+    "name": "Legatus S.p.A",
+    "pvp_1pc_bonus": "stat:magazine-size:10%",
+    "pvp_2pc_bonus": "stat:smg-damage:12%",
+    "pvp_3pc_bonus": "stat:optimal-range:75%"
+  },
+  {
+    "collection": "brands",
+    "name": "Lengmo",
+    "pvp_2pc_bonus": "stat:lmg-damage:12%"
+  },
+  {
+    "collection": "brands",
+    "name": "Murakami Industries",
+    "pvp_2pc_bonus": "stat:repair-skills:50%",
+    "pvp_3pc_bonus": "stat:skill-damage:8%"
+  },
+  {
+    "collection": "brands",
+    "name": "Overlord Armaments",
+    "pvp_1pc_bonus": "stat:rifle-damage:8%"
+  },
+  {
+    "collection": "brands",
+    "name": "Palisade Steelworks",
+    "pvp_2pc_bonus": "stat:protection-from-elites:15%"
+  },
+  {
+    "collection": "brands",
+    "name": "Providence Defense",
+    "pvp_1pc_bonus": "stat:headshot-damage:6%",
+    "pvp_3pc_bonus": "stat:critical-hit-damage:20%"
+  },
+  {
+    "collection": "brands",
+    "name": "Royal Works",
+    "pvp_2pc_bonus": "stat:lmg-damage:12%",
+    "pvp_3pc_bonus": "stat:accuracy:40%"
+  },
+  {
+    "collection": "brands",
+    "name": "Urban Lookout",
+    "pvp_1pc_bonus": "stat:weapon-handling:10%",
+    "pvp_2pc_bonus": "stat:marksman-rifle-damage:10%",
+    "pvp_3pc_bonus": "stat:skill-duration:30%"
+  },
+  {
+    "collection": "brands",
+    "name": "Uzina Getica",
+    "pvp_1pc_bonus": "stat:total-armor:7%",
+    "pvp_2pc_bonus": "stat:armor-on-kill:12%",
+    "pvp_3pc_bonus": "stat:hazard-protection:40%"
+  },
+  {
+    "collection": "brands",
+    "name": "Zwiadowka Sp. z o.o.",
+    "pvp_1pc_bonus": "stat:magazine-size:10%",
+    "pvp_2pc_bonus": "stat:rifle-damage:14%"
+  },
+  {
+    "collection": "gearSets",
+    "name": "Aces & Eights",
+    "pvp_2pc_bonus": "stat:marksman-rifle-damage:10%|stat:rifle-damage:14%",
+    "pvp_3pc_bonus": "stat:headshot-damage:14%|stat:weapon-handling:15%"
+  },
+  {
+    "collection": "gearSets",
+    "name": "Aegis",
+    "pvp_2pc_bonus": "stat:health:100%",
+    "pvp_3pc_bonus": "stat:total-armor:21%"
+  },
+  {
+    "collection": "gearSets",
+    "name": "Breaking Point",
+    "pvp_2pc_bonus": "stat:rifle-damage:14%|stat:marksman-rifle-damage:10%",
+    "pvp_3pc_bonus": "stat:headshot-damage:14%|stat:weapon-handling:15%"
+  },
+  {
+    "collection": "gearSets",
+    "name": "Foundry Bulwark",
+    "pvp_2pc_bonus": "stat:total-armor:14%",
+    "pvp_3pc_bonus": "stat:armor-regeneration:0.5%|stat:shield-health:40%"
+  },
+  {
+    "collection": "gearSets",
+    "name": "Hotshot",
+    "pvp_2pc_bonus": "stat:marksman-rifle-damage:10%",
+    "pvp_3pc_bonus": "stat:weapon-handling:30%|stat:headshot-damage:14%"
+  }
+]
