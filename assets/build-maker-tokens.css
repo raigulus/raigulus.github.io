@@ -170,3 +170,322 @@
     --rg-shadow-overlay: none;
   }
 }
+
+/* ===========================================================================
+ * Phase 2A integration: dark-tactical token mapping for Build Maker only.
+ * Loaded after styles.css on the Build Maker page alone. Every rule below
+ * targets an existing Build Maker component (or its modal controls) and is
+ * guarded by :not([data-theme="light"]) so the existing light theme is
+ * untouched. Original dimensions are preserved; only the 6px radius moves
+ * to the 8px token and a few font sizes round to the nearest token step.
+ * Rarity colors (.rar-high / .rar-exotic) are intentionally not remapped.
+ * =========================================================================== */
+
+/* --- Layout & headings -------------------------------------------------- */
+:root:not([data-theme="light"]) .bm-layout { gap: var(--rg-space-3); }
+:root:not([data-theme="light"]) .bm-slots h2,
+:root:not([data-theme="light"]) .bm-summary h2 {
+  font-family: var(--rg-font-display);
+  font-size: var(--rg-font-size-xl);
+  font-weight: var(--rg-font-weight-bold);
+  letter-spacing: var(--rg-letter-spacing-display);
+  line-height: var(--rg-line-height-tight);
+  color: var(--rg-text-primary);
+}
+:root:not([data-theme="light"]) .bm-summary h3 {
+  font-family: var(--rg-font-display);
+  font-size: var(--rg-font-size-md);
+  letter-spacing: var(--rg-letter-spacing-display);
+  color: var(--rg-text-primary);
+}
+
+/* --- Gear / weapon / skill slots ---------------------------------------- */
+:root:not([data-theme="light"]) .bm-slot {
+  gap: var(--rg-space-1);
+  padding: var(--rg-space-1) 10px;
+  margin-bottom: var(--rg-space-1);
+  background: var(--rg-bg-surface);
+  border: 1px solid var(--rg-border);
+  border-radius: var(--rg-radius-sm);
+}
+:root:not([data-theme="light"]) .bm-slot-label {
+  color: var(--rg-text-muted);
+  font-size: var(--rg-font-size-xs);
+  letter-spacing: var(--rg-letter-spacing-eyebrow);
+}
+:root:not([data-theme="light"]) .bm-slot-name {
+  color: var(--rg-text-primary);
+  font-size: var(--rg-font-size-base);
+}
+:root:not([data-theme="light"]) .bm-slot-sub {
+  color: var(--rg-text-muted);
+  font-size: var(--rg-font-size-xs);
+}
+:root:not([data-theme="light"]) .bm-slot-change {
+  background: var(--rg-accent);
+  color: var(--rg-text-on-accent);
+  border-radius: var(--rg-radius-sm);
+  min-height: var(--rg-touch-target);
+  font-family: var(--rg-font-body);
+}
+:root:not([data-theme="light"]) .bm-slot-change:hover { background: var(--rg-accent-hover); }
+:root:not([data-theme="light"]) .bm-slot-change:active { background: var(--rg-accent-active); }
+
+/* --- Summary: bonuses, cores, talents, stats ------------------------------ */
+:root:not([data-theme="light"]) .bm-bonus {
+  background: var(--rg-bg-surface);
+  border-left: 3px solid var(--rg-accent);
+  border-radius: 0 var(--rg-radius-sm) var(--rg-radius-sm) 0;
+  margin-bottom: var(--rg-space-1);
+}
+:root:not([data-theme="light"]) .bm-bonus-name {
+  color: var(--rg-text-primary);
+  font-size: var(--rg-font-size-sm);
+}
+:root:not([data-theme="light"]) .bm-bonus-part {
+  color: var(--rg-text-muted);
+  font-size: var(--rg-font-size-xs);
+}
+:root:not([data-theme="light"]) .bm-cores span {
+  background: var(--rg-bg-elevated);
+  color: var(--rg-text-secondary);
+  border-radius: var(--rg-radius-sm);
+  font-size: var(--rg-font-size-xs);
+  font-weight: var(--rg-font-weight-semibold);
+}
+:root:not([data-theme="light"]) .bm-talents li {
+  color: var(--rg-text-secondary);
+  font-size: var(--rg-font-size-sm);
+}
+:root:not([data-theme="light"]) .bm-stat-row {
+  border-bottom: 1px solid var(--rg-border-subtle);
+  color: var(--rg-text-secondary);
+  font-size: var(--rg-font-size-sm);
+}
+:root:not([data-theme="light"]) .bm-stat-row b {
+  color: var(--rg-accent);
+  font-family: var(--rg-font-mono);
+}
+:root:not([data-theme="light"]) .bm-warn {
+  background: var(--rg-warning-soft);
+  border: 1px solid var(--rg-warning);
+  border-radius: var(--rg-radius-sm);
+  color: var(--rg-text-primary);
+  font-size: var(--rg-font-size-sm);
+}
+:root:not([data-theme="light"]) .bm-empty { color: var(--rg-text-muted); font-size: var(--rg-font-size-sm); }
+:root:not([data-theme="light"]) .bm-actions { gap: var(--rg-space-1); margin-top: var(--rg-space-2); }
+:root:not([data-theme="light"]) .bm-actions button {
+  background: var(--rg-accent);
+  color: var(--rg-text-on-accent);
+  border-radius: var(--rg-radius-sm);
+  min-height: var(--rg-touch-target);
+  font-family: var(--rg-font-body);
+  transition: background-color var(--rg-duration-instant) var(--rg-easing);
+}
+:root:not([data-theme="light"]) .bm-actions button:hover { background: var(--rg-accent-hover); }
+:root:not([data-theme="light"]) .bm-actions button:active { background: var(--rg-accent-active); }
+:root:not([data-theme="light"]) .bm-actions button:disabled {
+  background: var(--rg-bg-disabled);
+  color: var(--rg-text-disabled);
+  cursor: not-allowed;
+}
+:root:not([data-theme="light"]) .bm-actions-note,
+:root:not([data-theme="light"]) .bm-library-empty,
+:root:not([data-theme="light"]) .bm-note {
+  color: var(--rg-text-muted);
+  font-size: var(--rg-font-size-xs);
+  line-height: var(--rg-line-height-body);
+}
+
+/* --- Config rows & weapon stats ------------------------------------------- */
+:root:not([data-theme="light"]) .bm-cfg {
+  background: var(--rg-bg-surface);
+  border: 1px dashed var(--rg-border-strong);
+  border-radius: var(--rg-radius-sm);
+  color: var(--rg-text-primary);
+  font-size: var(--rg-font-size-xs);
+}
+:root:not([data-theme="light"]) .bm-cfg:hover { background: var(--rg-bg-hover); border-color: var(--rg-accent); }
+:root:not([data-theme="light"]) .bm-fixed {
+  border: 1px solid var(--rg-border-subtle);
+  border-radius: var(--rg-radius-sm);
+  color: var(--rg-text-secondary);
+  font-size: var(--rg-font-size-xs);
+}
+:root:not([data-theme="light"]) .bm-cfg-k { color: var(--rg-text-muted); }
+:root:not([data-theme="light"]) .bm-cfg-v { color: var(--rg-text-primary); font-weight: var(--rg-font-weight-semibold); }
+:root:not([data-theme="light"]) .bm-cfg-v.empty { color: var(--rg-text-faint); font-weight: var(--rg-font-weight-regular); }
+:root:not([data-theme="light"]) .bm-wstats { color: var(--rg-text-muted); font-size: var(--rg-font-size-xs); }
+:root:not([data-theme="light"]) .bm-wstats b { color: var(--rg-text-primary); }
+
+/* --- Progress -------------------------------------------------------------- */
+:root:not([data-theme="light"]) .bm-progress { gap: var(--rg-space-1); color: var(--rg-text-secondary); font-size: var(--rg-font-size-xs); }
+:root:not([data-theme="light"]) .bm-progress-track { background: var(--rg-bg-inset); border-radius: var(--rg-radius-pill); }
+:root:not([data-theme="light"]) .bm-progress-fill { background: var(--rg-accent); transition: width var(--rg-duration-fast) var(--rg-easing); }
+
+/* --- Modal picker ------------------------------------------------------------ */
+:root:not([data-theme="light"]) .bm-modal-box {
+  background: var(--rg-bg-elevated);
+  border: 1px solid var(--rg-border-strong);
+  border-radius: var(--rg-radius-lg);
+  box-shadow: var(--rg-shadow-overlay);
+}
+:root:not([data-theme="light"]) .bm-modal-head { border-bottom: 1px solid var(--rg-border); }
+:root:not([data-theme="light"]) .bm-modal-head h3 {
+  font-family: var(--rg-font-display);
+  font-size: var(--rg-font-size-lg);
+  letter-spacing: var(--rg-letter-spacing-display);
+  color: var(--rg-text-primary);
+}
+:root:not([data-theme="light"]) .bm-modal-filters { gap: var(--rg-space-1); }
+:root:not([data-theme="light"]) .bm-modal-filters button {
+  background: var(--rg-bg-surface);
+  border: 1px solid var(--rg-border);
+  border-radius: var(--rg-radius-pill);
+  color: var(--rg-text-secondary);
+  font-size: var(--rg-font-size-xs);
+  transition: background-color var(--rg-duration-instant) var(--rg-easing), border-color var(--rg-duration-instant) var(--rg-easing), color var(--rg-duration-instant) var(--rg-easing);
+}
+:root:not([data-theme="light"]) .bm-modal-filters button:hover { background: var(--rg-bg-hover); border-color: var(--rg-accent); color: var(--rg-text-primary); }
+:root:not([data-theme="light"]) .bm-chip {
+  background: var(--rg-bg-surface);
+  border: 1px solid var(--rg-border);
+  border-radius: var(--rg-radius-pill);
+  color: var(--rg-text-secondary);
+  font-size: var(--rg-font-size-xs);
+  transition: background-color var(--rg-duration-instant) var(--rg-easing), border-color var(--rg-duration-instant) var(--rg-easing), color var(--rg-duration-instant) var(--rg-easing);
+}
+:root:not([data-theme="light"]) .bm-chip:hover { background: var(--rg-bg-hover); color: var(--rg-text-primary); }
+:root:not([data-theme="light"]) .bm-chip.active { background: var(--rg-accent); border-color: var(--rg-accent); color: var(--rg-text-on-accent); }
+:root:not([data-theme="light"]) .bm-item {
+  background: var(--rg-bg-surface);
+  border: 1px solid var(--rg-border-subtle);
+  border-radius: var(--rg-radius-sm);
+  color: var(--rg-text-primary);
+  transition: background-color var(--rg-duration-instant) var(--rg-easing), border-color var(--rg-duration-instant) var(--rg-easing);
+}
+:root:not([data-theme="light"]) .bm-item:hover { background: var(--rg-bg-hover); border-color: var(--rg-border-strong); }
+:root:not([data-theme="light"]) .bm-item.is-selected { background: var(--rg-accent-soft); border-color: var(--rg-accent); }
+:root:not([data-theme="light"]) .bm-item-name { color: var(--rg-text-primary); font-size: var(--rg-font-size-base); font-weight: var(--rg-font-weight-semibold); }
+:root:not([data-theme="light"]) .bm-item-sub { color: var(--rg-text-muted); font-size: var(--rg-font-size-xs); }
+:root:not([data-theme="light"]) .bm-item-tick { color: var(--rg-accent); }
+:root:not([data-theme="light"]) .bm-pick-group {
+  background: var(--rg-bg-elevated);
+  border-bottom: 1px solid var(--rg-border);
+  color: var(--rg-text-muted);
+  font-size: var(--rg-font-size-xs);
+  letter-spacing: var(--rg-letter-spacing-eyebrow);
+}
+:root:not([data-theme="light"]) .bm-pick-group span { color: var(--rg-text-muted); }
+:root:not([data-theme="light"]) .bm-pick-count { color: var(--rg-text-muted); font-size: var(--rg-font-size-xs); }
+:root:not([data-theme="light"]) .bm-pick-clear {
+  background: var(--rg-bg-surface);
+  border: 1px solid var(--rg-border);
+  border-radius: var(--rg-radius-pill);
+  color: var(--rg-text-secondary);
+  font-size: var(--rg-font-size-xs);
+}
+:root:not([data-theme="light"]) .bm-pick-clear:hover { border-color: var(--rg-accent); color: var(--rg-text-primary); }
+:root:not([data-theme="light"]) .bm-modal-hint { border-top: 1px solid var(--rg-border); color: var(--rg-text-muted); font-size: var(--rg-font-size-xs); }
+:root:not([data-theme="light"]) .bm-modal-list::-webkit-scrollbar-thumb { background: var(--rg-border-strong); border: 2px solid var(--rg-bg-elevated); border-radius: var(--rg-radius-sm); }
+:root:not([data-theme="light"]) .bm-modal-list::-webkit-scrollbar-thumb:hover { background: var(--rg-text-faint); }
+:root:not([data-theme="light"]) #bm-modal-search {
+  background: var(--rg-bg-inset);
+  border: 1px solid var(--rg-border);
+  border-radius: var(--rg-radius-sm);
+  color: var(--rg-text-primary);
+  font-family: var(--rg-font-body);
+  font-size: var(--rg-font-size-base);
+}
+:root:not([data-theme="light"]) #bm-modal-close {
+  background: var(--rg-bg-surface);
+  border: 1px solid var(--rg-border);
+  border-radius: var(--rg-radius-sm);
+  color: var(--rg-text-primary);
+  min-width: var(--rg-touch-target);
+  min-height: var(--rg-touch-target);
+}
+
+/* --- Changelog & disclaimer -------------------------------------------------- */
+:root:not([data-theme="light"]) .bm-changelog-group h3 { color: var(--rg-text-muted); font-size: var(--rg-font-size-base); }
+:root:not([data-theme="light"]) .bm-chg { color: var(--rg-text-secondary); font-size: var(--rg-font-size-sm); line-height: var(--rg-line-height-body); }
+:root:not([data-theme="light"]) .bm-chg-added { color: var(--rg-success); }
+:root:not([data-theme="light"]) .bm-chg-removed { color: var(--rg-danger); }
+:root:not([data-theme="light"]) .bm-chg-changed { color: var(--rg-warning); }
+:root:not([data-theme="light"]) .content > p.bm-disclaimer {
+  background: var(--rg-bg-surface);
+  border: 1px solid var(--rg-border);
+  border-radius: var(--rg-radius-sm);
+  color: var(--rg-text-muted);
+  font-size: var(--rg-font-size-xs);
+}
+
+/* --- Library & compare --------------------------------------------------------- */
+:root:not([data-theme="light"]) .bm-library-save input {
+  background: var(--rg-bg-inset);
+  border: 1px solid var(--rg-border);
+  border-radius: var(--rg-radius-sm);
+  color: var(--rg-text-primary);
+  font-family: var(--rg-font-body);
+  font-size: var(--rg-font-size-base);
+}
+:root:not([data-theme="light"]) .bm-library-save button {
+  background: var(--rg-accent);
+  color: var(--rg-text-on-accent);
+  border-radius: var(--rg-radius-sm);
+  min-height: var(--rg-touch-target);
+  font-weight: var(--rg-font-weight-bold);
+}
+:root:not([data-theme="light"]) .bm-library-btn[aria-pressed="true"] { border-color: var(--rg-accent); color: var(--rg-accent-ink); }
+:root:not([data-theme="light"]) .bm-library-btn-del:hover { border-color: var(--rg-danger); color: var(--rg-danger); }
+:root:not([data-theme="light"]) .bm-compare { border-top: 1px solid var(--rg-border); }
+:root:not([data-theme="light"]) .bm-compare h3 { font-family: var(--rg-font-display); font-size: var(--rg-font-size-sm); color: var(--rg-text-primary); }
+:root:not([data-theme="light"]) .bm-compare-table td,
+:root:not([data-theme="light"]) .bm-compare-table th { border-bottom: 1px solid var(--rg-border); }
+:root:not([data-theme="light"]) .bm-compare-table thead th { color: var(--rg-text-muted); font-size: var(--rg-font-size-xs); }
+:root:not([data-theme="light"]) .bm-compare-table td:first-child,
+:root:not([data-theme="light"]) .bm-compare-table th:first-child { color: var(--rg-text-secondary); }
+:root:not([data-theme="light"]) .bm-cmp-up { color: var(--rg-success); }
+:root:not([data-theme="light"]) .bm-cmp-down { color: var(--rg-danger); }
+:root:not([data-theme="light"]) .bm-cmp-same { color: var(--rg-text-muted); }
+
+/* --- Mobile bar: solid surface replaces the frosted glass treatment ------------- */
+:root:not([data-theme="light"]) .bm-mobile-bar {
+  gap: var(--rg-space-1);
+  background: var(--rg-bg-elevated);
+  border: 1px solid var(--rg-border-strong);
+  border-radius: var(--rg-radius-md);
+  box-shadow: var(--rg-shadow-raised);
+  backdrop-filter: none;
+}
+:root:not([data-theme="light"]) .bm-mbar-stats { gap: var(--rg-space-1); font-size: var(--rg-font-size-xs); }
+:root:not([data-theme="light"]) .bm-mbar-pill { background: var(--rg-bg-surface); border-radius: var(--rg-radius-pill); }
+:root:not([data-theme="light"]) .bm-mbar-pill b { color: var(--rg-accent); }
+:root:not([data-theme="light"]) .bm-mbar-warn { background: var(--rg-warning-soft); }
+:root:not([data-theme="light"]) .bm-mbar-empty { color: var(--rg-text-muted); }
+:root:not([data-theme="light"]) #bm-mbar-summary {
+  background: var(--rg-accent);
+  color: var(--rg-text-on-accent);
+  border-radius: var(--rg-radius-sm);
+  min-height: var(--rg-touch-target);
+  font-weight: var(--rg-font-weight-bold);
+}
+
+/* --- Focus states (token outline, zeroed durations under reduced motion) ------ */
+:root:not([data-theme="light"]) .bm-actions button:focus-visible,
+:root:not([data-theme="light"]) .bm-cfg:focus-visible,
+:root:not([data-theme="light"]) .bm-chip:focus-visible,
+:root:not([data-theme="light"]) .bm-item:focus-visible,
+:root:not([data-theme="light"]) .bm-slot-change:focus-visible,
+:root:not([data-theme="light"]) .bm-slot-clear:focus-visible,
+:root:not([data-theme="light"]) .bm-modal-filters button:focus-visible,
+:root:not([data-theme="light"]) .bm-pick-clear:focus-visible,
+:root:not([data-theme="light"]) .bm-library-save button:focus-visible,
+:root:not([data-theme="light"]) .bm-library-btn:focus-visible,
+:root:not([data-theme="light"]) #bm-modal-search:focus-visible,
+:root:not([data-theme="light"]) #bm-modal-close:focus-visible,
+:root:not([data-theme="light"]) #bm-mbar-summary:focus-visible {
+  outline: var(--rg-focus-outline);
+  outline-offset: var(--rg-focus-ring-offset);
+}
