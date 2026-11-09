@@ -840,11 +840,82 @@ class TestPvpDataIntegrity(unittest.TestCase):
 
     def test_merge_handles_unknown_names_safely(self):
         import copy as _cp
+        import contextlib, io as _io
         module = self._load_pipeline()
         fresh = _cp.deepcopy(self._production())
-        bogus = [{"collection": "brands", "name": "No Such Brand", "pvp_1pc_bonus": "stat:health:1%"}, {"bad": "entry"}, "not-a-dict"]
-        module.apply_pvp_overrides(fresh, bogus)
+        # Schema-valid override for a node that does not exist upstream:
+        # must emit an explicit WARNING (not silently skip, not crash).
+        bogus = [{"collection": "brands", "name": "No Such Brand", "pvp_1pc_bonus": "stat:health:1%"}]
+        err = _io.StringIO()
+        with contextlib.redirect_stderr(err):
+            module.apply_pvp_overrides(fresh, bogus)
+        self.assertIn("WARNING", err.getvalue())
+        self.assertIn("No Such Brand", err.getvalue())
         self.assertIsNone(next((b for b in fresh["brands"] if b["name"] == "No Such Brand"), None))
+
+    def test_merge_rejects_invalid_schema_entries(self):
+        import copy as _cp
+        module = self._load_pipeline()
+        fresh = _cp.deepcopy(self._production())
+        with self.assertRaises(ValueError):
+            module.apply_pvp_overrides(fresh, [{"bad": "entry"}])
+        with self.assertRaises(ValueError):
+            module.apply_pvp_overrides(fresh, ["not-a-dict"])
+        with self.assertRaises(ValueError):
+            module.apply_pvp_overrides(fresh, [{"collection": "brands", "name": "X"}])  # no pvp_* field
+
+
+class TestPvpOverridesFailSafe(unittest.TestCase):
+    """Missing/malformed override source must never yield quiet incomplete data."""
+
+    def _load_pipeline(self):
+        import importlib.util
+        path = os.path.join(ROOT, "scripts", "build-maker-data.py")
+        spec = importlib.util.spec_from_file_location("bmdata", path)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module
+
+    def _tmp(self, content):
+        import tempfile
+        fd, path = tempfile.mkstemp(suffix=".json")
+        with os.fdopen(fd, "w", encoding="utf-8") as fh:
+            fh.write(content)
+        self.addCleanup(lambda: os.path.exists(path) and os.remove(path))
+        return path
+
+    def test_missing_override_file_fails(self):
+        module = self._load_pipeline()
+        with self.assertRaises((FileNotFoundError, ValueError)):
+            module.load_pvp_overrides(os.path.join(ROOT, "assets", "data", "does-not-exist.json"))
+
+    def test_malformed_json_fails(self):
+        module = self._load_pipeline()
+        path = self._tmp("{not valid json")
+        with self.assertRaises(ValueError):
+            module.load_pvp_overrides(path)
+
+    def test_invalid_schema_fails(self):
+        module = self._load_pipeline()
+        for payload in ('{"a": 1}', '[{"collection": "brands"}]', '[{"collection": "nope", "name": "X", "pvp_1pc_bonus": "stat:health:1%"}]', '[{"collection": "brands", "name": "X", "pvp_1pc_bonus": ""}]'):
+            with self.assertRaises(ValueError, msg=payload):
+                module.load_pvp_overrides(self._tmp(payload))
+
+    def test_unknown_node_warns_explicitly(self):
+        import copy as _cp, contextlib, io as _io
+        module = self._load_pipeline()
+        data = json.loads(read(DATA_FILE))
+        err = _io.StringIO()
+        with contextlib.redirect_stderr(err):
+            module.apply_pvp_overrides(data, [{"collection": "gearSets", "name": "Ghost Set", "pvp_2pc_bonus": "stat:health:1%"}])
+        self.assertIn("WARNING", err.getvalue())
+        self.assertIn("Ghost Set", err.getvalue())
+
+    def test_expected_override_count_and_integrity(self):
+        module = self._load_pipeline()
+        overrides = module.load_pvp_overrides()
+        fields = sum(1 for e in overrides for k in e if k.startswith("pvp_"))
+        self.assertGreaterEqual(fields, 53, "expected override field count changed")
 
 
 class TestDamageEstimate(Base):
