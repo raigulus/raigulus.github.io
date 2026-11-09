@@ -489,3 +489,75 @@
   outline: var(--rg-focus-outline);
   outline-offset: var(--rg-focus-ring-offset);
 }
+
+/* ===========================================================================
+ * Phase 2B: viewport-first Build Maker workbench (this file loads only on
+ * the Build Maker page). Structural rules below are intentionally NOT
+ * dark-guarded: the compact intro, 3x2 gear grid, and internal panel
+ * scrolling must apply to the light theme as well. Color values stay in
+ * the Phase 2A dark-guarded rules above. No selection, calculation, or
+ * picker behavior changes.
+ * =========================================================================== */
+
+/* Compact intro: breadcrumb, eyebrow, heading, lede, metadata. */
+.section { padding-top: 16px; }
+.content > .breadcrumbs { margin: 0 0 4px; font-size: var(--rg-font-size-xs); line-height: var(--rg-line-height-tight); }
+.content > .eyebrow { margin: 0 0 2px; font-size: var(--rg-font-size-xs); line-height: var(--rg-line-height-tight); }
+.content > h1 {
+  font-size: clamp(26px, 2.4vw, 34px);
+  line-height: var(--rg-line-height-tight);
+  margin: 0 0 4px;
+}
+.bm-lede {
+  margin: 0 0 4px;
+  font-size: var(--rg-font-size-base);
+  line-height: var(--rg-line-height-dense);
+  max-width: 92ch;
+}
+.content > .meta { font-size: var(--rg-font-size-xs); line-height: var(--rg-line-height-dense); margin: 0 0 2px; }
+
+/* Compact workspace chrome (both themes). */
+.bm-layout { margin: 8px 0 0; gap: var(--rg-space-3); align-items: start; }
+:root:not([data-theme="light"]) .bm-slots h2, :root:not([data-theme="light"]) .bm-summary h2, .bm-slots h2, .bm-summary h2 { margin: 8px 0 4px; font-size: var(--rg-font-size-lg); }
+.bm-summary h3 { margin: 10px 0 4px; }
+.bm-progress { margin-bottom: var(--rg-space-1); }
+.bm-totals { max-height: 240px; overflow-y: auto; }
+:root:not([data-theme="light"]) .bm-slot, .bm-slot { padding: 6px 8px; }
+:root:not([data-theme="light"]) .bm-cfg, :root:not([data-theme="light"]) .bm-fixed, .bm-cfg, .bm-fixed { padding: 2px 6px; margin-top: 2px; }
+.bm-slot:not(.rar-high):not(.rar-exotic) .bm-gsvg { width: 72px; }
+.bm-slot:not(.rar-high):not(.rar-exotic) .bm-wsvg { width: 84px; }
+
+/* Gear grid: 3x2 on wide desktops, 2 columns below, 1 column on mobile
+   (the existing mobile rule in styles.css still wins at <=640px). */
+@media (min-width: 1200px) {
+  #bm-gear-slots { grid-template-columns: repeat(3, minmax(0, 1fr)); min-height: 0; }
+}
+@media (min-width: 861px) and (max-width: 1199px) {
+  #bm-gear-slots { grid-template-columns: repeat(2, minmax(0, 1fr)); min-height: 0; }
+}
+#bm-weapon-slots, #bm-skill-slots { min-height: 0; }
+
+/* Viewport-aware panels: at 1920x1080 the whole workspace fits; at shorter
+   desktop heights the two panels scroll internally instead of the page.
+   The constant covers the measured global header (~64px), section top
+   padding, and compact intro block. */
+@media (min-width: 861px) {
+  .bm-layout { max-height: calc(100dvh - 272px); }
+  .bm-slots, .bm-summary {
+    max-height: calc(100dvh - 272px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+  }
+}
+
+/* Short desktop heights (e.g. 1366x768, 1280x720): tighten slot art and
+   chrome slightly so Weapons surface in the initial panel view. Tall
+   viewports (1920x1080) keep the roomier spacing above. */
+@media (min-width: 861px) and (max-height: 850px) {
+  .bm-slot:not(.rar-high):not(.rar-exotic) .bm-gsvg { width: 56px; }
+  .bm-slot:not(.rar-high):not(.rar-exotic) .bm-wsvg { width: 64px; }
+  :root:not([data-theme="light"]) .bm-slot, .bm-slot { padding: 4px 8px; }
+  .bm-slots h2, .bm-summary h2 { margin: 6px 0 3px; }
+  .bm-summary h3 { margin: 8px 0 3px; }
+}
