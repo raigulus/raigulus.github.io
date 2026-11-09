@@ -1,0 +1,172 @@
+/* ---------------------------------------------------------------------------
+ * Raigulus design tokens — Division 2 Build Maker (Phase 1)
+ * Minimal Modern / dark tactical. Solid surfaces only.
+ * No gradients, no glassmorphism, no neon, no glow, no decorative shadows.
+ *
+ * STATUS: foundation only. This file is NOT imported anywhere yet.
+ * Do not add <link> to it until the token-to-component mapping is approved.
+ * Tokens use the --rg-* prefix so they never collide with legacy styles.
+ * Fonts already ship with the site: Barlow Condensed (500/700) and
+ * Inter (400-700). This file adds no font downloads.
+ * --------------------------------------------------------------------------- */
+:root {
+  /* ---- Backgrounds (solid, opaque) ---------------------------------- */
+  --rg-bg-base: #0b0d11;        /* page background (matches theme-color) */
+  --rg-bg-surface: #12161b;     /* cards, panels, toolbar rows */
+  --rg-bg-elevated: #1a1f26;    /* menus, popovers, dialogs */
+  --rg-bg-inset: #080a0c;       /* wells, code/share text areas */
+  --rg-bg-hover: #202833;       /* hover fill on solid surfaces */
+  --rg-bg-active: #28323e;      /* pressed / selected fill */
+  --rg-bg-disabled: #171c22;    /* disabled fill (pair with muted text) */
+
+  /* ---- Text (WCAG AA or better on --rg-bg-surface) ------------------ */
+  --rg-text-primary: #f0f2f5;    /* headings and stats (~14:1) */
+  --rg-text-secondary: #c3cad3;  /* body copy (~9:1) */
+  --rg-text-muted: #9aa3ae;      /* helper text, labels (~7:1) */
+  --rg-text-faint: #7a838e;      /* hints, placeholders (~4.8:1) */
+  --rg-text-on-accent: #17100a;  /* text on --rg-accent (~6.7:1) */
+  --rg-text-disabled: #626b75;   /* disabled only, never for essentials */
+
+  /* ---- Borders (solid, used for separation instead of shadows) ------ */
+  --rg-border: #232b34;
+  --rg-border-strong: #333e4a;
+  --rg-border-subtle: #1c232c;
+  --rg-border-accent: #8a4a22;
+
+  /* ---- Division 2 accent (#E87527) ----------------------------------- */
+  --rg-accent: #e87527;          /* primary actions, active states */
+  --rg-accent-hover: #f08b45;    /* hover (still AA on dark ink) */
+  --rg-accent-active: #c95e1d;   /* pressed */
+  --rg-accent-ink: #e87527;      /* accent-colored text on dark (~6:1) */
+  --rg-accent-soft: #2b1e12;     /* solid tinted chip/select fill */
+  --rg-accent-soft-hover: #382713;
+
+  /* ---- Semantic (solid tints, AA on --rg-bg-surface) ---------------- */
+  --rg-success: #2f9e6e;
+  --rg-success-soft: #12261c;
+  --rg-warning: #d9a441;
+  --rg-warning-soft: #2a2210;
+  --rg-danger: #e05b4b;
+  --rg-danger-soft: #2b1815;
+  --rg-info: #5b93d6;
+  --rg-info-soft: #14222f;
+
+  /* ---- Spacing: 8px scale -------------------------------------------- */
+  --rg-space-0: 0;
+  --rg-space-1: 8px;
+  --rg-space-2: 16px;
+  --rg-space-3: 24px;
+  --rg-space-4: 32px;
+  --rg-space-5: 40px;
+  --rg-space-6: 48px;
+  --rg-space-7: 64px;
+  --rg-space-8: 80px;
+  --rg-space-9: 96px;
+  /* Semantic aliases (singles of the scale above, no new values): */
+  --rg-space-xs: 8px;
+  --rg-space-sm: 16px;
+  --rg-space-md: 24px;
+  --rg-space-lg: 32px;
+  --rg-space-xl: 48px;
+  /* Dense inline gaps may use 4px only between a dot/label pair. */
+  --rg-space-half: 4px;
+
+  /* ---- Corner radius: 8-12px scale ----------------------------------- */
+  --rg-radius-none: 0;
+  --rg-radius-sm: 8px;    /* inputs, buttons, mod chips */
+  --rg-radius-md: 10px;   /* cards, slot rows */
+  --rg-radius-lg: 12px;   /* panels, dialogs */
+  --rg-radius-pill: 999px;/* tag chips, toggles, progress */
+
+  /* ---- Elevation: flat, border-led (no decorative shadows) ---------- */
+  --rg-shadow-none: none;
+  --rg-shadow-raised: 0 1px 2px rgb(0 0 0 / 0.4); /* functional lift only */
+  --rg-shadow-overlay: 0 4px 16px rgb(0 0 0 / 0.5); /* menus, toasts only */
+
+  /* ---- Typography ---------------------------------------------------- */
+  --rg-font-display: "Barlow Condensed", "Arial Narrow", "Inter", sans-serif;
+  --rg-font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --rg-font-mono: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+  --rg-font-weight-regular: 400;
+  --rg-font-weight-medium: 500;   /* Barlow Condensed display weight */
+  --rg-font-weight-semibold: 600;
+  --rg-font-weight-bold: 700;     /* Barlow Condensed bold, emphasis */
+  --rg-font-size-xs: 12px;
+  --rg-font-size-sm: 13px;
+  --rg-font-size-base: 14px;
+  --rg-font-size-md: 16px;
+  --rg-font-size-lg: 18px;
+  --rg-font-size-xl: 22px;
+  --rg-font-size-2xl: 28px;
+  --rg-font-size-display: clamp(28px, 4vw, 40px);
+  --rg-line-height-tight: 1.15;   /* display headings */
+  --rg-line-height-dense: 1.35;   /* stat rows, slot names */
+  --rg-line-height-body: 1.5;
+  --rg-line-height-relaxed: 1.6;  /* long-form paragraphs */
+  --rg-letter-spacing-display: 0.01em;
+  --rg-letter-spacing-eyebrow: 0.12em;
+
+  /* ---- Motion: controlled, single easing curve ----------------------- */
+  --rg-easing: cubic-bezier(.2, .8, .2, 1);
+  --rg-duration-instant: 120ms;   /* hover background, icon swap */
+  --rg-duration-fast: 180ms;      /* menus, dropdown open */
+  --rg-duration-base: 240ms;      /* panels, summary collapse */
+  --rg-duration-slow: 320ms;      /* share/toast entrance */
+  /* Components: transition: background-color var(--rg-duration-instant) var(--rg-easing); */
+
+  /* ---- Focus & touch ------------------------------------------------- */
+  --rg-focus-ring-width: 2px;
+  --rg-focus-ring-offset: 2px;
+  --rg-focus-ring: 0 0 0 2px var(--rg-bg-base), 0 0 0 4px var(--rg-accent);
+  --rg-focus-outline: 2px solid var(--rg-accent);
+  --rg-control-height-sm: 32px;
+  --rg-control-height-md: 40px;
+  --rg-control-height-lg: 48px;
+  --rg-touch-target: 44px;        /* minimum hit area on mobile */
+  --rg-icon-size-sm: 16px;
+  --rg-icon-size-md: 20px;
+  --rg-icon-size-lg: 24px;
+
+  /* ---- Layout -------------------------------------------------------- */
+  --rg-content-max: 1200px;
+  --rg-content-narrow: 760px;
+  --rg-summary-width: 360px;
+  --rg-grid-gap: 16px;
+  --rg-padding-card: 16px;
+  --rg-padding-panel: 24px;
+  --rg-padding-section: 32px;
+
+  /* ---- Stacking ------------------------------------------------------ */
+  --rg-z-base: 0;
+  --rg-z-sticky: 10;
+  --rg-z-dropdown: 100;
+  --rg-z-modal: 1000;
+  --rg-z-toast: 1100;
+
+  /* Breakpoints (documented here only: custom properties cannot be
+     used inside @media queries. Use the px values in media rules.) */
+  --rg-bp-sm: 480px;
+  --rg-bp-md: 768px;
+  --rg-bp-lg: 1024px;
+  --rg-bp-xl: 1280px;
+}
+
+/* Reduced motion: instant transitions, never animated layout shifts. */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --rg-duration-instant: 0ms;
+    --rg-duration-fast: 0ms;
+    --rg-duration-base: 0ms;
+    --rg-duration-slow: 0ms;
+  }
+}
+
+/* Windows forced-colors: keep focus visible, honor system highlights. */
+@media (forced-colors: active) {
+  :root {
+    --rg-focus-ring: 0 0 0 2px var(--rg-bg-base), 0 0 0 4px Highlight;
+    --rg-focus-outline: 2px solid Highlight;
+    --rg-shadow-raised: none;
+    --rg-shadow-overlay: none;
+  }
+}
