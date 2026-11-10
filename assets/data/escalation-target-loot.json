@@ -1,48 +1,48 @@
 {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
-      "mission": "The Art Museum",
-      "loot": "Golan Gear Ltd"
+      "mission": "The Tombs",
+      "loot": "Electrique"
     },
     {
       "mission": "Manning National Zoo",
-      "loot": "Assault Rifle"
+      "loot": "Airaldi Holdings"
     },
     {
-      "mission": "Camp White Oak",
-      "loot": "Ember Engine"
+      "mission": "Bank Headquarters",
+      "loot": "True Patriot"
     },
     {
-      "mission": "The Pentagon",
-      "loot": "Gear Mods"
+      "mission": "American History Museum",
+      "loot": "Zwiadowka Sp. z o.o"
     },
     {
-      "mission": "DARPA Research Labs",
-      "loot": "Pistol"
+      "mission": "Space Administration HQ",
+      "loot": "Tip of the Spear"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Pistols"
+      "item": "MMRs"
     },
     {
       "type": "Gear",
-      "item": "Backpacks"
+      "item": "Masks"
     }
   ],
-  "last_updated": "2026-11-09 09:01",
-  "last_checked": "2026-11-10 07:05 UTC",
-  "parsed_at": "2026-11-10T07:05:10.324049+00:00",
-  "status": "pending",
-  "fetched_at": "2026-11-10T07:05:10.324049+00:00",
+  "last_updated": "2026-11-10 09:01",
+  "last_checked": "2026-11-10 08:05 UTC",
+  "parsed_at": "2026-11-10T08:05:12.273499+00:00",
+  "status": "ok",
+  "fetched_at": "2026-11-10T08:05:12.273499+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-11-10 07:05 UTC",
+  "vendor_highlights_checked": "2026-11-10 08:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
