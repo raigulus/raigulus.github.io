@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-11T22:05:15Z",
+  "generated_at": "2026-11-11T23:05:19Z",
   "stats": {
-    "total_guides": 502,
+    "total_guides": 504,
     "exotics": 79,
     "patches": 32
   },
@@ -12,6 +12,24 @@
   },
   "latest_videos": [
     {
+      "title": "THE DIVISION 2 LIVE 🔴 | Golden Bullet, Central Park &",
+      "url": "https://raigulus.github.io/division-2/videos/the-division-2-live-golden-bullet-central-park-end/",
+      "youtube_url": "https://www.youtube.com/watch?v=x6wWvmPn3cY",
+      "thumbnail": "/assets/img/yt/x6wWvmPn3cY-hqdefault.jpg",
+      "published_date": "2026-11-11",
+      "cluster": "side activity",
+      "summary": "🔴 THE DIVISION 2 LIVE GAMEPLAY – Join me for a variety of endgame activities in Tom Clancy's The Division 2!  Today we're jumping into Golden Bullet, Echoes of"
+    },
+    {
+      "title": "THE DIVISION 2 LIVE 🔴 | Golden Bullet, Central Park &",
+      "url": "https://raigulus.github.io/division-2/videos/the-division-2-live-golden-bullet-central-park-end/",
+      "youtube_url": "https://www.youtube.com/watch?v=46pJ2sMZIN8",
+      "thumbnail": "/assets/img/yt/46pJ2sMZIN8-hqdefault.jpg",
+      "published_date": "2026-11-11",
+      "cluster": "side activity",
+      "summary": "🔴 THE DIVISION 2 LIVE GAMEPLAY – Join me for a variety of endgame activities in Tom Clancy's The Division 2!  Today we're jumping into Golden Bullet, Echoes of"
+    },
+    {
       "title": "I Took On Jefferson Plaza in T10... Here Is The 17:32",
       "url": "https://raigulus.github.io/division-2/videos/i-took-on-jefferson-plaza-in-t10-here-is-the-17-32/",
       "youtube_url": "https://www.youtube.com/watch?v=te-GndnPfs0",
@@ -19,24 +37,6 @@
       "published_date": "2026-11-08",
       "cluster": "escalation run",
       "summary": "Can the Eagle Bearer handle a Tier 10 Jefferson Plaza run? In Part 2, we're putting the exotic assault rifle through another high-level challenge in The Divisio"
-    },
-    {
-      "title": "Can You Beat Master Difficulty Bobby Guzman Solo? Flawless",
-      "url": "https://raigulus.github.io/division-2/videos/can-you-beat-master-difficulty-bobby-guzman-solo-f/",
-      "youtube_url": "https://www.youtube.com/watch?v=rS7QFHoG5lg",
-      "thumbnail": "/assets/img/yt/rS7QFHoG5lg-hqdefault.jpg",
-      "published_date": "2026-11-07",
-      "cluster": "side activity",
-      "summary": "Solo Flawless Master Difficulty clear of Washington National Airport vs Bobby Guzman in The Division 2 (Y8S3): 20:04, zero deaths, no Hive.  Build used: Iron Wi"
-    },
-    {
-      "title": "Clockwork SMG Locations: Don't Miss These Guardian Cards",
-      "url": "https://raigulus.github.io/division-2/videos/clockwork-smg-locations-don-t-miss-these-guardian/",
-      "youtube_url": "https://www.youtube.com/watch?v=cV-6qmbiPSI",
-      "thumbnail": "/assets/img/yt/cV-6qmbiPSI-hqdefault.jpg",
-      "published_date": "2026-11-06",
-      "cluster": "side activity",
-      "summary": "Discover how to collect all 6 Guardian Cards in The Division 2's Central Park DLC and unlock the brand-new Named Clockwork SMG!  In this guide, I'll walk you th"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-11 22:05 UTC"
+    "last_checked": "2026-11-11 23:05 UTC"
   },
   "discord_members": 62,
   "next_reset_utc": "2026-11-12T07:00:00Z"
