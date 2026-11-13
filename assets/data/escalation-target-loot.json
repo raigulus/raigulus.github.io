@@ -1,48 +1,48 @@
 {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Tombs",
-      "loot": "Uzina Getica"
+      "loot": "Shiny Monkey Gear"
     },
     {
       "mission": "Manning National Zoo",
-      "loot": "Pistol"
+      "loot": "Belstone Armory"
     },
     {
       "mission": "Bank Headquarters",
-      "loot": "Ortiz Exuro"
+      "loot": "Gloves"
     },
     {
       "mission": "American History Museum",
-      "loot": "Measured Assembly"
+      "loot": "Assault Rifle"
     },
     {
       "mission": "Space Administration HQ",
-      "loot": "Rifle"
+      "loot": "Rigger"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "MMRs"
+      "item": "Pistols"
     },
     {
       "type": "Gear",
-      "item": "Chest Pieces"
+      "item": "Holsters"
     }
   ],
-  "last_updated": "2026-11-12 09:00",
-  "last_checked": "2026-11-13 07:05 UTC",
-  "parsed_at": "2026-11-13T07:05:09.328393+00:00",
-  "status": "pending",
-  "fetched_at": "2026-11-13T07:05:09.328393+00:00",
+  "last_updated": "2026-11-13 09:00",
+  "last_checked": "2026-11-13 08:05 UTC",
+  "parsed_at": "2026-11-13T08:05:09.060505+00:00",
+  "status": "ok",
+  "fetched_at": "2026-11-13T08:05:09.060505+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-11-13 07:05 UTC",
+  "vendor_highlights_checked": "2026-11-13 08:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
