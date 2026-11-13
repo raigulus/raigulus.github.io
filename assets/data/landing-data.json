@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-13T17:05:14Z",
+  "generated_at": "2026-11-13T17:54:18Z",
   "stats": {
-    "total_guides": 504,
+    "total_guides": 505,
     "exotics": 79,
     "patches": 32
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "The Division 2 Bighorn Build: Solo Flawless American",
+      "url": "https://raigulus.github.io/division-2/videos/the-division-2-bighorn-build-solo-flawless-america/",
+      "youtube_url": "https://www.youtube.com/watch?v=ymxUNppZtlw",
+      "thumbnail": "/assets/img/yt/ymxUNppZtlw-hqdefault.jpg",
+      "published_date": "2026-11-13",
+      "cluster": "escalation run",
+      "summary": "The Division 2 Bighorn Build put to the test in a Solo Flawless American History Museum clear!  Can The Bighorn deliver enough damage and consistency with a ful"
+    },
     {
       "title": "THE DIVISION 2 LIVE 🔴 | Golden Bullet, Central Park &",
       "url": "https://raigulus.github.io/division-2/videos/the-division-2-live-golden-bullet-central-park-end/",
@@ -28,15 +37,6 @@
       "published_date": "2026-11-11",
       "cluster": "side activity",
       "summary": "🔴 THE DIVISION 2 LIVE GAMEPLAY – Join me for a variety of endgame activities in Tom Clancy's The Division 2!  Today we're jumping into Golden Bullet, Echoes of"
-    },
-    {
-      "title": "I Took On Jefferson Plaza in T10... Here Is The 17:32",
-      "url": "https://raigulus.github.io/division-2/videos/i-took-on-jefferson-plaza-in-t10-here-is-the-17-32/",
-      "youtube_url": "https://www.youtube.com/watch?v=te-GndnPfs0",
-      "thumbnail": "/assets/img/yt/te-GndnPfs0-hqdefault.jpg",
-      "published_date": "2026-11-08",
-      "cluster": "escalation run",
-      "summary": "Can the Eagle Bearer handle a Tier 10 Jefferson Plaza run? In Part 2, we're putting the exotic assault rifle through another high-level challenge in The Divisio"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-13 17:05 UTC"
+    "last_checked": "2026-11-13 17:54 UTC"
   },
   "discord_members": 62,
   "next_reset_utc": "2026-11-14T07:00:00Z"
