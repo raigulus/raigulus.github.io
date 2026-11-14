@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-14T14:05:16Z",
+  "generated_at": "2026-11-14T15:05:23Z",
   "stats": {
-    "total_guides": 505,
+    "total_guides": 507,
     "exotics": 79,
     "patches": 32
   },
@@ -12,6 +12,24 @@
   },
   "latest_videos": [
     {
+      "title": "Testing New Changes in Division 2 PTS",
+      "url": "https://raigulus.github.io/division-2/videos/testing-new-changes-in-division-2-pts/",
+      "youtube_url": "https://www.youtube.com/watch?v=dlYtmtFVKUo",
+      "thumbnail": "/assets/img/yt/dlYtmtFVKUo-hqdefault.jpg",
+      "published_date": "2026-11-14",
+      "cluster": "side activity",
+      "summary": "Made with Restream. Livestream on 30+ platforms at once via https://restream.io  We’re exploring new changes in Division 2 PTS, checking what feels different an"
+    },
+    {
+      "title": "Testing New Changes in Division 2 PTS",
+      "url": "https://raigulus.github.io/division-2/videos/testing-new-changes-in-division-2-pts/",
+      "youtube_url": "https://www.youtube.com/watch?v=tqQGw5hBKas",
+      "thumbnail": "/assets/img/yt/tqQGw5hBKas-hqdefault.jpg",
+      "published_date": "2026-11-14",
+      "cluster": "side activity",
+      "summary": "Made with Restream. Livestream on 30+ platforms at once via https://restream.io  We’re exploring new changes in Division 2 PTS, checking what feels different an"
+    },
+    {
       "title": "The Division 2 Bighorn Build: Solo Flawless American",
       "url": "https://raigulus.github.io/division-2/videos/the-division-2-bighorn-build-solo-flawless-america/",
       "youtube_url": "https://www.youtube.com/watch?v=ymxUNppZtlw",
@@ -19,24 +37,6 @@
       "published_date": "2026-11-13",
       "cluster": "escalation run",
       "summary": "The Division 2 Bighorn Build put to the test in a Solo Flawless American History Museum clear!  Can The Bighorn deliver enough damage and consistency with a ful"
-    },
-    {
-      "title": "THE DIVISION 2 LIVE 🔴 | Golden Bullet, Central Park &",
-      "url": "https://raigulus.github.io/division-2/videos/the-division-2-live-golden-bullet-central-park-end/",
-      "youtube_url": "https://www.youtube.com/watch?v=x6wWvmPn3cY",
-      "thumbnail": "/assets/img/yt/x6wWvmPn3cY-hqdefault.jpg",
-      "published_date": "2026-11-11",
-      "cluster": "side activity",
-      "summary": "🔴 THE DIVISION 2 LIVE GAMEPLAY – Join me for a variety of endgame activities in Tom Clancy's The Division 2!  Today we're jumping into Golden Bullet, Echoes of"
-    },
-    {
-      "title": "THE DIVISION 2 LIVE 🔴 | Golden Bullet, Central Park &",
-      "url": "https://raigulus.github.io/division-2/videos/the-division-2-live-golden-bullet-central-park-end/",
-      "youtube_url": "https://www.youtube.com/watch?v=46pJ2sMZIN8",
-      "thumbnail": "/assets/img/yt/46pJ2sMZIN8-hqdefault.jpg",
-      "published_date": "2026-11-11",
-      "cluster": "side activity",
-      "summary": "🔴 THE DIVISION 2 LIVE GAMEPLAY – Join me for a variety of endgame activities in Tom Clancy's The Division 2!  Today we're jumping into Golden Bullet, Echoes of"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-14 14:05 UTC"
+    "last_checked": "2026-11-14 15:05 UTC"
   },
   "discord_members": 62,
   "next_reset_utc": "2026-11-15T07:00:00Z"
