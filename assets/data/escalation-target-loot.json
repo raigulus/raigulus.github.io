@@ -1,48 +1,48 @@
 {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Tombs",
-      "loot": "Shiny Monkey Gear"
+      "loot": "Empress International"
     },
     {
       "mission": "Manning National Zoo",
-      "loot": "Belstone Armory"
+      "loot": "Holster"
     },
     {
       "mission": "Bank Headquarters",
-      "loot": "Gloves"
+      "loot": "Strikers Battlegear"
     },
     {
       "mission": "American History Museum",
-      "loot": "Assault Rifle"
+      "loot": "Skill Mods"
     },
     {
       "mission": "Space Administration HQ",
-      "loot": "Rigger"
+      "loot": "Future Initiative"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Pistols"
+      "item": "LMGs"
     },
     {
       "type": "Gear",
-      "item": "Holsters"
+      "item": "Backpacks"
     }
   ],
-  "last_updated": "2026-11-13 09:00",
-  "last_checked": "2026-11-14 08:05 UTC",
-  "parsed_at": "2026-11-14T08:05:09.058302+00:00",
-  "status": "stale",
-  "fetched_at": "2026-11-14T08:05:09.058302+00:00",
+  "last_updated": "2026-11-14 09:05",
+  "last_checked": "2026-11-14 09:05 UTC",
+  "parsed_at": "2026-11-14T09:05:08.282107+00:00",
+  "status": "ok",
+  "fetched_at": "2026-11-14T09:05:08.282107+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Checked after the expected daily reset window, but the source still returned an older snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-11-14 08:05 UTC",
+  "vendor_highlights_checked": "2026-11-14 09:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
