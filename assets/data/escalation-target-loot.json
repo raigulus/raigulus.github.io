@@ -1,26 +1,26 @@
 {
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Tombs",
-      "loot": "Holster"
-    },
-    {
-      "mission": "Manning National Zoo",
-      "loot": "Kneepad"
-    },
-    {
-      "mission": "Bank Headquarters",
       "loot": "Hunters Fury"
     },
     {
+      "mission": "Manning National Zoo",
+      "loot": "Zwiadowka Sp. z o.o"
+    },
+    {
+      "mission": "Bank Headquarters",
+      "loot": "Mask"
+    },
+    {
       "mission": "American History Museum",
-      "loot": "Uzina Getica"
+      "loot": "Wyvern Wear"
     },
     {
       "mission": "Space Administration HQ",
-      "loot": "Virtuoso"
+      "loot": "Ortiz: Reficere"
     }
   ],
   "vendor_caches": [
@@ -30,19 +30,19 @@
     },
     {
       "type": "Gear",
-      "item": "Gloves"
+      "item": "Holsters"
     }
   ],
-  "last_updated": "2026-11-15 09:00",
-  "last_checked": "2026-11-16 07:05 UTC",
-  "parsed_at": "2026-11-16T07:05:08.121070+00:00",
-  "status": "pending",
-  "fetched_at": "2026-11-16T07:05:08.121070+00:00",
+  "last_updated": "2026-11-16 09:01",
+  "last_checked": "2026-11-16 08:05 UTC",
+  "parsed_at": "2026-11-16T08:05:08.890092+00:00",
+  "status": "ok",
+  "fetched_at": "2026-11-16T08:05:08.890092+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-11-16 07:05 UTC",
+  "vendor_highlights_checked": "2026-11-16 08:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
