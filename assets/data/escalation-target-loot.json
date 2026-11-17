@@ -1,48 +1,48 @@
 {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
-      "mission": "The Tombs",
-      "loot": "Hunters Fury"
+      "mission": "The Art Museum",
+      "loot": "Gloves"
     },
     {
-      "mission": "Manning National Zoo",
-      "loot": "Zwiadowka Sp. z o.o"
+      "mission": "Capitol Building",
+      "loot": "Kneepad"
     },
     {
-      "mission": "Bank Headquarters",
+      "mission": "Jefferson Plaza",
       "loot": "Mask"
     },
     {
-      "mission": "American History Museum",
-      "loot": "Wyvern Wear"
+      "mission": "Lincoln Memorial",
+      "loot": "Overlord Armaments"
     },
     {
-      "mission": "Space Administration HQ",
-      "loot": "Ortiz: Reficere"
+      "mission": "Federal Emergency Bunker",
+      "loot": "Hard Wired"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Assault Rifles"
+      "item": "LMGs"
     },
     {
       "type": "Gear",
-      "item": "Holsters"
+      "item": "Masks"
     }
   ],
-  "last_updated": "2026-11-16 09:01",
-  "last_checked": "2026-11-17 14:05 UTC",
-  "parsed_at": "2026-11-17T14:05:10.364178+00:00",
-  "status": "stale",
-  "fetched_at": "2026-11-17T14:05:10.364178+00:00",
+  "last_updated": "2026-11-17 15:50",
+  "last_checked": "2026-11-17 15:05 UTC",
+  "parsed_at": "2026-11-17T15:05:10.905372+00:00",
+  "status": "ok",
+  "fetched_at": "2026-11-17T15:05:10.905372+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Checked after the expected daily reset window, but the source still returned an older snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-11-17 14:05 UTC",
+  "vendor_highlights_checked": "2026-11-17 15:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
