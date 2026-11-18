@@ -1,48 +1,48 @@
 {
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Art Museum",
-      "loot": "Gloves"
+      "loot": "Body Armor"
     },
     {
       "mission": "Capitol Building",
-      "loot": "Kneepad"
+      "loot": "Future Initiative"
     },
     {
       "mission": "Jefferson Plaza",
-      "loot": "Mask"
+      "loot": "Ortiz: Reficere"
     },
     {
       "mission": "Lincoln Memorial",
-      "loot": "Overlord Armaments"
+      "loot": "Fenris Group AB"
     },
     {
       "mission": "Federal Emergency Bunker",
-      "loot": "Hard Wired"
+      "loot": "Gear Mods"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "LMGs"
+      "item": "Shotguns"
     },
     {
       "type": "Gear",
-      "item": "Masks"
+      "item": "Backpacks"
     }
   ],
-  "last_updated": "2026-11-17 15:50",
-  "last_checked": "2026-11-18 07:05 UTC",
-  "parsed_at": "2026-11-18T07:05:09.778649+00:00",
-  "status": "pending",
-  "fetched_at": "2026-11-18T07:05:09.778649+00:00",
+  "last_updated": "2026-11-18 09:00",
+  "last_checked": "2026-11-18 08:05 UTC",
+  "parsed_at": "2026-11-18T08:05:09.032293+00:00",
+  "status": "ok",
+  "fetched_at": "2026-11-18T08:05:09.032293+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-11-18 07:05 UTC",
+  "vendor_highlights_checked": "2026-11-18 08:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
