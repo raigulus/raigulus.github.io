@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T22:05:14Z",
+  "generated_at": "2026-11-18T23:05:18Z",
   "stats": {
-    "total_guides": 511,
+    "total_guides": 512,
     "exotics": 79,
     "patches": 32
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "THE DIVISION 2 CROSSPLAY LIVE! 🔴 PC, PlayStation & Xbox",
+      "url": "https://raigulus.github.io/division-2/videos/the-division-2-crossplay-live-pc-playstation-xbox/",
+      "youtube_url": "https://www.youtube.com/watch?v=4I7P7qmihV4",
+      "thumbnail": "/assets/img/yt/4I7P7qmihV4-hqdefault.jpg",
+      "published_date": "2026-11-18",
+      "cluster": "side activity",
+      "summary": "Made with Restream. Livestream on 30+ platforms at once via https://restream.io  🔴 THE DIVISION 2 CROSSPLAY IS LIVE!  Welcome to Raigulus! Join us for The Divis"
+    },
     {
       "title": "Can We Survive This? The Division 2 Crossplay Session",
       "url": "https://raigulus.github.io/division-2/videos/can-we-survive-this-the-division-2-crossplay-sessi/",
@@ -28,15 +37,6 @@
       "published_date": "2026-11-16",
       "cluster": "escalation run",
       "summary": "The Division 2 Heartbreaker Build tested on the PTS! A 13-minute American History Museum clear on the highest difficulty in the new Escalation system.  Can a Pv"
-    },
-    {
-      "title": "Why The Prima Donna Nerf Won't Stop This Build",
-      "url": "https://raigulus.github.io/division-2/videos/why-the-prima-donna-nerf-won-t-stop-this-build/",
-      "youtube_url": "https://www.youtube.com/watch?v=qBrSrok0EQA",
-      "thumbnail": "/assets/img/yt/qBrSrok0EQA-hqdefault.jpg",
-      "published_date": "2026-11-15",
-      "cluster": "escalation run",
-      "summary": "Prima Donna Division 2 is still deadly after the new Escalation nerf! I tested the updated build on the PTS and cleared American History Museum in just 9 minute"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-18 22:05 UTC"
+    "last_checked": "2026-11-18 23:05 UTC"
   },
   "discord_members": 64,
   "next_reset_utc": "2026-11-19T07:00:00Z"
