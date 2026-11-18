@@ -2,113 +2,13 @@
   "rows": [
     {
       "keys": [
-        "the division 2 loot allocation today",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 2,
-      "impressions": 2,
-      "ctr": 1,
-      "position": 3
-    },
-    {
-      "keys": [
         "division 2 escalation targeted loot today",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 1,
-      "impressions": 1,
-      "ctr": 1,
-      "position": 10
-    },
-    {
-      "keys": [
-        "division 2 targeted loot today",
         "https://raigulus.github.io/division-2/loot/"
       ],
       "clicks": 1,
       "impressions": 2,
       "ctr": 0.5,
-      "position": 2
-    },
-    {
-      "keys": [
-        "division 2 targeted loot today map",
-        "https://raigulus.github.io/division-2/loot/"
-      ],
-      "clicks": 1,
-      "impressions": 1,
-      "ctr": 1,
-      "position": 1
-    },
-    {
-      "keys": [
-        "caduceus division 2",
-        "https://raigulus.github.io/division-2/exotics/caduceus/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 1
-    },
-    {
-      "keys": [
-        "d2 lost sector rotation",
-        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 2
-    },
-    {
-      "keys": [
-        "destiny lost sector today",
-        "https://raigulus.github.io/destiny-2/lost-sector-tracker/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 3
-    },
-    {
-      "keys": [
-        "division 2 daily reset time",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 1
-    },
-    {
-      "keys": [
-        "division 2 reset",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1
-    },
-    {
-      "keys": [
-        "escalation rotation division 2",
-        "https://raigulus.github.io/division-2/escalation/"
-      ],
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 8
-    },
-    {
-      "keys": [
-        "the division 2 escalation drop today",
-        "https://raigulus.github.io/division-2/reset/"
-      ],
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 2.5
+      "position": 10
     }
   ],
   "responseAggregationType": "byPage"

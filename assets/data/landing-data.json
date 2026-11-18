@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-13T17:05:14Z",
+  "generated_at": "2026-11-18T08:05:15Z",
   "stats": {
-    "total_guides": 504,
+    "total_guides": 511,
     "exotics": 79,
     "patches": 32
   },
@@ -12,36 +12,36 @@
   },
   "latest_videos": [
     {
-      "title": "The Division 2 Bighorn Build: Solo Flawless American",
-      "url": "https://raigulus.github.io/division-2/videos/the-division-2-bighorn-build-solo-flawless-america/",
-      "youtube_url": "https://www.youtube.com/watch?v=ymxUNppZtlw",
-      "thumbnail": "/assets/img/yt/ymxUNppZtlw-hqdefault.jpg",
-      "published_date": "2026-11-13",
-      "cluster": "escalation run",
-      "summary": "The Division 2 Bighorn Build put to the test in a Solo Flawless American History Museum clear!  Can The Bighorn deliver enough damage and consistency with a ful"
-    },
-    {
-      "title": "THE DIVISION 2 LIVE 🔴 | Golden Bullet, Central Park &",
-      "url": "https://raigulus.github.io/division-2/videos/the-division-2-live-golden-bullet-central-park-end/",
-      "youtube_url": "https://www.youtube.com/watch?v=x6wWvmPn3cY",
-      "thumbnail": "/assets/img/yt/x6wWvmPn3cY-hqdefault.jpg",
-      "published_date": "2026-11-11",
+      "title": "Can We Survive This? The Division 2 Crossplay Session",
+      "url": "https://raigulus.github.io/division-2/videos/can-we-survive-this-the-division-2-crossplay-sessi/",
+      "youtube_url": "https://www.youtube.com/watch?v=SPidxAdOvhw",
+      "thumbnail": "/assets/img/yt/SPidxAdOvhw-hqdefault.jpg",
+      "published_date": "2026-11-17",
       "cluster": "side activity",
-      "summary": "🔴 THE DIVISION 2 LIVE GAMEPLAY – Join me for a variety of endgame activities in Tom Clancy's The Division 2!  Today we're jumping into Golden Bullet, Echoes of"
+      "summary": "Made with Restream. Livestream on 30+ platforms at once via https://restream.io  🔴 **THE DIVISION 2 CROSSPLAY LIVE STREAM | CO-OP GAMEPLAY**  Welcome to another"
     },
     {
-      "title": "I Took On Jefferson Plaza in T10... Here Is The 17:32",
-      "url": "https://raigulus.github.io/division-2/videos/i-took-on-jefferson-plaza-in-t10-here-is-the-17-32/",
-      "youtube_url": "https://www.youtube.com/watch?v=te-GndnPfs0",
-      "thumbnail": "/assets/img/yt/te-GndnPfs0-hqdefault.jpg",
-      "published_date": "2026-11-08",
+      "title": "The Division 2 PTS: Heartbreaker Clears the Highest",
+      "url": "https://raigulus.github.io/division-2/videos/the-division-2-pts-heartbreaker-clears-the-highest/",
+      "youtube_url": "https://www.youtube.com/watch?v=jL_Y1ALeaoU",
+      "thumbnail": "/assets/img/yt/jL_Y1ALeaoU-hqdefault.jpg",
+      "published_date": "2026-11-16",
       "cluster": "escalation run",
-      "summary": "Can the Eagle Bearer handle a Tier 10 Jefferson Plaza run? In Part 2, we're putting the exotic assault rifle through another high-level challenge in The Divisio"
+      "summary": "The Division 2 Heartbreaker Build tested on the PTS! A 13-minute American History Museum clear on the highest difficulty in the new Escalation system.  Can a Pv"
+    },
+    {
+      "title": "Why The Prima Donna Nerf Won't Stop This Build",
+      "url": "https://raigulus.github.io/division-2/videos/why-the-prima-donna-nerf-won-t-stop-this-build/",
+      "youtube_url": "https://www.youtube.com/watch?v=qBrSrok0EQA",
+      "thumbnail": "/assets/img/yt/qBrSrok0EQA-hqdefault.jpg",
+      "published_date": "2026-11-15",
+      "cluster": "escalation run",
+      "summary": "Prima Donna Division 2 is still deadly after the new Escalation nerf! I tested the updated build on the PTS and cleared American History Museum in just 9 minute"
     }
   ],
   "loot": {
     "active": true,
-    "date": "2026-11-13",
+    "date": "2026-11-18",
     "rotation": "Weekly Escalation Rotation",
     "mission_count": 5,
     "vendor_count": 2,
@@ -49,8 +49,8 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-13 17:05 UTC"
+    "last_checked": "2026-11-18 08:05 UTC"
   },
-  "discord_members": 62,
-  "next_reset_utc": "2026-11-14T07:00:00Z"
+  "discord_members": 65,
+  "next_reset_utc": "2026-11-19T07:00:00Z"
 }
