@@ -154,7 +154,12 @@ def latest_videos(count: int = 3) -> list[dict]:
     videos = json.loads(videos_file.read_text(encoding="utf-8"))
     sorted_vids = sorted(videos, key=lambda v: v.get("published_date", ""), reverse=True)
     result = []
-    for v in sorted_vids[:count]:
+    seen_urls = set()  # same guide page can be recorded under two YouTube IDs (duplicate uploads)
+    for v in sorted_vids:
+        page_url = v.get("url", "")
+        if page_url in seen_urls:
+            continue
+        seen_urls.add(page_url)
         yt_url = v.get("youtube_url", "")
         yt_id = ""
         if "watch?v=" in yt_url:
@@ -171,6 +176,8 @@ def latest_videos(count: int = 3) -> list[dict]:
             "cluster": v.get("cluster", ""),
             "summary": v.get("summary", ""),
         })
+        if len(result) >= count:
+            break
     return result
 
 
