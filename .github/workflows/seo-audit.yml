@@ -106,8 +106,37 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Reports stay in the run artifact (see Upload Reports); only site data is committed.
-          git add assets/data/*.json || true
-          git diff --staged --quiet || git commit -m "chore: update SEO data [skip ci]"
-          git push || echo "Nothing to push"
-        continue-on-error: true
+          # Reports stay in the run artifact (see Upload Reports). Stage only the
+          # JSON files actually written by the SEO scripts in scripts/seo/.
+          # backlinks*.json first appear after a successful backlink_monitor run,
+          # so skip paths that do not exist yet; any other git failure fails the step.
+          for f in \
+            assets/data/tracked-keywords.json \
+            assets/data/rankings-history.json \
+            assets/data/competitors.json \
+            assets/data/competitor-history.json \
+            assets/data/gsc-analytics.json \
+            assets/data/backlinks.json \
+            assets/data/backlink-history.json; do
+            if [ -f "$f" ]; then
+              git add -- "$f"
+            else
+              echo "SEO output not present yet, skipping: $f"
+            fi
+          done
+          # git diff --quiet exits 0 for no staged changes, 1 for staged changes,
+          # and >1 for a Git error. Capture the status so an error is never
+          # mistaken for the normal "changes present" case.
+          set +e
+          git diff --staged --quiet
+          diff_status=$?
+          set -e
+          if [ "$diff_status" -eq 0 ]; then
+            echo "No SEO data changes."
+            exit 0
+          elif [ "$diff_status" -ne 1 ]; then
+            echo "::error::git diff --staged --quiet failed with exit code $diff_status"
+            exit "$diff_status"
+          fi
+          git commit -m "chore: update SEO data [skip ci]"
+          git push

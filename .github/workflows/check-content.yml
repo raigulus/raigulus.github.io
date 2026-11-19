@@ -36,6 +36,7 @@ jobs:
         run: |
           python3 -m unittest scripts/test_contrast.py scripts/test_theme_contrast.py
           python3 -m unittest scripts/test_build_maker.py
+          python3 -m unittest scripts/test_generate_landing_data.py
 
       # AI output sometimes contains CJK characters in English content; they look
       # plausible in context and pass the language guard.

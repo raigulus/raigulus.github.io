@@ -147,11 +147,14 @@ def discord_member_count() -> int:
         return 0
 
 
-def latest_videos(count: int = 3) -> list[dict]:
-    videos_file = DATA / "videos.json"
-    if not videos_file.exists():
-        return []
-    videos = json.loads(videos_file.read_text(encoding="utf-8"))
+def dedupe_latest_videos(videos: list[dict], count: int = 3) -> list[dict]:
+    """Select the newest ``count`` guide URLs from a videos.json record list.
+
+    Records are ordered by ``published_date`` descending and deduplicated by
+    guide URL, so when two YouTube IDs point at the same page the newest record
+    wins. This is a pure function so the behavior can be tested without
+    reading or writing repository data.
+    """
     sorted_vids = sorted(videos, key=lambda v: v.get("published_date", ""), reverse=True)
     result = []
     seen_urls = set()  # same guide page can be recorded under two YouTube IDs (duplicate uploads)
@@ -179,6 +182,14 @@ def latest_videos(count: int = 3) -> list[dict]:
         if len(result) >= count:
             break
     return result
+
+
+def latest_videos(count: int = 3) -> list[dict]:
+    videos_file = DATA / "videos.json"
+    if not videos_file.exists():
+        return []
+    videos = json.loads(videos_file.read_text(encoding="utf-8"))
+    return dedupe_latest_videos(videos, count)
 
 
 def next_reset_utc() -> str:
