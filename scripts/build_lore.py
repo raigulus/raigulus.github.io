@@ -124,7 +124,7 @@ def source_ids_for_claims(claim_ids, claim_map):
     return source_ids
 
 
-def head(title, description, canonical, schema_type="Article", published=None, modified=None, suffix=" | Raigulus Lore"):
+def head(title, description, canonical, schema_type="Article", published=None, modified=None, suffix=" | Raigulus Lore", item_list=None):
     description = meta_description(description, title)
     modified = modified or DEFAULT_MODIFIED
     structured_data = {
@@ -156,6 +156,10 @@ def head(title, description, canonical, schema_type="Article", published=None, m
             "name": "Raigulus",
             "logo": {"@type": "ImageObject", "url": LOGO_IMAGE},
         }
+    if item_list is not None:
+        # Only ItemList pages pass this; it is derived from the same records
+        # that render the visible reading order (see reading_order_list_items).
+        structured_data["itemListElement"] = item_list
     structured = json.dumps(
         structured_data,
         ensure_ascii=False,
@@ -723,6 +727,27 @@ def render_timeline(entries, sources_by_id):
 '''
 
 
+def reading_order_list_items(reading_order, entries_by_id):
+    """Build Schema.org ListItems from the same records used for the visible list.
+
+    Names come from the reading-order record titles (the visible <h3> text) and
+    URLs from the first archive record of each item, resolved through the
+    validated lore entries. This keeps the JSON-LD order identical to the
+    rendered reading order without maintaining a second copy of the data.
+    """
+    items = []
+    for group in reading_order["groups"]:
+        for item in group["items"]:
+            first_entry = entries_by_id[item["entry_ids"][0]]
+            items.append({
+                "@type": "ListItem",
+                "position": len(items) + 1,
+                "url": BASE_URL + page_url(first_entry),
+                "name": item["title"],
+            })
+    return items
+
+
 def render_reading_order(reading_order, entries_by_id, sources_by_id):
     groups = []
     for group in reading_order["groups"]:
@@ -751,7 +776,8 @@ def render_reading_order(reading_order, entries_by_id, sources_by_id):
   <ol class="reading-order-list">{''.join(items)}</ol>
 </section>''')
     canonical = BASE_URL + "/lore/reading-order/"
-    return f'''{head(reading_order['title'], reading_order['description'], canonical, 'ItemList')}
+    list_items = reading_order_list_items(reading_order, entries_by_id)
+    return f'''{head(reading_order['title'], reading_order['description'], canonical, 'ItemList', item_list=list_items)}
 <body>
 {header()}
 <main class="lore-shell">
