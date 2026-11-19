@@ -32,10 +32,15 @@ jobs:
 
       # Runs after discovery so the freshly written pages reference their
       # thumbnails, and before the commit so the images land in the same push.
-      # A thumbnail that will not download should not cost us the video pages.
+      # A failed download is diagnosed here without aborting immediately, but
+      # the strict verification step below is the gate: no commit is made while
+      # any referenced local thumbnail is missing or invalid.
       - name: Sync YouTube thumbnails
         continue-on-error: true
         run: python3 scripts/sync_youtube_thumbnails.py
+
+      - name: Verify thumbnail references (strict)
+        run: python3 scripts/sync_youtube_thumbnails.py --verify-only
 
       - name: Commit changes
         env:
