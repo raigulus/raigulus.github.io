@@ -38,6 +38,16 @@ jobs:
           python3 -m unittest scripts/test_build_maker.py
           python3 -m unittest scripts/test_generate_landing_data.py
 
+      # Link and JSON-LD checks report problems without failing CI yet:
+      # pre-existing debt (missing YouTube srcset variants, one ItemList
+      # without itemListElement) is tracked for a separate cleanup batch.
+      # Run without --warn-only locally to get strict non-zero exit codes.
+      - name: Internal link check (report only)
+        run: python3 scripts/check_internal_links.py --warn-only
+
+      - name: JSON-LD structural check (report only)
+        run: python3 scripts/check_jsonld.py --warn-only
+
       # AI output sometimes contains CJK characters in English content; they look
       # plausible in context and pass the language guard.
       # Excluded on purpose:

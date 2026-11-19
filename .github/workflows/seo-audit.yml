@@ -25,6 +25,12 @@ env:
   PYTHON_VERSION: '3.10'
   PYTHONIOENCODING: 'utf-8'
 
+# Never run two SEO audits at the same time. An active data-generation run must
+# finish (and commit) rather than be cancelled mid-write.
+concurrency:
+  group: seo-audit
+  cancel-in-progress: false
+
 jobs:
   seo-audit:
     runs-on: ubuntu-latest
