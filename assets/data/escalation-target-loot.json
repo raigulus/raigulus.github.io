@@ -1,48 +1,48 @@
 {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Art Museum",
-      "loot": "Gila Guard"
+      "loot": "Ortiz: Reficere"
     },
     {
       "mission": "Capitol Building",
-      "loot": "Hana-U Corporation"
+      "loot": "Breaking Point"
     },
     {
       "mission": "Jefferson Plaza",
-      "loot": "Uzina Getica"
+      "loot": "Aces & Eights"
     },
     {
       "mission": "Lincoln Memorial",
-      "loot": "Concentrated Company"
+      "loot": "Empress International"
     },
     {
       "mission": "Federal Emergency Bunker",
-      "loot": "Grupo Sombra S.A."
+      "loot": "Rifle"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "MMRs"
+      "item": "LMGs"
     },
     {
       "type": "Gear",
-      "item": "Backpacks"
+      "item": "Holsters"
     }
   ],
-  "last_updated": "2026-11-19 09:03",
-  "last_checked": "2026-11-19 21:05 UTC",
-  "parsed_at": "2026-11-19T21:05:09.573883+00:00",
+  "last_updated": "2026-11-20 09:00",
+  "last_checked": "2026-11-20 16:05 UTC",
+  "parsed_at": "2026-11-20T16:05:11.787431+00:00",
   "status": "ok",
-  "fetched_at": "2026-11-19T21:05:09.573883+00:00",
+  "fetched_at": "2026-11-20T16:05:11.787431+00:00",
   "next_expected_update": "Around 07:00 UTC",
   "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-11-19 21:05 UTC",
+  "vendor_highlights_checked": "2026-11-20 16:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
