@@ -4,12 +4,18 @@
 from __future__ import annotations
 
 import copy
+import tempfile
 import unittest
+from pathlib import Path
+from unittest.mock import patch
 
+from scripts import validate_lore as vl
 from scripts.validate_lore import (
     ROOT,
     is_redirect_page,
     load_json,
+    run_validation,
+    site_inventory_warnings,
     validate_reading_order,
     validate_inventories,
     validate_records,
@@ -259,8 +265,89 @@ class SiteInventoryTests(unittest.TestCase):
         markup = '<meta http-equiv="refresh" content="0; url=/replacement/">'
         self.assertTrue(is_redirect_page(markup))
 
+    def test_current_meta_redirect_stub_is_recognized(self):
+        markup = (
+            '<meta name="redirect" '
+            'content="https://raigulus.github.io/division-2/videos/target/">'
+        )
+        self.assertTrue(is_redirect_page(markup))
+
+    def test_redirect_marker_with_reordered_attributes(self):
+        markup = (
+            '<meta content="https://raigulus.github.io/division-2/videos/target/" '
+            'name="redirect">'
+        )
+        self.assertTrue(is_redirect_page(markup))
+
+    def test_redirect_marker_with_single_quotes(self):
+        markup = "<meta name='redirect' content='/division-2/videos/target/'>"
+        self.assertTrue(is_redirect_page(markup))
+
+    def test_redirect_marker_case_and_whitespace_variations(self):
+        markup = '<META  NAME = "redirect"\n CONTENT = "/target/">'
+        self.assertTrue(is_redirect_page(markup))
+
+    def test_unquoted_redirect_value_is_recognized(self):
+        self.assertTrue(is_redirect_page("<meta name=redirect content=/target/>"))
+
     def test_normal_page_is_not_treated_as_redirect(self):
         self.assertFalse(is_redirect_page("<html><head><title>Guide</title></head></html>"))
+
+    def test_normal_shorts_page_is_not_treated_as_redirect(self):
+        markup = (
+            '<meta property="og:title" content="Division 2 #shorts">'
+            '<script src="/assets/site.js" defer></script>'
+        )
+        self.assertFalse(is_redirect_page(markup))
+
+    def test_unrelated_meta_tag_does_not_trigger_redirect(self):
+        markup = (
+            '<meta name="description" content="A guide about redirect mechanics">'
+            '<meta property="og:type" content="video.other">'
+        )
+        self.assertFalse(is_redirect_page(markup))
+
+    def test_similarly_named_meta_value_is_not_a_redirect(self):
+        self.assertFalse(is_redirect_page('<meta name="redirector" content="/x/">'))
+
+
+class StrictInventoryTests(unittest.TestCase):
+    def test_genuine_missing_page_warning_and_redirect_stub_exclusion(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            videos = root / "division-2" / "videos"
+            for slug, markup in (
+                ("real-missing-page", "<html><title>Guide</title></html>"),
+                (
+                    "alias-stub",
+                    '<meta name="redirect" '
+                    'content="https://raigulus.github.io/division-2/videos/real-missing-page/">',
+                ),
+            ):
+                page = videos / slug / "index.html"
+                page.parent.mkdir(parents=True)
+                page.write_text(markup, encoding="utf-8")
+            data = root / "assets" / "data"
+            data.mkdir(parents=True)
+            (data / "videos.json").write_text("[]", encoding="utf-8")
+
+            with patch.object(vl, "ROOT", root):
+                warnings = site_inventory_warnings()
+
+            joined = " ".join(warnings)
+            self.assertIn("real-missing-page", joined)
+            self.assertNotIn("alias-stub", joined)
+
+    def test_strict_mode_promotes_inventory_warning_to_error(self):
+        synthetic = "site inventory: synthetic drift"
+        with patch.object(vl, "site_inventory_warnings", return_value=[synthetic]):
+            _, _, strict_errors, strict_warnings = run_validation(strict_site_inventory=True)
+        self.assertIn(synthetic, strict_errors)
+        self.assertIn(synthetic, strict_warnings)
+
+        with patch.object(vl, "site_inventory_warnings", return_value=[synthetic]):
+            _, _, loose_errors, _ = run_validation(strict_site_inventory=False)
+        self.assertNotIn(synthetic, loose_errors)
 
 
 if __name__ == "__main__":

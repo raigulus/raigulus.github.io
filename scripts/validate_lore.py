@@ -25,6 +25,13 @@ SLUG_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 META_REFRESH_PATTERN = re.compile(
     r"<meta\s+[^>]*http-equiv=[\"']refresh[\"'][^>]*>", re.IGNORECASE
 )
+# Current redirect stubs use an explicit meta marker instead of http-equiv.
+# Only an exact name="redirect" value qualifies: a page that merely mentions
+# "redirect" in other metadata or loads a script is not classified as a stub.
+META_REDIRECT_PATTERN = re.compile(
+    r"<meta\s+[^>]*\bname\s*=\s*(?:[\"']redirect[\"']|redirect(?=[\s/>]))[^>]*>",
+    re.IGNORECASE,
+)
 FORBIDDEN_PUBLIC_KEYS = {
     "full_transcript",
     "raw_transcript",
@@ -645,8 +652,16 @@ def public_asset_errors():
 
 
 def is_redirect_page(html_text):
-    """Return true for legacy HTML aliases that redirect to a canonical page."""
-    return bool(META_REFRESH_PATTERN.search(html_text))
+    """Return true for HTML aliases that redirect to a canonical page.
+
+    Recognizes both the legacy ``http-equiv="refresh"`` marker and the current
+    ``<meta name="redirect" content="...">`` stub convention. The explicit meta
+    marker is authoritative; loading a script alone is not enough to qualify.
+    """
+    return bool(
+        META_REFRESH_PATTERN.search(html_text)
+        or META_REDIRECT_PATTERN.search(html_text)
+    )
 
 
 def site_inventory_warnings():
