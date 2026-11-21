@@ -1,26 +1,26 @@
 {
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Art Museum",
-      "loot": "Ortiz: Reficere"
+      "loot": "Core Strength"
     },
     {
       "mission": "Capitol Building",
-      "loot": "Breaking Point"
+      "loot": "Shotgun"
     },
     {
       "mission": "Jefferson Plaza",
-      "loot": "Aces & Eights"
+      "loot": "Foundry Bulwark"
     },
     {
       "mission": "Lincoln Memorial",
-      "loot": "Empress International"
+      "loot": "Measured Assembly"
     },
     {
       "mission": "Federal Emergency Bunker",
-      "loot": "Rifle"
+      "loot": "Alps Summit Armaments"
     }
   ],
   "vendor_caches": [
@@ -30,19 +30,19 @@
     },
     {
       "type": "Gear",
-      "item": "Holsters"
+      "item": "Chest Pieces"
     }
   ],
-  "last_updated": "2026-11-20 09:00",
-  "last_checked": "2026-11-21 07:05 UTC",
-  "parsed_at": "2026-11-21T07:05:09.258859+00:00",
-  "status": "pending",
-  "fetched_at": "2026-11-21T07:05:09.258859+00:00",
+  "last_updated": "2026-11-21 09:00",
+  "last_checked": "2026-11-21 08:05 UTC",
+  "parsed_at": "2026-11-21T08:05:09.493528+00:00",
+  "status": "ok",
+  "fetched_at": "2026-11-21T08:05:09.493528+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-11-21 07:05 UTC",
+  "vendor_highlights_checked": "2026-11-21 08:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
