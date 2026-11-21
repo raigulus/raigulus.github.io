@@ -1,0 +1,135 @@
+/* Raigulus design foundation — P2-A.
+ *
+ * OPT-IN AND UNLINKED. No page loads this file in P2-A. Adoption starts in P2-B.
+ *
+ * Rules:
+ *   - New namespace --site-* only; aliases point to verified legacy variables.
+ *   - Legacy tokens are never redefined, renamed, removed, or reversed.
+ *   - --rg-*, --home-*, --brief-* are independent and untouched.
+ *   - Existing breakpoints and theme selectors are not modified. New rules reuse
+ *     the already-established 700px collapse boundary from styles.css `.grid`.
+ *   - Theme awareness is inherited: aliases use var(--legacy), so an existing
+ *     [data-theme=...] override of the legacy token resolves through the alias.
+ *     No duplicate theme blocks are declared here.
+ */
+
+:root {
+  /* ---- Semantic aliases: --site-* -> verified legacy tokens (styles.css :root) ---- */
+  --site-surface: var(--surface);              /* #13181e; 13 consumers */
+  --site-surface-alt: var(--surface2);         /* #1a2028; 14 consumers */
+  --site-border: var(--border);                /* #22292f; 31 consumers */
+  --site-border-strong: var(--border2);        /* #2e3744; 24 consumers */
+  --site-text: var(--text);                    /* #edf0f4; 36 consumers */
+  --site-text-muted: var(--text-dim);          /* #918f83; `.meta` uses --text-dim */
+  --site-accent: var(--accent);                /* #e88a55; 63 consumers */
+  --site-radius: var(--radius);                /* 6px; 13 consumers */
+  --site-font-body: var(--font-body);          /* 'Inter' stack; 8 consumers */
+
+  /* ---- Evidence-based spacing (no invented scale) ----
+   * 10px: `.card-body { padding:10px 12px 12px }` (48 uses site-wide)
+   * 12px: `.card-body` + `.grid { gap:12px }` (33 uses)
+   * 20px: `.section { padding:32px 20px }` (11 uses)
+   * 32px: `.section { padding:32px 20px }` (8 uses)
+   */
+  --site-space-sm: 10px;
+  --site-space-md: 12px;
+  --site-space-lg: 20px;
+  --site-space-xl: 32px;
+
+  /* Deliberately omitted (per spec 5.2):
+   * --site-bg / --site-content-width: legacy sources --bg and --content-w have
+   * 0 detected consumers; `.content` uses a hardcoded max-width:1151px.
+   * --site-accent-hover / --mission* aliases: no verified generic mapping.
+   * Status aliases: no planned foundation consumer in P2-A.
+   * Motion aliases: no matching legacy token exists.
+   */
+}
+
+/* ---- .site-card: general-purpose surface container ---- */
+.site-card {
+  background: var(--site-surface);
+  border: 1px solid var(--site-border);
+  border-radius: var(--site-radius);
+  overflow: hidden;
+  font-family: var(--site-font-body);
+  color: var(--site-text);
+}
+
+/* Removes the outer boundary so the card sits flush inside another surface. */
+.site-card--flush {
+  border: 0;
+  border-radius: 0;
+}
+
+/* Interaction affordance only; consumers must supply a focusable element. */
+.site-card--interactive {
+  transition: border-color .15s, background-color .15s; /* matches `.video-card` */
+}
+.site-card--interactive:hover {
+  border-color: var(--site-border-strong);
+  background: var(--site-surface-alt);
+}
+.site-card--interactive:focus-visible {
+  outline: 2px solid var(--site-accent);
+  outline-offset: 2px;
+}
+
+/* ---- .site-card-body: internal card spacing ---- */
+.site-card-body {
+  padding: var(--site-space-sm) var(--site-space-md) var(--site-space-md);
+}
+.site-card-body--tight {
+  padding: var(--site-space-sm);
+}
+
+/* ---- .site-grid: responsive column layout (additive; `.grid` untouched) ---- */
+.site-grid {
+  display: grid;
+  gap: var(--site-space-md);
+}
+.site-grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.site-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.site-grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+/* Reuses the existing collapse boundary from `styles.css` `.grid` (700px). */
+@media (max-width:700px) {
+  .site-grid--2,
+  .site-grid--3,
+  .site-grid--4 { grid-template-columns: 1fr; }
+}
+
+/* ---- .site-eyebrow: small section label (visual only, not a heading) ---- */
+.site-eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--site-text-muted);
+  margin: 0 0 var(--site-space-sm);
+}
+.site-eyebrow--accent {
+  color: var(--site-accent);
+}
+
+/* ---- .site-meta: supporting metadata (markup semantics preserved) ---- */
+.site-meta {
+  font-size: 10px;
+  color: var(--site-text-muted);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px; /* matches existing `.meta { gap:5px }` */
+  margin: 0;
+}
+.site-meta--compact {
+  gap: 2px;
+}
+
+/* ---- .site-section: section wrapper and vertical rhythm ---- */
+.site-section {
+  padding: var(--site-space-xl) var(--site-space-lg); /* mirrors `.section` 32px 20px */
+  margin: 0 auto;
+}
+.site-section--tight {
+  padding: var(--site-space-lg) var(--site-space-md);
+}
