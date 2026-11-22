@@ -22,6 +22,45 @@
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/barlow-condensed-700-latin.woff2">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/inter-400-latin.woff2">
   <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="/assets/design-foundation.css">
+  <style>
+    /* Page-local editorial rhythm. Tokens only; no new classes, no global changes. */
+    main .content > h1 {
+      line-height: 1.04;
+      letter-spacing: -.02em;
+      margin: 0 0 var(--site-space-md);
+    }
+    main .content > h2 {
+      margin: var(--site-space-xl) 0 var(--site-space-sm);
+      padding-top: var(--site-space-sm);
+      border-top: 1px solid var(--site-border);
+    }
+    main .content > p.meta {
+      font-size: 11px;
+      letter-spacing: .02em;
+      color: var(--site-text-muted);
+      margin: 0 0 var(--site-space-lg);
+    }
+    main .feedback button {
+      padding: 8px 14px;
+      border: 1px solid var(--site-border-strong);
+      border-radius: 6px;
+      background: var(--site-surface-alt);
+      color: var(--site-text);
+      transition: border-color .15s, background-color .15s;
+    }
+    main .feedback button:hover {
+      border-color: var(--site-accent);
+      background: var(--site-surface);
+    }
+    main .feedback button:focus-visible {
+      outline: 2px solid var(--site-accent);
+      outline-offset: 2px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      main .feedback button { transition: none; }
+    }
+  </style>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script src="/assets/search.js" defer></script>
@@ -102,7 +141,5 @@
     <div class="footer-right"></div>
   </footer>
   <script src="/assets/site.js" defer></script>
-  <script src="/assets/search.js" defer></script>
-  <script src="/assets/analytics-consent.js" defer></script>
 </body>
 </html>
