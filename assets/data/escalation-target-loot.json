@@ -1,48 +1,48 @@
 {
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Art Museum",
-      "loot": "Core Strength"
+      "loot": "Umbra Initiative"
     },
     {
       "mission": "Capitol Building",
-      "loot": "Shotgun"
+      "loot": "Future Initiative"
     },
     {
       "mission": "Jefferson Plaza",
-      "loot": "Foundry Bulwark"
+      "loot": "Alps Summit Armaments"
     },
     {
       "mission": "Lincoln Memorial",
-      "loot": "Measured Assembly"
+      "loot": "Electrique"
     },
     {
       "mission": "Federal Emergency Bunker",
-      "loot": "Alps Summit Armaments"
+      "loot": "Grupo Sombra S.A."
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "LMGs"
+      "item": "Assault Rifles"
     },
     {
       "type": "Gear",
-      "item": "Chest Pieces"
+      "item": "Masks"
     }
   ],
-  "last_updated": "2026-11-21 09:00",
-  "last_checked": "2026-11-22 07:05 UTC",
-  "parsed_at": "2026-11-22T07:05:14.808215+00:00",
-  "status": "pending",
-  "fetched_at": "2026-11-22T07:05:14.808215+00:00",
+  "last_updated": "2026-11-22 09:00",
+  "last_checked": "2026-11-22 08:05 UTC",
+  "parsed_at": "2026-11-22T08:05:09.629509+00:00",
+  "status": "ok",
+  "fetched_at": "2026-11-22T08:05:09.629509+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-11-22 07:05 UTC",
+  "vendor_highlights_checked": "2026-11-22 08:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
