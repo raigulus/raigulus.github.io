@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-23T23:05:14Z",
+  "generated_at": "2026-11-24T00:05:24Z",
   "stats": {
     "total_guides": 514,
     "exotics": 79,
     "patches": 32
   },
   "latest_patch": {
-    "slug": "y8s3-1-red-moon-rising",
-    "title": "Division 2 Y8S3.1: Red Moon Rising Summary [2026] | Raigulus",
+    "slug": "y8s3-2-red-moon-unleashed",
+    "title": "Division 2 Y8S3.2 Red Moon Unleashed Patch Notes [2026]",
     "version": "Y8S3"
   },
   "latest_videos": [
@@ -40,16 +40,11 @@
     }
   ],
   "loot": {
-    "active": true,
-    "date": "2026-11-23",
-    "rotation": "Weekly Escalation Rotation",
-    "mission_count": 5,
-    "vendor_count": 2,
-    "next_update": "Around 07:00 UTC"
+    "active": false
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-23 23:05 UTC"
+    "last_checked": "2026-11-24 00:05 UTC"
   },
   "discord_members": 63,
   "next_reset_utc": "2026-11-24T07:00:00Z"
