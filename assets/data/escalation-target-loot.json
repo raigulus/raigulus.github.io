@@ -1,48 +1,48 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-25",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
-      "mission": "The Art Museum",
-      "loot": "Umbra Initiative"
+      "mission": "The Pentagon",
+      "loot": "Virtuoso"
     },
     {
-      "mission": "Capitol Building",
-      "loot": "Future Initiative"
+      "mission": "DARPA Research Labs",
+      "loot": "Heartbreaker"
     },
     {
-      "mission": "Jefferson Plaza",
-      "loot": "Alps Summit Armaments"
+      "mission": "District Union Arena",
+      "loot": "Measured Assembly"
     },
     {
-      "mission": "Lincoln Memorial",
-      "loot": "Electrique"
+      "mission": "Roosevelt Island",
+      "loot": "Walker, Harris & Co"
     },
     {
-      "mission": "Federal Emergency Bunker",
-      "loot": "Grupo Sombra S.A."
+      "mission": "Space Administration HQ",
+      "loot": "Concentrated Company"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Assault Rifles"
+      "item": "Shotguns"
     },
     {
       "type": "Gear",
-      "item": "Masks"
+      "item": "Chest Pieces"
     }
   ],
-  "last_updated": "2026-11-22 09:00",
-  "last_checked": "2026-11-22 13:05 UTC",
-  "parsed_at": "2026-11-22T13:05:09.179528+00:00",
+  "last_updated": "2026-11-25 09:00",
+  "last_checked": "2026-11-25 20:10 UTC",
+  "parsed_at": "2026-11-25T20:10:05.756747+00:00",
   "status": "ok",
-  "fetched_at": "2026-11-22T13:05:09.179528+00:00",
+  "fetched_at": "2026-11-25T20:10:05.756747+00:00",
   "next_expected_update": "Around 07:00 UTC",
   "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-11-22 13:05 UTC",
+  "vendor_highlights_checked": "2026-11-25 20:10 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }

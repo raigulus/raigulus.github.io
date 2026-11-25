@@ -8,8 +8,8 @@
   <url><loc>https://raigulus.github.io/division-2/agent-briefing/</loc><lastmod>2026-08-19</lastmod></url>
 
   <url><loc>https://raigulus.github.io/division-2/builds/</loc><lastmod>2026-08-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://raigulus.github.io/division-2/loot/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://raigulus.github.io/division-2/server-status/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://raigulus.github.io/division-2/loot/</loc><lastmod>2026-11-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://raigulus.github.io/division-2/server-status/</loc><lastmod>2026-11-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/reset/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/exotics/</loc><lastmod>2026-10-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/exotics/fafnir/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -46,8 +46,8 @@
   <url><loc>https://raigulus.github.io/division-2/patches/broken-wings/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://raigulus.github.io/division-2/patches/puppeteers/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://raigulus.github.io/division-2/patches/vanguard/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://raigulus.github.io/division-2/escalation/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://raigulus.github.io/division-2/prototype-gear/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://raigulus.github.io/division-2/escalation/</loc><lastmod>2026-11-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://raigulus.github.io/division-2/prototype-gear/</loc><lastmod>2026-11-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/dark-zone-surge/</loc><lastmod>2026-10-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/legendary/</loc><lastmod>2026-08-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://raigulus.github.io/division-2/manhunts/</loc><lastmod>2026-09-29</lastmod></url>
@@ -241,6 +241,15 @@
   <url><loc>https://raigulus.github.io/lore/collectibles/td2-comms-true-sons/</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://raigulus.github.io/lore/collectibles/td2-comms-vivian-conley/</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://raigulus.github.io/division-2/player-count/</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://raigulus.github.io/division-2/videos/gta-3-mission-1-give-me-liberty-dlss-5-mod-gamepla/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://raigulus.github.io/division-2/videos/gta-3-luigi-s-girls-dlss-5-mod-gameplay-no-comment/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://raigulus.github.io/division-2/videos/gta-3-don-t-spank-ma-btch-up-luigi-s-mission-dlss/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://raigulus.github.io/division-2/videos/gta-3-drive-misty-for-me-mission-walkthrough-dlss/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://raigulus.github.io/division-2/videos/gta-3-the-crook-marty-chonks-phone-mission-dlss-5/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://raigulus.github.io/division-2/videos/gta-3-pump-action-p-mp-luigi-s-mission-dlss-5-mod/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://raigulus.github.io/division-2/videos/gta-3-the-fuzz-ball-mission-walkthrough-dlss-5-mod/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://raigulus.github.io/division-2/videos/gta-3-mike-lips-last-lunch-joey-s-mission-dlss-5-m/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://raigulus.github.io/division-2/videos/gta-3-with-dlss-5-mod-pc-gameplay-40-minutes-in-li/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://raigulus.github.io/division-2/videos/</loc><lastmod>2026-11-09</lastmod></url>
   <url><loc>https://raigulus.github.io/guides/division-2-crossplay/</loc><lastmod>2026-11-09</lastmod></url>
   <url><loc>https://raigulus.github.io/guides/division-2-release-date/</loc><lastmod>2026-11-09</lastmod></url>
@@ -516,4 +525,5 @@
   <url><loc>https://raigulus.github.io/division-2/this-week/2026-11-03/</loc><lastmod>2026-11-03</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://raigulus.github.io/division-2/this-week/2026-11-10/</loc><lastmod>2026-11-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://raigulus.github.io/division-2/this-week/2026-11-17/</loc><lastmod>2026-11-17</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://raigulus.github.io/division-2/this-week/2026-11-24/</loc><lastmod>2026-11-24</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
 </urlset>
