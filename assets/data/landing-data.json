@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-25T08:05:15Z",
+  "generated_at": "2026-11-25T09:05:33Z",
   "stats": {
-    "total_guides": 516,
+    "total_guides": 524,
     "exotics": 79,
     "patches": 32
   },
@@ -12,31 +12,31 @@
   },
   "latest_videos": [
     {
-      "title": "GTA 3 with DLSS 5 Mod PC Gameplay – 40 Minutes in",
-      "url": "https://raigulus.github.io/division-2/videos/gta-3-with-dlss-5-mod-pc-gameplay-40-minutes-in-li/",
-      "youtube_url": "https://www.youtube.com/watch?v=U_VxjeppvnE",
-      "thumbnail": "/assets/img/yt/U_VxjeppvnE-hqdefault.jpg",
-      "published_date": "2026-11-24",
+      "title": "GTA 3 Mission 1: Give Me Liberty | DLSS 5 Mod Gameplay",
+      "url": "https://raigulus.github.io/division-2/videos/gta-3-mission-1-give-me-liberty-dlss-5-mod-gamepla/",
+      "youtube_url": "https://www.youtube.com/watch?v=WeZjuwGBhrY",
+      "thumbnail": "/assets/img/yt/WeZjuwGBhrY-hqdefault.jpg",
+      "published_date": "2026-11-25",
       "cluster": "escalation run",
-      "summary": "Experience the original 2001 Grand Theft Auto III on PC **GTA 3** and return to Liberty City.  This 40-minute GTA 3 gameplay session features the opening missio"
+      "summary": "Play the opening mission of the original 2001 Grand Theft Auto III on PC.  Give Me Liberty introduces Claude and the beginning of the legendary GTA 3 story in L"
     },
     {
-      "title": "GTA 6 Is Out: Why I Went Back to GTA 3",
-      "url": "https://raigulus.github.io/division-2/videos/gta-6-is-out-why-i-went-back-to-gta-3/",
-      "youtube_url": "https://www.youtube.com/watch?v=setM3V7G1mI",
-      "thumbnail": "/assets/img/yt/setM3V7G1mI-hqdefault.jpg",
-      "published_date": "2026-11-21",
-      "cluster": "side activity",
-      "summary": "Can you still play **GTA 3 on PC in 2026?** With GTA 6 finally out, we're going back to where the modern Grand Theft Auto series began: Grand Theft Auto III.  I"
+      "title": "GTA 3: Luigi's Girls – DLSS 5 Mod Gameplay | No Commentary",
+      "url": "https://raigulus.github.io/division-2/videos/gta-3-luigi-s-girls-dlss-5-mod-gameplay-no-comment/",
+      "youtube_url": "https://www.youtube.com/watch?v=xtZ4bvDOAuo",
+      "thumbnail": "/assets/img/yt/xtZ4bvDOAuo-hqdefault.jpg",
+      "published_date": "2026-11-25",
+      "cluster": "escalation run",
+      "summary": "Complete Luigi's Girls, an early mission in the original Grand Theft Auto III.  This GTA 3 mission walkthrough takes place in Portland, Liberty City, and featur"
     },
     {
-      "title": "THE DIVISION 2 CROSSPLAY LIVE! 🔴 PC, PlayStation & Xbox",
-      "url": "https://raigulus.github.io/division-2/videos/the-division-2-crossplay-live-pc-playstation-xbox/",
-      "youtube_url": "https://www.youtube.com/watch?v=4I7P7qmihV4",
-      "thumbnail": "/assets/img/yt/4I7P7qmihV4-hqdefault.jpg",
-      "published_date": "2026-11-18",
+      "title": "GTA 3: Don't Spank Ma Btch Up – Luigi's Mission | DLSS 5",
+      "url": "https://raigulus.github.io/division-2/videos/gta-3-don-t-spank-ma-btch-up-luigi-s-mission-dlss/",
+      "youtube_url": "https://www.youtube.com/watch?v=q6CJ8E9pZwM",
+      "thumbnail": "/assets/img/yt/q6CJ8E9pZwM-hqdefault.jpg",
+      "published_date": "2026-11-25",
       "cluster": "side activity",
-      "summary": "Made with Restream. Livestream on 30+ platforms at once via https://restream.io  🔴 THE DIVISION 2 CROSSPLAY IS LIVE!  Welcome to Raigulus! Join us for The Divis"
+      "summary": "Play Don't Spank Ma Bitch Up, one of Luigi's early missions in Grand Theft Auto III.  This video features the original 2001 GTA 3 PC gameplay in Liberty City, e"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-25 08:05 UTC"
+    "last_checked": "2026-11-25 09:05 UTC"
   },
   "discord_members": 63,
   "next_reset_utc": "2026-11-26T07:00:00Z"
