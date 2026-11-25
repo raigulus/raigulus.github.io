@@ -1,48 +1,48 @@
 {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Pentagon",
-      "loot": "China Light Industries"
+      "loot": "Virtuoso"
     },
     {
       "mission": "DARPA Research Labs",
-      "loot": "Petrov Defense Group"
+      "loot": "Heartbreaker"
     },
     {
       "mission": "District Union Arena",
-      "loot": "Fenris Group AB"
+      "loot": "Measured Assembly"
     },
     {
       "mission": "Roosevelt Island",
-      "loot": "Grupo Sombra S.A."
+      "loot": "Walker, Harris & Co"
     },
     {
       "mission": "Space Administration HQ",
-      "loot": "Body Armor"
+      "loot": "Concentrated Company"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Rifles"
+      "item": "Shotguns"
     },
     {
       "type": "Gear",
-      "item": "Holsters"
+      "item": "Chest Pieces"
     }
   ],
-  "last_updated": "2026-11-24 09:01",
-  "last_checked": "2026-11-25 07:05 UTC",
-  "parsed_at": "2026-11-25T07:05:09.398783+00:00",
-  "status": "pending",
-  "fetched_at": "2026-11-25T07:05:09.398783+00:00",
+  "last_updated": "2026-11-25 09:00",
+  "last_checked": "2026-11-25 08:05 UTC",
+  "parsed_at": "2026-11-25T08:05:09.649894+00:00",
+  "status": "ok",
+  "fetched_at": "2026-11-25T08:05:09.649894+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-11-25 07:05 UTC",
+  "vendor_highlights_checked": "2026-11-25 08:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
