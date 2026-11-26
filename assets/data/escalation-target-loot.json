@@ -4,23 +4,23 @@
   "missions": [
     {
       "mission": "The Pentagon",
-      "loot": "Petrov Defense Group"
+      "loot": "Gila Guard"
     },
     {
       "mission": "DARPA Research Labs",
-      "loot": "5.11 Tactical"
-    },
-    {
-      "mission": "District Union Arena",
       "loot": "Tipping Scales"
     },
     {
+      "mission": "District Union Arena",
+      "loot": "Grupo Sombra S.A."
+    },
+    {
       "mission": "Roosevelt Island",
-      "loot": "Brazos de Arcabuz"
+      "loot": "Cavalier"
     },
     {
       "mission": "Space Administration HQ",
-      "loot": "Aces & Eights"
+      "loot": "Habsburg Guard"
     }
   ],
   "vendor_caches": [
@@ -33,16 +33,16 @@
       "item": "Backpacks"
     }
   ],
-  "last_updated": "2026-11-26 09:04",
-  "last_checked": "2026-11-26 13:05 UTC",
-  "parsed_at": "2026-11-26T13:05:08.871780+00:00",
+  "last_updated": "2026-11-26 14:14",
+  "last_checked": "2026-11-26 14:05 UTC",
+  "parsed_at": "2026-11-26T14:05:16.310464+00:00",
   "status": "ok",
-  "fetched_at": "2026-11-26T13:05:08.871780+00:00",
+  "fetched_at": "2026-11-26T14:05:16.310464+00:00",
   "next_expected_update": "Around 07:00 UTC",
   "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-11-26 13:05 UTC",
+  "vendor_highlights_checked": "2026-11-26 14:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
