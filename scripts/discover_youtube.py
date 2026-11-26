@@ -31,10 +31,25 @@ STOPWORDS = {
 
 PVP_KEYWORDS = ("conflict", "pvp", "skirmish", "dark zone", "rogue", "clan war", "1v1")
 ESCALATION_KEYWORDS = ("escalation", "tier 10", "summit", "countdown", "legendary", "walkthrough", "solo cleared", "speedrun")
+GTA_KEYWORDS = ("gta 3", "gta iii", "gta 6", "grand theft auto", "liberty city", "gta v", "gta 5")
+
+
+def detect_game(title):
+    """Identify the game before activity-based classification.
+
+    GTA uploads share words like 'mission' and 'walkthrough' with Division 2,
+    so game detection must run before the activity keyword rules.
+    """
+    t = title.lower()
+    if any(k in t for k in GTA_KEYWORDS):
+        return "gta"
+    return "division-2"
 
 
 def classify(title, description=""):
     t = title.lower()
+    if detect_game(title) == "gta":
+        return ("other game", "other")
     if "scout" in t or "manhunt" in t:
         return ("manhunt", "manhunt")
     if any(k in t for k in PVP_KEYWORDS):
@@ -179,6 +194,7 @@ def main():
                     "tags": [], "description": item["description"], "upload_date": ""}
         title = meta.get("title") or item["title"]
         cluster, playlist = classify(title, meta.get("description") or item["description"] or "")
+        game = detect_game(title)
         upload = str(meta.get("upload_date") or "")
         published = f"{upload[:4]}-{upload[4:6]}-{upload[6:]}" if len(upload) == 8 else item["published"]
         desc = (meta.get("description") or item["description"] or "").strip().replace("\n", " ")[:160]
@@ -188,12 +204,13 @@ def main():
             "youtube_url": f"https://www.youtube.com/watch?v={item['video_id']}",
             "mission": clean_mission(title),
             "cluster": cluster,
+            "game": game,
             "difficulty": "PvP" if cluster == "pvp/archive clip" else "",
             "target": "",
             "published_date": published,
             "duration_seconds": int(meta.get("duration") or 0),
             "tags": tags_for(title, cluster),
-            "summary": desc or f"{title} - The Division 2 gameplay archive from Raigulus.",
+            "summary": desc or (f"{title} - Grand Theft Auto gameplay from Raigulus." if game == "gta" else f"{title} - The Division 2 gameplay archive from Raigulus."),
             "guide_summary": (desc or f"{title} - auto-added from YouTube.")[:200],
             "playlist": playlist,
             "chapters": meta.get("chapters") or [],

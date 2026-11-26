@@ -44,6 +44,10 @@ PLAYLISTS = {
         "PLeivDSwrtKVI",
         "The Division 2 Side Activities &amp; Open World Runs",
     ),
+    "other": (
+        "",
+        "Other Games &amp; Side Projects",
+    ),
 }
 
 HUB_LINKS = {
@@ -62,6 +66,9 @@ HUB_LINKS = {
     "side activity": [
         ("/division-2/loot/", "Loot today and farming hub"),
     ],
+    "other game": [
+        ("/division-2/videos/", "All Raigulus gameplay videos"),
+    ],
 }
 
 SECTION_TITLES = {
@@ -69,6 +76,7 @@ SECTION_TITLES = {
     "manhunt": "Manhunt Walkthrough",
     "pvp/archive clip": "Match Breakdown",
     "side activity": "Activity Walkthrough",
+    "other game": "Other Games",
 }
 
 
@@ -103,6 +111,8 @@ def default_summary(spec: dict) -> str:
         return f"{core} - Division 2 raid and incursion clear archive from Raigulus."
     if cluster == "side activity":
         return f"{core} - Division 2 open world activity run from Raigulus."
+    if cluster == "other game":
+        return f"{core} - Grand Theft Auto gameplay from Raigulus."[:160]
     return f"{core} - The Division 2 gameplay archive from Raigulus."[:160]
 
 
@@ -151,13 +161,19 @@ def related_cards(record: dict, records: list[dict], exclude_self=True) -> str:
             rel.get("difficulty", ""), rel.get("target", ""), *rel.get("tags", []),
         ])
         search_blob = esc(search_blob.replace("'", "&#x27;"))
+        thumb_dir = ROOT / "assets" / "img" / "yt"
+        hq = f"{vid}-hqdefault.jpg"
+        mq = f"{vid}-mqdefault.jpg"
+        if (thumb_dir / hq).exists():
+            srcset = (f'\n         srcset="/assets/img/yt/{mq} 320w, /assets/img/yt/{hq} 480w"' if (thumb_dir / mq).exists() else "")
+            thumb = (f'\n    <img src="/assets/img/yt/{hq}"{srcset}\n'
+                     f'         sizes="(max-width:640px) 92vw, (max-width:1100px) 46vw, 300px"\n'
+                     f'         alt="{esc(rel.get("title", ""))} thumbnail" loading="lazy" decoding="async">')
+        else:
+            thumb = ""
         cards.append(f'''<article class="video-card" data-c="special" data-search-card data-search="{search_blob}">
   <a class="thumb" href="{rel.get('url', '#')}">
-    <span class="thumb-ph">{esc(short)}</span>
-    <img src="/assets/img/yt/{vid}-hqdefault.jpg"
-         srcset="/assets/img/yt/{vid}-mqdefault.jpg 320w, /assets/img/yt/{vid}-hqdefault.jpg 480w"
-         sizes="(max-width:640px) 92vw, (max-width:1100px) 46vw, 300px"
-         alt="{esc(rel.get('title', ''))} thumbnail" loading="lazy" decoding="async">
+    <span class="thumb-ph">{esc(short)}</span>{thumb}
   </a>
   <div class="card-body">
     <p class="eyebrow">{esc(rel.get('cluster', ''))}</p>
@@ -184,6 +200,17 @@ def other_versions(record: dict, records: list[dict]) -> str:
 
 def faq_items(record: dict) -> list[tuple[str, str]]:
     diff = record.get("difficulty") or "the labeled difficulty"
+    if record.get("cluster") == "other game":
+        return [
+            (f"What does this {record['mission']} video cover?",
+             f"It covers the embedded Raigulus run for {record['mission']}, including mission flow, driving and combat pacing, and the mods shown on screen."),
+            ("Which game is this?",
+             "This is Grand Theft Auto gameplay, not The Division 2. The upload is grouped under Other Games."),
+            ("Is this a no commentary guide?",
+             "The upload is labeled as gameplay. If commentary or archive context is present, the page describes it instead of forcing it into a no-commentary format."),
+            ("Does this page cover Division 2 loot or builds?",
+             "No. Division 2 loot, builds and escalation notes live on the dedicated Division 2 hubs linked from the site."),
+        ]
     return [
         (
             f"What does this {record['mission']} video cover?",
@@ -214,6 +241,34 @@ def render_page(record: dict, records: list[dict]) -> str:
     canonical = slug_url
     keywords = record["tags"]
     pl_id, pl_name = PLAYLISTS[record["_playlist"]]
+    playlist_url = f"https://www.youtube.com/playlist?list={pl_id}" if pl_id else "https://www.youtube.com/@raigulus/videos"
+    if record.get("cluster") == "other game":
+        game_notes = f"""        <h2>Overview</h2>
+        <p>This Raigulus gameplay recording follows {esc(record['mission'])} through the mission order, driving, combat pacing, and the mods shown on screen.</p>
+        <p>The embedded video is the primary reference for the route and the version and settings used in this run.</p>
+        <h2>Mission Notes</h2>
+        <ol>
+          <li>Use the embedded run for the opening route and first objective timing.</li>
+          <li>Follow the mission sequence shown before committing to exposed objectives or interaction prompts.</li>
+          <li>Use the YouTube timeline to jump between the main objective and later sections of the run.</li>
+        </ol>
+"""
+    else:
+        game_notes = f"""        <h2>Overview</h2>
+        <p>This Raigulus gameplay recording follows {esc(record['mission'])} through the opening route, objective order, encounter context, and loot checks visible in the run.</p>
+        <p>The embedded Raigulus video is the primary reference for the route, timing, build context, and results shown on this page.</p>
+        <h2>Walkthrough Notes</h2>
+        <ol>
+          <li>Use the embedded run for the opening route and first objective timing.</li>
+          <li>Follow the encounter sequence shown before committing to exposed objectives or interaction prompts.</li>
+          <li>Use the visible cover positions and line-of-sight breaks as reference when enemy waves stack around doors, balconies, or objective props.</li>
+          <li>Use the YouTube timeline to jump between the main objective, boss section, or final encounter.</li>
+        </ol>
+        <h2>Boss and Objective Notes</h2>
+        <p>Use the boss section of the embedded video for exact positioning and timing. The written page avoids naming boss mechanics that are not verified from the current run.</p>
+        <h2>Collectibles &amp; Secrets</h2>
+        <p>Loot checks are included where possible in the run. This page does not claim all SHD caches, collectibles, hidden rooms, or named drops unless the video title or description explicitly says so.</p>
+"""
     hub_links = HUB_LINKS[record["cluster"]]
     section_title = SECTION_TITLES[record["cluster"]]
     faq = faq_items(record)
@@ -373,28 +428,14 @@ def render_page(record: dict, records: list[dict]) -> str:
           <tr><th>Difficulty/variant</th><td>{esc(record.get('difficulty') or 'Gameplay')}</td></tr>
           <tr><th>Duration</th><td>{fmt_duration(record.get('_duration_seconds'))}</td></tr>
           <tr><th>Published</th><td>{record['published_date']}</td></tr>
-          <tr><th>Page last checked</th><td>{TODAY}</td></tr>
-          <tr><th>Playlist</th><td><a href="https://www.youtube.com/playlist?list={pl_id}">{pl_name}</a></td></tr>
+          <tr><th>Page last checked</th><td>{record.get('page_last_checked') or TODAY}</td></tr>
+          <tr><th>Playlist</th><td><a href="{playlist_url}">{pl_name}</a></td></tr>
           <tr><th>YouTube</th><td><a href="https://www.youtube.com/watch?v={vid}">Watch on YouTube</a></td></tr>
         </table>
 
 {other_versions(record, records)}
         <h2>{esc(record['mission'])} - {section_title}</h2>
-        <h2>Overview</h2>
-        <p>This Raigulus gameplay recording follows {esc(record['mission'])} through the opening route, objective order, encounter context, and loot checks visible in the run.</p>
-        <p>The embedded Raigulus video is the primary reference for the route, timing, build context, and results shown on this page.</p>
-        <h2>Walkthrough Notes</h2>
-        <ol>
-          <li>Use the embedded run for the opening route and first objective timing.</li>
-          <li>Follow the encounter sequence shown before committing to exposed objectives or interaction prompts.</li>
-          <li>Use the visible cover positions and line-of-sight breaks as reference when enemy waves stack around doors, balconies, or objective props.</li>
-          <li>Use the YouTube timeline to jump between the main objective, boss section, or final encounter.</li>
-        </ol>
-        <h2>Boss and Objective Notes</h2>
-        <p>Use the boss section of the embedded video for exact positioning and timing. The written page avoids naming boss mechanics that are not verified from the current run.</p>
-        <h2>Collectibles &amp; Secrets</h2>
-        <p>Loot checks are included where possible in the run. This page does not claim all SHD caches, collectibles, hidden rooms, or named drops unless the video title or description explicitly says so.</p>
-
+{game_notes}
         <h2>FAQ</h2>
         <dl class="faq-list">{faq_dl}</dl>
 
@@ -700,7 +741,7 @@ def main() -> int:
             "duration": str(spec.get("duration_seconds") or ""),
             "has_exact_chapters": bool(spec.get("chapters")),
             "page_last_checked": TODAY,
-            "game": "division-2",
+            "game": spec.get("game") or "division-2",
             "tags": tags,
             # internal-only helpers (stripped before writing videos.json)
             "_slug": slug,
