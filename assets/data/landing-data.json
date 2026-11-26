@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-26T22:05:14Z",
+  "generated_at": "2026-11-26T23:05:16Z",
   "stats": {
-    "total_guides": 525,
+    "total_guides": 526,
     "exotics": 79,
     "patches": 32
   },
@@ -11,6 +11,15 @@
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "SPEARFALL IS LIVE! New Legendary Difficulty & White Tusk",
+      "url": "https://raigulus.github.io/division-2/videos/spearfall-is-live-new-legendary-difficulty-white-t/",
+      "youtube_url": "https://www.youtube.com/watch?v=89ZEe9BSZ_k",
+      "thumbnail": "/assets/img/yt/89ZEe9BSZ_k-hqdefault.jpg",
+      "published_date": "2026-11-26",
+      "cluster": "escalation run",
+      "summary": "Made with Restream. Livestream on 30+ platforms at once via https://restream.io  Welcome back, Agents! 🧡  The Division 2 Year 8 Season 4: SPEARFALL is LIVE!  Na"
+    },
     {
       "title": "Another Boring Conflict Game | Division 2 PvP",
       "url": "https://raigulus.github.io/division-2/videos/another-boring-conflict-game-division-2-pvp/",
@@ -28,15 +37,6 @@
       "published_date": "2026-11-25",
       "cluster": "Grand Theft Auto",
       "summary": "Play the opening mission of the original 2001 Grand Theft Auto III on PC.  Give Me Liberty introduces Claude and the beginning of the legendary GTA 3 story in L"
-    },
-    {
-      "title": "GTA 3: Luigi's Girls – DLSS 5 Mod Gameplay | No Commentary",
-      "url": "https://raigulus.github.io/division-2/videos/gta-3-luigi-s-girls-dlss-5-mod-gameplay-no-comment/",
-      "youtube_url": "https://www.youtube.com/watch?v=xtZ4bvDOAuo",
-      "thumbnail": "/assets/img/yt/xtZ4bvDOAuo-hqdefault.jpg",
-      "published_date": "2026-11-25",
-      "cluster": "Grand Theft Auto",
-      "summary": "Complete Luigi's Girls, an early mission in the original Grand Theft Auto III.  This GTA 3 mission walkthrough takes place in Portland, Liberty City, and featur"
     }
   ],
   "loot": {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-26 22:05 UTC"
+    "last_checked": "2026-11-26 23:05 UTC"
   },
   "discord_members": 64,
   "next_reset_utc": "2026-11-27T07:00:00Z"
