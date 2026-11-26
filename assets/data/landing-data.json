@@ -1,16 +1,25 @@
 {
-  "generated_at": "2026-11-26T02:46:26Z",
+  "generated_at": "2026-11-26T03:03:37Z",
   "stats": {
-    "total_guides": 524,
+    "total_guides": 525,
     "exotics": 79,
     "patches": 32
   },
   "latest_patch": {
-    "slug": "y8s3-1-red-moon-rising",
-    "title": "Division 2 Y8S3.1: Red Moon Rising Summary [2026] | Raigulus",
+    "slug": "y8s3-2-red-moon-unleashed",
+    "title": "Division 2 Y8S3.2 Red Moon Unleashed Patch Notes [2026]",
     "version": "Y8S3"
   },
   "latest_videos": [
+    {
+      "title": "Another Boring Conflict Game | Division 2 PvP",
+      "url": "https://raigulus.github.io/division-2/videos/another-boring-conflict-game-division-2-pvp/",
+      "youtube_url": "https://www.youtube.com/watch?v=0VPfluxMoi8",
+      "thumbnail": "/assets/img/yt/0VPfluxMoi8-hqdefault.jpg",
+      "published_date": "2026-11-25",
+      "cluster": "pvp/archive clip",
+      "summary": "Division 2 Conflict PvP gameplay: full match, [build / loadout]. #Division2 #TheDivision2 #Division2PvP  📦 Today's Loot: https://raigulus.github.io/division-2/l"
+    },
     {
       "title": "GTA 3 Mission 1: Give Me Liberty | DLSS 5 Mod Gameplay",
       "url": "https://raigulus.github.io/division-2/videos/gta-3-mission-1-give-me-liberty-dlss-5-mod-gamepla/",
@@ -28,15 +37,6 @@
       "published_date": "2026-11-25",
       "cluster": "escalation run",
       "summary": "Complete Luigi's Girls, an early mission in the original Grand Theft Auto III.  This GTA 3 mission walkthrough takes place in Portland, Liberty City, and featur"
-    },
-    {
-      "title": "GTA 3: Don't Spank Ma Btch Up – Luigi's Mission | DLSS 5",
-      "url": "https://raigulus.github.io/division-2/videos/gta-3-don-t-spank-ma-btch-up-luigi-s-mission-dlss/",
-      "youtube_url": "https://www.youtube.com/watch?v=q6CJ8E9pZwM",
-      "thumbnail": "/assets/img/yt/q6CJ8E9pZwM-hqdefault.jpg",
-      "published_date": "2026-11-25",
-      "cluster": "side activity",
-      "summary": "Play Don't Spank Ma Bitch Up, one of Luigi's early missions in Grand Theft Auto III.  This video features the original 2001 GTA 3 PC gameplay in Liberty City, e"
     }
   ],
   "loot": {
@@ -44,7 +44,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-26 02:46 UTC"
+    "last_checked": "2026-11-26 03:03 UTC"
   },
   "discord_members": 64,
   "next_reset_utc": "2026-11-26T07:00:00Z"
