@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-26T18:05:15Z",
+  "generated_at": "2026-11-26T19:05:15Z",
   "stats": {
     "total_guides": 525,
     "exotics": 79,
     "patches": 32
   },
   "latest_patch": {
-    "slug": "y8s3-1-red-moon-rising",
-    "title": "Division 2 Y8S3.1: Red Moon Rising Summary [2026] | Raigulus",
+    "slug": "red-horizon",
+    "title": "Division 2 Red Horizon (Y8S3) Update Guide [2026] | Raigulus",
     "version": "Y8S3"
   },
   "latest_videos": [
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-26 18:05 UTC"
+    "last_checked": "2026-11-26 19:05 UTC"
   },
   "discord_members": 64,
   "next_reset_utc": "2026-11-27T07:00:00Z"
