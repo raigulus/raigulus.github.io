@@ -1,13 +1,13 @@
 {
-  "status": "maintenance",
+  "status": "operational",
   "platforms": {
-    "pc": "maintenance",
-    "playstation": "maintenance",
-    "xbox": "maintenance"
+    "pc": "operational",
+    "playstation": "operational",
+    "xbox": "operational"
   },
-  "message": "Maintenance is indicated by the checked official source.",
+  "message": "Servers appear operational based on the checked official source.",
   "source_label": "Official Ubisoft service status",
   "source_url": "https://ubistatic-a.akamaihd.net/0115/tctd2/status.html",
-  "fetched_at": "2026-11-26T14:05:19.846798+00:00",
-  "last_checked": "2026-11-26 14:05 UTC"
+  "fetched_at": "2026-11-26T15:05:14.155446+00:00",
+  "last_checked": "2026-11-26 15:05 UTC"
 }
