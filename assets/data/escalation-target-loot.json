@@ -1,48 +1,48 @@
 {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Pentagon",
-      "loot": "Virtuoso"
+      "loot": "Gila Guard"
     },
     {
       "mission": "DARPA Research Labs",
-      "loot": "Heartbreaker"
+      "loot": "Tipping Scales"
     },
     {
       "mission": "District Union Arena",
-      "loot": "Measured Assembly"
+      "loot": "Grupo Sombra S.A."
     },
     {
       "mission": "Roosevelt Island",
-      "loot": "Walker, Harris & Co"
+      "loot": "Cavalier"
     },
     {
       "mission": "Space Administration HQ",
-      "loot": "Concentrated Company"
+      "loot": "Habsburg Guard"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Shotguns"
+      "item": "MMRs"
     },
     {
       "type": "Gear",
-      "item": "Chest Pieces"
+      "item": "Backpacks"
     }
   ],
-  "last_updated": "2026-11-25 09:00",
-  "last_checked": "2026-11-25 23:05 UTC",
-  "parsed_at": "2026-11-25T23:05:08.848786+00:00",
+  "last_updated": "2026-11-26 14:14",
+  "last_checked": "2026-11-26 21:05 UTC",
+  "parsed_at": "2026-11-26T21:05:09.222886+00:00",
   "status": "ok",
-  "fetched_at": "2026-11-25T23:05:08.848786+00:00",
+  "fetched_at": "2026-11-26T21:05:09.222886+00:00",
   "next_expected_update": "Around 07:00 UTC",
   "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-11-25 23:05 UTC",
+  "vendor_highlights_checked": "2026-11-26 21:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
