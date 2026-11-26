@@ -22,6 +22,24 @@
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/barlow-condensed-700-latin.woff2">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/inter-400-latin.woff2">
   <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="/assets/design-foundation.css">
+  <style>
+    /* Page-local editorial rhythm. Cards, grid and SEO output are untouched. */
+    main .content > h1 {
+      line-height: 1.04;
+      letter-spacing: -.02em;
+      margin: 0 0 var(--site-space-md);
+    }
+    main .content > p:not(.eyebrow) {
+      line-height: 1.65;
+      margin: 0 0 var(--site-space-lg);
+    }
+    main .content > h2 {
+      margin: var(--site-space-xl) 0 var(--site-space-sm);
+      padding-top: var(--site-space-sm);
+      border-top: 1px solid var(--site-border);
+    }
+  </style>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script src="/assets/search.js" defer></script>
