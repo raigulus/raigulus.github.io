@@ -44,9 +44,9 @@ PLAYLISTS = {
         "PLeivDSwrtKVI",
         "The Division 2 Side Activities &amp; Open World Runs",
     ),
-    "other": (
+    "gta": (
         "",
-        "Other Games &amp; Side Projects",
+        "Grand Theft Auto",
     ),
 }
 
@@ -66,7 +66,7 @@ HUB_LINKS = {
     "side activity": [
         ("/division-2/loot/", "Loot today and farming hub"),
     ],
-    "other game": [
+    "Grand Theft Auto": [
         ("/division-2/videos/", "All Raigulus gameplay videos"),
     ],
 }
@@ -76,7 +76,7 @@ SECTION_TITLES = {
     "manhunt": "Manhunt Walkthrough",
     "pvp/archive clip": "Match Breakdown",
     "side activity": "Activity Walkthrough",
-    "other game": "Other Games",
+    "Grand Theft Auto": "Grand Theft Auto",
 }
 
 
@@ -111,7 +111,7 @@ def default_summary(spec: dict) -> str:
         return f"{core} - Division 2 raid and incursion clear archive from Raigulus."
     if cluster == "side activity":
         return f"{core} - Division 2 open world activity run from Raigulus."
-    if cluster == "other game":
+    if cluster == "Grand Theft Auto":
         return f"{core} - Grand Theft Auto gameplay from Raigulus."[:160]
     return f"{core} - The Division 2 gameplay archive from Raigulus."[:160]
 
@@ -200,17 +200,8 @@ def other_versions(record: dict, records: list[dict]) -> str:
 
 def faq_items(record: dict) -> list[tuple[str, str]]:
     diff = record.get("difficulty") or "the labeled difficulty"
-    if record.get("cluster") == "other game":
-        return [
-            (f"What does this {record['mission']} video cover?",
-             f"It covers the embedded Raigulus run for {record['mission']}, including mission flow, driving and combat pacing, and the mods shown on screen."),
-            ("Which game is this?",
-             "This is Grand Theft Auto gameplay, not The Division 2. The upload is grouped under Other Games."),
-            ("Is this a no commentary guide?",
-             "The upload is labeled as gameplay. If commentary or archive context is present, the page describes it instead of forcing it into a no-commentary format."),
-            ("Does this page cover Division 2 loot or builds?",
-             "No. Division 2 loot, builds and escalation notes live on the dedicated Division 2 hubs linked from the site."),
-        ]
+    if record.get("cluster") == "Grand Theft Auto":
+        return []
     return [
         (
             f"What does this {record['mission']} video cover?",
@@ -242,16 +233,10 @@ def render_page(record: dict, records: list[dict]) -> str:
     keywords = record["tags"]
     pl_id, pl_name = PLAYLISTS[record["_playlist"]]
     playlist_url = f"https://www.youtube.com/playlist?list={pl_id}" if pl_id else "https://www.youtube.com/@raigulus/videos"
-    if record.get("cluster") == "other game":
-        game_notes = f"""        <h2>Overview</h2>
-        <p>This Raigulus gameplay recording follows {esc(record['mission'])} through the mission order, driving, combat pacing, and the mods shown on screen.</p>
-        <p>The embedded video is the primary reference for the route and the version and settings used in this run.</p>
-        <h2>Mission Notes</h2>
-        <ol>
-          <li>Use the embedded run for the opening route and first objective timing.</li>
-          <li>Follow the mission sequence shown before committing to exposed objectives or interaction prompts.</li>
-          <li>Use the YouTube timeline to jump between the main objective and later sections of the run.</li>
-        </ol>
+    if record.get("cluster") == "Grand Theft Auto":
+        game_notes = f"""        <h2>About this video</h2>
+        <p>{esc(record['_summary'])}</p>
+        <p>Published {esc(record['published_date'])}. This is a video recording, not a written guide; watch the full run on YouTube below.</p>
 """
     else:
         game_notes = f"""        <h2>Overview</h2>
@@ -313,6 +298,13 @@ def render_page(record: dict, records: list[dict]) -> str:
         '{"@context":"https://schema.org","@type":"FAQPage","url":"%s","mainEntity":[%s]}'
         % (canonical, faq_json)
     )
+    is_gameplay = record.get("cluster") == "Grand Theft Auto"
+    summary_title = "Video description" if is_gameplay else "Guide Summary"
+    facts_title = "Video details" if is_gameplay else "Guide Facts"
+    related_title = "More Grand Theft Auto videos" if is_gameplay else "Related Guides"
+    heading_suffix = "" if is_gameplay else f" - {section_title}"
+    faq_html = "" if is_gameplay else f'        <h2>FAQ</h2>\n        <dl class="faq-list">{faq_dl}</dl>\n'
+    faq_script = "" if is_gameplay else f'    <script type="application/ld+json">{faq_ld}</script>\n'
 
     return f'''<!doctype html>
 <html lang="en">
@@ -377,8 +369,7 @@ def render_page(record: dict, records: list[dict]) -> str:
   </script>
   <script type="application/ld+json">{video_ld}</script>
 <script type="application/ld+json">{breadcrumb_ld}</script>
-<script type="application/ld+json">{faq_ld}</script>
-</head>
+{faq_script}</head>
 <body>
   <header class="site-header">
     <a class="brand" href="/">Raigulus</a>
@@ -418,10 +409,10 @@ def render_page(record: dict, records: list[dict]) -> str:
           </button>
           <noscript><a class="video-facade-fallback" href="https://www.youtube.com/watch?v={vid}">Watch {esc(record['title'])} on YouTube</a></noscript>
         </div>
-        <h2>Guide Summary</h2>
+        <h2>{summary_title}</h2>
         <p>{esc(record['_guide_summary'])}</p>
         <p>{hub_html}</p>
-        <h2>Guide Facts</h2>
+        <h2>{facts_title}</h2>
         <table class="facts">
           <tr><th>Mission</th><td>{esc(record['mission'])}</td></tr>
           <tr><th>Content type</th><td>{esc(record['cluster'])}</td></tr>
@@ -434,14 +425,12 @@ def render_page(record: dict, records: list[dict]) -> str:
         </table>
 
 {other_versions(record, records)}
-        <h2>{esc(record['mission'])} - {section_title}</h2>
+        <h2>{esc(record['mission'])}{heading_suffix}</h2>
 {game_notes}
-        <h2>FAQ</h2>
-        <dl class="faq-list">{faq_dl}</dl>
-
+{faq_html}
         <h2>Search Tags</h2>
         <ul class="pill-list">{pills}</ul>
-        <h2>Related Guides</h2>
+        <h2>{related_title}</h2>
         {related_cards(record, records)}
         <div class="feedback" data-feedback>
           <p><strong>Was this guide helpful?</strong> <button type="button" data-feedback-yes>👍 Yes</button> <button type="button" data-feedback-no>👎 No</button></p>

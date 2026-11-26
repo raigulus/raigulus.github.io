@@ -34,22 +34,22 @@ ESCALATION_KEYWORDS = ("escalation", "tier 10", "summit", "countdown", "legendar
 GTA_KEYWORDS = ("gta 3", "gta iii", "gta 6", "grand theft auto", "liberty city", "gta v", "gta 5")
 
 
-def detect_game(title):
-    """Identify the game before activity-based classification.
+def detect_game(title, description=""):
+    """Identify the played game from the YouTube title and description.
 
     GTA uploads share words like 'mission' and 'walkthrough' with Division 2,
     so game detection must run before the activity keyword rules.
     """
-    t = title.lower()
-    if any(k in t for k in GTA_KEYWORDS):
+    text = f"{title or ''} {description or ''}".lower()
+    if any(k in text for k in GTA_KEYWORDS):
         return "gta"
     return "division-2"
 
 
 def classify(title, description=""):
     t = title.lower()
-    if detect_game(title) == "gta":
-        return ("other game", "other")
+    if detect_game(title, description) == "gta":
+        return ("Grand Theft Auto", "gta")
     if "scout" in t or "manhunt" in t:
         return ("manhunt", "manhunt")
     if any(k in t for k in PVP_KEYWORDS):
@@ -193,8 +193,9 @@ def main():
             meta = {"title": item["title"], "duration": 0, "chapters": [],
                     "tags": [], "description": item["description"], "upload_date": ""}
         title = meta.get("title") or item["title"]
-        cluster, playlist = classify(title, meta.get("description") or item["description"] or "")
-        game = detect_game(title)
+        description = meta.get("description") or item["description"] or ""
+        cluster, playlist = classify(title, description)
+        game = detect_game(title, description)
         upload = str(meta.get("upload_date") or "")
         published = f"{upload[:4]}-{upload[4:6]}-{upload[6:]}" if len(upload) == 8 else item["published"]
         desc = (meta.get("description") or item["description"] or "").strip().replace("\n", " ")[:160]
