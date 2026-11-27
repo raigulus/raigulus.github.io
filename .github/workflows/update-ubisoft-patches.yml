@@ -27,11 +27,14 @@ jobs:
       - name: Discover and summarize new Ubisoft patch notes
         run: python3 scripts/fetch_ubisoft_patches.py
 
+      - name: Humanize generated copy
+        run: python3 scripts/humanize_copy.py
+
       - name: Commit changes
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          git add scripts/fetch_ubisoft_patches.py \
+          git add scripts/fetch_ubisoft_patches.py scripts/humanize_copy.py \
             assets/data/ubisoft-patches-state.json \
             assets/data/landing-data.json \
             division-2/patches \

@@ -181,7 +181,7 @@ def write_archive_index():
         <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/division-2/">The Division 2</a> / <span>This Week</span></nav>
         <p class="eyebrow">The Division 2 / This Week</p>
         <h1>This Week in The Division 2: Weekly Reset Archive</h1>
-        <p>Every weekly Division 2 reset digest in one place: targeted loot rotation, vendor caches, the current manhunt week, server status, and maintenance notes. A new digest is generated every Tuesday and the archive keeps the previous weeks for reference.</p>
+        <p>Weekly Division 2 reset digests, week after week: targeted loot rotation, vendor caches, the current manhunt week, server status, and maintenance notes. A new digest is generated every Tuesday and the archive keeps the previous weeks for reference.</p>
         <p class="meta">{count} {noun} archived · Newest: <time datetime="{newest}">{datetime.strptime(newest, '%Y-%m-%d').strftime('%b')} {datetime.strptime(newest, '%Y-%m-%d').day}, {datetime.strptime(newest, '%Y-%m-%d').year}</time> · Updated every Tuesday</p>
         <h2>Weekly digests</h2>
         <div class="grid">

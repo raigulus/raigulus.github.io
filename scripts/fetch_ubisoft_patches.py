@@ -143,16 +143,16 @@ def build_page(info: dict, source_url: str, slug: str, url: str) -> str:
             sections.append(f"<p>{esc(b)}</p>")
             used += 1
         if used == 0:
-            sections.append("<p>See the linked Ubisoft notes for the full details of this section.</p>")
+            sections.append("<p>Ubisoft's source link has the full wording for this bit.</p>")
     body = f'''  <main>
     <section class="section">
       <div class="content">
         <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/division-2/">The Division 2</a> / <a href="/division-2/patches/">Patches</a> / <span>{esc(title)}</span></nav>
         <p class="eyebrow">The Division 2 / Official Patch Notes</p>
         <h1>{esc(title)}</h1>
-        <p>Unofficial fan summary of Ubisoft's patch notes, written in our own words. Numbers and mechanics come from the <a href="{esc(source_url)}">official article</a>.</p>
+        <p>Here's our short take on Ubisoft's notes. The <a href="{esc(source_url)}">official article</a> has every number and mechanic; the wording here is ours.</p>
         <p class="meta">Published: {esc(info["date"] or "date not listed")} &middot; Last updated: <time datetime="{today}">{today}</time></p>
-        <p class="meta">Unofficial fan summary. Game content belongs to Ubisoft; full notes linked above.</p>
+        <p class="meta">Fan-written notes, not Ubisoft copy. Source link at the top.</p>
         {''.join(sections)}
       </div>
     </section>
@@ -169,7 +169,7 @@ def update_hub(title: str, slug: str, url: str, date: str) -> None:
   <div class="card-body">
     <p class="eyebrow">{esc(date or "Official notes")}</p>
     <h3><a href="/division-2/patches/{slug}/">{esc(title)}</a></h3>
-    <p>Unofficial fan summary of the latest official Ubisoft patch notes.</p>
+    <p>Our short take on Ubisoft's latest patch notes.</p>
     <p class="meta"><a href="/division-2/patches/{slug}/">Open guide</a></p>
   </div>
 </article>
@@ -210,7 +210,7 @@ def update_lists(url: str, date: str) -> None:
     p = ROOT / "llms.txt"
     s = p.read_text(encoding="utf-8")
     if url not in s:
-        line = f"- [Ubisoft Patch Notes]({url}): Unofficial fan summary of the latest official update.\n"
+        line = f"- [Ubisoft Patch Notes]({url}): Short fan summary of Ubisoft's latest update.\n"
         s = s.replace("## YouTube Playlists", line + "\n## YouTube Playlists", 1)
         p.write_text(s, encoding="utf-8")
     p = ROOT / "assets" / "data" / "landing-data.json"
