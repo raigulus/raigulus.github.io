@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-27T15:05:17Z",
+  "generated_at": "2026-11-27T17:05:15Z",
   "stats": {
-    "total_guides": 528,
+    "total_guides": 529,
     "exotics": 79,
     "patches": 33
   },
   "latest_patch": {
-    "slug": "y8s3-1-red-moon-rising",
-    "title": "Division 2 Y8S3.1: Red Moon Rising Summary [2026] | Raigulus",
-    "version": "Y8S3"
+    "slug": "y8s4-spearfall-pts",
+    "title": "Division 2 Y8S4 Spearfall PTS Patch Notes [2026]",
+    "version": "Y8S4"
   },
   "latest_videos": [
     {
@@ -49,7 +49,7 @@
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-27 15:05 UTC"
+    "last_checked": "2026-11-27 17:05 UTC"
   },
   "discord_members": 64,
   "next_reset_utc": "2026-11-28T07:00:00Z"
