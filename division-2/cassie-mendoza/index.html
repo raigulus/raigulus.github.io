@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://web3forms.com https://js.hcaptcha.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://api.web3forms.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://giscus.app https://discord.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
   <meta name="theme-color" content="#0b0d11">
   <meta name="author" content="Raigulus">
   <title>Division 2 Cassie Mendoza Location &amp; Schedule [2026]</title>
@@ -160,29 +160,7 @@
           <p class="meta">Discuss this guide with other players on <a href="https://discord.gg/xj8jnS3Gkh">Discord</a> or <a href="/feedback/">send feedback</a>.</p>
         </div>
         <script src="/assets/feedback-handler.js" defer></script>
-        <script>
-          (function() {
-            function nextWednesday() {
-              var now = new Date();
-              var t = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 8, 0, 0));
-              var d = (3 - t.getUTCDay() + 7) % 7;
-              if (d === 0 && t <= now) d = 7;
-              t.setUTCDate(t.getUTCDate() + d);
-              return t;
-            }
-            function pad(n) { return (n < 10 ? "0" : "") + n; }
-            function tick() {
-              var el = document.getElementById("cassie-countdown");
-              if (!el) return;
-              var ms = nextWednesday().getTime() - Date.now();
-              if (ms <= 0) { el.textContent = "OPEN NOW"; return; }
-              var s = Math.floor(ms / 1000);
-              el.textContent = Math.floor(s / 86400) + "d " + pad(Math.floor(s % 86400 / 3600)) + ":" + pad(Math.floor(s % 3600 / 60)) + ":" + pad(s % 60);
-            }
-            tick();
-            setInterval(tick, 1000);
-          })();
-        </script>
+        <script src="/assets/cassie-countdown.js" defer></script>
       </div>
     </section>
       <section class="section">
