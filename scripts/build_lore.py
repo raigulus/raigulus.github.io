@@ -187,6 +187,7 @@ def head(title, description, canonical, schema_type="Article", published=None, m
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="{OG_IMAGE}">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/barlow-condensed-700-latin.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/barlow-condensed-500-latin.woff2">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/inter-400-latin.woff2">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">

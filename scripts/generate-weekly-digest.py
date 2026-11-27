@@ -137,6 +137,7 @@ def write_archive_index():
   <meta property="og:image" content="https://raigulus.github.io/assets/img/yt/CTbj7jMF1rI-hqdefault.jpg">
   <meta property="twitter:image" content="https://raigulus.github.io/assets/img/yt/CTbj7jMF1rI-hqdefault.jpg">
   <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/barlow-condensed-700-latin.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/barlow-condensed-500-latin.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/inter-400-latin.woff2">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -361,6 +362,7 @@ def main():
   <meta property="og:image" content="https://raigulus.github.io/assets/img/yt/CTbj7jMF1rI-hqdefault.jpg">
   <meta property="twitter:image" content="https://raigulus.github.io/assets/img/yt/CTbj7jMF1rI-hqdefault.jpg">
   <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/barlow-condensed-700-latin.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/barlow-condensed-500-latin.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/inter-400-latin.woff2">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
