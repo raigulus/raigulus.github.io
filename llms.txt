@@ -54,6 +54,8 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [Privacy Notice](https://raigulus.github.io/privacy/): What data is collected, which services are involved, and how to change your choice.
 - [Cookie Notice](https://raigulus.github.io/cookies/): Cookies and browser storage used, with per-item purposes.
 
+- [Spearfall PTS Patch Notes](https://raigulus.github.io/division-2/patches/y8s4-spearfall-pts/): Y8S4 test notes summary.
+
 ## YouTube Playlists
 
 - [The Division 2 Mission Walkthroughs | No Commentary](https://www.youtube.com/playlist?list=PLG6L-oRdfdL_EOFTVpqbdnv1vhvO16qVh)

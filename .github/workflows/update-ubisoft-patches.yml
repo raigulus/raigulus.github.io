@@ -1,0 +1,61 @@
+name: Update Ubisoft Patch Notes
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-ubisoft-patches
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Discover and summarize new Ubisoft patch notes
+        run: python3 scripts/fetch_ubisoft_patches.py
+
+      - name: Commit changes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git add scripts/fetch_ubisoft_patches.py \
+            assets/data/ubisoft-patches-state.json \
+            assets/data/landing-data.json \
+            division-2/patches \
+            index.html \
+            sitemap.xml sitemap.txt sitemap-all.xml llms.txt
+          if git diff --cached --quiet; then
+            echo "No new Ubisoft patch notes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "content: auto-add Ubisoft patch notes"
+          for attempt in 1 2 3; do
+            if git push; then
+              gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds"
+              exit 0
+            fi
+            if [ "$attempt" = 3 ]; then
+              echo "Push was rejected after ${attempt} attempts."
+              exit 1
+            fi
+            echo "Push raced with another main update; rebasing before retry ${attempt}."
+            git fetch origin main
+            git stash
+            git rebase origin/main
+            git stash pop || true
+          done
