@@ -464,6 +464,11 @@ def render_page(record: dict, records: list[dict]) -> str:
 LD_RE = re.compile(r'(<script type="application/ld\+json">)(.*?)(</script>)', re.DOTALL)
 
 
+def is_gta(rec: dict) -> bool:
+    """Grand Theft Auto uploads live in their own hub, not the Division 2 one."""
+    return rec.get("cluster") == "Grand Theft Auto" or (rec.get("game") or "").lower() == "gta"
+
+
 def update_itemlists(content: str, new_records: list[dict]) -> tuple[str, int]:
     """Insert new records at position 1 of every ItemList JSON-LD block."""
     if not new_records:
@@ -548,6 +553,8 @@ def update_hub_page(records_new: list[dict], all_records: list[dict]) -> None:
     }
     missing = []
     for rec in all_records:
+        if is_gta(rec):
+            continue
         url = rec["url"].replace(BASE_URL, "")
         if url in linked:
             continue
@@ -557,8 +564,8 @@ def update_hub_page(records_new: list[dict], all_records: list[dict]) -> None:
         missing.append(rec)
     missing.sort(key=lambda r: r["published_date"], reverse=True)
 
-    cards = [hub_card(rec) for rec in reversed(records_new)]
-    cards += [hub_card(rec) for rec in missing]
+    cards = [hub_card(rec) for rec in reversed(records_new) if not is_gta(rec)]
+    cards += [hub_card(rec) for rec in missing if not is_gta(rec)]
     if missing:
         print(f"HUB backfill: {len(missing)} video card(s) added")
     content = content[:idx] + "<div class=\"grid\">" + "".join(cards) + content[idx + len("<div class=\"grid\">"):]
@@ -570,6 +577,49 @@ def update_hub_page(records_new: list[dict], all_records: list[dict]) -> None:
     total = sum(1 for r in all_records if r.get("game", "division-2") == "division-2")
     content = re.sub(r">\d+ guides<", f">{total} guides<", content)
 
+    path.write_text(content, encoding="utf-8")
+
+
+def update_gta_hub_page(records_new: list[dict], all_records: list[dict]) -> None:
+    """Keep the standalone Grand Theft Auto hub in sync with new GTA uploads."""
+    path = ROOT / "grand-theft-auto" / "index.html"
+    if not path.exists():
+        return
+    content = path.read_text(encoding="utf-8")
+
+    anchor = '<div class="grid"><article class="video-card"'
+    idx = content.find(anchor)
+    if idx == -1:
+        raise SystemExit("GTA hub card anchor not found")
+
+    linked = {
+        raw.replace(BASE_URL, "").rstrip("/") + "/"
+        for raw in re.findall(r'href="([^"]*?/division-2/videos/[^"#]*)"', content)
+    }
+    missing = []
+    for rec in all_records:
+        if not is_gta(rec):
+            continue
+        url = rec["url"].replace(BASE_URL, "")
+        if url in linked:
+            continue
+        page = ROOT / "division-2" / "videos" / url.rstrip("/").split("/")[-1] / "index.html"
+        if page.exists():
+            missing.append(rec)
+    missing.sort(key=lambda r: r["published_date"], reverse=True)
+
+    cards = [hub_card(rec) for rec in reversed(records_new)]
+    cards += [hub_card(rec) for rec in missing]
+    if cards:
+        content = content[:idx] + '<div class="grid">' + "".join(cards) + content[idx + len('<div class="grid">'):]
+        content, _ = update_itemlists(content, list(reversed(records_new)))
+
+    content = re.sub(
+        r">\d+ guides<",
+        f">{len(re.findall('data-search-card', content))} guides<",
+        content,
+        count=1,
+    )
     path.write_text(content, encoding="utf-8")
 
 
@@ -737,6 +787,7 @@ def main() -> int:
 
     # 3. Hub, root, sitemaps, feed.
     update_hub_page(list(reversed(new_records)), records)
+    update_gta_hub_page([r for r in new_records if is_gta(r)], records)
     update_root_page(list(reversed(new_records)))
     update_sitemaps(list(reversed(new_records)))
     update_feed(list(reversed(new_records)))

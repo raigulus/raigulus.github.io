@@ -23,6 +23,7 @@ The canonical website is https://raigulus.github.io. The YouTube handle is @raig
 - [Destiny 2 Lost Sector Tracker](https://raigulus.github.io/destiny-2/lost-sector-tracker/): Daily rotation with live reset countdown and exotic drops.
 - [Lore Archive](https://raigulus.github.io/lore/): The Division story, timeline, reading order, and source-aware lore research.
 - [The Division 2 Hub](https://raigulus.github.io/division-2/): All optimized Division 2 guides.
+- [Grand Theft Auto Hub](https://raigulus.github.io/grand-theft-auto/): GTA 3 mission walkthroughs and DLSS 5 mod gameplay videos by Raigulus.
 - [Mission Walkthroughs](https://raigulus.github.io/division-2/missions/): Mission, invaded, heroic, and legendary walkthroughs.
 - [The Division 2 Builds and Build Tests](https://raigulus.github.io/division-2/builds/): Video-backed Bluescreen, Tipping Scales, Whiplash, Regulus, Rage Harvest, Toxic DZ, and Tier 10 tests.
 - [Loot Today and Targeted Loot Guide](https://raigulus.github.io/division-2/loot/): Division 2 loot today, targeted loot, loot map context, and farming videos.
