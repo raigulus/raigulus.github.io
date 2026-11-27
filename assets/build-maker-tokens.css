@@ -578,6 +578,18 @@
     font-size: 12px;
   }
   .bm-progress { margin-bottom: 4px; }
+  .bm-clear-all-wrap { display: flex; justify-content: flex-end; margin: 0 0 6px; }
+  .bm-clear-all {
+    padding: 4px 10px;
+    border: 1px solid var(--rg-border);
+    border-radius: var(--rg-radius-sm);
+    background: var(--rg-bg-surface);
+    color: var(--rg-text-secondary);
+    font-family: var(--rg-font-body);
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .bm-clear-all:hover { border-color: var(--rg-accent); color: var(--rg-text-primary); }
 
   .bm-slot, :root:not([data-theme="light"]) .bm-slot { gap: 4px; padding: 4px 8px; }
   #bm-gear-slots .bm-slot, #bm-weapon-slots .bm-slot, #bm-skill-slots .bm-slot { min-height: 0; }

@@ -53,7 +53,7 @@ S1 = DATA["skills"][0]["name"]
 IDS = ["bm-gear-slots", "bm-weapon-slots", "bm-skill-slots", "bm-summary",
        "bm-modal-title", "bm-modal-search", "bm-modal", "bm-modal-filters",
        "bm-modal-list", "bm-modal-close", "bm-data-meta", "bm-copy-link",
-       "bm-copy-text", "bm-screenshot", "bm-reset", "bm-watch1000", "bm-export",
+       "bm-copy-text", "bm-screenshot", "bm-reset", "bm-clear-all", "bm-watch1000", "bm-export",
        "bm-import", "bm-import-file", "bm-changelog", "bm-changelog-meta",
        "bm-library", "bm-library-panel", "bm-library-name", "bm-library-add",
        "bm-library-empty", "bm-library-list", "bm-compare", "bm-compare-label",
@@ -301,6 +301,12 @@ class TestPersistence(Base):
 
     def test_reset_clears_the_stored_build(self):
         res = drive(store={KEY: b64({"m": MASK})}, body="clickBtn('bm-reset');")
+        self.assertAlive(res)
+        self.assertNotIn(KEY, res["store"])
+        self.assertNotBuilt(res, MASK)
+
+    def test_clear_all_clears_the_stored_build(self):
+        res = drive(store={KEY: b64({"m": MASK})}, body="clickBtn('bm-clear-all');")
         self.assertAlive(res)
         self.assertNotIn(KEY, res["store"])
         self.assertNotBuilt(res, MASK)
