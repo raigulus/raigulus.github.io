@@ -561,3 +561,69 @@
   .bm-slots h2, .bm-summary h2 { margin: 6px 0 3px; }
   .bm-summary h3 { margin: 8px 0 3px; }
 }
+
+/* Ultra-compact desktop workspace (both themes). Panels keep their fixed
+   viewport height; the goal is to fit their content without an inner
+   scrollbar at 1366x768 / 1440x900. Mobile and tablet rules are untouched. */
+@media (min-width: 861px) {
+  .bm-slots h2, .bm-summary h2,
+  :root:not([data-theme="light"]) .bm-slots h2,
+  :root:not([data-theme="light"]) .bm-summary h2 {
+    margin: 3px 0 2px;
+    font-size: 14px;
+  }
+  .bm-summary h3,
+  :root:not([data-theme="light"]) .bm-summary h3 {
+    margin: 4px 0 2px;
+    font-size: 12px;
+  }
+  .bm-progress { margin-bottom: 4px; }
+
+  .bm-slot, :root:not([data-theme="light"]) .bm-slot { gap: 4px; padding: 4px 8px; }
+  #bm-gear-slots .bm-slot, #bm-weapon-slots .bm-slot, #bm-skill-slots .bm-slot { min-height: 0; }
+  .bm-gear-art { padding: 4px 5px; }
+  .bm-slot:not(.rar-high):not(.rar-exotic) .bm-gsvg { width: 48px; }
+  .bm-slot:not(.rar-high):not(.rar-exotic) .bm-wsvg { width: 56px; }
+  .bm-slot-info { gap: 0; }
+  .bm-slot-label { line-height: 1.1; }
+  .bm-slot-name, :root:not([data-theme="light"]) .bm-slot-name { font-size: 12px; line-height: 1.15; }
+  .bm-slot:not(.rar-high):not(.rar-exotic) .bm-slot-name.bm-cta {
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    -webkit-line-clamp: 2;
+  }
+  .bm-slot-sub { line-height: 1.15; }
+  .bm-slot-actions { margin: 0; gap: 4px; }
+  .bm-slot-change, :root:not([data-theme="light"]) .bm-slot-change,
+  .bm-actions button, :root:not([data-theme="light"]) .bm-actions button {
+    min-height: 28px;
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+  .bm-slot-clear { min-height: 28px; padding: 4px 8px; }
+  .bm-actions { margin-top: 6px; gap: 4px; }
+
+  .bm-empty, :root:not([data-theme="light"]) .bm-empty {
+    margin: 4px 0;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+  .bm-cores, :root:not([data-theme="light"]) .bm-cores { margin: 4px 0; line-height: 1.2; }
+  .bm-cores span, :root:not([data-theme="light"]) .bm-cores span {
+    margin: 0 4px 2px 0;
+    padding: 2px 6px;
+    font-size: 11px;
+  }
+  .bm-spec, .bm-watch { margin: 4px 0 2px; font-size: 12px; }
+  .bm-spec select { padding: 3px 4px; font-size: 11px; }
+  .bm-watch.bm-shd { gap: 4px; }
+  .bm-shd input[type="range"] { margin: 0; max-width: 100%; }
+  .bm-note, .bm-actions-note,
+  :root:not([data-theme="light"]) .bm-note,
+  :root:not([data-theme="light"]) .bm-actions-note {
+    margin: 0 0 4px;
+    font-size: 11px;
+    line-height: 1.25;
+  }
+  .bm-totals { max-height: 120px; }
+}
