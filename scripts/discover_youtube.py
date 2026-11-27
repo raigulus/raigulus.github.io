@@ -32,6 +32,23 @@ STOPWORDS = {
 PVP_KEYWORDS = ("conflict", "pvp", "skirmish", "dark zone", "rogue", "clan war", "1v1")
 ESCALATION_KEYWORDS = ("escalation", "tier 10", "summit", "countdown", "legendary", "walkthrough", "solo cleared", "speedrun")
 GTA_KEYWORDS = ("gta 3", "gta iii", "gta 6", "grand theft auto", "liberty city", "gta v", "gta 5")
+RESTREAM_BOILERPLATE = re.compile(
+    r"(?i)^\s*made with restream\.\s*livestream on 30\+ platforms at once via https?://restream\.io\s*"
+)
+
+
+def clean_summary(text):
+    """Strip platform boilerplate that YouTube puts at the top of descriptions."""
+    return RESTREAM_BOILERPLATE.sub("", text or "").strip()
+
+
+def is_live_stream(title, description=""):
+    """Detect recorded live streams; ignore videos that merely say a game event is live."""
+    t = (title or "").lower()
+    d = (description or "").lower()
+    if re.search(r"\blive\b", t):
+        return True
+    return any(k in d for k in ("livestream on 30+", "live stream |", "live stream –", "🔴 live"))
 
 
 def detect_game(title, description=""):
@@ -50,6 +67,8 @@ def classify(title, description=""):
     t = title.lower()
     if detect_game(title, description) == "gta":
         return ("Grand Theft Auto", "gta")
+    if is_live_stream(title, description):
+        return ("live stream", "live")
     if "scout" in t or "manhunt" in t:
         return ("manhunt", "manhunt")
     if any(k in t for k in PVP_KEYWORDS):
@@ -198,7 +217,7 @@ def main():
         game = detect_game(title, description)
         upload = str(meta.get("upload_date") or "")
         published = f"{upload[:4]}-{upload[4:6]}-{upload[6:]}" if len(upload) == 8 else item["published"]
-        desc = (meta.get("description") or item["description"] or "").strip().replace("\n", " ")[:160]
+        desc = clean_summary((meta.get("description") or item["description"] or "").strip().replace("\n", " "))[:160]
         specs.append({
             "slug": slugify(title, item["video_id"]),
             "title": site_title(title),

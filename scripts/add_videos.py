@@ -48,6 +48,10 @@ PLAYLISTS = {
         "",
         "Grand Theft Auto",
     ),
+    "live": (
+        "",
+        "Raigulus live streams",
+    ),
 }
 
 HUB_LINKS = {
@@ -69,6 +73,9 @@ HUB_LINKS = {
     "Grand Theft Auto": [
         ("/division-2/videos/", "All Raigulus gameplay videos"),
     ],
+    "live stream": [
+        ("/division-2/videos/", "All Raigulus gameplay videos"),
+    ],
 }
 
 SECTION_TITLES = {
@@ -77,6 +84,7 @@ SECTION_TITLES = {
     "pvp/archive clip": "Match Breakdown",
     "side activity": "Activity Walkthrough",
     "Grand Theft Auto": "Grand Theft Auto",
+    "live stream": "Live Stream Archive",
 }
 
 
@@ -113,6 +121,8 @@ def default_summary(spec: dict) -> str:
         return f"{core} - Division 2 open world activity run from Raigulus."
     if cluster == "Grand Theft Auto":
         return f"{core} - Grand Theft Auto gameplay from Raigulus."[:160]
+    if cluster == "live stream":
+        return f"{core} - Raigulus live stream archive from The Division 2."[:160]
     return f"{core} - The Division 2 gameplay archive from Raigulus."[:160]
 
 
@@ -200,7 +210,7 @@ def other_versions(record: dict, records: list[dict]) -> str:
 
 def faq_items(record: dict) -> list[tuple[str, str]]:
     diff = record.get("difficulty") or "the labeled difficulty"
-    if record.get("cluster") == "Grand Theft Auto":
+    if record.get("cluster") in ("Grand Theft Auto", "live stream"):
         return []
     return [
         (
@@ -233,10 +243,12 @@ def render_page(record: dict, records: list[dict]) -> str:
     keywords = record["tags"]
     pl_id, pl_name = PLAYLISTS[record["_playlist"]]
     playlist_url = f"https://www.youtube.com/playlist?list={pl_id}" if pl_id else "https://www.youtube.com/@raigulus/videos"
-    if record.get("cluster") == "Grand Theft Auto":
-        game_notes = f"""        <h2>About this video</h2>
+    if record.get("cluster") in ("Grand Theft Auto", "live stream"):
+        about_title = "About this stream" if record.get("cluster") == "live stream" else "About this video"
+        about_kind = "live stream archive" if record.get("cluster") == "live stream" else "video recording"
+        game_notes = f"""        <h2>{about_title}</h2>
         <p>{esc(record['_summary'])}</p>
-        <p>Published {esc(record['published_date'])}. This is a video recording, not a written guide; watch the full run on YouTube below.</p>
+        <p>Published {esc(record['published_date'])}. This is a {about_kind}, not a written guide; watch the full video on YouTube below.</p>
 """
     else:
         game_notes = f"""        <h2>Overview</h2>
@@ -298,10 +310,11 @@ def render_page(record: dict, records: list[dict]) -> str:
         '{"@context":"https://schema.org","@type":"FAQPage","url":"%s","mainEntity":[%s]}'
         % (canonical, faq_json)
     )
-    is_gameplay = record.get("cluster") == "Grand Theft Auto"
-    summary_title = "Video description" if is_gameplay else "Guide Summary"
-    facts_title = "Video details" if is_gameplay else "Guide Facts"
-    related_title = "More Grand Theft Auto videos" if is_gameplay else "Related Guides"
+    is_gameplay = record.get("cluster") in ("Grand Theft Auto", "live stream")
+    is_live = record.get("cluster") == "live stream"
+    summary_title = "Stream notes" if is_live else ("Video description" if is_gameplay else "Guide Summary")
+    facts_title = "Stream details" if is_live else ("Video details" if is_gameplay else "Guide Facts")
+    related_title = "More live streams" if is_live else ("More Grand Theft Auto videos" if is_gameplay else "Related Guides")
     heading_suffix = "" if is_gameplay else f" - {section_title}"
     faq_html = "" if is_gameplay else f'        <h2>FAQ</h2>\n        <dl class="faq-list">{faq_dl}</dl>\n'
     faq_script = "" if is_gameplay else f'    <script type="application/ld+json">{faq_ld}</script>\n'
