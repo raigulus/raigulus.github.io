@@ -78,7 +78,7 @@
         by email through Google Gmail; data may be processed outside your country. The form is
         protected by hCaptcha. See the <a href="/privacy/">Privacy Notice</a> for details and your
         rights.</p>
-        <form class="fb-form" action="https://api.web3forms.com/submit" method="POST">
+        <form class="fb-form" action="https://api.web3forms.com/submit" method="POST" toolname="sendRaigulusFeedback" tooldescription="Fill in the Raigulus feedback form with a topic, related page, and message for the site owner.">
           <input type="hidden" name="access_key" value="14ab9b68-2f2f-4e36-8a0c-2c01289f0ac5">
           <input type="hidden" name="subject" value="Raigulus site feedback">
           <input type="hidden" name="from_name" value="Raigulus feedback form">
@@ -86,7 +86,7 @@
           <input type="checkbox" name="botcheck" style="display:none">
           <p>
             <label for="fb-type">What is this about?</label><br>
-            <select id="fb-type" name="type" required>
+            <select id="fb-type" name="type" required toolparamdescription="Feedback topic: video request, guide error, build idea, or other.">
               <option value="video-request">Video request</option>
               <option value="error-report">Guide error report</option>
               <option value="build-idea">Build idea</option>
@@ -99,7 +99,7 @@
           </p>
           <p>
             <label for="fb-message">Message</label><br>
-            <textarea id="fb-message" name="message" rows="6" required placeholder="Mission or boss name, difficulty, what you want to see..."></textarea>
+            <textarea id="fb-message" name="message" rows="6" required placeholder="Mission or boss name, difficulty, what you want to see..." toolparamdescription="The feedback message or requested guide topic."></textarea>
           </p>
           <p>
             <label for="fb-name">Name or Discord handle (optional)</label><br>

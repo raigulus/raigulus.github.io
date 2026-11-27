@@ -1,0 +1,58 @@
+{
+  "tools": [
+    {
+      "name": "searchRaigulusGuides",
+      "description": "Find guide cards on the current Raigulus page by keyword. Returns matching titles and URLs.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Keyword or tag to look for."
+          }
+        },
+        "required": ["query"]
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "untrustedContentHint": true,
+        "debugging": false
+      }
+    },
+    {
+      "name": "listLatestRaigulusVideos",
+      "description": "List the most recent Raigulus Division 2 video uploads with titles and links.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "limit": {
+            "type": "integer",
+            "description": "Maximum number of videos to return, from 1 to 10."
+          }
+        }
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "untrustedContentHint": true,
+        "debugging": false
+      }
+    }
+  ],
+  "forms": [
+    {
+      "name": "searchRaigulusArchive",
+      "description": "Search the Raigulus archive for a guide, mission, build, or lore article.",
+      "pages": ["/", "/404.html", "/search/"]
+    },
+    {
+      "name": "sendRaigulusFeedback",
+      "description": "Fill in the Raigulus feedback form with a topic, related page, and message for the site owner.",
+      "pages": ["/feedback/"]
+    },
+    {
+      "name": "selectAgentBriefingTarget",
+      "description": "Enter a Division 2 target name for the daily agent briefing guessing game.",
+      "pages": ["/division-2/agent-briefing/"]
+    }
+  ]
+}

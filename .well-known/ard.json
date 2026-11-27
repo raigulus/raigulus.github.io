@@ -1,0 +1,25 @@
+{
+  "entries": [
+    {
+      "@context": "https://agenticresourcediscovery.org/context/v1",
+      "identifier": "urn:air:raigulus.github.io:skills:webmcp-tools",
+      "displayName": "Raigulus WebMCP tools",
+      "type": "application/agent-skills+json",
+      "url": "https://raigulus.github.io/assets/data/webmcp-tools.json",
+      "description": "Read-only tools for finding Raigulus guide pages and listing recent Division 2 video uploads, plus declarative forms for site search, feedback, and the agent briefing game.",
+      "capabilities": [
+        "searchRaigulusGuides",
+        "listLatestRaigulusVideos",
+        "searchRaigulusArchive",
+        "sendRaigulusFeedback",
+        "selectAgentBriefingTarget"
+      ],
+      "representativeQueries": [
+        "find Division 2 build guides on Raigulus",
+        "search the Raigulus archive for Cassie",
+        "list the latest Raigulus videos",
+        "open the daily Division 2 agent briefing"
+      ]
+    }
+  ]
+}

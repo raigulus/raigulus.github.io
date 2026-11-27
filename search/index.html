@@ -53,9 +53,9 @@
         <p class="eyebrow">Raigulus / Search</p>
         <h1>Search the Archive</h1>
         <p>Every guide on the site. Division 2 builds and loot, Destiny 2 trackers, Diablo 4 timers, and lore. Title matches rank first. Use the search box above to find mission walkthroughs, build guides, exotic locations, patch notes, and lore articles across the whole Raigulus archive.</p>
-        <form class="home-search" action="/search/" method="get" role="search">
+        <form class="home-search" action="/search/" method="get" role="search" toolname="searchRaigulusArchive" tooldescription="Search the Raigulus archive for a guide, mission, build, or lore article." toolautosubmit>
           <label class="sr-only" for="site-search-input">Search the Raigulus archive</label>
-          <input id="site-search-input" name="q" type="search" placeholder="Try &quot;destiny 2&quot;, &quot;build maker&quot;, &quot;cassie&quot;..." autocomplete="off">
+          <input id="site-search-input" name="q" type="search" placeholder="Try &quot;destiny 2&quot;, &quot;build maker&quot;, &quot;cassie&quot;..." autocomplete="off" toolparamdescription="Keyword or tag to search for.">
         </form>
         <p class="meta" id="site-search-count"></p>
         <div class="grid" id="site-search-results"></div>
