@@ -190,7 +190,9 @@ def head(title, description, canonical, schema_type="Article", published=None, m
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/inter-400-latin.woff2">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="/assets/styles-critical.css">
+  <link rel="stylesheet" href="/assets/styles-deferred.css" media="print" data-defer-css>
+  <noscript><link rel="stylesheet" href="/assets/styles-deferred.css"></noscript>
   <link rel="stylesheet" href="/assets/lore.css">
   <link rel="stylesheet" href="/assets/lore-timeline.css">
   <link rel="stylesheet" href="/assets/lore-directory.css">

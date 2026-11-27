@@ -140,7 +140,9 @@ def write_archive_index():
   <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/inter-400-latin.woff2">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="/assets/styles-critical.css">
+  <link rel="stylesheet" href="/assets/styles-deferred.css" media="print" data-defer-css>
+  <noscript><link rel="stylesheet" href="/assets/styles-deferred.css"></noscript>
   <script src="/assets/search.js" defer></script>
   <script src="/assets/site.js" defer></script>
   <script type="application/ld+json">{{"@context":"https://schema.org","@type":"CollectionPage","name":"{esc(title)}","description":"{esc(desc)}","url":"{url}","dateModified":"{newest}","author":{{"@type":"Person","name":"Raigulus","url":"https://raigulus.github.io/about/"}},"isPartOf":{{"@type":"WebSite","name":"Raigulus","url":"https://raigulus.github.io"}}}}</script>
@@ -362,7 +364,9 @@ def main():
   <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/inter-400-latin.woff2">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="/assets/styles-critical.css">
+  <link rel="stylesheet" href="/assets/styles-deferred.css" media="print" data-defer-css>
+  <noscript><link rel="stylesheet" href="/assets/styles-deferred.css"></noscript>
   <script src="/assets/search.js" defer></script>
   <script src="/assets/site.js" defer></script>
   <script type="application/ld+json">{{"@context":"https://schema.org","@type":"WebPage","name":"{esc(title)}","description":"{esc(desc)}","url":"{url}","isPartOf":{{"@type":"WebSite","name":"Raigulus","url":"https://raigulus.github.io"}}}}</script>

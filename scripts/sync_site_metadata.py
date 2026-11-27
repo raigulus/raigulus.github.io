@@ -173,7 +173,7 @@ def pages_missing_icons() -> list[str]:
         ):
             continue
         content = page.read_text(encoding="utf-8")
-        if '<link rel="stylesheet" href="/assets/styles.css">' not in content:
+        if '/assets/styles-critical.css' not in content and '/assets/styles.css' not in content:
             continue
         if 'content="noindex"' in content:
             continue
