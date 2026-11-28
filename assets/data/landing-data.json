@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-27T23:05:14Z",
+  "generated_at": "2026-11-28T00:05:19Z",
   "stats": {
-    "total_guides": 529,
+    "total_guides": 530,
     "exotics": 79,
     "patches": 33
   },
@@ -11,6 +11,15 @@
     "version": "Y8S4"
   },
   "latest_videos": [
+    {
+      "title": "Fastest Way to Finish Spearfall Scout 1 | The Division 2",
+      "url": "https://raigulus.github.io/division-2/videos/fastest-way-to-finish-spearfall-scout-1-the-divisi/",
+      "youtube_url": "https://www.youtube.com/watch?v=2pH3phCGsZ4",
+      "thumbnail": "/assets/img/yt/2pH3phCGsZ4-hqdefault.jpg",
+      "published_date": "2026-11-27",
+      "cluster": "manhunt",
+      "summary": "**The Division 2 Y8S4 Spearfall Scout 1 – Week 1 Manhunt Gameplay**  The new Year 8 Season 4 Spearfall Manhunt is here! In this video, I complete the Week 1 Sco"
+    },
     {
       "title": "GTA 3 with DLSS 5 Mod PC Gameplay Part 2 – 40 Minutes in",
       "url": "https://raigulus.github.io/division-2/videos/gta-3-with-dlss-5-mod-pc-gameplay-part-2-40-minute/",
@@ -28,28 +37,14 @@
       "published_date": "2026-11-26",
       "cluster": "live stream",
       "summary": "Welcome back, Agents! 🧡  The Division 2 Year 8 Season 4: SPEARFALL is LIVE!  Na"
-    },
-    {
-      "title": "Another Boring Conflict Game | Division 2 PvP",
-      "url": "https://raigulus.github.io/division-2/videos/another-boring-conflict-game-division-2-pvp/",
-      "youtube_url": "https://www.youtube.com/watch?v=0VPfluxMoi8",
-      "thumbnail": "/assets/img/yt/0VPfluxMoi8-hqdefault.jpg",
-      "published_date": "2026-11-25",
-      "cluster": "pvp/archive clip",
-      "summary": "Division 2 Conflict PvP gameplay: full match, [build / loadout]. #Division2 #TheDivision2 #Division2PvP  📦 Today's Loot: https://raigulus.github.io/division-2/l"
     }
   ],
   "loot": {
-    "active": true,
-    "date": "2026-11-27",
-    "rotation": "Weekly Escalation Rotation",
-    "mission_count": 5,
-    "vendor_count": 2,
-    "next_update": "Around 07:00 UTC"
+    "active": false
   },
   "server": {
     "operational": true,
-    "last_checked": "2026-11-27 23:05 UTC"
+    "last_checked": "2026-11-28 00:05 UTC"
   },
   "discord_members": 64,
   "next_reset_utc": "2026-11-28T07:00:00Z"
