@@ -301,7 +301,7 @@ def render_page(record: dict, records: list[dict]) -> str:
     alt_text = esc(f"Video thumbnail: {record['title']}. {record['_summary']}"[:200])
     hub_html = " ".join(f'<a href="{h}">{label}</a>' for h, label in hub_links)
     pills = "\n".join(
-        '<li><a class="tag-chip" href="/division-2/?tag=%s">%s</a></li>'
+        '<li><a class="tag-chip" href="/division-2/?tag=%s" rel="nofollow">%s</a></li>'
         % (esc(t).replace(" ", "%20"), esc(t))
         for t in keywords
     )
