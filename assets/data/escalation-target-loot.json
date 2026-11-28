@@ -1,48 +1,48 @@
 {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "rotation": "Weekly Escalation Rotation",
   "missions": [
     {
       "mission": "The Pentagon",
-      "loot": "Alps Summit Armaments"
+      "loot": "Refactor"
     },
     {
       "mission": "DARPA Research Labs",
-      "loot": "Field General"
+      "loot": "Eclipse Protocol"
     },
     {
       "mission": "District Union Arena",
-      "loot": "Gila Guard"
+      "loot": "Sokolov Concern"
     },
     {
       "mission": "Roosevelt Island",
-      "loot": "Murakami Industries"
+      "loot": "Hotshot"
     },
     {
       "mission": "Space Administration HQ",
-      "loot": "Brazos de Arcabuz"
+      "loot": "Petrov Defense Group"
     }
   ],
   "vendor_caches": [
     {
       "type": "Weapons",
-      "item": "Pistols"
+      "item": "Shotguns"
     },
     {
       "type": "Gear",
       "item": "Masks"
     }
   ],
-  "last_updated": "2026-11-27 09:18",
-  "last_checked": "2026-11-28 07:05 UTC",
-  "parsed_at": "2026-11-28T07:05:10.254942+00:00",
-  "status": "pending",
-  "fetched_at": "2026-11-28T07:05:10.254942+00:00",
+  "last_updated": "2026-11-28 09:02",
+  "last_checked": "2026-11-28 08:05 UTC",
+  "parsed_at": "2026-11-28T08:05:10.329303+00:00",
+  "status": "ok",
+  "fetched_at": "2026-11-28T08:05:10.329303+00:00",
   "next_expected_update": "Around 07:00 UTC",
-  "snapshot_note": "Daily reset window has not arrived yet; showing the latest available snapshot.",
+  "snapshot_note": "Current dated loot snapshot is available.",
   "vendor_highlights": [],
   "vendor_highlights_status": "pending",
-  "vendor_highlights_checked": "2026-11-28 07:05 UTC",
+  "vendor_highlights_checked": "2026-11-28 08:05 UTC",
   "vendor_highlights_date": "",
   "vendor_highlights_note": "Waiting for the first dated vendor highlight snapshot."
 }
